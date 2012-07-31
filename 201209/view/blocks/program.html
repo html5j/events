@@ -30,11 +30,11 @@
 {% for slot in progdic %}
 	<tr>
 		{% if slot.sessions %}
-		<td>
+		<td class="timeslot" {% if email %}rowspan="2"{% endif %}>
 		{% else %}
 		<td class="break">
 		{% endif %}
-	{{ slot.timeslot }}
+			{{ slot.timeslot }}
 		</td>
 		{% if slot.sessions %}
 			{% for session in slot.sessions %}
@@ -47,18 +47,27 @@
 							{% endifequal %}
 						{% endfor %}
 					{%endfor%}
-
-					{% if email %}<br><br><input type="radio" name="slot_{{slot.slot_id}}" value="{{session.session_id}}"> 参加{% endif %}
 				</td>
 			{% endfor %}
 			{% if slot.sessions|length_is:"1" %}
 				<td class="empty" colspan="3"></td>
 			{% endif %}
+			</tr>
+			<tr>
+
+			{% if email %}
+			{% for session in slot.sessions %}
+				<td class="session_subscribe"><label for="session_{{session.session_id}}" class="checkbox"><div><input type="radio" name="slot_{{slot.slot_id}}" value="{{session.session_id}}" id="session_{{session.session_id}}"> 参加する</div></label></td>
+			{% endfor %}
+			{% if slot.sessions|length_is:"1" %}
+				<td class="empty" colspan="3"></td>
+			{% endif %}
+			{% endif %}
+			</tr>
 		{% else %}
-			<td class="break" colspan="4">{{ slot.title }}</td>
+			<td class="break" colspan="4">{{ slot.title }}</td></tr>
 		{% endif %}
-	</tr>
-{% endfor %}
+	{% endfor %}
 	</tbody>
 </table>
 {% if email %}

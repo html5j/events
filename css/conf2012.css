@@ -155,6 +155,14 @@ td.empty {
 td.session {
   background: #fff;
 }
+td.timeslot {
+  background: #d4ecea;
+}
+td.session_subscribe {
+  background: #d4ecea;
+  line-height: 0.8em;
+  font-size: 0.8em;
+}
 
 td div.speaker {
   padding-left: 0.5em;
