@@ -1,0 +1,111 @@
+<section>
+  <h2 class="page-header">プロフィールを入力してください</h2>
+
+
+  <form class="form-horizontal" method="post" action="reg_program.html">
+  	<fieldset>
+      <legend></legend>
+    </fieldset>
+    <div class="control-group">
+  	  <label class="control-label" for="label_">e-mail</label>
+      <div class="controls">
+        <input type="email" name="email" value="{{email}}" id="label_" readonly>
+      </div>
+    </div>
+    <div class="control-group">
+      <label class="control-label" for="name_">お名前（必須）<span class="required">*</span></label>
+      <div class="controls">
+        <input type="text" name="name" id="name_" required>
+        <p class="help-block">例）山田　太郎</p>
+      </div>
+    </div>
+    <div class="control-group">
+      <label class="control-label" for="ruby_">ふりがな（必須）<span class="required">*</span></label>
+      <div class="controls">
+        <input type="text" name="ruby" id="ruby_" required>
+        <p class="help-block">例）やまだ　たろう</p>
+      </div>
+    </div>
+    <div class="control-group">
+      <label class="control-label" for="gender_">性別（必須）<span class="required">*</span></label>
+      <div class="controls">
+        男性 <input type="radio" name="gender" id="gender_" value="male" required>&nbsp;&nbsp;
+        女性 <input type="radio" name="gender" id="gender_" value="female" required>&nbsp;&nbsp;
+      </div>
+    </div>
+    <div class="control-group">
+      <label class="control-label" for="generation_">年代（必須）<span class="required">*</span></label>
+      <div class="controls">
+        <select name="generation" id="generation_" required>
+          <option value="kids">9歳以下</option>
+          <option value="teen">10〜19歳</option>
+          <option value="twentieth" selected>20〜29歳</option>
+          <option value="thirtieth">30〜39歳</option>
+          <option value="fourtieth">40〜49歳</option>
+          <option value="fiftieth">50〜59歳</option>
+          <option value="silver">60歳以上</option>
+        </select>
+      </div>
+    </div>
+    <div class="control-group">
+      <label class="control-label" for="occupation_">職種（必須）<span class="required">*</span></label>
+      <div class="controls">
+        <select name="occupation" id="occupation_" required>
+          <option value="programmer">プログラマー</option>
+          <option value="designer">デザイナー</option>
+          <option value="coder">HTMLコーダー</option>
+          <option value="director">Webディレクター</option>
+          <option value="other">その他</option>
+        </select>
+      </div>
+    </div>
+    <div class="control-group">
+      <label class="control-label" for="how_">このカンファレンスを何でしりましたか？<br>(複数回答可)</label>
+      <div class="controls">
+        <label class="checkbox">
+          <input type="checkbox" name="how" id="how_" value="web">
+          Web記事（ニュースサイト、ブログなど）
+        </label>
+        <label class="checkbox">
+          <input type="checkbox" name="how" id="how_" value="social">
+          ソーシャルメディア（twitter, facebook, Google plusなど）
+        </label>
+        <label class="checkbox">
+          <input type="checkbox" name="how" id="how_" value="ml_html5j">
+          メーリングリスト（html5j.org）
+        </label>
+        <label class="checkbox">
+          <input type="checkbox" name="how" id="how_" value="ml_html5j">
+          メーリングリスト（html5j.org以外）
+        </label>
+        <label class="checkbox">
+          <input type="checkbox" name="how" id="how_" value="friends">
+          知人からの紹介
+        </label>
+        <label class="checkbox">
+          <input type="checkbox" name="how" id="how_" value="other">
+          その他
+        </label>
+      </div>
+    </div>
+    <div class="control-group">
+      <label class="control-label" for="confirm_">以下のプライバシーポリシーをご一読ください。（必須）<span class="required">*</span></label>
+      <div class="controls">
+        <p class="well">
+    本イベントは html5j.org によって開催されます。入力された個人情報は、登録者本人の同意がない限り本イベントの運営のみに利用し、他の目的での利用およびイベント運営に関わる第三者機関以外への開示、提供をすることはありません。
+        </p>
+        <label class="checkbox">
+          <input type="checkbox" name="confirm" id="confirm_" value="yes" required>
+          同意する
+        </label>
+      </div>
+    </div>
+
+
+	  <div class="control-group">
+      <div class="controls">
+        <button class="btn btn-primary" type="submit">登録する</button>
+      </div>
+    </div>
+  </form>
+</section>

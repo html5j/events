@@ -1,0 +1,87 @@
+
+
+<section>
+{% if email %}
+	<h2 class="page-header">HTML5 Conference 2012 セッション参加登録ページ</h2>
+	You're certified as {{ email }}.
+	<div class="alert alert-error">
+	  こちらで参加登録頂いた場合でも、当日の会場の状況により聴講できない場合があります。
+	  また、以下のプログラム内容は、当日までに変更になることがあります。あらかじめご了承ください。
+	</div>
+{% else %}
+ 	<h2 class="page-header">HTML5 Conference 2012 プログラム</h2>
+	<div class="alert alert-error">
+	  以下のプログラム内容は、当日までに変更になることがあります。あらかじめご了承ください。
+	</div>
+{% endif %}
+
+{% if email %} <form class="form-horizontal" method="post" action="reg_confirm.html"> {% endif %}
+<table class="table table-bordered">
+	<thead>
+		<tr>
+			<th width="12%"></th>
+			<th width="22%">藤原洋記念ホール<br>全般系</th>
+			<th width="22%">多目的教室1<br>デザイン/tool系</th>
+			<th width="22%">多目的教室2<br>開発者系</th>
+			<th width="22%">多目的教室3<br>上級者系</th>
+		</tr>
+	</thead>
+	<tbody>
+{% for slot in progdic %}
+	<tr>
+		{% if slot.sessions %}
+		<td>
+		{% else %}
+		<td class="break">
+		{% endif %}
+	{{ slot.timeslot }}
+		</td>
+		{% if slot.sessions %}
+			{% for session in slot.sessions %}
+				<td class="session">
+					<a href="#" class="session_title" title="{{session.title}}" data-content="{{session.description}}">{{ session.title }}</a>
+					{% for id in session.speakers %}
+						{% for speaker in speadic %}
+							{% ifequal id speaker.id %}
+							<div class="speaker">{{ speaker.name }} ({{speaker.company}})</div>
+							{% endifequal %}
+						{% endfor %}
+					{%endfor%}
+
+					{% if email %}<br><br><input type="radio" name="slot_{{slot.slot_id}}" value="{{session.session_id}}"> 参加{% endif %}
+				</td>
+			{% endfor %}
+			{% if slot.sessions|length_is:"1" %}
+				<td class="empty" colspan="3"></td>
+			{% endif %}
+		{% else %}
+			<td class="break" colspan="4">{{ slot.title }}</td>
+		{% endif %}
+	</tr>
+{% endfor %}
+	</tbody>
+</table>
+{% if email %}
+	<div class="control-group">
+		<div class="controls">
+			<button class="btn btn-primary" type="submit">参加登録する</button>
+		</div>
+	</div>
+	</form>
+{% endif %}
+
+</section>
+
+<script>
+$(".session_title").popover({"placement":"bottom"});
+</script>
+
+<!-- 
+<section>
+  <h2 class="page-header">タイトル</h2>
+
+  <p>
+    ...
+  </p>
+</section>
+ -->

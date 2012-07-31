@@ -1,0 +1,57 @@
+<h2>Chrome + HTML5 Conference 申し込み内容確認ページ</h2>
+
+{% if regist %}
+
+<p>
+以下の情報で登録します。宜しいですか？<br>(修正する場合は、ブラウザの「戻る」ボタンで前の画面に戻ってください)
+</p>
+
+
+<p>
+名前：{{ name|escape }}
+</p>
+<p>
+e-mail：{{ email|escape }}
+</p>
+<p>
+所属：{{ belonging|escape }}
+</p>
+<p>
+職種：{% for cat in category %} {{ cat }} {% endfor %}
+</p>
+<p>
+性別：{{ sex }}
+</p>
+<p>
+興味のあるトラック：{% for t in track %} {{ t }} {% endfor %}
+</p>
+<p>
+ハンズオンには参加しますか？： {{ handson }}
+</p>
+<p>
+ライトニングトークには参加しますか？： {{ lt }}
+</p>
+<p>
+コメント<br>
+{{ comment|escape }}
+</p>
+</p>
+<form method="post" action="registration.html">
+  <input type="hidden" name="name" value="{{ name }}">
+  <input type="hidden" name="email" value="{{ email }}">
+  <input type="hidden" name="belonging" value="{{ belonging }}">
+  {% for cat in category %}
+  <input type="hidden" name="category" value="{{ cat }}">
+  {% endfor %}
+  <input type="hidden" name="sex" value="{{ sex }}">
+  {% for t in track %}
+  <input type="hidden" name="track" value="{{ t }}">
+  {% endfor %}
+  <input type="hidden" name="handson" value="{{ handson }}">
+  <input type="hidden" name="lt" value="{{ lt }}">
+  <input type="hidden" name="comment" value="{{ comment }}">
+  <input type="hidden" name="confirm" value="yes">
+  <input type="submit" value="登録する">
+</form>
+
+{% endif %}

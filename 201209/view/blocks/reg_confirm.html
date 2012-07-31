@@ -1,0 +1,16 @@
+<section>
+  <h2 class="page-header">登録内容確認</h2>
+  <p>以下の内容で登録します。よろしいですか？</p>
+  <form method="post" action="reg_done.html">
+  	<dl>
+  		{% for slot in slots %}
+  		<dt>{{ slot.time }}</dt>
+  		<dd>{{ slot.title }} (id = {{slot.id }})</dd>
+  		{% endfor %}
+  	</dl>
+  	<!-- [TODO] hiddenでパラメータを渡す？（渡さないでもいいかも。。。） -->
+  	<button class="btn btn-primary">この内容で登録</button>
+  	<a class="btn" href="reg_program.html">入力をやり直す</a>
+  </form>
+
+</section>

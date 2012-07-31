@@ -1,0 +1,141 @@
+<h2>Chrome+HTML5 Conference プログラム</h2>
+
+<p>
+今回のカンファレンスでは、2つのトラック（デザイナートラック/プログラマートラック）とハンズオンを開催します。
+</p>
+
+<h3><a name="keynote">基調講演 (9:30-10:00) 会場：Yedo Cafe</a></h3>
+<table>
+<thead>
+    <tr>
+      <th colspan="3">基調講演</th>
+    </tr>
+</thead>
+<tbody>
+<tr>
+<td class=speaker>
+及川 卓也（グーグル株式会社)／白石 俊平（HTML5 Developers JP）
+</td>
+<td class=description>
+</td>
+<td class=slide>
+  &nbsp;<a href="https://docs.google.com/present/edit?id=0Afz5Dw63IZCSZGZ3bXNjN3ZfMzMyZzNzNDViZjc&hl=en_US">資料</a>
+  &nbsp;<a href="http://www.youtube.com/watch?v=ULLYD3kyynI#t=17m00s">動画</a>
+</tr>
+</tbody>
+</table>
+
+
+
+<h3><a name="track_a">デザイナートラック (10:00-16:45) 会場：Hanabi</a></h3>
+
+<p>マークアップエンジニア/デザイナーの方を対象としたトラックです。HTML5の基礎知識からタグの使い方、CSS3によるデザイン、SVGなどに関するセッションがあります。</p>
+<table>
+{% for p in program.A %}
+  <thead>
+    <tr>
+      <th colspan="3">{{ p.name }} ({{ p.timetable }})</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class=speaker>{{ p.speaker }} </td>
+      <td class=description>{{ p.description }} </td>
+      <td class=slide>
+        {% if p.slide %}
+        &nbsp;<a href="{{ p.slide }}">資料</a>
+        {% endif %}
+        {% if p.movie %}
+        &nbsp;<a href="{{ p.movie }}">動画</a>
+        {% endif %}
+        {% if p.commentary %}
+        &nbsp;<a href="{{ p.commentary }}">解説</a>
+        {% endif %}
+        {% if p.demo %}
+        &nbsp;<a href="{{ p.demo }}">デモ</a>
+        {% endif %}  
+      </td>
+    </tr>
+  </tbody>
+{% endfor %}
+</table>
+
+<h3><a name="track_b">プログラマートラック (10:00-16:45) 会場：Yedo Cafe</a></h3>
+<p>JavaScriptプログラマーの方を対象としたトラックです。Chrome Web Store、Chrome Developer Toolsの紹介に加え、HTML5を使ったウェブアプリ開発、高速化テクニックなどに関するセッションがあります。</p>
+<table>
+{% for p in program.B %}
+  <thead>
+    <tr>
+      <th colspan="3">{{ p.name }} ({{ p.timetable }})</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class=speaker>{{ p.speaker }} </td>
+      <td class=description>{{ p.description }} </td>
+      <td class=slide>
+        {% if p.slide %}
+        &nbsp;<a href="{{ p.slide }}">資料</a>
+        {% endif %}
+        {% if p.movie %}
+        &nbsp;<a href="{{ p.movie }}">動画</a>
+        {% endif %}
+        {% if p.commentary %}
+        &nbsp;<a href="{{ p.commentary }}">解説</a>
+        {% endif %}
+        {% if p.demo %}
+        &nbsp;<a href="{{ p.demo }}">デモ</a>
+        {% endif %}       </td>
+    </tr>
+  </tbody>
+{% endfor %}
+</table>
+
+<h3><a name="handson">ハンズオン (13:00-16:45) 会場：Kabuki</a></h3>
+<p>「HTML5/CSS3/JavaScriptを用いたリッチUI Webサイト製作に興味はあるけど、詳しくは分からない」そんな方のために2つのハンズオンを開催します。</p>
+<table>
+{% for p in program.HandsOn %}
+  <thead>
+    <tr>
+      <th colspan="2">{{ p.name }} ({{ p.timetable }})</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class=speaker>{{ p.speaker }} </td>
+      <td class=description>{{ p.description }} </td>
+    </tr>
+  </tbody>
+{% endfor %}
+</table>
+
+<h3>
+<a name="lt">懇親会 (17:30-) 会場：Yedo Cafe</a>
+</h3>
+<table>
+<thead>
+    <tr>
+      <th colspan="2">ライトニングトーク大会</th>
+    </tr>
+</thead>
+<tbody>
+<tr>
+<td class=speaker>
+モデレータ：
+河内 典子 (アイティメディア)
+</td>
+<td class=description>
+  <ol>
+    <li>石本光明：<a href="http://blog.justoneplanet.info/presentation/eew/">緊急地震速報 by Extensionを開発して！</a></li>
+    <li>小俣 博司：<a href="http://www.slideshare.net/homata/html5-for-mobile-8945775">HTML5 for Mobile</a></li>
+    <li>わたなべ：<a href="https://docs.google.com/present/edit?id=0Aa70Ky0zKteCZGNxY2Zuc2JfMjFmNG0zcGJmZA&hl=ja">mixer2っていうJavaテンプレートエンジン作ってたらもっとすごいJsoupってやつを外人が 作っててヘコんだけどめげずにがんばるでござるの巻</a></li>
+    <li>澤　紀彦：<a href="http://nakamods320yen.appspot.com/static/wsd.html">スマホ向けwebアプリとWeb SQL Databaseでのオフライン対応</a></li>
+    <li>ひらいさだあき：<a href="http://sada-samplecode.googlecode.com/svn/trunk/slides/20110821_HTML5_WebFonts/index.html">Enjoy Web Fonts!!</a></li>
+    <li>原田定治：<a href="http://www.slideshare.net/georz/lt20110821">学生向け会社説明会でHTML5を弄んでみた</a></li>
+    <li>木村　篤彦：<a href="http://www.slideshare.net/atskimura/google-wavecomeeting-at-chromehtml5-conference">さようなら "Google Wave"  あとは "co-meeting" にまかせてください</a></li>
+    <li>山崎富美：<a href="http://www.slideshare.net/siva001/html5-rangers">HTML5レンジャー！</a></li>
+  </ol>
+</td>
+</tr>
+</tbody>
+</table>

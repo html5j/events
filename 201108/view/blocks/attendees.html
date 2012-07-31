@@ -1,0 +1,25 @@
+<h2>Chrom HTML5 Conference</h2>
+#chrome + .html5
+<p class=red>
+このページは、なくてもいいかも（抽選で、別途メールを送ることが前提だし)
+</p>
+<table>
+  <thead>
+    <tr><td>名前</td><td>ニックネーム</td><td>e-mail</td></tr>
+  </thead>
+  <tbody>
+{% for attend in attendees %}
+    <tr>
+      <td>{{ attend.name }} </td>
+      <td>{{ attend.nickname }} </td>
+      <td>{{ attend.email }} </td>
+      {{ attend.key.id }}
+      <td>
+        <form method="post" action="delete_confirm/{{ attend.key.id }}/">
+          <input type="submit" value="削除">
+        </form>
+    </tr>
+{% endfor %}
+  </tbody>
+</table>
+
