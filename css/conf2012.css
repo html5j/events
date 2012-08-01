@@ -109,12 +109,6 @@ header {
 #social {
   float: right;
 }
-/*
-#social > div{
-  margin-left: 10px;
-  float: left;
-}
-*/
 
 #socialButtons li {
   padding: 0;
@@ -132,10 +126,10 @@ header {
   width: 105px;
 }
 
-.required {
-  color: red;
-}
-
+/**
+ * style's for table design (program page)
+ *
+ */
 th {
   background: #efefef;
 }
@@ -173,10 +167,20 @@ td.break {
   font-size: 0.75em;
 }
 
+/**
+ * MISC
+ *
+ */
+
 .spacer {
   height: 15px;
   clear:both;
 }
+
+.required {
+  color: red;
+}
+
 
 ._test {
   display: none;

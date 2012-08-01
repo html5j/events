@@ -1,0 +1,12 @@
+<section>
+	<h2 class="page-header">スピーカー一覧</h2>
+</section>
+
+<section class="speakers">
+	<dl>
+	{% for speaker in speadic %}
+		<dt>{{ speaker.name }} ({{ speaker.company }})</dt>
+		<dd>{{ speaker.description }}</dd>
+	{% endfor %}
+	</dl>
+</section>

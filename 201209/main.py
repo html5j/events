@@ -73,8 +73,8 @@ volunteer page
 """
 class VolunteerPage(webapp.RequestHandler):
   def get(self):
-    path = os.path.join(os.path.dirname(__file__), 'view/volunteer.html')
-    self.response.out.write(template.render(path, {'page':'volunteer'}))
+    path = os.path.join(os.path.dirname(__file__), 'view/routing.html')
+    self.response.out.write(template.render(path, {'filename': 'blocks/volunteer.html', 'page':'volunteer'}))
 
 """
 program page
@@ -87,16 +87,31 @@ class ProgramPage(webapp.RequestHandler):
     speakers = open(os.path.join(os.path.dirname(__file__), 'datas/speaker.json')).read()
     speadic = simplejson.loads(speakers)
 
-    path = os.path.join(os.path.dirname(__file__), 'view/program.html')
-    self.response.out.write(template.render(path, {'page':'program', 'program': program, 'progdic': progdic, 'speadic': speadic}))
+    path = os.path.join(os.path.dirname(__file__), 'view/routing.html')
+    self.response.out.write(template.render(path, {'filename': 'blocks/program.html', 'page':'program', 'program': program, 'progdic': progdic, 'speadic': speadic}))
+
+"""
+speaker's page
+"""
+
+class SpeakerPage(webapp.RequestHandler):
+  def get(self):
+    program = open(os.path.join(os.path.dirname(__file__), 'datas/program.json')).read()
+    progdic = simplejson.loads(program)
+    speakers = open(os.path.join(os.path.dirname(__file__), 'datas/speaker.json')).read()
+    speadic = simplejson.loads(speakers)
+    path = os.path.join(os.path.dirname(__file__), 'view/routing.html')
+    self.response.out.write(template.render(path, {'filename': 'blocks/speaker.html', 'page':'speaker', 'program': program, 'progdic': progdic, 'speadic': speadic}))
+
 
 """
 faq page
 """
 class FaqPage(webapp.RequestHandler):
   def get(self):
-    path = os.path.join(os.path.dirname(__file__), 'view/faq.html')
-    self.response.out.write(template.render(path, {'page':'faq'}))
+    path = os.path.join(os.path.dirname(__file__), 'view/routing.html')
+    self.response.out.write(template.render(path, {'filename': 'blocks/faq.html', 'page':'faq'}))
+
 
 """
 registration pages
@@ -206,6 +221,7 @@ def main():
     ('/conference/2012/09/sponsor.html', SponsorPage),
     ('/conference/2012/09/volunteer.html', VolunteerPage),
     ('/conference/2012/09/program.html', ProgramPage),
+    ('/conference/2012/09/speaker.html', SpeakerPage),
     ('/conference/2012/09/faq.html', FaqPage),
     ('/conference/2012/09/reg_top.html', RegTopPage),
     ('/conference/2012/09/reg_program.html', RegProgramPage),
