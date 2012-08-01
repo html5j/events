@@ -1,0 +1,169 @@
+[
+	{
+		"id": 0,
+		"name": "小山田 晃浩",
+		"ruby": "おやまだ あきひろ",
+		"company": "株式会社ピクセルグリッド",
+		"description": "1982年生まれ。（株）ピクセルグリッドのフロントエンドエンジニア。HTML、CSS、JavaScript、SVGなどを駆使したUI実装を行なっている。雑誌や書籍の執筆や講演も多数行なっており、主な著書に「Webデザイナー/コーダーのためのHTML5コーディング入門」(エクスナレッジ:共著)、「CSS3デザイン プロフェッショナルガイド」(毎日コミュニケーションズ:共著)などがある。Microsoft MVP for Internet Exploper 2011, 2012
+
+所属 
+http://www.pxgrid.com/
+blog
+http://yomotsu.net/blog/"
+	},
+	{
+		"id": 1,
+		"name": "及川 卓也",
+		"ruby": "おいかわ たくや",
+		"company": "Google",
+		"description": "及川 卓也（おいかわ たくや）は Google のエンジニアリングマネージャです。Google Chrome、Google Chrome OS や Google 日本語入力などのクライアントの開発チームを率いています。以前は汎用オペレーティングシステムの開発に携わっていました。"
+	},
+	{
+		"id": 2,
+		"name": "こもり まさあき",
+		"ruby": "こもり まさあき",
+		"company": "フリーランス",
+		"description": "1972年生まれのフリーランス。1990年代前半より都内某社にて、DTPの入出力業務、デザイン業務、ネットワーク関連業務に並行して従事。会社を退職後、そのままフリーランスの道へ。案件ごとに業務内容や立ち位置が異なるため、職域的な肩書きはなし。"
+	},
+	{
+		"id": 3,
+		"name": "白石 俊平",
+		"ruby": "しらいし しゅんぺい",
+		"company": "CAモバイル",
+		"description": ""
+	},
+	{
+		"id": 4,
+		"name": "矢倉 正隆",
+		"ruby": "やくら まさたか",
+		"company": "ミツエーリンクス",
+		"description": ""
+	},
+	{
+		"id": 5,
+		"name": "羽田野 太巳 ",
+		"ruby": "はたの ふとみ",
+		"company": "有限会社 Futomi",
+		"description": ""
+	},
+	{
+		"id": 6,
+		"name": "???",
+		"ruby": "???",
+		"company": "DeNA",
+		"description": ""
+	},
+	{
+		"id": 7,
+		"name": "浅井 ... ",
+		"ruby": "あさい ...",
+		"company": "Mozilla Japan",
+		"description": ""
+	},
+	{
+		"id": 8,
+		"name": "??? ",
+		"ruby": "???",
+		"company": "NHN",
+		"description": ""
+	},
+	{
+		"id": 9,
+		"name": "北村 英志",
+		"ruby": "きたむら えいじ",
+		"company": "Google",
+		"description": ""
+	},
+	{
+		"id": 10,
+		"name": "小松 健作",
+		"ruby": "こまつ けんさく",
+		"company": "NTTコミュニケーションズ",
+		"description": ""
+	},
+	{
+		"id": 11,
+		"name": "??? ",
+		"ruby": "???",
+		"company": "GREE",
+		"description": ""
+	},
+	{
+		"id": 12,
+		"name": "???",
+		"ruby": "???",
+		"company": "Cyber Agent",
+		"description": ""
+	},
+	{
+		"id": 13,
+		"name": "???",
+		"ruby": "???",
+		"company": "mixi",
+		"description": ""
+	},
+	{
+		"id": 14,
+		"name": "轟 ???",
+		"ruby": "とどろき ???",
+		"company": "Adobe",
+		"description": ""
+	},
+	{
+		"id": 15,
+		"name": "上条 ???",
+		"ruby": "かみじょう ???",
+		"company": "Adobe",
+		"description": ""
+	},
+	{
+		"id": 16,
+		"name": "春日井 ???",
+		"ruby": "かすがい ???",
+		"company": "Microsoft",
+		"description": ""
+	},
+	{
+		"id": 17,
+		"name": "太田 昌吾",
+		"ruby": "おおた しょうご",
+		"company": "クックパッド",
+		"description": ""
+	},
+	{
+		"id": 18,
+		"name": "小久保 ???",
+		"ruby": "こくぼ ???",
+		"company": "Google",
+		"description": ""
+	},
+	{
+		"id": 19,
+		"name": "新野 淳一",
+		"ruby": "にいの じゅんいち",
+		"company": "publickey",
+		"description": ""
+	},
+	{
+		"id": 20,
+		"name": "吉川 徹",
+		"ruby": "よしかわ とおる",
+		"company": "CAモバイル",
+		"description": ""
+	},
+	{
+		"id": 21,
+		"name": "あんどう やすし",
+		"ruby": "あんどう やすし",
+		"company": "mixi",
+		"description": ""
+	},
+	{
+		"id": 22,
+		"name": "ともちゃん",
+		"ruby": "ともちゃん",
+		"company": "ITMedia",
+		"description": ""
+	}
+
+]
