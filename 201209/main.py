@@ -148,6 +148,7 @@ class RegProgramPage(webapp.RequestHandler):
     progdic = simplejson.loads(program)
     speakers = open(os.path.join(os.path.dirname(__file__), 'datas/speaker.json')).read()
     speadic = simplejson.loads(speakers)
+    email = user.email()
 
     path = os.path.join(os.path.dirname(__file__), 'view/program.html')
     self.response.out.write(template.render(path, {'email': email, 'page':'reg_program', 'program': program, 'progdic': progdic, 'speadic': speadic}))

@@ -1,11 +1,16 @@
 <section>
-  <h2 class="page-header">プロフィールを入力してください</h2>
-
+  <h2 class="page-header">基本情報入力</h2>
 
   <form class="form-horizontal" method="post" action="reg_program.html">
+    <!--
   	<fieldset>
       <legend></legend>
     </fieldset>
+    -->
+    <h3>プロフィール情報</h3>
+    <p>
+      <span class="required">*</span> : 必須入力項目
+    </p>
     <div class="control-group">
   	  <label class="control-label" for="label_">e-mail</label>
       <div class="controls">
@@ -20,43 +25,49 @@
       </div>
     </div>
     <div class="control-group">
-      <label class="control-label" for="ruby_">ふりがな（必須）<span class="required">*</span></label>
+      <label class="control-label" for="confirm_">以下のプライバシーポリシーをご一読ください。（必須）<span class="required">*</span></label>
       <div class="controls">
-        <input type="text" name="ruby" id="ruby_" required>
-        <p class="help-block">例）やまだ　たろう</p>
+        <p class="well">
+          本イベントは html5j.org によって開催されます。入力された個人情報は、本イベントの運営のみに利用し、他の目的で利用することはありません。
+        </p>
+        <label class="checkbox">
+          <input type="checkbox" name="confirm" id="confirm_" value="yes" required>
+          同意する
+        </label>
+      </div>
+    </div>
+    <h3>アンケート情報</h3>
+    <p>
+      以下のアンケートにご協力ください
+    </p>
+    <div class="control-group">
+      <label class="control-label" for="gender">性別</label>
+      <div class="controls">
+        <label class="radio inline" for="gender_male"><input type="radio" name="gender" id="gender_male" value="male"> 男性</label>
+        <label class="radio inline" for="gender_female"><input type="radio" name="gender" id="gender_female" value="female"> 女性</label>
       </div>
     </div>
     <div class="control-group">
-      <label class="control-label" for="gender">性別（必須）<span class="required">*</span></label>
+      <label class="control-label" for="generation_">年代</label>
       <div class="controls">
-        <label class="radio inline" for="gender_male"><input type="radio" name="gender" id="gender_male" value="male" required> 男性</label>
-        <label class="radio inline" for="gender_female"><input type="radio" name="gender" id="gender_female" value="female" required> 女性</label>
+        <label class="radio" for="generation_kids"><input type="radio" name="generation" id="generation_kids" value="kids">9歳以下</label>
+        <label class="radio" for="generation_teen"><input type="radio" name="generation" id="generation_teen" value="teen">10〜19歳</label>
+        <label class="radio" for="generation_twentieth"><input type="radio" name="generation" id="generation_twentieth" value="twentieth">20〜29歳</label>
+        <label class="radio" for="generation_thirtieth"><input type="radio" name="generation" id="generation_thirtieth" value="thirtieth">30〜39歳</label>
+        <label class="radio" for="generation_fourtieth"><input type="radio" name="generation" id="generation_fourtieth" value="fourtieth">40〜49歳</label>
+        <label class="radio" for="generation_fiftieth"><input type="radio" name="generation" id="generation_fiftieth" value="fiftieth">50〜59歳</label>
+        <label class="radio" for="generation_silver"><input type="radio" name="generation" id="generation_silver" value="silver">60歳以上</label>
       </div>
     </div>
     <div class="control-group">
-      <label class="control-label" for="generation_">年代（必須）<span class="required">*</span></label>
+      <label class="control-label" for="occupation_">職種</label>
       <div class="controls">
-        <select name="generation" id="generation_" required>
-          <option value="kids">9歳以下</option>
-          <option value="teen">10〜19歳</option>
-          <option value="twentieth" selected>20〜29歳</option>
-          <option value="thirtieth">30〜39歳</option>
-          <option value="fourtieth">40〜49歳</option>
-          <option value="fiftieth">50〜59歳</option>
-          <option value="silver">60歳以上</option>
-        </select>
-      </div>
-    </div>
-    <div class="control-group">
-      <label class="control-label" for="occupation_">職種（必須）<span class="required">*</span></label>
-      <div class="controls">
-        <select name="occupation" id="occupation_" required>
-          <option value="programmer">プログラマー</option>
-          <option value="designer">デザイナー</option>
-          <option value="coder">HTMLコーダー</option>
-          <option value="director">Webディレクター</option>
-          <option value="other">その他</option>
-        </select>
+        <label class="radio" for="occupation_frontend"><input type="radio" name="occupation" id="occupation_frontend" value="frontend">フロントエンドプログラマー</label>
+        <label class="radio" for="occupation_serverside"><input type="radio" name="occupation" id="occupation_serverside" value="serverside">サーバーサイドプログラマー</label>
+        <label class="radio" for="occupation_designer"><input type="radio" name="occupation" id="occupation_designer" value="designer">デザイナー</label>
+        <label class="radio" for="occupation_coder"><input type="radio" name="occupation" id="occupation_coder" value="coder">コーダー</label>
+        <label class="radio" for="occupation_director"><input type="radio" name="occupation" id="occupation_director" value="director">Webディレクター</label>
+        <label class="radio" for="occupation_other"><input type="radio" name="occupation" id="occupation_other" value="other">その他</label>
       </div>
     </div>
     <div class="control-group">
@@ -67,16 +78,20 @@
           Web記事（ニュースサイト、ブログなど）
         </label>
         <label class="checkbox">
-          <input type="checkbox" name="how" id="how_" value="social">
-          ソーシャルメディア（twitter, facebook, Google plusなど）
+          <input type="checkbox" name="how" id="how_" value="twitter">
+          twitter
+        </label>
+        <label class="checkbox">
+          <input type="checkbox" name="how" id="how_" value="facebook">
+          facebook
+        </label>
+        <label class="checkbox">
+          <input type="checkbox" name="how" id="how_" value="other_social">
+          その他のソーシャルメディア
         </label>
         <label class="checkbox">
           <input type="checkbox" name="how" id="how_" value="ml_html5j">
           メーリングリスト（html5j.org）
-        </label>
-        <label class="checkbox">
-          <input type="checkbox" name="how" id="how_" value="ml_html5j">
-          メーリングリスト（html5j.org以外）
         </label>
         <label class="checkbox">
           <input type="checkbox" name="how" id="how_" value="friends">
@@ -85,18 +100,6 @@
         <label class="checkbox">
           <input type="checkbox" name="how" id="how_" value="other">
           その他
-        </label>
-      </div>
-    </div>
-    <div class="control-group">
-      <label class="control-label" for="confirm_">以下のプライバシーポリシーをご一読ください。（必須）<span class="required">*</span></label>
-      <div class="controls">
-        <p class="well">
-    本イベントは html5j.org によって開催されます。入力された個人情報は、登録者本人の同意がない限り本イベントの運営のみに利用し、他の目的での利用およびイベント運営に関わる第三者機関以外への開示、提供をすることはありません。
-        </p>
-        <label class="checkbox">
-          <input type="checkbox" name="confirm" id="confirm_" value="yes" required>
-          同意する
         </label>
       </div>
     </div>
