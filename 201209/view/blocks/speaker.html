@@ -3,10 +3,19 @@
 </section>
 
 <section class="speakers">
-	<dl>
+	<table class="table table-bordered">
 	{% for speaker in speadic %}
-		<dt>{{ speaker.name }} ({{ speaker.company }})</dt>
-		<dd>{{ speaker.description }}</dd>
+		<tr><td width="100px" style="text-align:center;">
+			{%if speaker.icon %} <img src="/images/201209/speaker/{{speaker.icon}}">{% else %}No<br>image{% endif %}
+		</td>
+			<td>
+				<dl>
+				<dt>{{ speaker.name }} ({{ speaker.company }})</dt>
+				<dd>{{ speaker.description|escape }}</dd>
+				</dl>
+			</td>
+		</tr>
 	{% endfor %}
+	</table>
 	</dl>
 </section>

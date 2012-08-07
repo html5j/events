@@ -167,6 +167,15 @@ td.break {
   font-size: 0.75em;
 }
 
+span.session_title,span.session_title_phone {
+  color: #08c;
+  font-weight: bold;
+}
+div.session_description {
+  margin: 0.75em 1em;
+  font-size: 0.9em;
+}
+
 /**
  * MISC
  *
