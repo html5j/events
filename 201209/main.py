@@ -35,7 +35,7 @@ Sessions Model
 """
 class Sessions(db.Model):
   name = db.StringProperty(required=True)
-  
+
 
 """
 Subscribers Model
@@ -117,8 +117,8 @@ class FaqPage(webapp.RequestHandler):
 registration pages
 """
 #class RedirectPage(webapp.RequestHandler):
-def loginRequired(self):
-  str = (u"<a href=\"%s\">login</a>" % users.create_login_url("/conference/2012/09/reg_top.html"))
+def loginRequired(self, page):
+  str = (u"<a href=\"%s\">login</a>" % users.create_login_url(page))
   path = os.path.join(os.path.dirname(__file__), 'view/login_required.html')
   self.response.out.write(template.render(path, {'page':'login_required', 'mesg':str}))
 
@@ -129,19 +129,19 @@ class RegTopPage(webapp.RequestHandler):
   def get(self):
     user = users.get_current_user()
     if not user:
-      loginRequired(self)
+      loginRequired(self, "/conference/2012/09/reg_top.html")
       return
 
     email = user.email()
     path = os.path.join(os.path.dirname(__file__), 'view/reg_top.html')
     self.response.out.write(template.render(path, {'page':'reg_top', 'email':email}))
-  
+
 # program
 class RegProgramPage(webapp.RequestHandler):
   def post(self):
     user = users.get_current_user()
     if not user:
-      loginRequired(self)
+      loginRequired(self, "/conference/2012/09/reg_program.html")
       return
 
     program = open(os.path.join(os.path.dirname(__file__), 'datas/program.json')).read()
@@ -160,7 +160,7 @@ class RegProgramPage(webapp.RequestHandler):
   def get(self):
     user = users.get_current_user()
     if not user:
-      loginRequired(self)
+      loginRequired(self, "/conference/2012/09/reg_program.html")
       return
 
     email = user.email()
@@ -181,7 +181,7 @@ class RegConfirmPage(webapp.RequestHandler):
   def post(self):
     user = users.get_current_user()
     if not user:
-      loginRequired(self)
+      loginRequired(self, "/conference/2012/09/reg_program.html")
       return
 
     email = user.email()
@@ -193,7 +193,7 @@ class RegDonePage(webapp.RequestHandler):
   def post(self):
     user = users.get_current_user()
     if not user:
-      loginRequired(self)
+      loginRequired(self, "/conference/2012/09/reg_program.html")
       return
 
     email = user.email()
