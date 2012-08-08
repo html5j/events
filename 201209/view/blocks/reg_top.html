@@ -3,16 +3,16 @@
 
   <form class="form-horizontal" method="post" action="reg_program.html">
     <!--
-  	<fieldset>
+    <fieldset>
       <legend></legend>
     </fieldset>
     -->
     <h3>プロフィール情報</h3>
     <p>
-      <span class="required">*</span> : 必須入力項目
+      &nbsp;&nbsp;<span class="required">*</span> : 必須入力項目
     </p>
     <div class="control-group">
-  	  <label class="control-label" for="label_">e-mail</label>
+      <label class="control-label" for="label_">e-mail</label>
       <div class="controls">
         <input type="email" name="email" value="{{email}}" id="label_" readonly>
       </div>
@@ -25,7 +25,7 @@
       </div>
     </div>
     <div class="control-group">
-      <label class="control-label" for="confirm_">以下のプライバシーポリシーをご一読ください。（必須）<span class="required">*</span></label>
+      <label class="control-label" for="confirm_">以下のプライバシー<br>ポリシーを<br>ご一読ください。<br>（必須）<span class="required">*</span></label>
       <div class="controls">
         <p class="well">
           本イベントは html5j.org によって開催されます。入力された個人情報は、本イベントの運営のみに利用し、他の目的で利用することはありません。
@@ -38,7 +38,7 @@
     </div>
     <h3>アンケート情報</h3>
     <p>
-      以下のアンケートにご協力ください
+      &nbsp;&nbsp;以下のアンケートにご協力ください
     </p>
     <div class="control-group">
       <label class="control-label" for="gender">性別</label>
@@ -71,41 +71,41 @@
       </div>
     </div>
     <div class="control-group">
-      <label class="control-label" for="how_">このカンファレンスを何でしりましたか？<br>(複数回答可)</label>
+      <label class="control-label" for="how_">このカンファレンスを最初に何で<br>しりましたか？</label>
       <div class="controls">
-        <label class="checkbox">
-          <input type="checkbox" name="how" id="how_" value="web">
+        <label class="radio" for="how_web">
+          <input type="radio" name="how" id="how_web" value="web">
           Web記事（ニュースサイト、ブログなど）
         </label>
-        <label class="checkbox">
-          <input type="checkbox" name="how" id="how_" value="twitter">
+        <label class="radio" for="how_twitter">
+          <input type="radio" name="how" id="how_twitter" value="twitter">
           twitter
         </label>
-        <label class="checkbox">
-          <input type="checkbox" name="how" id="how_" value="facebook">
+        <label class="radio" for="how_facebook">
+          <input type="radio" name="how" id="how_facebook" value="facebook">
           facebook
         </label>
-        <label class="checkbox">
-          <input type="checkbox" name="how" id="how_" value="other_social">
+        <label class="radio" for="how_other_social">
+          <input type="radio" name="how" id="how_other_social" value="other_social">
           その他のソーシャルメディア
         </label>
-        <label class="checkbox">
-          <input type="checkbox" name="how" id="how_" value="ml_html5j">
+        <label class="radio" for="how_ml_html5j">
+          <input type="radio" name="how" id="how_ml_html5j" value="ml_html5j">
           メーリングリスト（html5j.org）
         </label>
-        <label class="checkbox">
-          <input type="checkbox" name="how" id="how_" value="friends">
+        <label class="radio" for="how_friends">
+          <input type="radio" name="how" id="how_friends" value="friends">
           知人からの紹介
         </label>
-        <label class="checkbox">
-          <input type="checkbox" name="how" id="how_" value="other">
+        <label class="radio" for="how_other">
+          <input type="radio" name="how" id="how_other" value="other">
           その他
         </label>
       </div>
     </div>
 
 
-	  <div class="control-group">
+    <div class="control-group">
       <div class="controls">
         <button class="btn btn-primary" type="submit">登録する</button>
       </div>
