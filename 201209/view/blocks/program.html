@@ -2,139 +2,154 @@
 
 <section>
 {% if email %}
-	<h2 class="page-header">HTML5 Conference 2012 セッション参加希望登録ページ</h2>
-	You're certified as {{ email }}.
-	<div class="alert alert-error">
+  <h2 class="page-header">HTML5 Conference 2012 セッション参加希望登録ページ</h2>
+  You're certified as {{ email }}.
+  <div class="alert alert-error">
     こちらで参加登録頂いた場合でも、当日の会場の席を確約するものではありません。 また、以下のプログラム内容は、当日までに変更になることがあります。あらかじめご了承ください。
-	</div>
+  </div>
 {% else %}
- 	<h2 class="page-header">HTML5 Conference 2012 プログラム</h2>
-	<div class="alert alert-error">
-	  以下のプログラム内容は、当日までに変更になることがあります。あらかじめご了承ください。
-	</div>
+   <h2 class="page-header">HTML5 Conference 2012 プログラム</h2>
+  <div class="alert alert-error">
+    以下のプログラム内容は、当日までに変更になることがあります。あらかじめご了承ください。
+  </div>
 {% endif %}
 
 <div class="hidden-phone">
-	{% if email %} <form class="form-horizontal" method="post" action="reg_confirm.html"> {% endif %}
-	<table class="table table-bordered">
-		<thead>
-			<tr>
-				<th width="12%"></th>
-				<th width="22%">藤原洋記念ホール<br>全般系</th>
-				<th width="22%">多目的教室1<br>デザイン/tool系</th>
-				<th width="22%">多目的教室2<br>開発者系</th>
-				<th width="22%">多目的教室3<br>上級者系</th>
-			</tr>
-		</thead>
-		<tbody>
-	{% for slot in progdic %}
-		<tr>
-			{% if slot.sessions %}
-			<td class="timeslot" {% if email %}rowspan="2"{% endif %}>
-			{% else %}
-			<td class="break">
-			{% endif %}
-				{{ slot.timeslot }}
-			</td>
-			{% if slot.sessions %}
-				{% for session in slot.sessions %}
-					<td class="session">
-						<span class="session_title" title="{{session.title}}" data-content="{{session.description}}">{{ session.title }}</span>
-						{% for id in session.speakers %}
-							{% for speaker in speadic %}
-								{% ifequal id speaker.id %}
-								<div class="speaker">{{ speaker.name }} ({{speaker.company}})</div>
-								{% endifequal %}
-							{% endfor %}
-						{%endfor%}
-					</td>
-				{% endfor %}
-				{% if slot.sessions|length_is:"1" %}
-					<td class="empty" colspan="3"></td>
-				{% endif %}
-				</tr>
-				<tr>
+  {% if email %} <form class="form-horizontal" method="post" action="reg_confirm.html"> {% endif %}
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th width="12%"></th>
+        <th width="22%">藤原洋記念ホール<br>全般系</th>
+        <th width="22%">多目的教室1<br>デザイン/tool系</th>
+        <th width="22%">多目的教室2<br>開発者系</th>
+        <th width="22%">多目的教室3<br>上級者系</th>
+      </tr>
+    </thead>
+    <tbody>
+  {% for slot in progdic %}
+    <tr>
+      {% if slot.sessions %}
+      <td class="timeslot" {% if email %}rowspan="2"{% endif %}>
+      {% else %}
+      <td class="break">
+      {% endif %}
+        {{ slot.timeslot }}
+      </td>
+      {% if slot.sessions %}
+        {% for session in slot.sessions %}
+          <td class="session">
+            <span class="session_title" title="{{session.title}}" data-content="{{session.description}}">{{ session.title }}</span>
+            {% for id in session.speakers %}
+              {% for speaker in speadic %}
+                {% ifequal id speaker.id %}
+                <div class="speaker">{{ speaker.name }} ({{speaker.company}})</div>
+                {% endifequal %}
+              {% endfor %}
+            {%endfor%}
+          </td>
+        {% endfor %}
+        {% if slot.sessions|length_is:"1" %}
+          <td class="empty" colspan="3"></td>
+        {% endif %}
+        </tr>
+        <tr>
 
-				{% if email %}
-				{% for session in slot.sessions %}
-					<td class="session_subscribe"><label for="session_{{session.session_id}}" class="checkbox"><div><input type="radio" name="slot_{{slot.slot_id}}" value="{{session.session_id}}" id="session_{{session.session_id}}"> 参加する</div></label></td>
-				{% endfor %}
-				{% if slot.sessions|length_is:"1" %}
-					<td class="empty" colspan="3"></td>
-				{% endif %}
-				{% endif %}
-				</tr>
-			{% else %}
-				<td class="break" colspan="4">{{ slot.title }}</td></tr>
-			{% endif %}
-		{% endfor %}
-		</tbody>
-	</table>
+        {% if email %}
+        {% for session in slot.sessions %}
+          <td class="session_subscribe"><label for="session_{{session.session_id}}" class="checkbox"><div><input type="radio" name="slot_{{slot.slot_id}}" value="{{session.session_id}}" id="session_{{session.session_id}}"> 参加する</div></label></td>
+        {% endfor %}
+        {% if slot.sessions|length_is:"1" %}
+          <td class="empty" colspan="3"></td>
+        {% endif %}
+        {% endif %}
+        </tr>
+      {% else %}
+        <td class="break" colspan="4">{{ slot.title }}</td></tr>
+      {% endif %}
+    {% endfor %}
+    </tbody>
+  </table>
 </div>
 <div class="visible-phone">
-	{% if email %} <form class="form-horizontal" method="post" action="reg_confirm.html"> {% endif %}
-		<!--
-		<thead>
-			<tr>
-				<th width="12%"></th>
-				<th width="22%">藤原洋記念ホール<br>全般系</th>
-				<th width="22%">多目的教室1<br>デザイン/tool系</th>
-				<th width="22%">多目的教室2<br>開発者系</th>
-				<th width="22%">多目的教室3<br>上級者系</th>
-			</tr>
-		</thead>
-		<tbody>
-		-->
-	{% for slot in progdic %}
-	<table class="table table-bordered">
-		<thead><tr><th>
-			{{ slot.timeslot }}
-			{% if not slot.sessions %}休憩{% endif %}
-		</th></tr></thead>
-		<tbody>
-		{% if slot.sessions %}
-			{% for session in slot.sessions %}
-				<tr><td>
-					<span class="session_title_phone" title="{{session.title}}">{{ session.title }}</span><br>
-					<div class="session_description">
-					{{ session.description }}
-					</div>
-					{% for id in session.speakers %}
-						{% for speaker in speadic %}
-							{% ifequal id speaker.id %}
-							<div class="speaker">{{ speaker.name }} ({{speaker.company}})</div>
-							{% endifequal %}
-						{% endfor %}
-					{%endfor%}
-				</td></tr>
+  {% if email %} <form class="form-horizontal" method="post" action="reg_confirm.html"> {% endif %}
+    <!--
+    <thead>
+      <tr>
+        <th width="12%"></th>
+        <th width="22%">藤原洋記念ホール<br>全般系</th>
+        <th width="22%">多目的教室1<br>デザイン/tool系</th>
+        <th width="22%">多目的教室2<br>開発者系</th>
+        <th width="22%">多目的教室3<br>上級者系</th>
+      </tr>
+    </thead>
+    <tbody>
+    -->
+  {% for slot in progdic %}
+  <table class="table table-bordered table-phone">
+    <thead><tr><th>
+      {{ slot.timeslot }}
+      {% if not slot.sessions %}休憩{% endif %}
+    </th></tr></thead>
+    <tbody>
+    {% if slot.sessions %}
+      {% for session in slot.sessions %}
+        <tr><td>
+          <p class="session-room"></p>
+          <span class="session_title_phone" title="{{session.title}}">{{ session.title }}</span><br>
+          <div class="session_description">
+          {{ session.description }}
+          </div>
+          {% for id in session.speakers %}
+            {% for speaker in speadic %}
+              {% ifequal id speaker.id %}
+              <div class="speaker">{{ speaker.name }} ({{speaker.company}})</div>
+              {% endifequal %}
+            {% endfor %}
+          {%endfor%}
+        </td></tr>
 
-				{% if email %}
-				<tr><td class="session_subscriber">
-					<label for="session_p{{session.session_id}}"><div><input type="radio" name="slot_{{slot.slot_id}}" value="{{session.session_id}}" id="session_p{{session.session_id}}"> 参加する</div></label>
-				</td></tr>
-				{% endif %}
-			{% endfor %}
-		{% endif %}
-		</tbody>
-	</table>
-	{% endfor %}
+        {% if email %}
+        <tr><td class="session_subscriber">
+          <label for="session_p{{session.session_id}}"><div><input type="radio" name="slot_{{slot.slot_id}}" value="{{session.session_id}}" id="session_p{{session.session_id}}"> 参加する</div></label>
+        </td></tr>
+        {% endif %}
+      {% endfor %}
+    {% endif %}
+    </tbody>
+  </table>
+  {% endfor %}
 </div>
 {% if email %}
-	<div class="control-group">
-		<div class="controls">
-			<button class="btn btn-primary" type="submit">参加登録する</button>
-		</div>
-	</div>
-	</form>
+  <div class="control-group">
+    <div class="controls">
+      <button class="btn btn-primary" type="submit">参加登録する</button>
+    </div>
+  </div>
+  </form>
 {% endif %}
 
 </section>
 
 <script>
-$(".session_title").popover({"placement":"bottom"});
+  (function(){
+    var rooms_ = [
+      "全般系（藤原洋記念ホール）",
+      "デザイン系（多目的教室1）",
+      "開発者系（多目的教室2）",
+      "上級者系（多目的教室3）"
+    ];
+    $("table.table-phone").each(function(i){
+      $(this).find("p.session-room").each(function(i){
+        $(this).text(rooms_[i]);
+      });
+    });
+
+    $(".session_title").popover({"placement":"bottom"});
+  }());
 </script>
 
-<!-- 
+<!--
 <section>
   <h2 class="page-header">タイトル</h2>
 

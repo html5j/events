@@ -176,6 +176,13 @@ div.session_description {
   font-size: 0.9em;
 }
 
+p.session-room {
+  color: #999;
+  font-size: 0.75em;
+  font-weight: bold;
+  line-height: 0.8em;
+}
+
 /**
  * MISC
  *
