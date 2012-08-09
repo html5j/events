@@ -144,6 +144,20 @@ class RegProgramPage(webapp.RequestHandler):
       loginRequired(self, "/conference/2012/09/reg_program.html")
       return
 
+    # [TODO] First of all, check post parameter and insert to DB
+    name = self.request.POST['name']
+    email = self.request.POST['email']
+    confirm = self.request.POST['confirm']
+    gender = self.request.POST['gender']
+    generation = self.request.POST['generation']
+    occupation = self.request.POST['occupation']
+    how = self.request.POST['how']
+
+    #
+    #
+    #
+    #
+
     program = open(os.path.join(os.path.dirname(__file__), 'datas/program.json')).read()
     progdic = simplejson.loads(program)
     speakers = open(os.path.join(os.path.dirname(__file__), 'datas/speaker.json')).read()
@@ -151,7 +165,12 @@ class RegProgramPage(webapp.RequestHandler):
     email = user.email()
 
     path = os.path.join(os.path.dirname(__file__), 'view/program.html')
-    self.response.out.write(template.render(path, {'email': email, 'page':'reg_program', 'program': program, 'progdic': progdic, 'speadic': speadic}))
+    self.response.out.write(template.render(path, {'email': email,
+      'name': name,
+      'page':'reg_program',
+      'program': program,
+      'progdic': progdic,
+      'speadic': speadic}))
     """
     email = user.email()
     path = os.path.join(os.path.dirname(__file__), 'view/reg_program.html')
@@ -219,7 +238,7 @@ def main():
   application = webapp.WSGIApplication([
     ('/conference/2012/09/', MainPage),
     ('/conference/2012/09/index.html', MainPage),
-    ('/conference/2012/09/sponsor.html', SponsorPage),
+    # ('/conference/2012/09/sponsor.html', SponsorPage),
     ('/conference/2012/09/volunteer.html', VolunteerPage),
     ('/conference/2012/09/program.html', ProgramPage),
     ('/conference/2012/09/speaker.html', SpeakerPage),
