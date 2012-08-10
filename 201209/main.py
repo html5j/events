@@ -33,21 +33,31 @@ Models
 """
 Sessions Model
 """
-class Sessions(db.Model):
-  name = db.StringProperty(required=True)
+class Session(db.Model):
+  session_id = db.IntegerProperty(required=True)
+  max_ = db.IntegerProperty(required=True)
+  curr_ = db.IntegerProperty(required=True, default=0)
+  status = db.StringProperty(required=True, default="ok")
 
 
 """
 Subscribers Model
 """
-class Subscribers(db.Model):
+class Users(db.Model):
   name = db.StringProperty(required=True)
-  r0 = db.IntegerProperty(required=False)
-  r1 = db.IntegerProperty(required=False)
-  r2 = db.IntegerProperty(required=False)
-  r3 = db.IntegerProperty(required=False)
-  r4 = db.IntegerProperty(required=False)
-  r5 = db.IntegerProperty(required=False)
+  email = db.StringProperty(required=True)
+  gender = db.StringProperty(required=False)
+  generation = db.StringProperty(required=False)
+  occupation = db.StringProperty(required=False)
+  how = db.StringProperty(required=False)
+  created = db.DateTimeProperty(auto_now_add=True)
+  slot_0 = db.StringProperty(required=False)
+  slot_2 = db.StringProperty(required=False)
+  slot_4 = db.StringProperty(required=False)
+  slot_6 = db.StringProperty(required=False)
+  slot_8 = db.StringProperty(required=False)
+  slot_10 = db.StringProperty(required=False)
+  slot_12 = db.StringProperty(required=False)
 
 
 
@@ -80,6 +90,10 @@ class VolunteerPage(webapp.RequestHandler):
 program page
 """
 
+def getSessions():
+  q = Session.all()
+  return q.fetch(100)
+
 class ProgramPage(webapp.RequestHandler):
   def get(self):
     program = open(os.path.join(os.path.dirname(__file__), 'datas/program.json')).read()
@@ -87,8 +101,10 @@ class ProgramPage(webapp.RequestHandler):
     speakers = open(os.path.join(os.path.dirname(__file__), 'datas/speaker.json')).read()
     speadic = simplejson.loads(speakers)
 
+
+
     path = os.path.join(os.path.dirname(__file__), 'view/routing.html')
-    self.response.out.write(template.render(path, {'filename': 'blocks/program.html', 'page':'program', 'program': program, 'progdic': progdic, 'speadic': speadic}))
+    self.response.out.write(template.render(path, {'filename': 'blocks/program.html', 'sess': getSessions(), 'page':'program', 'program': program, 'progdic': progdic, 'speadic': speadic}))
 
 """
 speaker's page
@@ -129,6 +145,12 @@ def topPage(self, alert, params):
     loginRequired(self, "/conference/2012/09/reg_top.html")
     return
 
+  user_tbl = getUserTbl(user)
+
+  if user_tbl:
+    self.redirect('/conference/2012/09/program.html')
+    return
+
   email = user.email()
   path = os.path.join(os.path.dirname(__file__), 'view/reg_top.html')
   self.response.out.write(template.render(path, {'page':'reg_top', 'email':email, 'params': params, 'alert':alert}))
@@ -136,8 +158,30 @@ def topPage(self, alert, params):
 # top
 class RegTopPage(webapp.RequestHandler):
   def get(self, alert=[]):
-    params = {'name':null, 'confirm':'', 'gender':'', 'generation':'', 'occupation': '', 'how': ''}
+    program = open(os.path.join(os.path.dirname(__file__), 'datas/program.json')).read()
+    progdic = simplejson.loads(program)
+
+    for slot in progdic:
+      if "sessions" in slot:
+        for session in slot.get('sessions'):
+          sess = Session.get_by_key_name(str(session['session_id']))
+          if sess:
+            sess.max_ = session['max']
+          else:
+            sess = Session(key_name = str(session['session_id']), session_id = session['session_id'], max_ = session['max'])
+          sess.put()
+
+    params = {'name':'', 'confirm':'', 'gender':'', 'generation':'', 'occupation': '', 'how': ''}
     topPage(self, alert, params)
+
+def getUserTbl(user):
+  email = user.email()
+
+  query = Users.all()
+  query.filter('email =', email)
+  res = query.fetch(1)
+
+  return res
 
 # program
 class RegProgramPage(webapp.RequestHandler):
@@ -147,74 +191,110 @@ class RegProgramPage(webapp.RequestHandler):
       loginRequired(self, "/conference/2012/09/reg_program.html")
       return
 
-    # [TODO] First of all, check post parameter and insert to DB
-    name = self.request.get('name')
-    email = self.request.get('email')
-    confirm = self.request.get('confirm')
-    gender = self.request.get('gender')
-    generation = self.request.get('generation')
-    occupation = self.request.get('occupation')
-    how = self.request.get('how')
+    user_tbls = getUserTbl(user)
 
-    params = {
-      'name': name, 'email': email, 'confirm': confirm, 'gender': gender, 'generation': generation, 'occupation': occupation, 'how': how
-    }
-
-    alert=[]
-
-    if not name:
-      alert.append("名前が入力されていません")
-
-    if confirm != "yes":
-      alert.append("プライバシーポリシーに同意願います")
-
-    if len(alert) != 0:
-      topPage(self, alert, params)
+    if user_tbls:
+      self.redirect("/conference/2012/09/program.html")
       return
 
+    if not user_tbls:
+      name = self.request.get('name')
+      email = self.request.get('email')
+      confirm = self.request.get('confirm')
+      gender = self.request.get('gender')
+      generation = self.request.get('generation')
+      occupation = self.request.get('occupation')
+      how = self.request.get('how')
+
+      params = {
+        'name': name, 'email': email, 'confirm': confirm, 'gender': gender, 'generation': generation, 'occupation': occupation, 'how': how
+      }
+
+      alert=[]
+
+      if not name:
+        alert.append("名前が入力されていません")
+
+      if confirm != "yes":
+        alert.append("プライバシーポリシーに同意願います")
+
+      if len(alert) != 0:
+        topPage(self, alert, params)
+        return
+
+      user = Users(name = name, email = email)
+      user.gender = gender
+      user.generation = generation
+      user.occupation = occupation
+      user.how = how
+      user.put()
+
+      user_tbl = user
+    else:
+      user_tbl = user_tbls[0]
+
     #
     #
     #
     #
+
 
     program = open(os.path.join(os.path.dirname(__file__), 'datas/program.json')).read()
     progdic = simplejson.loads(program)
     speakers = open(os.path.join(os.path.dirname(__file__), 'datas/speaker.json')).read()
     speadic = simplejson.loads(speakers)
-    email = user.email()
+
 
     path = os.path.join(os.path.dirname(__file__), 'view/program.html')
-    self.response.out.write(template.render(path, {'email': email,
-      'name': name,
+    self.response.out.write(template.render(path, {
+      'user_tbl': user_tbl,
+      'sess': getSessions(),
       'page':'reg_program',
       'program': program,
       'progdic': progdic,
       'speadic': speadic}))
-    """
-    email = user.email()
-    path = os.path.join(os.path.dirname(__file__), 'view/reg_program.html')
-    self.response.out.write(template.render(path, {'page':'reg_program', 'email': email}))
-    """
   def get(self):
     user = users.get_current_user()
     if not user:
       loginRequired(self, "/conference/2012/09/reg_program.html")
       return
 
-    email = user.email()
+    user_tbls = getUserTbl(user)
+    if user_tbls:
+      self.redirect("/conference/2012/09/program.html")
+      return
+
+    if not user_tbls:
+      self.redirect('/conference/2012/09/reg_top.html')
+    user_tbl = user_tbls[0]
+
+    email = user_tbl.email
+    name = user_tbl.name
+    registered = []
+    if user_tbl.slot_0:
+      registered.append(int(user_tbl.slot_0))
+    if user_tbl.slot_2:
+      registered.append(int(user_tbl.slot_2))
+    if user_tbl.slot_4:
+      registered.append(int(user_tbl.slot_4))
+    if user_tbl.slot_6:
+      registered.append(int(user_tbl.slot_6))
+    if user_tbl.slot_8:
+      registered.append(int(user_tbl.slot_8))
+    if user_tbl.slot_10:
+      registered.append(int(user_tbl.slot_10))
+    if user_tbl.slot_12:
+      registered.append(int(user_tbl.slot_12))
+
     program = open(os.path.join(os.path.dirname(__file__), 'datas/program.json')).read()
     progdic = simplejson.loads(program)
     speakers = open(os.path.join(os.path.dirname(__file__), 'datas/speaker.json')).read()
     speadic = simplejson.loads(speakers)
 
     path = os.path.join(os.path.dirname(__file__), 'view/program.html')
-    self.response.out.write(template.render(path, {'email': email, 'page':'reg_program', 'program': program, 'progdic': progdic, 'speadic': speadic}))
-    """
-    path = os.path.join(os.path.dirname(__file__), 'view/reg_program.html')
-    self.response.out.write(template.render(path, {'page':'reg_program', 'email': email}))
-    """
+    self.response.out.write(template.render(path, {'user_tbl': user_tbl, 'sess': getSessions(), 'registered': registered, 'page':'reg_program', 'program': program, 'progdic': progdic, 'speadic': speadic}))
 
-# confirm
+# [TODO] duplicat => confirm
 class RegConfirmPage(webapp.RequestHandler):
   def post(self):
     user = users.get_current_user()
@@ -226,6 +306,7 @@ class RegConfirmPage(webapp.RequestHandler):
     slots = [0, 0, 0, 0, 0, 0, 0]
     path = os.path.join(os.path.dirname(__file__), 'view/reg_confirm.html')
     self.response.out.write(template.render(path, {'page':'reg_confirm', 'email': email, 'slots': slots}))
+
 # done
 class RegDonePage(webapp.RequestHandler):
   def post(self):
@@ -234,9 +315,159 @@ class RegDonePage(webapp.RequestHandler):
       loginRequired(self, "/conference/2012/09/reg_program.html")
       return
 
-    email = user.email()
+    user_tbls = getUserTbl(user)
+    if not user_tbls:
+      self.redirect('/conference/2012/09/reg_top.html')
+      return
 
-    mail.send_mail(sender="kensaku.komatsu@gmail.com",
+    user_tbl = user_tbls[0]
+
+    keys = []
+    if user_tbl.slot_0:
+      keys.append(str(user_tbl.slot_0))
+    if user_tbl.slot_2:
+      keys.append(str(user_tbl.slot_2))
+    if user_tbl.slot_4:
+      keys.append(str(user_tbl.slot_4))
+    if user_tbl.slot_6:
+      keys.append(str(user_tbl.slot_6))
+    if user_tbl.slot_8:
+      keys.append(str(user_tbl.slot_8))
+    if user_tbl.slot_10:
+      keys.append(str(user_tbl.slot_10))
+    if user_tbl.slot_12:
+      keys.append(str(user_tbl.slot_12))
+
+    res = Session.get_by_key_name(keys)
+
+    for s in res:
+      s.curr_ = s.curr_ - 1
+      s.put()
+
+    name = user_tbl.name
+    email = user_tbl.email
+    slot_0 = self.request.get('slot_0')
+    slot_2 = self.request.get('slot_2')
+    slot_4 = self.request.get('slot_4')
+    slot_6 = self.request.get('slot_6')
+    slot_8 = self.request.get('slot_8')
+    slot_10 = self.request.get('slot_10')
+    slot_12 = self.request.get('slot_12')
+
+    slot_p0 = self.request.get('slot_p0')
+    slot_p2 = self.request.get('slot_p2')
+    slot_p4 = self.request.get('slot_p4')
+    slot_p6 = self.request.get('slot_p6')
+    slot_p8 = self.request.get('slot_p8')
+    slot_p10 = self.request.get('slot_p10')
+    slot_p12 = self.request.get('slot_p12')
+
+    user_tbl.slot_0 = slot_0
+    user_tbl.slot_2 = slot_2
+    user_tbl.slot_4 = slot_4
+    user_tbl.slot_6 = slot_6
+    user_tbl.slot_8 = slot_8
+    user_tbl.slot_10 = slot_10
+    user_tbl.slot_12 = slot_12
+
+    pflag = False
+    if slot_p0:
+      pflag = True
+      user_tbl.slot_0 = slot_po
+    if slot_p2:
+      pflag = True
+      user_tbl.slot_2 = slot_p2
+    if slot_p4:
+      pflag = True
+      user_tbl.slot_4 = slot_p4
+    if slot_p6:
+      pflag = True
+      user_tbl.slot_6 = slot_p6
+    if slot_p8:
+      pflag = True
+      user_tbl.slot_8 = slot_p8
+    if slot_p10:
+      pflag = True
+      user_tbl.slot_10 = slot_p10
+    if slot_p12:
+      pflag = True
+      user_tbl.slot_12 = slot_p12
+
+    user_tbl.put()
+
+    program = open(os.path.join(os.path.dirname(__file__), 'datas/program.json')).read()
+    progdic = simplejson.loads(program)
+
+    sessions_ = {}
+
+    for slot in progdic:
+      if "sessions" in slot:
+        for session in slot['sessions']:
+          sessions_[str(session['session_id'])] = {'title': session['title'], 'timeslot': slot['timeslot']}
+
+    regs = []
+    keys = []
+    if not pflag:
+      if slot_0:
+        regs.append(sessions_.get(slot_0))
+        keys.append(slot_0)
+      if slot_2:
+        regs.append(sessions_.get(slot_2))
+        keys.append(slot_2)
+      if slot_4:
+        regs.append(sessions_.get(slot_4))
+        keys.append(slot_4)
+      if slot_6:
+        regs.append(sessions_.get(slot_6))
+        keys.append(slot_6)
+      if slot_8:
+        regs.append(sessions_.get(slot_8))
+        keys.append(slot_8)
+      if slot_10:
+        regs.append(sessions_.get(slot_10))
+        keys.append(slot_10)
+      if slot_12:
+        regs.append(sessions_.get(slot_12))
+        keys.append(slot_12)
+
+    if pflag:
+      if slot_p0:
+        regs.append(sessions_.get(slot_p0))
+        keys.append(slot_p0)
+      if slot_p2:
+        regs.append(sessions_.get(slot_p2))
+        keys.append(slot_p2)
+      if slot_p4:
+        regs.append(sessions_.get(slot_p4))
+        keys.append(slot_p4)
+      if slot_p6:
+        regs.append(sessions_.get(slot_p6))
+        keys.append(slot_p6)
+      if slot_p8:
+        regs.append(sessions_.get(slot_p8))
+        keys.append(slot_p8)
+      if slot_p10:
+        regs.append(sessions_.get(slot_p10))
+        keys.append(slot_p10)
+      if slot_p12:
+        regs.append(sessions_.get(slot_p12))
+        keys.append(slot_p12)
+
+    res = Session.get_by_key_name(keys)
+
+    for s in res:
+      s.curr_ = s.curr_ + 1
+      if s.curr_ < s.max_ * 2 / 3:
+        s.status = "ok"
+      if s.curr_ > s.max_ * 2 / 3:
+        s.status = "jam"
+      if s.curr_ > s.max_:
+        s.status = "full"
+      s.put()
+
+
+
+    mail.send_mail(sender="noreply@html5j.org",
       to = email,
       subject = "登録ありがとうございます",
       body = """
@@ -246,7 +477,7 @@ class RegDonePage(webapp.RequestHandler):
       hogehoge...
       """)
     path = os.path.join(os.path.dirname(__file__), 'view/reg_done.html')
-    self.response.out.write(template.render(path, {'page':'reg_done', 'email': email}))
+    self.response.out.write(template.render(path, {'page':'reg_done', 'name': name, 'email': email, 'registration': regs}))
 
 
 
@@ -254,6 +485,7 @@ class RegDonePage(webapp.RequestHandler):
 routing part
 """
 def main():
+
   application = webapp.WSGIApplication([
     ('/conference/2012/09/', MainPage),
     ('/conference/2012/09/index.html', MainPage),
@@ -264,7 +496,7 @@ def main():
     ('/conference/2012/09/faq.html', FaqPage),
     ('/conference/2012/09/reg_top.html', RegTopPage),
     ('/conference/2012/09/reg_program.html', RegProgramPage),
-    ('/conference/2012/09/reg_confirm.html', RegConfirmPage),
+    # ('/conference/2012/09/reg_confirm.html', RegConfirmPage),
     ('/conference/2012/09/reg_done.html', RegDonePage)
  ], debug=True)
   wsgiref.handlers.CGIHandler().run(application)

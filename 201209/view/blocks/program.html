@@ -1,24 +1,21 @@
 
 
 <section>
-{% if email %}
+{% if user_tbl %}
   <h2 class="page-header">HTML5 Conference 2012 セッション参加希望登録ページ</h2>
-  You're certified as {{ email }}.
-        {% if name %}
-        {{name}}
-        {%endif%}
-  <div class="alert alert-error">
+  {{ user_tbl.name}} 様
+  <div class="alert">
     こちらで参加登録頂いた場合でも、当日の会場の席を確約するものではありません。 また、以下のプログラム内容は、当日までに変更になることがあります。あらかじめご了承ください。
   </div>
 {% else %}
    <h2 class="page-header">HTML5 Conference 2012 プログラム</h2>
-  <div class="alert alert-error">
+  <div class="alert alert">
     以下のプログラム内容は、当日までに変更になることがあります。あらかじめご了承ください。
   </div>
 {% endif %}
 
 <div class="hidden-phone">
-  {% if email %} <form class="form-horizontal" method="post" action="reg_confirm.html"> {% endif %}
+  {% if user_tbl %} <form class="form-horizontal" method="post" action="reg_done.html"> {% endif %}
   <table class="table table-bordered">
     <thead>
       <tr>
@@ -33,7 +30,7 @@
   {% for slot in progdic %}
     <tr>
       {% if slot.sessions %}
-      <td class="timeslot" {% if email %}rowspan="2"{% endif %}>
+      <td class="timeslot" {% if user_tbl %}rowspan="2"{% endif %}>
       {% else %}
       <td class="break">
       {% endif %}
@@ -50,6 +47,12 @@
                 {% endifequal %}
               {% endfor %}
             {%endfor%}
+
+            {% for o in sess %}{% ifequal o.session_id session.session_id %}
+              {% ifequal o.status "ok" %}<span class="label label-info">余裕</span>{% endifequal %}
+              {% ifequal o.status "jam" %}<span class="label label-warning">混雑</span>{% endifequal %}
+              {% ifequal o.status "full" %}<span class="label label-important">満席</span>{% endifequal %}
+            {% endifequal %}{% endfor %}
           </td>
         {% endfor %}
         {% if slot.sessions|length_is:"1" %}
@@ -58,9 +61,13 @@
         </tr>
         <tr>
 
-        {% if email %}
+        {% if user_tbl %}
         {% for session in slot.sessions %}
-          <td class="session_subscribe"><label for="session_{{session.session_id}}" class="checkbox"><div><input type="radio" name="slot_{{slot.slot_id}}" value="{{session.session_id}}" id="session_{{session.session_id}}"> 参加する</div></label></td>
+        <td class="session_subscribe"><label for="session_{{session.session_id}}" class="radio"><div><input type="radio" name="slot_{{slot.slot_id}}" value="{{session.session_id}}" id="session_{{session.session_id}}" {% for id in registered %}{% ifequal id session.session_id %}checked{% endifequal %}{% endfor %}
+            {% for o in sess %}{% ifequal o.session_id session.session_id %}
+              {% ifequal o.status "full" %}disabled{% endifequal %}
+            {% endifequal %}{% endfor %}
+              > 参加する</div></label></td>
         {% endfor %}
         {% if slot.sessions|length_is:"1" %}
           <td class="empty" colspan="3"></td>
@@ -73,9 +80,17 @@
     {% endfor %}
     </tbody>
   </table>
+  {% if user_tbl %}
+    <div class="control-group">
+      <div class="controls">
+        <button class="btn btn-primary" type="submit">参加登録する</button>
+      </div>
+    </div>
+    </form>
+  {% endif %}
 </div>
 <div class="visible-phone">
-  {% if email %} <form class="form-horizontal" method="post" action="reg_confirm.html"> {% endif %}
+  {% if user_tbl %} <form class="form-horizontal" method="post" action="reg_done.html"> {% endif %}
     <!--
     <thead>
       <tr>
@@ -112,9 +127,9 @@
           {%endfor%}
         </td></tr>
 
-        {% if email %}
+        {% if user_tbl %}
         <tr><td class="session_subscriber">
-          <label for="session_p{{session.session_id}}"><div><input type="radio" name="slot_{{slot.slot_id}}" value="{{session.session_id}}" id="session_p{{session.session_id}}"> 参加する</div></label>
+            <label for="session_p{{session.session_id}}"><div><input type="radio" name="slot_p{{slot.slot_id}}" value="{{session.session_id}}" id="session_p{{session.session_id}}" {% for id in registered %}{% ifequal id session.session_id %}checked{% endifequal %}{% endfor %}> 参加する</div></label>
         </td></tr>
         {% endif %}
       {% endfor %}
@@ -122,15 +137,15 @@
     </tbody>
   </table>
   {% endfor %}
-</div>
-{% if email %}
-  <div class="control-group">
-    <div class="controls">
-      <button class="btn btn-primary" type="submit">参加登録する</button>
+  {% if user_tbl %}
+    <div class="control-group">
+      <div class="controls">
+        <button class="btn btn-primary" type="submit">参加登録する</button>
+      </div>
     </div>
-  </div>
-  </form>
-{% endif %}
+    </form>
+  {% endif %}
+</div>
 
 </section>
 
