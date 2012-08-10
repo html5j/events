@@ -123,18 +123,21 @@ def loginRequired(self, page):
   self.response.out.write(template.render(path, {'page':'login_required', 'mesg':str}))
 
 
+def topPage(self, alert, params):
+  user = users.get_current_user()
+  if not user:
+    loginRequired(self, "/conference/2012/09/reg_top.html")
+    return
+
+  email = user.email()
+  path = os.path.join(os.path.dirname(__file__), 'view/reg_top.html')
+  self.response.out.write(template.render(path, {'page':'reg_top', 'email':email, 'params': params, 'alert':alert}))
 
 # top
 class RegTopPage(webapp.RequestHandler):
-  def get(self):
-    user = users.get_current_user()
-    if not user:
-      loginRequired(self, "/conference/2012/09/reg_top.html")
-      return
-
-    email = user.email()
-    path = os.path.join(os.path.dirname(__file__), 'view/reg_top.html')
-    self.response.out.write(template.render(path, {'page':'reg_top', 'email':email}))
+  def get(self, alert=[]):
+    params = {'name':null, 'confirm':'', 'gender':'', 'generation':'', 'occupation': '', 'how': ''}
+    topPage(self, alert, params)
 
 # program
 class RegProgramPage(webapp.RequestHandler):
@@ -145,13 +148,29 @@ class RegProgramPage(webapp.RequestHandler):
       return
 
     # [TODO] First of all, check post parameter and insert to DB
-    name = self.request.POST['name']
-    email = self.request.POST['email']
-    confirm = self.request.POST['confirm']
-    gender = self.request.POST['gender']
-    generation = self.request.POST['generation']
-    occupation = self.request.POST['occupation']
-    how = self.request.POST['how']
+    name = self.request.get('name')
+    email = self.request.get('email')
+    confirm = self.request.get('confirm')
+    gender = self.request.get('gender')
+    generation = self.request.get('generation')
+    occupation = self.request.get('occupation')
+    how = self.request.get('how')
+
+    params = {
+      'name': name, 'email': email, 'confirm': confirm, 'gender': gender, 'generation': generation, 'occupation': occupation, 'how': how
+    }
+
+    alert=[]
+
+    if not name:
+      alert.append("名前が入力されていません")
+
+    if confirm != "yes":
+      alert.append("プライバシーポリシーに同意願います")
+
+    if len(alert) != 0:
+      topPage(self, alert, params)
+      return
 
     #
     #
