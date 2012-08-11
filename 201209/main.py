@@ -18,6 +18,7 @@
 #
 import wsgiref.handlers
 import os
+import hashlib
 from google.appengine.ext import webapp
 from google.appengine.ext.webapp import template
 #from google.appengine.api import mail
@@ -61,6 +62,13 @@ class Users(db.Model):
   canceld = db.BooleanProperty(required=True, default=False)
 
 
+"""
+Entry Model
+"""
+class EntryLogs(db.Model):
+  created = db.DateTimeProperty(auto_now_add=True)
+  log = db.StringProperty(required=True)
+
 def getCurrentNum():
   q =  Users.all()
   q.filter('canceld =', False)
@@ -68,7 +76,7 @@ def getCurrentNum():
   return len(q.fetch(1000))
 
 def canSubscribe():
-  max_ = 1
+  max_ = 1000
   curr = getCurrentNum()
 
   if curr > max_:
@@ -466,6 +474,7 @@ class RegDonePage(webapp.RequestHandler):
     user_tbl.slot_10 = slot_10
     user_tbl.slot_12 = slot_12
 
+
     pflag = False
     if slot_p0:
       pflag = True
@@ -490,6 +499,23 @@ class RegDonePage(webapp.RequestHandler):
       user_tbl.slot_12 = slot_p12
 
     user_tbl.put()
+
+    """
+    logging Entry log
+    """
+    mesg = ",".join([
+      hashlib.sha1(str(user_tbl.email)).hexdigest(),
+      user_tbl.slot_0,
+      user_tbl.slot_2,
+      user_tbl.slot_4,
+      user_tbl.slot_6,
+      user_tbl.slot_8,
+      user_tbl.slot_10,
+      user_tbl.slot_12
+    ])
+
+    entry = EntryLogs(log = mesg)
+    entry.put()
 
     program = open(os.path.join(os.path.dirname(__file__), 'datas/program.json')).read()
     progdic = simplejson.loads(program)
