@@ -1,0 +1,120 @@
+{
+    "platinum": [
+        {
+            "image": "01_google_logo.png",
+            "name": "グーグル株式会社",
+            "link": "https://developers.google.com/"
+        },
+        {
+            "image": "02_nttcom_logo.jpg",
+            "name": "エヌ・ティ・ティ・コミュニケーションズ株式会社",
+            "link": "http://www.ntt.com/"
+        },
+        {
+            "image": "03_microsoft_logo.png",
+            "name": "日本マイクロソフト株式会社",
+            "link": "http://www.microsoft.com/ja-jp/default.aspx"
+        },
+        {
+            "image": "04_adobe_logo.png",
+            "name": "アドビシステムズ株式会社",
+            "link": "http://www.adobe.com/jp/devnet/"
+        },
+        {
+            "image": "",
+            "name": "グリー株式会社",
+            "link": "http://product.gree.net/jp/ja/"
+        },
+        {
+            "image": "06_dena_logo_aiedit.png",
+            "name": "株式会社ディー・エヌ・エー",
+            "link": "http://dena.jp/"
+        },
+        {
+            "image": "07_camobile_logo.png",
+            "name": "株式会社シーエー・モバイル",
+            "link": "http://www.camobile.com/"
+        }
+    ],
+    "gold": [
+        {
+            "image": "08_nifty_logo.png",
+            "name": "ニフティ株式会社",
+            "link": "http://www.nifty.com/"
+        },
+        {
+            "image": "09_cybird_logo.png",
+            "name": "株式会社サイバード",
+            "link": "http://www.cybird.co.jp/"
+        },
+        {
+            "image": "10_pixelgrid_logo.png",
+            "name": "株式会社ピクセルグリッド",
+            "link": "http://www.pxgrid.com/"
+        },
+        {
+            "image": "11_tvasahimediaplex_logo.png",
+            "name": "株式会社テレビ朝日メディアプレックス",
+            "link": "http://www.mediaplex.co.jp/?cf=1"
+        },
+        {
+            "image": "12_connecty_logo.png",
+            "name": "株式会社コネクティ",
+            "link": "http://www.connecty.co.jp/"
+        }
+    ],
+    "silver": [
+        {
+            "image": "13_sankeidigital_logo.png",
+            "name": "株式会社 産経デジタル",
+            "link": "http://www.sankei-digital.co.jp/"
+        },
+        {
+            "image": "14_mixi_logo.jpg",
+            "name": "株式会社ミクシィ",
+            "link": "http://mixi.co.jp/"
+        },
+        {
+            "image": "15_opera_logo.png",
+            "name": "Opera Software",
+            "link": "http://www.opera.com/"
+        },
+        {
+            "image": "16_Html5Collect.png",
+            "name": "Html5 Collect",
+            "link": "http://jp.html5collect.net/"
+        },
+        {
+            "image": "20_4d_logo.png",
+            "name": "株式会社フォーディー・ジャパン",
+            "link": "http://www.wakanda.jp"
+        },
+        {
+            "image": "21_paperboy_logo.png",
+            "name": "株式会社paperboy&co.",
+            "link": "http://www.paperboy.co.jp/"
+        },
+        {
+            "image": "",
+            "name": "KDDI株式会社",
+            "link": "http://www.kddi.com"
+        },
+        {
+            "image": "24_Softbank_logo.png",
+            "name": "ソフトバンク株式会社",
+            "link": "http://recruit.softbank.jp/career/"
+        },
+        {
+            "image": "25_asial_logo.png",
+            "name": "アシアル株式会社",
+            "link": "http://www.asial.co.jp/"
+        }
+    ],
+    "special": [
+        {
+            "image": "18_mozilla_logo.png",
+            "name": "一般社団法人 Mozilla Japan",
+            "link": "http://www.mozilla.jp/firefox/"
+        }        
+    ]
+}

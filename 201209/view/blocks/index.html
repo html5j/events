@@ -76,3 +76,67 @@
     <dd>スポンサーの募集を締め切らさせて頂きました。応募いただいた企業の方には別途ご連絡差し上げます。</dd>
   </dl>
 </section>
+<section class="sponsors">
+  <h2 class="page-header">スポンサー一覧</h2>
+  <section class="platinum">
+    <h3>プラチナスポンサー</h3>
+    <ul class="sponsor-list">
+	  {% for sponsor in sponsors.platinum %}
+	  <li>
+        <a href="{{sponsor.link}}">
+        {%if sponsor.image %}
+        <img class="sponsor-logo" src="/images/201209/sponsors/{{sponsor.image}}" title="{{sponsor.name}}" alt="{{sponsor.name}}">
+        {% else %}
+        {{sponsor.name}}
+        {% endif %}
+        </a>
+	    {% endfor %}
+    </ul>
+  </section>
+  <section class="gold">
+    <h3>ゴールドスポンサー</h3>
+    <ul class="sponsor-list">
+	  {% for sponsor in sponsors.gold %}
+	  <li>
+        <a href="{{sponsor.link}}">
+        {%if sponsor.image %}
+        <img class="sponsor-logo" src="/images/201209/sponsors/{{sponsor.image}}" title="{{sponsor.name}}" alt="{{sponsor.name}}">
+        {% else %}
+        {{sponsor.name}}
+        {% endif %}
+        </a>
+	    {% endfor %}
+    </ul>
+  </section>
+  <section class="silver">
+    <h3>シルバースポンサー</h3>
+    <ul class="sponsor-list">
+	  {% for sponsor in sponsors.silver %}
+	  <li>
+        <a href="{{sponsor.link}}">
+        {%if sponsor.image %}
+        <img class="sponsor-logo" src="/images/201209/sponsors/{{sponsor.image}}" title="{{sponsor.name}}" alt="{{sponsor.name}}">
+        {% else %}
+        {{sponsor.name}}
+        {% endif %}
+        </a>
+	    {% endfor %}
+    </ul>
+  </section>
+  <section class="special">
+    <h3>特別協賛</h3>
+    <ul class="sponsor-list">
+	  {% for sponsor in sponsors.special %}
+	  <li>
+        <a href="{{sponsor.link}}">
+        {%if sponsor.image %}
+        <img class="sponsor-logo" src="/images/201209/sponsors/{{sponsor.image}}" title="{{sponsor.name}}" alt="{{sponsor.name}}">
+        {% else %}
+        {{sponsor.name}}
+        {% endif %}
+        </a>
+	    {% endfor %}
+    </ul>
+  </section>
+</section>
+<script src="/javascripts/201209/index.js"></script>

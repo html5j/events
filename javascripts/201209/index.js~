@@ -1,0 +1,16 @@
+$(function() {
+    function randOrd(){
+        return (Math.round(Math.random())-0.5);
+    }
+    $('.sponsor-list').each(function() {
+        var listItems = this.childNodes;
+        $(this).empty();
+        listItems = Array.prototype.slice.call(listItems, 0);
+        listItems.sort(function() {
+            return Math.round(Math.random() - 0.5);
+        });
+        for (var i = 0, len = listItems.length; i < len; i++) {
+            this.appendChild(listItems[i]);
+        }
+    }).css('display', 'block');
+});
