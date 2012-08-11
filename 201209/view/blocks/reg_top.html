@@ -1,4 +1,10 @@
 <section>
+{% if not can_subscribe %}
+  <p>
+  申し訳ありません。募集定員に達したため、只今参加申し込みできません。<br>
+  <a href="/conference/2012/09/">Topページに戻る</a>
+  </p>
+  {% else %}
   <h2 class="page-header">基本情報入力</h2>
 
   <form class="form-horizontal" method="post" action="reg_program.html">
@@ -120,4 +126,5 @@
       </div>
     </div>
   </form>
+  {% endif %}
 </section>

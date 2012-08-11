@@ -1,25 +1,24 @@
 <section>
   <h2 class="page-header">HTML5 Conference 2012 開催のご案内</h2>
 
-  <ul class="nav row" style="margin: 40px 0 60px">
-    <li class="span4 offset4">
     {% if can_subscribe %}
-    <a class="btn btn-large" href="reg_top.html">参加登録する</a>
-    {% else %}
-    <a class="btn btn-large" href="reg_top.html">キャンセル待ち登録する</a>
-    {% endif %}
-    </li>
-  </ul>
-  <div class="alert">
-    <ul>
-      <li>登録には、Googleアカウントが必要です</li>
-      <li>登録済みの方は、上のボタンをクリックすると登録内容変更画面が表示されます</li>
+    <ul class="nav row" style="margin: 40px 0 60px">
+      <li class="span4 offset4"><a id="btn-volunteer" class="btn btn-large" href="./reg_top.html">参加登録する</a></li>
     </ul>
-  </div>
-
-  <div class="alert alert-error">
-    カンファレンスの募集開始は8/11(土)を予定しています。<br>なお、参加登録にあたり <a href="https://accounts.google.com/NewAccount?hl=ja">Google アカウント</a>が必要となります。アカウントをお持ちでない方は事前に作成ください。
-  </div>
+    <div class="alert">
+      <ul>
+        <li>登録には、Googleアカウントが必要です</li>
+        <li>登録済みの方は、<a href="reg_program.html">こちら</a>から登録内容の変更／キャンセルができます</li>
+      </ul>
+    </div>
+    {% else %}
+    <div class="alert">
+      <ul>
+        <li>只今参加者が定員に達したため、新規登録は閉めきっています</li>
+        <li>登録済みの方は、<a href="reg_program.html">こちら</a>から登録内容の変更／キャンセルができます</li>
+      </ul>
+    </div>
+    {% endif %}
 
   <p>
     今年も、HTML5 Conferenceの季節がやってきました！！今年は、9月8日に開催します。
@@ -35,11 +34,18 @@
     <div class="well">参加登録にあたり <strong><a href="https://accounts.google.com/NewAccount?hl=ja">Google アカウント</a>が必要</strong>となります。アカウントをお持ちでない方は事前に作成ください。
     </div>
   </p>
-  <p>
+ <!--  <p>
     なお、カンファレンス開催にあたり、ご協力頂けるボランティアを募集しています！！ボランティアとして一緒にカンファレンスを成功させたい個人の方、下記のリンクを是非ご確認ください。
+  </p> -->
+  <p>
+    カンファレンスではライトニングトーク大会を行います！発表したい方は是非ご応募ください。
+    また、公式ブロガー・ライターの募集も行なっています。セッションに参加してレポート記事を書いてくださる方は是非ご応募ください。
   </p>
+
   <ul class="nav row" style="margin: 40px 0 60px">
-    <li class="span4 offset4"><a id="btn-volunteer" class="btn btn-large" href="./volunteer.html">ボランティア募集</a></li>
+<!--     <li class="span4 offset4"><a id="btn-volunteer" class="btn btn-large" href="./volunteer.html">ボランティア募集</a></li -->>
+  <li> class="span4 offset4"><a id="btn-lt" class="btn btn-large" href="./lt.html">LT大会講演者募集</a></li>
+  <li> class="span4 offset4"><a id="btn-writer" class="btn btn-large" href="./writer.html">公式ブロガー・ライター募集</a></li>
   </ul>
 </section>
 
@@ -64,6 +70,8 @@
 <section>
   <h2 class="page-header">お知らせ</h2>
   <dl class="dl-horizontal">
+    <dt>8月11日</dt>
+    <dd>ボランティアの募集を締め切らせて頂きました。応募いただいた方には別途ご連絡差し上げますので、登録したメールをご確認ください。</dd>
     <dt>8月8日</dt>
     <dd>スポンサーの募集を締め切らさせて頂きました。応募いただいた企業の方には別途ご連絡差し上げます。</dd>
   </dl>

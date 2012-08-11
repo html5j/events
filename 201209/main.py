@@ -58,17 +58,17 @@ class Users(db.Model):
   slot_8 = db.StringProperty(required=False)
   slot_10 = db.StringProperty(required=False)
   slot_12 = db.StringProperty(required=False)
-  waiting = db.BooleanProperty(required=True, default=False)
+  canceld = db.BooleanProperty(required=True, default=False)
 
 
 def getCurrentNum():
   q =  Users.all()
-  q.filter('waiting =', False)
+  q.filter('canceld =', False)
 
   return len(q.fetch(1000))
 
 def canSubscribe():
-  max_ = 1000
+  max_ = 1
   curr = getCurrentNum()
 
   if curr > max_:
@@ -103,6 +103,22 @@ class VolunteerPage(webapp.RequestHandler):
   def get(self):
     path = os.path.join(os.path.dirname(__file__), 'view/routing.html')
     self.response.out.write(template.render(path, {'filename': 'blocks/volunteer.html', 'page':'volunteer'}))
+
+"""
+lt page
+"""
+class LtPage(webapp.RequestHandler):
+  def get(self):
+    path = os.path.join(os.path.dirname(__file__), 'view/routing.html')
+    self.response.out.write(template.render(path, {'filename': 'blocks/lt.html', 'page':'lt'}))
+
+"""
+writer page
+"""
+class WriterPage(webapp.RequestHandler):
+  def get(self):
+    path = os.path.join(os.path.dirname(__file__), 'view/routing.html')
+    self.response.out.write(template.render(path, {'filename': 'blocks/writer.html', 'page':'writer'}))
 
 """
 program page
@@ -165,13 +181,13 @@ def topPage(self, alert, params):
 
   user_tbl = getUserTbl(user)
 
-  if user_tbl:
+  if user_tbl and not user_tbl[0].canceld:
     self.redirect('/conference/2012/09/reg_program.html')
     return
 
   email = user.email()
   path = os.path.join(os.path.dirname(__file__), 'view/reg_top.html')
-  self.response.out.write(template.render(path, {'page':'reg_top', 'email':email, 'params': params, 'alert':alert}))
+  self.response.out.write(template.render(path, {'page':'reg_top', 'email':email, 'params': params, 'alert':alert, 'can_subscribe': canSubscribe()}))
 
 # top
 class RegTopPage(webapp.RequestHandler):
@@ -215,7 +231,7 @@ class RegProgramPage(webapp.RequestHandler):
     #  self.redirect("/conference/2012/09/program.html")
     #  return
 
-    if not user_tbls:
+    if not user_tbls or user_tbls[0].canceld:
       name = self.request.get('name')
       email = self.request.get('email')
       confirm = self.request.get('confirm')
@@ -240,14 +256,26 @@ class RegProgramPage(webapp.RequestHandler):
         topPage(self, alert, params)
         return
 
-      user = Users(name = name, email = email)
-      user.gender = gender
-      user.generation = generation
-      user.occupation = occupation
-      user.how = how
-      user.put()
+      if not user_tbls:
+        user = Users(name = name, email = email)
+        user.gender = gender
+        user.generation = generation
+        user.occupation = occupation
+        user.how = how
+        user.canceld = False
+        user.put()
 
-      user_tbl = user
+        user_tbl = user
+      else:
+        user_tbl = user_tbls[0]
+        user_tbl.name = name
+        user_tbl.gender = gender
+        user_tbl.generation = generation
+        user_tbl.occupation = occupation
+        user_tbl.how = how
+        user_tbl.canceld = False
+        user_tbl.put()
+
     else:
       user_tbl = user_tbls[0]
 
@@ -284,6 +312,7 @@ class RegProgramPage(webapp.RequestHandler):
 
     if not user_tbls:
       self.redirect('/conference/2012/09/reg_top.html')
+      return
     user_tbl = user_tbls[0]
 
     email = user_tbl.email
@@ -324,6 +353,55 @@ class RegConfirmPage(webapp.RequestHandler):
     slots = [0, 0, 0, 0, 0, 0, 0]
     path = os.path.join(os.path.dirname(__file__), 'view/reg_confirm.html')
     self.response.out.write(template.render(path, {'page':'reg_confirm', 'email': email, 'slots': slots}))
+
+class CancelDonePage(webapp.RequestHandler):
+  def get(self):
+    user = users.get_current_user()
+    if not user:
+      self.redirect('/conference/2012/09/')
+      return
+
+    user_tbls = getUserTbl(user)
+    if not user_tbls:
+      self.redirect('/conference/2012/09/')
+      return
+
+    user_tbl = user_tbls[0]
+    keys = []
+    if user_tbl.slot_0:
+      keys.append(str(user_tbl.slot_0))
+    if user_tbl.slot_2:
+      keys.append(str(user_tbl.slot_2))
+    if user_tbl.slot_4:
+      keys.append(str(user_tbl.slot_4))
+    if user_tbl.slot_6:
+      keys.append(str(user_tbl.slot_6))
+    if user_tbl.slot_8:
+      keys.append(str(user_tbl.slot_8))
+    if user_tbl.slot_10:
+      keys.append(str(user_tbl.slot_10))
+    if user_tbl.slot_12:
+      keys.append(str(user_tbl.slot_12))
+
+    res = Session.get_by_key_name(keys)
+
+    for s in res:
+      s.curr_ = s.curr_ - 1
+      s.put()
+
+    user_tbl.canceld = True
+    user_tbl.slot_0 = None
+    user_tbl.slot_2 = None
+    user_tbl.slot_4 = None
+    user_tbl.slot_6 = None
+    user_tbl.slot_8 = None
+    user_tbl.slot_10 = None
+    user_tbl.slot_12 = None
+    user_tbl.put()
+
+    path = os.path.join(os.path.dirname(__file__), 'view/routing.html')
+    self.response.out.write(template.render(path, {'filename': 'blocks/canceld.html', 'page':'canceld'}))
+
 
 # done
 class RegDonePage(webapp.RequestHandler):
@@ -508,14 +586,17 @@ def main():
     ('/conference/2012/09/', MainPage),
     ('/conference/2012/09/index.html', MainPage),
     # ('/conference/2012/09/sponsor.html', SponsorPage),
-    ('/conference/2012/09/volunteer.html', VolunteerPage),
+    # ('/conference/2012/09/volunteer.html', VolunteerPage),
     ('/conference/2012/09/program.html', ProgramPage),
     ('/conference/2012/09/speaker.html', SpeakerPage),
     ('/conference/2012/09/faq.html', FaqPage),
     ('/conference/2012/09/reg_top.html', RegTopPage),
     ('/conference/2012/09/reg_program.html', RegProgramPage),
     # ('/conference/2012/09/reg_confirm.html', RegConfirmPage),
-    ('/conference/2012/09/reg_done.html', RegDonePage)
+    ('/conference/2012/09/reg_done.html', RegDonePage),
+    ('/conference/2012/09/cancel_done.html', CancelDonePage),
+    ('/conference/2012/09/lt.html',LtPage),
+    ('/conference/2012/09/writer.html',WriterPage)
  ], debug=True)
   wsgiref.handlers.CGIHandler().run(application)
 
