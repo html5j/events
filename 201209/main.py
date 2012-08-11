@@ -58,8 +58,23 @@ class Users(db.Model):
   slot_8 = db.StringProperty(required=False)
   slot_10 = db.StringProperty(required=False)
   slot_12 = db.StringProperty(required=False)
+  waiting = db.BooleanProperty(required=True, default=False)
 
 
+def getCurrentNum():
+  q =  Users.all()
+  q.filter('waiting =', False)
+
+  return len(q.fetch(1000))
+
+def canSubscribe():
+  max_ = 1
+  curr = getCurrentNum()
+
+  if curr > max_:
+    return False
+  else:
+    return True
 
 
 """
@@ -68,7 +83,7 @@ Top page
 class MainPage(webapp.RequestHandler):
   def get(self):
     path = os.path.join(os.path.dirname(__file__), 'view/index.html')
-    self.response.out.write(template.render(path, {'page':'index'}))
+    self.response.out.write(template.render(path, {'page':'index', 'can_subscribe': canSubscribe()}))
 
 """
 sponsor page
@@ -148,7 +163,7 @@ def topPage(self, alert, params):
   user_tbl = getUserTbl(user)
 
   if user_tbl:
-    self.redirect('/conference/2012/09/program.html')
+    self.redirect('/conference/2012/09/reg_program.html')
     return
 
   email = user.email()
@@ -193,9 +208,9 @@ class RegProgramPage(webapp.RequestHandler):
 
     user_tbls = getUserTbl(user)
 
-    if user_tbls:
-      self.redirect("/conference/2012/09/program.html")
-      return
+    #if user_tbls:
+    #  self.redirect("/conference/2012/09/program.html")
+    #  return
 
     if not user_tbls:
       name = self.request.get('name')
@@ -260,9 +275,9 @@ class RegProgramPage(webapp.RequestHandler):
       return
 
     user_tbls = getUserTbl(user)
-    if user_tbls:
-      self.redirect("/conference/2012/09/program.html")
-      return
+    # if user_tbls:
+    #  self.redirect("/conference/2012/09/program.html")
+    #   return
 
     if not user_tbls:
       self.redirect('/conference/2012/09/reg_top.html')

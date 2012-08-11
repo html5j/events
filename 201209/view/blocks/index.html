@@ -1,6 +1,22 @@
 <section>
   <h2 class="page-header">HTML5 Conference 2012 開催のご案内</h2>
 
+  <ul class="nav row" style="margin: 40px 0 60px">
+    <li class="span4 offset4">
+    {% if can_subscribe %}
+    <a class="btn btn-large" href="reg_top.html">参加登録する</a>
+    {% else %}
+    <a class="btn btn-large" href="reg_top.html">キャンセル待ち登録する</a>
+    {% endif %}
+    </li>
+  </ul>
+  <div class="alert">
+    <ul>
+      <li>登録には、Googleアカウントが必要です</li>
+      <li>登録済みの方は、上のボタンをクリックすると登録内容変更画面が表示されます</li>
+    </ul>
+  </div>
+
   <div class="alert alert-error">
     カンファレンスの募集開始は8/11(土)を予定しています。<br>なお、参加登録にあたり <a href="https://accounts.google.com/NewAccount?hl=ja">Google アカウント</a>が必要となります。アカウントをお持ちでない方は事前に作成ください。
   </div>

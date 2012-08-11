@@ -64,9 +64,9 @@
         {% if user_tbl %}
         {% for session in slot.sessions %}
         <td class="session_subscribe"><label for="session_{{session.session_id}}" class="radio"><div><input type="radio" name="slot_{{slot.slot_id}}" value="{{session.session_id}}" id="session_{{session.session_id}}" {% for id in registered %}{% ifequal id session.session_id %}checked{% endifequal %}{% endfor %}
-            {% for o in sess %}{% ifequal o.session_id session.session_id %}
-              {% ifequal o.status "full" %}disabled{% endifequal %}
-            {% endifequal %}{% endfor %}
+              {% for o in sess %}{% ifequal o.session_id session.session_id %}
+              {% ifequal o.status "full" %}data-disabled="true"{% endifequal %}
+              {% endifequal %}{% endfor %}
               > 参加する</div></label></td>
         {% endfor %}
         {% if slot.sessions|length_is:"1" %}
@@ -125,11 +125,20 @@
               {% endifequal %}
             {% endfor %}
           {%endfor%}
+          {% for o in sess %}{% ifequal o.session_id session.session_id %}
+            {% ifequal o.status "ok" %}<span class="label label-info">余裕</span>{% endifequal %}
+            {% ifequal o.status "jam" %}<span class="label label-warning">混雑</span>{% endifequal %}
+            {% ifequal o.status "full" %}<span class="label label-important">満席</span>{% endifequal %}
+          {% endifequal %}{% endfor %}
         </td></tr>
 
         {% if user_tbl %}
-        <tr><td class="session_subscriber">
-            <label for="session_p{{session.session_id}}"><div><input type="radio" name="slot_p{{slot.slot_id}}" value="{{session.session_id}}" id="session_p{{session.session_id}}" {% for id in registered %}{% ifequal id session.session_id %}checked{% endifequal %}{% endfor %}> 参加する</div></label>
+        <tr><td class="session_subscribe">
+            <label for="session_p{{session.session_id}}"><div><input type="radio" name="slot_p{{slot.slot_id}}" value="{{session.session_id}}" id="session_p{{session.session_id}}" {% for id in registered %}{% ifequal id session.session_id %}checked{% endifequal %}{% endfor %}
+              {% for o in sess %}{% ifequal o.session_id session.session_id %}
+              {% ifequal o.status "full" %}data-disabled="true"{% endifequal %}
+              {% endifequal %}{% endfor %}
+                > 参加する</div></label>
         </td></tr>
         {% endif %}
       {% endfor %}
@@ -164,6 +173,12 @@
     });
 
     $(".session_title").popover({"placement":"bottom"});
+
+    $(".session_subscribe input").each(function(i){
+      if(!!$(this).attr("checked") === false && $(this).data().disabled) {
+        $(this).attr("disabled", "disabled");
+      }
+    });
   }());
 </script>
 
