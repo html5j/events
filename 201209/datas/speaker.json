@@ -9,7 +9,7 @@
 所属
 http://www.pxgrid.com/
 blog
-http://yomotsu.net/blog/"
+http://yomotsu.net/blog/",
     "icon": "akihiro_oyamada.png"
   },
   {
@@ -25,7 +25,7 @@ http://yomotsu.net/blog/"
     "name": "こもり まさあき",
     "ruby": "こもり まさあき",
     "company": "フリーランス",
-    "description": "1972年生まれのフリーランス。1990年代前半より都内某社にて、DTPの入出力業務、デザイン業務、ネットワーク関連業務に並行して従事。会社を退職後、そのままフリーランスの道へ。案件ごとに業務内容や立ち位置が異なるため、職域的な肩書きはなし。"
+    "description": "1972年生まれのフリーランス。1990年代前半より都内某社にて、DTPの入出力業務、デザイン業務、ネットワーク関連業務に並行して従事。会社を退職後、そのままフリーランスの道へ。案件ごとに業務内容や立ち位置が異なるため、職域的な肩書きはなし。",
     "icon": "komori_masaaki.jpg"
   },
   {
@@ -36,7 +36,7 @@ http://yomotsu.net/blog/"
     "description": "HTML5開発者コミュニティhtml5j.org管理人、HTML5とか勉強会主催、Web先端技術味見部 部長など、Webの最新技術に関するコミュニティ・勉強会活動を積極的に展開。
 2012年より株式会社シーエー・モバイル Web先端技術フェローに就任。
 ほか、株式会社オープンウェブ・テクノロジー代表取締役、Google API Expert (HTML5)、Microsoft Most Valuable Professional 2010, 2011 (Internet Explorer)など。
-著書に「HTML5&API入門」（日経BP）、「Google Gearsスタートガイド」（技術評論社）などがある。"
+著書に「HTML5&API入門」（日経BP）、「Google Gearsスタートガイド」（技術評論社）などがある。",
     "icon": "shumpei_shiraishi.jpg"
   },
   {
@@ -65,7 +65,7 @@ http://yomotsu.net/blog/"
     "company": "株式会社ディー・エヌ・エー",
     "description": "HTML5によるFlashのランタイム「ExGame」の開発者。
 ネイティブアプリの水準で動くブラウザHTML5ゲームを開発しやすくなるようにngCoreのHTML5版のプロトタイプ開発に加え、新フレームワークPexの開発を牽引し先日公開。
-DeNAにおいてHTML5開発の総括を担当している。"
+DeNAにおいてHTML5開発の総括を担当している。",
 "icon": "kihira.png"
   },
  {
@@ -75,7 +75,7 @@ DeNAにおいてHTML5開発の総括を担当している。"
     "company": "Mozilla Japan",
     "description": "学生時代に Web 技術文書を翻訳、Firefox 1.0 から Mozilla 製品の日本語リリースを担当。インターネットをすべての人々の利益になる方向へ発展させる Mozilla の目標に共感し、大学院卒業後 Mozilla Japan に参加。
 テクニカルマーケティングとして Mozilla の製品や技術の他、最新 Web 技術や業界動向などを解説している。
-主な共著は『Firefox Hacks Rebooted』(O'Reilly Japan) 
+主な共著は『Firefox Hacks Rebooted』(O'Reilly Japan)
 
 Twitter: @dynamitter (https://twitter.com/dynamitter)
 Facebook: http://www.facebook.com/dynamis
@@ -93,7 +93,7 @@ SlideShare: http://www.slideshare.net/dynamis"
     "name": "北村 英志",
     "ruby": "きたむら えいじ",
     "company": "グーグル株式会社",
-    "description": "北村 英志はGoogleのデベロッパーアドボケイトとして、Chrome Extension や Apps、Chrome Web Store、HTML5 をはじめとしたフロントエンド技術を普及させる活動を行っています。"
+    "description": "北村 英志はGoogleのデベロッパーアドボケイトとして、Chrome Extension や Apps、Chrome Web Store、HTML5 をはじめとしたフロントエンド技術を普及させる活動を行っています。",
     "icon": "agektmr.jpg"
   },
   {
@@ -113,7 +113,7 @@ SlideShare: http://www.slideshare.net/dynamis"
 
 カヤック、スクウェア・エニックスでのリッチなWebゲーム開発を経て、現在
 スマートフォン向けネイティブソーシャルゲームのクライアントサイド開発を担当。
-２Dテクニカルアーティスト。"
+２Dテクニカルアーティスト。",
     "icon": "gree_hisamichi.png"
   },
   {
@@ -121,7 +121,7 @@ SlideShare: http://www.slideshare.net/dynamis"
     "name": "轟 啓介",
     "ruby": "とどろき けいすけ",
     "company": "アドビ システムズ 株式会社",
-    "description": "アドビ システムズ 株式会社 / 1999年、早稲田大学理工学部を卒業後、大手印刷会社に勤務。主にEC分野でJ2EE開発に携わるが、Flexとの衝撃的な出会いを機にRIAの世界へ。 2008年4月、アドビシステムズ入社。 Flex/AIR/Flashを中心としたFlash Platformに加え、現在はHTML5を含むWeb全般のデベロッパーマーケティングを担当。"
+    "description": "アドビ システムズ 株式会社 / 1999年、早稲田大学理工学部を卒業後、大手印刷会社に勤務。主にEC分野でJ2EE開発に携わるが、Flexとの衝撃的な出会いを機にRIAの世界へ。 2008年4月、アドビシステムズ入社。 Flex/AIR/Flashを中心としたFlash Platformに加え、現在はHTML5を含むWeb全般のデベロッパーマーケティングを担当。",
     "icon": "keisuke_todoroki.png"
   },
   {
@@ -131,7 +131,7 @@ SlideShare: http://www.slideshare.net/dynamis"
     "company": "日本マイクロソフト株式会社",
     "description": "岐阜大学を卒業後、勤務していた商社でAfter Effectsに出会い、アドビ システムズに転職。ビデオ編集ツールのマーケティング一筋の10年を過ごす。マクロメディアとの合併後にはFlashのマーケティングにも携わる。
 
-    2007年1月、Expressionのプロダクトマネージャーとして、マイクロソフトに入社。その後、Silverlightのプロダクトマネージャーを兼務し、両製品のマーケティングを統括する。2009年7月、エバンジェリスト部門に異動。ユーザーエクスペリエンス (UX) と、その中核技術であるWindows、Internet Explorer、HTML5を担当。HTML5の中では<video>が一番得意。"
+    2007年1月、Expressionのプロダクトマネージャーとして、マイクロソフトに入社。その後、Silverlightのプロダクトマネージャーを兼務し、両製品のマーケティングを統括する。2009年7月、エバンジェリスト部門に異動。ユーザーエクスペリエンス (UX) と、その中核技術であるWindows、Internet Explorer、HTML5を担当。HTML5の中では<video>が一番得意。",
     "icon": "yoshitaka_kasugai.jpg"
   },
   {
@@ -140,7 +140,7 @@ SlideShare: http://www.slideshare.net/dynamis"
     "ruby": "おおた しょうご",
     "company": "クックパッド株式会社",
     "description": "レシピ検索・投稿サイトのクックパッドでサービス開発を支える仕事をしながら、Google ChromeのAPI Expertとして活動しています。
-調べ物をするのが好きな性格が高じて、気がつけばGoogle ChromeのAPI Expertになっていました。日々さまざまなバッドノウハウと闘いながら、世の中からバッドノウハウが少しでもなくなるように頑張っています。"
+調べ物をするのが好きな性格が高じて、気がつけばGoogle ChromeのAPI Expertになっていました。日々さまざまなバッドノウハウと闘いながら、世の中からバッドノウハウが少しでもなくなるように頑張っています。",
     "icon": "shogo_ota.png"
    },
   {
@@ -148,7 +148,7 @@ SlideShare: http://www.slideshare.net/dynamis"
     "name": "斉藤  祐也",
     "ruby": "さいとう ゆうや",
     "company": "株式会社サイバーエージェント",
-    "description": "1979年生まれ。ネバダ州立ラスベガス大学、プリントジャーナリズム学部卒。株式会社All Aboutオールアバウトで6年、2012年2月からは株式会社サイバーエージェントへ。個人では、フロントエンドデベロッパのためのミニブックというコンセプトのブログCSS Radar(http://css.studiomohawk.com/)をはじめ海外記事やドキュメントの翻訳を掲載しているen.ja(http://enja.studiomohawk.com/)を運営。"
+    "description": "1979年生まれ。ネバダ州立ラスベガス大学、プリントジャーナリズム学部卒。株式会社All Aboutオールアバウトで6年、2012年2月からは株式会社サイバーエージェントへ。個人では、フロントエンドデベロッパのためのミニブックというコンセプトのブログCSS Radar(http://css.studiomohawk.com/)をはじめ海外記事やドキュメントの翻訳を掲載しているen.ja(http://enja.studiomohawk.com/)を運営。",
     "icon": "yuya_saito.jpg"
   },
   {
@@ -156,7 +156,7 @@ SlideShare: http://www.slideshare.net/dynamis"
     "name": "新野 淳一",
     "ruby": "にいの じゅんいち",
     "company": "publickey",
-    "description": ""
+    "description": "",
     "icon": "junichi_niino.jpg"
   },
   {
@@ -164,16 +164,16 @@ SlideShare: http://www.slideshare.net/dynamis"
     "name": "吉川 徹",
     "ruby": "よしかわ とおる",
     "company": "株式会社シーエー・モバイル",
-    "description": "株式会社シーエー・モバイルにて、Web先端技術フェローとして活動中。html5j.orgのスタッフとして、HTML5の最新動向を追うとともに、HTML5の普及促進に務める。また、Google API Expert (Chrome) として、Chrome関連でも情報発信を行っている。その他、Webに関する講演や記事執筆、jQuery Mobile担当講師(allWebクリエイター塾)など。最近では、「jQuery Mobileパーフェクトガイド」(インプレスジャパン)を執筆。"
-    "icon": "toru_yoshikawa.jpg" 
+    "description": "株式会社シーエー・モバイルにて、Web先端技術フェローとして活動中。html5j.orgのスタッフとして、HTML5の最新動向を追うとともに、HTML5の普及促進に務める。また、Google API Expert (Chrome) として、Chrome関連でも情報発信を行っている。その他、Webに関する講演や記事執筆、jQuery Mobile担当講師(allWebクリエイター塾)など。最近では、「jQuery Mobileパーフェクトガイド」(インプレスジャパン)を執筆。",
+    "icon": "toru_yoshikawa.jpg"
   },
   {
     "id": 21,
     "name": "あんどう やすし",
     "ruby": "あんどう やすし",
     "company": "株式会社ミクシィ",
-    "description": "著書に「Google Wave入門」"
-    "icon": "yasushi_ando.jpg" 
+    "description": "著書に「Google Wave入門」",
+    "icon": "yasushi_ando.jpg"
   },
   {
     "id": 22,
@@ -194,8 +194,8 @@ SlideShare: http://www.slideshare.net/dynamis"
     "name": "坂本 一樹",
     "ruby": "さかもと かずき",
     "company": "グリー株式会社",
-    "description": "エンジニア。@splhack。『エキスパートObjective-Cプログラミング』を書いたり、Unityアジア・ブートキャンプ・ツアー:東京でしゃべるなど、ネイティブアプリバリバリな人。一見HTML5とは縁遠そうに見えるが果たして。"
-    "icon": "gree_sakamoto.png" 
+    "description": "エンジニア。@splhack。『エキスパートObjective-Cプログラミング』を書いたり、Unityアジア・ブートキャンプ・ツアー:東京でしゃべるなど、ネイティブアプリバリバリな人。一見HTML5とは縁遠そうに見えるが果たして。",
+    "icon": "gree_sakamoto.png"
   }
 
 ]
