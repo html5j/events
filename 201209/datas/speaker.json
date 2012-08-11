@@ -1,183 +1,202 @@
 [
-	{
-		"id": 0,
-		"name": "小山田 晃浩",
-		"ruby": "おやまだ あきひろ",
-		"company": "株式会社ピクセルグリッド",
-		"description": "1982年生まれ。（株）ピクセルグリッドのフロントエンドエンジニア。HTML、CSS、JavaScript、SVGなどを駆使したUI実装を行なっている。雑誌や書籍の執筆や講演も多数行なっており、主な著書に「Webデザイナー/コーダーのためのHTML5コーディング入門」(エクスナレッジ:共著)、「CSS3デザイン プロフェッショナルガイド」(毎日コミュニケーションズ:共著)などがある。Microsoft MVP for Internet Exploper 2011, 2012
+  {
+    "id": 0,
+    "name": "小山田 晃浩",
+    "ruby": "おやまだ あきひろ",
+    "company": "株式会社ピクセルグリッド",
+    "description": "1982年生まれ。（株）ピクセルグリッドのフロントエンドエンジニア。HTML、CSS、JavaScript、SVGなどを駆使したUI実装を行なっている。雑誌や書籍の執筆や講演も多数行なっており、主な著書に「Webデザイナー/コーダーのためのHTML5コーディング入門」(エクスナレッジ:共著)、「CSS3デザイン プロフェッショナルガイド」(毎日コミュニケーションズ:共著)などがある。Microsoft MVP for Internet Exploper 2011, 2012
 
-所属 
+所属
 http://www.pxgrid.com/
 blog
 http://yomotsu.net/blog/"
-	},
-	{
-		"id": 1,
-		"name": "及川 卓也",
-		"ruby": "おいかわ たくや",
-		"company": "Google",
-		"description": "及川 卓也（おいかわ たくや）は Google のエンジニアリングマネージャです。Google Chrome、Google Chrome OS や Google 日本語入力などのクライアントの開発チームを率いています。以前は汎用オペレーティングシステムの開発に携わっていました。",
+  },
+  {
+    "id": 1,
+    "name": "及川 卓也",
+    "ruby": "おいかわ たくや",
+    "company": "Google",
+    "description": "及川 卓也（おいかわ たくや）は Google のエンジニアリングマネージャです。Google Chrome、Google Chrome OS や Google 日本語入力などのクライアントの開発チームを率いています。以前は汎用オペレーティングシステムの開発に携わっていました。",
     "icon": "takuya_oikawa.gif"
-	},
-	{
-		"id": 2,
-		"name": "こもり まさあき",
-		"ruby": "こもり まさあき",
-		"company": "フリーランス",
-		"description": "1972年生まれのフリーランス。1990年代前半より都内某社にて、DTPの入出力業務、デザイン業務、ネットワーク関連業務に並行して従事。会社を退職後、そのままフリーランスの道へ。案件ごとに業務内容や立ち位置が異なるため、職域的な肩書きはなし。"
-	},
-	{
-		"id": 3,
-		"name": "白石 俊平",
-		"ruby": "しらいし しゅんぺい",
-		"company": "CAモバイル",
-		"description": ""
-	},
-	{
-		"id": 4,
-		"name": "矢倉 眞隆",
-		"ruby": "やくら まさたか",
-		"company": "ミツエーリンクス",
-		"description": ""
-	},
-	{
-		"id": 5,
-		"name": "羽田野 太巳 ",
-		"ruby": "はたの ふとみ",
-		"company": "有限会社 Futomi",
-		"description": "",
+  },
+  {
+    "id": 2,
+    "name": "こもり まさあき",
+    "ruby": "こもり まさあき",
+    "company": "フリーランス",
+    "description": "1972年生まれのフリーランス。1990年代前半より都内某社にて、DTPの入出力業務、デザイン業務、ネットワーク関連業務に並行して従事。会社を退職後、そのままフリーランスの道へ。案件ごとに業務内容や立ち位置が異なるため、職域的な肩書きはなし。"
+  },
+  {
+    "id": 3,
+    "name": "白石 俊平",
+    "ruby": "しらいし しゅんぺい",
+    "company": "CAモバイル",
+    "description": "HTML5開発者コミュニティhtml5j.org管理人、HTML5とか勉強会主催、Web先端技術味見部 部長など、Webの最新技術に関するコミュニティ・勉強会活動を積極的に展開。
+2012年より株式会社シーエー・モバイル Web先端技術フェローに就任。
+ほか、株式会社オープンウェブ・テクノロジー代表取締役、Google API Expert (HTML5)、Microsoft Most Valuable Professional 2010, 2011 (Internet Explorer)など。
+著書に「HTML5&API入門」（日経BP）、「Google Gearsスタートガイド」（技術評論社）などがある。"
+  },
+  {
+    "id": 4,
+    "name": "矢倉 眞隆",
+    "ruby": "やくら まさたか",
+    "company": "",
+    "description": "1984年3月生まれ。いろんなところで myakura です。"
+  },
+  {
+    "id": 5,
+    "name": "羽田野 太巳 ",
+    "ruby": "はたの ふとみ",
+    "company": "有限会社 Futomi",
+    "description": "ホスティングサーバー（共用サーバー）でも利用できるWebアプリケーションの独自開発・販売を手がける。主にPerlによるWebシステム制作が中心。オーダーメードのWebアプリケーション制作・Webサーバー管理業務も手がける。
+
+2007年にHTML5.JPを開設し、Canvasを使ったJavaScriptライブラリの開発、HTML5の最新情報の発信、HTML5関連仕様の日本語訳を手がける。
+
+主な著書に『徹底解説HTML5マークアップガイドブック 最終草案対応版』（秀和システム）、『徹底解説 HTML5 APIガイドブック ビジュアル系API編』（秀和システム）など。",
     "icon": "futomi_hatano.jpg"
-	},
-	{
-		"id": 6,
-		"name": "紀平 拓男",
-		"ruby": "きひら たくお",
-		"company": "DeNA",
-		"description": "HTML5によるFlashのランタイム「ExGame」の開発者。
-    ネイティブアプリの水準で動くブラウザHTML5ゲームを開発しやすくなるようにngCoreのHTML5版のプロトタイプ開発に加え、新フレームワークPexの開発を牽引し先日公開。
-    DeNAにおいてHTML5開発の総括を担当している。"
-	},
-	{
-		"id": 7,
-		"name": "浅井 ... ",
-		"ruby": "あさい ...",
-		"company": "Mozilla Japan",
-		"description": ""
-	},
-	{
-		"id": 8,
-		"name": "上村 光星",
-		"ruby": "うえむら こうせい",
-		"company": "NHN Japan",
-		"description": "Web制作会社にて自社サービスと受託案件のHTML/CSS設計・実装に3年ほど携わる。その後、NAVER Japan（現NHN Japan）に入社し、2011年に社内でSassの普及活動を始める。思ったより上手くいき、数ヶ月後には日本のNAVER系サービスのほぼ全てがSass化された。"
-	},
-	{
-		"id": 9,
-		"name": "北村 英志",
-		"ruby": "きたむら えいじ",
-		"company": "Google株式会社",
-		"description": "北村 英志はGoogleのデベロッパーアドボケイトとして、Chrome Extension や Apps、Chrome Web Store、HTML5 をはじめとしたフロントエンド技術を普及させる活動を行っています。"
-	},
-	{
-		"id": 10,
-		"name": "小松 健作",
-		"ruby": "こまつ けんさく",
-		"company": "NTTコミュニケーションズ",
-		"description": "WebSocketを知り、HTML5の世界に入信してから早三年。ネットワークと今後のWebとの関わりや、インタラクティブマルチデバイス Web サービスの研究開発や標準化活動に従事。Google API Expert(HTML5), Microsoft Valuable Professional (Internet Explorer)",
+  },
+  {
+    "id": 6,
+    "name": "紀平 拓男",
+    "ruby": "きひら たくお",
+    "company": "DeNA",
+    "description": "HTML5によるFlashのランタイム「ExGame」の開発者。
+ネイティブアプリの水準で動くブラウザHTML5ゲームを開発しやすくなるようにngCoreのHTML5版のプロトタイプ開発に加え、新フレームワークPexの開発を牽引し先日公開。
+DeNAにおいてHTML5開発の総括を担当している。"
+  },
+  {
+    "id": 7,
+    "name": "浅井 智也",
+    "ruby": "あさい ともや",
+    "company": "Mozilla Japan",
+    "description": ""
+  },
+  {
+    "id": 8,
+    "name": "上村 光星",
+    "ruby": "うえむら こうせい",
+    "company": "NHN Japan",
+    "description": "Web制作会社にて自社サービスと受託案件のHTML/CSS設計・実装に3年ほど携わる。その後、NAVER Japan（現NHN Japan）に入社し、2011年に社内でSassの普及活動を始める。思ったより上手くいき、数ヶ月後には日本のNAVER系サービスのほぼ全てがSass化された。"
+  },
+  {
+    "id": 9,
+    "name": "北村 英志",
+    "ruby": "きたむら えいじ",
+    "company": "Google株式会社",
+    "description": "北村 英志はGoogleのデベロッパーアドボケイトとして、Chrome Extension や Apps、Chrome Web Store、HTML5 をはじめとしたフロントエンド技術を普及させる活動を行っています。"
+  },
+  {
+    "id": 10,
+    "name": "小松 健作",
+    "ruby": "こまつ けんさく",
+    "company": "NTTコミュニケーションズ",
+    "description": "WebSocketを知り、HTML5の世界に入信してから早三年。ネットワークと今後のWebとの関わりや、インタラクティブマルチデバイス Web サービスの研究開発や標準化活動に従事。Google API Expert(HTML5), Microsoft Valuable Professional (Internet Explorer)",
     "icon": "kensaku_komatsu.png"
-	},
-	{
-		"id": 11,
-		"name": "??? ",
-		"ruby": "???",
-		"company": "GREE",
-		"description": ""
-	},
-	{
-		"id": 12,
-		"name": "???",
-		"ruby": "???",
-		"company": "Cyber Agent",
-		"description": ""
-	},
-	{
-		"id": 13,
-		"name": "???",
-		"ruby": "???",
-		"company": "mixi",
-		"description": ""
-	},
-	{
-		"id": 14,
-		"name": "轟 ???",
-		"ruby": "とどろき ???",
-		"company": "Adobe",
-		"description": ""
-	},
-	{
-		"id": 15,
-		"name": "上条 ???",
-		"ruby": "かみじょう ???",
-		"company": "Adobe",
-		"description": ""
-	},
-	{
-		"id": 16,
-		"name": "春日井 良隆",
-		"ruby": "かすがい よしたか",
-		"company": "日本マイクロソフト株式会社",
-		"description": "岐阜大学を卒業後、勤務していた商社でAfter Effectsに出会い、アドビ システムズに転職。ビデオ編集ツールのマーケティング一筋の10年を過ごす。マクロメディアとの合併後にはFlashのマーケティングにも携わる。
-    
+  },
+  {
+    "id": 11,
+    "name": "久道 羊宇太",
+    "ruby": "ひさみち ようた",
+    "company": "グリー株式会社",
+    "description": "グリー株式会社　開発本部所属
+
+カヤック、スクウェア・エニックスでのリッチなWebゲーム開発を経て、現在
+スマートフォン向けネイティブソーシャルゲームのクライアントサイド開発を担当。
+２Dテクニカルアーティスト。"
+  },
+  {
+    "id": 12,
+    "name": "斉藤  祐也",
+    "ruby": "さいとう ゆうや",
+    "company": "Cyber Agent",
+    "description": "1979年生まれ。ネバダ州立ラスベガス大学、プリントジャーナリズム学部卒。株式会社All Aboutオールアバウトで6年、2012年2月からは株式会社サイバーエージェントへ。個人では、フロントエンドデベロッパのためのミニブックというコンセプトのブログCSS Radar(http://css.studiomohawk.com/)をはじめ海外記事やドキュメントの翻訳を掲載しているen.ja(http://enja.studiomohawk.com/)を運営。"
+  },
+  {
+    "id": 13,
+    "name": "???",
+    "ruby": "???",
+    "company": "mixi",
+    "description": ""
+  },
+  {
+    "id": 14,
+    "name": "轟 啓介",
+    "ruby": "とどろき けいすけ",
+    "company": "アドビ システムズ 株式会社",
+    "description": "アドビ システムズ 株式会社 / 1999年、早稲田大学理工学部を卒業後、大手印刷会社に勤務。主にEC分野でJ2EE開発に携わるが、Flexとの衝撃的な出会いを機にRIAの世界へ。 2008年4月、アドビシステムズ入社。 Flex/AIR/Flashを中心としたFlash Platformに加え、現在はHTML5を含むWeb全般のデベロッパーマーケティングを担当。"
+  },
+  {
+    "id": 15,
+    "name": "上条 ???",
+    "ruby": "かみじょう ???",
+    "company": "Adobe",
+    "description": ""
+  },
+  {
+    "id": 16,
+    "name": "春日井 良隆",
+    "ruby": "かすがい よしたか",
+    "company": "日本マイクロソフト株式会社",
+    "description": "岐阜大学を卒業後、勤務していた商社でAfter Effectsに出会い、アドビ システムズに転職。ビデオ編集ツールのマーケティング一筋の10年を過ごす。マクロメディアとの合併後にはFlashのマーケティングにも携わる。
+
     2007年1月、Expressionのプロダクトマネージャーとして、マイクロソフトに入社。その後、Silverlightのプロダクトマネージャーを兼務し、両製品のマーケティングを統括する。2009年7月、エバンジェリスト部門に異動。ユーザーエクスペリエンス (UX) と、その中核技術であるWindows、Internet Explorer、HTML5を担当。HTML5の中では<video>が一番得意。"
-	},
-	{
-		"id": 17,
-		"name": "太田 昌吾",
-		"ruby": "おおた しょうご",
-		"company": "クックパッド",
-		"description": ""
-	},
-	{
-		"id": 18,
-		"name": "斉藤  祐也",
-		"ruby": "さいとう ゆうや",
-		"company": "株式会社サイバーエージェント",
-		"description": "1979年生まれ。ネバダ州立ラスベガス大学、プリントジャーナリズム学部卒。株式会社All Aboutオールアバウトで6年、2012年2月からは株式会社サイバーエージェントへ。個人では、フロントエンドデベロッパのためのミニブックというコンセプトのブログCSS Radar(http://css.studiomohawk.com/)をはじめ海外記事やドキュメントの翻訳を掲載しているen.ja(http://enja.studiomohawk.com/)を運営。"
-	},
-	{
-		"id": 19,
-		"name": "新野 淳一",
-		"ruby": "にいの じゅんいち",
-		"company": "publickey",
-		"description": ""
-	},
-	{
-		"id": 20,
-		"name": "吉川 徹",
-		"ruby": "よしかわ とおる",
-		"company": "CAモバイル",
-		"description": ""
-	},
-	{
-		"id": 21,
-		"name": "あんどう やすし",
-		"ruby": "あんどう やすし",
-		"company": "mixi",
-		"description": ""
-	},
-	{
-		"id": 22,
-		"name": "ともちゃん",
-		"ruby": "ともちゃん",
-		"company": "ITMedia",
-		"description": ""
-	},
-	{
-		"id": 23,
-		"name": "富田 梓",
-		"ruby": "とみた あずさ",
-		"company": "NHN Japan",
-		"description": "ひょっこり生まれて気がつくとWebの世界に。Web制作会社にてコーディング、ディレクション業務に携わった後、NAVER Japan（現NHN Japan）に入社。MEとして日本のNAVER系サービスを中心に担当。マンガを読むことを生きがいにしている。"
-	}
+  },
+  {
+    "id": 17,
+    "name": "太田 昌吾",
+    "ruby": "おおた しょうご",
+    "company": "クックパッド株式会社",
+    "description": "レシピ検索・投稿サイトのクックパッドでサービス開発を支える仕事をしながら、Google ChromeのAPI Expertとして活動しています。
+調べ物をするのが好きな性格が高じて、気がつけばGoogle ChromeのAPI Expertになっていました。日々さまざまなバッドノウハウと闘いながら、世の中からバッドノウハウが少しでもなくなるように頑張っています。"
+  },
+  {
+    "id": 18,
+    "name": "斉藤  祐也",
+    "ruby": "さいとう ゆうや",
+    "company": "株式会社サイバーエージェント",
+    "description": "1979年生まれ。ネバダ州立ラスベガス大学、プリントジャーナリズム学部卒。株式会社All Aboutオールアバウトで6年、2012年2月からは株式会社サイバーエージェントへ。個人では、フロントエンドデベロッパのためのミニブックというコンセプトのブログCSS Radar(http://css.studiomohawk.com/)をはじめ海外記事やドキュメントの翻訳を掲載しているen.ja(http://enja.studiomohawk.com/)を運営。"
+  },
+  {
+    "id": 19,
+    "name": "新野 淳一",
+    "ruby": "にいの じゅんいち",
+    "company": "publickey",
+    "description": ""
+  },
+  {
+    "id": 20,
+    "name": "吉川 徹",
+    "ruby": "よしかわ とおる",
+    "company": "株式会社シーエー・モバイル",
+    "description": "株式会社シーエー・モバイルにて、Web先端技術フェローとして活動中。html5j.orgのスタッフとして、HTML5の最新動向を追うとともに、HTML5の普及促進に務める。また、Google API Expert (Chrome) として、Chrome関連でも情報発信を行っている。その他、Webに関する講演や記事執筆、jQuery Mobile担当講師(allWebクリエイター塾)など。最近では、「jQuery Mobileパーフェクトガイド」(インプレスジャパン)を執筆。"
+  },
+  {
+    "id": 21,
+    "name": "あんどう やすし",
+    "ruby": "あんどう やすし",
+    "company": "株式会社ミクシィ",
+    "description": "著書に「Google Wave入門」"
+  },
+  {
+    "id": 22,
+    "name": "ともちゃん",
+    "ruby": "ともちゃん",
+    "company": "ITMedia",
+    "description": ""
+  },
+  {
+    "id": 23,
+    "name": "富田 梓",
+    "ruby": "とみた あずさ",
+    "company": "NHN Japan",
+    "description": "ひょっこり生まれて気がつくとWebの世界に。Web制作会社にてコーディング、ディレクション業務に携わった後、NAVER Japan（現NHN Japan）に入社。MEとして日本のNAVER系サービスを中心に担当。マンガを読むことを生きがいにしている。"
+  },
+  {
+    "id": 24,
+    "name": "坂本 一樹",
+    "ruby": "さかもと かずき",
+    "company": "グリー株式会社",
+    "description": "エンジニア。@splhack。『エキスパートObjective-Cプログラミング』を書いたり、Unityアジア・ブートキャンプ・ツアー:東京でしゃべるなど、ネイティブアプリバリバリな人。一見HTML5とは縁遠そうに見えるが果たして。"
+  }
 
 ]
