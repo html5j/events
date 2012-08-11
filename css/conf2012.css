@@ -201,3 +201,57 @@ p.session-room {
 ._test {
   display: none;
 }
+
+/* トップのスポンサー一覧
+-----------------------------------------------------------------------------*/
+.clearfix {
+    width:100%;
+}
+.clearfix:after{
+    content: ""; 
+    display: block; 
+    clear: both;
+}
+.sponsors {
+}
+
+.sponsor-logo {
+    width: 130px;
+}
+
+.sponsor-list {
+    list-style-type: none;
+    width:100%;
+    display: none;
+}
+.sponsor-list:after {
+    content: ""; 
+    display: block; 
+    clear: both;
+}
+.sponsor-list li {
+    float: left;
+    width: 130px;
+    height: 130px;
+    line-height: 130px;
+    border: 1px solid #B6B6B9;
+    padding: 8px;
+    margin-bottom: 8px;
+    text-align: center;
+}
+
+.platinum .sponsor-list li {
+    margin-right: 40px;
+}
+.gold .sponsor-list li {
+    margin-right: 30px;
+}
+.silver .sponsor-list li {
+    margin-right: 20px;
+}
+.special .sponsor-list li {
+    margin-right: 20px;
+}
+.sponsors > section {
+    margin-bottom: 20px;
+}

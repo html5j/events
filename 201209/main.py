@@ -82,8 +82,11 @@ Top page
 """
 class MainPage(webapp.RequestHandler):
   def get(self):
+    sponsorsJsonFile = open(os.path.join(os.path.dirname(__file__), 'datas/sponsors.json')).read()
+    sponsors = simplejson.loads(sponsorsJsonFile)
+    
     path = os.path.join(os.path.dirname(__file__), 'view/index.html')
-    self.response.out.write(template.render(path, {'page':'index', 'can_subscribe': canSubscribe()}))
+    self.response.out.write(template.render(path, {'page':'index', 'can_subscribe': canSubscribe(), 'sponsors': sponsors }))
 
 """
 sponsor page
