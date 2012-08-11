@@ -591,7 +591,9 @@ def main():
     ('/conference/2012/09/reg_program.html', RegProgramPage),
     # ('/conference/2012/09/reg_confirm.html', RegConfirmPage),
     ('/conference/2012/09/reg_done.html', RegDonePage),
-    ('/conference/2012/09/cancel_done.html', CancelDonePage)
+    ('/conference/2012/09/cancel_done.html', CancelDonePage),
+    ('/conference/2012/09/lt.html',LtPage),
+    ('/conference/2012/09/writer.html',WriterPage)
  ], debug=True)
   wsgiref.handlers.CGIHandler().run(application)
 
