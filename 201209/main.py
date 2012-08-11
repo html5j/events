@@ -68,7 +68,7 @@ def getCurrentNum():
   return len(q.fetch(1000))
 
 def canSubscribe():
-  max_ = 1000
+  max_ = 1
   curr = getCurrentNum()
 
   if curr > max_:
@@ -100,6 +100,22 @@ class VolunteerPage(webapp.RequestHandler):
   def get(self):
     path = os.path.join(os.path.dirname(__file__), 'view/routing.html')
     self.response.out.write(template.render(path, {'filename': 'blocks/volunteer.html', 'page':'volunteer'}))
+
+"""
+lt page
+"""
+class LtPage(webapp.RequestHandler):
+  def get(self):
+    path = os.path.join(os.path.dirname(__file__), 'view/routing.html')
+    self.response.out.write(template.render(path, {'filename': 'blocks/lt.html', 'page':'lt'}))
+
+"""
+writer page
+"""
+class WriterPage(webapp.RequestHandler):
+  def get(self):
+    path = os.path.join(os.path.dirname(__file__), 'view/routing.html')
+    self.response.out.write(template.render(path, {'filename': 'blocks/writer.html', 'page':'writer'}))
 
 """
 program page
@@ -168,7 +184,7 @@ def topPage(self, alert, params):
 
   email = user.email()
   path = os.path.join(os.path.dirname(__file__), 'view/reg_top.html')
-  self.response.out.write(template.render(path, {'page':'reg_top', 'email':email, 'params': params, 'alert':alert}))
+  self.response.out.write(template.render(path, {'page':'reg_top', 'email':email, 'params': params, 'alert':alert, 'can_subscribe': canSubscribe()}))
 
 # top
 class RegTopPage(webapp.RequestHandler):
