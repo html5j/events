@@ -25,23 +25,22 @@
     "sessions" : [
       {
         "session_id": 1,
-        "title": "HTML5/CSS3総まくり2012",
-        "description": "ふがほげふがほげ",
+        "title": "HTMLとかCSSとかAPIとか -2012秋編- (仮)",
+        "description": "2011年12月のHTML5とか勉強会で好評を博した白石さんの「HTML5&API総まくり」、その2012年秋版です。今回はCSSも加え、時間の許す限りまくっていきます。",
         "speakers": [4],
         "max": 500
       },
       {
         "session_id": 2,
-        "title": "HTML5マークアップ",
-        "description": "ふがほげふがほげ",
+        "title": "HTML5マークアップ珍プレー集",
+        "description": "近年、個人や企業を問わず、HTML5でマークアップされたサイトが数多く登場しています。しかし、HTML5が浸透してから年月が浅いこともあり、有名な大企業のサイトですら、不適切なマークアップが見受けられます。本セッションでは、そのような不適切なマークアップを紹介し、どう直すべきかをみなさんと一緒に考察していきます。",
         "speakers": [5],
         "max": 100
       },
       {
         "session_id": 3,
-        "title": "Windows 8 の全く新しいUI ”Metro” とは？",
-        "description": "まもなくリリースされるWindows 8。
-        Windows 8にはマウスとキーボードでの操作を前提とする従来の「デスクトップ」とタッチに最適化された新しい「Metro」の2つのUIを内包しています。このセッションでは、そのMetroの思想からMetroアプリのデザイン原則、UXガイドラインのポイントをご説明します。AndroidやiOSのUIデザイナーの参考にもなるでしょう。",
+        "title": "HTML5とIE10とWindows 8",
+        "description": "IE9から本格化したHTML5の実装はまもなくリリースされるIE10でさらに広がるだけでなく、次期Windows OSであるWindows 8のアプリそのものもHTML5で構築できるようになります。このセッションではIE10で新たにサポートされるHTML5、Windows 8のアプリとHTML5との関係、そして、現在のマイクロソフトのHTML5との向き合い方について、ご紹介します。",
         "speakers": [16],
         "max": 100
       },
@@ -66,8 +65,11 @@
     "sessions" : [
       {
         "session_id": 5,
-        "title": "HTML5時代のデザイン全般論",
-        "description": "HTML5を利用したデザイン全般について",
+        "title": "HTML5時代のWebデザイン",
+        "description": "スマートデバイスの普及や高解像度ディスプレイの登場などによって、これまで
+のWebデザインの常識ももはや変わりつつあります。このセッションでは、閲覧
+環境や仕様の変化にも柔軟に対応できる、ちょっと先の未来を見据えたWebデザ
+インの手法を紹介します。",
         "speakers": [2],
         "max": 500
       },
@@ -85,9 +87,9 @@
         "title": "(未定) Chrome最新情報",
         "description": "・モバイル版Chrome等を対象としたモバイルアプリ・サイト開発手法の解説
 
-        もしくは
+もしくは
 
-        ・ウェブアプリの可能性を更に広げる新しいChrome Extension / Appsのご紹介",
+・ウェブアプリの可能性を更に広げる新しいChrome Extension / Appsのご紹介",
         "speakers": [9],
         "max": 100
       },
@@ -112,22 +114,22 @@
     "sessions" : [
       {
         "session_id": 9,
-        "title": "パネル/プロフェッショナルがHTML5を切るHTML5はどこに行く",
+        "title": "パネル/プロフェッショナルパネルがHTML5を切るHTML5はどこに行く",
         "description": "ふがほげふがほげ",
         "speakers": [19,1,3,5,10],
         "max": 500
       },
       {
         "session_id": 10,
-        "title": "Adobe系デザインツール",
-        "description": "ふがほげふがほげ",
+        "title": "更に進化する CSS の表現力と新しい Web ツール",
+        "description": "雑誌のようなレイアウトを実現する CSS Regions や CSS Exclusions といった新たな試みの他、開発効率を高めるオープンソースのコードエディタ Brackets や PC からリモートでスマホやタブレットの Web Inspection を行う Adobe Shadow などを紹介していきます。",
         "speakers": [14,15],
         "max": 100
       },
       {
         "session_id": 11,
-        "title": "パフォーマンスチューニング/実際に早くしていく感じ live tuning",
-        "description": "ふがほげふがほげ",
+        "title": "軽快なウェブアプリケーション開発教室",
+        "description": "HTML5を中心としたウェブアプリケーションの開発におけるノウハウや、高速な開発サイクルを実践するための環境作りについて、JavaScriptのテストや継続的インテグレーションなどに触れながら、簡単なデモなどを交えつつご紹介します。",
         "speakers": [17],
         "max": 100
       },
@@ -154,15 +156,15 @@
       {
         "session_id": 13,
         "title": "HTML5なゲーム開発者のパネル(前半)",
-        "description": "ふがほげふがほげ",
+        "description": "",
         "speakers": [6,11,12,8,13],
         "max": 500
       },
       {
         "session_id": 14,
-        "title": "実践・CSS3で変えるウェブデザイン",
+        "title": "CSS3 UIデザインパターン",
         "description": "CSS3ではこれまで画像としてしか表現できなかったことを可能にする強力な仕様が追加されています。角丸やグラデーション、そしてアニメーションなどがその筆頭です。様々なプロパティの組み合わせを行うことでこれらの新しい仕様だけではなく、元々あったCSSのプロパティもより魅力的になるのです。
-        今回のセッションではその強力な組み合わせのプロパティを使ってより使いやすいUIの実践についてお話しします。",
+今回のセッションではその強力な組み合わせのプロパティを使ってより使いやすいUIの実践についてお話しします。",
         "speakers": [18],
         "max": 100
       },
@@ -176,8 +178,10 @@
       },
       {
         "session_id": 16,
-        "title": "WebComponents",
-        "description": "ふがほげふがほげ",
+        "title": "パララックスでレスポンシブでjQuery Mobileなサイトのつくりかた",
+        "description": "視差スクロール（パララックス）、レスポンシブWebデザイン＆レスポンシブイメージ、jQuery Mobile、Lessなど、最近はやりの技術を盛り込みまくって企業サイトを作ってみました（<a href='http://www.camobile.com'>株式会社シーエー・モバイル</a> ）。
+その過程でぶつかった課題や意思決定、学んだノウハウを皆さんと共有したいと思います。
+一歩先ゆくWebサイトを作りたい方に贈ります。",
         "speakers": [3],
         "max": 100
       }
@@ -196,28 +200,28 @@
       {
         "session_id": 17,
         "title": "HTML5なゲーム開発者のパネル(後半)",
-        "description": "ふがほげふがほげ",
+        "description": "",
         "speakers": [6,11,12,8,13],
         "max": 500
       },
       {
         "session_id": 18,
-        "title": "モバイルゲームの秘伝のUI",
-        "description": "ふがほげふがほげ",
+        "title": "世界に向けたスマートフォンゲームを支える、GREEのテクニカルアーティストについて。",
+        "description": "現在ハイスピードで全世界に向けたスマートフォンゲームを開発しているGREEですが、その量・質・スピードを支えるために重要となる、２Dテクニカルアーティストについてご説明します。ゲーム開発組織拡大の下支えにもなる技術ですので、少しでもご興味頂き、今後のゲーム開発にご活用頂ければ幸いです。",
         "speakers": [11],
         "max": 100
       },
       {
         "session_id": 19,
         "title": "jQuery Mobileカスタマイズ自由自在",
-        "description": "ふがほげふがほげ",
+        "description": "jQuery Mobileで素早く簡単にモバイルサイトを作成できる反面、デフォルトのデザインや動きをカスタマイズするのは、ひと苦労です。本セッションでは、jQuery Mobileの次のステップとして、さまざまなカスタマイズのノウハウを紹介します。良い意味でjQuery Mobileらしくないモバイルサイトをつくりましょう。",
         "speakers": [20],
         "max": 100
       },
       {
         "session_id": 20,
-        "title": "WebRTC(getUserMedia, face.js, JSARTookKit.js",
-        "description": "ふがほげふがほげ",
+        "title": "ブラウザを介した新しいリアルタイムコミュニケーション",
+        "description": "WebRTCはJavaScript APIを利用してウェブブラウザ上でリアルタイムコミュニケーションを実現するための仕様です。本セッションではそのWebRTCの基本を説明し、WebRTCを実際に利用したウェブアプリケーションや、WebRTCと組み合わせて使われる事の多いライブラリを紹介します。",
         "speakers": [21],
         "max": 100
       }
