@@ -46,8 +46,10 @@
       },
       {
         "session_id": 4,
-        "title": "Webプラットフォーム",
-        "description": "ふがほげふがほげ",
+        "title": "Web プラットフォームの進化と実装 〜Web 技術の現在と未来〜",
+        "description": "Android と iOS の両方にアプリを作るには WebView を使ったハイブリッドアプリが普通となり、Windows、Tizen、Firefox OS などでも HTML5 ベースでアプリケーション開発を行うようになりました。
+
+これらの「HTML5 プラットフォーム」はどう違うのか？ Web 標準の進化と実装はこれからどうなっていくのか？ Web のプラットフォーム化に向けて多くの API 標準化・実装に取り組んでいる Mozilla ならではの視点で、Web 技術の現在と未来について、実際に目で見て分かる形でご説明します。",
         "speakers": [7],
         "max": 100
       }
