@@ -92,7 +92,7 @@ class MainPage(webapp.RequestHandler):
   def get(self):
     sponsorsJsonFile = open(os.path.join(os.path.dirname(__file__), 'datas/sponsors.json')).read()
     sponsors = simplejson.loads(sponsorsJsonFile)
-    
+
     path = os.path.join(os.path.dirname(__file__), 'view/index.html')
     self.response.out.write(template.render(path, {'page':'index', 'can_subscribe': canSubscribe(), 'sponsors': sponsors }))
 
@@ -587,19 +587,105 @@ class RegDonePage(webapp.RequestHandler):
         s.status = "full"
       s.put()
 
+    contents = "     =============================\n"
+    for session in regs:
+      contents += "     "+session['timeslot']+"\n"
+      contents += "     "+session['title']+"\n"
+    contents += "     =============================\n"
+    id = hashlib.sha1(email).hexdigest()
+
+    body = """
+    本メールは、HTML5 Conference 2012 にお申込みいただいたお客様にお送りしております。
+
+    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+    HTML5 Conference 2012 参加証のご案内
+    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+    """
+
+    body += "     "+name.encode('UTF-8')+" 様\n\n"
+
+    body += "     登録ID："+id+"\n\n"
+
+    body += """
+
+    ■ 登録内容
+"""
+    body += contents.encode('UTF-8')
+
+    body += """
+
+    この度は、「HTML5 Conference 2012」にお申込みいただきまして、誠にありがとうございます。
+
+    当日は受付に本メールのプリントアウトしたもの、またはスマートフォンの画面をご提示ください。
+
+
+    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+    HTML5 Conference 2012 ご来場について
+    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+    ■イベント概要
+    開催日
+      2012年 9月8日 (土)　11:00 - 19:30 (受付開始 10:30)
+      主催
+        html5j.org
+      募集人数
+        1,000名
+      会場
+        慶應義塾大学 日吉キャンパス 協生館 (神奈川県横浜市港北区日吉4-1-1)
+      アクセス
+        以下のサイトをご覧いただき、ご来場ください。
+            http://www.kcc.keio.ac.jp/access/index.html
+            http://goo.gl/maps/aas5
+      参加費
+        無料
+
+
+      ■ 受付について
+        ・イベント当日、本メールにて参加証の確認を行いますので、プリントアウトしていただくか、スマートフォンなどの画面をご提示ください。
+        ・当日は受付が混雑することが予想されます。時間に余裕を持ってお越しください。
+
+      [注意事項]
+        ・参加証に記載されたご本人さまのみ参加することができます。
+          代理での出席やご本人様以外の方がお越しになられた場合、ご入場することができません。
+          なお、本人確認ができるものをご提示できない場合、ご入場をお断りする場合があります。
+
+      ■ 個人Wi-Fi機器の使用に関して
+        ・当日会場内では無線LANの提供を行う予定です。
+          つきましては、会場の無線機器と干渉してしまいますので、ご使用は控えていただけますようご協力お願いいたします。
+
+      ■ 飲食について
+        ・当日の昼休み（12:45）までに受付をされた方には、慶應義塾大学構内の学生食堂で利用できるチケット（500円分）を配布いたします。
+        ・セッションが行われる会場(大ホール・各教室)は飲食禁止となっております。
+          お飲み物を飲まれる際にはホールの外、または廊下をご利用ください。
+
+      ■ その他
+        ・電源について
+          大ホール1階の各座席にて電源がご利用できます。
+          多目的教室1〜3については若干数の電源を用意する予定です。
+
+          不明な点などございましたら、下記のフォームからお問い合わせください。
+             http://goo.gl/NCnmg
+
+
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+        HTML5 Conference 2012 ウェブサイト：http://events.html5j.org/conference/2012/09/
+        html5j.org ウェブサイト：http://www.html5j.org/
+        html5j.org Googleグループ：http://goo.gl/T6hoV
+
+"""
+
+    #body = open(os.path.join(os.path.dirname(__file__), 'datas/mail.txt')).read()
+
+    #body.encode('UTF-8').replace('{rName}', name)
+
 
 
     mail.send_mail(sender="noreply@html5j.org",
       to = email,
       subject = "登録ありがとうございます",
-      body = """
-      HTML5 Conference2012への登録まことにありがとうございます
-      お客様の登録状況は以下のとおりです
-
-      hogehoge...
-      """)
+      body = body)
     path = os.path.join(os.path.dirname(__file__), 'view/reg_done.html')
-    self.response.out.write(template.render(path, {'page':'reg_done', 'name': name, 'email': email, 'registration': regs}))
+    self.response.out.write(template.render(path, {'page':'reg_done', 'body': body, 'name': name, 'email': email, 'registration': regs}))
 
 
 
