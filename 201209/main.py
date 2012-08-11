@@ -68,7 +68,7 @@ def getCurrentNum():
   return len(q.fetch(1000))
 
 def canSubscribe():
-  max_ = 1
+  max_ = 1000
   curr = getCurrentNum()
 
   if curr > max_:
