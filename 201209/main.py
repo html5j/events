@@ -176,7 +176,7 @@ registration pages
 """
 #class RedirectPage(webapp.RequestHandler):
 def loginRequired(self, page):
-  str = (u"<a href=\"%s\">login</a>" % users.create_login_url(page))
+  str = (u"<a href=\"%s\">Google アカウントで login する</a>" % users.create_login_url(page))
   path = os.path.join(os.path.dirname(__file__), 'view/login_required.html')
   self.response.out.write(template.render(path, {'page':'login_required', 'mesg':str}))
 
@@ -478,7 +478,7 @@ class RegDonePage(webapp.RequestHandler):
     pflag = False
     if slot_p0:
       pflag = True
-      user_tbl.slot_0 = slot_po
+      user_tbl.slot_0 = slot_p0
     if slot_p2:
       pflag = True
       user_tbl.slot_2 = slot_p2
@@ -595,7 +595,7 @@ class RegDonePage(webapp.RequestHandler):
     id = hashlib.sha1(email).hexdigest()
 
     body = """
-    本メールは、HTML5 Conference 2012 にお申込みいただいたお客様にお送りしております。
+    本メールは、HTML5 Conference 2012 にお申込みいただいた方々にお送りしております。
 
     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
     HTML5 Conference 2012 参加証のご案内
@@ -680,7 +680,7 @@ class RegDonePage(webapp.RequestHandler):
 
 
 
-    mail.send_mail(sender="noreply@html5j.org",
+    mail.send_mail(sender="event@html5j.org",
       to = email,
       subject = "登録ありがとうございます",
       body = body)

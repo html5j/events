@@ -1,30 +1,32 @@
 <section>
   <h2 class="page-header">HTML5 Conference 2012 開催のご案内</h2>
 
-    {% if can_subscribe %}
-    <ul class="nav row" style="margin: 40px 0 60px">
-      <li class="span4 offset4"><a id="btn-volunteer" class="btn btn-large" href="./reg_top.html">参加登録する</a></li>
+  {% if can_subscribe %}
+  <ul class="nav row" style="margin: 40px 0 60px">
+    <li class="span4 offset4"><a id="btn-volunteer" class="btn btn-large" href="./reg_top.html">参加登録する</a></li>
+  </ul>
+  <div class="well">
+    <ul style="margin-bottom: 0">
+      <li>参加登録は先着順になります</li>
+      <li>参加登録にはGoogleアカウントが必要です</li>
+      <li>登録済みの方は、<a href="reg_program.html">登録内容の変更／参加のキャンセル</a>ができます</li>
+      <li>当日はカメラなどの撮影に映る可能性があります。あらかじめご了承ください。</li>
     </ul>
-    <div class="well">
-      <ul style="margin-bottom: 0">
-        <li>参加登録にはGoogleアカウントが必要です</li>
-        <li>登録済みの方は、<a href="reg_program.html">登録内容の変更／参加のキャンセル</a>ができます</li>
-      </ul>
-    </div>
-    {% else %}
-    <div class="well">
-      <ul style="margin-bottom: 0">
-        <li>只今参加者が定員に達したため、新規登録は閉めきっています</li>
-        <li>登録済みの方は、<a href="reg_program.html">登録内容の変更／参加のキャンセル</a>ができます</li>
-      </ul>
-    </div>
-    {% endif %}
+  </div>
+  {% else %}
+  <div class="well">
+    <ul style="margin-bottom: 0">
+      <li>只今参加者が定員に達したため、新規登録は閉めきっています</li>
+      <li>登録済みの方は、<a href="reg_program.html">登録内容の変更／参加のキャンセル</a>ができます</li>
+    </ul>
+  </div>
+  {% endif %}
 
   <p>
     この度は、私たち<a href="http://www.html5j.org">html5j.org</a>が主催する<strong>HTML5 Conference</strong>に関心を持っていただき、ありがとうございます。
   </p>
   <p>
-    昨年はグーグル株式会社との共催で、<a href="http://localhost:8080/conference/2011/08/">Chrome+HTML5 Conference</a>を開催いたしました。昨年も200名を超える方々にご参加いただき、誠にありがとうございました。
+    昨年はグーグル株式会社との共催で、<a href="/conference/2011/08/">Chrome+HTML5 Conference</a>を開催いたしました。昨年も200名を超える方々にご参加いただき、誠にありがとうございました。
   </p>
   <p>
     初のhtml5j.org主催となる今年は、昨年よりも内容も規模もグレードアップしました。募集人数はなんと<strong>1,000名</strong>、セッション数も20を予定しており、初心者から上級者まで幅広いディベロッパー・デザイナーの方々に満足頂ける内容となるよう、スタッフ一同準備中です。
@@ -39,6 +41,9 @@
     </p>
     <p>
       また、<strong>公式ブロガー・ライター</strong>の募集も行なっています。セッションの参加レポートをご自身のブログに執筆したり、Webメディアに寄稿してみたいという方は、お気軽にご応募ください。
+    </p>
+    <p>
+    なお、<strong>LT大会／公式ブロガー・ライター</strong>にご応募いただいても、イベントの参加を保証するものではありません（応募者多数の場合は審査を行うため）。同時に、一般応募も行なっていただけるようお願いします。
     </p>
     <ul class="nav row">
       <li class="span4 offset2"><a id="btn-lt" class="btn btn-large" href="./lt.html">LT大会講演者募集</a></li>
@@ -56,7 +61,7 @@
     <dt>開催日</dt><dd><time datetime="2012-09-08">2012年9月8日</time>（土）11:00 - 19:30 (受付開始 10:30)</dd>
     <dt>主催</dt><dd>html5j.org</dd>
     <dt>対象者</dt><dd>HTML5初心者〜上級のマークアップエンジニア、デザイナー、プログラマー</dd>
-    <dt>募集人数</dt><dd>1,000名</dd>
+    <dt>募集人数</dt><dd>1,000名(先着順)</dd>
     <dt>会場</dt><dd itemprop="location" itemscope itemtype="http://schema.org/Place"><span itemprop="name">慶應義塾大学 日吉キャンパス</span> <a itemprop="url" href="http://www.kcc.keio.ac.jp/access/index.html" target="_blank">協生館</a> (<a href="http://goo.gl/maps/aas5" target="_blank">神奈川県横浜市港北区日吉4-1-1</a>)</dd>
     <dt>参加費</dt><dd>無料</dd>
   </dl>
@@ -68,7 +73,10 @@
   <h2 class="page-header">お知らせ</h2>
   <dl class="dl-horizontal">
     <dt>8月11日</dt>
-    <dd>ボランティアの募集を締め切らせて頂きました。応募いただいた方には別途ご連絡差し上げますので、登録したメールをご確認ください。</dd>
+    <dd>
+    カンファレンスの参加募集を開始しました！<br>
+    ボランティアの募集を締め切らせて頂きました。応募いただいた方には別途ご連絡差し上げますので、登録したメールをご確認ください。
+    </dd>
     <dt>8月8日</dt>
     <dd>スポンサーの募集を締め切らさせて頂きました。応募いただいた企業の方には別途ご連絡差し上げます。</dd>
   </dl>
@@ -78,61 +86,61 @@
   <section class="platinum">
     <h3>プラチナスポンサー</h3>
     <ul class="sponsor-list">
-	  {% for sponsor in sponsors.platinum %}
-	  <li>
-        <a href="{{sponsor.link}}">
+    {% for sponsor in sponsors.platinum %}
+    <li>
+        <a style="display:block;width:100%;height:100%" target="_blank" href="{{sponsor.link}}">
         {%if sponsor.image %}
         <img class="sponsor-logo" src="/images/201209/sponsors/{{sponsor.image}}" title="{{sponsor.name}}" alt="{{sponsor.name}}">
         {% else %}
         {{sponsor.name}}
         {% endif %}
         </a>
-	    {% endfor %}
+      {% endfor %}
     </ul>
   </section>
   <section class="gold">
     <h3>ゴールドスポンサー</h3>
     <ul class="sponsor-list">
-	  {% for sponsor in sponsors.gold %}
-	  <li>
-        <a href="{{sponsor.link}}">
+    {% for sponsor in sponsors.gold %}
+    <li>
+        <a style="display:block;width:100%;height:100%" target="_blank" href="{{sponsor.link}}">
         {%if sponsor.image %}
         <img class="sponsor-logo" src="/images/201209/sponsors/{{sponsor.image}}" title="{{sponsor.name}}" alt="{{sponsor.name}}">
         {% else %}
         {{sponsor.name}}
         {% endif %}
         </a>
-	    {% endfor %}
+      {% endfor %}
     </ul>
   </section>
   <section class="silver">
     <h3>シルバースポンサー</h3>
     <ul class="sponsor-list">
-	  {% for sponsor in sponsors.silver %}
-	  <li>
-        <a href="{{sponsor.link}}">
+    {% for sponsor in sponsors.silver %}
+    <li>
+        <a style="display:block;width:100%;height:100%" target="_blank" href="{{sponsor.link}}">
         {%if sponsor.image %}
         <img class="sponsor-logo" src="/images/201209/sponsors/{{sponsor.image}}" title="{{sponsor.name}}" alt="{{sponsor.name}}">
         {% else %}
         {{sponsor.name}}
         {% endif %}
         </a>
-	    {% endfor %}
+      {% endfor %}
     </ul>
   </section>
   <section class="special">
     <h3>特別協賛</h3>
     <ul class="sponsor-list">
-	  {% for sponsor in sponsors.special %}
-	  <li>
-        <a href="{{sponsor.link}}">
+    {% for sponsor in sponsors.special %}
+    <li>
+        <a style="display:block;width:100%;height:100%" target="_blank" href="{{sponsor.link}}">
         {%if sponsor.image %}
         <img class="sponsor-logo" src="/images/201209/sponsors/{{sponsor.image}}" title="{{sponsor.name}}" alt="{{sponsor.name}}">
         {% else %}
         {{sponsor.name}}
         {% endif %}
         </a>
-	    {% endfor %}
+      {% endfor %}
     </ul>
   </section>
 </section>

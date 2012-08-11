@@ -1,23 +1,23 @@
 <section>
-	<h2 class="page-header">スピーカー一覧</h2>
+  <h2 class="page-header">スピーカー一覧</h2>
 </section>
 
 <section class="speakers">
-	<table class="table table-bordered">
-	{% for speaker in speadic %}
-	  {% ifnotequal speaker.id 22 %}
-		<tr><td width="100px" style="text-align:center;">
-			{%if speaker.icon %} <img src="/images/201209/speaker/{{speaker.icon}}">{% else %}{% endif %}
-		</td>
-			<td>
-				<dl>
-				<dt>{{ speaker.name }} {% ifnotequal speaker.company "" %}({{ speaker.company }}){% endifnotequal %}</dt>
-				<dd>{{ speaker.description|escape }}</dd>
-				</dl>
-			</td>
-		</tr>
-	  {% endifnotequal %}
-	{% endfor %}
-	</table>
-	</dl>
+  <table class="table table-bordered">
+  {% for speaker in speadic %}
+    {% ifnotequal speaker.id 22 %}
+    <tr><td width="100px" style="text-align:center;">
+        {%if speaker.icon %} <img src="/images/201209/speaker/{{speaker.icon}}">{% else %}no<br>image{% endif %}
+    </td>
+      <td>
+        <dl>
+        <dt>{{ speaker.name }} {% ifnotequal speaker.company "" %}({{ speaker.company }}){% endifnotequal %}</dt>
+        <dd>{{ speaker.description|escape }}</dd>
+        </dl>
+      </td>
+    </tr>
+    {% endifnotequal %}
+  {% endfor %}
+  </table>
+  </dl>
 </section>

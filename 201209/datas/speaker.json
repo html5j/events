@@ -197,6 +197,13 @@ SlideShare: http://www.slideshare.net/dynamis",
     "company": "グリー株式会社",
     "description": "エンジニア。@splhack。『エキスパートObjective-Cプログラミング』を書いたり、Unityアジア・ブートキャンプ・ツアー:東京でしゃべるなど、ネイティブアプリバリバリな人。一見HTML5とは縁遠そうに見えるが果たして。",
     "icon": "gree_sakamoto.png"
+  },
+  {
+    "id": 25,
+    "name": "城戸 忠之",
+    "ruby": "きど ただゆき",
+    "company": "DeNA",
+    "description": "",
+    "icon": "kido.png"
   }
-
 ]
