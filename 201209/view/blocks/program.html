@@ -3,7 +3,12 @@
 <section>
 {% if user_tbl %}
   <h2 class="page-header">HTML5 Conference 2012 セッション参加希望登録ページ</h2>
-  {{ user_tbl.name}} 様
+  <div class="row">
+    <div class="span9">{{ user_tbl.name}} 様</div>
+    <div class="span3">
+      {% if user_tbl %}<a href="cancel_done.html" class="btn btn-large btn-danger">参加をキャンセルする</a>{% endif %}
+    </div>
+  </div>
   <div class="alert">
     こちらで参加登録頂いた場合でも、当日の会場の席を確約するものではありません。 また、以下のプログラム内容は、当日までに変更になることがあります。あらかじめご了承ください。
   </div>
@@ -13,6 +18,7 @@
     以下のプログラム内容は、当日までに変更になることがあります。あらかじめご了承ください。
   </div>
 {% endif %}
+
 
 <div class="hidden-phone">
   {% if user_tbl %} <form class="form-horizontal" method="post" action="reg_done.html"> {% endif %}
@@ -149,7 +155,7 @@
   {% if user_tbl %}
     <div class="control-group">
       <div class="controls">
-        <button class="btn btn-primary" type="submit">参加登録する</button>
+        <button class="btn btn-primary" type="submit">登録する</button>
       </div>
     </div>
     </form>
