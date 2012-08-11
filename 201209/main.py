@@ -104,7 +104,7 @@ class VolunteerPage(webapp.RequestHandler):
 """
 lt page
 """
-class VolunteerPage(webapp.RequestHandler):
+class LtPage(webapp.RequestHandler):
   def get(self):
     path = os.path.join(os.path.dirname(__file__), 'view/routing.html')
     self.response.out.write(template.render(path, {'filename': 'blocks/lt.html', 'page':'lt'}))
@@ -112,7 +112,7 @@ class VolunteerPage(webapp.RequestHandler):
 """
 writer page
 """
-class VolunteerPage(webapp.RequestHandler):
+class WriterPage(webapp.RequestHandler):
   def get(self):
     path = os.path.join(os.path.dirname(__file__), 'view/routing.html')
     self.response.out.write(template.render(path, {'filename': 'blocks/writer.html', 'page':'writer'}))
