@@ -521,7 +521,7 @@ def main():
     ('/conference/2012/09/', MainPage),
     ('/conference/2012/09/index.html', MainPage),
     # ('/conference/2012/09/sponsor.html', SponsorPage),
-    ('/conference/2012/09/volunteer.html', VolunteerPage),
+    # ('/conference/2012/09/volunteer.html', VolunteerPage),
     ('/conference/2012/09/program.html', ProgramPage),
     ('/conference/2012/09/speaker.html', SpeakerPage),
     ('/conference/2012/09/faq.html', FaqPage),
