@@ -1,5 +1,3 @@
-
-
 <section>
 {% if user_tbl %}
   <h2 class="page-header">HTML5 Conference 2012 セッション参加希望登録ページ</h2>
@@ -27,9 +25,9 @@
       <tr>
         <th width="12%"></th>
         <th width="22%">藤原洋記念ホール<br>全般系</th>
-        <th width="22%">多目的教室1<br>デザイン/tool系</th>
-        <th width="22%">多目的教室2<br>開発者系</th>
-        <th width="22%">多目的教室3<br>上級者系</th>
+        <th width="22%">ルームA<br>デザイン系</th>
+        <th width="22%">ルームB<br>開発者系</th>
+        <th width="22%">ルームC<br>上級者系</th>
       </tr>
     </thead>
     <tbody>
@@ -102,9 +100,9 @@
       <tr>
         <th width="12%"></th>
         <th width="22%">藤原洋記念ホール<br>全般系</th>
-        <th width="22%">多目的教室1<br>デザイン/tool系</th>
-        <th width="22%">多目的教室2<br>開発者系</th>
-        <th width="22%">多目的教室3<br>上級者系</th>
+        <th width="22%">ルームA<br>デザイン系</th>
+        <th width="22%">ルームB<br>開発者系</th>
+        <th width="22%">ルームC<br>上級者系</th>
       </tr>
     </thead>
     <tbody>
@@ -168,9 +166,9 @@
   (function(){
     var rooms_ = [
       "全般系（藤原洋記念ホール）",
-      "デザイン系（多目的教室1）",
-      "開発者系（多目的教室2）",
-      "上級者系（多目的教室3）"
+      "デザイン系（ルームA）",
+      "開発者系（ルームB）",
+      "上級者系（ルームC）"
     ];
     $("table.table-phone").each(function(i){
       $(this).find("p.session-room").each(function(i){
@@ -188,12 +186,3 @@
   }());
 </script>
 
-<!--
-<section>
-  <h2 class="page-header">タイトル</h2>
-
-  <p>
-    ...
-  </p>
-</section>
- -->
