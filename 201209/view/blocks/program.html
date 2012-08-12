@@ -55,7 +55,7 @@
             {%endfor%}
 
             {% for o in sess %}{% ifequal o.session_id session.session_id %}
-              {% ifequal o.status "ok" %}<span class="label label-info">余裕</span>{% endifequal %}
+              {% ifequal o.status "ok" %}<span class="label label-warning">混雑</span>{% endifequal %}
               {% ifequal o.status "jam" %}<span class="label label-warning">混雑</span>{% endifequal %}
               {% ifequal o.status "full" %}<span class="label label-important">満席</span>{% endifequal %}
             {% endifequal %}{% endfor %}
@@ -132,7 +132,7 @@
             {% endfor %}
           {%endfor%}
           {% for o in sess %}{% ifequal o.session_id session.session_id %}
-            {% ifequal o.status "ok" %}<span class="label label-info">余裕</span>{% endifequal %}
+          {% ifequal o.status "ok" %}<span class="label label-warning">混雑</span>{% endifequal %}
             {% ifequal o.status "jam" %}<span class="label label-warning">混雑</span>{% endifequal %}
             {% ifequal o.status "full" %}<span class="label label-important">満席</span>{% endifequal %}
           {% endifequal %}{% endfor %}
