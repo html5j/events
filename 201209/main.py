@@ -73,16 +73,18 @@ def getCurrentNum():
   q =  Users.all()
   q.filter('canceld =', False)
 
-  return len(q.fetch(1000))
+  return len(q.fetch(1100))
 
 def canSubscribe():
-  max_ = 1000
+  max_ = 999
+  #max_ = 900
   curr = getCurrentNum()
 
   if curr > max_:
     return False
   else:
     return True
+
 
 
 """
@@ -159,7 +161,7 @@ class SpeakerPage(webapp.RequestHandler):
     speakers = open(os.path.join(os.path.dirname(__file__), 'datas/speaker.json')).read()
     speadic = simplejson.loads(speakers)
     path = os.path.join(os.path.dirname(__file__), 'view/routing.html')
-    self.response.out.write(template.render(path, {'filename': 'blocks/speaker.html', 'page':'speaker', 'program': program, 'progdic': progdic, 'speadic': speadic}))
+    self.response.out.write(template.render(path, {'filename': 'blocks/speaker.html', 'page':'speaker', 'program': program, 'progdic': progdic, 'speadic': speadic, 'currentNum': getCurrentNum() }))
 
 
 """
