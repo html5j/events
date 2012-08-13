@@ -110,6 +110,11 @@
             "image": "18_mozilla_logo.png",
             "name": "一般社団法人 Mozilla Japan",
             "link": "http://www.mozilla.jp/firefox/"
+        },
+        {
+            "image": "atmarkit.png",
+            "name": "HTML5＋UXフォーラム - @IT",
+            "link": "http://www.atmarkit.co.jp/fwcr/"
         }        
     ]
 }
