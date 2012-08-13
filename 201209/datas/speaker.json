@@ -11,7 +11,7 @@
 Twitter: @dynamitter (https://twitter.com/dynamitter)
 Facebook: http://www.facebook.com/dynamis
 SlideShare: http://www.slideshare.net/dynamis",
-    "icon": "tomoya_asai.png"
+    "icon": "tomoya_asai.jpg"
   },
   {
     "id": 21,
@@ -43,7 +43,7 @@ SlideShare: http://www.slideshare.net/dynamis",
     "company": "クックパッド株式会社",
     "description": "レシピ検索・投稿サイトのクックパッドでサービス開発を支える仕事をしながら、Google ChromeのAPI Expertとして活動しています。
 調べ物をするのが好きな性格が高じて、気がつけばGoogle ChromeのAPI Expertになっていました。日々さまざまなバッドノウハウと闘いながら、世の中からバッドノウハウが少しでもなくなるように頑張っています。",
-    "icon": "shogo_ota.png"
+    "icon": "shogo_ota.jpg"
    },
   {
     "id": 0,
@@ -56,7 +56,7 @@ SlideShare: http://www.slideshare.net/dynamis",
 http://www.pxgrid.com/
 blog
 http://yomotsu.net/blog/",
-    "icon": "akihiro_oyamada.png"
+    "icon": "akihiro_oyamada.jpg"
   },
   {
     "id": 16,
@@ -82,7 +82,7 @@ http://yomotsu.net/blog/",
     "ruby": "きど ただゆき",
     "company": "株式会社ディー・エヌ・エー",
     "description": "",
-    "icon": "kido.png"
+    "icon": "kido.jpg"
   },
   {
     "id": 6,
@@ -92,7 +92,7 @@ http://yomotsu.net/blog/",
     "description": "HTML5によるFlashのランタイム「ExGame」の開発者。
 ネイティブアプリの水準で動くブラウザHTML5ゲームを開発しやすくなるようにngCoreのHTML5版のプロトタイプ開発に加え、新フレームワークPexの開発を牽引し先日公開。
 DeNAにおいてHTML5開発の総括を担当している。",
-"icon": "kihira.png"
+"icon": "kihira.jpg"
   },
   {
     "id": 10,
@@ -100,7 +100,7 @@ DeNAにおいてHTML5開発の総括を担当している。",
     "ruby": "こまつ けんさく",
     "company": "NTTコミュニケーションズ株式会社",
     "description": "WebSocketを知り、HTML5の世界に入信してから早三年。ネットワークと今後のWebとの関わりや、インタラクティブマルチデバイス Web サービスの研究開発や標準化活動に従事。Google API Expert(HTML5), Microsoft Valuable Professional (Internet Explorer)",
-    "icon": "kensaku_komatsu.png"
+    "icon": "kensaku_komatsu.jpg"
   },
   {
     "id": 2,
@@ -112,7 +112,7 @@ DeNAにおいてHTML5開発の総括を担当している。",
   },
   {
     "id": 18,
-    "name": "斉藤  祐也",
+    "name": "斉藤 祐也",
     "ruby": "さいとう ゆうや",
     "company": "株式会社サイバーエージェント",
     "description": "1979年生まれ。ネバダ州立ラスベガス大学、プリントジャーナリズム学部卒。株式会社All Aboutオールアバウトで6年、2012年2月からは株式会社サイバーエージェントへ。個人では、フロントエンドデベロッパのためのミニブックというコンセプトのブログCSS Radar(http://css.studiomohawk.com/)をはじめ海外記事やドキュメントの翻訳を掲載しているen.ja(http://enja.studiomohawk.com/)を運営。",
@@ -124,7 +124,7 @@ DeNAにおいてHTML5開発の総括を担当している。",
     "ruby": "さかもと かずき",
     "company": "グリー株式会社",
     "description": "エンジニア。@splhack。『エキスパートObjective-Cプログラミング』を書いたり、Unityアジア・ブートキャンプ・ツアー:東京でしゃべるなど、ネイティブアプリバリバリな人。一見HTML5とは縁遠そうに見えるが果たして。",
-    "icon": "gree_sakamoto.png"
+    "icon": "gree_sakamoto.jpg"
   },
   {
     "id": 26,
@@ -132,7 +132,7 @@ DeNAにおいてHTML5開発の総括を担当している。",
     "ruby": "しみず りょう",
     "company": "株式会社ユビキタスエンターテインメント",
     "description": "新潟県長岡市生まれ。大学在学中に家庭用ゲーム業界でプログラマーとして活動した後、5年間のサラリーマン生活を経て独立。現在(株)ユビキタスエンターテインメント代表取締役社長兼CEO。秋葉原リサーチセンター(ARC)を設立し、大学生を中心としたオープンソースゲームエンジン、enchant.jsプロジェクトを立ち上げる。",
-    "icon": "ryo_shimizu.png"
+    "icon": "ryo_shimizu.jpg"
   },
   {
     "id": 3,
@@ -151,7 +151,7 @@ DeNAにおいてHTML5開発の総括を担当している。",
     "ruby": "とどろき けいすけ",
     "company": "アドビ システムズ 株式会社",
     "description": "アドビ システムズ 株式会社 / 1999年、早稲田大学理工学部を卒業後、大手印刷会社に勤務。主にEC分野でJ2EE開発に携わるが、Flexとの衝撃的な出会いを機にRIAの世界へ。 2008年4月、アドビシステムズ入社。 Flex/AIR/Flashを中心としたFlash Platformに加え、現在はHTML5を含むWeb全般のデベロッパーマーケティングを担当。",
-    "icon": "keisuke_todoroki.png"
+    "icon": "keisuke_todoroki.jpg"
   },
   {
     "id": 23,
@@ -190,7 +190,7 @@ DeNAにおいてHTML5開発の総括を担当している。",
 カヤック、スクウェア・エニックスでのリッチなWebゲーム開発を経て、現在
 スマートフォン向けネイティブソーシャルゲームのクライアントサイド開発を担当。
 ２Dテクニカルアーティスト。",
-    "icon": "gree_hisamichi.png"
+    "icon": "gree_hisamichi.jpg"
   },
   {
     "id": 4,
