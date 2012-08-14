@@ -47,7 +47,7 @@
             {% for id in session.speakers %}
               {% for speaker in speadic %}
                 {% ifequal id speaker.id %}
-                <div class="speaker">{{ speaker.name }} {% ifnotequal speaker.company "" %}({{speaker.company}}){% endifnotequal %}</div>
+                <div class="speaker">{{ speaker.name }} ({{speaker.company}})</div>
                 {% endifequal %}
               {% endfor %}
             {%endfor%}
@@ -125,7 +125,7 @@
           {% for id in session.speakers %}
             {% for speaker in speadic %}
               {% ifequal id speaker.id %}
-              <div class="speaker">{{ speaker.name }} {% ifnotequal speaker.company "" %}({{speaker.company}}){% endifnotequal %}</div>
+              <div class="speaker">{{ speaker.name }} ({{speaker.company}})</div>
               {% endifequal %}
             {% endfor %}
           {%endfor%}
