@@ -143,5 +143,20 @@
       {% endfor %}
     </ul>
   </section>
+  <section class="media">
+    <h3>メディアスポンサー</h3>
+    <ul class="sponsor-list">
+    {% for sponsor in sponsors.media %}
+    <li>
+        <a style="display:block;width:100%;height:100%" target="_blank" href="{{sponsor.link}}">
+        {%if sponsor.image %}
+        <img class="sponsor-logo" src="/images/201209/sponsors/{{sponsor.image}}" title="{{sponsor.name}}" alt="{{sponsor.name}}">
+        {% else %}
+        {{sponsor.name}}
+        {% endif %}
+        </a>
+      {% endfor %}
+    </ul>
+  </section>
 </section>
 <script src="/javascripts/201209/index.js"></script>

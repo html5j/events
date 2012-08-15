@@ -21,7 +21,7 @@
             "link": "http://www.adobe.com/jp/devnet/"
         },
         {
-            "image": "05_gree_logo.jpg",
+            "image": "05_gree_logo.png",
             "name": "グリー株式会社",
             "link": "http://product.gree.net/jp/ja/"
         },
@@ -115,6 +115,18 @@
             "image": "atmarkit.png",
             "name": "HTML5＋UXフォーラム - @IT",
             "link": "http://www.atmarkit.co.jp/fwcr/"
+        }        
+    ],
+    "media": [
+        {
+            "image": "26_impress_logo.png",
+            "name": "ThinkIT",
+            "link": "http://thinkit.co.jp/"
+        },
+        {
+            "image": "publickey.png",
+            "name": "Publickey",
+            "link": "http://www.publickey1.jp/"
         }        
     ]
 }

@@ -19,6 +19,7 @@
 import wsgiref.handlers
 import os
 import hashlib
+import uuid
 from google.appengine.ext import webapp
 from google.appengine.ext.webapp import template
 #from google.appengine.api import mail
@@ -121,6 +122,16 @@ class LtPage(webapp.RequestHandler):
   def get(self):
     path = os.path.join(os.path.dirname(__file__), 'view/routing.html')
     self.response.out.write(template.render(path, {'filename': 'blocks/lt.html', 'page':'lt'}))
+
+"""
+Inquiry page
+"""
+class InquiryPage(webapp.RequestHandler):
+  def get(self):
+    path = os.path.join(os.path.dirname(__file__), 'view/routing.html')
+    uuid_ = str(uuid.uuid1())
+    self.response.out.write(template.render(path, {'filename': 'blocks/inquiry.html', 'id': uuid_, 'page':'inquiry'}))
+
 
 """
 writer page
@@ -718,7 +729,8 @@ def main():
     ('/conference/2012/09/reg_done.html', RegDonePage),
     ('/conference/2012/09/cancel_done.html', CancelDonePage),
     ('/conference/2012/09/lt.html', LtPage),
-    ('/conference/2012/09/writer.html', WriterPage)
+    ('/conference/2012/09/writer.html', WriterPage),
+    ('/conference/2012/09/inquiry.html', InquiryPage)
  ], debug=True)
   wsgiref.handlers.CGIHandler().run(application)
 

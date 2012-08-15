@@ -1,0 +1,29 @@
+<section>
+  <h2 class="page-header">アンケートにご協力ください！！</h2>
+  <div id="dcon"></div>
+
+  <script>
+  var Inq = {
+    KEY: '201209inquiry',
+    db: (localStorage[this.KEY] && JSON.parse(localStorage[this.KEY])) || {'id': '{{id}}'},
+
+    save: function(){
+      localStorage[this.KEY] = JSON.stringify(this.db);
+    },
+    show_: function(){
+      // for debugging
+      $("#dcon").text(JSON.stringify(this.db));
+    },
+    set: function(key, val) {
+      if((typeof(key) !== "string") || typeof(key) !== "string") {
+        throw("Inq.set-- parameters should string");
+      }
+      this.db[key] = val;
+    }
+  }
+
+  Inq.save();
+  Inq.show_();
+
+  </script>
+</section>
