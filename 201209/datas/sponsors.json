@@ -122,6 +122,11 @@
             "image": "26_impress_logo.png",
             "name": "ThinkIT",
             "link": "http://thinkit.co.jp/"
+        },
+        {
+            "image": "publickey.png",
+            "name": "Publickey",
+            "link": "http://www.publickey1.jp/"
         }        
     ]
 }
