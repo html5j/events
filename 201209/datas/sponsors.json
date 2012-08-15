@@ -115,6 +115,11 @@
             "image": "atmarkit.png",
             "name": "HTML5＋UXフォーラム - @IT",
             "link": "http://www.atmarkit.co.jp/fwcr/"
+        },
+        {
+            "image": "17_cerevo_logo.png",
+            "name": "CEREVO",
+            "link": "http://shell.cerevo.com/"
         }        
     ],
     "media": [
