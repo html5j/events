@@ -72,6 +72,8 @@
 <section>
   <h2 class="page-header">お知らせ</h2>
   <dl class="dl-horizontal">
+    <dt>8月15日</dt>
+    <dd>「会場アクセス」ページを追加しました。会場までの行き方はこちらを御覧ください。</dd>
     <dt>8月11日</dt>
     <dd>
     カンファレンスの参加募集を開始しました！<br>
@@ -132,6 +134,21 @@
     <h3>特別協賛</h3>
     <ul class="sponsor-list">
     {% for sponsor in sponsors.special %}
+    <li>
+        <a style="display:block;width:100%;height:100%" target="_blank" href="{{sponsor.link}}">
+        {%if sponsor.image %}
+        <img class="sponsor-logo" src="/images/201209/sponsors/{{sponsor.image}}" title="{{sponsor.name}}" alt="{{sponsor.name}}">
+        {% else %}
+        {{sponsor.name}}
+        {% endif %}
+        </a>
+      {% endfor %}
+    </ul>
+  </section>
+  <section class="media">
+    <h3>メディアスポンサー</h3>
+    <ul class="sponsor-list">
+    {% for sponsor in sponsors.media %}
     <li>
         <a style="display:block;width:100%;height:100%" target="_blank" href="{{sponsor.link}}">
         {%if sponsor.image %}

@@ -183,6 +183,13 @@ class FaqPage(webapp.RequestHandler):
     path = os.path.join(os.path.dirname(__file__), 'view/routing.html')
     self.response.out.write(template.render(path, {'filename': 'blocks/faq.html', 'page':'faq'}))
 
+"""
+access page
+"""
+class AccessPage(webapp.RequestHandler):
+  def get(self):
+    path = os.path.join(os.path.dirname(__file__), 'view/routing.html')
+    self.response.out.write(template.render(path, {'filename': 'blocks/access.html', 'page':'access'}))
 
 """
 registration pages
@@ -715,14 +722,15 @@ def main():
     ('/conference/2012/09/program.html', ProgramPage),
     ('/conference/2012/09/speaker.html', SpeakerPage),
     ('/conference/2012/09/faq.html', FaqPage),
+    ('/conference/2012/09/access.html', AccessPage),
     ('/conference/2012/09/reg_top.html', RegTopPage),
     ('/conference/2012/09/reg_program.html', RegProgramPage),
     # ('/conference/2012/09/reg_confirm.html', RegConfirmPage),
     ('/conference/2012/09/reg_done.html', RegDonePage),
     ('/conference/2012/09/cancel_done.html', CancelDonePage),
-    ('/conference/2012/09/lt.html',LtPage),
-    ('/conference/2012/09/writer.html',WriterPage),
-    ('/conference/2012/09/inquiry.html',InquiryPage)
+    ('/conference/2012/09/lt.html', LtPage),
+    ('/conference/2012/09/writer.html', WriterPage),
+    ('/conference/2012/09/inquiry.html', InquiryPage)
  ], debug=True)
   wsgiref.handlers.CGIHandler().run(application)
 

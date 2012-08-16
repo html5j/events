@@ -252,6 +252,9 @@ p.session-room {
 .special .sponsor-list li {
     margin-right: 20px;
 }
+.media .sponsor-list li {
+    margin-right: 20px;
+}
 .sponsors > section {
     margin-bottom: 20px;
 }
