@@ -1,6 +1,36 @@
 <section>
   <h2 class="page-header">アンケートにご協力ください！！</h2>
-  <div id="dcon"></div>
+  <hr>
+  <h5>Debug console</h5>
+  <div id="dcon" class="well"></div>
+  <hr>
+
+  <div class="alert alert-info">
+    アンケートにご協力いただきありがとうございます。<br>
+    アンケート入力が完了していない場合は、引き続きこちらの画面から入力が可能です<br>
+    アンケート項目の入力が完了した方は、<strong>受付にてプレゼント</strong>をお受け取り下さい。
+  </div>
+
+  <form class="form-horizontal" method="post" action="">
+  <hr>
+  <div class="control-group">
+    <label class="control-label" for="gender">性別</label>
+    <div class="controls">
+      <label class="radio inline" for="gender_male">
+        <input type="radio" name="gender" id="gender_male" value="male">男性
+      </label>
+      <label class="radio inline" for="gender_female">
+        <input type="radio" name="gender" id="gender_female" value="female">女性
+      </label>
+    </div>
+  </div>
+  <div class="control-group">
+    <div class="controls">
+      <button class="btn btn-primary" type="submit">登録する</button>
+    </div>
+  </div>
+  </form>
+
 
   <script>
   var Inq = {

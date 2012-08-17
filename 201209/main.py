@@ -131,7 +131,10 @@ class InquiryPage(webapp.RequestHandler):
     path = os.path.join(os.path.dirname(__file__), 'view/routing.html')
     uuid_ = str(uuid.uuid1())
     self.response.out.write(template.render(path, {'filename': 'blocks/inquiry.html', 'id': uuid_, 'page':'inquiry'}))
-
+  def post(self):
+    path = os.path.join(os.path.dirname(__file__), 'view/routing.html')
+    uuid_ = str(uuid.uuid1())
+    self.response.out.write(template.render(path, {'filename': 'blocks/inquiry.html', 'id': uuid_, 'page':'inquiry'}))
 
 """
 writer page
