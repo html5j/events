@@ -134,6 +134,11 @@
             "link": "http://web-tan.forum.impressrd.jp/"
         },
         {
+            "image": "shoeisha.png",
+            "name": "CodeZine",
+            "link": "http://codezine.jp/"
+        },
+        {
             "image": "publickey.png",
             "name": "Publickey",
             "link": "http://www.publickey1.jp/"
