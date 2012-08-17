@@ -120,7 +120,12 @@
             "image": "17_cerevo_logo.png",
             "name": "CEREVO",
             "link": "http://shell.cerevo.com/"
-        }        
+        },
+        {
+            "image": "w3c_icon.png",
+            "name": "W3C",
+            "link": "http://www.w3.org/"
+        }
     ],
     "media": [
         {
@@ -142,6 +147,6 @@
             "image": "publickey.png",
             "name": "Publickey",
             "link": "http://www.publickey1.jp/"
-        }        
+        }
     ]
 }
