@@ -1,4 +1,4 @@
-<section>
+<section class="inquiry-section">
   <h2 class="page-header">アンケートにご協力ください！！</h2>
   <hr>
   <h5>Debug console</h5>
@@ -13,6 +13,8 @@
 
   <form class="form-horizontal" method="post" action="">
   <hr>
+  <h3 class="subtitle" id="base">基本属性情報</h3>
+  <!-- 性別 -->
   <div class="control-group">
     <label class="control-label" for="gender">性別</label>
     <div class="controls">
@@ -24,36 +26,539 @@
       </label>
     </div>
   </div>
+
+  <!-- 年代 -->
   <div class="control-group">
+    <label class="control-label" for="generation">年代</label>
     <div class="controls">
-      <button class="btn btn-primary" type="submit">登録する</button>
+      <label class="radio" for="generation_kids">
+        <input type="radio" name="generation" id="generation_kids" value="kids">9才以下
+      </label>
+      <label class="radio" for="generation_teen">
+        <input type="radio" name="generation" id="generation_teen" value="teen">10〜19歳
+      </label>
+      <label class="radio" for="generation_twentieth">
+        <input type="radio" name="generation" id="generation_twentieth" value="twentieth">20〜29歳
+      </label>
+      <label class="radio" for="generation_thirtieth">
+        <input type="radio" name="generation" id="generation_thirtieth" value="thirtieth">30〜39歳
+      </label>
+      <label class="radio" for="generation_fourtieth">
+        <input type="radio" name="generation" id="generation_fourtieth" value="fourtieth">40〜49歳
+      </label>
+      <label class="radio" for="generation_fiftieth">
+        <input type="radio" name="generation" id="generation_fiftieth" value="fiftieth">50〜59歳
+      </label>
+      <label class="radio" for="generation_silver">
+        <input type="radio" name="generation" id="generation_silver" value="silver">60歳以上
+      </label>
     </div>
+  </div>
+
+  <!-- 職種 -->
+  <div class="control-group">
+    <label class="control-label" for="occupation">職種</label>
+    <div class="controls">
+      <label class="radio" for="occupation_frontend">
+        <input type="radio" name="occupation" id="occupation_frontend" value="frontend">フロントエンドプログラマー
+      </label>
+      <label class="radio" for="occupation_serverside">
+        <input type="radio" name="occupation" id="occupation_serverside" value="serverside">サーバーサイドプログラマー
+      </label>
+      <label class="radio" for="occupation_designer">
+        <input type="radio" name="occupation" id="occupation_designer" value="designer">デザイナー
+      </label>
+      <label class="radio" for="occupation_coder">
+        <input type="radio" name="occupation" id="occupation_coder" value="coder">コーダー
+      </label>
+      <label class="radio" for="occupation_director">
+        <input type="radio" name="occupation" id="occupation_director" value="director">Webディレクター
+      </label>
+      <label class="radio" for="occupation_other">
+        <input type="radio" name="occupation" id="occupation_other" value="other">その他
+      </label>
+    </div>
+  </div>
+
+  <!-- どうやって知りましたか？ -->
+  <div class="control-group">
+    <label class="control-label" for="how">このカンファレンスを最初に何で知りましたか？</label>
+    <div class="controls">
+      <label class="radio" for="how_webnews">
+        <input type="radio" name="how" id="how_webnews" value="webnews">Web記事（ニュースサイト、ブログなど）
+      </label>
+      <label class="radio" for="how_twitter">
+        <input type="radio" name="how" id="how_twitter" value="twitter">Twitter
+      </label>
+      <label class="radio" for="how_facebook">
+        <input type="radio" name="how" id="how_facebook" value="facebook">facebook
+      </label>
+      <label class="radio" for="how_social">
+        <input type="radio" name="how" id="how_social" value="social">その他のソーシャルメディア
+      </label>
+      <label class="radio" for="how_ml">
+        <input type="radio" name="how" id="how_ml" value="ml">メーリングリスト（html5j.org）
+      </label>
+      <label class="radio" for="how_friends">
+        <input type="radio" name="how" id="how_friends" value="friends">知人からの紹介
+      </label>
+      <label class="radio" for="how_other">
+        <input type="radio" name="how" id="how_other" value="other">その他
+      </label>
+    </div>
+  </div>
+
+  <!-- 参加理由 -->
+  <div class="control-group">
+    <label class="control-label" for="reasons">このカンファレンスへの参加理由は何ですか？</label>
+    <div class="controls">
+      <label class="checkbox " for="reasons_0">
+        <input type="checkbox" name="reasons" id="reasons_0" value="0">
+        HTML5関連のイベントだから
+      </label>
+      <label class="checkbox " for="reasons_1">
+        <input type="checkbox" name="reasons" id="reasons_1" value="1">
+        実務でHTML5の知識が必要になってきたから
+      </label>
+      <label class="checkbox " for="reasons_2">
+        <input type="checkbox" name="reasons" id="reasons_2" value="2">
+        セッションに気なるものがあったから
+      </label>
+      <label class="checkbox " for="reasons_3">
+        <input type="checkbox" name="reasons" id="reasons_3" value="3">
+        Webの初心者レベルから上級者まで対象が広かったから
+      </label>
+      <label class="checkbox " for="reasons_4">
+        <input type="checkbox" name="reasons" id="reasons_4" value="4">
+        Webの最新動向が知りたかったから
+      </label>
+      <label class="checkbox " for="reasons_5">
+        <input type="checkbox" name="reasons" id="reasons_5" value="5">
+        html5j.org開催だったから
+      </label>
+      <label class="checkbox " for="reasons_6">
+        <input type="checkbox" name="reasons" id="reasons_6" value="6">
+        開催日が参加しやすい日程だったから
+      </label>
+      <label class="checkbox " for="reasons_7">
+        <input type="checkbox" name="reasons" id="reasons_7" value="7">
+        開催地が参加しやすい場所だったから
+      </label>
+      <label class="checkbox " for="reasons_8">
+        <input type="checkbox" name="reasons" id="reasons_8" value="8">
+        1日で色々な話が聞けそうだったから
+      </label>
+      <label class="checkbox " for="reasons_9">
+        <input type="checkbox" name="reasons" id="reasons_9" value="9">
+        Web関係のデベロッパーやデザイナーと知り合いになれそうだったから
+      </label>
+      <label class="checkbox " for="reasons_10">
+        <input type="checkbox" name="reasons" id="reasons_10" value="10">
+        知り合いに誘われたから
+      </label>
+      <label class="checkbox free" for="reasons_11">
+        <input type="checkbox" name="reasons" id="reasons_11" value="11">
+        その他
+      </label>
+      （<span style="visibility:hidden"><input type="text" style="width:280px" name="reasons_free" placeholder="自由記入"></span>）
+    </div>
+  </div>
+
+  <h3 class="subtitle" id="keynote">基調講演について</h3>
+  <!-- 基調講演は如何でしたか -->
+  <div class="control-group radiotext">
+    <label class="control-label" for="keynotes">基調講演は如何でしたか？</label>
+    <div class="controls">
+      <label class="radio " for="keynotes_4">
+        <input type="radio" name="keynotes" id="keynotes_4" value="4">
+        とても面白かった
+      </label>
+      <label class="radio " for="keynotes_3">
+        <input type="radio" name="keynotes" id="keynotes_3" value="3">
+        面白かった
+      </label>
+      <label class="radio " for="keynotes_2">
+        <input type="radio" name="keynotes" id="keynotes_2" value="2">
+        普通
+      </label>
+      <label class="radio " for="keynotes_1">
+        <input type="radio" name="keynotes" id="keynotes_1" value="1">
+        いまいちだった
+      </label>
+      <label class="radio " for="keynotes_0">
+        <input type="radio" name="keynotes" id="keynotes_0" value="0">
+        参加しなかった
+      </label>
+      （理由：<span style="visibility:hidden"><input type="text" style="width:280px" name="keynote_not_reason" placeholder="自由記入"></span>）
+    </div>
+  </div>
+
+  <!-- [TODO] 各コマについては、プログラムデータからオプションを
+  　生成するのと、ループにするのと
+  -->
+  <h3 class="subtitle" id="slot1">1コマ目（11:45 - 12:30)</h3>
+  <!-- どのセッション？ -->
+  <div class="control-group">
+    <label class="control-label" for="slot1">セッションに参加されましたか？</label>
+    <div class="controls sessions">
+      <label class="radio select" for="slot1_attend">
+        <input type="radio" name="slot1" id="slot1_attend" value="attend">
+        参加した
+      </label>
+      <select name="slot1_attend_session" id="slot1_attend_session" disabled>
+        <option value="-1" selected>参加したセッションを選択してください</option>
+        <option value="id1">HTMLとかCSSとかAPIとか -2012秋編- (仮)</option>
+        <option value="id2">HTML5マークアップ珍プレー集</option>
+        <option value="id3">HTML5とIE10とWindows 8</option>
+        <option value="id4">Webプラットフォームの進化と実装〜Web技術の現在と未来〜</option>
+      </select>
+      <label class="radio" for="slot1_not">
+        <input type="radio" name="slot1" id="slot1_not" value="notattend">
+        参加しなかった
+      </label>
+      （理由：<span style="visibility:hidden"><input type="text" style="width:280px" name="slot1_not_reason" placeholder="自由記入"></span>）
+    </div>
+  </div>
+
+  <!-- セッションは如何でしたか -->
+  <div class="control-group radiotext">
+    <label class="control-label" for="slot1_feel">上記セッションに参加された方どうでしたか？</label>
+    <div class="controls">
+      <label class="radio " for="slot1_feel_4">
+        <input type="radio" name="slot1_feel" id="slot1_feel_4" value="4">
+        とても面白かった
+      </label>
+      <label class="radio " for="slot1_feel_3">
+        <input type="radio" name="slot1_feel" id="slot1_feel_3" value="3">
+        面白かった
+      </label>
+      <label class="radio " for="slot1_feel_2">
+        <input type="radio" name="slot1_feel" id="slot1_feel_2" value="2">
+        普通
+      </label>
+      <label class="radio " for="slot1_feel_1">
+        <input type="radio" name="slot1_feel" id="slot1_feel_1" value="1">
+        いまいちだった
+      </label>
+      （理由：<span style="visibility:hidden"><input type="text" style="width:280px" name="slot1_feelbad_reason" placeholder="自由記入"></span>）
+    </div>
+  </div>
+
+
+  <!-- [TODO] ここまでをループ処理 -->
+
+
+  <h3 class="subtitle" id="conf_all">カンファレンス全体について</h3>
+  <div class="control-group radiotext">
+    <label class="control-label" for="conference">カンファレンス全体は如何でしたか？</label>
+    <div class="controls">
+      <label class="radio " for="conference_4">
+        <input type="radio" name="conference" id="conference_4" value="4">
+        とても面白かった
+      </label>
+      <label class="radio " for="conference_3">
+        <input type="radio" name="conference" id="conference_3" value="3">
+        面白かった
+      </label>
+      <label class="radio " for="conference_2">
+        <input type="radio" name="conference" id="conference_2" value="2">
+        普通
+      </label>
+      <label class="radio " for="conference_1">
+        <input type="radio" name="conference" id="conference_1" value="1">
+        いまいちだった
+      </label>
+      （理由：<span style="visibility:hidden"><input type="text" style="width:280px" name="conference_feelbad_reason" placeholder="自由記入"></span>）
+    </div>
+  </div>
+
+  <h3 class="subtitle" id="conf_all">運営について</h3>
+  <div class="control-group">
+    <label class="control-label" for="manage-notify">開催アナウンスと応募開始までの時間はどうでしたか？</label>
+    <div class="controls">
+      <label class="radio " for="manage-notify_4">
+        <input type="radio" name="manage-notify" id="manage-notify_4" value="4">
+        やや長かった
+      </label>
+      <label class="radio " for="manage-notify_3">
+        <input type="radio" name="manage-notify" id="manage-notify_3" value="3">
+        長かった
+      </label>
+      <label class="radio " for="manage-notify_2">
+        <input type="radio" name="manage-notify" id="manage-notify_2" value="2">
+        普通
+      </label>
+      <label class="radio " for="manage-notify_1">
+        <input type="radio" name="manage-notify" id="manage-notify_1" value="1">
+        短かった
+      </label>
+    </div>
+  </div>
+  <div class="control-group radiotext">
+    <label class="control-label" for="manage-enough">事務局からの連絡は十分でしたか？</label>
+    <div class="controls">
+      <label class="radio " for="manage-enough_yes">
+        <input type="radio" name="manage-enough" id="manage-enough_yes" value="yes">
+        十分だった
+      </label>
+      <label class="radio " for="manage-enough_no">
+        <input type="radio" name="manage-enough" id="manage-enough_no" value="no">
+        足りなかった
+      </label>
+      （理由：<span style="visibility:hidden"><input type="text" style="width:280px" name="manage_feelbad_reason" placeholder="自由記入"></span>）
+    </div>
+  </div>
+  <!-- 感想など自由入力 -->
+  <div class="control-group">
+    <label class="control-label" for="manage_freetext">事務局への運営へのご感想、ご意見、または今後のリクエストなどをお書きください。</label>
+    <div class="controls">
+      <textarea class="input-xlarge" name="manage_freetext" id="manage_freetext" rows="3"></textarea>
+    </div>
+  </div>
+
+  <!-- 登録ボタン -->
+  <div class="form-actions">
+    <button class="btn btn-primary" type="submit">登録する</button>
   </div>
   </form>
 
 
   <script>
-  var Inq = {
-    KEY: '201209inquiry',
-    db: (localStorage[this.KEY] && JSON.parse(localStorage[this.KEY])) || {'id': '{{id}}'},
-
-    save: function(){
-      localStorage[this.KEY] = JSON.stringify(this.db);
-    },
-    show_: function(){
-      // for debugging
-      $("#dcon").text(JSON.stringify(this.db));
-    },
-    set: function(key, val) {
-      if((typeof(key) !== "string") || typeof(key) !== "string") {
-        throw("Inq.set-- parameters should string");
+  var Inq, FormCtrl;
+  (function(){
+    // Array Object の拡張
+    Array.prototype.has = function(a){
+      for(var i = 0, l = this.length; i < l; i++) {
+        if(this[i] === a) return true;
       }
-      this.db[key] = val;
+      return false;
     }
-  }
 
-  Inq.save();
-  Inq.show_();
+
+    // Inquiry Object の定義
+    Inq = {
+      KEY: '201209inquiry',
+      db: null,
+      load: function(){
+        if(!!this.db === false) {
+          this.db = (localStorage[this.KEY] && JSON.parse(localStorage[this.KEY])) || {'id': '{{id}}'};
+        }
+      },
+
+      save: function(){
+        localStorage[this.KEY] = JSON.stringify(this.db);
+      },
+      show_: function(){
+        // for debugging
+        $("#dcon").text(JSON.stringify(this.db));
+      },
+      set: function(key, val) {
+        if((typeof(key) !== "string") || typeof(key) !== "string") {
+          throw("Inq.set-- parameters should string");
+        }
+        this.db[key] = val;
+        this.save();
+      },
+      get: function(){
+        return this.db;
+      }
+    }
+
+    // Form Control Objectの定義
+    FormCtrl = {
+      show: function(jqObj){
+        jqObj.siblings("span").css("visibility", "visible");
+      },
+      hide: function(jqObj){
+        jqObj.siblings("span").css("visibility", "hidden");
+      },
+      // 各セッションに対するフォームで、radioボタンに応じて
+      // セレクトボックス／テキストフィールドを表示/非表示する
+      changeSession: function(jqObj) {
+        $(jqObj).parent("label").parent("div.sessions").find("input:radio").each(function(e){
+          var val_ = $(this).val();
+          switch(val_) {
+            case "attend":
+              var obj = $(this).parent("label").eq(0).siblings("select");
+
+              if($(this)[0].checked) {
+                obj.removeAttr("disabled");
+              } else {
+                obj.attr("disabled", "disabled");
+              }
+              break;
+            case "notattend":
+              var obj = $(this).parent("label").eq(0).siblings("span");
+
+              if($(this)[0].checked) {
+                obj.css("visibility", "visible");
+              } else {
+                obj.css("visibility", "hidden");
+              }
+              break;
+            default:
+              console.log("unknown value");
+              break;
+          }
+        });
+      },
+      changeRadioText: function(jqObj) {
+        var controls = jqObj.parent("label").parent(".controls");
+        var radios = controls.find("input:radio");
+
+        if(radios.eq(radios.length - 1)[0].checked) {
+          controls.find("span").css("visibility", "visible");
+        } else {
+          controls.find("span").css("visibility", "hidden");
+        }
+      },
+      // フォームのチェックなどの状態を更新する
+      update: function(inputs) {
+        // input box
+        $("section.inquiry-section form input").each(function(id){
+          var type_ = $(this).attr("type")
+            , name_ = $(this).attr("name")
+            , val_ = $(this).val()
+
+          if(!!inputs[name_]) {
+            switch(type_) {
+              case 'radio':
+              case 'checkbox':
+                if( inputs[name_].has(val_) ) {
+                  $(this).attr("checked", "checked");
+                // $(this)[0].checked = true;
+                }
+                break;
+              case 'text':
+                $(this).val(inputs[name_][0]);
+                break;
+              default:
+                console.log("unknown type => "+type_);
+                break;
+            }
+          }
+        });
+
+        // session 設問の箇所をradioボタンに応じて変える
+        $("section.inquiry-section form div.sessions input:radio").each(function(e){
+          FormCtrl.changeSession($(this));
+        });
+
+
+        // textarea
+        $("section.inquiry-section form textarea").each(function(id){
+          var name_ = $(this).attr("name")
+
+          if(!!inputs[name_]) {
+            $(this).val(inputs[name_][0]);
+          }
+        });
+
+        // select
+        $("section.inquiry-section form select").each(function(id){
+          var name_ = $(this).attr("name")
+
+          if(!!inputs[name_]) {
+            $(this).val(inputs[name_][0]);
+          }
+        });
+
+        // 自由記入(checkbox)にチェックが入っていたらtextboxをvisibleにする
+        $("label.free").each(function(){
+          if($(this).find("input")[0].checked) FormCtrl.show($(this));
+        });
+
+        // radio+textの項目で最終ラジオにチェックが入っていたら、テキストボックスを表示
+        $("section.inquiry-section form div.radiotext input:radio").each(function(){
+          FormCtrl.changeRadioText($(this));
+        });
+
+      },
+      // フォーム内の全入力項目を取得し、JSONで返す
+      // 例：{"gender":["male"], "reasons":["0", "5"]}
+      gets: function(){
+        var ret = {};
+
+        // input nodes(type="radio, checkbox, text")
+        $("section.inquiry-section form input").each(function(id){
+          var type_ = $(this).attr("type")
+            , name_ = $(this).attr("name")
+            , val_ = $(this).val()
+            , checked_ = !!$(this)[0].checked
+
+          if( !!ret[name_] === false ) ret[name_] = [];
+
+          switch(type_){
+          case "radio":
+          case "checkbox":
+            if(checked_) ret[name_].push(val_);
+            break;
+          case "text":
+            ret[name_].push(val_);
+            break;
+          default:
+            console.log("type should be radio or checkbox or text ... "+type_);
+          }
+
+        });
+
+        // textarea
+        $("section.inquiry-section form textarea").each(function(id){
+          var name_ = $(this).attr("name")
+            , val_ = $(this).val()
+
+          if( !!ret[name_] === false ) ret[name_] = [];
+          ret[name_].push(val_);
+        });
+
+        // select
+        $("section.inquiry-section form select").each(function(id){
+          var name_ = $(this).attr("name")
+            , val_ = $(this).find("option:selected").val()
+
+          if( !!ret[name_] === false ) ret[name_] = [];
+          ret[name_].push(val_);
+        });
+
+        return ret;
+      }
+    }
+
+    // EventHandlers
+    //////////////////////////////////////////
+
+    // 自由記入のlabel(class=free)がクリックされたら、テキストフォームを表示する
+    $("section.inquiry-section form label.free").bind("click", function(e){
+      FormCtrl[$(this).find("input")[0].checked ? "show": "hide"]($(this));
+    });
+
+    // sessionのラジオボタンに応じて、selectとfreetextを切り替える
+    $("section.inquiry-section form div.sessions input:radio").change(function(){
+      FormCtrl.changeSession($(this));
+    });
+
+    // フォームに変更が起きたら、即座にLocalStorageへ保存する
+    $("section.inquiry-section form input,textarea,select")
+    .bind("check change", function(){
+      var res = FormCtrl.gets()
+      Inq.set('inputs', res);
+    });
+
+    // radio+textのフォームについては、最後のラジオがチェックされたら
+    // textフィールドを表示する
+    $("section.inquiry-section form div.radiotext input:radio").change(function(){
+      FormCtrl.changeRadioText($(this));
+    });
+
+
+
+    // main
+    ////////////////////////////////////////////
+    Inq.load();
+    var inputs = Inq.get().inputs;
+    if(!!inputs) FormCtrl.update(inputs);
+    Inq.show_();
+    }());
 
   </script>
 </section>

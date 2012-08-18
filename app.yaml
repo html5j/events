@@ -1,5 +1,5 @@
 application: ch5conf
-version: 201208171130
+version: 201208181153
 runtime: python
 api_version: 1
 
@@ -44,3 +44,6 @@ handlers:
 - url: /conference/2012/09/.*
   script: 201209/main.py
 
+- url: /remote_api
+  script: $PYTHON_LIB/google/appengine/ext/remote_api/handler.py
+  login: admin
