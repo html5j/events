@@ -100,6 +100,11 @@
             "link": "http://www.kddi.com"
         },
         {
+            "image": "24_Softbank_logo.png",
+            "name": "ソフトバンクモバイル株式会社",
+            "link": "http://recruit.softbank.jp/career/" 
+        },
+        {
             "image": "25_asial_logo.png",
             "name": "アシアル株式会社",
             "link": "http://www.asial.co.jp/"
@@ -137,6 +142,11 @@
             "image": "26_impress_logo.png",
             "name": "ThinkIT",
             "link": "http://thinkit.co.jp/"
+        },
+        {
+            "image": "asciiwebpro_logo.png",
+            "name": "ASCII MEDIA WORKS",
+            "link": "http://ascii.jp/web/"
         },
         {
             "image": "29_gihyojp_logo.png",
