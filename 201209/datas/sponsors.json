@@ -177,6 +177,11 @@
             "image": "publickey.png",
             "name": "Publickey",
             "link": "http://www.publickey1.jp/"
+        },
+        {
+            "image": "101_ITpro_logo.jpg",
+            "name": "ITpro",
+            "link": "http://itpro.nikkeibp.co.jp/"
         }
     ]
 }
