@@ -177,6 +177,17 @@ class SpeakerPage(webapp.RequestHandler):
     path = os.path.join(os.path.dirname(__file__), 'view/routing.html')
     self.response.out.write(template.render(path, {'filename': 'blocks/speaker.html', 'page':'speaker', 'program': program, 'progdic': progdic, 'speadic': speadic, 'currentNum': getCurrentNum() }))
 
+"""
+article's page
+"""
+
+class ArticlesPage(webapp.RequestHandler):
+  def get(self):
+    reportersJSON = open(os.path.join(os.path.dirname(__file__), 'datas/reporters.json')).read()
+    reporters = simplejson.loads(reportersJSON)
+    path = os.path.join(os.path.dirname(__file__), 'view/routing.html')
+    self.response.out.write(template.render(path, {'filename': 'blocks/articles.html', 'page': 'articles', 'reporters': reporters }))
+
 
 """
 faq page
@@ -724,6 +735,7 @@ def main():
     # ('/conference/2012/09/volunteer.html', VolunteerPage),
     ('/conference/2012/09/program.html', ProgramPage),
     ('/conference/2012/09/speaker.html', SpeakerPage),
+    ('/conference/2012/09/articles.html', ArticlesPage),
     ('/conference/2012/09/faq.html', FaqPage),
     ('/conference/2012/09/access.html', AccessPage),
     ('/conference/2012/09/reg_top.html', RegTopPage),
