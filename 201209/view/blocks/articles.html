@@ -1,0 +1,22 @@
+<section>
+  <h2 class="page-header">公式レポーター一覧</h2>
+  <p>
+    50音順で掲載しています。
+  </p>
+  <section class="reporters">
+    <table class="table table-bordered">
+      {% for reporter in reporters %}
+      <tr><td width="100px" style="text-align:center;">
+          {%if reporter.icon %}<img src="/images/201209/reporter/{{reporter.icon}}">{% endif %}
+        </td>
+        <td>
+          <dl>
+            <dt>{{ reporter.name }}</dt>
+            <dd>{{ reporter.description|escape }}</dd>
+          </dl>
+        </td>
+      </tr>
+      {% endfor %}
+    </table>
+  </section>
+</section>
