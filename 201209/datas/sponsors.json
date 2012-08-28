@@ -182,6 +182,11 @@
             "image": "101_ITpro_logo.jpg",
             "name": "ITpro",
             "link": "http://itpro.nikkeibp.co.jp/"
+        },
+        {
+            "image": "19_nico_logo.png",
+            "name": "ニコニコ生放送",
+            "link": "http://live.nicovideo.jp/"
         }
     ]
 }
