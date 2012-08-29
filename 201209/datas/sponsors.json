@@ -61,6 +61,11 @@
             "image": "12_connecty_logo.png",
             "name": "株式会社コネクティ",
             "link": "http://www.connecty.co.jp/"
+        },
+        {
+            "image": "28_isao_logo.png",
+            "name": "株式会社ISAO",
+            "link": "http://www.isao.co.jp/"
         }
     ],
     "silver": [
@@ -108,11 +113,6 @@
             "image": "25_asial_logo.png",
             "name": "アシアル株式会社",
             "link": "http://www.asial.co.jp/"
-        },
-        {
-            "image": "28_isao_logo.png",
-            "name": "株式会社ISAO",
-            "link": "http://www.isao.co.jp/"
         },
         {
             "image": "30_accelia_logo.gif",
