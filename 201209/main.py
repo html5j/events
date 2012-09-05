@@ -75,8 +75,8 @@ class EntryLogs(db.Model):
 MailBody Model
 """
 class MailBodies(db.Model):
-  body = db.StringProperty(multiline=True, required=True)
-
+  # body = db.StringProperty(multiline=True, required=True)
+  body = db.TextProperty(required=True)
 
 """
 Utlitilities
