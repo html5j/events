@@ -145,13 +145,18 @@
             "image": "w3c_icon.png",
             "name": "W3C",
             "link": "http://www.w3.org/"
-        }
-    ],
-    "media": [
+        },
         {
             "image": "26_impress_logo.png",
             "name": "インプレスジャパン",
             "link": "http://www.impressjapan.jp/"
+        }
+    ],
+    "media": [
+        {
+            "image": "thinkit_logo.png",
+            "name": "ThinkIT",
+            "link": "http://thinkit.co.jp/"
         },
         {
             "image": "asciiwebpro_logo.png",
