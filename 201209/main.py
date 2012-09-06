@@ -20,6 +20,7 @@ import wsgiref.handlers
 import os
 import hashlib
 import uuid
+import logging
 from google.appengine.ext import webapp
 from google.appengine.ext.webapp import template
 #from google.appengine.api import mail
@@ -70,6 +71,16 @@ class EntryLogs(db.Model):
   created = db.DateTimeProperty(auto_now_add=True)
   log = db.StringProperty(required=True)
 
+"""
+MailBody Model
+"""
+class MailBodies(db.Model):
+  body = db.StringProperty(multiline=True, required=True)
+
+
+"""
+Utlitilities
+"""
 def getCurrentNum():
   q =  Users.all()
   q.filter('canceld =', False)
@@ -721,12 +732,163 @@ class RegDonePage(webapp.RequestHandler):
     path = os.path.join(os.path.dirname(__file__), 'view/reg_done.html')
     self.response.out.write(template.render(path, {'page':'reg_done', 'body': body, 'name': name, 'email': email, 'registration': regs}))
 
+"""
+Reminder page
+"""
+class ReminderPage(webapp.RequestHandler):
+  def get(self):
+    user = users.get_current_user()
+    if not user:
+      loginRequired(self, "/conference/2012/09/reminder.html")
+      return
+
+    logging.info("reminder page has acccessed by %s", user.email())
+
+    if not user.email() == 'kensaku.komatsu@gmail.com':
+      self.response.out.write("you are not permitted to access this page.")
+      return
+
+    path = os.path.join(os.path.dirname(__file__), 'view/reminder.html')
+    generic = MailBodies.get_by_key_name('generic', None)
+    vip = MailBodies.get_by_key_name('vip', None)
+
+    if generic is None:
+      generic_body = ""
+    else:
+      generic_body = generic.body
+
+    logging.debug(vip)
+
+    if vip is None:
+      vip_body = ""
+    else:
+      vip_body = vip.body
+
+    self.response.out.write(template.render(path, {
+      'title':'remider送信ページ（管理者用）',
+      'generic_body':generic_body,
+      'vip_body' :vip_body
+      }))
+
+  def post(self):
+    user = users.get_current_user()
+    if not user.email() == 'kensaku.komatsu@gmail.com':
+      self.response.out.write("you are not permitted to access this page.")
+      return
+
+    target = self.request.get('target')
+    name = self.request.get('name')
+    email = self.request.get('email')
+
+    mail_body = MailBodies.get_by_key_name(target)
+
+    if mail_body:
+      body = mail_body.body
+    else:
+      body = ""
+
+    body_ = body.replace("{{name}}", name).replace("{{email}}", email)
+
+    if target == "generic":
+      logging.info("getting registration info for generic subscribers");
+      query = Users.all()
+      query.filter('email =', email)
+      res = query.fetch(1)
+
+      program = open(os.path.join(os.path.dirname(__file__), 'datas/program.json')).read()
+      progdic = simplejson.loads(program)
+
+      sessions_ = {}
+
+      for slot in progdic:
+        if "sessions" in slot:
+          for session in slot['sessions']:
+            sessions_[str(session['session_id'])] = {'title': session['title'], 'timeslot': slot['timeslot']}
+
+      regs = []
+
+      if res[0].slot_0:
+        regs.append(sessions_[res[0].slot_0])
+      if res[0].slot_2:
+        regs.append(sessions_[res[0].slot_2])
+      if res[0].slot_4:
+        regs.append(sessions_[res[0].slot_4])
+      if res[0].slot_6:
+        regs.append(sessions_[res[0].slot_6])
+      if res[0].slot_8:
+        regs.append(sessions_[res[0].slot_8])
+      if res[0].slot_10:
+        regs.append(sessions_[res[0].slot_10])
+      if res[0].slot_12:
+        regs.append(sessions_[res[0].slot_12])
+
+      contents = "     =============================\n"
+      
+      for session in regs:
+        contents += "     "+session['timeslot']+"\n"
+        contents += "     "+session['title']+"\n"
+
+      contents += "     =============================\n"
+      id = hashlib.sha1(email).hexdigest()
+
+      body_ = body_.replace("{{contents}}", contents).replace("{{id}}", id)
+
+
+    logging.info("Sent %s mail to: email = %s, name = %s, target = %s", target, email, name, target)
+
+    mail.send_mail(sender="event@html5j.org",
+      to = email,
+      subject = "[HTML5 Conference 2012]参加証の送付",
+      body = body_)
+
+    self.response.out.write(simplejson.dumps({"target": target, "name": name, "email": email, "body": body_}))
+
+
+"""
+APIs
+"""
+class MailBodyAPI(webapp.RequestHandler):
+  def post(self):
+    user = users.get_current_user()
+    if not user.email() == 'kensaku.komatsu@gmail.com':
+      self.response.out.write("you are not permitted to access this page.")
+      return
+
+    target = self.request.get('target')
+    body = self.request.get('body')
+    logging.debug(target+", "+body)
+
+    mail_body = MailBodies(key_name = target, body = body)
+    mail_body.put()
+
+
+    self.response.headers['Content-Type'] = "application/json"
+    self.response.out.write(simplejson.dumps({"target":target , "body": body}))
+
+class SubscriberAPI(webapp.RequestHandler):
+  def get(self):
+    user = users.get_current_user()
+    if not user.email() == 'kensaku.komatsu@gmail.com':
+      self.response.out.write("you are not permitted to access this page.")
+      return
+
+    q =  Users.all()
+    q.filter('canceld =', False)
+    subscribers = q.fetch(1100)
+
+    ret = []
+    for subscriber in subscribers:
+      ret.append({"email": subscriber.email, "name": subscriber.name})
+
+    self.response.headers['Content-Type'] = "application/json"
+    self.response.out.write(simplejson.dumps(ret))
 
 
 """
 routing part
 """
 def main():
+  logging.getLogger().setLevel(logging.DEBUG)
 
   application = webapp.WSGIApplication([
     ('/conference/2012/09/', MainPage),
@@ -745,7 +907,10 @@ def main():
     ('/conference/2012/09/cancel_done.html', CancelDonePage),
     #('/conference/2012/09/lt.html', LtPage),
     #('/conference/2012/09/writer.html', WriterPage),
-    ('/conference/2012/09/inquiry.html', InquiryPage)
+    ('/conference/2012/09/inquiry.html', InquiryPage),
+    ('/conference/2012/09/reminder.html', ReminderPage),
+    ('/conference/2012/09/mail_body', MailBodyAPI),
+    ('/conference/2012/09/subscriber', SubscriberAPI)
  ], debug=True)
   wsgiref.handlers.CGIHandler().run(application)
 
