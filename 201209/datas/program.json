@@ -86,12 +86,8 @@
       },
       {
         "session_id": 7,
-        "title": "(未定) Chrome最新情報",
-        "description": "・モバイル版Chrome等を対象としたモバイルアプリ・サイト開発手法の解説
-
-もしくは
-
-・ウェブアプリの可能性を更に広げる新しいChrome Extension / Appsのご紹介",
+        "title": "What's new in Chrome Apps / Extensions?",
+        "description": "Manifest v2 になり、よりネイティブアプリに近くなる Chrome Apps や、様々な機能が利用可能になる Extension に関してのアップデートをご紹介いたします。",
         "speakers": [9],
         "max": 135
       },

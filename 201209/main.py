@@ -823,7 +823,7 @@ class ReminderPage(webapp.RequestHandler):
         regs.append(sessions_[res[0].slot_12])
 
       contents = "     =============================\n"
-      
+
       for session in regs:
         contents += "     "+session['timeslot']+"\n"
         contents += "     "+session['title']+"\n"
