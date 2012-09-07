@@ -196,53 +196,60 @@
   <!-- [TODO] 各コマについては、プログラムデータからオプションを
   　生成するのと、ループにするのと
   -->
-  <h3 class="subtitle" id="slot1">1コマ目（11:45 - 12:30)</h3>
+  {% for slot_id in slot_ids %}
+    {% for progs in progdic %}
+      {% ifequal progs.slot_id slot_id %}
+
+  <h3 class="subtitle" id="slot{{slot_id}}">一般講演：({{ progs.timeslot }})</h3>
   <!-- どのセッション？ -->
   <div class="control-group">
-    <label class="control-label" for="slot1">セッションに参加されましたか？</label>
+    <label class="control-label" for="slot{{slot_id}}">セッションに参加されましたか？</label>
     <div class="controls sessions">
-      <label class="radio select" for="slot1_attend">
-        <input type="radio" name="slot1" id="slot1_attend" value="attend">
+      <label class="radio select" for="slot{{slot_id}}_attend">
+        <input type="radio" name="slot{{slot_id}}" id="slot{{slot_id}}_attend" value="attend">
         参加した
       </label>
-      <select name="slot1_attend_session" id="slot1_attend_session" disabled>
+      <select name="slot{{slot_id}}_attend_session" id="slot{{slot_id}}_attend_session" disabled>
         <option value="-1" selected>参加したセッションを選択してください</option>
-        <option value="id1">HTMLとかCSSとかAPIとか -2012秋編- (仮)</option>
-        <option value="id2">HTML5マークアップ珍プレー集</option>
-        <option value="id3">HTML5とIE10とWindows 8</option>
-        <option value="id4">Webプラットフォームの進化と実装〜Web技術の現在と未来〜</option>
+        {% for session in progs.sessions %}
+        <option value="id{{session.session_id}}">{{session.title}}</option>
+        {% endfor %}
       </select>
-      <label class="radio" for="slot1_not">
-        <input type="radio" name="slot1" id="slot1_not" value="notattend">
+      <label class="radio" for="slot{{slot_id}}_not">
+        <input type="radio" name="slot{{slot_id}}" id="slot{{slog_id}}_not" value="notattend">
         参加しなかった
       </label>
-      （理由：<span style="visibility:hidden"><input type="text" style="width:280px" name="slot1_not_reason" placeholder="自由記入"></span>）
+      （理由：<span style="visibility:hidden"><input type="text" style="width:280px" name="slot{{slot_id}}_not_reason" placeholder="自由記入"></span>）
     </div>
   </div>
 
+
   <!-- セッションは如何でしたか -->
   <div class="control-group radiotext">
-    <label class="control-label" for="slot1_feel">上記セッションに参加された方どうでしたか？</label>
+    <label class="control-label" for="slot{{slot_id}}_feel">上記セッションに参加された方どうでしたか？</label>
     <div class="controls">
-      <label class="radio " for="slot1_feel_4">
-        <input type="radio" name="slot1_feel" id="slot1_feel_4" value="4">
+      <label class="radio " for="slot{{slot_id}}_feel_4">
+        <input type="radio" name="slot{{slot_id}}_feel" id="slot{{slot_id}}_feel_4" value="4">
         とても面白かった
       </label>
-      <label class="radio " for="slot1_feel_3">
-        <input type="radio" name="slot1_feel" id="slot1_feel_3" value="3">
+      <label class="radio " for="slot{{slot_id}}_feel_3">
+        <input type="radio" name="slot{{slot_id}}_feel" id="slot{{slot_id}}_feel_3" value="3">
         面白かった
       </label>
-      <label class="radio " for="slot1_feel_2">
-        <input type="radio" name="slot1_feel" id="slot1_feel_2" value="2">
+      <label class="radio " for="slot{{slot_id}}_feel_2">
+        <input type="radio" name="slot{{slot_id}}_feel" id="slot{{slot_id}}_feel_2" value="2">
         普通
       </label>
-      <label class="radio " for="slot1_feel_1">
-        <input type="radio" name="slot1_feel" id="slot1_feel_1" value="1">
+      <label class="radio " for="slot{{slot_id}}_feel_1">
+        <input type="radio" name="slot{{slot_id}}_feel" id="slot{{slot_id}}_feel_1" value="1">
         いまいちだった
       </label>
-      （理由：<span style="visibility:hidden"><input type="text" style="width:280px" name="slot1_feelbad_reason" placeholder="自由記入"></span>）
+      （理由：<span style="visibility:hidden"><input type="text" style="width:280px" name="slot{{slot_id}}_feelbad_reason" placeholder="自由記入"></span>）
     </div>
   </div>
+      {% endifequal %}
+    {% endfor %}
+  {% endfor %}
 
 
   <!-- [TODO] ここまでをループ処理 -->

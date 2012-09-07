@@ -135,8 +135,12 @@ $(".generic .send-mail button").click(function(){
 
 		$.post("reminder.html", {target: "generic", name: name, email: email}, function(data){
 			console.dir(JSON.parse(data))
-			if(!!test === false)
-				send_(i+1);
+
+			setTimeout(function(){
+				if(!!test === false)
+					send_(i+1);
+			}, 3000);
+
 		});
 	}
 	send_(0)
@@ -164,8 +168,10 @@ $(".vip .send-mail button").click(function(){
 
 		$.post("reminder.html", {target: "vip", name: name, email: email}, function(data){
 			console.dir(JSON.parse(data))
-			if(!!test === false)
-				send_(i+1);
+			setTimeout(function(){
+				if(!!test === false)
+					send_(i+1);
+			},3000 );
 		});
 	}
 	send_(0)
