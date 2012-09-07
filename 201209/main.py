@@ -82,39 +82,10 @@ class MailBodies(db.Model):
 Inquiry Model
 """
 class Inquiries(db.Model):
-  gender = db.StringProperty(required=False)
-  generation = db.StringProperty(required=False)
-  occupation = db.StringProperty(required=False)
-  how = db.StringProperty(required=False)
-  reasons = db.StringProperty(required=False)
-  reason_free = db.StringProperty(required=False)
-  keynotes = db.StringProperty(required=False)
-  keynotes_not_reason = db.StringProperty(required=False)
-  slot2 = db.StringProperty(required=False)
-  slot2_attend_session = db.StringProperty(required=False)
-  slot2_not_reason = db.StringProperty(required=False)
-  slot2_feel = db.StringProperty(required=False)
-  slot2_feelbad_reason = db.StringProperty(required=False)
-  slot4 = db.StringProperty(required=False)
-  slot4_attend_session = db.StringProperty(required=False)
-  slot4_not_reason = db.StringProperty(required=False)
-  slot4_feel = db.StringProperty(required=False)
-  slot4_feelbad_reason = db.StringProperty(required=False)
-  slot6 = db.StringProperty(required=False)
-  slot6_attend_session = db.StringProperty(required=False)
-  slot6_not_reason = db.StringProperty(required=False)
-  slot6_feel = db.StringProperty(required=False)
-  slot6_feelbad_reason = db.StringProperty(required=False)
-  slot8 = db.StringProperty(required=False)
-  slot8_attend_session = db.StringProperty(required=False)
-  slot8_not_reason = db.StringProperty(required=False)
-  slot8_feel = db.StringProperty(required=False)
-  slot8_feelbad_reason = db.StringProperty(required=False)
-  slot10 = db.StringProperty(required=False)
-  slot10_attend_session = db.StringProperty(required=False)
-  slot10_not_reason = db.StringProperty(required=False)
-  slot10_feel = db.StringProperty(required=False)
-  slot10_feelbad_reason = db.StringProperty(required=False)
+  data = db.TextProperty(required=True)
+
+
+
 
 """
 Utlitilities
@@ -188,6 +159,16 @@ class InquiryPage(webapp.RequestHandler):
   def post(self):
     path = os.path.join(os.path.dirname(__file__), 'view/routing.html')
     uuid_ = str(uuid.uuid1())
+
+    # check post parameters
+    id = self.request.get('id')
+    data = self.request.get('data')
+
+    logging.info("id : %s", id)
+
+    inquiry = Inquiries(key_name = id, data = data)
+    inquiry.put()
+
     # self.response.out.write(template.render(path, {'filename': 'blocks/inquiry.html', 'id': uuid_, 'page':'inquiry'}))
     self.redirect('/conference/2012/09/inquiry.html')
 

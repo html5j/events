@@ -1,18 +1,18 @@
 <section class="inquiry-section">
   <h2 class="page-header">アンケートにご協力ください！！</h2>
-  <hr>
+  <!--
   <h5>Debug console</h5>
   <div id="dcon" class="well"></div>
   <hr>
+  -->
 
-  <div class="alert alert-info">
+  <div class="alert alert-info thankyou">
     アンケートにご協力いただきありがとうございます。<br>
     アンケート入力が完了していない場合は、引き続きこちらの画面から入力が可能です<br>
     アンケート項目の入力が完了した方は、<strong>受付にてプレゼント</strong>をお受け取り下さい。
   </div>
 
   <form class="form-horizontal" method="post" action="">
-  <hr>
   <h3 class="subtitle" id="base">基本属性情報</h3>
   <!-- 性別 -->
   <div class="control-group">
@@ -333,6 +333,20 @@
   <script>
   var Inq, FormCtrl;
   (function(){
+    $("form").bind("submit", function(e){
+       e.preventDefault();  
+
+       var param = {id: Inq.get().id, data : JSON.stringify(Inq.get().inputs) };
+
+       $.post("", param, function(e){
+          location.reload();
+
+       })
+
+    });
+
+
+
     // Array Object の拡張
     Array.prototype.has = function(a){
       for(var i = 0, l = this.length; i < l; i++) {
@@ -350,6 +364,7 @@
         if(!!this.db === false) {
           this.db = (localStorage[this.KEY] && JSON.parse(localStorage[this.KEY])) || {'id': '{{id}}'};
         }
+        $(".thankyou")[!!localStorage[this.KEY] ? "show"  : "hide"]();
       },
 
       save: function(){
