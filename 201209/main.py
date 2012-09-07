@@ -217,6 +217,14 @@ class AccessPage(webapp.RequestHandler):
     self.response.out.write(template.render(path, {'filename': 'blocks/access.html', 'page':'access'}))
 
 """
+map page
+"""
+class MapPage(webapp.RequestHandler):
+  def get(self):
+    path = os.path.join(os.path.dirname(__file__), 'view/routing.html')
+    self.response.out.write(template.render(path, {'filename': 'blocks/map.html', 'page':'map'}))
+
+"""
 registration pages
 """
 #class RedirectPage(webapp.RequestHandler):
@@ -900,6 +908,7 @@ def main():
     ('/conference/2012/09/articles.html', ArticlesPage),
     ('/conference/2012/09/faq.html', FaqPage),
     ('/conference/2012/09/access.html', AccessPage),
+    ('/conference/2012/09/map.html', MapPage),
     ('/conference/2012/09/reg_top.html', RegTopPage),
     ('/conference/2012/09/reg_program.html', RegProgramPage),
     # ('/conference/2012/09/reg_confirm.html', RegConfirmPage),
