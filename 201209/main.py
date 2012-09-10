@@ -91,14 +91,18 @@ class Inquiries(db.Model):
 Utlitilities
 """
 def getCurrentNum():
-  q =  Users.all()
-  q.filter('canceld =', False)
+  # get rid of db procedure
+  return 999
+  # q =  Users.all()
+  # q.filter('canceld =', False)
 
-  return len(q.fetch(1100))
+  # return len(q.fetch(1100))
+
+
 
 def canSubscribe():
   max_ = 999
-  #max_ = 900
+
   curr = getCurrentNum()
 
   if curr > max_:
@@ -198,7 +202,8 @@ class ProgramPage(webapp.RequestHandler):
 
 
     path = os.path.join(os.path.dirname(__file__), 'view/routing.html')
-    self.response.out.write(template.render(path, {'filename': 'blocks/program.html', 'sess': getSessions(), 'page':'program', 'program': program, 'progdic': progdic, 'speadic': speadic}))
+    # self.response.out.write(template.render(path, {'filename': 'blocks/program.html', 'sess': getSessions(), 'page':'program', 'program': program, 'progdic': progdic, 'speadic': speadic}))
+    self.response.out.write(template.render(path, {'filename': 'blocks/program.html', 'sess': None, 'page':'program', 'program': program, 'progdic': progdic, 'speadic': speadic}))
 
 """
 speaker's page
@@ -934,17 +939,17 @@ def main():
     ('/conference/2012/09/faq.html', FaqPage),
     ('/conference/2012/09/access.html', AccessPage),
     ('/conference/2012/09/map.html', MapPage),
-    ('/conference/2012/09/reg_top.html', RegTopPage),
-    ('/conference/2012/09/reg_program.html', RegProgramPage),
+    # ('/conference/2012/09/reg_top.html', RegTopPage),
+    # ('/conference/2012/09/reg_program.html', RegProgramPage),
     # ('/conference/2012/09/reg_confirm.html', RegConfirmPage),
-    ('/conference/2012/09/reg_done.html', RegDonePage),
-    ('/conference/2012/09/cancel_done.html', CancelDonePage),
+    # ( '/conference/2012/09/reg_done.html', RegDonePage),
+    # ('/conference/2012/09/cancel_done.html', CancelDonePage),
     #('/conference/2012/09/lt.html', LtPage),
     #('/conference/2012/09/writer.html', WriterPage),
-    ('/conference/2012/09/inquiry.html', InquiryPage),
-    ('/conference/2012/09/reminder.html', ReminderPage),
-    ('/conference/2012/09/mail_body', MailBodyAPI),
-    ('/conference/2012/09/subscriber', SubscriberAPI)
+    # ('/conference/2012/09/inquiry.html', InquiryPage),
+    # ('/conference/2012/09/reminder.html', ReminderPage),
+    # ('/conference/2012/09/mail_body', MailBodyAPI),
+    # ('/conference/2012/09/subscriber', SubscriberAPI)
  ], debug=True)
   wsgiref.handlers.CGIHandler().run(application)
 
