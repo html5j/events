@@ -53,6 +53,17 @@
                 {% endifequal %}
               {% endfor %}
             {%endfor%}
+            <hr>
+            {% if session.slide %}
+            <a href='{{ session.slide }}' target="_blank"><i class="icon-file"></i> 講演資料</a>&nbsp;&nbsp;
+            {% endif %}
+            {% if session.slide2 %}
+            <a href='{{ session.slide2 }}' target="_blank"><i class="icon-file"></i> 講演資料</a>&nbsp;&nbsp;
+            {% endif %}
+
+            {% if session.video %}
+            <a href='{{ session.slide }}' target="_blank"><i class="icon-facetime-video"></i> 講演映像</a>
+            {% endif %}
 
             {% for o in sess %}{% ifequal o.session_id session.session_id %}
               {% ifequal o.status "ok" %}<span class="label label-warning">混雑</span>{% endifequal %}
@@ -131,6 +142,19 @@
               {% endifequal %}
             {% endfor %}
           {%endfor%}
+
+          <hr>
+          {% if session.slide %}
+          <a href='{{ session.slide }}' target="_blank"><i class="icon-file"></i> 講演資料</a>&nbsp;&nbsp;
+          {% endif %}
+          {% if session.slide2 %}
+          <a href='{{ session.slide2 }}' target="_blank"><i class="icon-file"></i> 講演資料</a>&nbsp;&nbsp;
+          {% endif %}
+
+          {% if session.video %}
+          <a href='{{ session.slide }}' target="_blank"><i class="icon-facetime-video"></i> 講演映像</a>
+          {% endif %}
+
           {% for o in sess %}{% ifequal o.session_id session.session_id %}
           {% ifequal o.status "ok" %}<span class="label label-warning">混雑</span>{% endifequal %}
             {% ifequal o.status "jam" %}<span class="label label-warning">混雑</span>{% endifequal %}
