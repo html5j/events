@@ -131,6 +131,7 @@
         "title": "更に進化する CSS の表現力と新しい Web ツール",
         "description": "雑誌のようなレイアウトを実現する CSS Regions や CSS Exclusions といった新たな試みの他、開発効率を高めるオープンソースのコードエディタ Brackets や PC からリモートでスマホやタブレットの Web Inspection を行う Adobe Shadow などを紹介していきます。",
         "speakers": [14],
+        "slide": "http://www.slideshare.net/keisuke322/cssweb-html5-conference-2012",
         "max": 135
       },
       {
@@ -233,6 +234,7 @@
         "title": "jQuery Mobileカスタマイズ自由自在",
         "description": "jQuery Mobileで素早く簡単にモバイルサイトを作成できる反面、デフォルトのデザインや動きをカスタマイズするのは、ひと苦労です。本セッションでは、jQuery Mobileの次のステップとして、さまざまなカスタマイズのノウハウを紹介します。良い意味でjQuery Mobileらしくないモバイルサイトをつくりましょう。",
         "speakers": [20],
+        "slide": "http://www.slideshare.net/yoshikawa_t/jquery-mobile-14229544",
         "max": 135
       },
       {
