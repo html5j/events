@@ -2,30 +2,40 @@
     {
         "name": "清水 淳子",
         "ruby": "しみず じゅんこ",
+	"blog_url": "http://4mimimizu.net/",
+	"blog_name": "4mimimizu.net",
         "description": "1986生まれ、多摩美術大学情報デザイン学科卒業後、ウェブデザイナーとして勤務しつつ、np広告学校で広告クリエイティブとストラテジーを学ぶ。現在 WATER DESIGN にて、デザインの視点から、ジャンルを問わない事業開発、商品開発に携わる。特技は、会議中イメージスケッチで参加者全員を意思疎通させること。http://4mimimizu.net/",
         "icon": "shimizu.jpeg"
     },
     {
         "name": "出口 達也",
         "ruby": "でぐち たつや",
+	"blog_url": "http://webengineerlife.com/",
+	"blog_name": "Webエンジニアライフ",
         "description": "神戸出身。散歩と文房具をこよなく愛するWebエンジニア。株式会社エボルニ入社後、制作会社としての立場からHTML5/CSS3の普及を行うサイト「HTML5GOGO http://html555.jp/」の立ち上げ・運営を行う。2012年8月末をもって同社を退職し、現在は旅行関連のWebサービスを開発中。",
         "icon": "deguchi.jpg"
     },
     {
         "name": "藤田 無憂",
         "ruby": "ふじた むゆう",
+	"blog_url": "http://stackstock.net/",
+	"blog_name": "STACKSTOCK",
         "description": "株式会社ミツエーリンクス所属、音楽大好きWebディレクタ−。2004年頃よりWebに魅了され、ディレクターとして制作指揮の立場になった後も自身でのサイト、サービスの開発・制作を続ける。最近の趣味は「どれだけ少ない人数でどれだけ効率よくどれだけ素敵なサービスを作れるか」。",
         "icon": "muyuu.png"
     },
     {
         "name": "安西 剛",
         "ruby": "やすにし つよし",
+	"blog_url": "http://tsuyok.hatenablog.com/",
+	"blog_name": "人生は長い暇つぶし。",
         "description": "NECビッグローブ株式会社で、Webサービス、Webアプリケーション開発を行なっている。開発によりスピード感を与えるため、スクラムを使ったチーム作りを行なうべく、アジャイルコーチとしてプロジェクトの立ち上げを行なっている。",
         "icon": ""
     },
     {
         "name": "大和屋 貴仁",
         "ruby": "やまとや たかひと",
+	"blog_url": "http://sqlazure.jp/b",
+	"blog_name": "蒼の王座",
         "description": "有限会社 WINGSプロジェクトが運営する、テクニカル執筆コミュニティ所属。Microsoft MVP for Windows Azure 受賞。プライベートでは書籍や雑誌、Webメディアにマイクロソフト技術を中心に記事を投稿しています。本業では、株式会社gloopsでWindowsとLinuxのハイブリッド環境のインフラチューニングを担当しています。 http://sqlazure.jp/r/ @SQLAzureJP",
         "icon": "nora.jpg"
     }
