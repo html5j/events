@@ -44,6 +44,11 @@ handlers:
 - url: /conference/2012/09/.*
   script: 201209/main.py
 
+# quiz at conference 2012
+- url: /quiz2012
+  static_dir: quiz2012
+
+
 - url: /remote_api
   script: $PYTHON_LIB/google/appengine/ext/remote_api/handler.py
   login: admin
