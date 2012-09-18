@@ -55,14 +55,14 @@
             {%endfor%}
             <hr>
             {% if session.slide %}
-            <a href='{{ session.slide }}' target="_blank"><i class="icon-file"></i> 講演資料</a>&nbsp;&nbsp;
+            <a href='{{ session.slide }}' class="btn btn-mini btn-success" target="_blank"><i class="icon-white icon-file"></i> 講演資料</a>&nbsp;&nbsp;
             {% endif %}
             {% if session.slide2 %}
-            <a href='{{ session.slide2 }}' target="_blank"><i class="icon-file"></i> 講演資料</a>&nbsp;&nbsp;
+            <a href='{{ session.slide2 }}' class="btn btn-mini btn-success" target="_blank"><i class="icon-white icon-file"></i> 講演資料</a>&nbsp;&nbsp;
             {% endif %}
 
             {% if session.video %}
-            <a href='{{ session.slide }}' target="_blank"><i class="icon-facetime-video"></i> 講演映像</a>
+            <a href='{{ session.video }}' class="btn btn-mini btn-info" target="_blank"><i class="icon-white icon-green icon-facetime-video"></i> 講演映像</a>
             {% endif %}
 
             {% for o in sess %}{% ifequal o.session_id session.session_id %}
@@ -145,14 +145,14 @@
 
           <hr>
           {% if session.slide %}
-          <a href='{{ session.slide }}' target="_blank"><i class="icon-file"></i> 講演資料</a>&nbsp;&nbsp;
+          <a href='{{ session.slide }}' class="btn btn-mini btn-success" target="_blank"><i class="icon-white icon-file"></i> 講演資料</a>&nbsp;&nbsp;
           {% endif %}
           {% if session.slide2 %}
-          <a href='{{ session.slide2 }}' target="_blank"><i class="icon-file"></i> 講演資料</a>&nbsp;&nbsp;
+          <a href='{{ session.slide2 }}' class="btn btn-mini btn-success" target="_blank"><i class="icon-white icon-file"></i> 講演資料</a>&nbsp;&nbsp;
           {% endif %}
 
           {% if session.video %}
-          <a href='{{ session.slide }}' target="_blank"><i class="icon-facetime-video"></i> 講演映像</a>
+          <a href='{{ session.slide }}' class="btn btn-mini btn-info" target="_blank"><i class="icon-white icon-facetime-video"></i> 講演映像</a>
           {% endif %}
 
           {% for o in sess %}{% ifequal o.session_id session.session_id %}

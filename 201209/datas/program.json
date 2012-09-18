@@ -9,6 +9,7 @@
         "title": "基調講演",
         "description": "基調講演",
         "speakers": [1, 3],
+        "video": "http://youtu.be/X93YhuYR3OE",
         "max": 620
       }
     ]
@@ -25,9 +26,10 @@
     "sessions" : [
       {
         "session_id": 1,
-        "title": "HTMLとかCSSとかAPIとか -2012秋編-",
+        "title": "HTMLとかCSSとかAPIとか",
         "description": "2011年12月のHTML5とか勉強会で好評を博した白石さんの「HTML5&API総まくり」、その2012年秋版です。今回はCSSも加え、時間の許す限りまくっていきます。",
         "speakers": [4],
+        "video": "http://youtu.be/jeZ8RiyzE-Y",
         "max": 620
       },
       {
@@ -77,6 +79,7 @@
 インの手法を紹介します。",
         "speakers": [2],
         "slide": "http://www.slideshare.net/gaspanik/html5web-14219975",
+        "video": "http://youtu.be/sCkQlKQpBTw",
         "max": 620
       },
       {
@@ -125,6 +128,7 @@
 本セッションでは、Google Developers ExpertやMicrosoft Most Valuable Professionalとして最先端で活躍するHTML5のエキスパートを集め、昨今のWebを縦横無尽に語ります。
 モデレータにPublickeyの新野淳一氏、特別ゲストにグーグルの及川卓也氏を迎えた豪華メンバーでお届けします。",
         "speakers": [19,1,3,5,10],
+        "video": "http://youtu.be/IqUNU5UcBC4",
         "max": 620
       },
       {
@@ -172,6 +176,7 @@
 プログラマ、UXデザイナ必見！
 人気が予想されますので、ふたコマぶち抜きの特別枠でお届けします！",
         "speakers": [28,25,24,12,26],
+        "video": "http://youtu.be/PuvCH_b-Zbk",
         "max": 620
       },
       {
@@ -221,6 +226,7 @@
 プログラマ、UXデザイナ必見！
 人気が予想されますので、ふたコマぶち抜きの特別枠でお届けします！",
         "speakers": [27,25,24,12,26],
+        "video": "http://youtu.be/3JpFaxB9la8",
         "max": 620
       },
       {
