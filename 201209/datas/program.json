@@ -28,6 +28,7 @@
         "title": "HTMLとかCSSとかAPIとか -2012秋編-",
         "description": "2011年12月のHTML5とか勉強会で好評を博した白石さんの「HTML5&API総まくり」、その2012年秋版です。今回はCSSも加え、時間の許す限りまくっていきます。",
         "speakers": [4],
+        "slide": "http://myakura.github.com/pachystachys/slides.html",
         "max": 620
       },
       {
