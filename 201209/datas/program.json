@@ -105,6 +105,7 @@
         "description": "Manifest v2 になり、よりネイティブアプリに近くなる Chrome Apps や、様々な機能が利用可能になる Extension に関してのアップデートをご紹介いたします。",
         "speakers": [9],
         "slide": "https://docs.google.com/presentation/d/1WGX0QtqOCM36N2Ok-CpogdO_IivBh-eQ6R9mUPUhW0w/preview?sle=true#slide=id.p",
+        "video": "http://youtu.be/ncbst3g5gD4",
         "max": 135
       },
       {
@@ -248,6 +249,7 @@
         "description": "現在ハイスピードで全世界に向けたスマートフォンゲームを開発しているグリーですが、その量・質・スピードを支えるために重要となる、2Dテクニカルアーティストについてご説明します。ゲーム開発組織拡大の下支えにもなる技術ですので、少しでもご興味頂き、今後のゲーム開発にご活用頂ければ幸いです。",
         "speakers": [11],
         "slide": "http://www.slideshare.net/hisapo/html5conference2012-yota-hisamichi-gree-14233278",
+        "video": "http://youtu.be/doT1q4OplPU",
         "max": 135
       },
       {
