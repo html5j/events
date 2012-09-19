@@ -40,6 +40,7 @@
         "description": "近年、個人や企業を問わず、HTML5でマークアップされたサイトが数多く登場しています。しかし、HTML5が浸透してから年月が浅いこともあり、有名な大企業のサイトですら、不適切なマークアップが見受けられます。本セッションでは、そのような不適切なマークアップを紹介し、どう直すべきかをみなさんと一緒に考察していきます。",
         "speakers": [5],
         "slide": "http://www.slideshare.net/futomihatano/html5-html5-conference-2012",
+        "video": "http://youtu.be/v6xvdxCzq3s",
         "max": 135
       },
       {
@@ -48,6 +49,7 @@
         "description": "IE9から本格化したHTML5の実装はまもなくリリースされるIE10でさらに広がるだけでなく、次期Windows OSであるWindows 8のアプリそのものもHTML5で構築できるようになります。このセッションではIE10で新たにサポートされるHTML5、Windows 8のアプリとHTML5との関係、そして、現在のマイクロソフトのHTML5との向き合い方について、ご紹介します。",
         "speakers": [16],
         "slide" : "http://www.slideshare.net/ykasugai/html5ie10windows8",
+        "video" : "http://youtu.be/aCgqtSVBDRY",
         "max": 135
       },
       {
@@ -58,6 +60,7 @@
 これらの「HTML5 プラットフォーム」はどう違うのか？ Web 標準の進化と実装はこれからどうなっていくのか？ Web のプラットフォーム化に向けて多くの API 標準化・実装に取り組んでいる Mozilla ならではの視点で、Web 技術の現在と未来について、実際に目で見て分かる形でご説明します。",
         "speakers": [7],
         "slide": "http://www.slideshare.net/dynamis/html-web-platform",
+        "video": "http://youtu.be/_jRrcAxiLXY",
         "max": 135
       }
     ]
@@ -93,6 +96,7 @@
         "speakers": [8,23],
         "slide": "http://www.slideshare.net/azusatomita3/sass-14212266",
         "slide2": "http://www.slideshare.net/kosei27/sass-14212276",
+        "video": "http://youtu.be/uKDUaaE9drA",
         "max": 135
       },
       {
@@ -109,6 +113,7 @@
         "description": "WebIntentsは、Androidインテンツに似た仕組みにより、Webアプリケーション間をユーザー主導で連携するAPIです。しかし、このAPIはアプリ連携のみならず、身の回りにある全てのデバイスをインタラクティブに利用出来る新たなマルチデバイスWebの可能性を秘めています。本講演では、WebIntentsとその可能性についてW3Cでの最新検討状況も交え紹介します。",
         "speakers": [10],
         "slide": "http://www.slideshare.net/KensakuKOMATSU/8th-sep2012-html5conf2012webintents",
+        "video": "http://youtu.be/jV8tF8zyw9I",
         "max": 135
       }
     ]
@@ -139,6 +144,7 @@
         "description": "雑誌のようなレイアウトを実現する CSS Regions や CSS Exclusions といった新たな試みの他、開発効率を高めるオープンソースのコードエディタ Brackets や PC からリモートでスマホやタブレットの Web Inspection を行う Adobe Shadow などを紹介していきます。",
         "speakers": [14],
         "slide": "http://www.slideshare.net/keisuke322/cssweb-html5-conference-2012",
+        "video": "http://youtu.be/euoo48KWDns",
         "max": 135
       },
       {
@@ -147,6 +153,7 @@
         "description": "HTML5を中心としたウェブアプリケーションの開発におけるノウハウや、高速な開発サイクルを実践するための環境作りについて、JavaScriptのテストや継続的インテグレーションなどに触れながら、簡単なデモなどを交えつつご紹介します。",
         "speakers": [17],
         "slide": "http://ss-o.net/event/20120908/#Page0",
+        "video": "http://youtu.be/-2ZvU5weqSQ",
         "max": 135
       },
       {
@@ -156,6 +163,7 @@
 このセッションを通し、JavaScript が苦手な人は WebGL の世界を知ることができるでしょう。また、JavaScript が得意な人は THREE.js を通して WebGL を利用する方法を知ることができるでしょう。",
         "speakers": [0],
         "slide" : "http://www.slideshare.net/yomotsu/webgl-and-threejs",
+        "video" : "http://youtu.be/_F0AxtUiXS8",
         "max": 135
       }
     ]
@@ -188,6 +196,7 @@
 今回のセッションではその強力な組み合わせのプロパティを使ってより使いやすいUIの実践についてお話しします。",
         "speakers": [18],
         "slide": "https://speakerdeck.com/u/studiomohawk/p/user-interface-design-pattern-with-css3",
+        "video": "http://youtu.be/dLFRF0PDz8w",
         "max": 135
       },
       {
@@ -196,6 +205,7 @@
         "description": "スマートフォンにおけるHTML5を用いた開発における現在の最前線の話を
         DeNAにてHTML5の技術開発を総括している立場より、具体的なノウハウを交えてお話しします。",
         "speakers": [6],
+        "video": "http://youtu.be/BojW3dCUjN0",
         "max": 135
       },
       {
@@ -206,6 +216,7 @@
 一歩先ゆくWebサイトを作りたい方に贈ります。",
         "speakers": [3],
         "slide": "http://www.slideshare.net/shumpei/j-query-mobile-14227660",
+        "video": "http://youtu.be/9FvdFC8ZZJ8",
         "max": 135
       }
     ]
@@ -245,6 +256,7 @@
         "description": "jQuery Mobileで素早く簡単にモバイルサイトを作成できる反面、デフォルトのデザインや動きをカスタマイズするのは、ひと苦労です。本セッションでは、jQuery Mobileの次のステップとして、さまざまなカスタマイズのノウハウを紹介します。良い意味でjQuery Mobileらしくないモバイルサイトをつくりましょう。",
         "speakers": [20],
         "slide": "http://www.slideshare.net/yoshikawa_t/jquery-mobile-14229544",
+        "video": "http://youtu.be/n2Folc8F0Cw",
         "max": 135
       },
       {
@@ -253,6 +265,7 @@
         "description": "WebRTCはJavaScript APIを利用してウェブブラウザ上でリアルタイムコミュニケーションを実現するための仕様です。本セッションではそのWebRTCの基本を説明し、WebRTCを実際に利用したウェブアプリケーションや、WebRTCと組み合わせて使われる事の多いライブラリを紹介します。",
         "speakers": [21],
         "slide": "https://docs.google.com/presentation/d/1MkvmX6Gvb1cRATdwF4RFBtol8NgdnblwlwikDnFhT10/present#slide=id.p",
+        "video": "http://youtu.be/3_19LPro_VE",
         "max": 135
       }
     ]
