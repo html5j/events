@@ -209,10 +209,22 @@ p.session-room {
 section#top-slide {
   text-align: center;
   height: 300px;
-  border-radius: 4px;
 }
-section#top-slide img.shadow {
-  box-shadow: 5px 5px 10px gray;
+section#top-slide figure {
+  position: relative;
+  display: inline-block;
+  line-height: 0;
+  overflow: hidden;
+}
+section#top-slide figure::after {
+    content:"";
+    position:absolute;
+    top:0; right:0; bottom:0; left:0;
+    border-radius:4px;
+    box-shadow:inset 0px 0px 20px 5px #fff inset;
+}
+section#top-slide figure img.shadow {
+  border-radius: 4px;
 }
 
 /* トップのスポンサー一覧

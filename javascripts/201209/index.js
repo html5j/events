@@ -21,13 +21,13 @@ $(window).load(function(){
     , c = 0;
 
   var show_ = function(i){
-    t.html("<img class='shadow' src='"+folder+imgs[i]+"'>").hide().fadeIn();
+    t.html("<figure><img class='shadow' src='"+folder+imgs[i]+"'></figure>").hide().fadeIn();
   }
   setInterval(function(){
     c = (c + 1) % imgs.length;
     t.find("img").fadeOut(function(){
       show_(c);
     })
-  }, 5000);
+  }, 7500);
   show_(c);
 });
