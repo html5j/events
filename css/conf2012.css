@@ -202,6 +202,19 @@ p.session-room {
   display: none;
 }
 
+
+
+/* top page slide 
+-----------------------------------------------------------------------------*/
+section#top-slide {
+  text-align: center;
+  height: 300px;
+  border-radius: 4px;
+}
+section#top-slide img {
+  box-shadow: 5px 5px 10px gray;
+}
+
 /* トップのスポンサー一覧
 -----------------------------------------------------------------------------*/
 .clearfix {
@@ -257,4 +270,15 @@ p.session-room {
 }
 .sponsors > section {
     margin-bottom: 20px;
+}
+
+/* 清水さんのイラストレポート
+ -----------------------------------------------------------------------*/
+section p.shimizu-img img {
+  border: 1px solid #ddd;
+  margin-bottom: 1em;
+}
+
+section.reports p {
+  padding: 0.2em 1.5em;
 }
