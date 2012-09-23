@@ -1,4 +1,14 @@
 <section class="slideshow hidden-phone" id="top-slide" data-folder="/images/201209/slideshow/" data-imgs="0.png,1.png,3.png,2.png,4.png,5.png">
+  <img style="width:0;height:0,overflow:none;" src="/images/201209/slideshow/0.png">
+  <img style="width:0;height:0,overflow:none;" src="/images/201209/slideshow/1.png">
+  <img style="width:0;height:0,overflow:none;" src="/images/201209/slideshow/2.png">
+  <img style="width:0;height:0,overflow:none;" src="/images/201209/slideshow/3.png">
+  <img style="width:0;height:0,overflow:none;" src="/images/201209/slideshow/4.png">
+  <img style="width:0;height:0,overflow:none;" src="/images/201209/slideshow/5.png">
+  <img class="shadow" src="/images/201209/slideshow/splash.png">
+  <p style="text-align:center;padding-top: 0.5em;">
+    Now loading slide images ... <img src="/images/201209/ajax-loader.gif">
+  </p>
 </section>
 
 <section>
@@ -8,26 +18,6 @@
   </div>
 </section>
 
-
-<script>
-(function(){
-  var t = $("section#top-slide")
-    , imgs = t.data("imgs").split(",")
-    , folder = t.data("folder")
-    , c = 0;
-
-  var show_ = function(i){
-    t.html("<img src='"+folder+imgs[i]+"'>").hide().fadeIn();
-  }
-  setInterval(function(){
-    c = (c + 1) % imgs.length;
-    t.find("img").fadeOut(function(){
-      show_(c);
-    })
-  }, 5000);
-  show_(c);
-}())
-</script>
 
 <section>
   <h2 class="page-header">お知らせ</h2>

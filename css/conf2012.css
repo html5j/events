@@ -211,7 +211,7 @@ section#top-slide {
   height: 300px;
   border-radius: 4px;
 }
-section#top-slide img {
+section#top-slide img.shadow {
   box-shadow: 5px 5px 10px gray;
 }
 

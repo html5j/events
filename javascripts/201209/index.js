@@ -13,3 +13,21 @@ $(function() {
         }
     }).css('display', 'block');
 });
+
+$(window).load(function(){
+  var t = $("section#top-slide")
+    , imgs = t.data("imgs").split(",")
+    , folder = t.data("folder")
+    , c = 0;
+
+  var show_ = function(i){
+    t.html("<img class='shadow' src='"+folder+imgs[i]+"'>").hide().fadeIn();
+  }
+  setInterval(function(){
+    c = (c + 1) % imgs.length;
+    t.find("img").fadeOut(function(){
+      show_(c);
+    })
+  }, 5000);
+  show_(c);
+});
