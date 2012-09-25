@@ -115,14 +115,6 @@ ol.nostyle, ul.nostyle, .nostyle li {
 h4 {padding-left: 16px;}
 p {padding-left: 32px;}
 
-/* top page slide */
-section#top-slide {
-  background: gray;
-  width: 724px;
-  height: 150px;
-  border-radius: 4px;
-}
-
 /* table */
 
 table, tr, th, td {
