@@ -1,0 +1,188 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>HTML5 Conference 2013</title>
+<meta property="og:title" content="HTML5 Conference 2013">
+<meta property="og:type" content="website">
+<meta property="og:url" content="******/">
+<meta property="og:image" content="******/img/ogp.jpg">
+<meta property="og:description" content="HTML5 Conference 2013\n11/30(SAT) TOKYO">
+<style>
+	body, html {
+		margin: 0;
+		padding: 0;
+		height: 100%;
+		background-color: #000;
+	}
+	body {
+		background: url(./img/html5conf2013_logo.png) center center no-repeat;
+		background-size: contain;
+	}
+	.webgl body {
+		background: none;
+	}
+	canvas {
+		width: 100%;
+		height: 100%;
+	}
+	#etc {
+		z-index: 1;
+		position: fixed;
+		bottom: 0;
+		width: 100%;
+		padding: .5rem;
+		background-color: rgba(100, 100, 100, .2);
+		color: #ccc;
+		text-align: center;
+		font-size: 90%;
+	}
+	#etc p {
+		margin: 0;
+		font-size: 80%;
+	}
+	a {
+		color: #defff3;
+	}
+	#loading {
+		position: absolute;
+		top: 50%;
+		left: 0;
+		width: 100%;
+		text-align: center;
+	}
+	#loading p {
+		color: #FFF;
+		text-align: center;
+		margin: 0;
+		font-size: 80%;
+	}
+	#bar {
+		width: 0;
+		height: 1px;
+		background-color: #FFF;
+		-webkit-transition: width .5s;
+		   -moz-transition: width .5s;
+		    -ms-transition: width .5s;
+		        transition: width .5s;
+	}
+</style>
+</head>
+
+<body>
+
+	<div id="loading"><p></p><img src="img/ajax-loader.gif"><div id="bar"></div></div>
+	<div id="etc"><p id="leapmsg"></p><small>&copy; html5j.org</small></div>
+
+<script src="./js/modernizr.custom.32435.js"></script>
+<script src="./js/leap.min.js"></script>
+<script src="./js/three.js"></script>
+<script>
+
+	var ua = navigator.userAgent.toLowerCase(), isSfr = true;
+	var loadedCount = 0, isLoaded = false;
+	if(ua.indexOf("chrome") !=-1) {
+		isSfr = true;
+	}else if(ua.indexOf("safari") !=-1){
+		isSfr = false;
+	}
+	if(Modernizr.webgl && isSfr) {
+		webgl_logo();
+	} else {
+		document.firstChild.nextSibling.className="";
+	}
+	//
+	function webgl_logo () {
+
+		var stageWidth = window.innerWidth, stageHeight = window.innerHeight;
+		var scene = new THREE.Scene();
+		var camera = new THREE.PerspectiveCamera( 75, stageWidth / stageHeight, 0.1, 1000 );
+		var renderer = new THREE.WebGLRenderer();
+		renderer.setSize(stageWidth, stageHeight);
+		renderer.setClearColor(0x000000);
+		document.body.appendChild(renderer.domElement);
+
+		var geometry = new THREE.PlaneGeometry(7, 2, 4, 4)
+		var texture = new THREE.ImageUtils.loadTexture("img/html5conf2013_logo.png", null, checkLoaded);
+		//バンプマップ
+		var bumpmapTexture = new THREE.ImageUtils.loadTexture("img/html5conf2013_logo_bm.png", null, checkLoaded);
+		//環境マップ
+		var urls = [];
+		for(var i = 0 ; i < 6 ; i++) {
+		  urls[i] = 'img/graycloud_' + i + '.jpg';
+		}
+		var material = new THREE.MeshPhongMaterial({map: texture, side: THREE.DoubleSide, color: 0xFFffff, specular: 0xFFFFFF, shininess: 100, transparent: true, envMap: THREE.ImageUtils.loadTextureCube(urls, null, checkLoaded), reflectivity: 1.2, bumpMap: bumpmapTexture, bumpScale: 0.001});
+		var plane = new THREE.Mesh(geometry, material);
+		scene.add(plane);
+		camera.position.z = 4;
+
+		var directionalLight = new THREE.PointLight( 0xffffff, 3, 300 );
+		directionalLight.position.z = 4;
+		scene.add( directionalLight );
+
+		function checkLoaded (e) {
+			loadedCount+=34;
+			var loadingArea = document.getElementById("loading");
+			var loadingMsg = loadingArea.getElementsByTagName("p")[0];
+			loadingMsg.innerHTML = "Texture Loading ..." + loadedCount + "%";
+			var bar = document.getElementById("bar");
+			bar.style.width = loadedCount+"%";
+			if(loadedCount >= 100) {
+				bar.style.width = "100%";
+				loadingMsg.innerHTML = "Texture Loading ... 100%";
+				setTimeout(function (){
+					loadingArea.style.display = "none";
+					isLoaded = true;
+					update();
+				}, 1000)
+			}
+		}
+
+		var lx = 0, ly = 0, frameId = 0, frameFlag = false;
+		function update () {
+			lx+=.6;ly+=.5;
+			directionalLight.position.x = Math.cos(lx*Math.PI/180)*5;
+			directionalLight.position.y = Math.sin(ly*Math.PI/180)*2;
+			directionalLight.position.z = 4;
+			plane.rotation.x += ((Math.cos((lx*.4)*Math.PI/180)*0.1)-plane.rotation.x)*0.1;
+			plane.rotation.y += ((Math.sin((lx*.4)*Math.PI/180)*0.1)-plane.rotation.y)*0.1;
+			plane.position.z += ((Math.cos((lx*.4)*Math.PI/180)*0.1)-plane.position.z)*0.1;
+			renderer.render(scene, camera);
+			frameId = window.requestAnimationFrame(update);
+		}
+
+		//document.getElementById("leapmsg").innerHTML = 'Connect <a href="https://www.leapmotion.com/" target="_blank">LEAP MOTION</a> to lighting';
+		Leap.loop({enableGestures: false}, function(frame){
+			if(frame.hands[0]) {
+				cancelAnimationFrame(frameId);
+				doRotate(frame.hands[0], plane, directionalLight);
+				renderer.render(scene, camera);
+				frameFlag = false;
+			}else{
+				if(!frameFlag && isLoaded) {
+					update();
+					frameFlag = true;
+				}
+			}
+		});
+	}
+
+	function doRotate (hand, plane, light) {
+		var dirX = hand.palmPosition[0];
+		var dirY = -hand.palmPosition[1];
+		var dirZ = hand.palmPosition[2];
+		plane.rotation.x += (dirY*0.001-plane.rotation.x)*0.4;
+		plane.rotation.y += (dirX*0.001-plane.rotation.y)*0.4;
+		plane.position.z += (dirZ*0.01-plane.position.z)*0.4;
+		light.position.z = 10;
+		/*light.position.y = 0;
+		var handPos = hand.palmPosition;
+		light.position.x = handPos[0]*0.05
+		var hz = handPos[2]*0.01;
+		light.position.z = (hz < 0.05) ? 0.05 : hz;*/
+		//console.log(dirX/200, dirY/600, dirZ/200)
+	}
+
+</script>
+</body>
+</html>

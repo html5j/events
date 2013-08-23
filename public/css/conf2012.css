@@ -1,0 +1,302 @@
+@charset "UTF-8";
+
+/* 基礎
+-----------------------------------------------------------------------------*/
+
+html {
+  position: relative;
+}
+
+body {
+  font-size: 14px !important;
+  line-height: 1.5 !important;
+}
+
+a {
+  color: #3b6cce;
+}
+
+
+/* Bootstrapのコンポーネント上書き
+-----------------------------------------------------------------------------*/
+
+@media (max-width: 767px) {
+  body {
+    padding: 0 !important;
+  }
+  body > * {
+    padding: 0 20px !important;
+  }
+}
+
+.alert {
+  margin: 20px 0;
+}
+
+/*TODO: #btn-sponsor, #btn-volunteer, #alertの各スタイル*/
+
+
+/* ヘッダ
+-----------------------------------------------------------------------------*/
+
+/* ページ上部のオレンジの線 */
+header:before {
+  content: "";
+  display: block;
+  height: 5px;
+  background-color: #e53;
+  border-bottom: 1px solid #fff;
+  box-shadow: 0px 3px 6px #ddd;
+  margin-bottom: 20px;
+}
+
+header {
+  background-image: -webkit-linear-gradient(#fff, #eee);
+  background-image: -moz-linear-gradient(#fff, #eee);
+  background-image: -o-linear-gradient(#fff, #eee);
+  background-image: linear-gradient(#fff, #eee);
+  background-color: #f5f5f5;
+  margin-bottom: 20px;
+}
+
+/* カンファレンスのタイトル */
+#subtitle {
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: right;
+  font-weight: normal;
+}
+
+/* ヘッダのナビゲーション */
+#nav {
+  margin-top: 20px;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+#nav li {
+  margin-left: 15px;
+}
+
+#nav a {
+  -webkit-transition: all .2s;
+  -moz-transition: all .2s;
+  -o-transition: all .2s;
+  transition: all .2s;
+}
+
+#nav a:hover {
+  color: #fff;
+  background-color: #3b6cce;
+  text-shadow: 0 1px 1px #0b2b54;
+  box-shadow: inset 0 1px 1px #0b2b54;
+}
+
+#nav .active a {
+  color: #333;
+  background-color: #fff;
+  text-shadow: none;
+  box-shadow: inset 0 1px 1px #ccc;
+}
+
+/* share to social */
+
+#webintents {
+  margin-top: 5px;
+  text-align: right;
+}
+
+#social {
+  float: right;
+}
+
+#socialButtons li {
+  padding: 0;
+  margin: 0;
+  display: block;
+  list-style: none;
+  float: left;
+  font-size: 12px;
+  line-height: 12px;
+}
+#socialButtons .google {
+  width: 80px;
+}
+#socialButtons .twitter {
+  width: 105px;
+}
+
+/**
+ * style's for table design (program page)
+ *
+ */
+th {
+  background: #efefef;
+}
+
+td .session_title {
+  font-weight: bold;
+}
+
+td.break {
+  background: #dcdddd;
+}
+
+td.empty {
+  background: #dcdddd;
+}
+
+td.session {
+  background: #fff;
+}
+td.timeslot {
+  background: #d4ecea;
+}
+td.session_subscribe {
+  background: #d4ecea;
+  line-height: 0.8em;
+  font-size: 0.8em;
+}
+
+td div.speaker {
+  padding-left: 0.5em;
+  font-size: 0.8em;
+}
+
+td.break {
+  font-size: 0.75em;
+}
+
+span.session_title,span.session_title_phone {
+  color: #08c;
+  font-weight: bold;
+}
+div.session_description {
+  margin: 0.75em 1em;
+  font-size: 0.9em;
+}
+
+p.session-room {
+  color: #999;
+  font-size: 0.75em;
+  font-weight: bold;
+  line-height: 0.8em;
+}
+
+/**
+ * MISC
+ *
+ */
+
+.spacer {
+  height: 15px;
+  clear:both;
+}
+
+.required {
+  color: red;
+}
+
+
+._test {
+  display: none;
+}
+
+
+
+/* top page slide 
+-----------------------------------------------------------------------------*/
+section#top-slide {
+  text-align: center;
+  height: 300px;
+}
+section#top-slide figure {
+  position: relative;
+  display: inline-block;
+  line-height: 0;
+  overflow: hidden;
+}
+section#top-slide figure::after {
+    content:"";
+    position:absolute;
+    top:0; right:0; bottom:0; left:0;
+    border-radius:4px;
+    box-shadow:inset 0px 0px 20px 5px #fff inset;
+}
+section#top-slide figure img.shadow {
+  border-radius: 4px;
+}
+
+/* トップのスポンサー一覧
+-----------------------------------------------------------------------------*/
+.clearfix {
+    width:100%;
+}
+.clearfix:after{
+    content: ""; 
+    display: block; 
+    clear: both;
+}
+.sponsors {
+}
+
+.sponsor-logo {
+    width: 130px;
+}
+
+.sponsor-list {
+    list-style-type: none;
+    width:100%;
+    display: none;
+}
+.sponsor-list:after {
+    content: ""; 
+    display: block; 
+    clear: both;
+}
+.sponsor-list li {
+    float: left;
+    width: 130px;
+    height: 130px;
+    line-height: 130px;
+    border: 1px solid #B6B6B9;
+    padding: 8px;
+    margin-bottom: 8px;
+    text-align: center;
+}
+
+.platinum .sponsor-list li {
+    margin-right: 20px;
+}
+.gold .sponsor-list li {
+    margin-right: 20px;
+}
+.silver .sponsor-list li {
+    margin-right: 20px;
+}
+.special .sponsor-list li {
+    margin-right: 20px;
+}
+.media .sponsor-list li {
+    margin-right: 20px;
+}
+.sponsors > section {
+    margin-bottom: 20px;
+}
+
+/* 清水さんのイラストレポート
+ -----------------------------------------------------------------------*/
+section p.shimizu-img img {
+  border: 1px solid #ddd;
+  margin-bottom: 1em;
+}
+
+section.reports p {
+  padding: 0.2em 1.5em;
+}
+
+section.reports article img {
+    width: 400px;
+    border: 1px solid gray;
+    display: block;
+}
