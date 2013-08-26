@@ -76,6 +76,8 @@
 
 <body>
 
+  <div id="loading"><p></p><img src="img/ajax-loader.gif"><div id="bar"></div></div>
+
   <!-- schema.org (for g+) -->
   <div  itemscope itemtype="http://schema.org/Event">
     <meta itemprop="name" content="HTML5 Conference 2013">
@@ -112,7 +114,7 @@
   </script>
   <!-- END: Javascripts for social buttons -->
 
-  <div id="loading"><p></p><img src="img/ajax-loader.gif"><div id="bar"></div></div>
+  
   <div id="etc">
 
 <!-- BEGIN: Social Buttons -->
@@ -144,18 +146,13 @@
 <script src="./js/leap.min.js"></script>
 <script src="./js/three.js"></script>
 <script>
+  var webgl = ( function () { try { return !! window.WebGLRenderingContext && !! document.createElement( 'canvas' ).getContext( 'experimental-webgl' ); } catch( e ) { return false; } } )();
 
-  var ua = navigator.userAgent.toLowerCase(), isSfr = true;
-  var loadedCount = 0, isLoaded = false;
-  if(ua.indexOf("chrome") !=-1) {
-    isSfr = true;
-  }else if(ua.indexOf("safari") !=-1){
-    isSfr = false;
-  }
-  if(Modernizr.webgl && isSfr) {
+  if(webgl) {
     webgl_logo();
   } else {
     document.firstChild.nextSibling.className="";
+    document.querySelector('#loading').style.cssText = 'display: none';
   }
   //
   function webgl_logo () {
