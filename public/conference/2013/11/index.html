@@ -9,12 +9,6 @@
 <meta property="og:image" content="./img/ogp.jpg">
 <meta property="og:description" content="HTML5 Conference 2013\n11/30(SAT) TOKYO">
 
-<!-- schema.org (for g+) -->
-<meta itemprop="name" content="HTML5 Conference 2013">
-<meta itemprop="description" content="HTML5 Conference 2013\n11/30(SAT) TOKYO">
-<meta itemprop="image" content="./img/ogp.jpg">
-
-
 <style>
   body, html {
     margin: 0;
@@ -84,21 +78,25 @@
 
 <body>
 
+  <!-- schema.org (for g+) -->
+  <div  itemscope itemtype="http://schema.org/Event">
+    <meta itemprop="name" content="HTML5 Conference 2013">
+    <meta itemprop="description" content="HTML5 Conference 2013\n11/30(SAT) TOKYO">
+    <meta itemprop="image" content="./img/ogp.jpg">
+  </div>
 
-<!-- BEGIN: Javascripts for social buttons -->
-
-  <!-- ぐぐたす -->
+  <!-- BEGIN: Javascripts for social buttons -->
+  <!-- Google+ -->
   <script type="text/javascript">
     window.___gcfg = {lang: 'ja'};
-
-  (function() {
-   var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
-   po.src = 'https://apis.google.com/js/plusone.js';
-   var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
-   })();
+    (function() {
+     var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+     po.src = 'https://apis.google.com/js/plusone.js';
+     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+     })();
   </script>
 
-  <!-- はてぶ -->
+  <!-- はてな -->
   <script type="text/javascript" src="http://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script>
 
   <!-- Twitter -->
@@ -112,32 +110,32 @@
     js = d.createElement(s); js.id = id;
     js.src = "//connect.facebook.net/ja_JP/all.js#xfbml=1";
     fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));</script>
+    }(document, 'script', 'facebook-jssdk'));
+  </script>
+  <!-- END: Javascripts for social buttons -->
 
-<!-- END: Javascripts for social buttons -->
-
-<!-- BEGIN: Social Buttons -->
-<div class="social">
-  <ul>
-    <!-- ぐぐたす -->
-    <li class="google">
-      <div class="g-plusone" data-href="http://events.html5j.org/conference/2013/11/" data-width="120"></div>
-    </li>
-    <!-- Facebook -->
-    <li class="facebook">
-      <div class="fb-like" data-href="http://events.html5j.org/conference/2013/11/" data-send="false" data-layout="button_count" data-width="120" data-show-faces="false"></div>
-    </li>
-    <!-- Twitter -->
-    <li class="twitter">
-      <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://events.html5j.org/conference/2013/11/" data-text="HTML5 Conference 2013" data-via="html5j" data-lang="ja" data-hashtags="html5j">ツイート</a>
-    </li>
-    <!-- はてぶ -->
-    <li class="hatena">
-      <a href="http://b.hatena.ne.jp/entry/http://events.html5j.org/conference/2013/11/" class="hatena-bookmark-button" data-hatena-bookmark-title="HTML5 Conference 2013" data-hatena-bookmark-layout="standard" title="このエントリーをはてなブックマークに追加"><img src="http://b.st-hatena.com/images/entry-button/button-only.gif" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" /></a>
-    </li>
-  </ul>
-</div>
-<!-- END: Social Buttons -->
+  <!-- BEGIN: Social Buttons -->
+  <div class="social">
+    <ul>
+      <!-- ぐぐたす -->
+      <li class="google">
+        <div class="g-plusone" data-href="http://events.html5j.org/conference/2013/11/" data-width="120"></div>
+      </li>
+      <!-- Facebook -->
+      <li class="facebook">
+        <div class="fb-like" data-href="http://events.html5j.org/conference/2013/11/" data-send="false" data-layout="button_count" data-width="120" data-show-faces="false"></div>
+      </li>
+      <!-- Twitter -->
+      <li class="twitter">
+        <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://events.html5j.org/conference/2013/11/" data-text="HTML5 Conference 2013" data-via="html5j" data-lang="ja" data-hashtags="html5j">ツイート</a>
+      </li>
+      <!-- はてぶ -->
+      <li class="hatena">
+        <a href="http://b.hatena.ne.jp/entry/http://events.html5j.org/conference/2013/11/" class="hatena-bookmark-button" data-hatena-bookmark-title="HTML5 Conference 2013" data-hatena-bookmark-layout="standard" title="このエントリーをはてなブックマークに追加"><img src="http://b.st-hatena.com/images/entry-button/button-only.gif" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" /></a>
+      </li>
+    </ul>
+  </div>
+  <!-- END: Social Buttons -->
 
   <div id="loading"><p></p><img src="img/ajax-loader.gif"><div id="bar"></div></div>
   <div id="etc"><p id="leapmsg"></p><small>&copy; html5j.org</small></div>
