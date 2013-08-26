@@ -147,6 +147,7 @@
 <script src="./js/leap.min.js"></script>
 <script src="./js/three.js"></script>
 <script>
+  var loadedCount = 0;
   var webgl = ( function () { try { return !! window.WebGLRenderingContext && !! document.createElement( 'canvas' ).getContext( 'experimental-webgl' ); } catch( e ) { return false; } } )();
 
   if(webgl) {
