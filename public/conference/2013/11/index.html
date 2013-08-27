@@ -17,12 +17,12 @@
     height: 100%;
     background-color: #000;
   }
-  body {
+  body.no-webgl {
     background: url(./img/html5conf2013_logo.png) center center no-repeat;
     background-size: contain;
   }
-  .webgl body {
-    background: none;
+  .no-webgl #loading {
+    display: none;
   }
   canvas {
     width: 100%;
@@ -115,19 +115,18 @@
     <p id="leapmsg"></p><small>&copy; html5j.org</small>
   </div>
 
-  <script src="./js/modernizr.custom.32435.js"></script>
   <script src="./js/leap.min.js"></script>
   <script src="./js/three.js"></script>
   <script>
-    var loadedCount = 0;
-    var webgl = ( function () { try { return !! window.WebGLRenderingContext && !! document.createElement( 'canvas' ).getContext( 'experimental-webgl' ); } catch( e ) { return false; } } )();
+    var loadedCount = 0,
+        webgl = ( function () { try { return !! window.WebGLRenderingContext && !! document.createElement( 'canvas' ).getContext( 'experimental-webgl' ); } catch( e ) { return false; } } )();
 
-    if(webgl) {
+    if ( webgl ) {
       webgl_logo();
     } else {
-      document.firstChild.nextSibling.className="";
-      document.querySelector('#loading').style.cssText = 'display: none';
+      document.body.className = "no-webgl";
     }
+
     //
     function webgl_logo () {
 
@@ -221,32 +220,22 @@
     }
 
   </script>
+
   <!-- BEGIN: Javascripts for social buttons -->
-  <!-- Google+ -->
-  <script type="text/javascript">
-    (function() {
-      var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
-      po.src = 'https://apis.google.com/js/plusone.js';
-      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
-    })();
-  </script>
-  <!-- はてな -->
-  <script src="http://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script>
-
-  <!-- Twitter -->
-  <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-
-  <!-- Facebook -->
-  <div id="fb-root"></div>
-  <script>(function(d, s, id) {
-    var js, fjs = d.getElementsByTagName(s)[0];
-    if (d.getElementById(id)) return;
-    js = d.createElement(s); js.id = id;
-    js.src = "//connect.facebook.net/ja_JP/all.js#xfbml=1";
-    fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));
-  </script>
+  <div id="fb-root"></div><!-- fb needs this -->
+  <script>(function(d, s) {
+    var js, fjs = d.getElementsByTagName(s)[0], load = function(url, id) {
+      if (d.getElementById(id)) {return;}
+      js = d.createElement(s); js.src = url; js.id = id;
+      fjs.parentNode.insertBefore(js, fjs);
+    };
+    load('//connect.facebook.net/en_US/all.js#xfbml=1', 'fbjssdk');
+    load('https://apis.google.com/js/plusone.js', 'gplus1js');
+    load('//platform.twitter.com/widgets.js', 'tweetjs');
+    load('//b.st-hatena.com/js/bookmark_button.js', 'hatena');
+  }(document, 'script'));</script>
   <!-- END: Javascripts for social buttons -->
+
   <script>
   var _gaq = _gaq || [];
   _gaq.push(['_setAccount', 'UA-4956033-6']);
