@@ -9,7 +9,14 @@
 <meta property="og:url" content="http://events.html5j.org/conference/2013/11/">
 <meta property="og:image" content="http://events.html5j.org/conference/2013/11/img/ogp.jpg">
 <meta property="og:description" content="HTML5 Conference 2013/11/30 (SAT) TOKYO">
-
+<script>
+  var webgl = ( function () { try { return !! window.WebGLRenderingContext && !! document.createElement( 'canvas' ).getContext( 'experimental-webgl' ); } catch( e ) { return false; } } )();
+  if ( webgl ) {
+    document.documentElement.className = 'webgl';
+  } else {
+    document.documentElement.className = 'no-webgl';
+  }
+</script>
 <style>
   body, html {
     margin: 0;
@@ -17,12 +24,14 @@
     height: 100%;
     background-color: #000;
   }
-  body.no-webgl {
-    background: url(./img/html5conf2013_logo.png) center center no-repeat;
-    background-size: contain;
-  }
-  .no-webgl #loading {
+  .webgl #logo {
     display: none;
+  }
+  #loading {
+    display: none;
+  }
+  .webgl #loading {
+    display: block;
   }
   canvas {
     width: 100%;
@@ -76,7 +85,8 @@
 </head>
 
 <body>
-
+  
+  <h1><img src="./img/html5conf2013_logo.png" alt="HTML5 Conference 2013/11/30 (SAT) TOKYO" id="logo"></h1>
   <div id="loading"><p></p><img src="img/ajax-loader.gif"><div id="bar"></div></div>
 
   <!-- schema.org (for g+) -->
@@ -124,8 +134,6 @@
 
     if ( webgl ) {
       webgl_logo();
-    } else {
-      document.body.className = "no-webgl";
     }
 
     //
@@ -137,7 +145,8 @@
       var renderer = new THREE.WebGLRenderer();
       renderer.setSize(stageWidth, stageHeight);
       renderer.setClearColor(0x000000);
-      document.body.appendChild(renderer.domElement);
+      var logo = document.getElementById('logo');
+      logo.parentNode.replaceChild(renderer.domElement, logo);
 
       var geometry = new THREE.PlaneGeometry(7, 2, 4, 4)
       var texture = new THREE.ImageUtils.loadTexture("img/html5conf2013_logo.png", null, checkLoaded);
