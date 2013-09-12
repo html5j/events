@@ -24,6 +24,9 @@
     height: 100%;
     background-color: #000;
   }
+  #logo {
+    width: 100%;
+  }
   .webgl #logo {
     display: none;
   }
@@ -129,6 +132,7 @@
   <script src="./js/leap.min.js"></script>
   <script src="./js/three.js"></script>
   <script>
+
     var loadedCount = 0,
         webgl = ( function () { try { return !! window.WebGLRenderingContext && !! document.createElement( 'canvas' ).getContext( 'experimental-webgl' ); } catch( e ) { return false; } } )();
 
