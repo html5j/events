@@ -1,5 +1,6 @@
 var sponsors = require('../model/sponsors')
 	, speakers = require('../model/speakers')
+	, sessions = require('../model/sessions')
 
 // Helper functions
 function show_logos(arr) {
@@ -51,6 +52,121 @@ function show_profiles(obj){
   	return ret.join("\n")
 }
 
+function show_sessions(sessions, speakers) {
+	//
+	// クロージャ関数の宣言
+	//////////////////////////////////////
+
+	//
+	// break timeの行を作るクロージャ
+	//
+	var _break = function(obj){
+		var _header = '<tr class="break active">'
+        var _body = '<th class="time" scope="row">{{time}}<td colspan="6">{{text}}'
+		var ret = [];
+
+		ret.push(_header)
+		ret.push(_body
+			.replace("{{time}}", obj.time)
+			.replace("{{text}}", obj.text)
+		)
+
+		return ret.join("\n");
+	}
+
+	//
+	// sessionの行を作るクロージャ
+	//
+	var _session = function(obj, speakers){
+		var _header = [
+			'<tr>',
+        	'<th class="time" scope="row">{{time}}'
+        ].join("\n")
+
+        var _body_top = [
+	        	'<td class="session">',
+	        '  <h4 class="sesssion-title"><a href="">{{title}}</a></h4>',
+	        ' <p class="session-speaker">'
+	    ].join("\n")
+
+	    var _body_middle = [
+	        '    <span class="name">{{name}}</span><br>',
+	        '    <span class="affiliation">{{affiliation}}</span>'
+	    ].join("\n")
+
+	    var _body_bottom = [
+	        '  </p>',
+	        '  <div class="session-desc">',
+	        '    <p>{{description}}</p>',
+	        '  </div>',
+	        '  <div class="materials">',
+	        '    <p><!--<span class="button">講演資料</span><span class="button">講演映像</span>--></p>',
+	        '  </div>',
+	        '  <hr>',
+	        '  <div class="toolbox">',
+	        '    <p><a class="btn btn-default btn-xs"><span class="glyphicon glyphicon-star"></span>見たい！</a></p>',
+	        '  </div>'
+        ].join("\n")
+
+		var ret = [];
+
+		ret.push(_header.replace("{{time}}", obj.time))
+
+		obj.sessions.forEach(function(sess) {
+			ret.push(_body_top.replace("{{title}}", sess.title))
+
+			var first = true;
+			sess.speakers.forEach(function(spk_id){
+				var speaker = speakers[spk_id]
+				if(first === false) ret.push("<br>")
+				ret.push(_body_middle.replace("{{name}}", speaker.name).replace("{{affiliation}}", speaker.affiliation))
+				first = false;
+			})
+
+			ret.push(_body_bottom.replace("{{description}}", sess.description))
+		});
+
+		return ret.join("\n");
+	}
+
+
+	//
+	// session table生成
+	////////////////////////////////////////////////////
+	var _header = [
+		'<div class="table-responsive">',
+	    '<table class="table table-">',
+	    '<thead>',
+	    '  <tr>',
+	    '    <th scope="col">時間',
+	    '    <th scope="col">ルーム<br>(1F)<br>定員：360',
+	    '    <th scope="col">ルーム<br>(2F)<br>定員：300',
+	    '    <th scope="col">ルーム<br>(5F)<br>定員：120',
+	    '    <th scope="col">ルーム<br>(5F)<br>定員：120',
+	    '    <th scope="col">ルーム<br>(5F)<br>定員：360',
+	    '    <th scope="col">ルーム<br>(6F)<br>定員：240',
+	    '</thead>'
+	].join("\n")
+
+	var _footer = "</table>\n</div>"
+
+	var ret = [];
+
+	ret.push(_header)
+
+	sessions.forEach(function(sess){
+		if(sess.type === "break") {
+			ret.push(_break(sess))
+		} else {
+			ret.push(_session(sess, speakers))
+		}
+	})
+
+	ret.push(_footer);
+
+	return ret.join("\n")
+}
+
 /*
  * GET home page.
  */
@@ -68,6 +184,7 @@ exports.sessions = function (req, res) {
   res.render("2013/sessions", {
   	id: "sessions"
   	, title: "セッション | HTML5 Conference 2013"
+  	, session_html: show_sessions(sessions, speakers)
   });
 };
 
