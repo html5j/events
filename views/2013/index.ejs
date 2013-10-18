@@ -62,70 +62,26 @@ background: linear-gradient(#daf1fb, #e1f7fe);
     <h3>参加費</h3>
     <p>無料
 
-    <h3>主催・共催</h3>
-      <ul class="list-unstyled list-inline">
-      <li><a class="thumbnail" href=""><img src="img/_dummy_250x250.png" alt="html5j"></a>
-      <li><a class="thumbnail" href=""><img src="img/_dummy_250x250.png" alt="NTTコミュニケーションズ"></a>
-      <li><a class="thumbnail" href=""><img src="img/_dummy_250x250.png" alt=""></a>
-    </ul>
+    <h3>主催</h3>
+    	<%- show_logos(sponsors.organizer) %>
   </div>
 </div>
 <div class="container">
 </div>
 <div class="container">
   <h2>スポンサー・協賛</h2>
+  <h3>メインスポンサー</h3>
+    	<%- show_logos(sponsors.main) %>
   <h3>プラチナスポンサー</h3>
-  <ul class="list-unstyled list-inline">
-    <li><a class="thumbnail" href=""><img src="img/_dummy_200x200.png" alt=""></a>
-    <li><a class="thumbnail" href=""><img src="img/_dummy_200x200.png" alt=""></a>
-    <li><a class="thumbnail" href=""><img src="img/_dummy_200x200.png" alt=""></a>
-    <li><a class="thumbnail" href=""><img src="img/_dummy_200x200.png" alt=""></a>
-    <li><a class="thumbnail" href=""><img src="img/_dummy_200x200.png" alt=""></a>
-    <li><a class="thumbnail" href=""><img src="img/_dummy_200x200.png" alt=""></a>
-    <li><a class="thumbnail" href=""><img src="img/_dummy_200x200.png" alt=""></a>
-    <li><a class="thumbnail" href=""><img src="img/_dummy_200x200.png" alt=""></a>
-  </ul>
+    	<%- show_logos(sponsors.platinum) %>
   <h3>ゴールドスポンサー</h3>
-  <ul class="list-unstyled list-inline">
-    <li><a class="thumbnail" href=""><img src="img/_dummy_150x150.png" alt=""></a>
-    <li><a class="thumbnail" href=""><img src="img/_dummy_150x150.png" alt=""></a>
-    <li><a class="thumbnail" href=""><img src="img/_dummy_150x150.png" alt=""></a>
-    <li><a class="thumbnail" href=""><img src="img/_dummy_150x150.png" alt=""></a>
-    <li><a class="thumbnail" href=""><img src="img/_dummy_150x150.png" alt=""></a>
-    <li><a class="thumbnail" href=""><img src="img/_dummy_150x150.png" alt=""></a>
-    <li><a class="thumbnail" href=""><img src="img/_dummy_150x150.png" alt=""></a>
-    <li><a class="thumbnail" href=""><img src="img/_dummy_150x150.png" alt=""></a>
-  </ul>
+    	<%- show_logos(sponsors.gold) %>
   <h3>シルバースポンサー</h3>
-  <ul class="list-unstyled list-inline">
-    <li><a class="thumbnail" href=""><img src="img/_dummy_120x120.png" alt=""></a>
-    <li><a class="thumbnail" href=""><img src="img/_dummy_120x120.png" alt=""></a>
-    <li><a class="thumbnail" href=""><img src="img/_dummy_120x120.png" alt=""></a>
-    <li><a class="thumbnail" href=""><img src="img/_dummy_120x120.png" alt=""></a>
-    <li><a class="thumbnail" href=""><img src="img/_dummy_120x120.png" alt=""></a>
-    <li><a class="thumbnail" href=""><img src="img/_dummy_120x120.png" alt=""></a>
-    <li><a class="thumbnail" href=""><img src="img/_dummy_120x120.png" alt=""></a>
-    <li><a class="thumbnail" href=""><img src="img/_dummy_120x120.png" alt=""></a>
-  </ul>
-  <h3>特別協賛</h3>
-  <ul class="list-unstyled list-inline">
-    <li><a class="thumbnail" href=""><img src="img/_dummy_100x100.png" alt=""></a>
-    <li><a class="thumbnail" href=""><img src="img/_dummy_100x100.png" alt=""></a>
-    <li><a class="thumbnail" href=""><img src="img/_dummy_100x100.png" alt=""></a>
-    <li><a class="thumbnail" href=""><img src="img/_dummy_100x100.png" alt=""></a>
-    <li><a class="thumbnail" href=""><img src="img/_dummy_100x100.png" alt=""></a>
-  </ul>
+    	<%- show_logos(sponsors.silver) %>
+  <h3>後援</h3>
+    	<%- show_logos(sponsors.support) %>
   <h3>メディアスポンサー</h3>
-  <ul class="list-unstyled list-inline">
-    <li><a class="thumbnail" href=""><img src="img/_dummy_100x100.png" alt=""></a>
-    <li><a class="thumbnail" href=""><img src="img/_dummy_100x100.png" alt=""></a>
-    <li><a class="thumbnail" href=""><img src="img/_dummy_100x100.png" alt=""></a>
-    <li><a class="thumbnail" href=""><img src="img/_dummy_100x100.png" alt=""></a>
-    <li><a class="thumbnail" href=""><img src="img/_dummy_100x100.png" alt=""></a>
-    <li><a class="thumbnail" href=""><img src="img/_dummy_100x100.png" alt=""></a>
-    <li><a class="thumbnail" href=""><img src="img/_dummy_100x100.png" alt=""></a>
-    <li><a class="thumbnail" href=""><img src="img/_dummy_100x100.png" alt=""></a>
-  </ul>
+    	<%- show_logos(sponsors.media) %>
 </div>
 
 <% include footer %>
