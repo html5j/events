@@ -1,0 +1,129 @@
+body {
+	margin-top: 105px; /* the height of the navbar */
+	background-color:#f4f4f4;
+}
+
+.navbar-header{
+	float:none;
+}
+
+.navbar-header > h1 {
+	float:left;
+	margin:6px 0 0 0;
+}
+
+.navbar-header > p {
+	float:right;
+}
+
+.navbar-inverse {
+    background-color: #fff;
+    border-color: #fff;
+}
+
+.navbar-collapse  {
+	padding:0;
+}
+
+.nav {
+	
+}
+
+
+
+.navbar-inverse .navbar-nav > .active > a,
+.navbar-inverse .navbar-nav > .active > a:hover,
+.navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus  {
+	background-color:#fff;
+	color:#c21c26;
+	
+}
+
+
+
+
+
+.section {
+	padding-top: 75px;
+	padding-bottom: 75px;
+}
+
+.section-heading {
+	font-size: 4em;
+	margin: 30px 0;
+}
+
+.section-lead {
+	margin: 30px 0;
+}
+
+.section-paragraph {
+	margin: 30px 0;
+}
+
+
+.map {
+	width:450px;
+	height:300px;
+}
+
+footer {
+	margin: 50px 0 0 0;
+	padding: 50px 0;
+	background:#f3895b;
+	color:#fff;
+}
+
+footer p a {
+	color:#fff;
+}
+
+
+@media (max-width: 768px) {
+	
+body {
+	margin-top: 80px; /* the height of the navbar */
+}
+
+
+.navbar-header > h1  {
+	float:left;
+	width:80%;
+}
+
+	
+.navbar-header > h1 > img {
+	width:100%;
+}
+
+.navbar-header > p {
+	float:left;
+	margin-left:10px;
+}
+.navbar-collapse  {
+	padding:0 10px;
+}
+
+.navbar-toggle {
+	float:right;
+}
+
+.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
+	border:0px;
+}
+
+.section-heading {
+	font-size: 2em;
+}
+
+.map {
+	width:280px;
+	height:280px;
+}
+
+.section {
+	padding-top: 25px;
+	padding-bottom: 25px;
+}
+
+}

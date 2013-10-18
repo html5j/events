@@ -1,9 +1,10 @@
 <!doctype html>
-<html>
+<html lang="ja">
 <head>
-<base href="/conference/2013/11/">
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <meta name="description" content="">
+ <meta name="author" content="">
 <title>HTML5 Conference 2013</title>
 <meta name="description" content="HTML5 Conference 2013 ― 11月30日（土）調布 NTT中央研修センタにて開催。">
 <meta property="og:title" content="HTML5 Conference 2013">
@@ -11,36 +12,80 @@
 <meta property="og:url" content="http://events.html5j.org/conference/2013/11/">
 <meta property="og:image" content="http://events.html5j.org/conference/2013/11/img/ogp.jpg">
 <meta property="og:description" content="HTML5 Conference 2013 ― 11月30日（土）調布 NTT中央研修センタにて開催。">
+
 <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+<link href="bower_components/bootstrap/dist/css/conf2013.css" rel="stylesheet">
+<link href="bower_components/bootstrap/dist/css/conf2013Top.css" rel="stylesheet">
 </head>
 
 <body>
-<header class="navbar bs-docs-nav" role="banner">
-  <div class="container">
-    <div class="row">
-      <h1 class="col-md-12">HTML5 Conference 2013</h1>
-    </div>
-    <nav class="" role="navigation">
-      <ul class="nav navbar-nav">
-        <li class="active"><a href="./">ホーム</a>
-        <li><a href="./sessions.html">セッション</a>
-        <li><a href="./speakers.html">スピーカー</a>
-        <li><a href="./access.html">会場・アクセス</a>
-        <li><a href="./faq.html">よくある質問</a>
-      </ul>
+<header class="bs-docs-nav" role="banner">
+	<nav class="navbar navbar-fixed-top navbar-inverse" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <h1><img src="img/conf2013Logo.png" alt="HTML5 Conference 2013"></h1>
+          <p>2011.11.30 / events.html5j.org</p>
+         </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+      	 <ul class="nav navbar-nav">
+       	 <li class="active"><a href="./">ホーム</a>
+       	 <li><a href="./sessions.html">セッション</a>
+       	 <li><a href="./speakers.html">スピーカー</a>
+       	 <li><a href="./access.html">会場・アクセス</a>
+       	 <li><a href="./faq.html">よくある質問</a>
+       	  </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container -->
     </nav>
-  </div>
 </header>
 
-<div class="jumbotron">
-  <div class="container">
-    <h1>HTML5 Conference 2013</h1>
-    <p>2011.11.30 / events.html5j.org</p>
-  </div>
-</div>
+<!-- topImg -->
+    <div class="top-image" style="position: relative; height: 500px; ">
+
+      <!-- <div class="logo-wrapper">
+        <img class="img-responsive" src="img/logo.png" />
+      </div> -->
+
+      <div class="kurione-chan-anime" style="line-height: 0;position: absolute; top: 0; background: -webkit-linear-gradient(#daf1fb, #e1f7fe);
+background: -moz-linear-gradient(#daf1fb, #e1f7fe);
+background: linear-gradient(#daf1fb, #e1f7fe);
+
+ width: 100%;">
+        <canvas id="canvas" width="550" height="470" style="margin-top: 30px;"></canvas>
+        <canvas id="overlay_canvas" width="800" height="300" style="position: absolute; top: 0; left: 50%; margin-left: -400px;"></canvas>
+      </div>
+
+    </div>
+
+    <script src="http://code.createjs.com/easeljs-0.6.0.min.js"></script>
+    <script src="http://code.createjs.com/tweenjs-0.4.0.min.js"></script>
+    <script src="http://code.createjs.com/movieclip-0.6.0.min.js"></script>
+    <script src="js/logo_animation.js"></script>
+    <script src="js/icon_throw.js"></script>
+    <script>
+    var canvas, stage, exportRoot;
+    (function init() {
+      canvas = document.getElementById("canvas");
+      exportRoot = new lib.logo_animation();
+      stage = new createjs.Stage(canvas);
+      stage.addChild(exportRoot);
+      stage.update();
+      createjs.Ticker.setFPS(60);
+      createjs.Ticker.addEventListener("tick", stage);
+    })()
+    </script>
+<!-- /topImg -->
+
 
 <div class="container">
-  <h1>HTML5 Conference 2013 開催します！</h1>
+  <h1 class="topH1">HTML5 Conference 2013 開催します！</h1>
   <p>テキストテキスト。テキストテキスト。テキストテキスト。テキストテキスト。テキストテキスト。テキストテキスト。テキストテキスト。</p>
   <p>テキストテキスト。テキストテキスト。テキストテキスト。テキストテキスト。テキストテキスト。テキストテキスト。テキストテキスト。</p>
   <p>テキストテキスト。テキストテキスト。テキストテキスト。テキストテキスト。テキストテキスト。テキストテキスト。テキストテキスト。</p>
@@ -129,8 +174,9 @@
   </ul>
 </div>
 
-<footer style="background: orange; padding: 2em 0">
-  <p class="text-center"><a href="http://html5j.org/"><img src="" alt="html5j"></a></p>
+<footer>
+  <p class="text-center"><a href="http://html5j.org/"><img src="img/html5jlogoW.png" alt="html5j"></a></p>
+  <p class="text-center">© 2013 html5j.org.</p>
 </footer>
 
 

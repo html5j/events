@@ -1,0 +1,15 @@
+
+
+
+.top-image {
+	background: url(../../../../img/topimgBg.png) no-repeat center center;
+	background-size: cover;
+	text-align: center;
+	padding: 100px 0;
+}
+
+
+.logo-wrapper {
+	display: inline-block;
+}
+
