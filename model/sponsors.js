@@ -49,13 +49,13 @@ module.exports = {
   {
     "id": "dena",
     "alt": "株式会社ディー・エヌ・エー",
-    "href": "http://www.newphoria.co.jp/",
+    "href": "http://dena.com/",
     "img_url": "img/sponsors/DeNA/dena_200w.png"
   }, 
   {
     "id": "mediaplex",
     "alt": "株式会社テレビ朝日メディアプレックス",
-    "href": "http://example.net/",
+    "href": "http://www.mediaplex.co.jp/?cf=2013",
     "img_url": "img/sponsors/mediaplex/mediaplex_200w.png"
   },
   {
@@ -259,7 +259,7 @@ module.exports = {
   {
     "id": "imjp",
     "alt": "株式会社アイ・エム・ジェイ",
-    "href": "",
+    "href": "http://www.imjp.co.jp/",
     "img_url": "img/sponsors/imjp/imj_120w.png"
   },
   ],
