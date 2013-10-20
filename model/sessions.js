@@ -4,36 +4,42 @@ module.exports = [
     "time" : "13:00 - 13:45",
     "sessions" : [
       {
+        "id" : "1f-l-1",
         "title": "セッションタイトル",
         "speakers": ["kensaku_komatsu", "dummy0"],
         "description": "ないようないようないようないようないようないよう",
         "materials": null
       },
       {
+        "id" : "2f-l-1",
         "title": "セッションタイトル",
         "speakers": ["kensaku_komatsu", "dummy0"],
         "description": "ないようないようないようないようないようないよう",
         "materials": null
       },
       {
+        "id" : "5f-s0-1",
         "title": "セッションタイトル",
         "speakers": ["kensaku_komatsu", "dummy0"],
         "description": "ないようないようないようないようないようないよう",
         "materials": null
       },
       {
+        "id" : "5f-s1-1",
         "title": "セッションタイトル",
         "speakers": ["kensaku_komatsu", "dummy0"],
         "description": "ないようないようないようないようないようないよう",
         "materials": null
       },
       {
+        "id" : "5f-l-1",
         "title": "セッションタイトル",
         "speakers": ["kensaku_komatsu", "dummy0"],
         "description": "ないようないようないようないようないようないよう",
         "materials": null
       },
       {
+        "id" : "6f-l-1",
         "title": "セッションタイトル",
         "speakers": ["kensaku_komatsu", "dummy0"],
         "description": "ないようないようないようないようないようないよう",

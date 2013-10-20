@@ -3,14 +3,14 @@ module.exports = {
     {
       "alt": "html5j",
       "href": "http://html5j.org",
-      "img_url": "img/_dummy_250x250.png"
+      "img_url": "img/sponsors/html5j/html5j_250w.png"
     }
   ],
   "main": [
   {
     "alt": "NTTコミュニケーションズ",
     "href": "http://www.ntt.com",
-    "img_url": "img/_dummy_250x250.png"
+    "img_url": "img/sponsors/ntt-com/ntt-com_250w.png"
   }
   ],
   "platinum": [
@@ -54,7 +54,7 @@ module.exports = {
     "id": "mediaplex",
     "alt": "株式会社テレビ朝日メディアプレックス",
     "href": "http://example.net/",
-    "img_url": "img/_dummy_200x200.png"
+    "img_url": "img/sponsors/mediaplex/mediaplex_200w.png"
   },
   {
     "id": "cyberagent",
@@ -82,14 +82,14 @@ module.exports = {
     "id": "dsp",
     "alt": "株式会社イマジカデジタルスケープ",
     "href": "https://www.onlinework.jp/",
-    "img_url": "img/_dummy_150x150.png"
+    "img_url": "img/sponsors/dsp/dsp_150w.png"
   },
 
   {
     "id": "educo",
     "alt": "一般社団法人エデュコ",
     "href": "http://html5exam.jp/",
-    "img_url": "img/_dummy_150x150.png"
+    "img_url": "img/sponsors/educo/educo_150w.png"
   },
 
   {
@@ -105,14 +105,14 @@ module.exports = {
     "href": "http://www.nttdocomo.co.jp/",
     "img_url": "img/sponsors/ntt-docomo/docomo_150w.png"
   },
-
+/*
   {
     "id": "kddi",
     "alt": "KDDI株式会社",
     "href": "http://www.kddi.com",
     "img_url": "img/_dummy_150x150.png"
   },
-
+*/
 
   {
     "id": "canon-its",
@@ -129,12 +129,14 @@ module.exports = {
   },
 
 
+/*
   {
     "id": "topgate",
     "alt": "株式会社トップゲート",
     "href": "http://example.net",
     "img_url": "img/_dummy_150x150.png"
   },
+  */
 
   {
     "id": "ntt-at",
@@ -148,21 +150,21 @@ module.exports = {
     "id": "grapecity0",
     "alt": "グレープシティ株式会社",
     "href": "http://www.grapecity.com/jp/",
-    "img_url": "img/_dummy_150x150.png"
+    "img_url": "img/sponsors/grapecity/grapecity_150w.png"
   },
 
   {
     "id": "grapecity1",
     "alt": "Wijmo",
     "href": "http://wijmo.c1.grapecity.com/?id=ct",
-    "img_url": "img/_dummy_150x150.png"
+    "img_url": "img/sponsors/grapecity/Wijmo_150.png"
   },
 
   {
     "id": "njc",
     "alt": "日本事務器株式会社",
     "href": "http://www.njc.co.jp/",
-    "img_url": "img/_dummy_150x150.png"
+    "img_url": "img/sponsors/njc/njc_150w.png"
   },
   {
     "id": "asial",
@@ -190,7 +192,7 @@ module.exports = {
     "id": "lunascape",
     "alt": "Lunascape株式会社",
     "href": "http://www.lunascape.jp/",
-    "img_url": "img/_dummy_120x120.png"
+    "img_url": "img/sponsors/lunascape/lunascape_120w.png"
   },
   {
     "id": "classmethod",
@@ -208,7 +210,7 @@ module.exports = {
     "id": "mitsue",
     "alt": "株式会社ミツエーリンクス",
     "href": "http://www.mitsue.co.jp/",
-    "img_url": "img/_dummy_120x120.png"
+    "img_url": "img/sponsors/mitsue/mitsuelinks_120w.png"
   },
   {
     "id": "pxgrid",
@@ -226,7 +228,7 @@ module.exports = {
     "id": "lockon",
     "alt": "株式会社ロックオン",
     "href": "http://www.ec-cube.net",
-    "img_url": "img/_dummy_120x120.png"
+    "img_url": "img/sponsors/lockon/lockon_120w.png"
   },
   {
     "id": "infocity",
@@ -244,7 +246,7 @@ module.exports = {
     "id": "menue",
     "alt": "menue株式会社",
     "href": "http://www.menue.co.jp/",
-    "img_url": "img/_dummy_120x120.png"
+    "img_url": "img/sponsors/menue/menue_120w.png"
   },
   {
     "id": "dwango",
@@ -261,10 +263,16 @@ module.exports = {
   ],
   "support": [
   {
-    "id": "id",
+    "id": "w3c",
     "alt": "w3c",
     "href": "http://www.w3.org/",
-    "img_url": "img/_dummy_100x100.png"
+    "img_url": "img/sponsors/w3c/w3c_120w.png"
+  },
+  {
+    "id": "mozilla",
+    "alt": "Mozilla",
+    "href": "http://www.mozilla.jp/",
+    "img_url": "img/sponsors/mozilla/mozilla_120w.png"
   },
   ],
 
@@ -273,7 +281,7 @@ module.exports = {
     "id": "techcrunch",
     "alt": "TechCrunch",
     "href": "http://jp.techcrunch.com/",
-    "img_url": "img/_dummy_100x100.png"
+    "img_url": "img/sponsors/techcrunch/techcrunch_120w.png"
   },
 
   ],
