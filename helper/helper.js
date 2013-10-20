@@ -100,7 +100,7 @@ Helper.show_sessions = function(sessions, speakers) {
             '<tr class="break active">',
             '<th class="time" scope="row"><%= item.time %></th>',
             '<td colspan="6"><%= item.text %></td>',
-            '</tr>',
+            // '</tr>',
 
         '<% } else { %>',
         
@@ -134,8 +134,7 @@ Helper.show_sessions = function(sessions, speakers) {
                 '  </p>',
                 '  <div class="session-desc">',
                 '    <p><%= session.short %></p>',
-                '    <p><a class="btn btn-default btn-xs session" data-sessionid="<%= session.id %>" data-description="<%= session.long %>" data-title="<%= session.title %>">',
-                '     詳細を見る</a></p>',
+                '    <p><a class="btn btn-default btn-xs session" data-sessionid="<%= session.id %>" data-description="<%= session.long %>" data-title="<%= session.title %>">詳細を見る</a></p>',
                 '  </div>',
                 // '  <hr>',
                 // '  <div class="materials">',
@@ -143,7 +142,7 @@ Helper.show_sessions = function(sessions, speakers) {
                 // '  </div>',
                 '</td>',
             '<% }); %>',
-            '</tr>',
+            // '</tr>',
 
         '<% } %>',
         '<% }); %>',

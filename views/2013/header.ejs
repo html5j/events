@@ -3,8 +3,6 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <meta name="description" content="">
- <meta name="author" content="">
 <title><%= title %></title>
 <meta name="description" content="HTML5 Conference 2013 ― 11月30日（土）調布 NTT中央研修センタにて開催。">
 <meta property="og:title" content="HTML5 Conference 2013">
@@ -12,12 +10,10 @@
 <meta property="og:url" content="http://events.html5j.org/conference/2013/11/">
 <meta property="og:image" content="http://events.html5j.org/conference/2013/11/img/ogp.jpg">
 <meta property="og:description" content="HTML5 Conference 2013 ― 11月30日（土）調布 NTT中央研修センタにて開催。">
-
-<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+<link href="bower_components/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
 <link href="bower_components/bootstrap/dist/css/conf2013.css" rel="stylesheet">
-<link href="bower_components/bootstrap/dist/css/conf2013Top.css" rel="stylesheet">
-<% if( id === "sessions") { // applied when page is sessions %>
-<style>
+<% if (id === "index") { %><link href="bower_components/bootstrap/dist/css/conf2013Top.css" rel="stylesheet"><% } %>
+<% if (id === "sessions") { %><style>
 .break th, .break td {
   font-size: smaller;
   font-weight: normal;
@@ -32,43 +28,40 @@ th.time {
 .session-speaker .affiliation {
   font-size: smaller;
 }
-</style>
-<% } %>
+</style><% } %>
 </head>
 
 <body>
-  <!-- Google Tag Manager -->
-<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-TJ7VQD"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- Google Tag Manager -->
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-TJ7VQD" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
 j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 })(window,document,'script','dataLayer','GTM-TJ7VQD');</script>
 <!-- End Google Tag Manager -->
+
 <header class="bs-docs-nav" role="banner">
-	<nav class="navbar navbar-fixed-top navbar-inverse" role="navigation">
-      <div class="container">
-        <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <h1><img src="img/conf2013Logo.png" alt="HTML5 Conference 2013"></h1>
-          <p>2013.11.30 / events.html5j.org</p>
-         </div>
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse navbar-ex1-collapse">
-      	 <ul class="nav navbar-nav">
-       	 <li class="<% if(id === 'index'){ %>active<% } %>"><a href="./">ホーム</a>
-       	 <li class="<% if(id === 'sessions'){ %>active<% } %>"><a href="./sessions">セッション</a>
-       	 <li class="<% if(id === 'speakers'){ %>active<% } %>"><a href="./speakers">スピーカー</a>
-       	 <li class="<% if(id === 'access'){ %>active<% } %>"><a href="./access">会場・アクセス</a>
-       	 <li class="<% if(id === 'faq'){ %>active<% } %>"><a href="./faq">よくある質問</a>
-       	  </ul>
-        </div><!-- /.navbar-collapse -->
-      </div><!-- /.container -->
-    </nav>
+  <nav class="navbar navbar-fixed-top navbar-inverse" role="navigation">
+    <div class="container">
+      <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <h1><img src="img/conf2013Logo.png" alt="HTML5 Conference 2013"></h1>
+      </div>
+      <div class="collapse navbar-collapse navbar-ex1-collapse">
+        <ul class="nav navbar-nav">
+          <li class="<% if (id === 'index') { %>active<% } %>"><a href="./">ホーム</a>
+          <li class="<% if (id === 'sessions') { %>active<% } %>"><a href="./sessions">セッション</a>
+          <li class="<% if (id === 'speakers') { %>active<% } %>"><a href="./speakers">スピーカー</a>
+          <li class="<% if (id === 'access') { %>active<% } %>"><a href="./access">会場・アクセス</a>
+          <li class="<% if (id === 'faq') { %>active<% } %>"><a href="./faq">よくある質問</a>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container -->
+  </nav>
 </header>
