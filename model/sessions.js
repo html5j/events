@@ -6,42 +6,42 @@ module.exports = [
       {
         "id" : "1f-l-1",
         "title": "セッションタイトル",
-        "speakers": ["kensaku_komatsu", "dummy0"],
+        "speakers": ["satoshi_asai", "keisuke_ai"],
         "description": "ないようないようないようないようないようないよう",
         "materials": null
       },
       {
         "id" : "2f-l-1",
         "title": "セッションタイトル",
-        "speakers": ["kensaku_komatsu", "dummy0"],
+        "speakers": ["", ""],
         "description": "ないようないようないようないようないようないよう",
         "materials": null
       },
       {
         "id" : "5f-s0-1",
         "title": "セッションタイトル",
-        "speakers": ["kensaku_komatsu", "dummy0"],
+        "speakers": ["", ""],
         "description": "ないようないようないようないようないようないよう",
         "materials": null
       },
       {
         "id" : "5f-s1-1",
         "title": "セッションタイトル",
-        "speakers": ["kensaku_komatsu", "dummy0"],
+        "speakers": ["", ""],
         "description": "ないようないようないようないようないようないよう",
         "materials": null
       },
       {
         "id" : "5f-l-1",
         "title": "セッションタイトル",
-        "speakers": ["kensaku_komatsu", "dummy0"],
+        "speakers": ["", ""],
         "description": "ないようないようないようないようないようないよう",
         "materials": null
       },
       {
         "id" : "6f-l-1",
         "title": "セッションタイトル",
-        "speakers": ["kensaku_komatsu", "dummy0"],
+        "speakers": ["", ""],
         "description": "ないようないようないようないようないようないよう",
         "materials": null
       }
@@ -58,37 +58,37 @@ module.exports = [
     "sessions" : [
       {
         "title": "セッションタイトル",
-        "speakers": ["masataka_yakura", "shumpei_shiraishi"],
+        "speakers": ["", ""],
         "description": "ないようないようないようないようないようないよう",
         "materials": null
       },
       {
         "title": "セッションタイトル",
-        "speakers": ["kensaku_komatsu", "dummy0"],
+        "speakers": ["", ""],
         "description": "ないようないようないようないようないようないよう",
         "materials": null
       },
       {
         "title": "セッションタイトル",
-        "speakers": ["kensaku_komatsu", "dummy0"],
+        "speakers": ["", ""],
         "description": "ないようないようないようないようないようないよう",
         "materials": null
       },
       {
         "title": "セッションタイトル",
-        "speakers": ["kensaku_komatsu", "dummy0"],
+        "speakers": ["", ""],
         "description": "ないようないようないようないようないようないよう",
         "materials": null
       },
       {
         "title": "セッションタイトル",
-        "speakers": ["kensaku_komatsu", "dummy0"],
+        "speakers": ["", ""],
         "description": "ないようないようないようないようないようないよう",
         "materials": null
       },
       {
         "title": "セッションタイトル",
-        "speakers": ["kensaku_komatsu", "dummy0"],
+        "speakers": ["", ""],
         "description": "ないようないようないようないようないようないよう",
         "materials": null
       }
@@ -105,37 +105,37 @@ module.exports = [
     "sessions" : [
       {
         "title": "セッションタイトル",
-        "speakers": ["masataka_yakura", "shumpei_shiraishi"],
+        "speakers": ["", ""],
         "description": "ないようないようないようないようないようないよう",
         "materials": null
       },
       {
         "title": "セッションタイトル",
-        "speakers": ["kensaku_komatsu", "dummy0"],
+        "speakers": ["", ""],
         "description": "ないようないようないようないようないようないよう",
         "materials": null
       },
       {
         "title": "セッションタイトル",
-        "speakers": ["kensaku_komatsu", "dummy0"],
+        "speakers": ["", ""],
         "description": "ないようないようないようないようないようないよう",
         "materials": null
       },
       {
         "title": "セッションタイトル",
-        "speakers": ["kensaku_komatsu", "dummy0"],
+        "speakers": ["", ""],
         "description": "ないようないようないようないようないようないよう",
         "materials": null
       },
       {
         "title": "セッションタイトル",
-        "speakers": ["kensaku_komatsu", "dummy0"],
+        "speakers": ["", ""],
         "description": "ないようないようないようないようないようないよう",
         "materials": null
       },
       {
         "title": "セッションタイトル",
-        "speakers": ["kensaku_komatsu", "dummy0"],
+        "speakers": ["", ""],
         "description": "ないようないようないようないようないようないよう",
         "materials": null
       }
@@ -152,37 +152,37 @@ module.exports = [
     "sessions" : [
       {
         "title": "セッションタイトル",
-        "speakers": ["masataka_yakura", "shumpei_shiraishi"],
+        "speakers": ["", ""],
         "description": "ないようないようないようないようないようないよう",
         "materials": null
       },
       {
         "title": "セッションタイトル",
-        "speakers": ["kensaku_komatsu", "dummy0"],
+        "speakers": ["", ""],
         "description": "ないようないようないようないようないようないよう",
         "materials": null
       },
       {
         "title": "セッションタイトル",
-        "speakers": ["kensaku_komatsu", "dummy0"],
+        "speakers": ["", ""],
         "description": "ないようないようないようないようないようないよう",
         "materials": null
       },
       {
         "title": "セッションタイトル",
-        "speakers": ["kensaku_komatsu", "dummy0"],
+        "speakers": ["", ""],
         "description": "ないようないようないようないようないようないよう",
         "materials": null
       },
       {
         "title": "セッションタイトル",
-        "speakers": ["kensaku_komatsu", "dummy0"],
+        "speakers": ["", ""],
         "description": "ないようないようないようないようないようないよう",
         "materials": null
       },
       {
         "title": "セッションタイトル",
-        "speakers": ["kensaku_komatsu", "dummy0"],
+        "speakers": ["", ""],
         "description": "ないようないようないようないようないようないよう",
         "materials": null
       }
@@ -199,37 +199,37 @@ module.exports = [
     "sessions" : [
       {
         "title": "セッションタイトル",
-        "speakers": ["masataka_yakura", "shumpei_shiraishi"],
+        "speakers": ["", ""],
         "description": "ないようないようないようないようないようないよう",
         "materials": null
       },
       {
         "title": "セッションタイトル",
-        "speakers": ["kensaku_komatsu", "dummy0"],
+        "speakers": ["", ""],
         "description": "ないようないようないようないようないようないよう",
         "materials": null
       },
       {
         "title": "セッションタイトル",
-        "speakers": ["kensaku_komatsu", "dummy0"],
+        "speakers": ["", ""],
         "description": "ないようないようないようないようないようないよう",
         "materials": null
       },
       {
         "title": "セッションタイトル",
-        "speakers": ["kensaku_komatsu", "dummy0"],
+        "speakers": ["", ""],
         "description": "ないようないようないようないようないようないよう",
         "materials": null
       },
       {
         "title": "セッションタイトル",
-        "speakers": ["kensaku_komatsu", "dummy0"],
+        "speakers": ["", ""],
         "description": "ないようないようないようないようないようないよう",
         "materials": null
       },
       {
         "title": "セッションタイトル",
-        "speakers": ["kensaku_komatsu", "dummy0"],
+        "speakers": ["", ""],
         "description": "ないようないようないようないようないようないよう",
         "materials": null
       }

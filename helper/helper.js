@@ -42,13 +42,29 @@ Helper.show_sponsorlogos = function(type, arr0, arr1, shuffle_flag) {
 }
 
 Helper.show_profiles = function(obj){
+	var obj_ = {};
+
+	_.each(obj, function(o){
+		var desc = o.description;
+		o.description = desc
+			.replace(/</g, "&lt;")
+			.replace(/>/g, "&gt;")
+			.replace(/@@@/g, "</p><p>")
+			.replace(/\$\$\$/g, "<br/>")
+			.replace(/(https?:\/\/[\w\/:%#\$&\?\(\)~\.=\+\-]+)/g, "<a href='$1' target='_blank'>$1</a>")
+			.replace(/@it/g, "@%it")
+			.replace(/@([0-9a-zA-Z_-]+)/g, "<a href='https://twitter.com/$1' target='_blank'>@$1</a>")
+			.replace(/@%it/g, "@it")
+	})
+
+
 	var template = [
 		'<% _.each( _.pairs(obj), function(item) { %>',
 			'<% var speaker_id = item[0], speaker = item[1]; %>',
 			'<section class="speaker">', 
 		    '<h2 id="<%= speaker_id %>"><a href="<%= speaker.url %>"><%= speaker.name %></a></h2>',
 		    '<p class="affiliation"><%= speaker.affiliation %></p>',
-		    '<p class="image"><img src="<%= speaker.img_url %>" alt="<%= speaker.name %>"></p>',
+		    '<p class="image"><img width="100" src="<%= speaker.img_url %>" alt="<%= speaker.name %>"></p>',
 		    '<div class="description"><%= speaker.description %></div>',
 		  	'</section>',
 		 '<% }); %>'
@@ -94,9 +110,13 @@ Helper.show_sessions = function(sessions, speakers) {
 	        	' <p class="session-speaker">',
 
 	        	'<% _.each(session.speakers, function(id) { %>',
+	        		'<% if(Speakers[id]) { %>',
 
 	        	'    <span class="name"><%= Speakers[id].name %></span><br>',
 	        	'    <span class="affiliation"><%= Speakers[id].affiliation %></span>',
+	        		'<% } else { %>',
+	        		'<span>調整中</span>',
+	        		'<% } %>',
 
 	        	'<% }); %>',
 
