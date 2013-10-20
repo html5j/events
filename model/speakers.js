@@ -29,7 +29,7 @@ module.exports = {
     "url": "",
     "affiliation": "日本マイクロソフト株式会社 デベロッパー&プラットフォーム統括本部",
     "img_url": "img/speakers/yoshitaka_kasugai.jpg",
-    "description": "岐阜大学を卒業後、大沢商会を経て、アドビ システムズに入社。After EffectsやPremiereといったビデオ編集ツールのマーケティング一筋の10年を過ごす。@@@2007年にMS初のデザインツールと銘打ったExpressionのプロダクトマネージャーとして、マイクロソフトに入社。その後、Silverlightのプロダクトマネージャーを兼務し、両製品のマーケティングを統括する。2009年にエバンジェリスト部門に異動。ユーザーエクスペリエンス (UX) とHTML5、Internet Explorer、Windowsを担当。HTML5の中では<video>が一番得意。@@@https://twitter.com/ykasugai"
+    "description": "岐阜大学を卒業後、大沢商会を経て、アドビ システムズに入社。After EffectsやPremiereといったビデオ編集ツールのマーケティング一筋の10年を過ごす。@@@2007年にMS初のデザインツールと銘打ったExpressionのプロダクトマネージャーとして、マイクロソフトに入社。その後、Silverlightのプロダクトマネージャーを兼務し、両製品のマーケティングを統括する。2009年にエバンジェリスト部門に異動。ユーザーエクスペリエンス (UX) とHTML5、Internet Explorer、Windowsを担当。HTML5の中では&lt;video&gt;が一番得意。@@@https://twitter.com/ykasugai"
   },
 
   "daisuke_yamazaki": {

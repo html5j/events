@@ -42,19 +42,17 @@ Helper.show_sponsorlogos = function(type, arr0, arr1, shuffle_flag) {
 }
 
 Helper.show_profiles = function(obj){
-	var obj_ = {};
+	var obj_ = _.clone(obj);
 
-	_.each(obj, function(o){
+	_.each(obj_, function(o){
 		var desc = o.description;
 		o.description = desc
-			.replace(/</g, "&lt;")
-			.replace(/>/g, "&gt;")
 			.replace(/@@@/g, "</p><p>")
 			.replace(/\$\$\$/g, "<br/>")
-			.replace(/(https?:\/\/[\w\/:%#\$&\?\(\)~\.=\+\-]+)/g, "<a href='$1' target='_blank'>$1</a>")
-			.replace(/@it/g, "@%it")
-			.replace(/@([0-9a-zA-Z_-]+)/g, "<a href='https://twitter.com/$1' target='_blank'>@$1</a>")
-			.replace(/@%it/g, "@it")
+			// .replace(/(https?:\/\/[\w\/:%#\$&\?\(\)~\.=\+\-]+)/g, "<a href='$1' target='_blank'>$1</a>")
+			// .replace(/@it/g, "@%it")
+			// .replace(/@([0-9a-zA-Z_-]+)/g, "<a href='https://twitter.com/$1' target='_blank'>@$1</a>")
+			// .replace(/@%it/g, "@it")
 	})
 
 
@@ -72,7 +70,7 @@ Helper.show_profiles = function(obj){
 
   	var compiled = _.template(template);
 
-  	return compiled(obj);
+  	return compiled(obj_);
 }
 
 Helper.show_sessions = function(sessions, speakers) {
@@ -115,14 +113,20 @@ Helper.show_sessions = function(sessions, speakers) {
 	        	'  <h4 class="sesssion-title"><a href=""><%= session.title %></a></h4>',
 	        	' <p class="session-speaker">',
 
+	        	'<% var flag = false; %>',
 	        	'<% _.each(session.speakers, function(id) { %>',
+	        		'<% if(flag) { %><br/><% } %>',
 	        		'<% if(Speakers[id]) { %>',
 
+	        	'    <a href="./speakers#<%= id %>">',
 	        	'    <span class="name"><%= Speakers[id].name %></span><br>',
-	        	'    <span class="affiliation"><%= Speakers[id].affiliation %></span>',
+	        	'	</a>',
+
+	        	'   <% if(Speakers[id].affiliation) { %> <span class="affiliation">(<%= Speakers[id].affiliation %>)</span> <% } %>',
 	        		'<% } else { %>',
 	        		'<span>調整中</span>',
 	        		'<% } %>',
+	        		'<% flag = true; %>',
 
 	        	'<% }); %>',
 

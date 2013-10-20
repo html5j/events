@@ -35,7 +35,8 @@ exports.speakers = function (req, res) {
   res.render("2013/speakers", {
   	id: "speakers"
   	, title: "スピーカー | HTML5 Conference 2013" 
-  	, profiles_html: helper.show_profiles(speakers)
+  	, speakers: speakers
+  	, profiles_html: helper.show_profiles
   });
 };
 
