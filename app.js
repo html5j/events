@@ -31,7 +31,7 @@ if ('development' == app.get('env')) {
 }
 
 if(process.env.AUTH==="BASIC") {
-	var acc = JSON.parse(fs.readFileSync('./passwords/basic.json'))
+	var acc = JSON.parse(fs.readFileSync(__dirname+'/passwords/basic.json'))
 	app.all('/conference/2013/11/*', express.basicAuth(function (user, pass) {
 		return user === acc.user && pass === acc.password;
 	}));
