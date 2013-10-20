@@ -1,6 +1,7 @@
 module.exports = {
   "organizer" : [
     {
+      "id": "html5j",
       "alt": "html5j",
       "href": "http://html5j.org",
       "img_url": "img/sponsors/html5j/html5j_250w.png"
@@ -8,6 +9,7 @@ module.exports = {
   ],
   "main": [
   {
+    "id": "ntt-com",
     "alt": "NTTコミュニケーションズ",
     "href": "http://www.ntt.com",
     "img_url": "img/sponsors/ntt-com/ntt-com_250w.png"

@@ -3,7 +3,7 @@ var _ = require('underscore')
 // Helper functions
 var Helper = {}
 
-Helper.show_sponsorlogos = function(type, arr) {
+Helper.show_sponsorlogos = function(type, arr, arr2) {
 	var template = [
 		'<ul class="list-unstyled list-inline">',
 		'<% _.each(list, function(item) { %>',
@@ -32,7 +32,7 @@ Helper.show_sponsorlogos = function(type, arr) {
 			break;
 	}
 
-	return compiled({list: arr, width: width, height: height})
+	return compiled({list: _.union(arr, arr2 || []), width: width, height: height})
 }
 
 Helper.show_profiles = function(obj){

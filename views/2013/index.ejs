@@ -63,16 +63,13 @@ background: linear-gradient(#daf1fb, #e1f7fe);
     <h3>参加費</h3>
     <p>無料
 
-    <h3>主催</h3>
-    	<%- show_sponsorlogos("organizer", sponsors.organizer) %>
+    <h3>主催 / メインスポンサー</h3>
+    	<%- show_sponsorlogos("organizer", sponsors.organizer, sponsors.main) %>
   </div>
 </div>
 <div class="container">
 </div>
 <div class="container">
-  <h2>スポンサー・協賛</h2>
-  <h3>メインスポンサー</h3>
-    	<%- show_sponsorlogos("main", sponsors.main) %>
   <h3>プラチナスポンサー</h3>
     	<%- show_sponsorlogos("platinum", sponsors.platinum) %>
   <h3>ゴールドスポンサー</h3>
