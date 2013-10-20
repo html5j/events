@@ -218,7 +218,7 @@ module.exports = [
       {
         "id" : "1f-l-5",
         "title": "今どきのGruntを使ったフロントエンド開発（HTML/CSS編）",
-        "speakers": ["kouji_ishimoto"],
+        "speakers": ["koji_ishimoto"],
         "description": "SassなどのCSSプリロセッサを使うWebデザイナが増えてきました。Sassをコンパイルするだけなら黒い画面（ターミナル）を使わずともGUIアプリからの利用で問題ありません。が、ここは一歩踏み込んでGrunt（JavaScript製のタスクランナー）を使って、Sass以外のコンパイルやライブリロード、画像最適化、CSSのリントやスタイルガイド生成など、あらゆる作業をGruntに任せてより効率的な開発環境を手に入れてみませんか。",
         "materials": null
       },

@@ -3,13 +3,14 @@
 // また、http://... および @hoge には自動でアンカーが指定されます
 
 module.exports = {
-  "kouji_ishimoto": {
+  "koji_ishimoto": {
     "name": "石本 光司",
     "url": "",
     "affiliation": "株式会社サイバーエージェント",
     "img_url": "img/speakers/koji_ishimoto.jpg",
     "description": "Front-end Developer@@@石本 光司（いしもと こうじ）1983年石川県生まれ。大学でデザインを専攻後、晴れてWebデザイナーになるが、コーディング好きが高じてデベロッパーに転身。主要な業務としてはHTML/CSS/JavaScriptといったフロントエンド全般を担当。また社内教育やマークアップ監査なども担当している。@@@また、個人ブログ「MOL - Designing for a Mobile World!」ではWebパフォーマンスやモバイルに関する記事を書いている。不定期でフロントエンドデベロッパーコミュニティ「Frontrend」を主催している。"
   },
+
   "ayumu_sato": {
     "name": "佐藤 歩",
     "url": "",
@@ -17,6 +18,7 @@ module.exports = {
     "img_url": "img/speakers/ayumu_sato.jpg",
     "description": "株式会社サイバーエージェント@@@Webディベロッパー 名古屋のWeb制作会社で、PHP/JavaScript/HTML/CSSを中心にWebサイト制作・システム開発に従事。2012年9月からは現職でフロントエンドエンジニアとしての開発業務ほか、社内の技術教育にも携わる。サイバーエージェント主催のフロントエンド技術セミナー「Frontrend」などのセミナーイベントや、ブログ、書籍などを通じて、日々仕入れている技術情報のアウトプットに励んでいる。@@@サイト: http://aho.mu$$$ブログ: http://havelog.ayumusato.com$$$Twitter: @ahomu"
   },
+
   "yasunobu_ikeda": {
     "name": "池田 泰延",
     "url": "",
@@ -24,6 +26,7 @@ module.exports = {
     "img_url": "img/_dummy_100x100.png",
     "description": "テクニカルディレクターとしてHTML5やFlashを用いたプロモーションサイトの制作や、ゲームやアプリの開発を主に手がける。Webのインタラクティブ表現に関する最新技術を研究し、ブログ「ClockMaker」やセミナー・勉強会で積極的に情報共有に取り組んでいる。筑波大学非常勤講師も務める。@@@ 主な著書に、『HTML5インタラクティブ表現ガイド』（技術評論社）、『Stage3Dプログラミング ～GPUを使ったFlash 3Dコンテンツ制作～』（ワークスコーポレーション）など。@@@ClockMaker　http://clockmaker.jp/blog/$$$ICS INC.　http://ics-web.jp/$$$Twitter　http://twitter.com/clockmaker$$$Google+　https://plus.google.com/102594170131511973965"
   },
+
   "yoshitaka_kasugai": {
     "name": "春日井 良隆",
     "url": "",
@@ -47,6 +50,7 @@ module.exports = {
     "img_url": "img/speakers/kosuke_nagano.jpg",
     "description": "2005年、(株)ACCESSに入社。組み込み向けブラウザソフト「NetFront Browser v3」の開発、移植、海外顧客のオンサイトサポートなどを経て、現在WebKitベースのブラウザ「NetFrontBrowser NX」の開発に従事。ゲーム機器、STB、DTVなど組み込み向けのブラウザエンジンを提供。@gm_kou。" 
   },
+
   "kyo_ago": {
     "name": "kyo_ago",
     "url": "",
@@ -54,6 +58,7 @@ module.exports = {
     "img_url": "img/speakers/kyo_ago.jpg",
     "description": "Perl+CGIから始まり、ブラウザ上のJavaScript開発を6年行う。$$$最近は主にiOS, Androidブラウザ上の実装が主。$$$趣味はChrome Extension, Template Engine, Local Proxyの開発。$$$http://0-9.tumblr.com/$$$https://twitter.com/kyo_ago"
   },
+
   "keisuke_todoroki": {
     "name": "轟 啓介",
     "url": "",
@@ -61,6 +66,7 @@ module.exports = {
     "img_url": "img/_dummy_100x100.png",
     "description": "twitter: @keisuke322"
   },
+
   "go_otani": {
     "name": "大谷 剛",
     "url": "",
@@ -68,6 +74,7 @@ module.exports = {
     "img_url": "img/speakers/go_otani.jpg",
     "description": "1986年岐阜県生まれ。多摩美術大学美術学部卒。 $$$010年より株式会社サイバーエージェントに入社し、HTML・CSS・JavaScriptを用いたスマートフォン向けのwebアプリ ケーション開発を担当。$$$著書に「Adobe Edge Animate 標準ガイドブック」。"
   },
+
   "takeshi_kurosawa": {
     "name": "黒澤 剛志",
     "url": "",
@@ -75,6 +82,7 @@ module.exports = {
     "img_url": "img/_dummy_100x100.png",
     "description": "株式会社ミツエーリンクス R&D本部 第一部（アクセシビリティ）所属。業務では顧客のWebサイト診断やコンサルティング、社内制作物のチェック業務の他、アクセシビリティBlogの執筆やセミナー講師なども務める。最近の興味・関心はHTMLやWAI-ARIAの標準化動向やブラウザーや支援技術の実装。業務で見つけた某ブラウザーのバグを、プライベートな時間で修正したことも。"
   },
+
   "hiroki_tani": {
     "name": "谷 ヒロキ",
     "url": "",
@@ -138,6 +146,7 @@ module.exports = {
     "img_url": "img/speakers/satoshi_shoda.jpg",
     "description": "（株）テレビ朝日メディアプレックスのフロントエンジニア$$$http://hijiriworld.com/web/@@@※仮です"
   },
+  
   "kensaku_komatsu": {
     "name": "小松 健作",
     "url": "",
