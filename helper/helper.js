@@ -4,159 +4,156 @@ var _ = require('underscore')
 var Helper = {}
 
 Helper.show_sponsorlogos = function(type, arr0, arr1, shuffle_flag) {
-	var template = [
-		'<ul class="list-unstyled list-inline">',
-		'<% _.each(list, function(item) { %>',
-			'<li><a class="thumbnail sponsor" data-sponsorid="<%= item.id %>" target="_blank" href="<%= item.href %>">',
-			'<img width="<%= width %>" height="<%= height %>" src="<%= item.img_url %>" alt="<%= item.alt %>">',
-			'</a>',
-		'<% }); %>',
-		'</ul>'
-	].join("\n")
+    var template = [
+        '<ul class="list-unstyled list-inline">',
+        '<% _.each(list, function(item) { %>',
+            '<li><a class="thumbnail sponsor" data-sponsorid="<%= item.id %>" target="_blank" href="<%= item.href %>">',
+            '<img width="<%= width %>" height="<%= height %>" src="<%= item.img_url %>" alt="<%= item.alt %>">',
+            '</a>',
+        '<% }); %>',
+        '</ul>'
+    ].join("\n")
 
-	var compiled = _.template(template)
-	var width, height
-	var list = _.union(arr0, arr1)
+    var compiled = _.template(template)
+    var width, height
+    var list = _.union(arr0, arr1)
 
-	if(shuffle_flag) {
-		list = _.shuffle(list)
-	}
+    if(shuffle_flag) {
+        list = _.shuffle(list)
+    }
 
-	switch(type) {
-		case "organizer": 
-		case "main": 
-			width = 250; height = 250;
-			break;
-		case "platinum":
-			width = 200; height = 200;
-			break;
-		case "gold":
-			width = 150; height = 150;
-			break;
-		default:
-			width = 120; height = 120;
-			break;
-	}
+    switch(type) {
+        case "organizer":
+        case "main":
+            width = 250; height = 250;
+            break;
+        case "platinum":
+            width = 200; height = 200;
+            break;
+        case "gold":
+            width = 150; height = 150;
+            break;
+        default:
+            width = 120; height = 120;
+            break;
+    }
 
-	return compiled({list: list, width: width, height: height})
+    return compiled({list: list, width: width, height: height})
 }
 
 Helper.show_profiles = function(obj){
-	var obj_ = _.clone(obj);
+    var obj_ = _.clone(obj);
 
-	_.each(obj_, function(o){
-		var desc = o.description;
-		o.description = desc
-			.replace(/@@@/g, "</p><p>")
-			.replace(/\$\$\$/g, "<br/>")
-			// .replace(/(https?:\/\/[\w\/:%#\$&\?\(\)~\.=\+\-]+)/g, "<a href='$1' target='_blank'>$1</a>")
-			// .replace(/@it/g, "@%it")
-			// .replace(/@([0-9a-zA-Z_-]+)/g, "<a href='https://twitter.com/$1' target='_blank'>@$1</a>")
-			// .replace(/@%it/g, "@it")
-	})
+    _.each(obj_, function(o){
+        var desc = o.description;
+        o.description = desc
+            .replace(/@@@/g, "</p><p>")
+            .replace(/\$\$\$/g, "<br>")
+            // .replace(/(https?:\/\/[\w\/:%#\$&\?\(\)~\.=\+\-]+)/g, "<a href='$1' target='_blank'>$1</a>")
+            // .replace(/@it/g, "@%it")
+            // .replace(/@([0-9a-zA-Z_-]+)/g, "<a href='https://twitter.com/$1' target='_blank'>@$1</a>")
+            // .replace(/@%it/g, "@it")
+    })
 
 
-	var template = [
-		'<% _.each( _.pairs(obj), function(item) { %>',
-			'<% var speaker_id = item[0], speaker = item[1]; %>',
-			'<section class="speaker">', 
-		    '<h2 id="<%= speaker_id %>"><a href="<%= speaker.url %>"><%= speaker.name %></a></h2>',
-		    '<p class="affiliation"><%= speaker.affiliation %></p>',
-		    '<p class="image"><img width="100" src="<%= speaker.img_url %>" alt="<%= speaker.name %>"></p>',
-		    '<div class="description"><%= speaker.description %></div>',
-		  	'</section>',
-		 '<% }); %>'
-  	].join("\n");
+    var template = [
+        '<% _.each( _.pairs(obj), function(item) { %>',
+            '<% var speaker_id = item[0], speaker = item[1]; %>',
+            '<section class="speaker">', 
+            '<h2 id="<%= speaker_id %>"><a href="<%= speaker.url %>"><%= speaker.name %></a></h2>',
+            '<p class="affiliation"><%= speaker.affiliation %></p>',
+            '<p class="image"><img width="100" src="<%= speaker.img_url %>" alt="<%= speaker.name %>"></p>',
+            '<div class="description"><%= speaker.description %></div>',
+            '</section>',
+         '<% }); %>'
+    ].join("\n");
 
-  	var compiled = _.template(template);
+    var compiled = _.template(template);
 
-  	return compiled(obj_);
+    return compiled(obj_);
 }
 
 Helper.show_sessions = function(sessions, speakers) {
-	_.each(sessions, function(row){
-		_.each(row.sessions, function(session){
-			session.long = session.description.replace(/\$\$\$/g, "<br>")
-			session.short = session.long.length > 45 ? session.long.substr(0, 45) + "...." : session.long;
-		});
-	});
-	var template = [
-		'<div class="table-responsive">',
-	    '<table class="table table-">',
-	    '<thead>',
-	    '  <tr>',
-	    '    <th scope="col">時間',
-	    '    <th scope="col">ルーム<br>(1F)<br>定員：360',
-	    '    <th scope="col">ルーム<br>(2F)<br>定員：300',
-	    '    <th scope="col">ルーム<br>(5F)<br>定員：120',
-	    '    <th scope="col">ルーム<br>(5F)<br>定員：120',
-	    '    <th scope="col">ルーム<br>(5F)<br>定員：360',
-	    '    <th scope="col">ルーム<br>(6F)<br>定員：240',
-	    '</thead>',
+    _.each(sessions, function(row){
+        _.each(row.sessions, function(session){
+            session.long = session.description.replace(/\$\$\$/g, "<br>")
+            session.short = session.long.length > 45 ? session.long.substr(0, 45) + "...." : session.long;
+        });
+    });
+    var template = [
+        '<div class="table-responsive">',
+        '<table class="table table-">',
+        '<thead>',
+        '  <tr>',
+        '    <th scope="col">時間',
+        '    <th scope="col">ルーム<br>(1F, 360人)',
+        '    <th scope="col">ルーム<br>(2F, 300人)',
+        '    <th scope="col">ルーム<br>(5F, 120人)',
+        '    <th scope="col">ルーム<br>(5F, 120人)',
+        '    <th scope="col">ルーム<br>(5F, 360人)',
+        '    <th scope="col">ルーム<br>(6F, 240人)',
+        '</thead>',
 
-	    '<% _.each(sessions, function(item){ %>',
-	    '<% if(item.type === "break") { %>',
+        '<% _.each(sessions, function(item){ %>',
+        '<% if(item.type === "break") { %>',
 
-	    	'<tr class="break active">',
-        	'<th class="time" scope="row"><%= item.time %></th>',
-        	'<td colspan="6"><%= item.text %></td>',
-        	'</tr>',
+            '<tr class="break active">',
+            '<th class="time" scope="row"><%= item.time %></th>',
+            '<td colspan="6"><%= item.text %></td>',
+            '</tr>',
 
-	    '<% } else { %>',
-		
-			'<tr>',
-	        '<th class="time" scope="row"><%= item.time %></th>',
+        '<% } else { %>',
+        
+            '<tr>',
+            '<th class="time" scope="row"><%= item.time %></th>',
 
-	        '<% _.each(item.sessions, function(session) { %>',
+            '<% _.each(item.sessions, function(session) { %>',
 
-	        	'<td class="session">',
-	        	'  <h4 class="sesssion-title"><a href=""><%= session.title %></a></h4>',
-	        	' <p class="session-speaker">',
+                '<td class="session">',
+                '  <h4 class="sesssion-title"><%= session.title %></h4>',
+                '  <p class="session-speaker">',
 
-	        	'<% var flag = false; %>',
-	        	'<% _.each(session.speakers, function(id) { %>',
-	        		'<% if(flag) { %><br/><% } %>',
-	        		'<% if(Speakers[id]) { %>',
+                '<% var flag = false; %>',
+                '<% _.each(session.speakers, function(id) { %>',
+                    '<% if(flag) { %><br><% } %>',
+                    '<% if(Speakers[id]) { %>',
 
-	        	'    <a href="./speakers#<%= id %>">',
-	        	'	<img width="28px" height="28px" src="<%= Speakers[id].img_url %>">',
-	        	'    <span class="name"><%= Speakers[id].name %></span><br>',
-	        	'	</a>',
+                '    <a href="./speakers#<%= id %>">',
+                '    <img width="28px" height="28px" src="<%= Speakers[id].img_url %>">',
+                '    <span class="name"><%= Speakers[id].name %></span><br>',
+                '    </a>',
 
-	        	'   <% if(Speakers[id].affiliation) { %> <span class="affiliation">(<%= Speakers[id].affiliation %>)</span> <% } %>',
-	        		'<% } else { %>',
-	        		'<span>調整中</span>',
-	        		'<% } %>',
-	        		'<% flag = true; %>',
+                '   <% if(Speakers[id].affiliation) { %> <span class="affiliation"><%= Speakers[id].affiliation %></span> <% } %>',
+                    '<% } else { %>',
+                    '<span>調整中</span>',
+                    '<% } %>',
+                    '<% flag = true; %>',
 
-	        	'<% }); %>',
+                '<% }); %>',
 
-		        '  </p>',
-		        '  <div class="session-desc">',
-		        '    <p><%= session.short %></p>',
-		        '  </div>',
-		        '  <div class="materials">',
-		        '    <p><!--<span class="button">講演資料</span><span class="button">講演映像</span>--></p>',
-		        '  </div>',
-		        '  <hr>',
-		        '  <div class="toolbox">',
-		        '    <p><a class="btn btn-default btn-xs session" data-sessionid="<%= session.id %>" data-description="<%= session.long %>" data-title="<%= session.title %>">',
-		        '	  詳細を見る',
-		        '	 </a></p>',
-		        '  </div>',
-		        '</td>',
-		    '<% }); %>',
-			'</tr>',
+                '  </p>',
+                '  <div class="session-desc">',
+                '    <p><%= session.short %></p>',
+                '    <p><a class="btn btn-default btn-xs session" data-sessionid="<%= session.id %>" data-description="<%= session.long %>" data-title="<%= session.title %>">',
+                '     詳細を見る</a></p>',
+                '  </div>',
+                // '  <hr>',
+                // '  <div class="materials">',
+                // '    <p><!--<span class="button">講演資料</span><span class="button">講演映像</span>--></p>',
+                // '  </div>',
+                '</td>',
+            '<% }); %>',
+            '</tr>',
 
-		'<% } %>',
-	    '<% }); %>',
+        '<% } %>',
+        '<% }); %>',
 
-		'</table>',
-		'</div>',
-	].join("\n")
-	var compiled = _.template(template)
+        '</table>',
+        '</div>',
+    ].join("\n")
+    var compiled = _.template(template)
 
-	return compiled({sessions: sessions, Speakers: speakers})
+    return compiled({sessions: sessions, Speakers: speakers})
 }
 
 module.exports = Helper;
