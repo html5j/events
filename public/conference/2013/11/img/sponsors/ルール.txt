@@ -1,0 +1,9 @@
+スポンサーIDでフォルダを作る。
+IDは以下のスプレッドシートに記載
+https://docs.google.com/spreadsheet/ccc?key=0Avz5Dw63IZCSdEpiMnQ1bnFEcXBmcEZFdU9fLWR2WVE#gid=0
+
+その中に、スポンサーから頂いたベクター画像を格納する
+ベクター画像を加工して作成したラスタ画像については、スポンサーID-＜幅＞w.pngという名前を付ける。（例: asial_200w.png）
+
+200x200pxのロゴ用Illustratorファイル
+　asial_square_5j.ai
