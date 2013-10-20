@@ -235,3 +235,22 @@ exports.faq = function (req, res) {
   	, title: "よくある質問 | HTML5 Conference 2013"
   });
 };
+
+var models = {
+	"sponsors": sponsors,
+	"sessions": sessions,
+	"speakers": speakers
+}
+
+exports.api = function(req, res){
+	res.setHeader('Content-Type', 'application/json; charset=UTF-8')
+
+	var model = req.params.model
+
+	if(models.hasOwnProperty(model)) {
+		res.end(JSON.stringify(models[model]));
+	} else {
+		res.send(404, "File not Found")
+		res.end()
+	}
+}
