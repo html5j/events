@@ -204,7 +204,7 @@ module.exports = {
     "id": "ntt-comware",
     "alt": "NTTコムウェア株式会社",
     "href": "http://www.nttcom.co.jp/",
-    "img_url": "img/sponsors/ntt-comware/S_nttcomware_w120.gif"
+    "img_url": "img/sponsors/ntt-comware/nttcomware_w120.png"
   },
   {
     "id": "mitsue",
