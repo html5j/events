@@ -3,7 +3,7 @@ module.exports = {
     {
       "id": "html5j",
       "alt": "html5j",
-      "href": "http://html5j.org",
+      "href": "http://html5j.org/",
       "img_url": "img/sponsors/html5j/html5j_250w.png"
     }
   ],
@@ -11,7 +11,7 @@ module.exports = {
   {
     "id": "ntt-com",
     "alt": "NTTコミュニケーションズ",
-    "href": "http://www.ntt.com",
+    "href": "http://www.ntt.com/",
     "img_url": "img/sponsors/ntt-com/ntt-com_250w.png"
   }
   ],
@@ -19,7 +19,7 @@ module.exports = {
   {
     "id": "google",
     "alt": "グーグル株式会社",
-    "href": "http://www.google.com/url?q=https://developers.google.com/%3Fhl%3Dja&usd=2&usg=ALhdy28xDXaDaN62tFww6tjmWKBLsuWTJg",
+    "href": "https://developers.google.com/",
     "img_url": "img/sponsors/google/google_200w.png"
   },
   {
@@ -55,7 +55,7 @@ module.exports = {
   {
     "id": "mediaplex",
     "alt": "株式会社テレビ朝日メディアプレックス",
-    "href": "http://www.mediaplex.co.jp/?cf=2013",
+    "href": "http://www.mediaplex.co.jp/",
     "img_url": "img/sponsors/mediaplex/mediaplex_200w.png"
   },
   {
@@ -68,7 +68,7 @@ module.exports = {
   "gold": [
   {
     "id": "codeiq",
-    "alt": "株式会社リクルートキャリア(CodeIQ)",
+    "alt": "株式会社リクルートキャリア（CodeIQ）",
     "href": "https://codeiq.jp/",
     "img_url": "img/sponsors/codeiq/codeiq_150w.png"
   },
@@ -97,7 +97,7 @@ module.exports = {
   {
     "id": "intel",
     "alt": "インテル株式会社",
-    "href": "http://japan.intel.com/swdev/index.html",
+    "href": "http://japan.intel.com/swdev/",
     "img_url": "img/sponsors/intel/intel_150w.png"
   },
 
@@ -111,7 +111,7 @@ module.exports = {
   {
     "id": "kddi",
     "alt": "KDDI株式会社",
-    "href": "http://www.kddi.com",
+    "href": "http://www.kddi.com/",
     "img_url": "img/_dummy_150x150.png"
   },
 */
@@ -119,14 +119,14 @@ module.exports = {
   {
     "id": "canon-its",
     "alt": "キヤノンITソリューションズ株式会社",
-    "href": "http://www.canon-its.co.jp/tools/sencha/index.html",
+    "href": "http://www.canon-its.co.jp/tools/sencha/",
     "img_url": "img/sponsors/canon-its/sencha_150w.png"
   },
 
   {
     "id": "oracle",
     "alt": "日本オラクル株式会社",
-    "href": "http://www.oracle.com/jp/index.html",
+    "href": "http://www.oracle.com/jp/",
     "img_url": "img/sponsors/oracle/oracle_150w.png"
   },
 
@@ -178,7 +178,7 @@ module.exports = {
   {
     "id": "pcp",
     "alt": "ピーシーフェーズ株式会社",
-    "href": "http://www.appiaries.com/jp/index.html",
+    "href": "http://www.appiaries.com/jp/",
     "img_url": "img/sponsors/pcp/appiaries_150w.png"
   },
   ],

@@ -11,7 +11,7 @@ module.exports = {
     "description": "Front-end Developer@@@石本 光司（いしもと こうじ）1983年石川県生まれ。大学でデザインを専攻後、晴れてWebデザイナーになるが、コーディング好きが高じてデベロッパーに転身。主要な業務としてはHTML/CSS/JavaScriptといったフロントエンド全般を担当。また社内教育やマークアップ監査なども担当している。@@@また、個人ブログ「MOL - Designing for a Mobile World!」ではWebパフォーマンスやモバイルに関する記事を書いている。不定期でフロントエンドデベロッパーコミュニティ「Frontrend」を主催している。"
   },
   "ayumu_sato": {
-    "name": "佐藤　歩",
+    "name": "佐藤 歩",
     "url": "",
     "affiliation": "株式会社サイバーエージェント",
     "img_url": "img/speakers/ayumu_sato.jpg",
@@ -41,7 +41,7 @@ module.exports = {
   },
 
     "kosuke_nagano": {
-    "name": "長野宏輔",
+    "name": "長野 宏輔",
     "url": "",
     "affiliation": "株式会社ACCESS ソフトウェアソリューション本部 IAビジネスグループ開発2課",
     "img_url": "img/speakers/kosuke_nagano.jpg",
@@ -52,10 +52,10 @@ module.exports = {
     "url": "",
     "affiliation": "",
     "img_url": "img/speakers/kyo_ago.jpg",
-    "description": "Perl+CGIから始まり、ブラウザ上のJavaScript開発を6年行う。$$$最近は主にiOS, Androidブラウザ上の実装が主。$$$趣味はChrome Extension, Template Engine, Local Proxyの開発。$$$http://0-9.tumblr.com/$$$$https://twitter.com/kyo_ago"
+    "description": "Perl+CGIから始まり、ブラウザ上のJavaScript開発を6年行う。$$$最近は主にiOS, Androidブラウザ上の実装が主。$$$趣味はChrome Extension, Template Engine, Local Proxyの開発。$$$http://0-9.tumblr.com/$$$https://twitter.com/kyo_ago"
   },
   "keisuke_todoroki": {
-    "name": "轟啓介",
+    "name": "轟 啓介",
     "url": "",
     "affiliation": "アドビ システムズ 株式会社",
     "img_url": "img/_dummy_100x100.png",
@@ -69,14 +69,14 @@ module.exports = {
     "description": "1986年岐阜県生まれ。多摩美術大学美術学部卒。 $$$010年より株式会社サイバーエージェントに入社し、HTML・CSS・JavaScriptを用いたスマートフォン向けのwebアプリ ケーション開発を担当。$$$著書に「Adobe Edge Animate 標準ガイドブック」。"
   },
   "takeshi_kurosawa": {
-    "name": "黒澤剛志",
+    "name": "黒澤 剛志",
     "url": "",
     "affiliation": "株式会社ミツエーリンクス",
     "img_url": "img/_dummy_100x100.png",
     "description": "株式会社ミツエーリンクス R&D本部 第一部（アクセシビリティ）所属。業務では顧客のWebサイト診断やコンサルティング、社内制作物のチェック業務の他、アクセシビリティBlogの執筆やセミナー講師なども務める。最近の興味・関心はHTMLやWAI-ARIAの標準化動向やブラウザーや支援技術の実装。業務で見つけた某ブラウザーのバグを、プライベートな時間で修正したことも。"
   },
   "hiroki_tani": {
-    "name": "谷ヒロキ",
+    "name": "谷 ヒロキ",
     "url": "",
     "affiliation": "株式会社サイバーエージェント",
     "img_url": "img/speakers/hiroki_tani.jpg",
@@ -84,7 +84,7 @@ module.exports = {
   },
 
   "futomi_hatano": {
-    "name": "羽田野太巳",
+    "name": "羽田野 太巳",
     "url": "",
     "affiliation": "有限会社futomi/株式会社ニューフォリア",
     "img_url": "img/speakers/futomi_hatano.jpg",
@@ -92,7 +92,7 @@ module.exports = {
   },
 
   "yuya_saito": {
-    "name": "斉藤祐也",
+    "name": "斉藤 祐也",
     "url": "",
     "affiliation": "株式会社サイバーエージェント",
     "img_url": "img/speakers/yuya_saito.jpg",
@@ -100,7 +100,7 @@ module.exports = {
   },
 
   "keisuke_ai": {
-    "name": "藍圭介",
+    "name": "藍 圭介",
     "url": "",
     "affiliation": "小樽商科大学",
     "img_url": "img/speakers/keisuke_ai.jpg",
@@ -108,7 +108,7 @@ module.exports = {
   },
 
   "hayato_ito": {
-    "name": "夷藤勇人",
+    "name": "夷藤 勇人",
     "url": "",
     "affiliation": "Google",
     "img_url": "img/speakers/hayato_ito.jpg",
@@ -132,14 +132,14 @@ module.exports = {
   },
 
   "satoshi_shoda": {
-    "name": "正田聖",
+    "name": "正田 聖",
     "url": "",
     "affiliation": "株式会社テレビ朝日メディアプレックス",
     "img_url": "img/speakers/satoshi_shoda.jpg",
     "description": "（株）テレビ朝日メディアプレックスのフロントエンジニア$$$http://hijiriworld.com/web/@@@※仮です"
   },
   "kensaku_komatsu": {
-    "name": "小松健作",
+    "name": "小松 健作",
     "url": "",
     "affiliation": "NTTコミュニケーションズ 先端IPアーキテクチャセンタ",
     "img_url": "img/speakers/kensaku_komatsu.jpg",
