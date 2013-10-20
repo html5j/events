@@ -47,7 +47,7 @@ Helper.show_profiles = function(obj){
     _.each(obj_, function(o){
         var desc = o.description;
         o.description = desc
-            .replace(/@@@/g, "</p><p>")
+            .replace(/@@@/g, "<p>")
             .replace(/\$\$\$/g, "<br>")
             // .replace(/(https?:\/\/[\w\/:%#\$&\?\(\)~\.=\+\-]+)/g, "<a href='$1' target='_blank'>$1</a>")
             // .replace(/@it/g, "@%it")
@@ -59,12 +59,13 @@ Helper.show_profiles = function(obj){
     var template = [
         '<% _.each( _.pairs(obj), function(item) { %>',
             '<% var speaker_id = item[0], speaker = item[1]; %>',
-            '<section class="speaker">', 
-            '<h2 id="<%= speaker_id %>"><a href="<%= speaker.url %>"><%= speaker.name %></a></h2>',
-            '<p class="affiliation"><%= speaker.affiliation %></p>',
-            '<p class="image"><img width="100" src="<%= speaker.img_url %>" alt="<%= speaker.name %>"></p>',
+            '<section class="speaker" id="<%= speaker_id %>">', 
+            '<h2><%= speaker.name %></h2>',
+            // '<h2 id="<%= speaker_id %>"><a href="<%= speaker.url %>"><%= speaker.name %></a></h2>',
+            '<% if (speaker.affiliation) { %><p class="affiliation"><%= speaker.affiliation %><% } %>',
+            '<% if (speaker.img_url) { %><p class="image"><img width="100" src="<%= speaker.img_url %>" alt="<%= speaker.name %>"><% } %>',
             '<div class="description"><%= speaker.description %></div>',
-            '</section>',
+            '</section><hr>',
          '<% }); %>'
     ].join("\n");
 
@@ -82,7 +83,7 @@ Helper.show_sessions = function(sessions, speakers) {
     });
     var template = [
         '<div class="table-responsive">',
-        '<table class="table table-">',
+        '<table class="table">',
         '<thead>',
         '  <tr>',
         '    <th scope="col">時間',
@@ -94,13 +95,12 @@ Helper.show_sessions = function(sessions, speakers) {
         '    <th scope="col">ルーム6A<br>(6F, 240人)',
         '</thead>',
 
-        '<% _.each(sessions, function(item){ %>',
-        '<% if(item.type === "break") { %>',
+        '<% _.each(sessions, function(item) { %>',
+        '<% if (item.type === "break") { %>',
 
             '<tr class="break active">',
             '<th class="time" scope="row"><%= item.time %></th>',
             '<td colspan="6"><%= item.text %></td>',
-            // '</tr>',
 
         '<% } else { %>',
         
@@ -119,11 +119,11 @@ Helper.show_sessions = function(sessions, speakers) {
                     '<% if(Speakers[id]) { %>',
 
                 '    <a href="./speakers#<%= id %>">',
-                '    <img width="28px" height="28px" src="<%= Speakers[id].img_url %>">',
-                '    <span class="name"><%= Speakers[id].name %></span><br>',
+                '    <% if(Speakers[id].img_url) { %><img width="28" height="28" alt="" src="<%= Speakers[id].img_url %>"><% } %>',
+                '    <span class="name"><%= Speakers[id].name %></span>',
                 '    </a>',
 
-                '   <% if(Speakers[id].affiliation) { %> <span class="affiliation"><%= Speakers[id].affiliation %></span> <% } %>',
+                '   <% if(Speakers[id].affiliation) { %><br><span class="affiliation"><%= Speakers[id].affiliation %></span><% } %>',
                     '<% } else { %>',
                     '<span>調整中</span>',
                     '<% } %>',
@@ -131,10 +131,9 @@ Helper.show_sessions = function(sessions, speakers) {
 
                 '<% }); %>',
 
-                '  </p>',
                 '  <div class="session-desc">',
-                '    <p><%= session.short %></p>',
-                '    <p><a class="btn btn-default btn-xs session" data-sessionid="<%= session.id %>" data-description="<%= session.long %>" data-title="<%= session.title %>">詳細を見る</a></p>',
+                '    <p><%= session.short %>',
+                '    <p><a class="btn btn-default btn-xs session" data-sessionid="<%= session.id %>" data-description="<%= session.long %>" data-title="<%= session.title %>">詳細を見る</a>',
                 '  </div>',
                 // '  <hr>',
                 // '  <div class="materials">',
@@ -142,7 +141,6 @@ Helper.show_sessions = function(sessions, speakers) {
                 // '  </div>',
                 '</td>',
             '<% }); %>',
-            // '</tr>',
 
         '<% } %>',
         '<% }); %>',
