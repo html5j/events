@@ -78,7 +78,6 @@ Helper.show_sessions = function(sessions, speakers) {
 		_.each(row.sessions, function(session){
 			session.long = session.description.replace(/\$\$\$/g, "<br>")
 			session.short = session.long.length > 45 ? session.long.substr(0, 45) + "...." : session.long;
-			console.log(session)
 		});
 	});
 	var template = [
