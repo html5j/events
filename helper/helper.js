@@ -3,7 +3,7 @@ var _ = require('underscore')
 // Helper functions
 var Helper = {}
 
-Helper.show_sponsorlogos = function(type, arr, arr2) {
+Helper.show_sponsorlogos = function(type, arr0, arr1, shuffle_flag) {
 	var template = [
 		'<ul class="list-unstyled list-inline">',
 		'<% _.each(list, function(item) { %>',
@@ -15,6 +15,12 @@ Helper.show_sponsorlogos = function(type, arr, arr2) {
 	].join("\n")
 
 	var compiled = _.template(template)
+	var width, height
+	var list = _.union(arr0, arr1)
+
+	if(shuffle_flag) {
+		list = _.shuffle(list)
+	}
 
 	switch(type) {
 		case "organizer": 
@@ -32,7 +38,7 @@ Helper.show_sponsorlogos = function(type, arr, arr2) {
 			break;
 	}
 
-	return compiled({list: _.union(arr, arr2 || []), width: width, height: height})
+	return compiled({list: list, width: width, height: height})
 }
 
 Helper.show_profiles = function(obj){
