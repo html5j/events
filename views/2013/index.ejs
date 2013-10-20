@@ -63,7 +63,7 @@ background: linear-gradient(#daf1fb, #e1f7fe);
     <p>無料
 
     <h3>主催</h3>
-    	<%- show_logos("organizer", sponsors.organizer) %>
+    	<%- show_sponsorlogos("organizer", sponsors.organizer) %>
   </div>
 </div>
 <div class="container">
@@ -71,17 +71,17 @@ background: linear-gradient(#daf1fb, #e1f7fe);
 <div class="container">
   <h2>スポンサー・協賛</h2>
   <h3>メインスポンサー</h3>
-    	<%- show_logos("main", sponsors.main) %>
+    	<%- show_sponsorlogos("main", sponsors.main) %>
   <h3>プラチナスポンサー</h3>
-    	<%- show_logos("platinum", sponsors.platinum) %>
+    	<%- show_sponsorlogos("platinum", sponsors.platinum) %>
   <h3>ゴールドスポンサー</h3>
-    	<%- show_logos("gold", sponsors.gold) %>
+    	<%- show_sponsorlogos("gold", sponsors.gold) %>
   <h3>シルバースポンサー</h3>
-    	<%- show_logos("silver", sponsors.silver) %>
+    	<%- show_sponsorlogos("silver", sponsors.silver) %>
   <h3>後援</h3>
-    	<%- show_logos("support", sponsors.support) %>
+    	<%- show_sponsorlogos("support", sponsors.support) %>
   <h3>メディアスポンサー</h3>
-    	<%- show_logos("media", sponsors.media) %>
+    	<%- show_sponsorlogos("media", sponsors.media) %>
 </div>
 
 <% include footer %>

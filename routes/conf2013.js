@@ -3,9 +3,9 @@ var sponsors = require('../model/sponsors')
 	, sessions = require('../model/sessions')
 
 // Helper functions
-function show_logos(type, arr) {
+function show_sponsorlogos(type, arr) {
 	var _header = '<ul class="list-unstyled list-inline">'
-		, _body = '<li><a class="thumbnail" data-id="{{id}}" target="_blank" href="{{href}}"><img width="{{width}}" height="{{height}}" src="{{img_url}}" alt="{{alt}}"></a>'
+		, _body = '<li><a class="thumbnail sponsor" data-sponsorid="{{id}}" target="_blank" href="{{href}}"><img width="{{width}}" height="{{height}}" src="{{img_url}}" alt="{{alt}}"></a>'
 		, _footer = '</ul>'
 		, width
 		, height
@@ -201,7 +201,7 @@ exports.index = function (req, res) {
   	id: "index"
   	, title : "HTML5 Conference 2013"	
   	, sponsors: sponsors
-  	, show_logos: show_logos
+  	, show_sponsorlogos: show_sponsorlogos
   });
 };
 

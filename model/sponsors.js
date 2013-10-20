@@ -18,7 +18,7 @@ module.exports = {
     "id": "google",
     "alt": "グーグル株式会社",
     "href": "http://www.google.com/url?q=https://developers.google.com/%3Fhl%3Dja&usd=2&usg=ALhdy28xDXaDaN62tFww6tjmWKBLsuWTJg",
-    "img_url": "img/_dummy_200x200.png"
+    "img_url": "img/sponsors/google/google_200w.png"
   },
   {
     "id": "microsoft",
@@ -30,7 +30,7 @@ module.exports = {
     "id": "access",
     "alt": "株式会社ACCESS",
     "href": "http://www.access-company.com/",
-    "img_url": "img/_dummy_200x200.png"
+    "img_url": "img/sponsors/access/access_200w.png"
   },
   {
     "id": "newphoria",
@@ -68,14 +68,14 @@ module.exports = {
     "id": "codeiq",
     "alt": "株式会社リクルートキャリア(CodeIQ)",
     "href": "https://codeiq.jp/",
-    "img_url": "img/_dummy_150x150.png"
+    "img_url": "img/sponsors/codeiq/codeiq_150w.png"
   },
 
   {
     "id": "hwc",
     "alt": "ホームワーカーズ・コミュニティ株式会社",
     "href": "http://www.hwc.jp",
-    "img_url": "img/_dummy_150x150.png"
+    "img_url": "img/sponsors/hwc/hwc_150w.png"
   },
 
   {
@@ -96,14 +96,14 @@ module.exports = {
     "id": "intel",
     "alt": "インテル株式会社",
     "href": "http://japan.intel.com/swdev/index.html",
-    "img_url": "img/_dummy_150x150.png"
+    "img_url": "img/sponsors/intel/intel_150w.png"
   },
 
   {
     "id": "ntt-docomo",
     "alt": "株式会社NTTドコモ",
     "href": "http://www.nttdocomo.co.jp/",
-    "img_url": "img/_dummy_150x150.png"
+    "img_url": "img/sponsors/ntt-docomo/docomo_150w.png"
   },
 
   {
@@ -118,14 +118,14 @@ module.exports = {
     "id": "canon-its",
     "alt": "キヤノンITソリューションズ株式会社",
     "href": "http://www.canon-its.co.jp/tools/sencha/index.html",
-    "img_url": "img/_dummy_150x150.png"
+    "img_url": "img/sponsors/canon-its/sencha_150w.png"
   },
 
   {
     "id": "oracle",
     "alt": "日本オラクル株式会社",
     "href": "http://www.oracle.com/jp/index.html",
-    "img_url": "img/_dummy_150x150.png"
+    "img_url": "img/sponsors/oracle/oracle_150w.png"
   },
 
 
@@ -140,7 +140,7 @@ module.exports = {
     "id": "ntt-at",
     "alt": "NTTアドバンステクノロジ株式会社",
     "href": "http://www.ntt-at.co.jp/",
-    "img_url": "img/_dummy_150x150.png"
+    "img_url": "img/sponsors/ntt-at/nttat_150w.png"
   },
 
 
@@ -155,7 +155,7 @@ module.exports = {
     "id": "grapecity1",
     "alt": "Wijmo",
     "href": "http://wijmo.c1.grapecity.com/?id=ct",
-    "img_url": "img/sponsors/grapecity/Wijmo_200.png"
+    "img_url": "img/_dummy_150x150.png"
   },
 
   {
@@ -164,13 +164,18 @@ module.exports = {
     "href": "http://www.njc.co.jp/",
     "img_url": "img/_dummy_150x150.png"
   },
-
-
   {
     "id": "asial",
     "alt": "アシアル株式会社",
     "href": "http://monaca.mobi/",
-    "img_url": "img/_dummy_150x150.png"
+    "img_url": "img/sponsors/asial/asial_150w.png"
+  },
+
+  {
+    "id": "pcp",
+    "alt": "ピーシーフェーズ株式会社",
+    "href": "http://www.appiaries.com/jp/index.html",
+    "img_url": "img/sponsors/pcp/appiaries_150w.png"
   },
   ],
   "silver": [
@@ -178,7 +183,7 @@ module.exports = {
     "id": "softbank",
     "alt": "ソフトバンクモバイル株式会社",
     "href": "http://recruit.softbank.jp/career/it_entry/",
-    "img_url": "img/_dummy_120x120.png"
+    "img_url": "img/sponsors/softbank/softbank_120w.png"
   },
 
   {
@@ -191,13 +196,13 @@ module.exports = {
     "id": "classmethod",
     "alt": "クラスメソッド株式会社",
     "href": "http://classmethod.jp/",
-    "img_url": "img/_dummy_120x120.png"
+    "img_url": "img/sponsors/classmethod/classmethod_120w.png"
   },
   {
     "id": "ntt-comware",
     "alt": "NTTコムウェア株式会社",
     "href": "http://www.nttcom.co.jp/",
-    "img_url": "img/_dummy_120x120.png"
+    "img_url": "img/sponsors/ntt-comware/S_nttcomware_w120.gif"
   },
   {
     "id": "mitsue",
@@ -209,13 +214,13 @@ module.exports = {
     "id": "pxgrid",
     "alt": "株式会社ピクセルグリッド",
     "href": "http://www.pxgrid.com/",
-    "img_url": "img/_dummy_120x120.png"
+    "img_url": "img/sponsors/pxgrid/pixelgrid_120w.png"
   },
   {
     "id": "linecorp",
     "alt": "LINE株式会社",
     "href": "http://linecorp.com/",
-    "img_url": "img/_dummy_120x120.png"
+    "img_url": "img/sponsors/linecorp/line_120w.png"
   },
   {
     "id": "lockon",
@@ -227,13 +232,13 @@ module.exports = {
     "id": "infocity",
     "alt": "株式会社インフォシティ",
     "href": "http://www.infocity.co.jp",
-    "img_url": "img/_dummy_120x120.png"
+    "img_url": "img/sponsors/infocity/infocity_120w.png"
   },
   {
     "id": "nifty",
     "alt": "ニフティ株式会社",
     "href": "http://www.nifty.com/",
-    "img_url": "img/_dummy_120x120.png"
+    "img_url": "img/sponsors/nifty/nifty_120w.png"
   },
   {
     "id": "menue",
@@ -245,13 +250,13 @@ module.exports = {
     "id": "dwango",
     "alt": "株式会社ドワンゴ",
     "href": "http://info.dwango.co.jp/",
-    "img_url": "img/_dummy_120x120.png"
+    "img_url": "img/sponsors/dwango/dwango_120w.png"
   },
   {
     "id": "imjp",
     "alt": "株式会社アイ・エム・ジェイ",
     "href": "",
-    "img_url": "img/_dummy_120x120.png"
+    "img_url": "img/sponsors/imjp/imj_120w.png"
   },
   ],
   "support": [
