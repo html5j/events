@@ -76,7 +76,8 @@ Helper.show_profiles = function(obj){
 Helper.show_sessions = function(sessions, speakers) {
 	_.each(sessions, function(row){
 		_.each(row.sessions, function(session){
-			session.description = session.description.replace(/\$\$\$/g, "<br>")
+			session.long = session.description.replace(/\$\$\$/g, "<br>")
+			session.short = session.long.length > 45 ? session.long.substr(0, 45) + "...." : session.long;
 			console.log(session)
 		});
 	});
@@ -119,6 +120,7 @@ Helper.show_sessions = function(sessions, speakers) {
 	        		'<% if(Speakers[id]) { %>',
 
 	        	'    <a href="./speakers#<%= id %>">',
+	        	'	<img width="28px" height="28px" src="<%= Speakers[id].img_url %>">',
 	        	'    <span class="name"><%= Speakers[id].name %></span><br>',
 	        	'	</a>',
 
@@ -132,14 +134,14 @@ Helper.show_sessions = function(sessions, speakers) {
 
 		        '  </p>',
 		        '  <div class="session-desc">',
-		        '    <p><%= session.description %></p>',
+		        '    <p><%= session.short %></p>',
 		        '  </div>',
 		        '  <div class="materials">',
 		        '    <p><!--<span class="button">講演資料</span><span class="button">講演映像</span>--></p>',
 		        '  </div>',
 		        '  <hr>',
 		        '  <div class="toolbox">',
-		        '    <p><a class="btn btn-default btn-xs session" data-sessionid="<%= session.id %>">',
+		        '    <p><a class="btn btn-default btn-xs session" data-sessionid="<%= session.id %>" data-description="<%= session.long %>" data-title="<%= session.title %>">',
 		        '	  詳細を見る',
 		        '	 </a></p>',
 		        '  </div>',
