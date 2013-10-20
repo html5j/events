@@ -76,6 +76,12 @@ Helper.show_profiles = function(obj){
 }
 
 Helper.show_sessions = function(sessions, speakers) {
+	_.each(sessions, function(row){
+		_.each(row.sessions, function(session){
+			session.description = session.description.replace(/\$\$\$/g, "<br>")
+			console.log(session)
+		});
+	});
 	var template = [
 		'<div class="table-responsive">',
 	    '<table class="table table-">',

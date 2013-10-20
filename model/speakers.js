@@ -115,7 +115,7 @@ module.exports = {
     "description": "Google で働くソフトウェア・エンジニア。Google Chrome の開発をしています。W3C WebApps Working Group のメンバーや W3C Shadow DOM の Spec Editor を務めています。好きなデータ構造は Tree です。"
   },
 
-  "Brian Birtles": {
+  "brian_birtles": {
     "name": "Brian Birtles",
     "url": "",
     "affiliation": "Mozilla Japan",
@@ -137,5 +137,12 @@ module.exports = {
     "affiliation": "株式会社テレビ朝日メディアプレックス",
     "img_url": "img/speakers/satoshi_shoda.jpg",
     "description": "（株）テレビ朝日メディアプレックスのフロントエンジニア$$$http://hijiriworld.com/web/@@@※仮です"
+  },
+  "kensaku_komatsu": {
+    "name": "小松健作",
+    "url": "",
+    "affiliation": "NTTコミュニケーションズ 先端IPアーキテクチャセンタ",
+    "img_url": "img/speakers/kensaku_komatsu.jpg",
+    "description": "1972年生まれ。山形県出身。HTML5 Conference 2013 総合プロデューサー@@@大学時代、家系ラーメン店でのバイトを契機をとして、ラーメン中毒となる。その後、プロトコル研究・CDNシステム開発・VoIP開発など主にインフラ系のエンジニアを経るも、HTML5に出会うことで Web がプラットフォーム化することを確信。2009年よりWebとNWとの相互作用を中心に、HTML5の研究開発に従事。W3Cでの標準化推進や執筆活動、コミュニティ運営による啓蒙など活動は多岐に渡る。Google Developer Expert(HTML5), Microsoft Valuable Professional(IE)@@@blog: http://blog.livedoor.jp/kotesaki/$$$twitter: @komasshu"
   },
 }
