@@ -15,7 +15,7 @@ $("td.session a.show-detail").on("click", function(e){
 	$("#session-modal .modal-title").text(title);
 	$("#session-modal .modal-body").html(speaker_html)
 		.append($("<div class='panel panel-default'>")
-			.append($("<div class='panel-body'>").text(description)));
+			.append($("<div class='panel-body'>").html(description)));
 
 	$("#session-modal").modal('show')
 })
