@@ -8,7 +8,8 @@ module.exports = {
   ],
   "main": [
   {
-    "alt": "NTTコミュニケーションズ",
+    "id": "ntt-com",
+    "alt": "NTTコミュニケーションズ株式会社",
     "href": "http://www.ntt.com",
     "img_url": "img/_dummy_250x250.png"
   }
@@ -147,14 +148,14 @@ module.exports = {
   {
     "id": "grapecity0",
     "alt": "グレープシティ株式会社",
-    "href": "http://www.grapecity.com/jp/",
+    "href": "http://www.grapecity.com/tools/",
     "img_url": "img/_dummy_150x150.png"
   },
 
   {
     "id": "grapecity1",
-    "alt": "Wijmo",
-    "href": "http://wijmo.c1.grapecity.com/?id=ct",
+    "alt": "Wijmo [ウィジモ]",
+    "href": "http://wijmo.c1.grapecity.com/",
     "img_url": "img/_dummy_150x150.png"
   },
 
@@ -262,7 +263,7 @@ module.exports = {
   "support": [
   {
     "id": "id",
-    "alt": "w3c",
+    "alt": "W3C",
     "href": "http://www.w3.org/",
     "img_url": "img/_dummy_100x100.png"
   },
