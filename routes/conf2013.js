@@ -47,6 +47,13 @@ exports.access = function (req, res) {
   });
 };
 
+exports.offering = function (req, res) {
+  res.render("2013/offering", {
+    id: "offering"
+    , title: "各種募集 | HTML5 Conference 2013"
+  });
+};
+
 exports.faq = function (req, res) {
   res.render("2013/faq", {
   	id: "faq"
