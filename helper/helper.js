@@ -133,7 +133,7 @@ Helper.show_sessions = function(sessions, speakers) {
 
                 '  <div class="session-desc">',
                 '    <p><%= session.short %>',
-                '    <p><a class="btn btn-default btn-xs session" data-sessionid="<%= session.id %>" data-description="<%= session.long %>" data-title="<%= session.title %>">詳細を見る</a>',
+                '    <p><a class="btn btn-default btn-xs session show-detail" data-sessionid="<%= session.id %>" data-description="<%= session.long %>" data-title="<%= session.title %>">詳細を見る</a>',
                 '  </div>',
                 // '  <hr>',
                 // '  <div class="materials">',
