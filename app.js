@@ -46,6 +46,7 @@ app.get('/conference/2013/11/speakers', routes2013.speakers)
 app.get('/conference/2013/11/access', routes2013.access)
 app.get('/conference/2013/11/faq', routes2013.faq)
 
+app.get('/conference/2013/11/speaker/:speaker_id', routes2013.speaker)
 app.get('/conference/2013/11/api/:model', routes2013.api)
 
 // run server

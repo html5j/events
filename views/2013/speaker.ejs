@@ -1,0 +1,12 @@
+<% include header %>
+
+<div class="container">
+  <h1 class="speakersH1"><%= speaker.name %></h1>
+</div>
+
+<div class="container">
+  <%- show_profile(speaker)  %>
+  <a href="./speakers">スピーカー一覧</a>
+</div>
+
+<% include footer %>

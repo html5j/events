@@ -7,7 +7,7 @@ Helper.show_sponsorlogos = function(type, arr0, arr1, shuffle_flag) {
     var template = [
         '<ul class="list-unstyled list-inline">',
         '<% _.each(list, function(item) { %>',
-            '<li><a class="thumbnail sponsor" data-sponsorid="<%= item.id %>" target="_blank" href="<%= item.href %>">',
+            '<li><a class="thumbnail sponsor" id="sp-<%= item.id %>" data-sponsorid="<%= item.id %>" target="_blank" href="<%= item.href %>">',
             '<img width="<%= width %>" height="<%= height %>" src="<%= item.img_url %>" alt="<%= item.alt %>">',
             '</a>',
         '<% }); %>',
@@ -41,6 +41,27 @@ Helper.show_sponsorlogos = function(type, arr0, arr1, shuffle_flag) {
     return compiled({list: list, width: width, height: height})
 }
 
+Helper.show_profile = function(obj){
+    var obj_ = _.clone(obj);
+    var desc = obj_.description;
+    obj_.description = desc
+        .replace(/@@@/g, "<p>")
+        .replace(/\$\$\$/g, "<br>")
+
+
+    var template = [
+            '<section class="speaker">', 
+            '<% if (obj.affiliation) { %><p class="affiliation"><%= obj.affiliation %><% } %>',
+            '<% if (obj.img_url) { %><p class="image"><img width="100" src="<%= obj.img_url %>" alt="<%= obj.name %>"><% } %>',
+            '<div class="description"><%= obj.description %></div>',
+            '</section><hr>',
+    ].join("\n");
+
+    var compiled = _.template(template);
+
+    return compiled(obj_);
+}
+
 Helper.show_profiles = function(obj){
     var obj_ = _.clone(obj);
 
@@ -60,7 +81,7 @@ Helper.show_profiles = function(obj){
         '<% _.each( _.pairs(obj), function(item) { %>',
             '<% var speaker_id = item[0], speaker = item[1]; %>',
             '<section class="speaker" id="<%= speaker_id %>">', 
-            '<h2><%= speaker.name %></h2>',
+            '<h2><a href="./speaker/<%= speaker_id %>"><%= speaker.name %></a></h2>',
             // '<h2 id="<%= speaker_id %>"><a href="<%= speaker.url %>"><%= speaker.name %></a></h2>',
             '<% if (speaker.affiliation) { %><p class="affiliation"><%= speaker.affiliation %><% } %>',
             '<% if (speaker.img_url) { %><p class="image"><img width="100" src="<%= speaker.img_url %>" alt="<%= speaker.name %>"><% } %>',
@@ -118,7 +139,7 @@ Helper.show_sessions = function(sessions, speakers) {
                     '<% if(flag) { %><br><% } %>',
                     '<% if(Speakers[id]) { %>',
 
-                '    <a href="./speakers#<%= id %>">',
+                '    <a href="./speaker/<%= id %>">',
                 '    <% if(Speakers[id].img_url) { %><img width="28" height="28" alt="" src="<%= Speakers[id].img_url %>"><% } %>',
                 '    <span class="name"><%= Speakers[id].name %></span>',
                 '    </a>',

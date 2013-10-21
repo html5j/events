@@ -10,9 +10,16 @@
 <meta property="og:url" content="http://events.html5j.org/conference/2013/11/">
 <meta property="og:image" content="http://events.html5j.org/conference/2013/11/img/ogp.jpg">
 <meta property="og:description" content="HTML5 Conference 2013 ― 11月30日（土）調布 NTT中央研修センタにて開催。">
+
+<% if(id==="speaker") { %>
+<base href="../">
+<% } else { %>
+<base href="./">
+<% } %>
 <link href="bower_components/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
 <link href="bower_components/bootstrap/dist/css/conf2013.css" rel="stylesheet">
-<% if (id === "index") { %><link href="bower_components/bootstrap/dist/css/conf2013Top.css" rel="stylesheet"><% } %>
+<% if (id === "index") { %>
+<link href="bower_components/bootstrap/dist/css/conf2013Top.css" rel="stylesheet"><% } %>
 <% if (id === "sessions") { %><style>
 .break th, .break td {
   font-size: smaller;

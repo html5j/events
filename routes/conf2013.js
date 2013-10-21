@@ -54,6 +54,17 @@ exports.faq = function (req, res) {
   });
 };
 
+exports.speaker = function(req, res) {
+  var speaker_id = req.params.speaker_id;
+
+  res.render("2013/speaker", {
+    id: "speaker",
+    spaeker_id: speaker_id,
+    speaker: speakers[speaker_id],
+    show_profile: helper.show_profile,
+    title: "スピーカー: "+ speakers[speaker_id].name + " | HTML5 Conference 2013"
+  })
+}
 
 // json api
 /////////////////////////////////////////////////////
