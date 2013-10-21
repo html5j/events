@@ -60,7 +60,7 @@ module.exports = [
         "id" : "1f-l-2",
         "title": "（仮）Responsive Web Design基礎〜勘所",
         "speakers": ["daisuke_yamazaki"],
-        "description": "調整中",
+        "description": "（内容検討中）",
         "materials": null
       },
       {
@@ -86,16 +86,16 @@ module.exports = [
       },
       {
         "id" : "5f-l-2",
-        "title": "モバイルWebアプリケーション開発チューニング（仮）",
-        "speakers": [""],
-        "description": "",
+        "title": "実践的なモバイルHTML5テクニック",
+        "speakers": ["takuo_kihira"],
+        "description": "モバイルブラウザで動くHTML5は、PCブラウザのHTML5と比べて特性が大きく変わります。何も考えずに作成すると次々に課題が発生し、破綻してしまうことも少なくありません。$$$このセッションでは、私の今までの経験を踏まえ、モバイルHTML5の開発に役立つ知識やテクニックをご紹介します。Canvasをメインにお話をしますが、バッテリーやメモリ管理などの普遍的な内容も触れていきたいと考えております。",
         "materials": null
       },
       {
         "id" : "6f-l-2",
         "title": "次世代テレビを知る！ハイブリッドキャスト×HTML5",
         "speakers": ["satoshi_shoda"],
-        "description": "ハイブリッドキャストの紹介と技術仕様。HTML5でのハイブリッドキャスト開発。$$$※仮です",
+        "description": "（内容検討中）",
         "materials": null
       }
     ]
@@ -148,7 +148,7 @@ module.exports = [
         "id" : "6f-l-3",
         "title": "HTTP 2.0（仮）",
         "speakers": [""],
-        "description": "(内容検討中)",
+        "description": "",
         "materials": null
       }
     ]

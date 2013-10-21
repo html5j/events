@@ -162,4 +162,12 @@ module.exports = {
     "img_url": "img/speakers/masataka_yakura.jpg",
     "description": "@@@「ホームページを作りたい」という思いからHTML, CSSを学び始めるが、ホームページを作るよりそちらの方に興味を持ってしまい、以来HTML, CSS, 各種APIなどのWeb標準仕様やWebブラウザの動向を追いかける毎日をおくる。これまでにHTML5やCSS3に関するブログ記事・雑誌記事の執筆、セミナー・勉強会などでの公演、海外のWeb開発関連書籍の監訳、Web標準仕様書や海外のブログ記事の翻訳などを行う。いろんなところでmyakura。"
   },
+
+  "takuo_kihira": {
+    "name": "紀平 拓男",
+    "url": "",
+    "affiliation": "",
+    "img_url": "img/speakers/takuo_kihira.jpg",
+    "description": "@@@2001年にJavaScriptに最初に触れて以来、ブラウザさえあればWebにアクセスするだけでインストールしなくてもプログラムが動くことに大変価値を感じ、以来JavaScriptを専門にしています。$$$自身が設立した会社にてHTML5によるモバイル用Flash Player「ExGame」を作成し、それがDeNAに評価されたことがきっかけで2011年7月にDeNAに参加しました。以来社内外でモバイルHTML5の専門家として活動をしております。現在34歳。@@@起業家（シリアルアントレプレナー）でもあり、過去に2つ会社を設立しています。@@@http://nmi.jp/$$$@tkihira"
+  },
 }
