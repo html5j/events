@@ -44,13 +44,16 @@
   <p id="register"><a class="btn btn-default btn-lg" target="_blank" href="http://html5conf2013.peatix.com/">HTML5 Conference 2013 に参加する<br><small>（Peatixのイベントページに移動）</small></a>
 </div>
 
-<div class="container">
+<section class="container">
   <h2>スポンサー企業募集のお知らせ</h2>
-  <p>HTML5 Conference 2013では協賛企業を募集しております。<br>
-    協賛企業は本ページのスポンサー一覧にロゴを連ねることができる他、様々な特典を用意しております。関心をお持ちの方は、<a href="https://docs.google.com/spreadsheet/viewform?usp=drive_web&amp;formkey=dEFlVzg3b0E4ejdPUWpvLVZmdWFqOFE6MA#gid=0">専用の応募フォーム</a>からお気軽にお申込みください。折り返し、担当者からご連絡させていただきます（締め切りは11月8日です）。
-</div>
+  <p>HTML5 Conference 2013では協賛企業を募集しております。
+  <p>ご協賛頂いた方には、<a href="./">本イベント告知サイト</a>でのロゴ掲載を通じて、参加者に御社がHTML5の取り組みを行なっていると強くアピールすることができます。 ほか、イベントスポンサーとしてカンファレンスにご参加頂けるほか、関係者限定の懇親会にも無料でご参加いただき、様々な企業、個人と交流を深めていただくことができます。
+  <p>関心をお持ちの方は、以下の応募フォームよりお気軽にお申込みください。折り返し、担当者からご連絡させていただきます<br>締め切りは<strong>11月8日</strong>とさせていただきます。
 
-<div class="container">
+  <p><a class="btn btn-default" href="https://docs.google.com/spreadsheet/viewform?formkey=dEFlVzg3b0E4ejdPUWpvLVZmdWFqOFE6MA#gid=0" target="_blank">スポンサー応募問い合わせフォーム</a>
+</section>
+
+<section class="container">
   <h2>カンファレンス概要</h2>
   <div class="row" itemscope itemtype="http://schema.org/Event">
     <meta itemprop="name" content="HTML5 Conference 2013">
@@ -73,8 +76,9 @@
     	<%- show_sponsorlogos("organizer", sponsors.organizer, sponsors.main, false) %>
     </div>
   </div>
-</div>
-<div class="container">
+</section>
+
+<section class="container">
   <h2>スポンサー・後援</h2>
   <h3>プラチナスポンサー</h3>
     	<%- show_sponsorlogos("platinum", sponsors.platinum, [], true) %>
@@ -86,6 +90,6 @@
     	<%- show_sponsorlogos("support", sponsors.support, [], true) %>
   <h3>メディアスポンサー</h3>
     	<%- show_sponsorlogos("media", sponsors.media, [], true) %>
-</div>
+</section>
 
 <% include footer %>
