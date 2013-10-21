@@ -18,6 +18,13 @@ module.exports = [
         "materials": null
       },
       {
+        "id" : "5f-l-1",
+        "title": "モバイル時代のフロントエンド開発レシピ",
+        "speakers": ["yuya_saito"],
+        "description": "改めて言うまでもなく、モバイルWebの時代はもうすぐそこに来ています。現時点で日本はまだまだ30%以下というスマートフォン普及率ではありますが、今後確実に成長していく分野であることは間違いありません。$$$今回のセッションではこれから本格的にモバイルWebの開発を始める皆さんに、押さえておきたいトレンドについて、そして、先駆者達が重ねてきた失敗から得た成功へのヒントを紹介していきます。",
+        "materials": null
+      },
+      {
         "id" : "5f-s0-1",
         "title": "真面目なアニメーション",
         "speakers": ["brian_birtles"],
@@ -29,13 +36,6 @@ module.exports = [
         "title": "調整中",
         "speakers": [""],
         "description": "",
-        "materials": null
-      },
-      {
-        "id" : "5f-l-1",
-        "title": "モバイル時代のフロントエンド開発レシピ",
-        "speakers": ["yuya_saito"],
-        "description": "改めて言うまでもなく、モバイルWebの時代はもうすぐそこに来ています。現時点で日本はまだまだ30%以下というスマートフォン普及率ではありますが、今後確実に成長していく分野であることは間違いありません。$$$今回のセッションではこれから本格的にモバイルWebの開発を始める皆さんに、押さえておきたいトレンドについて、そして、先駆者達が重ねてきた失敗から得た成功へのヒントを紹介していきます。",
         "materials": null
       },
       {
@@ -58,9 +58,9 @@ module.exports = [
     "sessions" : [
       {
         "id" : "1f-l-2",
-        "title": "（仮）Responsive Web Design基礎〜勘所",
+        "title": "Responsive Web Design 〜Basic understanding〜",
         "speakers": ["daisuke_yamazaki"],
-        "description": "（内容検討中）",
+        "description": "マルチデバイス対応（各デバイスに合わせたサイト制作）の必要性がでてきている昨今、レスポンシブWebデザイン（略してRWD）のキーワードを聞くようになりました。今回はRWDの概念〜基本的な考え方〜制作方法について解説させていただきます。RWDは制作手法の考え方、手法の１つですので正しく理解していただければと思います。",
         "materials": null
       },
       {
@@ -68,6 +68,13 @@ module.exports = [
         "title": "HTML5とIE11とWindows 8.1",
         "speakers": ["yoshitaka_kasugai"],
         "description": "2011年に米国・ラスベガスで開催されたMIX 11というカンファレンスでマイクロソフトは「HTML5 : Native to Windows」という言葉を使いました。$$$それから2年後、昨年10月にリリースされたWindows 8では、この言葉の通りWindows 8のネイティブアプリをHTML5とCSS3、JavaScriptで開発できるフレームワークを実装しました。一方でIE9、IE10、そして、IE11とマイクロソフトのブラウザは着実にHTML5への対応を進めており、IE11ではWebGL、MPEG-DASH、Encrypted Media Extensions (EME)などに対応しました。$$$このセッションではIE11で新たにサポートされるHTML5、Windows 8.1のアプリとHTML5との関係、そして、現在のマイクロソフトのHTML5との向き合い方について、ご紹介します。",
+        "materials": null
+      },
+      {
+        "id" : "5f-l-2",
+        "title": "実践的なモバイルHTML5テクニック",
+        "speakers": ["takuo_kihira"],
+        "description": "モバイルブラウザで動くHTML5は、PCブラウザのHTML5と比べて特性が大きく変わります。何も考えずに作成すると次々に課題が発生し、破綻してしまうことも少なくありません。$$$このセッションでは、私の今までの経験を踏まえ、モバイルHTML5の開発に役立つ知識やテクニックをご紹介します。Canvasをメインにお話をしますが、バッテリーやメモリ管理などの普遍的な内容も触れていきたいと考えております。",
         "materials": null
       },
       {
@@ -82,13 +89,6 @@ module.exports = [
         "title": "モバイルフロンティア：フロントエンドエンジニアとデザイナーのためのモバイルユーザーエクスペリエンス",
         "speakers": [""],
         "description": "「モバイルフロンティア よりよいモバイルUXを生み出すためのデザインガイド」を監訳したメンバーによる、ユーザーエクスペリエンス講座。http://www.amazon.co.jp/dp/4621086553$$$ただ「つくる」だけでなく良い体験をデザインすることが重要な開発フローと認識され始めている近年、ネイティブアプリ・Webアプリ関係なく「体験のデザイン」を一緒に考えていく40分。デザイナー・エンジニア含むすべての人を対象。",
-        "materials": null
-      },
-      {
-        "id" : "5f-l-2",
-        "title": "実践的なモバイルHTML5テクニック",
-        "speakers": ["takuo_kihira"],
-        "description": "モバイルブラウザで動くHTML5は、PCブラウザのHTML5と比べて特性が大きく変わります。何も考えずに作成すると次々に課題が発生し、破綻してしまうことも少なくありません。$$$このセッションでは、私の今までの経験を踏まえ、モバイルHTML5の開発に役立つ知識やテクニックをご紹介します。Canvasをメインにお話をしますが、バッテリーやメモリ管理などの普遍的な内容も触れていきたいと考えております。",
         "materials": null
       },
       {
@@ -124,6 +124,13 @@ module.exports = [
         "materials": null
       },
       {
+        "id" : "5f-l-3",
+        "title": "ハイブリッドアプリケーション開発（仮）",
+        "speakers": [""],
+        "description": "",
+        "materials": null
+      },
+      {
         "id" : "5f-s0-3",
         "title": "マルチデバイス時代のHTML5 & WAI-ARIA（仮）",
         "speakers": ["takeshi_kurosawa"],
@@ -133,13 +140,6 @@ module.exports = [
       {
         "id" : "5f-s1-3",
         "title": "Web標準化スペックエディターパネル（仮）",
-        "speakers": [""],
-        "description": "",
-        "materials": null
-      },
-      {
-        "id" : "5f-l-3",
-        "title": "ハイブリッドアプリケーション開発（仮）",
         "speakers": [""],
         "description": "",
         "materials": null
@@ -177,6 +177,13 @@ module.exports = [
         "materials": null
       },
       {
+        "id" : "5f-l-4",
+        "title": "モバイル・アプリケーション開発フレームワーク（仮）",
+        "speakers": [""],
+        "description": "",
+        "materials": null
+      },
+      {
         "id" : "5f-s0-4",
         "title": "Web MIDI API（仮）",
         "speakers": [""],
@@ -186,13 +193,6 @@ module.exports = [
       {
         "id" : "5f-s1-4",
         "title": "出張マークアップ部（仮）",
-        "speakers": [""],
-        "description": "",
-        "materials": null
-      },
-      {
-        "id" : "5f-l-4",
-        "title": "モバイル・アプリケーション開発フレームワーク（仮）",
         "speakers": [""],
         "description": "",
         "materials": null
@@ -230,6 +230,13 @@ module.exports = [
         "materials": null
       },
       {
+        "id" : "5f-l-5",
+        "title": "Webフロントエンドのレンダリングパフォーマンスと最適化Tips",
+        "speakers": ["ayumu_sato"],
+        "description": "Webフロントエンドのパフォーマンスは、今やページの初期表示を早くすることだけではありません。昨今のHTML/CSS/JavaScriptを駆使したWebコンテンツを、スムーズに動かすには、ブラウザのレンダリング(描画)処理について知る必要があります。このセッションでは、レンダリング上のよくあるボトルネックの見つけ方と対処を中心に、最適化Tipsをお届けします。",
+        "materials": null
+      },
+      {
         "id" : "5f-s0-5",
         "title": "html5j えんぷら部とオラクルが語る、HTML5によるエンタープライズ開発（仮）",
         "speakers": [""],
@@ -241,13 +248,6 @@ module.exports = [
         "title": "NTT, KDDI, Softbank キャリアのプロが語る HTML5への期待（仮）",
         "speakers": [""],
         "description": "",
-        "materials": null
-      },
-      {
-        "id" : "5f-l-5",
-        "title": "Webフロントエンドのレンダリングパフォーマンスと最適化Tips",
-        "speakers": ["ayumu_sato"],
-        "description": "Webフロントエンドのパフォーマンスは、今やページの初期表示を早くすることだけではありません。昨今のHTML/CSS/JavaScriptを駆使したWebコンテンツを、スムーズに動かすには、ブラウザのレンダリング(描画)処理について知る必要があります。このセッションでは、レンダリング上のよくあるボトルネックの見つけ方と対処を中心に、最適化Tipsをお届けします。",
         "materials": null
       },
       {
