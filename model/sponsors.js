@@ -51,7 +51,7 @@ module.exports = {
     "alt": "株式会社ディー・エヌ・エー",
     "href": "http://dena.com/",
     "img_url": "img/sponsors/DeNA/dena_200w.png"
-  }, 
+  },
   {
     "id": "mediaplex",
     "alt": "株式会社テレビ朝日メディアプレックス",
@@ -83,7 +83,7 @@ module.exports = {
     "id": "pasonatech",
     "alt": "株式会社パソナテック",
     "href": "http://www.jobhub.jp",
-    "img_url": "img/sponsors/pasonatech/pasonatech_150w.jpg"
+    "img_url": "img/sponsors/pasonatech/pasonatech_150w.png"
   },
   {
     "id": "dsp",
@@ -138,7 +138,7 @@ module.exports = {
     "id": "topgate",
     "alt": "株式会社トップゲート",
     "href": "http://www.topgate.co.jp",
-    "img_url": "img/sponsors/topgate/topgate_150w.jpg"
+    "img_url": "img/sponsors/topgate/topgate_150w.png"
   },
   {
     "id": "ntt-at",
