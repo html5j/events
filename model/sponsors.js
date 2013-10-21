@@ -79,7 +79,12 @@ module.exports = {
     "href": "http://www.hwc.jp",
     "img_url": "img/sponsors/hwc/hwc_150w.png"
   },
-
+  {
+    "id": "pasonatech",
+    "alt": "株式会社パソナテック",
+    "href": "http://www.hwc.jp",
+    "img_url": "img/sponsors/hwc/hwc_150w.png"
+  },
   {
     "id": "dsp",
     "alt": "株式会社イマジカデジタルスケープ",

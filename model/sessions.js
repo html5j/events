@@ -26,7 +26,7 @@ module.exports = [
       },
       {
         "id" : "5f-s1-1",
-        "title": "カッコイイ奴ら番外編（仮）",
+        "title": "調整中",
         "speakers": [""],
         "description": "",
         "materials": null
@@ -231,7 +231,7 @@ module.exports = [
       },
       {
         "id" : "5f-s0-5",
-        "title": "エンプラ部とオラクルが語るHTML5によるエンプラアプリ（仮）",
+        "title": "html5j えんぷら部とオラクルが語る、HTML5によるエンタープライズ開発（仮）",
         "speakers": [""],
         "description": "",
         "materials": null
@@ -252,7 +252,7 @@ module.exports = [
       },
       {
         "id" : "6f-l-5",
-        "title": "Web Components",
+        "title": "次世代 Web 開発を支える 新次元 DOM ・Shadow DOM と Web Components",
         "speakers": ["hayato_ito"],
         "description": "Web Componentsは、今年の Google I/O で注目を浴びた、Webアプリケーション開発の考え方を大きく変える期待の次世代Web技術です。「混ぜるな危険」状態である現在のWebアプリケーション開発の問題を解決するため、ブラウザ・ベンダはコンポーネント化のためWeb標準仕様の策定とブラウザへのネイティブ実装を進めています。これにより、Web開発者のみなさんはWeb技術でコンポーネントをつくり、それらに独自のHTMLのタグ名をつけて広く共有・再利用することが可能になります。$$$このセッションでは、Web Components の概要、そして現状について解説するとともに、Web Components を支える次世代Web技術について深く掘り下げていきます。$$$セッションのスピーカーは、Web Components の中核を支えるShadow DOM の Spec Editor であり、同時に Shadow DOM の Google Chrome への実装を行なっています。時間が許す限り、W3C Spec Editor の仕事や、Google Chrome の開発を普段どのように行なっているか、などについても触れたいと思います。",
         "materials": null
