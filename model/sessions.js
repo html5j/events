@@ -58,9 +58,9 @@ module.exports = [
     "sessions" : [
       {
         "id" : "1f-l-2",
-        "title": "（仮）Responsive Web Design基礎〜勘所",
+        "title": "Responsive Web Design 〜Basic understanding〜",
         "speakers": ["daisuke_yamazaki"],
-        "description": "（内容検討中）",
+        "description": "マルチデバイス対応（各デバイスに合わせたサイト制作）の必要性がでてきている昨今、レスポンシブWebデザイン（略してRWD）のキーワードを聞くようになりました。今回はRWDの概念〜基本的な考え方〜制作方法について解説させていただきます。RWDは制作手法の考え方、手法の１つですので正しく理解していただければと思います。",
         "materials": null
       },
       {
