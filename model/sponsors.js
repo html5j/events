@@ -129,17 +129,12 @@ module.exports = {
     "href": "http://www.oracle.com/jp/",
     "img_url": "img/sponsors/oracle/oracle_150w.png"
   },
-
-
-/*
   {
     "id": "topgate",
     "alt": "株式会社トップゲート",
-    "href": "http://example.net",
-    "img_url": "img/_dummy_150x150.png"
+    "href": "http://www.topgate.co.jp",
+    "img_url": "img/sponsors/topgate/topgate_150w.png"
   },
-  */
-
   {
     "id": "ntt-at",
     "alt": "NTTアドバンステクノロジ株式会社",
