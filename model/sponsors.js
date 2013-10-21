@@ -82,8 +82,8 @@ module.exports = {
   {
     "id": "pasonatech",
     "alt": "株式会社パソナテック",
-    "href": "http://www.hwc.jp",
-    "img_url": "img/sponsors/hwc/hwc_150w.png"
+    "href": "http://www.jobhub.jp",
+    "img_url": "img/sponsors/pasonatech/pasonatech_150w.jpg"
   },
   {
     "id": "dsp",
@@ -138,7 +138,7 @@ module.exports = {
     "id": "topgate",
     "alt": "株式会社トップゲート",
     "href": "http://www.topgate.co.jp",
-    "img_url": "img/sponsors/topgate/topgate_150w.png"
+    "img_url": "img/sponsors/topgate/topgate_150w.jpg"
   },
   {
     "id": "ntt-at",
