@@ -1,24 +1,25 @@
 module.exports = {
   "organizer" : [
     {
+      "id": "html5j",
       "alt": "html5j",
-      "href": "http://html5j.org",
-      "img_url": "img/_dummy_250x250.png"
+      "href": "http://html5j.org/",
+      "img_url": "img/sponsors/html5j/html5j_250w.png"
     }
   ],
   "main": [
   {
     "id": "ntt-com",
     "alt": "NTTコミュニケーションズ株式会社",
-    "href": "http://www.ntt.com",
-    "img_url": "img/_dummy_250x250.png"
+    "href": "http://www.ntt.com/",
+    "img_url": "img/sponsors/ntt-com/ntt-com_250w.png"
   }
   ],
   "platinum": [
   {
     "id": "google",
     "alt": "グーグル株式会社",
-    "href": "http://www.google.com/url?q=https://developers.google.com/%3Fhl%3Dja&usd=2&usg=ALhdy28xDXaDaN62tFww6tjmWKBLsuWTJg",
+    "href": "https://developers.google.com/",
     "img_url": "img/sponsors/google/google_200w.png"
   },
   {
@@ -48,14 +49,14 @@ module.exports = {
   {
     "id": "dena",
     "alt": "株式会社ディー・エヌ・エー",
-    "href": "http://www.newphoria.co.jp/",
+    "href": "http://dena.com/",
     "img_url": "img/sponsors/DeNA/dena_200w.png"
   }, 
   {
     "id": "mediaplex",
     "alt": "株式会社テレビ朝日メディアプレックス",
-    "href": "http://example.net/",
-    "img_url": "img/_dummy_200x200.png"
+    "href": "http://www.mediaplex.co.jp/",
+    "img_url": "img/sponsors/mediaplex/mediaplex_200w.png"
   },
   {
     "id": "cyberagent",
@@ -67,7 +68,7 @@ module.exports = {
   "gold": [
   {
     "id": "codeiq",
-    "alt": "株式会社リクルートキャリア(CodeIQ)",
+    "alt": "株式会社リクルートキャリア（CodeIQ）",
     "href": "https://codeiq.jp/",
     "img_url": "img/sponsors/codeiq/codeiq_150w.png"
   },
@@ -83,20 +84,20 @@ module.exports = {
     "id": "dsp",
     "alt": "株式会社イマジカデジタルスケープ",
     "href": "https://www.onlinework.jp/",
-    "img_url": "img/_dummy_150x150.png"
+    "img_url": "img/sponsors/dsp/dsp_150w.png"
   },
 
   {
     "id": "educo",
     "alt": "一般社団法人エデュコ",
     "href": "http://html5exam.jp/",
-    "img_url": "img/_dummy_150x150.png"
+    "img_url": "img/sponsors/educo/educo_150w.png"
   },
 
   {
     "id": "intel",
     "alt": "インテル株式会社",
-    "href": "http://japan.intel.com/swdev/index.html",
+    "href": "http://japan.intel.com/swdev/",
     "img_url": "img/sponsors/intel/intel_150w.png"
   },
 
@@ -106,36 +107,38 @@ module.exports = {
     "href": "http://www.nttdocomo.co.jp/",
     "img_url": "img/sponsors/ntt-docomo/docomo_150w.png"
   },
-
+/*
   {
     "id": "kddi",
     "alt": "KDDI株式会社",
-    "href": "http://www.kddi.com",
+    "href": "http://www.kddi.com/",
     "img_url": "img/_dummy_150x150.png"
   },
-
+*/
 
   {
     "id": "canon-its",
     "alt": "キヤノンITソリューションズ株式会社",
-    "href": "http://www.canon-its.co.jp/tools/sencha/index.html",
+    "href": "http://www.canon-its.co.jp/tools/sencha/",
     "img_url": "img/sponsors/canon-its/sencha_150w.png"
   },
 
   {
     "id": "oracle",
     "alt": "日本オラクル株式会社",
-    "href": "http://www.oracle.com/jp/index.html",
+    "href": "http://www.oracle.com/jp/",
     "img_url": "img/sponsors/oracle/oracle_150w.png"
   },
 
 
+/*
   {
     "id": "topgate",
     "alt": "株式会社トップゲート",
     "href": "http://example.net",
     "img_url": "img/_dummy_150x150.png"
   },
+  */
 
   {
     "id": "ntt-at",
@@ -149,21 +152,21 @@ module.exports = {
     "id": "grapecity0",
     "alt": "グレープシティ株式会社",
     "href": "http://www.grapecity.com/tools/",
-    "img_url": "img/_dummy_150x150.png"
+    "img_url": "img/sponsors/grapecity/grapecity_150w.png"
   },
 
   {
     "id": "grapecity1",
     "alt": "Wijmo [ウィジモ]",
     "href": "http://wijmo.c1.grapecity.com/",
-    "img_url": "img/_dummy_150x150.png"
+    "img_url": "img/sponsors/grapecity/Wijmo_150.png"
   },
 
   {
     "id": "njc",
     "alt": "日本事務器株式会社",
     "href": "http://www.njc.co.jp/",
-    "img_url": "img/_dummy_150x150.png"
+    "img_url": "img/sponsors/njc/njc_150w.png"
   },
   {
     "id": "asial",
@@ -175,7 +178,7 @@ module.exports = {
   {
     "id": "pcp",
     "alt": "ピーシーフェーズ株式会社",
-    "href": "http://www.appiaries.com/jp/index.html",
+    "href": "http://www.appiaries.com/jp/",
     "img_url": "img/sponsors/pcp/appiaries_150w.png"
   },
   ],
@@ -191,7 +194,7 @@ module.exports = {
     "id": "lunascape",
     "alt": "Lunascape株式会社",
     "href": "http://www.lunascape.jp/",
-    "img_url": "img/_dummy_120x120.png"
+    "img_url": "img/sponsors/lunascape/lunascape_120w.png"
   },
   {
     "id": "classmethod",
@@ -203,13 +206,13 @@ module.exports = {
     "id": "ntt-comware",
     "alt": "NTTコムウェア株式会社",
     "href": "http://www.nttcom.co.jp/",
-    "img_url": "img/sponsors/ntt-comware/S_nttcomware_w120.gif"
+    "img_url": "img/sponsors/ntt-comware/nttcomware_w120.png"
   },
   {
     "id": "mitsue",
     "alt": "株式会社ミツエーリンクス",
     "href": "http://www.mitsue.co.jp/",
-    "img_url": "img/_dummy_120x120.png"
+    "img_url": "img/sponsors/mitsue/mitsuelinks_120w.png"
   },
   {
     "id": "pxgrid",
@@ -227,7 +230,7 @@ module.exports = {
     "id": "lockon",
     "alt": "株式会社ロックオン",
     "href": "http://www.ec-cube.net",
-    "img_url": "img/_dummy_120x120.png"
+    "img_url": "img/sponsors/lockon/lockon_120w.png"
   },
   {
     "id": "infocity",
@@ -245,7 +248,7 @@ module.exports = {
     "id": "menue",
     "alt": "menue株式会社",
     "href": "http://www.menue.co.jp/",
-    "img_url": "img/_dummy_120x120.png"
+    "img_url": "img/sponsors/menue/menue_120w.png"
   },
   {
     "id": "dwango",
@@ -256,16 +259,22 @@ module.exports = {
   {
     "id": "imjp",
     "alt": "株式会社アイ・エム・ジェイ",
-    "href": "",
+    "href": "http://www.imjp.co.jp/",
     "img_url": "img/sponsors/imjp/imj_120w.png"
   },
   ],
   "support": [
   {
-    "id": "id",
+    "id": "w3c",
     "alt": "W3C",
     "href": "http://www.w3.org/",
-    "img_url": "img/_dummy_100x100.png"
+    "img_url": "img/sponsors/w3c/w3c_120w.png"
+  },
+  {
+    "id": "mozilla",
+    "alt": "Mozilla",
+    "href": "http://www.mozilla.jp/",
+    "img_url": "img/sponsors/mozilla/mozilla_120w.png"
   },
   ],
 
@@ -274,7 +283,7 @@ module.exports = {
     "id": "techcrunch",
     "alt": "TechCrunch",
     "href": "http://jp.techcrunch.com/",
-    "img_url": "img/_dummy_100x100.png"
+    "img_url": "img/sponsors/techcrunch/techcrunch_120w.png"
   },
 
   ],
