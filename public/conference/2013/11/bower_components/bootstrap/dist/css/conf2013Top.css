@@ -10,6 +10,21 @@
     display: inline-block;
 }
 
+.social {
+    margin-bottom: -40px;
+    text-align: center;
+}
+
+.social ul {
+    margin: 1em 0 0;
+    padding: 0;
+    list-style: none;
+}
+
+.social ul li {
+    display: inline;
+}
+
 #register {
     margin-top: 3em;
 }
@@ -32,6 +47,7 @@
     max-width: 600px;
     padding: 1em;
 }
+
 #offering h2 {
     margin: 0;
     margin-bottom: 8px;
