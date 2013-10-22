@@ -218,6 +218,7 @@ h1 {
 .navbar-header > h1  {
 	display:block;
 	width:400px;
+	margin-left: 0.2em;
 }
 
 .navbar-toggle {
