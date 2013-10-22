@@ -26,7 +26,7 @@ exports.index = function (req, res) {
 exports.sessions = function (req, res) {
   res.render("2013/sessions", {
   	id: "sessions"
-  	, title: "セッション | HTML5 Conference 2013"
+  	, title: "セッションテーブル | HTML5 Conference 2013"
   	, session_html: helper.show_sessions(sessions, speakers)
   });
 };
@@ -34,7 +34,7 @@ exports.sessions = function (req, res) {
 exports.speakers = function (req, res) {
   res.render("2013/speakers", {
   	id: "speakers"
-  	, title: "スピーカー | HTML5 Conference 2013" 
+  	, title: "スピーカーのみなさん | HTML5 Conference 2013" 
   	, speakers: speakers
   	, profiles_html: helper.show_profiles
   });

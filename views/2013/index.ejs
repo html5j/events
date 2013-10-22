@@ -44,33 +44,42 @@
   <p id="register"><a class="btn btn-default btn-lg contact" data-contact-type="join" target="_blank" href="http://html5conf2013.peatix.com/">HTML5 Conference 2013 に参加する<br><small>（イベント募集サイトPeatixに移動）</small></a>
 </div>
 
-<div class="container">
+<section class="container">
   <h2>スポンサー企業募集のお知らせ</h2>
-  <p>HTML5 Conference 2013では協賛企業を募集しております。<br>
-    協賛企業は本ページのスポンサー一覧にロゴを連ねることができる他、様々な特典を用意しております。関心をお持ちの方は、<a href="https://docs.google.com/spreadsheet/viewform?usp=drive_web&amp;formkey=dEFlVzg3b0E4ejdPUWpvLVZmdWFqOFE6MA#gid=0">専用の応募フォーム</a>からお気軽にお申込みください。折り返し、担当者からご連絡させていただきます（締め切りは11月8日です）。
-</div>
+  <p>HTML5 Conference 2013では協賛企業を募集しております。
+  <p>ご協賛頂いた方には、<a href="./">本イベント告知サイト</a>でのロゴ掲載を通じて、参加者に御社がHTML5の取り組みを行なっていると強くアピールすることができます。 ほか、イベントスポンサーとしてカンファレンスにご参加頂けるほか、関係者限定の懇親会にも無料でご参加いただき、様々な企業、個人と交流を深めていただくことができます。
+  <p>関心をお持ちの方は、以下の応募フォームよりお気軽にお申込みください。折り返し、担当者からご連絡させていただきます<br>締め切りは<strong>11月8日</strong>とさせていただきます。
 
-<div class="container">
+  <p><a class="btn btn-default" href="https://docs.google.com/spreadsheet/viewform?formkey=dEFlVzg3b0E4ejdPUWpvLVZmdWFqOFE6MA#gid=0" target="_blank">スポンサー応募問い合わせフォーム</a>
+</section>
+
+<section class="container">
   <h2>カンファレンス概要</h2>
-  <div itemscope itemtype="http://schema.org/Event">
+  <div class="row" itemscope itemtype="http://schema.org/Event">
     <meta itemprop="name" content="HTML5 Conference 2013">
     <meta itemprop="startDate" content="2013-11-30T12:00+09">
     <meta itemprop="endDate" content="2013-11-30T19:30+09">
-    <h3>開催日</h3>
-    <p>2013年11月30日（土）<br>12:00 - 19:30（受付開始 11:00）
-    <h3>対象者</h3>
-    <p>Web開発者、Webデザイナー
-    <h3>募集人数</h3>
-    <p>2,000名（先着順）
-    <h3>会場</h3>
-    <p itemprop="location" itemscope itemtype="http://schema.org/Place"><a itemprop="url" href="http://www.lsyoyaku.jp/" target="_blank"><span itemprop="name">NTT中央研修センタ</span></a><br>東京都調布市入間町1-44（<a href="http://goo.gl/maps/Kd5Gs">マップ</a>）
-    <h3>参加費</h3>
-    <p>無料
+    <div class="col-md-5">
+      <h3>開催日</h3>
+      <p>2013年11月30日（土）<br>12:00 - 19:30（受付開始 11:00）
+      <h3>対象者</h3>
+      <p>Web開発者、Webデザイナー
+      <h3>募集人数</h3>
+      <p>2,000名（先着順）
+      <h3>会場</h3>
+      <p itemprop="location" itemscope itemtype="http://schema.org/Place"><a itemprop="url" href="http://www.lsyoyaku.jp/" target="_blank"><span itemprop="name">NTT中央研修センタ</span></a><br>東京都調布市入間町1-44（<a href="http://goo.gl/maps/Kd5Gs">マップ</a>）
+      <h3>参加費</h3>
+      <p>無料
+    </div>
+    <div class="col-md-7">
     <h3>主催 / メインスポンサー</h3>
     	<%- show_sponsorlogos("organizer", sponsors.organizer, sponsors.main, false) %>
+    </div>
   </div>
-</div>
-<div class="container">
+</section>
+
+<section class="container">
+  <h2>スポンサー・後援</h2>
   <h3>プラチナスポンサー</h3>
     	<%- show_sponsorlogos("platinum", sponsors.platinum, [], true) %>
   <h3>ゴールドスポンサー</h3>
@@ -81,6 +90,6 @@
     	<%- show_sponsorlogos("support", sponsors.support, [], true) %>
   <h3>メディアスポンサー</h3>
     	<%- show_sponsorlogos("media", sponsors.media, [], true) %>
-</div>
+</section>
 
 <% include footer %>

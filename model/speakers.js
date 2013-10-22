@@ -144,7 +144,7 @@ module.exports = {
     "url": "",
     "affiliation": "株式会社テレビ朝日メディアプレックス",
     "img_url": "img/speakers/satoshi_shoda.jpg",
-    "description": "@@@（株）テレビ朝日メディアプレックスのフロントエンジニア$$$http://hijiriworld.com/web/@@@※仮です"
+    "description": "@@@（株）テレビ朝日メディアプレックスのフロントエンジニア$$$http://hijiriworld.com/web/"
   },
 
   "kensaku_komatsu": {
@@ -170,4 +170,12 @@ module.exports = {
     "img_url": "img/speakers/takuo_kihira.jpg",
     "description": "@@@2001年にJavaScriptに最初に触れて以来、ブラウザさえあればWebにアクセスするだけでインストールしなくてもプログラムが動くことに大変価値を感じ、以来JavaScriptを専門にしています。$$$自身が設立した会社にてHTML5によるモバイル用Flash Player「ExGame」を作成し、それがDeNAに評価されたことがきっかけで2011年7月にDeNAに参加しました。以来社内外でモバイルHTML5の専門家として活動をしております。現在34歳。@@@起業家（シリアルアントレプレナー）でもあり、過去に2つ会社を設立しています。@@@http://nmi.jp/$$$@tkihira"
   },
+
+  "ryoya_kawai": {
+    "name": "河合 良哉",
+    "url": "",
+    "affiliation": "AMEI Web MIDI WG、ヤマハ株式会社",
+    "img_url": "img/speakers/ryoya_kawai.jpg",
+    "description": "@@@Web音楽好きが集まるWeb Music Developers JPの管理人。$$$音の加工を細やかに行うWeb Audio API、Webと楽器をつなぐ可能性を秘めたWeb MIDI APIのアプリケーションを公開し続けることで、普及を目指し活動を行っている。この10月から所属団体のAMEIがWeb Audio API、Web MIDI APIの仕様を策定しているW3CのAudio Working Groupに参加をし、より一層活発に活動を行っていく予定です。@@@twitter @ryoyakawai$$$Google+ https://plus.google.com/u/0/108242669191458983485/posts"
+  }
 }
