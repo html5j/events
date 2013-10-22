@@ -177,5 +177,33 @@ module.exports = {
     "affiliation": "AMEI Web MIDI WG、ヤマハ株式会社",
     "img_url": "img/speakers/ryoya_kawai.jpg",
     "description": "@@@Web音楽好きが集まるWeb Music Developers JPの管理人。$$$音の加工を細やかに行うWeb Audio API、Webと楽器をつなぐ可能性を秘めたWeb MIDI APIのアプリケーションを公開し続けることで、普及を目指し活動を行っている。この10月から所属団体のAMEIがWeb Audio API、Web MIDI APIの仕様を策定しているW3CのAudio Working Groupに参加をし、より一層活発に活動を行っていく予定です。@@@twitter @ryoyakawai$$$Google+ https://plus.google.com/u/0/108242669191458983485/posts"
+  },
+
+  "takao_obara": {
+    "name": "小原 隆郎",
+    "url": "",
+    "affiliation": "株式会社ディー・エヌ・エー",
+    "img_url": "img/speakers/takao_obara.png",
+    "description": "@@@http://uupaa.hatenablog.com/"
+  },
+
+  "hiroshi_kawada": {
+    "name": "川田 寛",
+    "url": "",
+    "affiliation": "",
+    // "img_url": "img/speakers/hiroshi_kawada.jpg",
+    "img_url": "",
+    "description": "@@@html5jのサブグループ「えんぷら部(エンタープライズ部)」の部長。日本Javaユーザ会やMicrosoftの協力の下「業務システムエンジニアのためのHTML5勉強会」を開催し、国内のSI領域へHTML5などの新しいWeb技術を推進する。@@@Twitter：@kawada_hiroshi$$$Blog：http://furoshiki.hatenadiary.jp/"
+  },
+
+  "yoshio_terada": {
+    "name": "寺田 佳央",
+    "url": "",
+    "affiliation": "日本オラクル株式会社",
+    // "img_url": "img/speakers/yoshio_terada.jpg",
+    "img_url": "",
+    "description": "@@@2001 年に日本サン・マイクロシステムズ株式会社に入社し、2010 年 6 月より日本オラクル株式会社に在籍。$$$サン時代から Web 関連製品のエバンジェリストとして活動し、各種セミナー・ イベント等で多数の講演を実施。$$$2010 年 12 月より日本オラクルで Java エバンジェリスト として活動し、Java SE/EE に関する啓蒙活動を実施中。"
   }
+
+
 }

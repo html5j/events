@@ -178,9 +178,9 @@ module.exports = [
       },
       {
         "id" : "5f-l-4",
-        "title": "モバイル・アプリケーション開発フレームワーク（仮）",
-        "speakers": [""],
-        "description": "",
+        "title": "地下鉄 x サクサク x これからのWebゲームアプリが備えるべき8つの機能（仮）",
+        "speakers": ["takao_obara"],
+        "description": "電波の不確かな場所でも動作し、サクサクと軽快に動作する Web Application の実装方法とそのアイデアについてご紹介します。$$$このセッションでは、更に一歩進んだ発想(そして、ちょっとした黒魔術)もご紹介する予定です。",
         "materials": null
       },
       {
@@ -238,9 +238,9 @@ module.exports = [
       },
       {
         "id" : "5f-s0-5",
-        "title": "html5j えんぷら部とオラクルが語る、HTML5によるエンタープライズ開発（仮）",
-        "speakers": [""],
-        "description": "",
+        "title": "エンタープライズ x HTML5 ～ 旧来型から次世代型へ、進化するWeb開発 ～",
+        "speakers": ["yoshio_terada", "hiroshi_kawada"],
+        "description": "jQueryの普及とHTML5の流行で、エンタープライズ領域でもフロントエンドのリッチ化が求められるようになりました。Web開発は、サーバサイドで画面遷移を実現する旧来型から、クライアントで画面遷移を実現する次世代型へと進もうとしています。本セッションでは、エンタープライズ向けHTML5製品から見たクライアントの開発スタイルの変化と、Java技術から見たサーバサイドの開発スタイルの変化をご紹介します。",
         "materials": null
       },
       {
