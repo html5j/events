@@ -5,7 +5,7 @@
 
 var express = require('express');
 var routes = require('./routes')
-	, routes2013 = require('./routes/conf2013')
+    , routes2013 = require('./routes/conf2013')
 var http = require('http');
 var path = require('path');
 var fs = require('fs')
@@ -31,10 +31,10 @@ if ('development' == app.get('env')) {
 }
 
 if(process.env.AUTH==="BASIC") {
-	var acc = JSON.parse(fs.readFileSync(__dirname+'/passwords/basic.json'))
-	app.all('/conference/2013/11/*', express.basicAuth(function (user, pass) {
-		return user === acc.user && pass === acc.password;
-	}));
+    var acc = JSON.parse(fs.readFileSync(__dirname+'/passwords/basic.json'))
+    app.all('/conference/2013/11/*', express.basicAuth(function (user, pass) {
+        return user === acc.user && pass === acc.password;
+    }));
 }
 // redirect to current year's page
 app.get('/', routes.index);
@@ -53,5 +53,5 @@ app.get('/conference/2013/11/api/:model', routes2013.api);
 
 // run server
 app.listen(app.get('port'), function () {
-  console.log('Express server listening on port ' + app.get('port'));
+    console.log('Express server listening on port ' + app.get('port'));
 });
