@@ -1,29 +1,43 @@
 
-
-
 .top-image {
-	background: url(../../../../img/topimgBg.jpg) no-repeat center center;
-	background-size: cover;
-	text-align: center;
-	padding: 100px 0;
+    background: url(../../../../img/topimgBg.jpg) no-repeat center center;
+    background-size: cover;
+    text-align: center;
+    padding: 100px 0;
 }
 
-
 .logo-wrapper {
-	display: inline-block;
+    display: inline-block;
 }
 
 #register {
-	margin-top: 3em;
+    margin-top: 3em;
 }
 
 #register .btn {
-	padding: 1em 2em;
-	font-weight: bold;
-	border: none;
-	background: #8bbaaa;
-	color: #fff;
-	text-shadow: 0px 3px 0px #78ab9a;
-	box-shadow: 0px 5px 0 #78ab9a;
-	border-radius: 3px;
+    padding: 1em 1em;
+    font-weight: bold;
+    border: none;
+    background: #8bbaaa;
+    color: #fff;
+    text-shadow: 0px 3px 0px #78ab9a;
+    box-shadow: 0px 5px 0 #78ab9a;
+    border-radius: 3px;
+}
+
+#offering {
+    margin-top: 2em;
+    background-color: #f07444;
+    border-radius: 8px;
+    max-width: 600px;
+    padding: 1em;
+}
+#offering h2 {
+    margin: 0;
+    margin-bottom: 8px;
+    color: white;
+}
+#offering li a {
+    color: white;
+    text-decoration: underline;
 }
