@@ -18,5 +18,12 @@
 }
 
 #register .btn {
-
+	padding: 1em 2em;
+	font-weight: bold;
+	border: none;
+	background: #8bbaaa;
+	color: #fff;
+	text-shadow: 0px 3px 0px #78ab9a;
+	box-shadow: 0px 5px 0 #78ab9a;
+	border-radius: 3px;
 }
