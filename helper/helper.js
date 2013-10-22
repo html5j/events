@@ -50,11 +50,11 @@ Helper.show_profile = function(obj){
 
 
     var template = [
-            '<section class="speaker">', 
+            '<div class="speaker">', 
             '<% if (obj.affiliation) { %><p class="affiliation"><%= obj.affiliation %><% } %>',
-            '<% if (obj.img_url) { %><p class="image"><img width="100" src="/conference/2013/11/<%= obj.img_url %>" alt="<%= obj.name %>"><% } %>',
+            '<% if (obj.img_url) { %><p class="image"><img width="100" src="/conference/2013/11/<%= obj.img_url %>" alt=""><% } %>',
             '<div class="description"><%= obj.description %></div>',
-            '</section><hr>',
+            '</div>',
     ].join("\n");
 
     var compiled = _.template(template);
@@ -84,7 +84,7 @@ Helper.show_profiles = function(obj){
             '<h2><a href="./speaker/<%= speaker_id %>"><%= speaker.name %></a></h2>',
             // '<h2 id="<%= speaker_id %>"><a href="<%= speaker.url %>"><%= speaker.name %></a></h2>',
             '<% if (speaker.affiliation) { %><p class="affiliation"><%= speaker.affiliation %><% } %>',
-            '<% if (speaker.img_url) { %><p class="image"><img width="100" src="/conference/2013/11/<%= speaker.img_url %>" alt="<%= speaker.name %>"><% } %>',
+            '<% if (speaker.img_url) { %><p class="image"><img width="100" src="/conference/2013/11/<%= speaker.img_url %>" alt=""><% } %>',
             '<div class="description"><%= speaker.description %></div>',
             '</section><hr>',
          '<% }); %>'
