@@ -135,7 +135,7 @@ module.exports = {
     "name": "浅井 智也",
     "url": "",
     "affiliation": "Mozilla Japan",
-    "img_url": "img/speakers/tomoya_asai.png",
+    "img_url": "img/speakers/tomoya_asai.jpg",
     "description": "@@@学生時代に Firefox 1.0 から Mozilla 製品の日本語リリースを担当。インターネットをすべての人々の利益になる方向へ発展させる Mozilla の目標に共感し、卒業後は Mozilla Japan で夢を見せるエバンジェリストとして活動中。$$$最新 Web 技術がもたらす新しい世界とレッサーパンダの可愛さについて語らせると止まらない。$$$あのもふもふしたしっぽがたまらない！@@@http://dynamis.jp/$$$https://twitter.com/dynamitter$$$http://www.facebook.com/dynamis"
   },
 
