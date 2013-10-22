@@ -84,7 +84,7 @@ module.exports = {
   },
 
   "hiroki_tani": {
-    "name": "谷 ヒロキ",
+    "name": "谷 拓樹",
     "url": "",
     "affiliation": "株式会社サイバーエージェント",
     "img_url": "img/speakers/hiroki_tani.jpg",
