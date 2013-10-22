@@ -66,7 +66,7 @@ function iconThrow () {
 			ctx.translate(this.x, this.y);
 			ctx.rotate(this.rotate);
 			ctx.scale(this.scale, this.scale);
-			ctx.drawImage(this.img, -30, -30, 60, 60);
+			ctx.drawImage(this.img, -30, -30);
 			ctx.restore();
 			//ctx.fill();
 		}
