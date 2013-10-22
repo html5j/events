@@ -1,0 +1,95 @@
+<% include header %>
+
+<!-- topImg -->
+    <div class="top-image" style="position: relative; height: 500px; ">
+
+      <!-- <div class="logo-wrapper">
+        <img class="img-responsive" src="/conference/2013/11/img/logo.png" />
+      </div> -->
+
+      <div class="kurione-chan-anime" style="line-height: 0; position: absolute; top: 0; background: -webkit-linear-gradient(#daf1fb, #e1f7fe); background: linear-gradient(#daf1fb, #e1f7fe); width: 100%;">
+        <canvas id="canvas" width="550" height="470" style="margin-top: 30px;"></canvas>
+        <canvas id="overlay_canvas" width="800" height="300" style="position: absolute; top: 0; left: 50%; margin-left: -400px;"></canvas>
+      </div>
+
+    </div>
+
+    <script src="http://code.createjs.com/easeljs-0.6.0.min.js"></script>
+    <script src="http://code.createjs.com/tweenjs-0.4.0.min.js"></script>
+    <script src="http://code.createjs.com/movieclip-0.6.0.min.js"></script>
+    <script src="js/logo_animation.js"></script>
+    <script src="js/icon_throw.js"></script>
+    <script>
+    var canvas, stage, exportRoot;
+    (function init() {
+      canvas = document.getElementById("canvas");
+      exportRoot = new lib.logo_animation();
+      stage = new createjs.Stage(canvas);
+      stage.addChild(exportRoot);
+      stage.update();
+      createjs.Ticker.setFPS(60);
+      createjs.Ticker.addEventListener("tick", stage);
+    })()
+    </script>
+<!-- /topImg -->
+
+
+<div class="container">
+  <h1 class="topH1">HTML5 Conference 2013の開催にあたって</h1>
+  <p>この度は、私たち<a href="http://html5j.org">html5j</a>が主催する<b>HTML5 Conference</b>に関心を持っていただき、ありがとうございます。
+  <p>昨年は初の単独主催で、HTML5 Conference 2012を開催いたしました。1,000名の募集枠が30時間で満員になり、当日参加された方々からは「コミュニティ駆動の勉強会であるにも関わらず非常に質が高かった」という、ありがたいお褒めの言葉も多数いただくなど、大成功と言って良い成果を収めることができました。
+  <p>今年は、昨年よりさらに質・量を向上させたカンファレンスを目指しています。募集人数はなんと<strong>2,000名！</strong>セッション数も30を予定しており、幅広いディベロッパー・デザイナーの方々に満足頂ける内容とすべく、スタッフ一同力を合わせてイベント作りに励んでいます。
+  <p>私たちはこのイベントを、「<strong>Web技術者の祭典</strong>」と位置づけています。参加された方々が、最新のWeb技術トレンドを学びつつ、新たな交流を育み、そして最高に楽しく盛り上がれるイベントを目指しています。これは、私たちhtml5jの合言葉である「<strong>つながる、学べる、盛り上がる</strong>」に沿ったもの。40回以上の勉強会開催から得られた経験・実績・信頼を基に、参加者の皆様にご満足いただけるよう全力を尽くします。どうかご期待ください。
+
+  <p id="register"><a class="btn btn-default btn-lg contact" data-contact-type="join" target="_blank" href="http://html5conf2013.peatix.com/">HTML5 Conference 2013 に参加する<br><small>（イベント募集サイトPeatixに移動）</small></a>
+</div>
+
+<section class="container">
+  <h2>スポンサー企業募集のお知らせ</h2>
+  <p>HTML5 Conference 2013では協賛企業を募集しております。
+  <p>ご協賛頂いた方には、<a href="./">本イベント告知サイト</a>でのロゴ掲載を通じて、参加者に御社がHTML5の取り組みを行なっていると強くアピールすることができます。 ほか、イベントスポンサーとしてカンファレンスにご参加頂けるほか、関係者限定の懇親会にも無料でご参加いただき、様々な企業、個人と交流を深めていただくことができます。
+  <p>関心をお持ちの方は、以下の応募フォームよりお気軽にお申込みください。折り返し、担当者からご連絡させていただきます<br>締め切りは<strong>11月8日</strong>とさせていただきます。
+
+  <p><a class="btn btn-default contact" data-contact-type="ask" href="https://docs.google.com/spreadsheet/viewform?formkey=dEFlVzg3b0E4ejdPUWpvLVZmdWFqOFE6MA#gid=0" target="_blank">スポンサー応募問い合わせフォーム</a>
+</section>
+
+<section class="container">
+  <h2>カンファレンス概要</h2>
+  <div class="row" itemscope itemtype="http://schema.org/Event">
+    <meta itemprop="name" content="HTML5 Conference 2013">
+    <meta itemprop="startDate" content="2013-11-30T12:00+09">
+    <meta itemprop="endDate" content="2013-11-30T19:30+09">
+    <div class="col-md-5">
+      <h3>開催日</h3>
+      <p>2013年11月30日（土）<br>12:00 - 19:30（受付開始 11:00）
+      <h3>対象者</h3>
+      <p>Web開発者、Webデザイナー
+      <h3>募集人数</h3>
+      <p>2,000名（先着順）
+      <h3>会場</h3>
+      <p itemprop="location" itemscope itemtype="http://schema.org/Place"><a itemprop="url" href="http://www.lsyoyaku.jp/" target="_blank"><span itemprop="name">NTT中央研修センタ</span></a><br>東京都調布市入間町1-44（<a href="http://goo.gl/maps/Kd5Gs">マップ</a>）
+      <h3>参加費</h3>
+      <p>無料
+    </div>
+    <div class="col-md-7">
+    <h3>主催 / メインスポンサー</h3>
+    	<%- show_sponsorlogos("organizer", sponsors.organizer, sponsors.main, false) %>
+    </div>
+  </div>
+</section>
+
+<section class="container">
+  <h2>スポンサー・後援</h2>
+  <h3>プラチナスポンサー</h3>
+    	<%- show_sponsorlogos("platinum", sponsors.platinum, [], true) %>
+  <h3>ゴールドスポンサー</h3>
+    	<%- show_sponsorlogos("gold", sponsors.gold, [], true) %>
+  <h3>シルバースポンサー</h3>
+    	<%- show_sponsorlogos("silver", sponsors.silver, [], true) %>
+  <h3>後援</h3>
+    	<%- show_sponsorlogos("support", sponsors.support, [], true) %>
+  <h3>メディアスポンサー</h3>
+    	<%- show_sponsorlogos("media", sponsors.media, [], true) %>
+</section>
+
+<% include footer %>

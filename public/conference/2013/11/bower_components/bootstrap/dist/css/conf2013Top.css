@@ -1,0 +1,22 @@
+
+
+
+.top-image {
+	background: url(../../../../img/topimgBg.jpg) no-repeat center center;
+	background-size: cover;
+	text-align: center;
+	padding: 100px 0;
+}
+
+
+.logo-wrapper {
+	display: inline-block;
+}
+
+#register {
+	margin-top: 3em;
+}
+
+#register .btn {
+
+}
