@@ -10,15 +10,11 @@
 <meta property="og:url" content="http://events.html5j.org/conference/2013/11/">
 <meta property="og:image" content="http://events.html5j.org/conference/2013/11/img/ogp.jpg">
 <meta property="og:description" content="HTML5 Conference 2013 ― 11月30日（土）調布 NTT中央研修センタにて開催。">
-
-<% if(id==="speaker") { %>
-<base href="../">
-<% } else { %>
-<% } %>
-<link href="bower_components/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
-<link href="bower_components/bootstrap/dist/css/conf2013.css" rel="stylesheet">
+<base href="/conference/2013/11/">
+<link href="/conference/2013/11/bower_components/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
+<link href="/conference/2013/11/bower_components/bootstrap/dist/css/conf2013.css" rel="stylesheet">
 <% if (id === "index") { %>
-<link href="bower_components/bootstrap/dist/css/conf2013Top.css" rel="stylesheet"><% } %>
+<link href="/conference/2013/11/bower_components/bootstrap/dist/css/conf2013Top.css" rel="stylesheet"><% } %>
 <% if (id === "sessions") { %><style>
 .break th, .break td {
   font-size: smaller;
@@ -61,16 +57,16 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <h1><img src="img/conf2013Logo.png" alt="HTML5 Conference 2013"></h1>
+      <h1><img src="/conference/2013/11/img/conf2013Logo.png" alt="HTML5 Conference 2013"></h1>
       </div>
       <div class="collapse navbar-collapse navbar-ex1-collapse">
         <ul class="nav navbar-nav">
-          <li class="<% if (id === 'index')    { %>active<% } %>"><a href="./">ホーム</a>
-          <li class="<% if (id === 'sessions') { %>active<% } %>"><a href="./sessions">セッション</a>
-          <li class="<% if (id === 'speakers' || id === 'speaker') { %>active<% } %>"><a href="./speakers">スピーカー</a>
-          <li class="<% if (id === 'access')   { %>active<% } %>"><a href="./access">会場・アクセス</a>
-          <li class="<% if (id === 'offering')   { %>active<% } %>"><a href="./offering">各種募集</a>
-          <li class="<% if (id === 'faq')      { %>active<% } %>"><a href="./faq">よくある質問</a>
+          <li class="<% if (id === 'index')    { %>active<% } %>"><a href="/conference/2013/11/">ホーム</a>
+          <li class="<% if (id === 'sessions') { %>active<% } %>"><a href="/conference/2013/11/sessions">セッション</a>
+          <li class="<% if (id === 'speakers' || id === 'speaker') { %>active<% } %>"><a href="/conference/2013/11/speakers">スピーカー</a>
+          <li class="<% if (id === 'access')   { %>active<% } %>"><a href="/conference/2013/11/access">会場・アクセス</a>
+          <li class="<% if (id === 'offering')   { %>active<% } %>"><a href="/conference/2013/11/offering">各種募集</a>
+          <li class="<% if (id === 'faq')      { %>active<% } %>"><a href="/conference/2013/11/faq">よくある質問</a>
         </ul>
       </div><!-- /.navbar-collapse -->
     </div><!-- /.container -->
