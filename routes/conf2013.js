@@ -47,6 +47,13 @@ exports.access = function (req, res) {
   });
 };
 
+exports.volunteer = function (req, res) {
+  res.render("2013/volunteer", {
+  	id: "volunteer"
+  	, title: "ボランティア募集 | HTML5 Conference 2013"
+  });
+};
+
 exports.offering = function (req, res) {
   res.render("2013/offering", {
     id: "offering"
