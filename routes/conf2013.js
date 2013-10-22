@@ -64,7 +64,7 @@ exports.offering = function (req, res) {
 exports.faq = function (req, res) {
   res.render("2013/faq", {
     id: "faq"
-    , title: "よくある質問 | HTML5 Conference 2013"
+    , title: "よくある質問・注意事項 | HTML5 Conference 2013"
   });
 };
 
