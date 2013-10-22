@@ -61,6 +61,13 @@ exports.offering = function (req, res) {
   });
 };
 
+exports.volunteers = function (req, res) {
+  res.render("2013/volunteers", {
+    id: "volunteers"
+    , title: "ボランティアスタッフ募集 | HTML5 Conference 2013"
+  });
+};
+
 exports.faq = function (req, res) {
   res.render("2013/faq", {
   	id: "faq"

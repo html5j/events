@@ -1,6 +1,11 @@
 
 function iconThrow () {
 	var canvas = document.querySelector("#overlay_canvas");
+
+	if ( document.documentElement.clientWidth < 480 ) {
+		canvas.setAttribute('style', "position: absolute; top: 0; left: 50%; width:600px; margin-left: -300px;");
+	}
+
 	var ctx = canvas.getContext("2d");
 	var frame_ids;
 	var requestAnimationFrame = window.requestAnimationFrame || window.mozRequestAnimationFrame ||
@@ -71,27 +76,28 @@ function iconThrow () {
 
 function iconImageReady () {
 	this.iconImages = [];
-	var thumbs = ["shumpei.png", "shumpei.png", "shumpei.png", "shumpei.png", "shumpei.png", "shumpei.png", "shumpei.png", "shumpei.png", "shumpei.png", "shumpei.png","shumpei.png", "shumpei.png", "shumpei.png", "shumpei.png", "shumpei.png", "shumpei.png", "shumpei.png", "shumpei.png", "shumpei.png", "shumpei.png","shumpei.png", "shumpei.png", "shumpei.png", "shumpei.png", "shumpei.png", "shumpei.png", "shumpei.png", "shumpei.png", "shumpei.png", "shumpei.png"]
+	var thumbs = [
+		"ayumu_sato.png",
+		"brian_birtles.png",
+		"daisuke_yamazaki.png",
+		"futomi_hatano.png",
+		"go_otani.png",
+		"hayato_ito.png",
+		"hiroki_tani.png",
+		"keisuke_ai.png",
+		"kensaku_komatsu.png",
+		"kosuke_nagano.png",
+		"masataka_yakura.png",
+		"satoshi_shoda.png",
+		"takuo_kihira.png",
+		"tomoya_asai.png",
+		"yoshitaka_kasugai.png",
+		"yuya_saito.png",
+	];
+
 	for (var i=0, l=thumbs.length; i<l; i++) {
 		var img = new Image();
-		img.src = "img/shumpei.png";
+		img.src = "img/speakers/icons/" + thumbs[i];
 		this.iconImages.push(img);
 	}
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

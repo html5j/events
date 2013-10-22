@@ -225,6 +225,15 @@ footer p a {
 	color:#fff;
 }
 
+.top-image {
+	position: relative;
+	height: 500px;
+}
+#canvas {
+	margin-top: 30px;
+	height:100%;
+	max-height:470px;
+}
 
 @media (max-width: 768px) {
 	
@@ -302,6 +311,14 @@ h1.faqH1 {
   font-size:28px;
 }
 
+.top-image {
+	height: 350px;
+}
+
+#canvas {
+	margin-top: 30px;
+	max-height:350px;
+}
 
 }
 
@@ -357,5 +374,12 @@ footer {
 	padding: 30px 0;
 }
 
+.top-image {
+	height: 250px;
+}
+
+#canvas {
+	max-height: 250px;
+}
 
 }
