@@ -211,7 +211,9 @@ body {
 	margin-top: 80px; /* the height of the navbar */
 }
 
-
+h1 {
+	line-height:1;
+}
 
 .navbar-header > h1  {
 	display:block;
@@ -287,7 +289,6 @@ h1.faqH1 {
 body {
 	margin-top: 80px; /* the height of the navbar */
 }
-
 
 .navbar-header > h1  {
 	float:left;
