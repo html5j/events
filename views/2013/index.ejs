@@ -1,36 +1,17 @@
 <% include header %>
 
 <!-- topImg -->
-    <div class="top-image" style="position: relative; height: 500px; ">
+    <div class="top-image">
 
       <!-- <div class="logo-wrapper">
         <img class="img-responsive" src="/conference/2013/11/img/logo.png" />
       </div> -->
 
       <div class="kurione-chan-anime" style="line-height: 0; position: absolute; top: 0; background: -webkit-linear-gradient(#daf1fb, #e1f7fe); background: linear-gradient(#daf1fb, #e1f7fe); width: 100%;">
-        <canvas id="canvas" width="550" height="470" style="margin-top: 30px;"></canvas>
+        <canvas id="canvas" width="550" height="470"></canvas>
         <canvas id="overlay_canvas" width="800" height="300" style="position: absolute; top: 0; left: 50%; margin-left: -400px;"></canvas>
       </div>
-
     </div>
-
-    <script src="http://code.createjs.com/easeljs-0.6.0.min.js"></script>
-    <script src="http://code.createjs.com/tweenjs-0.4.0.min.js"></script>
-    <script src="http://code.createjs.com/movieclip-0.6.0.min.js"></script>
-    <script src="js/logo_animation.js"></script>
-    <script src="js/icon_throw.js"></script>
-    <script>
-    var canvas, stage, exportRoot;
-    (function init() {
-      canvas = document.getElementById("canvas");
-      exportRoot = new lib.logo_animation();
-      stage = new createjs.Stage(canvas);
-      stage.addChild(exportRoot);
-      stage.update();
-      createjs.Ticker.setFPS(60);
-      createjs.Ticker.addEventListener("tick", stage);
-    })()
-    </script>
 <!-- /topImg -->
 
 
@@ -91,5 +72,25 @@
   <h3>メディアスポンサー</h3>
     	<%- show_sponsorlogos("media", sponsors.media, [], true) %>
 </section>
+
+<!-- for topImg -->
+<script src="http://code.createjs.com/easeljs-0.6.0.min.js"></script>
+<script src="http://code.createjs.com/tweenjs-0.4.0.min.js"></script>
+<script src="http://code.createjs.com/movieclip-0.6.0.min.js"></script>
+<script src="js/logo_animation.js"></script>
+<script src="js/icon_throw.js"></script>
+<script>
+var canvas, stage, exportRoot;
+window.onload = function() {
+  canvas = document.getElementById("canvas");
+  exportRoot = new lib.logo_animation();
+  stage = new createjs.Stage(canvas);
+  stage.addChild(exportRoot);
+  stage.update();
+  createjs.Ticker.setFPS(60);
+  createjs.Ticker.addEventListener("tick", stage);
+};
+</script>
+<!-- /for topImg -->
 
 <% include footer %>

@@ -40,15 +40,16 @@ if(process.env.AUTH==="BASIC") {
 app.get('/', routes.index);
 
 // conference 2013
-app.get('/conference/2013/11/', routes2013.index)
-app.get('/conference/2013/11/sessions', routes2013.sessions)
-app.get('/conference/2013/11/speakers', routes2013.speakers)
-app.get('/conference/2013/11/access', routes2013.access)
-app.get('/conference/2013/11/offering', routes2013.offering)
-app.get('/conference/2013/11/faq', routes2013.faq)
+app.get('/conference/2013/11/', routes2013.index);
+app.get('/conference/2013/11/sessions', routes2013.sessions);
+app.get('/conference/2013/11/speakers', routes2013.speakers);
+app.get('/conference/2013/11/access', routes2013.access);
+app.get('/conference/2013/11/offering', routes2013.offering);
+app.get('/conference/2013/11/volunteers', routes2013.volunteers);
+app.get('/conference/2013/11/faq', routes2013.faq);
 
-app.get('/conference/2013/11/speaker/:speaker_id', routes2013.speaker)
-app.get('/conference/2013/11/api/:model', routes2013.api)
+app.get('/conference/2013/11/speaker/:speaker_id', routes2013.speaker);
+app.get('/conference/2013/11/api/:model', routes2013.api);
 
 // run server
 app.listen(app.get('port'), function () {
