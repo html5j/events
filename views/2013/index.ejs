@@ -1,36 +1,17 @@
 <% include header %>
 
 <!-- topImg -->
-    <div class="top-image" style="position: relative; height: 500px; ">
+    <div class="top-image">
 
       <!-- <div class="logo-wrapper">
         <img class="img-responsive" src="/conference/2013/11/img/logo.png" />
       </div> -->
 
       <div class="kurione-chan-anime" style="line-height: 0; position: absolute; top: 0; background: -webkit-linear-gradient(#daf1fb, #e1f7fe); background: linear-gradient(#daf1fb, #e1f7fe); width: 100%;">
-        <canvas id="canvas" width="550" height="470" style="margin-top: 30px;"></canvas>
+        <canvas id="canvas" width="550" height="470"></canvas>
         <canvas id="overlay_canvas" width="800" height="300" style="position: absolute; top: 0; left: 50%; margin-left: -400px;"></canvas>
       </div>
-
     </div>
-
-    <script src="http://code.createjs.com/easeljs-0.6.0.min.js"></script>
-    <script src="http://code.createjs.com/tweenjs-0.4.0.min.js"></script>
-    <script src="http://code.createjs.com/movieclip-0.6.0.min.js"></script>
-    <script src="js/logo_animation.js"></script>
-    <script src="js/icon_throw.js"></script>
-    <script>
-    var canvas, stage, exportRoot;
-    (function init() {
-      canvas = document.getElementById("canvas");
-      exportRoot = new lib.logo_animation();
-      stage = new createjs.Stage(canvas);
-      stage.addChild(exportRoot);
-      stage.update();
-      createjs.Ticker.setFPS(60);
-      createjs.Ticker.addEventListener("tick", stage);
-    })()
-    </script>
 <!-- /topImg -->
 
 
@@ -41,16 +22,15 @@
   <p>今年は、昨年よりさらに質・量を向上させたカンファレンスを目指しています。募集人数はなんと<strong>2,000名！</strong>セッション数も30を予定しており、幅広いディベロッパー・デザイナーの方々に満足頂ける内容とすべく、スタッフ一同力を合わせてイベント作りに励んでいます。
   <p>私たちはこのイベントを、「<strong>Web技術者の祭典</strong>」と位置づけています。参加された方々が、最新のWeb技術トレンドを学びつつ、新たな交流を育み、そして最高に楽しく盛り上がれるイベントを目指しています。これは、私たちhtml5jの合言葉である「<strong>つながる、学べる、盛り上がる</strong>」に沿ったもの。40回以上の勉強会開催から得られた経験・実績・信頼を基に、参加者の皆様にご満足いただけるよう全力を尽くします。どうかご期待ください。
 
-  <p id="register"><a class="btn btn-default btn-lg contact" data-contact-type="join" target="_blank" href="http://html5conf2013.peatix.com/">HTML5 Conference 2013 に参加する<br><small>（イベント募集サイトPeatixに移動）</small></a>
+  <p id="register" class="center"><a class="btn btn-default btn-lg contact" data-contact-type="join" target="_blank" href="http://html5conf2013.peatix.com/">HTML5 Conference 2013 に参加する<br><small>（イベント募集サイトPeatixに移動）</small></a>
 </div>
 
-<section class="container">
-  <h2>スポンサー企業募集のお知らせ</h2>
-  <p>HTML5 Conference 2013では協賛企業を募集しております。
-  <p>ご協賛頂いた方には、<a href="./">本イベント告知サイト</a>でのロゴ掲載を通じて、参加者に御社がHTML5の取り組みを行なっていると強くアピールすることができます。 ほか、イベントスポンサーとしてカンファレンスにご参加頂けるほか、関係者限定の懇親会にも無料でご参加いただき、様々な企業、個人と交流を深めていただくことができます。
-  <p>関心をお持ちの方は、以下の応募フォームよりお気軽にお申込みください。折り返し、担当者からご連絡させていただきます<br>締め切りは<strong>11月8日</strong>とさせていただきます。
-
-  <p><a class="btn btn-default contact" data-contact-type="ask" href="https://docs.google.com/spreadsheet/viewform?formkey=dEFlVzg3b0E4ejdPUWpvLVZmdWFqOFE6MA#gid=0" target="_blank">スポンサー応募問い合わせフォーム</a>
+<section class="container" id="offering">
+  <h2>本カンファレンスでは、あなたの協力をお待ちしています！</h2>
+  <ul>
+    <li><a href="offering#sponsor">協賛企業（スポンサー）募集中！締切は2013年11月8日まで！</a></li>
+    <li><a href="volunteer">ボランティアスタッフ募集中！あなたも一緒に、このカンファレンスを作りませんか？</a></li>
+  </ul>
 </section>
 
 <section class="container">
@@ -91,5 +71,25 @@
   <h3>メディアスポンサー</h3>
     	<%- show_sponsorlogos("media", sponsors.media, [], true) %>
 </section>
+
+<!-- for topImg -->
+<script src="http://code.createjs.com/easeljs-0.6.0.min.js"></script>
+<script src="http://code.createjs.com/tweenjs-0.4.0.min.js"></script>
+<script src="http://code.createjs.com/movieclip-0.6.0.min.js"></script>
+<script src="js/logo_animation.js"></script>
+<script src="js/icon_throw.js"></script>
+<script>
+var canvas, stage, exportRoot;
+window.onload = function() {
+  canvas = document.getElementById("canvas");
+  exportRoot = new lib.logo_animation();
+  stage = new createjs.Stage(canvas);
+  stage.addChild(exportRoot);
+  stage.update();
+  createjs.Ticker.setFPS(60);
+  createjs.Ticker.addEventListener("tick", stage);
+};
+</script>
+<!-- /for topImg -->
 
 <% include footer %>
