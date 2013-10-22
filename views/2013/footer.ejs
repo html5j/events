@@ -1,3 +1,4 @@
+
 <footer>
   <p class="text-center"><a href="http://html5j.org/"><img src="/conference/2013/11/img/html5jlogoW.png" alt="html5j"></a></p>
 </footer>
@@ -12,6 +13,10 @@
 
   <div id="fb-root"></div>
   <script>(function(d, s) {
+    if (/iPhone|iPad|Android/.test(navigator.userAgent)) {
+      document.body.insertAdjacentHTML('beforeend', '<style>.social { display: none !important }</style>');
+      return;
+    }
     var js, fjs = d.getElementsByTagName(s)[0], load = function(url, id) {
       if (d.getElementById(id)) {return;}
       js = d.createElement(s); js.src = url; js.id = id;
