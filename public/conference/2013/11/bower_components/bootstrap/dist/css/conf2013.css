@@ -93,6 +93,11 @@ h1.accessH1 {
   background:url(../../../../img/access.png) left center no-repeat;
 }
 
+h1.offerH1 {
+  padding-left:68px;
+  line-height:65px;
+  background:url(../../../../img/offering_icon.png) left center no-repeat;
+}
 
 h1.faqH1 {
   padding-left:68px;
