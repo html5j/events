@@ -241,9 +241,16 @@ footer p a {
 }
 
 @media (max-width: 768px) {
-	
+
 body {
 	margin-top: 80px; /* the height of the navbar */
+}
+
+#offering {
+   width: 80%;
+}
+#offering ul {
+	padding-left: 1.2em;
 }
 
 h1 {
@@ -332,6 +339,17 @@ h1.faqH1 {
 	
 body {
 	margin-top: 80px; /* the height of the navbar */
+}
+
+#offering {
+   width: 90%;
+}
+#offering h2 {
+	font-size: 1.5em;
+	padding-bottom: 0.5em;
+}
+#offering ul {
+	padding-left: 1.2em;
 }
 
 .navbar-header > h1  {
