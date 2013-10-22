@@ -74,37 +74,37 @@ h1 {
 h1.topH1 {
   padding-left:68px;
   line-height:65px;
-  background:url(../../../../img/topH1.png) left center no-repeat;
+  background:url(../img/topH1.png) left center no-repeat;
 }
 
 h1.sessionsH1 {
   padding-left:68px;
   line-height:65px;
-  background:url(../../../../img/sessions.png) left center no-repeat;
+  background:url(../img/sessions.png) left center no-repeat;
 }
 
 h1.speakersH1 {
   padding-left:68px;
   line-height:65px;
-  background:url(../../../../img/speakers.png) left center no-repeat;
+  background:url(../img/speakers.png) left center no-repeat;
 }
 
 h1.accessH1 {
   padding-left:68px;
   line-height:65px;
-  background:url(../../../../img/access.png) left center no-repeat;
+  background:url(../img/access.png) left center no-repeat;
 }
 
 h1.offerH1 {
   padding-left:68px;
   line-height:65px;
-  background:url(../../../../img/offering_icon.png) left center no-repeat;
+  background:url(../img/offering_icon.png) left center no-repeat;
 }
 
 h1.faqH1 {
   padding-left:68px;
   line-height:65px;
-  background:url(../../../../img/faq.png) left center no-repeat;
+  background:url(../img/faq.png) left center no-repeat;
 }
 
 h2 {
