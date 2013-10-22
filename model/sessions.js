@@ -156,7 +156,7 @@ module.exports = [
   {
     "type": "break",
     "time": "16:00 - 16:15",
-    "text": "休憩（30分）"
+    "text": "休憩（15分）"
   },
   {
     "type" : "session",
