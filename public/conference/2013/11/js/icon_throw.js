@@ -77,25 +77,22 @@ function iconThrow () {
 function iconImageReady () {
 	this.iconImages = [];
 	var thumbs = [
-		"ayumu_sato.jpg",
-		"brian_birtles.jpg",
-		"daisuke_yamazaki.jpg",
-		"futomi_hatano.jpg",
-		"go_otani.jpg",
-		"hayato_ito.jpg",
-		"hiroki_tani.jpg",
-		"keisuke_ai.jpg",
-		"kensaku_komatsu.jpg",
-		"koji_ishimoto.jpg",
-		"kosuke_nagano.jpg",
-		"kyo_ago.jpg",
-		"masataka_yakura.jpg",
-		"ryoya_kawai.jpg",
-		"satoshi_shoda.jpg",
-		"takuo_kihira.jpg",
+		"ayumu_sato.png",
+		"brian_birtles.png",
+		"daisuke_yamazaki.png",
+		"futomi_hatano.png",
+		"go_otani.png",
+		"hayato_ito.png",
+		"hiroki_tani.png",
+		"keisuke_ai.png",
+		"kensaku_komatsu.png",
+		"kosuke_nagano.png",
+		"masataka_yakura.png",
+		"satoshi_shoda.png",
+		"takuo_kihira.png",
 		"tomoya_asai.png",
-		"yoshitaka_kasugai.jpg",
-		"yuya_saito.jpg"
+		"yoshitaka_kasugai.png",
+		"yuya_saito.png",
 	];
 
 	for (var i=0, l=thumbs.length; i<l; i++) {
