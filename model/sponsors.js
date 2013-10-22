@@ -285,6 +285,11 @@ module.exports = {
     "href": "http://jp.techcrunch.com/",
     "img_url": "img/sponsors/techcrunch/techcrunch_120w.png"
   },
-
+  {
+    "id": "hxjp",
+    "alt": "HTML5 Experts.jp",
+    "href": "http://html5experts.jp/",
+    "img_url": "img/sponsors/hxjp/hxjp_120w.png"
+  }
   ],
 }
