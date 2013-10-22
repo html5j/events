@@ -33,6 +33,19 @@ h2 .time {
   color: #777;
 }
 </style><% } %>
+
+<style>
+  .social {
+  }
+  .social ul {
+    margin-top: 0.5em;
+    margin-bottom: 0;
+    list-style: none;
+  }
+  .social ul li {
+    display: inline;
+  }
+  </style>
 </head>
 
 <body>
@@ -64,6 +77,32 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       </button>
       <h1><img src="/conference/2013/11/img/conf2013Logo.png" alt="HTML5 Conference 2013"></h1>
       </div>
+
+  <!-- BEGIN: Social Buttons -->
+<div class="container">
+<div class="social">
+  <ul>
+    <!-- Google+ -->
+    <li class="google">
+      <div class="g-plusone" data-href="http://events.html5j.org/conference/2013/11/" data-width="120"></div>
+    </li>
+    <!-- Facebook -->
+    <li class="facebook">
+      <div class="fb-like" data-href="http://events.html5j.org/conference/2013/11/" data-send="false" data-layout="button_count" data-width="120" data-show-faces="false"></div>
+    </li>
+    <!-- Twitter -->
+    <li class="twitter">
+      <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://events.html5j.org/conference/2013/11/" data-text="HTML5 Conference 2013" data-via="html5j" data-lang="ja" data-hashtags="html5j">ツイート</a>
+    </li>
+    <!-- はてな -->
+    <li class="hatena">
+      <a href="http://b.hatena.ne.jp/entry/http://events.html5j.org/conference/2013/11/" class="hatena-bookmark-button" data-hatena-bookmark-title="HTML5 Conference 2013" data-hatena-bookmark-layout="standard" title="このエントリーをはてなブックマークに追加"><img src="http://b.st-hatena.com/images/entry-button/button-only.gif" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" /></a>
+    </li>
+  </ul>
+</div>
+</div>
+<!-- END: Social Buttons -->
+  
       <div class="collapse navbar-collapse navbar-ex1-collapse">
         <ul class="nav navbar-nav">
           <li class="<% if (id === 'index')    { %>active<% } %>"><a href="/conference/2013/11/">ホーム</a>
@@ -75,6 +114,19 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           <li class="<% if (id === 'faq')      { %>active<% } %>"><a href="/conference/2013/11/faq">よくある質問</a>
         </ul>
       </div><!-- /.navbar-collapse -->
+
+
+
     </div><!-- /.container -->
   </nav>
+
 </header>
+
+  <!-- schema.org (for g+) -->
+  <div itemscope itemtype="http://schema.org/Event">
+    <meta itemprop="name" content="HTML5 Conference 2013">
+    <meta itemprop="description" content="HTML5 Conference 2013\n11/30(SAT) TOKYO">
+    <meta itemprop="image" content="./img/ogp.jpg">
+  </div>
+
+ 
