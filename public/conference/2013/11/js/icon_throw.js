@@ -10,7 +10,7 @@ function iconThrow () {
 	var frame_ids;
 	var requestAnimationFrame = window.requestAnimationFrame || window.mozRequestAnimationFrame ||
                             window.webkitRequestAnimationFrame || window.msRequestAnimationFrame;
-	var cancelAnimationFrame = window.cancelAnimationFrame || window.mozCancelAnimationFrame || cancelAnimationFrame;
+	var cancelAnimationFrame = window.cancelAnimationFrame || window.webkitCancelAnimationFrame || window.mozCancelAnimationFrame || cancelAnimationFrame;
 	function init () {
 		var iconList = [], loopTime = 0;
 		var iImages = new iconImageReady();
