@@ -10,7 +10,7 @@ function iconThrow () {
 	var frame_ids;
 	var requestAnimationFrame = window.requestAnimationFrame || window.mozRequestAnimationFrame ||
                             window.webkitRequestAnimationFrame || window.msRequestAnimationFrame;
-	var cancelAnimationFrame = window.cancelAnimationFrame || window.mozCancelAnimationFrame || cancelAnimationFrame;
+	var cancelAnimationFrame = window.cancelAnimationFrame || window.webkitCancelAnimationFrame || window.mozCancelAnimationFrame || cancelAnimationFrame;
 	function init () {
 		var iconList = [], loopTime = 0;
 		var iImages = new iconImageReady();
@@ -33,9 +33,10 @@ function iconThrow () {
 			if(loopTime > 50) {
 				cancelAnimationFrame(frame_ids);
 				//console.log(jQuery)
-				$(".kurione-chan-anime").delay(1500).fadeOut(1500, function () {
-					$(this).remove();
-				})
+				// $(".kurione-chan-anime").delay(1500).fadeOut(1500, function () {
+				// 	$(this).remove();
+				// })
+				$(".kurione-chan-anime").delay(1500).fadeOut(1500);
 			}
 		}
 		draw();
