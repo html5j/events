@@ -138,31 +138,24 @@ table.table thead tr th {
 }
 
 table.table {
-    
     empty-cells: show;
-
-border-collapse: separate;
+    border-collapse: separate;
 }
 
 table.table tr th.time {
     background: #fff;
     border: 2px solid  #f5f1e8 ;
-    
 }
-
-
 
 table.table tr td.session {
     background: #fff;
     border: 2px solid  #f5f1e8 ;
-    
+    width: 180px;
 }
-
 
 .sesssion-title {
     font-size: 16px;
 }
-
 
 .map {
     width: 600px;
