@@ -239,7 +239,7 @@ var rooms_ = [
                         '<% if(flag) { %><br><% } %>', 
                         '<% if(Speakers[id]) { %>',
                             '<a href="./speaker/<%= id %>">', 
-                            '<% if(Speakers[id].img_url) { %><img width="96" height="96" alt="" src="/conference/2013/11/<%= Speakers[id].img_url %>"><% } %>', 
+                            '<% if(Speakers[id].img_url) { %><img width="96" alt="<%= Speakers[id].name %>" src="/conference/2013/11/<%= Speakers[id].img_url %>"><% } %>', 
                             '<span class="name"><%= Speakers[id].name %></span>', '    </a>', 
                             '<% if(Speakers[id].affiliation) { %><br><span class="affiliation"><%= Speakers[id].affiliation %></span><% } %>', 
                         '<% } else { %>',
