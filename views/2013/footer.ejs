@@ -11,8 +11,9 @@
 <script src="/conference/2013/11/js/script4session.js"></script>
 <% } %>
 
-  <div id="fb-root"></div>
-  <script>(function(d, s) {
+<div id="fb-root"></div>
+<script>
+  (function(d, s) {
     if (/iPhone|iPad|Android/.test(navigator.userAgent)) {
       document.body.insertAdjacentHTML('beforeend', '<style>.social { display: none !important }</style>');
       return;
@@ -26,8 +27,9 @@
     load('https://apis.google.com/js/plusone.js', 'gplus1js');
     load('//platform.twitter.com/widgets.js', 'tweetjs');
     load('//b.st-hatena.com/js/bookmark_button.js', 'hatena');
-  }(document, 'script'));</script>
-  <script>
+  }(document, 'script'));
+</script>
+<script>
   var _gaq = _gaq || [];
   _gaq.push(['_setAccount', 'UA-4956033-6']);
   _gaq.push(['_trackPageview']);
@@ -37,6 +39,6 @@
     ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
   })();
-  </script>
+</script>
 </body>
 </html>
