@@ -200,7 +200,7 @@ module.exports = {
   "daisuke_yamazaki": {
     "name": "山崎 大助",
     "url": "",
-    "affiliation": "魚津システム",
+    "affiliation": "魚津システム/デジタルハリウッド講師",
     "img_url": "img/speakers/daisuke_yamazaki.jpg",
     "description": "@@@受賞歴：Microsoft MVP（BingMapsDevelopment）$$$著書：   レスポンシブWebデザイン「超」実践デザイン集中講義@@@@it、日経ソフトウェア、SoftwareDesign、ITPro、Web業界誌での執筆など、html5jビギナー部（セミナー）を開催したりと活動をおこなっている。日経PC21「名作フリーソフトを訪ねて」では開発したアプリが選ばれ掲載。@itでは ” HTML5アプリ作ろうぜ！” を連載執筆中。"
   },
