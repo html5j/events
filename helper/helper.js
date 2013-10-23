@@ -229,7 +229,7 @@ var rooms_ = [
                 '<% var c = 0; %>',
                 '<% _.each(item.sessions, function(session) { %>',
                     '<li class="list-group-item">',
-                    '<p class="room"><%= rooms[c] %></p>',
+                    '<p class="room"><span class="label label-default"><%= rooms[c] %></span></p>',
 
                     '<h4 class="sesssion-title" id="s<%= session.id %>"><%= session.title %></h4>',
                     '<p class="session-speaker">',
