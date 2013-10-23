@@ -290,6 +290,36 @@ module.exports = {
     "alt": "HTML5 Experts.jp",
     "href": "http://html5experts.jp/",
     "img_url": "img/sponsors/hxjp/hxjp_120w.png"
+  },
+  {
+    "id": "atmarkit",
+    "alt": "＠IT",
+    "href": "http://www.atmarkit.co.jp/",
+    "img_url": "img/sponsors/atmarkit/atmarkit_120w.png"
+  },
+  {
+    "id": "codeiq",
+    "alt": "CodeIQ MAGAZINE",
+    "href": "https://codeiq.jp/magazine/",
+    "img_url": "img/sponsors/codeiq/codeiq_120w.png"
+  },
+  {
+    "id": "gihyo",
+    "alt": "技術評論社",
+    "href": "http://gihyo.jp/",
+    "img_url": "img/sponsors/gihyo/gihyo_120w.png"
+  },
+  {
+    "id": "iptv",
+    "alt": "IPTVフォーラム",
+    "href": "http://www.iptvforum.jp/",
+    "img_url": "img/sponsors/iptv/iptv_120w.png"
+  },
+  {
+    "id": "techwave",
+    "alt": "TechWave",
+    "href": "http://techwave.jp/",
+    "img_url": "img/sponsors/techwave/techwave_120w.png"
   }
   ],
 }
