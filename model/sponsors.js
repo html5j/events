@@ -276,6 +276,12 @@ module.exports = {
     "href": "http://www.mozilla.jp/",
     "img_url": "img/sponsors/mozilla/mozilla_120w.png"
   },
+  {
+    "id": "iptv",
+    "alt": "IPTVフォーラム",
+    "href": "http://www.iptvforum.jp/",
+    "img_url": "img/sponsors/iptv/iptv_120w.png"
+  },
   ],
 
   "media": [
@@ -308,12 +314,6 @@ module.exports = {
     "alt": "技術評論社",
     "href": "http://gihyo.jp/",
     "img_url": "img/sponsors/gihyo/gihyo_120w.png"
-  },
-  {
-    "id": "iptv",
-    "alt": "IPTVフォーラム",
-    "href": "http://www.iptvforum.jp/",
-    "img_url": "img/sponsors/iptv/iptv_120w.png"
   },
   {
     "id": "techwave",
