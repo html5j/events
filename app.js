@@ -42,6 +42,7 @@ app.get('/', routes.index);
 // conference 2013
 app.get('/conference/2013/11/', routes2013.index);
 app.get('/conference/2013/11/sessions', routes2013.sessions);
+app.get('/conference/2013/11/sessions_v', routes2013.sessions_v);
 app.get('/conference/2013/11/speakers', routes2013.speakers);
 app.get('/conference/2013/11/access', routes2013.access);
 app.get('/conference/2013/11/volunteer', routes2013.volunteer);

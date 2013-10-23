@@ -174,4 +174,102 @@ Helper.show_sessions = function(sessions, speakers) {
     return compiled({sessions: sessions, Speakers: speakers})
 }
 
+
+Helper.show_sessions_v = function(sessions, speakers) {
+
+var rooms_ = [
+  'ルーム1A (1F) ',
+  'ルーム2A (2F) ',
+  'ルーム5A (5F) ',
+  'ルーム5B (5F) ',
+  'ルーム5C (5F) ',
+  'ルーム6A (6F) '
+];
+    _.each(sessions, function(row){
+        _.each(row.sessions, function(session){
+            session.desc = session.description.replace(/\$\$\$/g, "<br>")
+        });
+    });
+    var template = [
+        '<div class="sessions">',
+        // '<table class="table">',
+        // '<thead>',
+        // '  <tr>',
+        // '    <th scope="col">時間',
+        // '    <th scope="col">ルーム1A<br>(1F)',
+        // '    <th scope="col">ルーム2A<br>(2F)',
+        // '    <th scope="col">ルーム5A<br>(5F)',
+        // '    <th scope="col">ルーム5B<br>(5F)',
+        // '    <th scope="col">ルーム5C<br>(5F)',
+        // '    <th scope="col">ルーム6A<br>(6F)',
+        // '</thead>',
+
+        '<% _.each(sessions, function(item) { %>',
+        '<% if (item.type === "break") { %>',
+
+            '<div class="panel panel-default">',
+                '<div class="panel-heading">',
+                    '<%= item.time %>',
+                '</div>',
+                '<div class="panel-body break">',
+                    '<%= item.text %>',
+                '</div>',
+            '</div>',
+
+        '<% } else { %>',
+
+            '<div class="panel panel-default">',
+                '<div class="panel-heading">',
+                    '<%= item.time %>',
+                '</div>',
+        
+                '<div class="panel-body session">',
+                '<ul class="list-group">',
+
+                '<% var c = 0; %>',
+                '<% _.each(item.sessions, function(session) { %>',
+                    '<li class="list-group-item">',
+                    '<p class="room"><%= rooms[c] %></p>',
+
+                    '<h4 class="sesssion-title" id="s<%= session.id %>"><%= session.title %></h4>',
+                    '<p class="session-speaker">',
+
+                    '<% var flag = false; %>',
+                    '<% _.each(session.speakers, function(id) { %>',
+                        '<% if(flag) { %><br><% } %>', 
+                        '<% if(Speakers[id]) { %>',
+                            '<a href="./speaker/<%= id %>">', 
+                            '<% if(Speakers[id].img_url) { %><img width="96" height="96" alt="" src="/conference/2013/11/<%= Speakers[id].img_url %>"><% } %>', 
+                            '<span class="name"><%= Speakers[id].name %></span>', '    </a>', 
+                            '<% if(Speakers[id].affiliation) { %><br><span class="affiliation"><%= Speakers[id].affiliation %></span><% } %>', 
+                        '<% } else { %>',
+                            '<span>調整中</span>',
+                        '<% } %>',
+                    '<% flag = true; %>',
+
+                    '<% }); %>',
+
+                    '<div class="session-desc">',
+                        '<p><%= session.desc %>',
+                    '</div>',
+                // '  <hr>',
+                // '  <div class="materials">',
+                // '    <p><!--<span class="button">講演資料</span><span class="button">講演映像</span>--></p>',
+                // '  </div>',
+                    '</li>',
+                    '<% c++; %>',
+                '<% }); %>',
+                '</ul>',
+                '</div>',
+            '</div>',
+        '<% } %>',
+        '<% }); %>',
+
+        '</div>',
+    ].join("\n")
+    var compiled = _.template(template)
+
+    return compiled({sessions: sessions, Speakers: speakers, rooms: rooms_})
+}
+
 module.exports = Helper;
