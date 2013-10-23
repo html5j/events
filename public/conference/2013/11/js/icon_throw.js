@@ -33,9 +33,10 @@ function iconThrow () {
 			if(loopTime > 50) {
 				cancelAnimationFrame(frame_ids);
 				//console.log(jQuery)
-				$(".kurione-chan-anime").delay(1500).fadeOut(1500, function () {
-					$(this).remove();
-				})
+				// $(".kurione-chan-anime").delay(1500).fadeOut(1500, function () {
+				// 	$(this).remove();
+				// })
+				$(".kurione-chan-anime").delay(1500).fadeOut(1500);
 			}
 		}
 		draw();
