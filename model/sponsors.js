@@ -325,7 +325,7 @@ module.exports = {
     "id": "inthelooop",
     "alt": "in the looop（イン・ザ・ループ）",
     "href": "http://media.looops.net/",
-    "img_url": "img/sponsors/intheloop/intheloo0p_120w.png"
+    "img_url": "img/sponsors/intheloop/inthelooop_120w.png"
   }
   ],
 }
