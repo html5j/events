@@ -322,10 +322,10 @@ module.exports = {
     "img_url": "img/sponsors/techwave/techwave_120w.png"
   },
   {
-    "id": "intheloop",
+    "id": "inthelooop",
     "alt": "in the looop（イン・ザ・ループ）",
     "href": "http://media.looops.net/",
-    "img_url": "img/sponsors/intheloop/intheloop_120w.png"
+    "img_url": "img/sponsors/intheloop/intheloo0p_120w.png"
   }
   ],
 }
