@@ -320,6 +320,12 @@ module.exports = {
     "alt": "TechWave",
     "href": "http://techwave.jp/",
     "img_url": "img/sponsors/techwave/techwave_120w.png"
+  },
+  {
+    "id": "intheloop",
+    "alt": "in the looop（イン・ザ・ループ）",
+    "href": "http://media.looops.net/",
+    "img_url": "img/sponsors/intheloop/intheloop_120w.png"
   }
   ],
 }
