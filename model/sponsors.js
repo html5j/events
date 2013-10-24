@@ -68,7 +68,7 @@ module.exports = {
   "gold": [
   {
     "id": "codeiq",
-    "alt": "株式会社リクルートキャリア（CodeIQ）",
+    "alt": "CodeIQ",
     "href": "https://codeiq.jp/",
     "img_url": "img/sponsors/codeiq/codeiq_150w.png"
   },
