@@ -87,8 +87,7 @@ module.exports = {
     "name": "川田 寛",
     "url": "",
     "affiliation": "",
-    // "img_url": "img/speakers/hiroshi_kawada.jpg",
-    "img_url": "",
+    "img_url": "img/speakers/hiroshi_kawada.jpg",
     "description": "@@@html5jのサブグループ「えんぷら部(エンタープライズ部)」の部長。日本Javaユーザ会やMicrosoftの協力の下「業務システムエンジニアのためのHTML5勉強会」を開催し、国内のSI領域へHTML5などの新しいWeb技術を推進する。@@@Twitter：@kawada_hiroshi$$$Blog：http://furoshiki.hatenadiary.jp/"
   },
 
@@ -179,6 +178,14 @@ module.exports = {
     "affiliation": "有限会社futomi/株式会社ニューフォリア",
     "img_url": "img/speakers/futomi_hatano.jpg",
     "description": "@@@HTML5の気運が高まる以前からHTML5の探求を始め、HTML5専門サイト「HTML5.JP」を立ち上げ、HTML5の普及啓蒙に関わり、HTML5関連書籍や雑誌記事執筆も行う。$$$2011年 (株)ニューフォリア取締役(最高技術責任者)に就任し、HTML5を使ったコンテンツ作りの指揮を執る。また、W3CにてWeb-based Signage Business Groupの共同議長を務める。$$$主な著書に『HTMLとJavaScriptではじめるWindowsストアアプリ開発入門』、『徹底解説 HTML5 APIガイドブック ビジュアル系API編』、『徹底解説HTML5マークアップガイドブック 最終草案対応版』（秀和システム）、共著に『HTML5ガイドブック 増補改訂版 (Google Expert Series) 』（インプレスジャパン）など。"
+  },
+
+  "kei_funagayama": {
+    "name": "船ヶ山慶",
+    "url": "",
+    "affiliation": "株式会社サイバーエージェント アメーバ事業本部ゲーム部門 エンジニア",
+    "img_url": "img/speakers/kei_funagayama.jpg",
+    "description": "@@@渋谷のドクターペッパー好きな会社で、インフラ向けのLinuxパッケージソフト開発に従事。2010年より株式会社サイバーエージェントに入社し、インフラ(AWS, MongoDB)、サーバーサイド(Java, Python,node.js)、フロントサイド(HTML・CSS・JavaScript)など幅広く担当。ここ２年はブラウザスマートフォン向けのwebアプリケーション開発を担当。"
   },
 
   "brian_birtles": {
