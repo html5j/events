@@ -59,6 +59,14 @@ module.exports = {
     "description": "@@@1986年岐阜県生まれ。多摩美術大学美術学部卒。 $$$2010年より株式会社サイバーエージェントに入社し、HTML・CSS・JavaScriptを用いたスマートフォン向けのwebアプリ ケーション開発を担当。$$$著書に「Adobe Edge Animate 標準ガイドブック」。"
   },
 
+  "shigeki_ohtsu": {
+    "name": "大津 繁樹",
+    "url": "",
+    "affiliation": "株式会社 インターネットイニシアティブ",
+    "img_url": "img/speakers/shigeki_ohtsu.jpg",
+    "description": "@@@とにかく新しく面白い技術を追っかけるのが好きで、これら最新技術の検証や評価を普段行っています。今は旬のサーバとクライアントを結ぶSPDYやHTTP/2.0といった新プロトコルの追っかけをしています。他にもガジェット系デバイスにも手を伸ばし、次に流行る技術を常に探しています。@@@blog: http://d.hatena.ne.jp/jovi0608/$$$twitter: @jovi0608"
+  },
+
   "takao_obara": {
     "name": "小原 隆郎",
     "url": "",
@@ -178,6 +186,14 @@ module.exports = {
     "affiliation": "有限会社futomi/株式会社ニューフォリア",
     "img_url": "img/speakers/futomi_hatano.jpg",
     "description": "@@@HTML5の気運が高まる以前からHTML5の探求を始め、HTML5専門サイト「HTML5.JP」を立ち上げ、HTML5の普及啓蒙に関わり、HTML5関連書籍や雑誌記事執筆も行う。$$$2011年 (株)ニューフォリア取締役(最高技術責任者)に就任し、HTML5を使ったコンテンツ作りの指揮を執る。また、W3CにてWeb-based Signage Business Groupの共同議長を務める。$$$主な著書に『HTMLとJavaScriptではじめるWindowsストアアプリ開発入門』、『徹底解説 HTML5 APIガイドブック ビジュアル系API編』、『徹底解説HTML5マークアップガイドブック 最終草案対応版』（秀和システム）、共著に『HTML5ガイドブック 増補改訂版 (Google Expert Series) 』（インプレスジャパン）など。"
+  },
+
+  "tatsuya_hayashi": {
+    "name": "林 達也 (@lef)",
+    "url": "",
+    "affiliation": "株式会社レピダム",
+    "img_url": "img/speakers/tatsuya_hayashi.jpg",
+    "description": "@@@IETF, W3C, OIDF等で標準化活動を主体とし、idcon運営のOIDF-Jプロデューサー等の技術コミュニティ活動を行う。$$$業務はID関係を中心に、通信、プログラミング(言語/コンパイラ/etc)、セキュリティ(認証・認可/脆弱性/etc)、プライバシー等。@@@https://twitter.com/lef$$$http://jp.linkedin.com/in/hayashitatsuya/"
   },
 
   "kei_funagayama": {

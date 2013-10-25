@@ -147,7 +147,7 @@ module.exports = [
       {
         "id" : "6f-l-3",
         "title": "HTTP/2.0がもたらすWebサービスの進化",
-        "speakers": [""],
+        "speakers": ["shigeki_ohtsu", "tatsuya_hayashi"],
         "description": "GoogleやTwitterが大規模に導入しているSPDYをベースとして、HTTP/2.0の標準化作業が現在急ピッチで進められています。$$$十数年ぶりに改訂されるこの新プロトコルによってWebサービスが今後どう変わるのか、デモを交えてHTTP/2.0の概要について解説します。",
         "materials": null
       }
