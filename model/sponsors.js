@@ -105,12 +105,17 @@ module.exports = {
     "href": "http://japan.intel.com/swdev/",
     "img_url": "img/sponsors/intel/intel_150w.png"
   },
-
   {
     "id": "ntt-docomo",
     "alt": "株式会社NTTドコモ",
     "href": "http://www.nttdocomo.co.jp/",
     "img_url": "img/sponsors/ntt-docomo/docomo_150w.png"
+  },
+  {
+    "id": "nri",
+    "alt": "株式会社野村総合研究所",
+    "href": "http://www.nri-aitd.com/",
+    "img_url": "img/sponsors/nri/nri_150w.png"
   },
 /*
   {
@@ -326,6 +331,12 @@ module.exports = {
     "alt": "in the looop（イン・ザ・ループ）",
     "href": "http://media.looops.net/",
     "img_url": "img/sponsors/inthelooop/inthelooop_120w.png"
+  },
+  {
+    "id": "mynavi",
+    "alt": "マイナビニュース",
+    "href": "http://news.mynavi.jp/devse/programming/index.html",
+    "img_url": "img/sponsors/mynavi/mynavi_120w.png"
   }
   ],
 }
