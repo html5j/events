@@ -132,7 +132,7 @@ h3 {
 
 table.table thead tr th {
     background: #f3895b;
-    border: 2px solid  #f5f1e8 ;
+    border: 2px solid #f5f1e8;
     color: #fff;
     
 }
@@ -144,13 +144,13 @@ table.table {
 
 table.table tr th.time {
     background: #fff;
-    border: 2px solid  #f5f1e8 ;
+    border: 2px solid #f5f1e8;
 }
 
 table.table tr td.session {
     background: #fff;
-    border: 2px solid  #f5f1e8 ;
-    width: 180px;
+    border: 2px solid #f5f1e8;
+    min-width: 180px;
 }
 
 .sesssion-title {

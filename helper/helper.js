@@ -103,7 +103,7 @@ Helper.show_sessions = function(sessions, speakers) {
         });
     });
     var template = [
-        '<div class="table-responsive">',
+        '<div class="">',
         '<table class="table">',
         '<thead>',
         '  <tr>',
