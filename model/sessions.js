@@ -185,9 +185,9 @@ module.exports = [
       },
       {
         "id" : "5f-s0-4",
-        "title": "ブラウザとMIDIの出会いが広げるWebとメディアの新しい世界（仮）",
+        "title": "ブラウザとMIDIの出会いが拓くWebとMusicの新しい世界",
         "speakers": ["ryoya_kawai"],
-        "description": "Web MIDI APIはWeb Audio APIと並ぶ音楽系のAPIです。「知らない」、「分からない」、「難しい」とイメージしがちなMIDIですが、実は難しくなく、Web MIDI APIを使うことであらゆる電子楽器をブラウザから操作、また電子楽器からブラウザを操作することができるようになります。$$$本セッションではWeb MIDI APIの概要、またMIDIの基礎を紹介を、適応した実例をまじえて説明します。",
+        "description": "Web MIDI APIはWeb Audio APIと並ぶ音楽系のAPIです。あまり馴染みのないMIDIですが、Web MIDI APIを使うことであらゆる電子楽器とブラウザの接続が簡単にでき電子楽器からブラウザ上のアプリケーションを操作、また逆に、ブラウザ上のアプリケーションから電子楽器を操作することが可能です。$$$本セッションではMIDIの基礎、Web MIDI APIの概要、また10月末に発表されたハードウェア版VOCALOIDが搭載されたeVY1 SHIELDを使ったデモアプリケーション等のご紹介をまじえWebとMusicの世界についてお話させていただきます。",
         "materials": null
       },
       {
