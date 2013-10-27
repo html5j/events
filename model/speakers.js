@@ -78,7 +78,7 @@ module.exports = {
     "name": "河合 良哉",
     "affiliation": "AMEI Web MIDI WG/ヤマハ株式会社",
     "img_url": "img/speakers/ryoya_kawai.jpg",
-    "description": "@@@Web音楽好きが集まるWeb Music Developers JPの管理人。$$$音の加工を細やかに行うWeb Audio API、Webと楽器をつなぐ可能性を秘めたWeb MIDI APIのアプリケーションを公開し続けることで、普及を目指し活動を行っている。この10月から所属団体のAMEIがWeb Audio API、Web MIDI APIの仕様を策定しているW3CのAudio Working Groupに参加をし、より一層活発に活動を行っていく予定です。@@@twitter @ryoyakawai$$$Google+ https://plus.google.com/u/0/108242669191458983485/posts"
+    "description": "@@@Web音楽好きが集まるWeb Music Developers JPの管理人。$$$音の加工を細やかに行うWeb Audio API、Webと楽器をつなぐ可能性を秘めたWeb MIDI APIのアプリケーションを公開し続けることで、普及を目指し活動を行っている。この10月から所属団体のAMEIがWeb Audio API、Web MIDI APIの仕様を策定しているW3CのAudio Working Groupに参加をし、より一層活発に活動を行っていく予定です。@@@twitter @ryoyakawai$$$Google+ https://plus.google.com/108242669191458983485"
   },
 
   "hiroshi_kawada": {
@@ -181,7 +181,7 @@ module.exports = {
   },
 
   "kei_funagayama": {
-    "name": "船ヶ山慶",
+    "name": "船ヶ山 慶",
     "affiliation": "株式会社サイバーエージェント",
     "affiliation_sub": "アメーバ事業本部ゲーム部門 エンジニア",
     "img_url": "img/speakers/kei_funagayama.jpg",
@@ -196,7 +196,7 @@ module.exports = {
   },
 
   "masataka_yakura": {
-    "name": "矢倉 眞隆",
+    "name": "矢倉 眞隆 (myakura)",
     "img_url": "img/speakers/masataka_yakura.jpg",
     "description": "@@@「ホームページを作りたい」という思いからHTML, CSSを学び始めるが、ホームページを作るよりそちらの方に興味を持ってしまい、以来HTML, CSS, 各種APIなどのWeb標準仕様やWebブラウザの動向を追いかける毎日をおくる。これまでにHTML5やCSS3に関するブログ記事・雑誌記事の執筆、セミナー・勉強会などでの公演、海外のWeb開発関連書籍の監訳、Web標準仕様書や海外のブログ記事の翻訳などを行う。いろんなところでmyakura。"
   },
