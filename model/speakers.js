@@ -7,7 +7,7 @@ module.exports = {
     "name": "藍 圭介",
     "affiliation": "小樽商科大学",
     "img_url": "img/speakers/keisuke_ai.jpg",
-    "description": "@@@ブラウザで動くモーグ風シンセサイザーWeb Audio Synth (http://aikelab.net/websynth/) をはじめ、Web Audio APの黎明期から各種ウェブ楽器を公開している。今夏まで在籍していたクリプトン・フューチャー・メディアではソーシャルウェブ楽器Beatonica (http://beatonica.com/) の企画と開発を担当。その他VSTプラグインやKONTAKTライブラリなどプラットホームに関わらず音に関するプログラミングを中心にブログで公開中。@@@blog: http://d.hatena.ne.jp/aike/$$$twitter: @aike1000"
+    "description": "@@@ブラウザで動くモーグ風シンセサイザーWeb Audio Synth ( http://aikelab.net/websynth/ ) をはじめ、Web Audio APの黎明期から各種ウェブ楽器を公開している。今夏まで在籍していたクリプトン・フューチャー・メディアではソーシャルウェブ楽器Beatonica ( http://beatonica.com/ ) の企画と開発を担当。その他VSTプラグインやKONTAKTライブラリなどプラットホームに関わらず音に関するプログラミングを中心にブログで公開中。@@@blog: http://d.hatena.ne.jp/aike/$$$twitter: @aike1000"
   },
 
   "kyo_ago": {
@@ -26,7 +26,6 @@ module.exports = {
   "yasunobu_ikeda": {
     "name": "池田 泰延",
     "affiliation": "株式会社 ICS",
-    "img_url": "",
     "description": "@@@テクニカルディレクターとしてHTML5やFlashを用いたプロモーションサイトの制作や、ゲームやアプリの開発を主に手がける。Webのインタラクティブ表現に関する最新技術を研究し、ブログ「ClockMaker」やセミナー・勉強会で積極的に情報共有に取り組んでいる。筑波大学非常勤講師も務める。@@@ 主な著書に、『HTML5インタラクティブ表現ガイド』（技術評論社）、『Stage3Dプログラミング ～GPUを使ったFlash 3Dコンテンツ制作～』（ワークスコーポレーション）など。@@@ClockMaker　http://clockmaker.jp/blog/$$$ICS INC.　http://ics-web.jp/$$$Twitter　http://twitter.com/clockmaker$$$Google+　https://plus.google.com/102594170131511973965"
   },
 
@@ -96,7 +95,6 @@ module.exports = {
   "takeshi_kurosawa": {
     "name": "黒澤 剛志",
     "affiliation": "株式会社ミツエーリンクス",
-    "img_url": "",
     "description": "@@@株式会社ミツエーリンクス R&D本部 第一部（アクセシビリティ）所属。業務では顧客のWebサイト診断やコンサルティング、社内制作物のチェック業務の他、アクセシビリティBlogの執筆やセミナー講師なども務める。最近の興味・関心はHTMLやWAI-ARIAの標準化動向やブラウザーや支援技術の実装。業務で見つけた某ブラウザーのバグを、プライベートな時間で修正したことも。"
   },
 
@@ -146,15 +144,12 @@ module.exports = {
   "yoshio_terada": {
     "name": "寺田 佳央",
     "affiliation": "日本オラクル株式会社",
-    // "img_url": "img/speakers/yoshio_terada.jpg",
-    "img_url": "",
     "description": "@@@2001 年に日本サン・マイクロシステムズ株式会社に入社し、2010 年 6 月より日本オラクル株式会社に在籍。$$$サン時代から Web 関連製品のエバンジェリストとして活動し、各種セミナー・ イベント等で多数の講演を実施。$$$2010 年 12 月より日本オラクルで Java エバンジェリスト として活動し、Java SE/EE に関する啓蒙活動を実施中。"
   },
 
   "keisuke_todoroki": {
     "name": "轟 啓介",
     "affiliation": "アドビ システムズ 株式会社",
-    "img_url": "",
     "description": "@@@twitter: @keisuke322"
   },
 
@@ -205,7 +200,7 @@ module.exports = {
     "name": "山崎 大助",
     "affiliation": "魚津システム/デジタルハリウッド講師",
     "img_url": "img/speakers/daisuke_yamazaki.jpg",
-    "description": "@@@受賞歴：Microsoft MVP（BingMapsDevelopment）$$$著書：   レスポンシブWebデザイン「超」実践デザイン集中講義@@@@it、日経ソフトウェア、SoftwareDesign、ITPro、Web業界誌での執筆など、html5jビギナー部（セミナー）を開催したりと活動をおこなっている。日経PC21「名作フリーソフトを訪ねて」では開発したアプリが選ばれ掲載。@itでは ” HTML5アプリ作ろうぜ！” を連載執筆中。"
+    "description": "@@@受賞歴：Microsoft MVP（BingMapsDevelopment）$$$著書：   レスポンシブWebデザイン「超」実践デザイン集中講義@@@＠IT、日経ソフトウェア、SoftwareDesign、ITPro、Web業界誌での執筆など、html5jビギナー部（セミナー）を開催したりと活動をおこなっている。日経PC21「名作フリーソフトを訪ねて」では開発したアプリが選ばれ掲載。＠ITでは ” HTML5アプリ作ろうぜ！” を連載執筆中。"
   },
 
 }
