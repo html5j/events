@@ -147,6 +147,14 @@ module.exports = {
     "description": "@@@（株）テレビ朝日メディアプレックスのフロントエンジニア@@@http://hijiriworld.com/web/"
   },
 
+  "masahiro_tanaka": {
+    "name": "田中 正裕",
+    "url": "",
+    "affiliation": "アシアル株式会社",
+    "img_url": "img/speakers/masahiro_tanaka.jpg",
+    "description": "@@@アシアル株式会社代表取締役社長@@@ユーザーインタフェース設計からインフラストラクチャー構築まで、最先端の技術を駆使したシステム構築を手がける。特にPHPをはじめとするOSSや、HTML5やJavaScriptといったオープンなアーキテクチャーを用いたシステムの構築に尽力している。モバイルアプリ開発プラットフォーム「Monaca」のプロダクトマネジャーを兼務。"
+  },
+
   "hiroki_tani": {
     "name": "谷 拓樹",
     "url": "",
