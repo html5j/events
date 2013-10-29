@@ -171,7 +171,7 @@ module.exports = [
       },
       {
         "id" : "2f-l-4",
-        "title": "HTML5 for Everywhere（仮）",
+        "title": "HTML5 run anywhere",
         "speakers": ["kosuke_nagano"],
         "description": "HTML5の世界はPCやスマホ向け以外にも広がってきています。例えば、テレビやカーナビ、ゲーム機、デジタルサイネージ、家電のUIなどなど…$$$Web技術者の仕事は、もはやWebブラウザの中だけにあるのではありません。あなたの持っているスキルをそのまま活かして、これまでとは全く異なる様々な業種で活躍できる時代が、もうすぐそこに来ています。$$$本セッションでは、Webブラウザ以外のプラットフォームが備える様々なJavaScript APIに触れながら、HTML5/JavaScriptが持つ非常に大きな可能性について紹介します。「組込み＋HTML5」というあまり話されてこなかったジャンルについて、興味を持っていただけたら幸いです。",
         "materials": null
