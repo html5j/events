@@ -190,6 +190,13 @@ module.exports = {
     "description": "@@@ウェブ開発者として働いたことがきっかけで、ウェブ・プラットフォーム自体の改善に興味を持つようになり、Firefox の開発には、2004年から参加。2011年からは、Mozilla JapanのスタッフとしてFirefoxのグラフィックスの開発に従事する傍ら、現在、W3CのSVGワーキンググループのメンバーとしてWeb Animationsの標準化を行っている。オーストラリアの出身で海の遊びも海の食べ物も海自体が好きです。"
   },
 
+  "masakazu_muraoka": {
+    "name": "村岡 正和",
+    "affiliation": "バスタイムフィッシュ",
+    "img_url": "img/speakers/masakazu_muraoka.jpg",
+    "description": "@@@関西のHTML5コミュニティ HTML5WEST.jpの代表。関西のウェブ制作関連の勉強会・イベントに幅広く関わっている。html5j マークアップ部長, HTML5Exparts.jpメンバー。@@@Twitter: bathtimefish$$$Blog: http://bathtimefish.hatenablog.com/"
+  },
+
   "masataka_yakura": {
     "name": "矢倉 眞隆 (myakura)",
     "img_url": "img/speakers/masataka_yakura.jpg",
