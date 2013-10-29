@@ -267,6 +267,18 @@ module.exports = {
     "href": "http://www.imjp.co.jp/",
     "img_url": "img/sponsors/imjp/imj_120w.png"
   },
+  {
+    "id": "riac",
+    "alt": "RIAコンソーシアム",
+    "href": "http://www.riac.jp/",
+    "img_url": "img/sponsors/riac/riac_120w.png"
+  },
+  {
+    "id": "mfac",
+    "alt": "株式会社モバイルファクトリー",
+    "href": "http://www.mobilefactory.jp/",
+    "img_url": "img/sponsors/mfac/mfac_120w.png"
+  },
   ],
   "support": [
   {
