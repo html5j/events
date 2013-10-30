@@ -2,6 +2,15 @@
 // @@@は<p>タグに、$$$ は<br>に置換されます
 // また、http://... および @hoge には自動でアンカーが指定されます
 
+/* template
+  "namename": {
+    "name": "",
+    "affiliation": "",
+    "img_url": "img/speakers/namename.jpg",
+    "description": "@@@"
+  },
+*/
+
 module.exports = {
   "keisuke_ai": {
     "name": "藍 圭介",
@@ -23,10 +32,25 @@ module.exports = {
     "description": "@@@学生時代に Firefox 1.0 から Mozilla 製品の日本語リリースを担当。インターネットをすべての人々の利益になる方向へ発展させる Mozilla の目標に共感し、卒業後は Mozilla Japan で夢を見せるエバンジェリストとして活動中。$$$最新 Web 技術がもたらす新しい世界とレッサーパンダの可愛さについて語らせると止まらない。$$$あのもふもふしたしっぽがたまらない！@@@http://dynamis.jp/$$$https://twitter.com/dynamitter$$$http://www.facebook.com/dynamis"
   },
 
+  "masahiko_adachi": {
+    "name": "足立 昌彦",
+    "affiliation": "株式会社カブク",
+    "img_url": "img/speakers/masahiko_adachi.jpg",
+    "description": "@@@大学院にて人工知能の研究に従事。大手企業研究所勤務、サンフランシスコや外資系ベンチャー企業にてエンジニア/ディレクターとして従事。Android黎明期からAndroid向け日本語入力アプリ「Simeji」の開発に従事。Google Developer Expert(Android)に認定され、Android関係の執筆、講演多数。2013年株式会社カブクを設立。3Dプリンターなどのデジタル製造設備を活用したものづくりマーケットプレイス＆3Dプリントサービス「rinkak」を企画・開発・運営。"
+  },
+
   "yasunobu_ikeda": {
     "name": "池田 泰延",
     "affiliation": "株式会社 ICS",
     "description": "@@@テクニカルディレクターとしてHTML5やFlashを用いたプロモーションサイトの制作や、ゲームやアプリの開発を主に手がける。Webのインタラクティブ表現に関する最新技術を研究し、ブログ「ClockMaker」やセミナー・勉強会で積極的に情報共有に取り組んでいる。筑波大学非常勤講師も務める。@@@ 主な著書に、『HTML5インタラクティブ表現ガイド』（技術評論社）、『Stage3Dプログラミング ～GPUを使ったFlash 3Dコンテンツ制作～』（ワークスコーポレーション）など。@@@ClockMaker　http://clockmaker.jp/blog/$$$ICS INC.　http://ics-web.jp/$$$Twitter　http://twitter.com/clockmaker$$$Google+　https://plus.google.com/102594170131511973965"
+  },
+
+  "koji_ishii": {
+    "name": "石井 宏治",
+    "affiliation": "楽天株式会社",
+    "affiliation_sub": "イーブックサービス開発部",
+    "img_url": "img/speakers/koji_ishii.jpg",
+    "description": "@@@楽天Koboで標準化推進を担当。CSS WG、I18N WG、IDPF EPUB WG、Unicode Technical Committeeに参加し、CSS Text、CSS Text Decorations、CSS Writing Modes、CSS Ruby、Unicode TR#50のEditorをしています。"
   },
 
   "koji_ishimoto": {
@@ -41,6 +65,13 @@ module.exports = {
     "affiliation": "Google",
     "img_url": "img/speakers/hayato_ito.jpg",
     "description": "@@@Google で働くソフトウェア・エンジニア。Google Chrome の開発をしています。W3C WebApps Working Group のメンバーや W3C Shadow DOM の Spec Editor を務めています。好きなデータ構造は Tree です。"
+  },
+
+  "takuya_oikawa": {
+    "name": "及川 卓也",
+    "affiliation": "Google",
+    "img_url": "img/speakers/takuya_oikawa.jpg",
+    "description": "@@@GoogleにてChromeの開発チームに所属。html5j発起人の1人。昨年のHTML5 Conferenceにおいて、オープニングスピーチおよびパネルを担当。Web技術に無限の可能性を感じている。"
   },
 
   "go_otani": {
@@ -113,6 +144,13 @@ module.exports = {
     "description": "@@@米国の大学を卒業後、大規模なインターネットメディア運営会社に編集者として入社するもウェブデザイナ兼フロントエンドデベロッパとして従事、その後現職である株式会社サイバーエージェントにてモバイルウェブアプリの開発をメインにした部署に転職、専業フロントエンドデベロッパに転向。現在は主にパフォーマンス解析・改善に関するエバンジェリスト的役割と開発者としてのタスクを折半中。$$$入社してすぐ企画したフロントエンダのための勉強会「Frontrend」のメインスピーカの1人でもある。$$$個人ではオープンソースソフトウェアのソーシャルドキュメント翻訳をGitHub上で行う「en.ja OSS」を主催している。"
   },
 
+  "yu_sakai": {
+    "name": "酒井 優",
+    "affiliation": "WEBCRE8.jp",
+    "img_url": "img/speakers/yu_sakai.png",
+    "description": "@@@Web制作者向けブログ「WEBCRE8.jp」を運営するフリーランスのWebディレクター/デザイナー。HTML5KARUTAの制作者。制作者向けイベントも頻繁にやってます。好きなものはHTML5とデザイン、フォント。@@@Twitterアカウント @glatyou / @webcre8"
+  },
+
   "ayumu_sato": {
     "name": "佐藤 歩",
     "affiliation": "株式会社サイバーエージェント",
@@ -145,6 +183,13 @@ module.exports = {
     "name": "寺田 佳央",
     "affiliation": "日本オラクル株式会社",
     "description": "@@@2001 年に日本サン・マイクロシステムズ株式会社に入社し、2010 年 6 月より日本オラクル株式会社に在籍。$$$サン時代から Web 関連製品のエバンジェリストとして活動し、各種セミナー・ イベント等で多数の講演を実施。$$$2010 年 12 月より日本オラクルで Java エバンジェリスト として活動し、Java SE/EE に関する啓蒙活動を実施中。"
+  },
+
+  "nao_tokui": {
+    "name": "徳井 直生",
+    "affiliation": "Pocket Supernova / Qosmo",
+    "img_url": "img/speakers/nao_tokui.jpg",
+    "description": "@@@1976年石川県生まれ。東京大学工学系研究科博士課程修了。工学博士。在学中からプログラミングを駆使した音楽・インスタレーション作品を発表するなど活動は多岐にわたる。2009年にクリエイター集団Qosmoを設立、手がけたiPhoneアプリでカンヌ国際広告祭金賞など受賞多数。2013年春には渡米、シリコンバレーの有力アクセラレータ500 startupsから支援を受け新しいサービスの立ち上げにも取り組んでいる。2001年から書き続けているObjective-Cと波乗りには目がない。@@@blog: http://www.sonasphere.com/$$$Twitter: @naotokui"
   },
 
   "keisuke_todoroki": {
@@ -201,6 +246,13 @@ module.exports = {
     "name": "矢倉 眞隆 (myakura)",
     "img_url": "img/speakers/masataka_yakura.jpg",
     "description": "@@@「ホームページを作りたい」という思いからHTML, CSSを学び始めるが、ホームページを作るよりそちらの方に興味を持ってしまい、以来HTML, CSS, 各種APIなどのWeb標準仕様やWebブラウザの動向を追いかける毎日をおくる。これまでにHTML5やCSS3に関するブログ記事・雑誌記事の執筆、セミナー・勉強会などでの公演、海外のWeb開発関連書籍の監訳、Web標準仕様書や海外のブログ記事の翻訳などを行う。いろんなところでmyakura。"
+  },
+
+  "daisuke_yamashita": {
+    "name": "山下 大介",
+    "affiliation": "株式会社マナボ",
+    "img_url": "img/speakers/daisuke_yamashita.jpg",
+    "description": "@@@23歳の時（2005年）に、株式会社SOBAプロジェクトを創業し、自社開発のP2P配信によるVoIP技術を商業化した後、2011年末に同社株式を売却。2012年1月からクックパッド株式会社でレシピの有料販売サービス「レシピストア」と料理レッスン予約サイト「クックステップ」の立ち上げに関わる。2013年9月から以前より支援していた教育系スタートアップの株式会社マナボに取締役CTOとして参加。@@@ブログ：http://blog.daisukeyamashita.com/$$$Twitter：https://twitter.com/dddaisuke$$$Facebook：https://www.facebook.com/dice.k.yamashita"
   },
 
   "daisuke_yamazaki": {
