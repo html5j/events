@@ -33,8 +33,8 @@ module.exports = [
       },
       {
         "id" : "5f-s1-1",
-        "title": "調整中",
-        "speakers": [""],
+        "title": "出張マークアップ部（仮）",
+        "speakers": ["masakazu_muraoka", "yu_sakai", "masataka_yakura"],
         "description": "",
         "materials": null
       },
@@ -140,7 +140,7 @@ module.exports = [
       {
         "id" : "5f-s1-3",
         "title": "Web標準化パネル（仮）",
-        "speakers": [""],
+        "speakers": ["takuya_oikawa", "koji_ishii", "kinuko_yasuda", "kensaku_komatsu", "masataka_yakura"],
         "description": "",
         "materials": null
       },
@@ -193,7 +193,7 @@ module.exports = [
       {
         "id" : "5f-s1-4",
         "title": "(白石俊平と) カッコいいやつら 番外編 「スタートアップのススメ」",
-        "speakers": [""],
+        "speakers": ["masahiko_adachi", "nao_tokui", "daisuke_yamashita"],
         "description": "昨今の技術者にとっては、どうにも気になるキーワード、「スタートアップ」。$$$アプリ開発がどんどん容易になり、マネタイズの障壁も下がっていることで、開発者であれば誰でもスタートアップを興せる可能性がある時代です。$$$スタートアップは、きっと楽しい。でも、踏み出せない要因もたくさん。$$$潰れちゃったらどうなるんだろう・・・？家族もいるし、あんまり若くないし・・・。経営とかってよくわからないし・・・。キツイ？薄給？などなど。$$$このセッションでは、技術者としても起業家としても著名なお三方をお迎えして、技術系スタートアップの実際をとことん掘り下げます。$$$日本に、スタートアップのビッグウェーブを起こそう！",
         "materials": null
       },
