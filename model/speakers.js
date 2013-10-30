@@ -243,7 +243,8 @@ module.exports = {
   },
 
   "masataka_yakura": {
-    "name": "矢倉 眞隆 (myakura)",
+    "name": "矢倉 眞隆",
+    "affiliation": "myakura",
     "img_url": "img/speakers/masataka_yakura.jpg",
     "description": "@@@「ホームページを作りたい」という思いからHTML, CSSを学び始めるが、ホームページを作るよりそちらの方に興味を持ってしまい、以来HTML, CSS, 各種APIなどのWeb標準仕様やWebブラウザの動向を追いかける毎日をおくる。これまでにHTML5やCSS3に関するブログ記事・雑誌記事の執筆、セミナー・勉強会などでの公演、海外のWeb開発関連書籍の監訳、Web標準仕様書や海外のブログ記事の翻訳などを行う。いろんなところでmyakura。"
   },
