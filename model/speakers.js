@@ -248,6 +248,13 @@ module.exports = {
     "description": "@@@「ホームページを作りたい」という思いからHTML, CSSを学び始めるが、ホームページを作るよりそちらの方に興味を持ってしまい、以来HTML, CSS, 各種APIなどのWeb標準仕様やWebブラウザの動向を追いかける毎日をおくる。これまでにHTML5やCSS3に関するブログ記事・雑誌記事の執筆、セミナー・勉強会などでの公演、海外のWeb開発関連書籍の監訳、Web標準仕様書や海外のブログ記事の翻訳などを行う。いろんなところでmyakura。"
   },
 
+  "kinuko_yasuda": {
+    "name": "安田 絹子",
+    "affiliation": "Google",
+    "img_url": "img/speakers/kinuko_yasuda.jpg",
+    "description": "@@@Google で働くソフトウェア・エンジニア。最近はずっと Chrome の開発をやっています。W3C WebApps Working Group で Storage 関連の API を中心に活動しており、Quota Management API のエディタでもあります。ブラウザの中の人ですが、Javascript/HTML5 は永遠に勉強中ぎみ。"
+  },
+
   "daisuke_yamashita": {
     "name": "山下 大介",
     "affiliation": "株式会社マナボ",
