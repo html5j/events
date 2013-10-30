@@ -279,6 +279,18 @@ module.exports = {
     "href": "http://www.mobilefactory.jp/",
     "img_url": "img/sponsors/mfac/mfac_120w.png"
   },
+  {
+    "id": "rakuten",
+    "alt": "楽天株式会社",
+    "href": "http://corp.rakuten.co.jp/",
+    "img_url": "img/sponsors/rakuten/rakuten_120w.png"
+  },
+  {
+    "id": "copilot",
+    "alt": "株式会社コパイロツト",
+    "href": "http://copilot.jp/",
+    "img_url": "img/sponsors/copilot/copilot_120w.png"
+  },
   ],
   "support": [
   {
