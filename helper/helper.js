@@ -53,7 +53,9 @@ Helper.show_profile = function(obj){
             '<div class="speaker">', 
             '<% if (obj.affiliation) { %><p class="affiliation"><%= obj.affiliation %><% } %>',
             '<% if (obj.img_url) { %><p class="image"><img width="100" src="/conference/2013/11/<%= obj.img_url %>" alt=""><% } %>',
+            '<% if (obj.description) { %>', // TODO: remove once all speakers have their desc.
             '<div class="description"><%= obj.description %></div>',
+            '<% } %>', // TODO: remove once all speakers have their desc.
             '</div>',
     ].join("\n");
 
@@ -78,13 +80,15 @@ Helper.show_profiles = function(obj){
     var template = [
         '<% _.each( _.pairs(obj), function(item) { %>',
             '<% var speaker_id = item[0], speaker = item[1]; %>',
+            '<% if (speaker.description) { %>', // TODO: remove once all speakers have their desc.
             '<section class="speaker" id="<%= speaker_id %>">', 
             '<h2><a href="./speaker/<%= speaker_id %>"><%= speaker.name %></a></h2>',
             '<% if (speaker.affiliation) { %><p class="affiliation"><%= speaker.affiliation %><% } %>',
             '<% if (speaker.affiliation_sub) { %><br><%= speaker.affiliation_sub %><% } %>',
             '<% if (speaker.img_url) { %><p class="image"><img width="100" src="/conference/2013/11/<%= speaker.img_url %>" alt=""><% } %>',
-            '<% if (speaker.description) { %><div class="description"><%= speaker.description %></div><% } %>',
+            '<div class="description"><%= speaker.description %></div>',
             '</section><hr>',
+            '<% } %>', // TODO: remove once all speakers have their desc.
          '<% }); %>'
     ].join("\n");
 

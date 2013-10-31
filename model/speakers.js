@@ -39,6 +39,13 @@ module.exports = {
     "description": "@@@大学院にて人工知能の研究に従事。大手企業研究所勤務、サンフランシスコや外資系ベンチャー企業にてエンジニア/ディレクターとして従事。Android黎明期からAndroid向け日本語入力アプリ「Simeji」の開発に従事。Google Developer Expert(Android)に認定され、Android関係の執筆、講演多数。2013年株式会社カブクを設立。3Dプリンターなどのデジタル製造設備を活用したものづくりマーケットプレイス＆3Dプリントサービス「rinkak」を企画・開発・運営。"
   },
 
+  "yukio_andoh": {
+    "name": "安藤 幸央",
+    // "affiliation": "",
+    // "img_url": "img/speakers/yukio_andoh.jpg",
+    "description": ""
+  },
+
   "yasunobu_ikeda": {
     "name": "池田 泰延",
     "affiliation": "株式会社 ICS",
@@ -158,6 +165,20 @@ module.exports = {
     "description": "@@@株式会社サイバーエージェント Webディベロッパー@@@名古屋のWeb制作会社で、PHP/JavaScript/HTML/CSSを中心にWebサイト制作・システム開発に従事。2012年9月からは現職でフロントエンドエンジニアとしての開発業務ほか、社内の技術教育にも携わる。サイバーエージェント主催のフロントエンド技術セミナー「Frontrend」などのセミナーイベントや、ブログ、書籍などを通じて、日々仕入れている技術情報のアウトプットに励んでいる。@@@サイト: http://aho.mu$$$ブログ: http://havelog.ayumusato.com$$$Twitter: @ahomu"
   },
 
+  "nobuya_sato": {
+    "name": "佐藤 伸哉",
+    // "affiliation": "",
+    // "img_url": "img/speakers/nobuya_sato.jpg",
+    "description": ""
+  },
+
+  "kahoru_shimizu": {
+    "name": "清水 かほる",
+    // "affiliation": "",
+    // "img_url": "img/speakers/kahoru_shimizu.jpg",
+    "description": ""
+  },
+
   "satoshi_shoda": {
     "name": "正田 聖",
     "affiliation": "株式会社テレビ朝日メディアプレックス",
@@ -213,6 +234,13 @@ module.exports = {
     "description": "@@@2005年、(株)ACCESSに入社。組み込み向けブラウザソフト「NetFront Browser v3」の開発、移植、海外顧客のオンサイトサポートなどを経て、現在WebKitベースのブラウザ「NetFrontBrowser NX」の開発に従事。ゲーム機器、STB、DTVなど組み込み向けのブラウザエンジンを提供。@gm_kou。" 
   },
 
+  "hiroko_nozawa": {
+    "name": "野澤 紘子",
+    // "affiliation": "",
+    // "img_url": "img/speakers/hiroko_nozawa.jpg",
+    "description": ""
+  },
+
   "futomi_hatano": {
     "name": "羽田野 太巳",
     "affiliation": "有限会社futomi/株式会社ニューフォリア",
@@ -225,6 +253,13 @@ module.exports = {
     "affiliation": "株式会社レピダム",
     "img_url": "img/speakers/tatsuya_hayashi.jpg",
     "description": "@@@IETF, W3C, OIDF等で標準化活動を主体とし、idcon運営のOIDF-Jプロデューサー等の技術コミュニティ活動を行う。$$$業務はID関係を中心に、通信、プログラミング(言語/コンパイラ/etc)、セキュリティ(認証・認可/脆弱性/etc)、プライバシー等。@@@https://twitter.com/lef$$$http://jp.linkedin.com/in/hayashitatsuya/"
+  },
+
+  "yoshiki_hayama": {
+    "name": "羽山 祥樹",
+    // "affiliation": "",
+    // "img_url": "img/speakers/yoshiki_hayama.jpg",
+    "description": ""
   },
 
   "kei_funagayama": {
@@ -275,6 +310,13 @@ module.exports = {
     "affiliation": "魚津システム/デジタルハリウッド講師",
     "img_url": "img/speakers/daisuke_yamazaki.jpg",
     "description": "@@@受賞歴：Microsoft MVP（BingMapsDevelopment）$$$著書：   レスポンシブWebデザイン「超」実践デザイン集中講義@@@＠IT、日経ソフトウェア、SoftwareDesign、ITPro、Web業界誌での執筆など、html5jビギナー部（セミナー）を開催したりと活動をおこなっている。日経PC21「名作フリーソフトを訪ねて」では開発したアプリが選ばれ掲載。＠ITでは ” HTML5アプリ作ろうぜ！” を連載執筆中。"
+  },
+
+  "yoshinori_wakisaka": {
+    "name": "脇阪 善則",
+    // "affiliation": "",
+    // "img_url": "img/speakers/yoshinori_wakisaka.jpg",
+    "description": ""
   },
 
 }
