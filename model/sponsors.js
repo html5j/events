@@ -117,15 +117,12 @@ module.exports = {
     "href": "http://www.nri-aitd.com/",
     "img_url": "img/sponsors/nri/nri_150w.png"
   },
-/*
   {
     "id": "kddi",
     "alt": "KDDI株式会社",
     "href": "http://www.kddi.com/",
-    "img_url": "img/_dummy_150x150.png"
+    "img_url": "img/sponsors/kddi/kddi_150w.png"
   },
-*/
-
   {
     "id": "canon-its",
     "alt": "キヤノンITソリューションズ株式会社",
@@ -290,6 +287,12 @@ module.exports = {
     "alt": "株式会社コパイロツト",
     "href": "http://copilot.jp/",
     "img_url": "img/sponsors/copilot/copilot_120w.png"
+  },
+  {
+    "id": "cybird",
+    "alt": "株式会社サイバード",
+    "href": "http://www.cybird.co.jp/",
+    "img_url": "img/sponsors/cybird/cybird_120w.png"
   },
   ],
   "support": [
