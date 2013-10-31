@@ -83,7 +83,7 @@ Helper.show_profiles = function(obj){
             '<% if (speaker.affiliation) { %><p class="affiliation"><%= speaker.affiliation %><% } %>',
             '<% if (speaker.affiliation_sub) { %><br><%= speaker.affiliation_sub %><% } %>',
             '<% if (speaker.img_url) { %><p class="image"><img width="100" src="/conference/2013/11/<%= speaker.img_url %>" alt=""><% } %>',
-            '<div class="description"><%= speaker.description %></div>',
+            '<% if (speaker.description) { %><div class="description"><%= speaker.description %></div><% } %>',
             '</section><hr>',
          '<% }); %>'
     ].join("\n");

@@ -165,6 +165,13 @@ module.exports = {
     "description": "@@@（株）テレビ朝日メディアプレックスのフロントエンジニア@@@http://hijiriworld.com/web/"
   },
 
+  "shumpei_shiraishi": {
+    "name": "白石 俊平",
+    "affiliation": "株式会社オープンウェブ・テクノロジー",
+    "img_url": "img/speakers/shumpei_shiraishi.jpg",
+    "description": "@@@株式会社オープンウェブ・テクノロジー代表取締役として、Web標準技術に関するコンサルティングや開発に従事。$$$Web技術者向け情報メディア「HTML5 Experts.jp」編集長、日本最大（5,000名超）のHTML5開発者コミュニティ「html5j」管理人、一般社団法人日本オープン・ウェブ・アソシエーション代表理事など、Web先端技術に関する情報発信とコミュニティ活動を継続的に行う。$$$Google社公認Developer Expert (HTML5)、Microsoft社公認Most Valuable Professional (IE) 、W3C Invited Expert。$$$著書に「HTML5&API入門」（2010, 日経BP）、「Google Gearsスタートガイド」（2007, 技術評論社）など。監訳に「実践jQuery Mobile」（2013, オライリー）など。"
+  },
+
   "masahiro_tanaka": {
     "name": "田中 正裕",
     "affiliation": "アシアル株式会社",
