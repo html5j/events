@@ -198,6 +198,19 @@ footer p a {
     max-height: 470px;
 }
 
+.content dl {
+    margin-left: 32px;
+    padding: 0;
+    font-size: 13px;
+}
+.content dt {
+    font-weight: bold;
+    float: left;
+}
+.content dd {
+    margin-left: 5em;
+}
+
 @media (max-width: 768px) {
 
     body {
