@@ -10,11 +10,9 @@
 <meta property="og:url" content="http://events.html5j.org/conference/2013/11/">
 <meta property="og:image" content="http://events.html5j.org/conference/2013/11/img/ogp.jpg">
 <meta property="og:description" content="HTML5 Conference 2013 ― 11月30日（土）調布 NTT中央研修センタにて開催。">
-<base href="/conference/2013/11/">
 <link href="/conference/2013/11/bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
 <link href="/conference/2013/11/css/conf2013.css" rel="stylesheet">
-<% if (id === "index") { %>
-<link href="/conference/2013/11/css/conf2013Top.css" rel="stylesheet"><% } %>
+<% if (id === "index") { %><link href="/conference/2013/11/css/conf2013Top.css" rel="stylesheet"><% } %>
 <% if (id === "sessions") { %><style>
 .break th, .break td {
   font-size: smaller;
@@ -61,8 +59,7 @@ h2 .time {
           <li class="<% if (id === 'sessions') { %>active<% } %>"><a href="/conference/2013/11/sessions">セッション</a>
           <li class="<% if (id === 'speakers' || id === 'speaker') { %>active<% } %>"><a href="/conference/2013/11/speakers">スピーカー</a>
           <li class="<% if (id === 'access')   { %>active<% } %>"><a href="/conference/2013/11/access">会場・アクセス</a>
-          <li class="<% if (id === 'offering')   { %>active<% } %>"><a href="/conference/2013/11/offering">各種募集</a>
-          <!-- <li class="<% if (id === 'volunteer')   { %>active<% } %>"><a href="/conference/2013/11/volunteer">ボランティア募集</a> -->
+          <li class="<% if (id === 'offering') { %>active<% } %>"><a href="/conference/2013/11/offering">各種募集</a>
           <li class="<% if (id === 'faq')      { %>active<% } %>"><a href="/conference/2013/11/faq">よくある質問</a>
         </ul>
       </div><!-- /.navbar-collapse -->
