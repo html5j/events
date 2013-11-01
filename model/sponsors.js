@@ -265,12 +265,6 @@ module.exports = {
     "img_url": "img/sponsors/imjp/imj_120w.png"
   },
   {
-    "id": "riac",
-    "alt": "RIAコンソーシアム",
-    "href": "http://www.riac.jp/",
-    "img_url": "img/sponsors/riac/riac_120w.png"
-  },
-  {
     "id": "mfac",
     "alt": "株式会社モバイルファクトリー",
     "href": "http://www.mobilefactory.jp/",
@@ -296,6 +290,12 @@ module.exports = {
   },
   ],
   "support": [
+  {
+    "id": "riac",
+    "alt": "RIAコンソーシアム",
+    "href": "http://www.riac.jp/",
+    "img_url": "img/sponsors/riac/riac_120w.png"
+  },
   {
     "id": "w3c",
     "alt": "W3C",
