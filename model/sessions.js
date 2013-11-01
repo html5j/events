@@ -33,7 +33,7 @@ module.exports = [
       },
       {
         "id" : "5f-s1-1",
-        "title": "出張マークアップ部（仮）",
+        "title": "Markup Maniax - マークアップ部が語り合うHTML5仕様のいま・これから",
         "speakers": ["masakazu_muraoka", "yu_sakai", "masataka_yakura"],
         "description": "",
         "materials": null
@@ -139,7 +139,7 @@ module.exports = [
       },
       {
         "id" : "5f-s1-3",
-        "title": "Web標準化パネル（仮）",
+        "title": "Spec EditorとContributorが語るWeb標準化と開発者への期待",
         "speakers": ["takuya_oikawa", "koji_ishii", "kinuko_yasuda", "kensaku_komatsu", "masataka_yakura"],
         "description": "",
         "materials": null
