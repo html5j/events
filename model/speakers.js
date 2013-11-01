@@ -155,7 +155,7 @@ module.exports = {
     "name": "酒井 優",
     "affiliation": "WEBCRE8.jp",
     "img_url": "img/speakers/yu_sakai.png",
-    "description": "@@@Web制作者向けブログ「WEBCRE8.jp」を運営するフリーランスのWebディレクター/デザイナー。HTML5KARUTAの制作者。制作者向けイベントも頻繁にやってます。好きなものはHTML5とデザイン、フォント。@@@Twitterアカウント @glatyou / @webcre8"
+    "description": "@@@Web制作者向けブログ「WEBCRE8.jp」を運営するフリーランスのWebディレクター/デザイナーであり、HTML5KARUTAの制作者。html5jマークアップ部副部長。「オールナイト・クリエイソン」、「HTML5KARUTA大会」といったカジュアルに参加できる制作者向けイベントを運営。好きなものはHTML5とデザイン、フォント。@@@Twitter: @glatyou / @webcre8$$$ブログ: http://webcre8.jp/"
   },
 
   "ayumu_sato": {
