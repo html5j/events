@@ -231,7 +231,7 @@ module.exports = {
     "affiliation": "株式会社ACCESS",
     "affiliation_sub": "ソフトウェアソリューション本部 IAビジネスグループ開発2課",
     "img_url": "img/speakers/kosuke_nagano.jpg",
-    "description": "@@@2005年、(株)ACCESSに入社。組み込み向けブラウザソフト「NetFront Browser v3」の開発、移植、海外顧客のオンサイトサポートなどを経て、現在WebKitベースのブラウザ「NetFrontBrowser NX」の開発に従事。ゲーム機器、STB、DTVなど組み込み向けのブラウザエンジンを提供。@gm_kou。" 
+    "description": "@@@2005年、(株)ACCESSに入社。組み込み向けブラウザソフト「NetFront Browser v3」の開発、移植、海外顧客のオンサイトサポートなどを経て、現在WebKitベースのブラウザ「NetFrontBrowser NX」の開発に従事。ゲーム機器、STB、DTVなど組み込み向けのブラウザエンジンを提供。@gm_kou。"
   },
 
   "hiroko_nozawa": {
@@ -318,5 +318,22 @@ module.exports = {
     // "img_url": "img/speakers/yoshinori_wakisaka.jpg",
     "description": ""
   },
-
+  "shin_miyakawa": {
+    "name": "宮川 晋",
+    "affiliation": "NTTコミュニケーションズ株式会社",
+    // "img_url": "img/speakers/yoshinori_wakisaka.jpg",
+    "description": ""
+  },
+  "ryuji_wakikawa": {
+    "name": "湧川 隆次",
+    "affiliation": "ソフトバンクモバイル株式会社",
+    // "img_url": "img/speakers/yoshinori_wakisaka.jpg",
+    "description": ""
+  },
+  "akihito_fujii": {
+    "name": "藤井 彰人",
+    "affiliation": "KDDI株式会社",
+    // "img_url": "img/speakers/yoshinori_wakisaka.jpg",
+    "description": ""
+  },
 }
