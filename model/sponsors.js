@@ -314,6 +314,12 @@ module.exports = {
     "href": "http://www.iptvforum.jp/",
     "img_url": "img/sponsors/iptv/iptv_120w.png"
   },
+  {
+    "id": "mic",
+    "alt": "総務省",
+    "href": "http://www.soumu.go.jp/",
+    "img_url": "img/sponsors/mic/mic_200w.png"
+  },
   ],
 
   "media": [
