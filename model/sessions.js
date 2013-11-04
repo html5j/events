@@ -87,7 +87,7 @@ module.exports = [
       {
         "id" : "5f-s1-2",
         "title": "モバイルフロンティア：フロントエンドエンジニアとデザイナーのためのモバイルユーザーエクスペリエンス",
-        "speakers": ["yukio_andoh", "nobuya_sato", "kaoru_shimizu", "hiroko_nozawa", "yoshiki_hayama", "yoshinori_wakisaka"],
+        "speakers": ["yukio_andoh", "nobuya_sato", "kaoru_shimizu", "hiroko_nozawa", "yoshiki_hayama", "yoshinori_wakizaka"],
         "description": "「モバイルフロンティア よりよいモバイルUXを生み出すためのデザインガイド」を翻訳したメンバーによる、ユーザーエクスペリエンス講座。http://www.amazon.co.jp/dp/4621086553$$$ただ「つくる」だけでなく良い体験をデザインすることが重要な開発フローと認識され始めている近年、ネイティブアプリ・Webアプリ関係なく「体験のデザイン」を一緒に考えていく40分。デザイナー・エンジニア含むすべての人を対象。",
         "materials": null
       },

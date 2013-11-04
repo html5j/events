@@ -302,26 +302,23 @@ module.exports = {
     "description": "@@@受賞歴：Microsoft MVP（BingMapsDevelopment）$$$著書：   レスポンシブWebデザイン「超」実践デザイン集中講義@@@＠IT、日経ソフトウェア、SoftwareDesign、ITPro、Web業界誌での執筆など、html5jビギナー部（セミナー）を開催したりと活動をおこなっている。日経PC21「名作フリーソフトを訪ねて」では開発したアプリが選ばれ掲載。＠ITでは ” HTML5アプリ作ろうぜ！” を連載執筆中。"
   },
 
-  "yoshinori_wakisaka": {
+  "yoshinori_wakizaka": {
     "name": "脇阪 善則",
     "description": "@@@モバイルUXデザイナー、ユーザーリサーチャー。デジタル機器、モバイルWeb、アプリのUXリサーチからUI設計までを手がける。モバイルUXを起点としたサービス設計を推進中。"
   },
   "shin_miyakawa": {
     "name": "宮川 晋",
     "affiliation": "NTTコミュニケーションズ株式会社",
-    // "img_url": "img/speakers/yoshinori_wakisaka.jpg",
     "description": ""
   },
   "ryuji_wakikawa": {
     "name": "湧川 隆次",
     "affiliation": "ソフトバンクモバイル株式会社",
-    // "img_url": "img/speakers/yoshinori_wakisaka.jpg",
     "description": ""
   },
   "akihito_fujii": {
     "name": "藤井 彰人",
     "affiliation": "KDDI株式会社",
-    // "img_url": "img/speakers/yoshinori_wakisaka.jpg",
     "description": ""
   },
 }
