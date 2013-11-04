@@ -1,6 +1,6 @@
 // 概要の書き方
 // @@@は<p>タグに、$$$ は<br>に置換されます
-// また、http://... および @hoge には自動でアンカーが指定されます
+// TODO: http://... および @hoge への自動アンカー付与
 
 /* template
   "namename": {
@@ -41,9 +41,7 @@ module.exports = {
 
   "yukio_andoh": {
     "name": "安藤 幸央",
-    // "affiliation": "",
-    // "img_url": "img/speakers/yukio_andoh.jpg",
-    "description": ""
+    "description": "@@@UXリサーチャー。CGプログラマ。携帯電話サイズから、大規模ドームシアターまで、様々な映像システム、ユーザインタフェースを手がける。最近の興味は、Minimal な UI と、 Skeuomorphic な UI."
   },
 
   "yasunobu_ikeda": {
@@ -167,16 +165,12 @@ module.exports = {
 
   "nobuya_sato": {
     "name": "佐藤 伸哉",
-    // "affiliation": "",
-    // "img_url": "img/speakers/nobuya_sato.jpg",
-    "description": ""
+    "description": "@@@エクスペリエンスデザイナー。 Web黎明期より大規模な Webサイトの情報設計や企業のグローバル戦略、デザイン戦略を数多く手掛ける。モバイル端末やAndroid UIに造詣が深い。"
   },
 
-  "kahoru_shimizu": {
+  "kaoru_shimizu": {
     "name": "清水 かほる",
-    // "affiliation": "",
-    // "img_url": "img/speakers/kahoru_shimizu.jpg",
-    "description": ""
+    "description": "@@@エンタープライズ向けのソフトウェア開発を経て、WebサービスのUCDに携わる。現在はモバイル業界でコンシューマ向けのコンテンツ戦略を担当。"
   },
 
   "satoshi_shoda": {
@@ -236,9 +230,7 @@ module.exports = {
 
   "hiroko_nozawa": {
     "name": "野澤 紘子",
-    // "affiliation": "",
-    // "img_url": "img/speakers/hiroko_nozawa.jpg",
-    "description": ""
+    "description": "@@@インフォメーションアーキテクト。現在は、スマホサイト構築やアプリ開発を行っている。日々「良いサービスデザインとは？」と成長について考えるメールマガジンを発行中。"
   },
 
   "futomi_hatano": {
@@ -257,9 +249,7 @@ module.exports = {
 
   "yoshiki_hayama": {
     "name": "羽山 祥樹",
-    // "affiliation": "",
-    // "img_url": "img/speakers/yoshiki_hayama.jpg",
-    "description": ""
+    "description": "@@@インフォメーションアーキテクト。担当したWebサイトが雑誌のWebユーザビリティランキングで国内トップクラスの評価を受ける。専門は人間中心設計、アクセシビリティ。"
   },
 
   "kei_funagayama": {
@@ -314,9 +304,7 @@ module.exports = {
 
   "yoshinori_wakisaka": {
     "name": "脇阪 善則",
-    // "affiliation": "",
-    // "img_url": "img/speakers/yoshinori_wakisaka.jpg",
-    "description": ""
+    "description": "@@@モバイルUXデザイナー、ユーザーリサーチャー。デジタル機器、モバイルWeb、アプリのUXリサーチからUI設計までを手がける。モバイルUXを起点としたサービス設計を推進中。"
   },
   "shin_miyakawa": {
     "name": "宮川 晋",
