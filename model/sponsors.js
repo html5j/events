@@ -183,6 +183,13 @@ module.exports = {
     "href": "http://www.appiaries.com/jp/",
     "img_url": "img/sponsors/pcp/appiaries_150w.png"
   },
+  {
+    "id": "copilot",
+    "alt": "株式会社コパイロツト",
+    "href": "http://copilot.jp/",
+    "img_url": "img/sponsors/copilot/copilot_150w.png"
+  },
+
   ],
   "silver": [
   {
@@ -275,12 +282,6 @@ module.exports = {
     "alt": "楽天株式会社",
     "href": "http://corp.rakuten.co.jp/",
     "img_url": "img/sponsors/rakuten/rakuten_120w.png"
-  },
-  {
-    "id": "copilot",
-    "alt": "株式会社コパイロツト",
-    "href": "http://copilot.jp/",
-    "img_url": "img/sponsors/copilot/copilot_120w.png"
   },
   {
     "id": "cybird",
