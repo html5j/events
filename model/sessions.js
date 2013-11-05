@@ -246,7 +246,7 @@ module.exports = [
       {
         "id" : "5f-s1-5",
         "title": "通信キャリア プロフェッショナルが語る HTML5 への期待",
-        "speakers": ["shin_miyakawa", "akihito_fujii", "ryuji_wakikawa", "kensaku_komatsu"],
+        "speakers": ["kensaku_komatsu", "shin_miyakawa", "akihito_fujii", "ryuji_wakikawa"],
         "description": "HTML5を支えるインフラ環境が、$$$　- モバイルや車などのマルチデバイス化の進展$$$　- IPv4の枯渇とIPv6への移行によるNW環境の変化$$$　- IaaS, PaaS, BaaS といった多種多様なクラウドサービス$$$と大きく変容しています。これに伴い、Web開発にも様々な変化がおこることでしょう。$$$今回のパネルディスカッションでは、通信キャリア各社にて国内外で活躍する各分野のプロフェッショナルより、HTML5に対する要望や期待について伺います。",
         "materials": null
       },

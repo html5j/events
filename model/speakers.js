@@ -136,7 +136,7 @@ module.exports = {
 
   "kensaku_komatsu": {
     "name": "小松 健作",
-    "affiliation": "NTTコミュニケーションズ",
+    "affiliation": "NTTコミュニケーションズ株式会社",
     "affiliation_sub": "先端IPアーキテクチャセンタ",
     "img_url": "img/speakers/kensaku_komatsu.jpg",
     "description": "@@@1972年生まれ。山形県出身。HTML5 Conference 2013 総合プロデューサー@@@大学時代、家系ラーメン店でのバイトを契機をとして、ラーメン中毒となる。その後、プロトコル研究・CDNシステム開発・VoIP開発など主にインフラ系のエンジニアを経るも、HTML5に出会うことで Web がプラットフォーム化することを確信。2009年よりWebとNWとの相互作用を中心に、HTML5の研究開発に従事。W3Cでの標準化推進や執筆活動、コミュニティ運営による啓蒙など活動は多岐に渡る。Google Developer Expert (HTML5), Microsoft Valuable Professional (IE)@@@blog: http://blog.livedoor.jp/kotesaki/$$$twitter: @komasshu"
