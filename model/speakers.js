@@ -244,7 +244,7 @@ module.exports = {
     "name": "林 達也 (@lef)",
     "affiliation": "株式会社レピダム",
     "img_url": "img/speakers/tatsuya_hayashi.jpg",
-    "description": "@@@IETF, W3C, OIDF等で標準化活動を主体とし、idcon運営のOIDF-Jプロデューサー等の技術コミュニティ活動を行う。$$$業務はID関係を中心に、通信、プログラミング(言語/コンパイラ/etc)、セキュリティ(認証・認可/脆弱性/etc)、プライバシー等。@@@https://twitter.com/lef$$$http://jp.linkedin.com/in/hayashitatsuya/"
+    "description": "@@@IETF, W3C, OIDF等で標準化活動を主体とし、idcon運営、OIDF-Jプロデューサー等の技術コミュニティ活動を行う。$$$業務はID関係を中心に、通信、プログラミング(言語/コンパイラ/etc)、セキュリティ(認証・認可/脆弱性/etc)、プライバシー等。@@@https://twitter.com/lef$$$http://jp.linkedin.com/in/hayashitatsuya/"
   },
 
   "yoshiki_hayama": {
