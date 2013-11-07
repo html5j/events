@@ -220,6 +220,13 @@ module.exports = {
     "description": "@@@twitter: @keisuke322"
   },
 
+  "hirotaka_nakajima": {
+    "name": "中島 博敬",
+    "affiliation": "W3C",
+    "img_url": "img/speakers/hirotaka_nakajima.jpg",
+    "description": "@@@Webに関連するネットワークプロトコルの研究に取り組んでいます。新しいガジェットが大好きでひたすらガジェットを消費する日々を送っています。@@@blog: http://blog.nunnun.jp$$$twitter: @nunnun"
+  },
+
   "kosuke_nagano": {
     "name": "長野 宏輔",
     "affiliation": "株式会社ACCESS",
