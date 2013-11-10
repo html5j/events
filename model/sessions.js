@@ -111,7 +111,7 @@ module.exports = [
     "sessions" : [
       {
         "id" : "1f-l-3",
-        "title": "新しいCSSレイアウトで新しいWebサイトを作る方法",
+        "title": "Regionsを使った新しいCSSレイアウトを作る方法(仮)",
         "speakers": ["keisuke_todoroki"],
         "description": "Webコンテンツをリッチに魅せるCSSの新しい仕様が続々と準備されています。$$$FlexboxやMulti-Columnなど、これまで実現が困難だったレイアウトを簡単にしてくれる仕様が幾つかあります。このセッションでは、iOS7 のSafariでもサポートされたCSS Regionsにフォーカスして、実際のコードを確認しながら、これからの新しいWebコンテンツの作り方とその可能性を見ていきます。",
         "materials": null
@@ -178,7 +178,7 @@ module.exports = [
       },
       {
         "id" : "5f-l-4",
-        "title": "地下鉄 x サクサク x これからのWebゲームアプリが備えるべき8つの機能（仮）",
+        "title": "地下鉄 x サクサク x これからのWebゲームアプリが備えるべき8つの機能",
         "speakers": ["takao_obara"],
         "description": "電波の不確かな場所でも動作し、サクサクと軽快に動作する Web Application の実装方法とそのアイデアについてご紹介します。$$$このセッションでは、更に一歩進んだ発想(そして、ちょっとした黒魔術)もご紹介する予定です。",
         "materials": null
