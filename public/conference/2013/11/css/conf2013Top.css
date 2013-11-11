@@ -144,3 +144,35 @@ span.iconNow {
 	margin-right:0.7em;
 	text-decoration: none;
 }
+
+#codeiq {
+  width: 50%;
+  border-radius: 10px;
+  border: 3px solid #78ab9a;
+  margin: 3em auto 1em;
+  padding: 1em;
+}
+#codeiq h2 {
+  margin: 0 0 0.5em;
+  color: #78ab9a;
+  font-weight: bold;
+  border-bottom: 2px solid #78ab9a;
+}
+#codeiq p {
+  overflow: hidden;
+  color: black;
+}
+.donuts {
+  float: left;
+  width: 40%;
+  margin-right: 1em;
+}
+#codeiq ul {
+  list-style: none;
+}
+#codeiq ul li {
+  /*margin: 0.1em 0;*/
+}
+#codeiq ul li a {
+  padding-left: 1em;
+}
