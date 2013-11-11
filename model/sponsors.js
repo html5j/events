@@ -389,6 +389,12 @@ module.exports = {
     "alt": "マイナビニュース",
     "href": "http://news.mynavi.jp/devse/programming/index.html",
     "img_url": "img/sponsors/mynavi/mynavi_120w.png"
+  },
+  {
+    "id": "ascii",
+    "alt": "株式会社KADOKAWA",
+    "href": "http://www.kadokawa.co.jp/",
+    "img_url": "img/sponsors/ascii/ascii_120w.png"
   }
   ],
 }
