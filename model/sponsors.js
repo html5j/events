@@ -289,6 +289,18 @@ module.exports = {
     "href": "http://www.cybird.co.jp/",
     "img_url": "img/sponsors/cybird/cybird_120w.png"
   },
+  {
+    "id": "salesforce",
+    "alt": "セールスフォース・ドットコム",
+    "href": "http://www.salesforce.com/jp/",
+    "img_url": "img/sponsors/salesforce/salesforce_120w.png"
+  },
+  {
+    "id": "jig",
+    "alt": "株式会社jig.jp",
+    "href": "http://jig.jp/",
+    "img_url": "img/sponsors/jig/jig_120w.png"
+  },
   ],
   "support": [
   {
@@ -320,6 +332,12 @@ module.exports = {
     "alt": "総務省",
     "href": "http://www.soumu.go.jp/",
     "img_url": "img/sponsors/mic/mic_200w.png"
+  },
+  {
+    "id": "csaj",
+    "alt": "一般社団法人コンピュータソフトウェア協会",
+    "href": "http://www.csaj.jp/",
+    "img_url": "img/sponsors/csaj/csaj_120w.png"
   },
   ],
 
