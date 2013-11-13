@@ -296,6 +296,12 @@ module.exports = {
     "img_url": "img/sponsors/salesforce/salesforce_120w.png"
   },
   {
+    "id": "opera",
+    "alt": "Opera Software",
+    "href": "http://www.opera.com/ja",
+    "img_url": "img/sponsors/opera/opera_120w.png"
+  },
+  {
     "id": "jig",
     "alt": "株式会社jig.jp",
     "href": "http://jig.jp/",
