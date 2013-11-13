@@ -307,6 +307,12 @@ module.exports = {
     "href": "http://jig.jp/",
     "img_url": "img/sponsors/jig/jig_120w.png"
   },
+  {
+    "id": "juniper",
+    "alt": "ジュニパーネットワークス株式会社",
+    "href": "http://www.juniper.net/jp/jp/",
+    "img_url": "img/sponsors/juniper/juniper_120w.png"
+  },
   ],
   "support": [
   {
