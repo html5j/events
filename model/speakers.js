@@ -320,12 +320,14 @@ module.exports = {
   },
   "ryuji_wakikawa": {
     "name": "湧川 隆次",
+    "img_url": "img/speakers/ryuji_wakikawa.jpg",
     "affiliation": "ソフトバンクモバイル株式会社",
-    "description": ""
+    "description": "@@@2005年に慶應義塾大学環境情報学部で有期専任講師に就き、モバイル向けの通信プロトコルの研究開発を実施。研究成果の一部は、IETFで標準化しRFCとして発行。2008年からトヨタIT開発センターで自動車のネットワークの研究開発に日米でたずさわり、2013年よりソフトバンクモバイルのネットワーク本部に在籍中。"
   },
   "akihito_fujii": {
     "name": "藤井 彰人",
-    "affiliation": "KDDI株式会社",
-    "description": ""
+    "img_url": "img/speakers/akihito_fujii.jpg",
+    "affiliation": "KDDI株式会社 サービス企画本部 クラウドサービス企画開発部長",
+    "description": "@@@名古屋大学工学部情報工学科卒業後、富士通，Sun Microsystems，Googleを経て、本年4月よりKDDIクラウドサービス企画開発部長。Sun Microsystemsでは、Java関連ソフトウェアを担当、プロダクトマーケティング本部長や新規ビジネス開発を担当。Googleでは、企業向け製品サービスのプロダクトマーケティングを統括。現在のKDDIではクラウド事業の立ち上げに奔走中。また2009年より情報処理推進機構(IPA)の未踏IT人材発掘・育成事業のプロジェクトマネージャーも勤め、若者の新たなチャレンジを支援している。"
   },
 }
