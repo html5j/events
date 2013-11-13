@@ -186,3 +186,15 @@ span.iconNow {
 #codeiq p {
   margin-left: 40%;
 }
+
+@media (max-width: 480px) {
+  #offering dt {
+    float: none;
+  }
+  #offering dd {
+    padding: 0;
+  }
+  #offering dl {
+    padding: 1em;
+  }
+}
