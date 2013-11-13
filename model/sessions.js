@@ -111,7 +111,7 @@ module.exports = [
     "sessions" : [
       {
         "id" : "1f-l-3",
-        "title": "Regionsを使った新しいCSSレイアウトを作る方法(仮)",
+        "title": "CSS Regionsを使った新しいCSSレイアウトを作る方法",
         "speakers": ["keisuke_todoroki"],
         "description": "Webコンテンツをリッチに魅せるCSSの新しい仕様が続々と準備されています。$$$FlexboxやMulti-Columnなど、これまで実現が困難だったレイアウトを簡単にしてくれる仕様が幾つかあります。このセッションでは、iOS7 のSafariでもサポートされたCSS Regionsにフォーカスして、実際のコードを確認しながら、これからの新しいWebコンテンツの作り方とその可能性を見ていきます。",
         "materials": null
