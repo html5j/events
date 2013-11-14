@@ -210,6 +210,15 @@ footer p a {
     margin-left: 5em;
 }
 
+#keynote_speakers {
+    list-style: none;
+    padding-left: 0;
+}
+#keynote_speakers li {
+    padding-right: 10px;
+    display: inline-block;
+}
+
 @media (max-width: 768px) {
 
     body {

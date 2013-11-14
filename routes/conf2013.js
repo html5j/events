@@ -28,6 +28,7 @@ exports.sessions = function (req, res) {
   res.render("2013/sessions", {
     id: "sessions"
     , title: "セッションテーブル | HTML5 Conference 2013"
+    , speakers: speakers
     , session_html: helper.show_sessions(sessions, speakers)
   });
 };
@@ -36,6 +37,7 @@ exports.sessions_v = function (req, res) {
   res.render("2013/sessions_v", {
     id: "sessions"
     , title: "セッションテーブル | HTML5 Conference 2013"
+    , speakers: speakers
     , session_html: helper.show_sessions_v(sessions, speakers)
   });
 };
