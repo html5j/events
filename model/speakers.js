@@ -1,6 +1,15 @@
 // 概要の書き方
 // @@@は<p>タグに、$$$ は<br>に置換されます
-// また、http://... および @hoge には自動でアンカーが指定されます
+// TODO: http://... および @hoge への自動アンカー付与
+
+/* template
+  "namename": {
+    "name": "",
+    "affiliation": "",
+    "img_url": "img/speakers/namename.jpg",
+    "description": "@@@"
+  },
+*/
 
 module.exports = {
   "keisuke_ai": {
@@ -23,10 +32,30 @@ module.exports = {
     "description": "@@@学生時代に Firefox 1.0 から Mozilla 製品の日本語リリースを担当。インターネットをすべての人々の利益になる方向へ発展させる Mozilla の目標に共感し、卒業後は Mozilla Japan で夢を見せるエバンジェリストとして活動中。$$$最新 Web 技術がもたらす新しい世界とレッサーパンダの可愛さについて語らせると止まらない。$$$あのもふもふしたしっぽがたまらない！@@@http://dynamis.jp/$$$https://twitter.com/dynamitter$$$http://www.facebook.com/dynamis"
   },
 
+  "masahiko_adachi": {
+    "name": "足立 昌彦",
+    "affiliation": "株式会社カブク",
+    "img_url": "img/speakers/masahiko_adachi.jpg",
+    "description": "@@@大学院にて人工知能の研究に従事。大手企業研究所勤務、サンフランシスコや外資系ベンチャー企業にてエンジニア/ディレクターとして従事。Android黎明期からAndroid向け日本語入力アプリ「Simeji」の開発に従事。Google Developer Expert(Android)に認定され、Android関係の執筆、講演多数。2013年株式会社カブクを設立。3Dプリンターなどのデジタル製造設備を活用したものづくりマーケットプレイス＆3Dプリントサービス「rinkak」を企画・開発・運営。"
+  },
+
+  "yukio_andoh": {
+    "name": "安藤 幸央",
+    "description": "@@@UXリサーチャー。CGプログラマ。携帯電話サイズから、大規模ドームシアターまで、様々な映像システム、ユーザインタフェースを手がける。最近の興味は、Minimal な UI と、 Skeuomorphic な UI."
+  },
+
   "yasunobu_ikeda": {
     "name": "池田 泰延",
     "affiliation": "株式会社 ICS",
     "description": "@@@テクニカルディレクターとしてHTML5やFlashを用いたプロモーションサイトの制作や、ゲームやアプリの開発を主に手がける。Webのインタラクティブ表現に関する最新技術を研究し、ブログ「ClockMaker」やセミナー・勉強会で積極的に情報共有に取り組んでいる。筑波大学非常勤講師も務める。@@@ 主な著書に、『HTML5インタラクティブ表現ガイド』（技術評論社）、『Stage3Dプログラミング ～GPUを使ったFlash 3Dコンテンツ制作～』（ワークスコーポレーション）など。@@@ClockMaker　http://clockmaker.jp/blog/$$$ICS INC.　http://ics-web.jp/$$$Twitter　http://twitter.com/clockmaker$$$Google+　https://plus.google.com/102594170131511973965"
+  },
+
+  "koji_ishii": {
+    "name": "石井 宏治",
+    "affiliation": "楽天株式会社",
+    "affiliation_sub": "イーブックサービス開発部",
+    "img_url": "img/speakers/koji_ishii.jpg",
+    "description": "@@@楽天Koboで標準化推進を担当。CSS WG、I18N WG、IDPF EPUB WG、Unicode Technical Committeeに参加し、CSS Text、CSS Text Decorations、CSS Writing Modes、CSS Ruby、Unicode TR#50のEditorをしています。"
   },
 
   "koji_ishimoto": {
@@ -41,6 +70,13 @@ module.exports = {
     "affiliation": "Google",
     "img_url": "img/speakers/hayato_ito.jpg",
     "description": "@@@Google で働くソフトウェア・エンジニア。Google Chrome の開発をしています。W3C WebApps Working Group のメンバーや W3C Shadow DOM の Spec Editor を務めています。好きなデータ構造は Tree です。"
+  },
+
+  "takuya_oikawa": {
+    "name": "及川 卓也",
+    "affiliation": "Google",
+    "img_url": "img/speakers/takuya_oikawa.jpg",
+    "description": "@@@GoogleにてChromeの開発チームに所属。html5j発起人の1人。昨年のHTML5 Conferenceにおいて、オープニングスピーチおよびパネルを担当。Web技術に無限の可能性を感じている。"
   },
 
   "go_otani": {
@@ -100,7 +136,7 @@ module.exports = {
 
   "kensaku_komatsu": {
     "name": "小松 健作",
-    "affiliation": "NTTコミュニケーションズ",
+    "affiliation": "NTTコミュニケーションズ株式会社",
     "affiliation_sub": "先端IPアーキテクチャセンタ",
     "img_url": "img/speakers/kensaku_komatsu.jpg",
     "description": "@@@1972年生まれ。山形県出身。HTML5 Conference 2013 総合プロデューサー@@@大学時代、家系ラーメン店でのバイトを契機をとして、ラーメン中毒となる。その後、プロトコル研究・CDNシステム開発・VoIP開発など主にインフラ系のエンジニアを経るも、HTML5に出会うことで Web がプラットフォーム化することを確信。2009年よりWebとNWとの相互作用を中心に、HTML5の研究開発に従事。W3Cでの標準化推進や執筆活動、コミュニティ運営による啓蒙など活動は多岐に渡る。Google Developer Expert (HTML5), Microsoft Valuable Professional (IE)@@@blog: http://blog.livedoor.jp/kotesaki/$$$twitter: @komasshu"
@@ -113,6 +149,13 @@ module.exports = {
     "description": "@@@米国の大学を卒業後、大規模なインターネットメディア運営会社に編集者として入社するもウェブデザイナ兼フロントエンドデベロッパとして従事、その後現職である株式会社サイバーエージェントにてモバイルウェブアプリの開発をメインにした部署に転職、専業フロントエンドデベロッパに転向。現在は主にパフォーマンス解析・改善に関するエバンジェリスト的役割と開発者としてのタスクを折半中。$$$入社してすぐ企画したフロントエンダのための勉強会「Frontrend」のメインスピーカの1人でもある。$$$個人ではオープンソースソフトウェアのソーシャルドキュメント翻訳をGitHub上で行う「en.ja OSS」を主催している。"
   },
 
+  "yu_sakai": {
+    "name": "酒井 優",
+    "affiliation": "WEBCRE8.jp",
+    "img_url": "img/speakers/yu_sakai.png",
+    "description": "@@@Web制作者向けブログ「WEBCRE8.jp」を運営するフリーランスのWebディレクター/デザイナーであり、HTML5KARUTAの制作者。html5jマークアップ部副部長。「オールナイト・クリエイソン」、「HTML5KARUTA大会」といったカジュアルに参加できる制作者向けイベントを運営。好きなものはHTML5とデザイン、フォント。@@@Twitter: @glatyou / @webcre8$$$ブログ: http://webcre8.jp/"
+  },
+
   "ayumu_sato": {
     "name": "佐藤 歩",
     "affiliation": "株式会社サイバーエージェント",
@@ -120,11 +163,28 @@ module.exports = {
     "description": "@@@株式会社サイバーエージェント Webディベロッパー@@@名古屋のWeb制作会社で、PHP/JavaScript/HTML/CSSを中心にWebサイト制作・システム開発に従事。2012年9月からは現職でフロントエンドエンジニアとしての開発業務ほか、社内の技術教育にも携わる。サイバーエージェント主催のフロントエンド技術セミナー「Frontrend」などのセミナーイベントや、ブログ、書籍などを通じて、日々仕入れている技術情報のアウトプットに励んでいる。@@@サイト: http://aho.mu$$$ブログ: http://havelog.ayumusato.com$$$Twitter: @ahomu"
   },
 
+  "nobuya_sato": {
+    "name": "佐藤 伸哉",
+    "description": "@@@エクスペリエンスデザイナー。 Web黎明期より大規模な Webサイトの情報設計や企業のグローバル戦略、デザイン戦略を数多く手掛ける。モバイル端末やAndroid UIに造詣が深い。"
+  },
+
+  "kaoru_shimizu": {
+    "name": "清水 かほる",
+    "description": "@@@エンタープライズ向けのソフトウェア開発を経て、WebサービスのUCDに携わる。現在はモバイル業界でコンシューマ向けのコンテンツ戦略を担当。"
+  },
+
   "satoshi_shoda": {
     "name": "正田 聖",
     "affiliation": "株式会社テレビ朝日メディアプレックス",
     "img_url": "img/speakers/satoshi_shoda.jpg",
     "description": "@@@（株）テレビ朝日メディアプレックスのフロントエンジニア@@@http://hijiriworld.com/web/"
+  },
+
+  "shumpei_shiraishi": {
+    "name": "白石 俊平",
+    "affiliation": "株式会社オープンウェブ・テクノロジー",
+    "img_url": "img/speakers/shumpei_shiraishi.jpg",
+    "description": "@@@株式会社オープンウェブ・テクノロジー代表取締役として、Web標準技術に関するコンサルティングや開発に従事。$$$Web技術者向け情報メディア「HTML5 Experts.jp」編集長、日本最大（5,000名超）のHTML5開発者コミュニティ「html5j」管理人、一般社団法人日本オープン・ウェブ・アソシエーション代表理事など、Web先端技術に関する情報発信とコミュニティ活動を継続的に行う。$$$Google社公認Developer Expert (HTML5)、Microsoft社公認Most Valuable Professional (IE) 、W3C Invited Expert。$$$著書に「HTML5&API入門」（2010, 日経BP）、「Google Gearsスタートガイド」（2007, 技術評論社）など。監訳に「実践jQuery Mobile」（2013, オライリー）など。"
   },
 
   "masahiro_tanaka": {
@@ -147,10 +207,24 @@ module.exports = {
     "description": "@@@2001 年に日本サン・マイクロシステムズ株式会社に入社し、2010 年 6 月より日本オラクル株式会社に在籍。$$$サン時代から Web 関連製品のエバンジェリストとして活動し、各種セミナー・ イベント等で多数の講演を実施。$$$2010 年 12 月より日本オラクルで Java エバンジェリスト として活動し、Java SE/EE に関する啓蒙活動を実施中。"
   },
 
+  "nao_tokui": {
+    "name": "徳井 直生",
+    "affiliation": "Pocket Supernova / Qosmo",
+    "img_url": "img/speakers/nao_tokui.jpg",
+    "description": "@@@1976年石川県生まれ。東京大学工学系研究科博士課程修了。工学博士。在学中からプログラミングを駆使した音楽・インスタレーション作品を発表するなど活動は多岐にわたる。2009年にクリエイター集団Qosmoを設立、手がけたiPhoneアプリでカンヌ国際広告祭金賞など受賞多数。2013年春には渡米、シリコンバレーの有力アクセラレータ500 startupsから支援を受け新しいサービスの立ち上げにも取り組んでいる。2001年から書き続けているObjective-Cと波乗りには目がない。@@@blog: http://www.sonasphere.com/$$$Twitter: @naotokui"
+  },
+
   "keisuke_todoroki": {
     "name": "轟 啓介",
     "affiliation": "アドビ システムズ 株式会社",
     "description": "@@@twitter: @keisuke322"
+  },
+
+  "hirotaka_nakajima": {
+    "name": "中島 博敬",
+    "affiliation": "W3C",
+    "img_url": "img/speakers/hirotaka_nakajima.jpg",
+    "description": "@@@Webに関連するネットワークプロトコルの研究に取り組んでいます。新しいガジェットが大好きでひたすらガジェットを消費する日々を送っています。@@@blog: http://blog.nunnun.jp$$$twitter: @nunnun"
   },
 
   "kosuke_nagano": {
@@ -158,7 +232,12 @@ module.exports = {
     "affiliation": "株式会社ACCESS",
     "affiliation_sub": "ソフトウェアソリューション本部 IAビジネスグループ開発2課",
     "img_url": "img/speakers/kosuke_nagano.jpg",
-    "description": "@@@2005年、(株)ACCESSに入社。組み込み向けブラウザソフト「NetFront Browser v3」の開発、移植、海外顧客のオンサイトサポートなどを経て、現在WebKitベースのブラウザ「NetFrontBrowser NX」の開発に従事。ゲーム機器、STB、DTVなど組み込み向けのブラウザエンジンを提供。@gm_kou。" 
+    "description": "@@@2005年、(株)ACCESSに入社。組み込み向けブラウザソフト「NetFront Browser v3」の開発、移植、海外顧客のオンサイトサポートなどを経て、現在WebKitベースのブラウザ「NetFrontBrowser NX」の開発に従事。ゲーム機器、STB、DTVなど組み込み向けのブラウザエンジンを提供。@gm_kou。"
+  },
+
+  "hiroko_nozawa": {
+    "name": "野澤 紘子",
+    "description": "@@@インフォメーションアーキテクト。現在は、スマホサイト構築やアプリ開発を行っている。日々「良いサービスデザインとは？」と成長について考えるメールマガジンを発行中。"
   },
 
   "futomi_hatano": {
@@ -172,7 +251,12 @@ module.exports = {
     "name": "林 達也 (@lef)",
     "affiliation": "株式会社レピダム",
     "img_url": "img/speakers/tatsuya_hayashi.jpg",
-    "description": "@@@IETF, W3C, OIDF等で標準化活動を主体とし、idcon運営のOIDF-Jプロデューサー等の技術コミュニティ活動を行う。$$$業務はID関係を中心に、通信、プログラミング(言語/コンパイラ/etc)、セキュリティ(認証・認可/脆弱性/etc)、プライバシー等。@@@https://twitter.com/lef$$$http://jp.linkedin.com/in/hayashitatsuya/"
+    "description": "@@@IETF, W3C, OIDF等で標準化活動を主体とし、idcon運営、OIDF-Jプロデューサー等の技術コミュニティ活動を行う。$$$業務はID関係を中心に、通信、プログラミング(言語/コンパイラ/etc)、セキュリティ(認証・認可/脆弱性/etc)、プライバシー等。@@@https://twitter.com/lef$$$http://jp.linkedin.com/in/hayashitatsuya/"
+  },
+
+  "yoshiki_hayama": {
+    "name": "羽山 祥樹",
+    "description": "@@@インフォメーションアーキテクト。担当したWebサイトが雑誌のWebユーザビリティランキングで国内トップクラスの評価を受ける。専門は人間中心設計、アクセシビリティ。"
   },
 
   "kei_funagayama": {
@@ -203,9 +287,24 @@ module.exports = {
   },
 
   "masataka_yakura": {
-    "name": "矢倉 眞隆 (myakura)",
+    "name": "矢倉 眞隆",
+    "affiliation": "myakura",
     "img_url": "img/speakers/masataka_yakura.jpg",
     "description": "@@@「ホームページを作りたい」という思いからHTML, CSSを学び始めるが、ホームページを作るよりそちらの方に興味を持ってしまい、以来HTML, CSS, 各種APIなどのWeb標準仕様やWebブラウザの動向を追いかける毎日をおくる。これまでにHTML5やCSS3に関するブログ記事・雑誌記事の執筆、セミナー・勉強会などでの公演、海外のWeb開発関連書籍の監訳、Web標準仕様書や海外のブログ記事の翻訳などを行う。いろんなところでmyakura。"
+  },
+
+  "kinuko_yasuda": {
+    "name": "安田 絹子",
+    "affiliation": "Google",
+    "img_url": "img/speakers/kinuko_yasuda.jpg",
+    "description": "@@@Google で働くソフトウェア・エンジニア。最近はずっと Chrome の開発をやっています。W3C WebApps Working Group で Storage 関連の API を中心に活動しており、Quota Management API のエディタでもあります。ブラウザの中の人ですが、Javascript/HTML5 は永遠に勉強中ぎみ。"
+  },
+
+  "daisuke_yamashita": {
+    "name": "山下 大介",
+    "affiliation": "株式会社マナボ",
+    "img_url": "img/speakers/daisuke_yamashita.jpg",
+    "description": "@@@23歳の時（2005年）に、株式会社SOBAプロジェクトを創業し、自社開発のP2P配信によるVoIP技術を商業化した後、2011年末に同社株式を売却。2012年1月からクックパッド株式会社でレシピの有料販売サービス「レシピストア」と料理レッスン予約サイト「クックステップ」の立ち上げに関わる。2013年9月から以前より支援していた教育系スタートアップの株式会社マナボに取締役CTOとして参加。@@@ブログ：http://blog.daisukeyamashita.com/$$$Twitter：https://twitter.com/dddaisuke$$$Facebook：https://www.facebook.com/dice.k.yamashita"
   },
 
   "daisuke_yamazaki": {
@@ -215,4 +314,25 @@ module.exports = {
     "description": "@@@受賞歴：Microsoft MVP（BingMapsDevelopment）$$$著書：   レスポンシブWebデザイン「超」実践デザイン集中講義@@@＠IT、日経ソフトウェア、SoftwareDesign、ITPro、Web業界誌での執筆など、html5jビギナー部（セミナー）を開催したりと活動をおこなっている。日経PC21「名作フリーソフトを訪ねて」では開発したアプリが選ばれ掲載。＠ITでは ” HTML5アプリ作ろうぜ！” を連載執筆中。"
   },
 
+  "yoshinori_wakizaka": {
+    "name": "脇阪 善則",
+    "description": "@@@モバイルUXデザイナー、ユーザーリサーチャー。デジタル機器、モバイルWeb、アプリのUXリサーチからUI設計までを手がける。モバイルUXを起点としたサービス設計を推進中。"
+  },
+  "shin_miyakawa": {
+    "name": "宮川 晋",
+    "affiliation": "NTTコミュニケーションズ株式会社",
+    "description": ""
+  },
+  "ryuji_wakikawa": {
+    "name": "湧川 隆次",
+    "img_url": "img/speakers/ryuji_wakikawa.jpg",
+    "affiliation": "ソフトバンクモバイル株式会社",
+    "description": "@@@2005年に慶應義塾大学環境情報学部で有期専任講師に就き、モバイル向けの通信プロトコルの研究開発を実施。研究成果の一部は、IETFで標準化しRFCとして発行。2008年からトヨタIT開発センターで自動車のネットワークの研究開発に日米でたずさわり、2013年よりソフトバンクモバイルのネットワーク本部に在籍中。"
+  },
+  "akihito_fujii": {
+    "name": "藤井 彰人",
+    "img_url": "img/speakers/akihito_fujii.jpg",
+    "affiliation": "KDDI株式会社 サービス企画本部 クラウドサービス企画開発部長",
+    "description": "@@@名古屋大学工学部情報工学科卒業後、富士通，Sun Microsystems，Googleを経て、本年4月よりKDDIクラウドサービス企画開発部長。Sun Microsystemsでは、Java関連ソフトウェアを担当、プロダクトマーケティング本部長や新規ビジネス開発を担当。Googleでは、企業向け製品サービスのプロダクトマーケティングを統括。現在のKDDIではクラウド事業の立ち上げに奔走中。また2009年より情報処理推進機構(IPA)の未踏IT人材発掘・育成事業のプロジェクトマネージャーも勤め、若者の新たなチャレンジを支援している。"
+  },
 }

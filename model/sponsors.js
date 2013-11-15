@@ -117,15 +117,12 @@ module.exports = {
     "href": "http://www.nri-aitd.com/",
     "img_url": "img/sponsors/nri/nri_150w.png"
   },
-/*
   {
     "id": "kddi",
     "alt": "KDDI株式会社",
     "href": "http://www.kddi.com/",
-    "img_url": "img/_dummy_150x150.png"
+    "img_url": "img/sponsors/kddi/kddi_150w.png"
   },
-*/
-
   {
     "id": "canon-its",
     "alt": "キヤノンITソリューションズ株式会社",
@@ -186,6 +183,13 @@ module.exports = {
     "href": "http://www.appiaries.com/jp/",
     "img_url": "img/sponsors/pcp/appiaries_150w.png"
   },
+  {
+    "id": "copilot",
+    "alt": "株式会社コパイロツト",
+    "href": "http://copilot.jp/",
+    "img_url": "img/sponsors/copilot/copilot_150w.png"
+  },
+
   ],
   "silver": [
   {
@@ -268,19 +272,55 @@ module.exports = {
     "img_url": "img/sponsors/imjp/imj_120w.png"
   },
   {
-    "id": "riac",
-    "alt": "RIAコンソーシアム",
-    "href": "http://www.riac.jp/",
-    "img_url": "img/sponsors/riac/riac_120w.png"
-  },
-  {
     "id": "mfac",
     "alt": "株式会社モバイルファクトリー",
     "href": "http://www.mobilefactory.jp/",
     "img_url": "img/sponsors/mfac/mfac_120w.png"
   },
+  {
+    "id": "rakuten",
+    "alt": "楽天株式会社",
+    "href": "http://corp.rakuten.co.jp/",
+    "img_url": "img/sponsors/rakuten/rakuten_120w.png"
+  },
+  {
+    "id": "cybird",
+    "alt": "株式会社サイバード",
+    "href": "http://www.cybird.co.jp/",
+    "img_url": "img/sponsors/cybird/cybird_120w.png"
+  },
+  {
+    "id": "salesforce",
+    "alt": "セールスフォース・ドットコム",
+    "href": "http://www.salesforce.com/jp/",
+    "img_url": "img/sponsors/salesforce/salesforce_120w.png"
+  },
+  {
+    "id": "opera",
+    "alt": "Opera Software",
+    "href": "http://www.opera.com/ja",
+    "img_url": "img/sponsors/opera/opera_120w.png"
+  },
+  {
+    "id": "jig",
+    "alt": "株式会社jig.jp",
+    "href": "http://jig.jp/",
+    "img_url": "img/sponsors/jig/jig_120w.png"
+  },
+  {
+    "id": "juniper",
+    "alt": "ジュニパーネットワークス株式会社",
+    "href": "http://www.juniper.net/jp/jp/",
+    "img_url": "img/sponsors/juniper/juniper_120w.png"
+  },
   ],
   "support": [
+  {
+    "id": "riac",
+    "alt": "RIAコンソーシアム",
+    "href": "http://www.riac.jp/",
+    "img_url": "img/sponsors/riac/riac_120w.png"
+  },
   {
     "id": "w3c",
     "alt": "W3C",
@@ -298,6 +338,18 @@ module.exports = {
     "alt": "IPTVフォーラム",
     "href": "http://www.iptvforum.jp/",
     "img_url": "img/sponsors/iptv/iptv_120w.png"
+  },
+  {
+    "id": "mic",
+    "alt": "総務省",
+    "href": "http://www.soumu.go.jp/",
+    "img_url": "img/sponsors/mic/mic_200w.png"
+  },
+  {
+    "id": "csaj",
+    "alt": "一般社団法人コンピュータソフトウェア協会",
+    "href": "http://www.csaj.jp/",
+    "img_url": "img/sponsors/csaj/csaj_120w.png"
   },
   ],
 
@@ -349,6 +401,12 @@ module.exports = {
     "alt": "マイナビニュース",
     "href": "http://news.mynavi.jp/devse/programming/index.html",
     "img_url": "img/sponsors/mynavi/mynavi_120w.png"
+  },
+  {
+    "id": "ascii",
+    "alt": "株式会社KADOKAWA",
+    "href": "http://www.kadokawa.co.jp/",
+    "img_url": "img/sponsors/ascii/ascii_120w.png"
   }
   ],
 }

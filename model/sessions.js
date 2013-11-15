@@ -33,8 +33,8 @@ module.exports = [
       },
       {
         "id" : "5f-s1-1",
-        "title": "調整中",
-        "speakers": [""],
+        "title": "Markup Maniax - マークアップ部が語り合うHTML5仕様のいま・これから",
+        "speakers": ["masakazu_muraoka", "yu_sakai", "masataka_yakura"],
         "description": "",
         "materials": null
       },
@@ -87,8 +87,8 @@ module.exports = [
       {
         "id" : "5f-s1-2",
         "title": "モバイルフロンティア：フロントエンドエンジニアとデザイナーのためのモバイルユーザーエクスペリエンス",
-        "speakers": [""],
-        "description": "「モバイルフロンティア よりよいモバイルUXを生み出すためのデザインガイド」を監訳したメンバーによる、ユーザーエクスペリエンス講座。http://www.amazon.co.jp/dp/4621086553$$$ただ「つくる」だけでなく良い体験をデザインすることが重要な開発フローと認識され始めている近年、ネイティブアプリ・Webアプリ関係なく「体験のデザイン」を一緒に考えていく40分。デザイナー・エンジニア含むすべての人を対象。",
+        "speakers": ["yukio_andoh", "nobuya_sato", "kaoru_shimizu", "hiroko_nozawa", "yoshiki_hayama", "yoshinori_wakizaka"],
+        "description": "「モバイルフロンティア よりよいモバイルUXを生み出すためのデザインガイド」を翻訳したメンバーによる、ユーザーエクスペリエンス講座。http://www.amazon.co.jp/dp/4621086553$$$ただ「つくる」だけでなく良い体験をデザインすることが重要な開発フローと認識され始めている近年、ネイティブアプリ・Webアプリ関係なく「体験のデザイン」を一緒に考えていく40分。デザイナー・エンジニア含むすべての人を対象。",
         "materials": null
       },
       {
@@ -111,9 +111,9 @@ module.exports = [
     "sessions" : [
       {
         "id" : "1f-l-3",
-        "title": "CSSレイアウトとツール（仮）",
+        "title": "CSS Regionsを使った新しいCSSレイアウトを作る方法",
         "speakers": ["keisuke_todoroki"],
-        "description": "（内容検討中）",
+        "description": "Webコンテンツをリッチに魅せるCSSの新しい仕様が続々と準備されています。$$$FlexboxやMulti-Columnなど、これまで実現が困難だったレイアウトを簡単にしてくれる仕様が幾つかあります。このセッションでは、iOS7 のSafariでもサポートされたCSS Regionsにフォーカスして、実際のコードを確認しながら、これからの新しいWebコンテンツの作り方とその可能性を見ていきます。",
         "materials": null
       },
       {
@@ -139,15 +139,15 @@ module.exports = [
       },
       {
         "id" : "5f-s1-3",
-        "title": "Web標準化パネル（仮）",
-        "speakers": [""],
+        "title": "Spec EditorとContributorが語るWeb標準化と開発者への期待",
+        "speakers": ["takuya_oikawa", "koji_ishii", "kinuko_yasuda", "kensaku_komatsu", "masataka_yakura"],
         "description": "",
         "materials": null
       },
       {
         "id" : "6f-l-3",
         "title": "HTTP/2.0がもたらすWebサービスの進化",
-        "speakers": ["shigeki_ohtsu", "tatsuya_hayashi"],
+        "speakers": ["shigeki_ohtsu", "tatsuya_hayashi", "hirotaka_nakajima"],
         "description": "GoogleやTwitterが大規模に導入しているSPDYをベースとして、HTTP/2.0の標準化作業が現在急ピッチで進められています。$$$十数年ぶりに改訂されるこの新プロトコルによってWebサービスが今後どう変わるのか、デモを交えてHTTP/2.0の概要について解説します。",
         "materials": null
       }
@@ -178,7 +178,7 @@ module.exports = [
       },
       {
         "id" : "5f-l-4",
-        "title": "地下鉄 x サクサク x これからのWebゲームアプリが備えるべき8つの機能（仮）",
+        "title": "地下鉄 x サクサク x これからのWebゲームアプリが備えるべき8つの機能",
         "speakers": ["takao_obara"],
         "description": "電波の不確かな場所でも動作し、サクサクと軽快に動作する Web Application の実装方法とそのアイデアについてご紹介します。$$$このセッションでは、更に一歩進んだ発想(そして、ちょっとした黒魔術)もご紹介する予定です。",
         "materials": null
@@ -193,7 +193,7 @@ module.exports = [
       {
         "id" : "5f-s1-4",
         "title": "(白石俊平と) カッコいいやつら 番外編 「スタートアップのススメ」",
-        "speakers": [""],
+        "speakers": ["shumpei_shiraishi", "masahiko_adachi", "nao_tokui", "daisuke_yamashita"],
         "description": "昨今の技術者にとっては、どうにも気になるキーワード、「スタートアップ」。$$$アプリ開発がどんどん容易になり、マネタイズの障壁も下がっていることで、開発者であれば誰でもスタートアップを興せる可能性がある時代です。$$$スタートアップは、きっと楽しい。でも、踏み出せない要因もたくさん。$$$潰れちゃったらどうなるんだろう・・・？家族もいるし、あんまり若くないし・・・。経営とかってよくわからないし・・・。キツイ？薄給？などなど。$$$このセッションでは、技術者としても起業家としても著名なお三方をお迎えして、技術系スタートアップの実際をとことん掘り下げます。$$$日本に、スタートアップのビッグウェーブを起こそう！",
         "materials": null
       },
@@ -245,14 +245,14 @@ module.exports = [
       },
       {
         "id" : "5f-s1-5",
-        "title": "キャリアのプロが語る HTML5への期待（仮）",
-        "speakers": [""],
-        "description": "",
+        "title": "通信キャリア プロフェッショナルが語る HTML5 への期待",
+        "speakers": ["kensaku_komatsu", "shin_miyakawa", "akihito_fujii", "ryuji_wakikawa"],
+        "description": "HTML5を支えるインフラ環境が、$$$　- モバイルや車などのマルチデバイス化の進展$$$　- IPv4の枯渇とIPv6への移行によるNW環境の変化$$$　- IaaS, PaaS, BaaS といった多種多様なクラウドサービス$$$と大きく変容しています。これに伴い、Web開発にも様々な変化がおこることでしょう。$$$今回のパネルディスカッションでは、通信キャリア各社にて国内外で活躍する各分野のプロフェッショナルより、HTML5に対する要望や期待について伺います。",
         "materials": null
       },
       {
         "id" : "6f-l-5",
-        "title": "Web をまともにしたいので Shadow DOM と Web Components をつくってます（仮）",
+        "title": "Web をまともにしたいので Shadow DOM と Web Components をつくってます",
         "speakers": ["hayato_ito"],
         "description": "Web Componentsは、今年の Google I/O で注目を浴びた、Webアプリケーション開発の考え方を大きく変える期待の次世代Web技術です。「混ぜるな危険」状態である現在のWebアプリケーション開発の問題を解決するため、ブラウザ・ベンダはコンポーネント化のためWeb標準仕様の策定とブラウザへのネイティブ実装を進めています。これにより、Web開発者のみなさんはWeb技術でコンポーネントをつくり、それらに独自のHTMLのタグ名をつけて広く共有・再利用することが可能になります。$$$このセッションでは、Web Components の概要、そして現状について解説するとともに、Web Components を支える次世代Web技術について深く掘り下げていきます。$$$セッションのスピーカーは、Web Components の中核を支えるShadow DOM の Spec Editor であり、同時に Shadow DOM の Google Chrome への実装を行なっています。時間が許す限り、W3C Spec Editor の仕事や、Google Chrome の開発を普段どのように行なっているか、などについても触れたいと思います。",
         "materials": null

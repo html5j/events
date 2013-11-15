@@ -42,18 +42,147 @@
 
 #offering {
     margin-top: 2em;
-    background-color: #f07444;
-    border-radius: 8px;
-    max-width: 600px;
-    padding: 1em;
 }
 
 #offering h2 {
+	background-color: #f07444;
+	font-size:16px;
+	font-weight:bold;
+	padding:16px 55px;
     margin: 0;
-    margin-bottom: 8px;
     color: white;
+	text-shadow:2px 2px 0 #dc4f2f;
+	max-width: 1170px;
 }
+
+#offering ul{
+    padding:30px 55px;
+	margin:-2px 0 0 0px;
+	list-style-type:none;
+	overflow:hidden;
+	background-color: #fff;
+	max-width: 1170px;
+}
+
+#offering li {
+    margin-bottom:15px;
+}
+
 #offering li a {
-    color: white;
+    color:#000;
     text-decoration: underline;
+
+}
+
+#offering dl{
+    padding:30px 55px;
+	margin:-2px 0 0 0px;
+	list-style-type:none;
+	overflow:hidden;
+	background-color: #fff;
+	max-width: 1170px;
+}
+
+#offering dt {
+    float: left;
+	width:100px;
+}
+
+
+#offering dd {
+     padding-left:100px;
+}
+#offering dd a {
+    color:#000;
+    text-decoration: underline;
+
+}
+
+
+
+#offering dd {
+    margin-bottom:12px;
+}
+
+#offering dd a {
+    color:#000;
+    text-decoration: underline;
+
+}
+
+
+span.iconNew {
+	background:#f07444;
+	font-size:12px;
+	color:#fff;
+	padding:2px 5px;
+	text-align:center;
+	width:40px;
+	margin-right:0.7em;
+	text-decoration: none;
+}
+
+
+span.iconEnd {
+	background:#e8e8e8;
+	font-size:12px;
+	color:#333333;
+	padding:2px 5px;
+	text-align:center;
+	width:40px;
+	margin-right:0.7em;
+	text-decoration: none;
+}
+
+span.iconNow {
+	background:#78ab9a;
+	font-size:12px;
+	color:#fff;
+	padding:2px 5px;
+	text-align:center;
+	width:40px;
+	margin-right:0.7em;
+	text-decoration: none;
+}
+
+#codeiq {
+  max-width: 700px;
+  width: 90%;
+  border-radius: 10px;
+  border: 3px solid #78ab9a;
+  margin: 3em auto 1em;
+  padding: 1em;
+}
+#codeiq h2 {
+  margin: 0 0 0.5em;
+  color: #78ab9a;
+  font-weight: bold;
+  border-bottom: 2px solid #78ab9a;
+}
+#codeiq p {
+  overflow: hidden;
+  color: black;
+}
+.donuts {
+  float: left;
+  width: 40%;
+  padding: 1em;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+#codeiq ul {
+  list-style: none;
+  margin-left: 40%;
+  padding: 0;
+}
+#codeiq ul li {
+  margin: 0.1em 0;
+}
+#codeiq ul li a {
+  /*padding-left: 1em;*/
+}
+#codeiq p {
+  margin-left: 40%;
 }

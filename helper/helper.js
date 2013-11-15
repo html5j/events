@@ -50,10 +50,12 @@ Helper.show_profile = function(obj){
 
 
     var template = [
-            '<div class="speaker">', 
+            '<div class="speaker">',
             '<% if (obj.affiliation) { %><p class="affiliation"><%= obj.affiliation %><% } %>',
             '<% if (obj.img_url) { %><p class="image"><img width="100" src="/conference/2013/11/<%= obj.img_url %>" alt=""><% } %>',
+            '<% if (obj.description) { %>', // TODO: remove once all speakers have their desc.
             '<div class="description"><%= obj.description %></div>',
+            '<% } %>', // TODO: remove once all speakers have their desc.
             '</div>',
     ].join("\n");
 
@@ -78,13 +80,15 @@ Helper.show_profiles = function(obj){
     var template = [
         '<% _.each( _.pairs(obj), function(item) { %>',
             '<% var speaker_id = item[0], speaker = item[1]; %>',
-            '<section class="speaker" id="<%= speaker_id %>">', 
+            '<% if (speaker.description) { %>', // TODO: remove once all speakers have their desc.
+            '<section class="speaker" id="<%= speaker_id %>">',
             '<h2><a href="./speaker/<%= speaker_id %>"><%= speaker.name %></a></h2>',
             '<% if (speaker.affiliation) { %><p class="affiliation"><%= speaker.affiliation %><% } %>',
             '<% if (speaker.affiliation_sub) { %><br><%= speaker.affiliation_sub %><% } %>',
             '<% if (speaker.img_url) { %><p class="image"><img width="100" src="/conference/2013/11/<%= speaker.img_url %>" alt=""><% } %>',
             '<div class="description"><%= speaker.description %></div>',
             '</section><hr>',
+            '<% } %>', // TODO: remove once all speakers have their desc.
          '<% }); %>'
     ].join("\n");
 
@@ -122,7 +126,7 @@ Helper.show_sessions = function(sessions, speakers) {
             '<td colspan="6"><%= item.text %></td>',
 
         '<% } else { %>',
-        
+
             '<tr>',
             '<th class="time" scope="row"><%= item.time %></th>',
 
@@ -220,7 +224,7 @@ var rooms_ = [
                 '<div class="panel-heading">',
                     '<%= item.time %>',
                 '</div>',
-        
+
                 '<div class="panel-body session">',
                 '<ul class="list-group">',
 
@@ -234,12 +238,12 @@ var rooms_ = [
 
                     '<% var flag = false; %>',
                     '<% _.each(session.speakers, function(id) { %>',
-                        '<% if(flag) { %><br><% } %>', 
+                        '<% if(flag) { %><br><% } %>',
                         '<% if(Speakers[id]) { %>',
-                            '<a href="./speaker/<%= id %>">', 
-                            '<% if(Speakers[id].img_url) { %><img width="96" alt="<%= Speakers[id].name %>" src="/conference/2013/11/<%= Speakers[id].img_url %>"><% } %>', 
-                            '<span class="name"><%= Speakers[id].name %></span>', '    </a>', 
-                            '<% if(Speakers[id].affiliation) { %><br><span class="affiliation"><%= Speakers[id].affiliation %></span><% } %>', 
+                            '<a href="./speaker/<%= id %>">',
+                            '<% if(Speakers[id].img_url) { %><img width="96" alt="<%= Speakers[id].name %>" src="/conference/2013/11/<%= Speakers[id].img_url %>"><% } %>',
+                            '<span class="name"><%= Speakers[id].name %></span>', '    </a>',
+                            '<% if(Speakers[id].affiliation) { %><br><span class="affiliation"><%= Speakers[id].affiliation %></span><% } %>',
                         '<% } else { %>',
                             '<span>調整中</span>',
                         '<% } %>',
