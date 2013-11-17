@@ -37,7 +37,7 @@ a:hover {
 }
 
 .nav {
-    
+
 }
 
 .navbar-inverse .navbar-nav > .active > a,
@@ -47,7 +47,7 @@ a:hover {
     border-bottom: 3px solid #f5f5f5;
     padding-bottom: 5px;
     margin-bottom: 5px;
-    
+
 }
 
 .navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus  {
@@ -64,43 +64,50 @@ h1 {
 h1.topH1 {
     padding-left: 68px;
     line-height: 65px;
-	margin-bottom:30px;
+    margin-bottom:30px;
     background: url(../img/topH1.png) left center no-repeat;
 }
 
 h1.sessionsH1 {
     padding-left: 68px;
     line-height: 65px;
-	margin-bottom:30px;
+    margin-bottom:30px;
     background: url(../img/sessions.png) left center no-repeat;
 }
 
 h1.speakersH1 {
     padding-left: 68px;
     line-height: 65px;
-	margin-bottom:30px;
+    margin-bottom:30px;
     background: url(../img/speakers.png) left center no-repeat;
 }
 
 h1.accessH1 {
     padding-left: 68px;
     line-height: 65px;
-	margin-bottom:30px;
+    margin-bottom:30px;
     background: url(../img/access.png) left center no-repeat;
 }
 
 h1.offerH1 {
     padding-left: 68px;
     line-height: 65px;
-	margin-bottom:30px;
+    margin-bottom:30px;
     background: url(../img/offering_icon.png) left center no-repeat;
 }
 
 h1.faqH1 {
     padding-left: 68px;
     line-height: 65px;
-	margin-bottom:30px;
+    margin-bottom:30px;
     background: url(../img/faq.png) left center no-repeat;
+}
+
+h1.boothH1 {
+  padding-left:68px;
+  line-height:65px;
+  margin-bottom:30px;
+  background:url(../img/booth.png) left center no-repeat;
 }
 
 h2 {
@@ -140,7 +147,7 @@ table.table thead tr th {
     background: #f3895b;
     border: 2px solid #f5f1e8;
     color: #fff;
-    
+
 }
 
 table.table {
@@ -226,8 +233,75 @@ footer p a {
     display: inline-block;
 }
 
-@media (max-width: 768px) {
+/* booth追加分 */
+.booth {
+    background:#fff;
+    padding:0 20px;
+    margin-bottom:30px;
+    overflow:hidden;
+}
 
+.booth h2 {
+    margin-top:20px;
+}
+
+.booth  p.image {
+    float:left;
+    margin-right:50px;
+}
+
+.booth  > ul > li:before {
+    content: "●";
+    color:#ebebeb;
+    margin-right:8px;
+}
+
+.booth  > ul > li {
+    list-style-type:none;
+    font-size:16px;
+}
+
+.descriptionBt {
+    clear:both;
+    padding-top:20px;
+}
+
+.boothDl {
+    margin-top:20px;
+    border:2px solid #ebebeb;
+}
+
+.boothDl > dt {
+    clear:both;
+    display:inline-block;
+    padding:10px 1%;
+    vertical-align:top;
+}
+
+.boothDl > dd.boothtitle {
+    display:inline-block;
+    padding:10px 1%;
+    vertical-align:top;
+    color:#78ab9a;
+    font-weight:bold;
+}
+
+.boothDl > dd.boothDisc {
+    vertical-align:top;
+    border-top:1px dotted #ebebeb;
+    border-bottom:2px solid #ebebeb;
+    padding:10px 1%;
+    font-size:12px;
+    line-height:1.5;
+}
+
+.boothDl > dd.boothDisc:last-child {
+    border-bottom:0px solid #e8e8e8;
+}
+
+
+/* booth追加分 */
+@media (max-width: 768px) {
     body {
         margin-top: 80px; /* the height of the navbar */
     }
@@ -235,6 +309,7 @@ footer p a {
     #offering {
        width: 80%;
     }
+
     #offering ul {
         padding-left: 1.2em;
     }
@@ -259,7 +334,7 @@ footer p a {
         background-color: #78ab9a;
     }
 
-        
+
     .navbar-header > h1 > img {
         width: 100%;
     }
@@ -302,7 +377,7 @@ footer p a {
     h1.speakersH1,
     h1.accessH1,
     h1.faqH1 {
-      padding: 18px 0 18px 68px;  
+      padding: 18px 0 18px 68px;
       line-height: 28px;
       font-size: 28px;
     }
@@ -316,9 +391,39 @@ footer p a {
         max-height: 350px;
     }
 
+        /* booth追加分 */
+    .booth p.image {
+        float:none;
+        margin-right:10px;
+    }
+
+
+    .boothDl {
+        margin-top:20px;
+    }
+
+    .boothDl > dt {
+        float:none;
+        width:98%;
+        padding:10px 1%  0px 1%;
+        margin-right:0px;
+    }
+
+    .boothDl > dd.boothtitle {
+        float:none;
+        width:98%;
+        padding:0px 1%  0px 1%;
+        margin-right:0px;
+    }
+
+    .boothDl > dd.boothDisc {
+        border-top:1px dotted #e8e8e8;
+        padding:10px 1%  5px 1%;
+        margin-right:0px;
+    }
 }
 
-
+/* booth追加分 */
 @media (max-width: 480px) {
 
     body {
@@ -343,7 +448,6 @@ footer p a {
         width: 250px;
     }
 
-        
     .navbar-header > h1 > img {
         width: 100%;
     }
@@ -390,5 +494,4 @@ footer p a {
     #canvas {
         max-height: 250px;
     }
-
 }

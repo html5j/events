@@ -1,7 +1,7 @@
 var sponsors = require('../model/sponsors')
   , speakers = require('../model/speakers')
   , sessions = require('../model/sessions')
-  , helper = require('../helper/helper.js')   
+  , helper = require('../helper/helper.js')
 
 
 var models = {
@@ -18,7 +18,7 @@ var models = {
 exports.index = function (req, res) {
   res.render("2013/index", {
     id: "index"
-    , title : "HTML5 Conference 2013" 
+    , title : "HTML5 Conference 2013"
     , sponsors: sponsors
     , show_sponsorlogos: helper.show_sponsorlogos
   });
@@ -45,7 +45,7 @@ exports.sessions_v = function (req, res) {
 exports.speakers = function (req, res) {
   res.render("2013/speakers", {
     id: "speakers"
-    , title: "スピーカーのみなさん | HTML5 Conference 2013" 
+    , title: "スピーカーのみなさん | HTML5 Conference 2013"
     , speakers: speakers
     , profiles_html: helper.show_profiles
   });
@@ -76,6 +76,13 @@ exports.faq = function (req, res) {
   res.render("2013/faq", {
     id: "faq"
     , title: "よくある質問・注意事項 | HTML5 Conference 2013"
+  });
+};
+
+exports.booth = function (req, res) {
+  res.render("2013/booth", {
+    id: "booth"
+    , title: "展示ブース | HTML5 Conference 2013"
   });
 };
 
