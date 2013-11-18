@@ -391,6 +391,12 @@ module.exports = {
     "img_url": "img/sponsors/techwave/techwave_120w.png"
   },
   {
+    "id": "techtokyo",
+    "alt": "techtokyo",
+    "href": "http://tech-tokyo.com/",
+    "img_url": "img/sponsors/techtokyo/techtokyo_120w.png"
+  },
+  {
     "id": "inthelooop",
     "alt": "in the looop（イン・ザ・ループ）",
     "href": "http://media.looops.net/",
