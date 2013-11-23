@@ -413,6 +413,12 @@ module.exports = {
     "alt": "株式会社KADOKAWA",
     "href": "http://www.kadokawa.co.jp/",
     "img_url": "img/sponsors/ascii/ascii_120w.png"
+  },
+  {
+    "id": "finder",
+    "alt": "finder",
+    "href": "http://fin.der.jp/",
+    "img_url": "img/sponsors/finder/finder_120w.png"
   }
   ],
 }
