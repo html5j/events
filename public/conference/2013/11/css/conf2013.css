@@ -286,16 +286,15 @@ footer p a {
     font-weight:bold;
 }
 
-.boothDl > dd.boothDisc {
+.boothDl > dd.boothdesc {
     vertical-align:top;
     border-top:1px dotted #ebebeb;
     border-bottom:2px solid #ebebeb;
     padding:10px 1%;
-    font-size:12px;
     line-height:1.5;
 }
 
-.boothDl > dd.boothDisc:last-child {
+.boothDl > dd.boothdesc:last-child {
     border-bottom:0px solid #e8e8e8;
 }
 
@@ -416,7 +415,7 @@ footer p a {
         margin-right:0px;
     }
 
-    .boothDl > dd.boothDisc {
+    .boothDl > dd.boothdesc {
         border-top:1px dotted #e8e8e8;
         padding:10px 1%  5px 1%;
         margin-right:0px;
