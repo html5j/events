@@ -125,6 +125,10 @@ h3 {
     line-height: 1.4;
 }
 
+h5 {
+    font-weight: bold;
+}
+
 .section {
     padding-top: 75px;
     padding-bottom: 75px;
