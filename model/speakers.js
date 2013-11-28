@@ -47,6 +47,7 @@ module.exports = {
   "yasunobu_ikeda": {
     "name": "池田 泰延",
     "affiliation": "株式会社 ICS",
+    "img_url": "img/speakers/yasunobu_ikeda.jpg",
     "description": "@@@テクニカルディレクターとしてHTML5やFlashを用いたプロモーションサイトの制作や、ゲームやアプリの開発を主に手がける。Webのインタラクティブ表現に関する最新技術を研究し、ブログ「ClockMaker」やセミナー・勉強会で積極的に情報共有に取り組んでいる。筑波大学非常勤講師も務める。@@@ 主な著書に、『HTML5インタラクティブ表現ガイド』（技術評論社）、『Stage3Dプログラミング ～GPUを使ったFlash 3Dコンテンツ制作～』（ワークスコーポレーション）など。@@@ClockMaker　http://clockmaker.jp/blog/$$$ICS INC.　http://ics-web.jp/$$$Twitter　http://twitter.com/clockmaker$$$Google+　https://plus.google.com/102594170131511973965"
   },
 
