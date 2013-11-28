@@ -11,6 +11,10 @@ a:hover {
     color: #8bbaaa;
 }
 
+figure {
+    margin: 1em 0;
+}
+
 .navbar-header{
     float: none;
     padding-top: 6px;

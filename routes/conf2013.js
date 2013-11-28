@@ -86,6 +86,13 @@ exports.booth = function (req, res) {
   });
 };
 
+exports.guide = function (req, res) {
+  res.render("2013/guide", {
+    id: "guide"
+    , title: "当日の流れ | HTML5 Conference 2013"
+  });
+};
+
 exports.speaker = function(req, res) {
   var speaker_id = req.params.speaker_id;
 

@@ -49,6 +49,7 @@ app.get('/conference/2013/11/volunteer', routes2013.volunteer);
 app.get('/conference/2013/11/offering', routes2013.offering);
 app.get('/conference/2013/11/faq', routes2013.faq);
 app.get('/conference/2013/11/booth', routes2013.booth);
+app.get('/conference/2013/11/guide', routes2013.guide);
 
 app.get('/conference/2013/11/speaker/:speaker_id', routes2013.speaker);
 app.get('/conference/2013/11/api/:model', routes2013.api);
