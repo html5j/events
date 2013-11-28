@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>PayloadContent</key>
+	<array>
+		<dict>
+			<key>AutoJoin</key>
+			<true/>
+			<key>EncryptionType</key>
+			<string>Any</string>
+			<key>HIDDEN_NETWORK</key>
+			<false/>
+			<key>Password</key>
+			<string>html5jgoemon</string>
+			<key>PayloadDescription</key>
+			<string>Configures wireless connectivity settings.</string>
+			<key>PayloadDisplayName</key>
+			<string>Wi-Fi (html5conf)</string>
+			<key>PayloadIdentifier</key>
+			<string>org.html5j.events.2013.wifi.wifi</string>
+			<key>PayloadOrganization</key>
+			<string>html5j NOC Team</string>
+			<key>PayloadType</key>
+			<string>com.apple.wifi.managed</string>
+			<key>PayloadUUID</key>
+			<string>53541448-52B7-4340-9256-6DB833BB778A</string>
+			<key>PayloadVersion</key>
+			<integer>1</integer>
+			<key>ProxyType</key>
+			<string>None</string>
+			<key>SSID_STR</key>
+			<string>html5conf</string>
+		</dict>
+	</array>
+	<key>PayloadDescription</key>
+	<string>HTML5 Conference 2013のゲスト用無線LANを設定します。会場での混雑を緩和するために事前インストールをお願いします。</string>
+	<key>PayloadDisplayName</key>
+	<string>HTML5Conference2013無線LAN設定</string>
+	<key>PayloadIdentifier</key>
+	<string>org.html5j.events.2013.wifi</string>
+	<key>PayloadOrganization</key>
+	<string>html5j NOC Team</string>
+	<key>PayloadRemovalDisallowed</key>
+	<true/>
+	<key>PayloadType</key>
+	<string>Configuration</string>
+	<key>PayloadUUID</key>
+	<string>066584CE-7B45-4142-863D-6470471E64CA</string>
+	<key>PayloadVersion</key>
+	<integer>1</integer>
+</dict>
+</plist>
