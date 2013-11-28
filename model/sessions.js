@@ -35,7 +35,7 @@ module.exports = [
         "id" : "5f-s1-1",
         "title": "Markup Maniax - マークアップ部が語り合うHTML5仕様のいま・これから",
         "speakers": ["masakazu_muraoka", "yu_sakai", "masataka_yakura"],
-        "description": "",
+        "description": "HTML5といえばAPIや周辺技術の話題を目にすることがほとんどになりましたが、Webサイトで重要なのはやはりマークアップ。HTML5がLast Callになってからも仕様に変更が加わってます。また、独自の要素を定義できる仕組みも登場しました。マークアップの今後はどう向かうのか、マークアップ部の3人が語ります。",
         "materials": null
       },
       {
