@@ -146,17 +146,19 @@ span.iconNow {
 }
 
 #codeiq {
-  max-width: 700px;
-  width: 90%;
   border-radius: 10px;
   border: 3px solid #78ab9a;
   margin: 3em auto 1em;
   padding: 1em;
+  width:45%;
+   margin: 3em auto 1em ;
+   float:left;
 }
 #codeiq h2 {
   margin: 0 0 0.5em;
   color: #78ab9a;
   font-weight: bold;
+  font-size:20px;
   border-bottom: 2px solid #78ab9a;
 }
 #codeiq p {
@@ -186,6 +188,75 @@ span.iconNow {
 #codeiq p {
   margin-left: 40%;
 }
+
+
+
+
+
+#redbull {
+  border-radius: 10px;
+  border: 3px solid #78ab9a;
+  margin: 3em auto 1em;
+  padding: 1em;
+  width:45%;
+  float:right;
+  margin: 3em auto 1em ;
+}
+#redbull h2 {
+  margin: 0 0 0.5em;
+  color: ##f36519;
+  font-size:20px;
+  font-weight: bold;
+  border-bottom: 2px solid #78ab9a;
+}
+#redbull p {
+  overflow: hidden;
+  color: black;
+}
+
+.attention {
+	font-size:11px;
+	color:red;
+}
+.redbull {
+  float: left;
+  width: 40%;
+  padding: 1em;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+#redbull div  {
+  clear:both;
+}
+.qrRedBull {
+	float:right;
+	margin-left:10px;
+	width: 78px;
+height: 78px;
+}
+
+
+.memo {
+	font-size:12px;
+}
+
+@media(max-width:767px){
+	
+#codeiq {
+	float:none;
+  width:100%;
+}	
+
+#redbull {
+	float:none;
+  width:100%;
+  
+
+}
+
 
 @media (max-width: 480px) {
   #offering dt {
