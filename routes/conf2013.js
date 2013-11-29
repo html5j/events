@@ -104,7 +104,9 @@ exports.speaker = function(req, res) {
     title: "スピーカー: "+ speakers[speaker_id].name + " | HTML5 Conference 2013"
   })
 }
-
+exports.questionnaire = function(req, res) {
+    res.redirect('http://formless.herokuapp.com');
+};
 // json api
 /////////////////////////////////////////////////////
 exports.api = function(req, res){

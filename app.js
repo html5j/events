@@ -53,6 +53,7 @@ app.get('/conference/2013/11/guide', routes2013.guide);
 
 app.get('/conference/2013/11/speaker/:speaker_id', routes2013.speaker);
 app.get('/conference/2013/11/api/:model', routes2013.api);
+app.get('/conference/2013/11/questionnaire', routes2013.questionnaire);
 
 // run server
 app.listen(app.get('port'), function () {
