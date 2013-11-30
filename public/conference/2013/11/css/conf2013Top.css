@@ -111,6 +111,33 @@
 }
 
 
+
+dl.sessionshash {
+    padding:10px;
+	margin:-2px 0 0 0px;
+	list-style-type:none;
+	overflow:hidden;
+	max-width: 1170px;
+}
+
+dl.sessionshash dt {
+    float: left;
+	width:380px;
+	line-height:1.4;
+}
+
+
+dl.sessionshash dd {
+     padding-left:380px;
+	 line-height:1.4;
+}
+dl.sessionshash dd a {
+    text-decoration: underline;
+	padding:0 5px;
+
+}
+
+
 span.iconNew {
 	background:#f07444;
 	font-size:12px;
@@ -269,4 +296,13 @@ height: 78px;
   #offering dl {
     padding: 1em;
   }
+  
+    dl.sessionshash dt {
+    float: none;
+}
+
+
+dl.sessionshash dd {
+     padding: 0;
+}
 }

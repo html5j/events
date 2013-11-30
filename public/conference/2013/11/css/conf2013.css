@@ -9,7 +9,14 @@ a {
 
 a:hover {
     color: #8bbaaa;
+	}
+
+.table a {
+    color: #fff;
+	text-decoration:underline;
+	
 }
+
 
 figure {
     margin: 1em 0;
