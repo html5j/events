@@ -373,12 +373,6 @@ module.exports = {
     "img_url": "img/sponsors/atmarkit/atmarkit_120w.png"
   },
   {
-    "id": "codeiq",
-    "alt": "CodeIQ MAGAZINE",
-    "href": "https://codeiq.jp/magazine/",
-    "img_url": "img/sponsors/codeiq/codeiq_120w.png"
-  },
-  {
     "id": "gihyo",
     "alt": "技術評論社",
     "href": "http://gihyo.jp/",
