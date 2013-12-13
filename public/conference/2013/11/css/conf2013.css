@@ -11,7 +11,7 @@ a:hover {
     color: #8bbaaa;
 	}
 
-.table a {
+thead a {
     color: #fff;
 	text-decoration:underline;
 	
