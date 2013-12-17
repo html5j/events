@@ -6,9 +6,9 @@ var Helper = {}
 Helper.show_sponsorlogos = function(type, arr0, arr1, shuffle_flag) {
     var template = [
         '<ul class="list-unstyled list-inline">',
-        '<% _.each(list, function(item) { %>',
-            '<li><a class="thumbnail sponsor" id="sp-<%= item.id %>" data-sponsorid="<%= item.id %>" target="_blank" href="<%= item.href %>">',
-            '<img width="<%= width %>" height="<%= height %>" src="/conference/2013/11/<%= item.img_url %>" alt="<%= item.alt %>">',
+        '<% _.each(list, function(item) { %>' +
+            '<li><a class="thumbnail sponsor" id="sp-<%= item.id %>" data-sponsorid="<%= item.id %>" target="_blank" href="<%= item.href %>">' +
+            '<img width="<%= width %>" height="<%= height %>" src="/conference/2013/11/<%= item.img_url %>" alt="<%= item.alt %>">' +
             '</a>',
         '<% }); %>',
         '</ul>'
@@ -53,9 +53,7 @@ Helper.show_profile = function(obj){
             '<div class="speaker">',
             '<% if (obj.affiliation) { %><p class="affiliation"><%= obj.affiliation %><% } %>',
             '<% if (obj.img_url) { %><p class="image"><img width="100" src="/conference/2013/11/<%= obj.img_url %>" alt=""><% } %>',
-            '<% if (obj.description) { %>', // TODO: remove once all speakers have their desc.
             '<div class="description"><%= obj.description %></div>',
-            '<% } %>', // TODO: remove once all speakers have their desc.
             '</div>',
     ].join("\n");
 
@@ -76,11 +74,9 @@ Helper.show_profiles = function(obj){
             // .replace(/@([0-9a-zA-Z_-]+)/g, "<a href='https://twitter.com/$1' target='_blank'>@$1</a>")
     })
 
-
     var template = [
         '<% _.each( _.pairs(obj), function(item) { %>',
             '<% var speaker_id = item[0], speaker = item[1]; %>',
-            '<% if (speaker.description) { %>', // TODO: remove once all speakers have their desc.
             '<section class="speaker" id="<%= speaker_id %>">',
             '<h2><a href="./speaker/<%= speaker_id %>"><%= speaker.name %></a></h2>',
             '<% if (speaker.affiliation) { %><p class="affiliation"><%= speaker.affiliation %><% } %>',
@@ -88,7 +84,6 @@ Helper.show_profiles = function(obj){
             '<% if (speaker.img_url) { %><p class="image"><img width="100" src="/conference/2013/11/<%= speaker.img_url %>" alt=""><% } %>',
             '<div class="description"><%= speaker.description %></div>',
             '</section><hr>',
-            '<% } %>', // TODO: remove once all speakers have their desc.
          '<% }); %>'
     ].join("\n");
 
@@ -110,12 +105,12 @@ Helper.show_sessions = function(sessions, speakers) {
         '<thead>',
         '  <tr>',
         '    <th scope="col">時間',
-        '    <th scope="col">ルーム1A（1F)<br>（<a href="https://www.youtube.com/watch?v=AuUES2f3bxM" target="_blank">ライブ</a>/<a href="https://twitter.com/search?q=%23html5j_1a&src=hash" target="_blank">#html5j_1a</a>）',
-        '    <th scope="col">ルーム2A（2F)<br>（<a href="https://www.youtube.com/watch?v=rHkEL0I_En4" target="_blank">ライブ</a>/<a href="https://twitter.com/search?q=%23html5j_2a&src=hash" target="_blank">#html5j_2a</a>）',
-        '    <th scope="col">ルーム5A（5F)<br>（<a href="https://www.youtube.com/watch?v=Y9-fnbeswUs" target="_blank">ライブ</a>/<a href="https://twitter.com/search?q=%23html5j_5a&src=hash" target="_blank">#html5j_5a</a>）',
-        '    <th scope="col">ルーム5B（5F)<br>（<a href="https://www.youtube.com/watch?v=Chdlf5PK7E0" target="_blank">ライブ</a>/<a href="https://twitter.com/search?q=%23html5j_5b&src=hash" target="_blank">#html5j_5b</a>）',
-        '    <th scope="col">ルーム5C（5F)<br>（<a href="https://www.youtube.com/watch?v=Oc8Wk7HYn0E" target="_blank">ライブ</a>/<a href="https://twitter.com/search?q=%23html5j_5c&src=hash" target="_blank">#html5j_5c</a>）',
-        '    <th scope="col">ルーム6A（6F)<br>（<a href="https://www.youtube.com/watch?v=wvggCAG5ttw" target="_blank">ライブ</a>/<a href="https://twitter.com/search?q=%23html5j_6a&src=hash" target="_blank">#html5j_6a</a>）',
+        '    <th scope="col">ルーム1A（1F）<br><a href="https://twitter.com/search?q=%23html5j_1a&amp;src=hash" target="_blank">#html5j_1a</a>',
+        '    <th scope="col">ルーム2A（2F）<br><a href="https://twitter.com/search?q=%23html5j_2a&amp;src=hash" target="_blank">#html5j_2a</a>',
+        '    <th scope="col">ルーム5A（5F）<br><a href="https://twitter.com/search?q=%23html5j_5a&amp;src=hash" target="_blank">#html5j_5a</a>',
+        '    <th scope="col">ルーム5B（5F）<br><a href="https://twitter.com/search?q=%23html5j_5b&amp;src=hash" target="_blank">#html5j_5b</a>',
+        '    <th scope="col">ルーム5C（5F）<br><a href="https://twitter.com/search?q=%23html5j_5c&amp;src=hash" target="_blank">#html5j_5c</a>',
+        '    <th scope="col">ルーム6A（6F）<br><a href="https://twitter.com/search?q=%23html5j_6a&amp;src=hash" target="_blank">#html5j_6a</a>',
         '</thead>',
 
         '<% _.each(sessions, function(item) { %>',
@@ -147,10 +142,8 @@ Helper.show_sessions = function(sessions, speakers) {
                 '    </a>',
 
                 '   <% if(Speakers[id].affiliation) { %><br><span class="affiliation"><%= Speakers[id].affiliation %></span><% } %>',
-                    '<% } else { %>',
-                    '<span>調整中</span>',
-                    '<% } %>',
-                    '<% flag = true; %>',
+                '<% } %>',
+                '<% flag = true; %>',
 
                 '<% }); %>',
 
@@ -158,10 +151,11 @@ Helper.show_sessions = function(sessions, speakers) {
                 '    <p><%= session.short %>',
                 '    <p><a id="s<%= session.id %>" class="btn btn-default btn-xs session show-detail" data-sessionid="<%= session.id %>" data-description="<%= session.long %>" data-title="<%= session.title %>">詳細を見る</a>',
                 '  </div>',
-                // '  <hr>',
-                // '  <div class="materials">',
-                // '    <p><!--<span class="button">講演資料</span><span class="button">講演映像</span>--></p>',
-                // '  </div>',
+                '  <hr>',
+                '  <div class="materials">',
+                '    <% if(session.slides) { %><a class="btn btn-default btn-xs slides" href="<%= session.slides %>">講演資料</a><% } %>',
+                '    <a class="btn btn-default btn-xs video" href="<%= session.video %>">セッション映像</a>',
+                '  </div>',
                 '</td>',
             '<% }); %>',
 
