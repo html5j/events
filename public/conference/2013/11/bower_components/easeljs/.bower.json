@@ -9,5 +9,6 @@
   },
   "_source": "git://github.com/CreateJS/EaselJS.git",
   "_target": "*",
-  "_originalSource": "easeljs"
+  "_originalSource": "EaselJS",
+  "_direct": true
 }

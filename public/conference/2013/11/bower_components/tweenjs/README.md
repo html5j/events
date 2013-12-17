@@ -1,181 +1,67 @@
-tween.js
-========
+# TweenJS
 
-#### Javascript Tweening Engine ####
+TweenJS is a simple tweening library for use in Javascript. It was developed to integrate well with the EaselJS library,
+but is not dependent on or specific to it (though it uses the same Ticker class by default). It supports tweening of
+both numeric object properties & CSS style properties.
 
-[![Flattr this](https://api.flattr.com/button/flattr-badge-large.png)](https://flattr.com/thing/45014/tween-js)
+## Example
+The API is simple but very powerful, making it easy to create complex tweens by chaining commands.
 
-Super simple, fast and easy to use tweening engine which incorporates optimised Robert Penner's equations.
+    var tween = createjs.Tween.get(myTarget).to({x:300},400).set({label:"hello!"}).wait(500).to({alpha:0,visible:false},1000).call(onComplete);
 
-[Contributors](http://github.com/sole/tween.js/contributors)
+The example above will create a new tween instance that:
 
-### Examples ###
+* tweens the target to an x value of 300 over 400ms and sets its label to "hello!"
+* waits 500 ms
+* tweens the target's alpha to 0 over 1s & sets its visible to false
+* calls the onComplete function
 
-[![Stop all chained tweens](./assets/examples/11_stop_all_chained_tweens.png)](./examples/11_stop_all_chained_tweens.html)
-[![Yoyo](./assets/examples/10_yoyo.png)](./examples/10_yoyo.html)
-[![Relative values](./assets/examples/09_relative.png)](./examples/09_relative_values.html)
-[![Repeat](./assets/examples/08_repeat.png)](./examples/08_repeat.html)
-[![Dynamic to](./assets/examples/07_dynamic_to.png)](./examples/07_dynamic_to.html)
-[![Array interpolation](./assets/examples/03_graphs.png)](./examples/06_array_interpolation.html)
-[![Video and time](./assets/examples/06_video_and_time.png)](./examples/05_video_and_time.html)
-[![Simplest possible example](./assets/examples/04_simplest.png)](./examples/04_simplest.html)
-[![Graphs](./assets/examples/03_graphs.png)](./examples/03_graphs.html)
-[![Black and red](./assets/examples/02_black_and_red.png)](./examples/02_black_and_red.html)
-[![Bars](./assets/examples/01_bars.png)](./examples/01_bars.html)
-[![hello world](./assets/examples/00_hello_world.png)](./examples/00_hello_world.html)
+Tweens are composed of two elements: steps and actions.
 
-### Projects using tween.js ###
+Steps define the tweened properties and always have a duration associated with them (even if that duration is 0). Steps
+are defined with the "to" and "wait" methods. Steps are entirely deterministic. You can arbitrarily set a tween's
+position, and it will always set the same properties for that position.
 
-[![MOMA Inventing Abstraction 1910-1925](./assets/projects/09_moma.png)](http://www.moma.org/interactives/exhibitions/2012/inventingabstraction/)
-[![Web Lab](./assets/projects/08_web_lab.png)](http://www.chromeweblab.com/)
-[![MACCHINA I](./assets/projects/07_macchina.png)](http://5013.es/toys/macchina)
-[![Minesweeper 3D](./assets/projects/06_minesweeper3d.png)](http://egraether.com/mine3d/)
-[![ROME](./assets/projects/05_rome.png)](http://ro.me)
-[![WebGL Globe](./assets/projects/04_webgl_globe.png)](http://data-arts.appspot.com/globe)
-[![Androidify](./assets/projects/03_androidify.png)](http://www.androidify.com/)
-[![The Wilderness Downtown](./assets/projects/01_wilderness.png)](http://thewildernessdowntown.com/)
-[![Linechart](./assets/projects/00_linechart.png)](http://dejavis.org/linechart)
+Actions do not have a duration, and are executed between steps. They are defined with the "call", "set", "play", and
+"pause" methods. They are guaranteed to execute in the correct order, but not at the precise moment in time that is
+indicated in the sequence. This can lead to indeterminate results, especially when tweens are interacting via the play
+and pause actions.
 
-### Usage ###
+This library is currently alpha. It has been tested (though not extensively), and is likely to change somewhat as it matures.
 
-Download the [minified library](https://github.com/sole/tween.js/raw/master/build/tween.min.js) and include it in your html.
+Tweens support a number of configuration properties, which are specified as the second param when creating a new tween:
+createjs.Tween.get(target, {loop:true, useTicks:true, css:true, ignoreGlobalPause:true}).to(etc...);
 
-```html
-<script src="js/tween.min.js"></script>
-```
+All configuration properties default to false. The properties are:
+loop - indicates whether the tween should loop when it reaches the end
+useTicks - the tween will use ticks for duration instead of milliseconds
+css - enables css mapping for some css properties
+ignoreGlobalPause - the tween will continue ticking even when Ticker is paused.
 
-The following code creates a Tween which will change the `x` attribute in a position variable, so that it goes from 50 to 400 in 2 seconds. We'll use `requestAnimationFrame` to call `TWEEN.update` so that "time ticks", the `tween` gets updated and the `onUpdate` method makes things happen on the screen:
+When using Tween.get, you can also specify true as the third parameter to override any active tweens on the target.
+createjs.Tween.get(target,null,true); // this will remove any existing tweens on the target.
 
-```javascript
 
-	init();
-	animate();
+## Support and Resources
+* Find examples and more information at the [TweenJS web site](http://tweenjs.com/)
+* Read the [documentation](http://createjs.com/Docs/TweenJS/)
+* You can also ask questions and interact with other users at our [Community](http://community.createjs.com) site.
+* Have a look at the included [examples](https://github.com/CreateJS/TweenJS/tree/master/examples) and [API documentation](http://createjs.com/Docs/TweenJS/) for more in-depth information.
 
-	function init() {
+It was built by [gskinner.com](http://www.gskinner.com), and is released for free under the MIT license, which means you can use it for almost any purpose (including commercial projects). We appreciate credit where possible, but it is not a requirement.
 
-		var output = document.createElement( 'div' );
-		output.style.cssText = 'position: absolute; left: 50px; top: 300px; font-size: 100px';
-		document.body.appendChild( output );
+TweenJS is currently in alpha. We will be making significant improvements to the library, samples, and documentation over the coming weeks. Please be aware that this may necessitate changes to the existing API.
 
-		var tween = new TWEEN.Tween( { x: 50, y: 0 } )
-			.to( { x: 400 }, 2000 )
-			.easing( TWEEN.Easing.Elastic.InOut )
-			.onUpdate( function () {
+## Classes
 
-				output.innerHTML = 'x == ' + Math.round( this.x );
-				output.style.left = this.x + 'px';
+**Tween**
+Returns a new Tween instance.
 
-			} )
-			.start();
+**Timeline**
+The Timeline class synchronizes multiple tweens and allows them to be controlled as a group.
 
-	}
+**Ease**
+The Ease class provides a collection of easing functions for use with TweenJS. It does not use the standard 4 param easing signature. Instead it uses a single param which indicates the current linear ratio (0 to 1) of the tween.
 
-	function animate() {
-
-		requestAnimationFrame( animate ); // js/RequestAnimationFrame.js needs to be included too.
-		TWEEN.update();
-
-	}
-
-```
-
-Note: this corresponds to the example [04_simplest.html](./examples/04_simplest.html) that you can find in the ```examples``` folder.
-
-Have a look at that folder to discover more functionalities of the library!
-
-Also, Jerome Etienne has written a [tutorial](http://learningthreejs.com/blog/2011/08/17/tweenjs-for-smooth-animation/) demonstrating how to use tween.js with three.js, and it's also great for understanding how tweens work!
-
-Finally, if you need to use tweens in C/C++ code, you now have an option! Check out [libtween](https://github.com/jsm174/libtween) which is a port of tween.js to C by [jsm174](https://github.com/jsm174)!
-
-### FAQ ###
-
-**How do you set a tween to start after a while?**
-
-Use the `delay()` method: `var t = new TWEEN.Tween({...}).delay(1000);`
-
-**Is there a jQuery plug-in?**
-
-No, we like to keep it simple and free of dependencies. Feel free to make one yourself, though! :-)
-
-### Change log ###
-
-2013 11 03 - **r12** (5,697 KB, gzip: 2,131 KB)
-
-* Fix bug with cached ```tweens.length``` value inside ```update()``` loop ([freestlr](https://github.com/freestlr))
-* Move assets and all examples and stuff to use the ```gh-pages``` branch, so things are always properly updated ([sole](https://github.com/sole)).
-* Fix bug where chained tweens were not stopped if the previous tween had been stopped, under certain circumstances, by [cfddream](https://github.com/cfddream)
-* Use tweens in C/C++ with [libtween](https://github.com/jsm174/libtween) by [jsm174](https://github.com/jsm174)!
-
-2013 08 10 - **r11**
-
-* Add ```yoyo``` functionality: tweens can bounce back to their original value when finished ([benjamind](https://github.com/benjamind))
-* Make tween.js an _official_ npm module ([sole](https://github.com/sole)) (hint: ```npm install tween.js```)
-* Bring node.js compatibility back! ([benjamind](https://github.com/benjamind))
-* Bring IE shim back! ([sole](https://github.com/sole))
-* Tween only strings, arrays or numbers ([JAStanton](https://github.com/JAStanton))
-
-2013 03 03 - **r10** (5,342 KB, gzip: 2,010 KB)
-
-* Added the ability to tween using relative values with ```to()``` ([endel](https://github.com/endel))
-
-2013 02 04 - **r9** (5,224 KB, gzip: 1,959 KB)
-
-* Use window.performance.now() if available for even smoother animations ([tdreyno](https://github.com/tdreyno), [mrdoob](https://github.com/mrdoob) and [sole](https://github.com/sole))
-* Added tween.repeat() ([sole](https://github.com/sole))
-* Improve example_01 performance ([mrdoob](https://github.com/mrdoob))
-* Use CONTRIBUTING.md instead of having the section on README.md ([sole](https://github.com/sole))
-
-2013 01 04 - **r8** (4,961 KB, gzip: 1,750 KB)
-
-* New Date.now() shim by [roshambo](http://github.com/roshambo) makes the lib compatible with IE
-* Fix for checking undefined `duration` ([deanm](http://github.com/deanm))
-* Add unit tests ([sole](http://github.com/sole))
-* Fixed non-existing properties sent in `to` and ending up as NaN in the target object ([sole](http://github.com/sole))
-* Add missing example screenshot ([sole](http://github.com/sole))
-* Add CONTRIBUTING section in README ([sole](http://github.com/sole))
-
-2012 10 27 - **r7** (4,882 KB, gzip: 1,714 KB)
-
-* Fixed start time of chained tweens when using custom timing. ([egraether](http://github.com/egraether))
-* TWEEN.update() now returns a boolean (tweens pending or not). ([mrdoob](http://github.com/mrdoob))
-* Added tween.onStart(). ([mrdoob](http://github.com/mrdoob))
-* tween.chain() now accepts multiple tweens. ([mrdoob](http://github.com/mrdoob))
-
-
-2012 04 10 - **r6** (4,707 KB, gzip: 1,630 KB)
-
-* Returning instance also in `.chain()`. ([mrdoob](http://github.com/mrdoob))
-* Refactoring and code clean up. ([egraether](http://github.com/egraether))
-* Simplified easing formulas. ([infusion](http://github.com/infusion))
-* Added support to arrays in `.to()` using linear, catmull-rom or bezier `.interpolation()`. ([egraether](http://github.com/egraether))
-* Removed autostart/stop. ([mrdoob](http://github.com/mrdoob))
-* Renamed `EaseNone`, `EaseIn`, `EaseOut` ane `EaseInOut`, to `None`, `In`, `Out` and `InOut`. ([mrdoob](http://github.com/mrdoob))
-* Made `.to()` values dynamic. ([egraether](http://github.com/egraether) and [jeromeetienne](http://github.com/jeromeetienne))
-
-
-2011 10 15 - **r5** (4,733 KB, gzip: 1,379 KB)
-
-* Add autostart/stop functionalities ([jocafa](http://github.com/jocafa) and [sole](http://github.com/sole))
-* Add 07_autostart example demonstrating the new functionalities ([sole](http://github.com/sole))
-
-
-2011 10 15 - **r4**
-
-* Use ``Date.now()`` instead of ``new Date.getTime()`` as it's faster ([mrdoob](http://github.com/mrdoob))
-
-
-2011 09 30 - **r3**
-
-* Added new ``time`` parameter to TWEEN.update, in order to allow synchronizing the tweens to an external timeline ([lechecacharro](http://github.com/lechecacharro))
-* Added example to demonstrate the new synchronizing feature. ([sole](http://github.com/sole))
-
-
-2011 06 18 - **r2**
-
-* Added new utility methods getAll and removeAll for getting and removing all tweens ([Paul Lewis](http://github.com/paullewis))
-
-
-2011 05 18 - **r1**
-
-* Started using revision numbers in the build file
-* Consider this kind of an stable revision :-)
+## Thanks
+Special thanks to [Robert Penner](http://flashblog.robertpenner.com/) for his easing equations, which form the basis for the Ease class.

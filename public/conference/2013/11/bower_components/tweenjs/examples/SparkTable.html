@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>TweenJS: Spark Table</title>
+
+	<link rel="stylesheet" href="assets/demoStyles.css" />
+
+	<script type="text/javascript" src="./assets/easeljs-NEXT.min.js"></script>
+
+	<!-- Note: All core TweenJS classes are listed here: -->
+	<script type="text/javascript" src="../src/createjs/events/Event.js"></script>
+	<script type="text/javascript" src="../src/createjs/events/EventDispatcher.js"></script>
+	<script type="text/javascript" src="../src/tweenjs/Tween.js"></script>
+	<script type="text/javascript" src="../src/tweenjs/Ease.js"></script>
+
+	<!-- We also provide hosted minified versions of all CreateJS libraries.
+	  http://code.createjs.com -->
+
+	<script>
+
+	var eases = [createjs.Ease.none,createjs.Ease.quadIn,createjs.Ease.getPowIn(2.5),createjs.Ease.cubicIn,createjs.Ease.quartIn,createjs.Ease.quintIn];
+
+	function init() {
+		if (window.top != window) {
+			document.getElementById("header").style.display = "none";
+		}
+
+		canvas = document.getElementById("canvas1");
+		stage = new createjs.Stage(canvas);
+
+		var graph = new createjs.Shape();
+		var g = graph.graphics;
+		stage.addChild(graph);
+
+		var w = canvas.width-10;
+		var h = canvas.height-10;
+
+		for (var j=0,l=eases.length;j<l;j++) {
+			g.beginFill(createjs.Graphics.getHSL(j/l*360,50,50));
+			var ease = eases[j];
+			for (var i=0; i<100; i++) {
+				var x = i/100*w+5;
+				var y = h-ease(i/100)*h+5;
+				g.drawCircle(x,y,3);
+				g.closePath();
+			}
+		}
+		stage.update();
+
+	}
+	</script>
+</head>
+
+<body onload="init();">
+
+	<header id="header" class="TweenJS">
+	    <h1><span class="text-product">Tween<strong>JS</strong></span> Spark Table</h1>
+	    <p>You can edit this example to test different ease functions.</p>
+	</header>
+
+	<canvas id="canvas1" width="960" height="400"></canvas>
+
+</body>
+</html>
+		
