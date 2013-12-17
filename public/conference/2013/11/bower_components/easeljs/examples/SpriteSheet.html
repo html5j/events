@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>EaselJS: Sprite Sheet Example</title>
+
+	<link href="assets/demoStyles.css" rel="stylesheet" type="text/css" />
+
+	<script src="assets/preloadjs-NEXT.min.js"></script>
+
+	<!-- Note: All core EaselJS classes are listed here: -->
+	<script type="text/javascript" src="../src/createjs/events/Event.js"></script>
+	<script type="text/javascript" src="../src/createjs/events/EventDispatcher.js"></script>
+	<script type="text/javascript" src="../src/createjs/utils/IndexOf.js"></script>
+	<script type="text/javascript" src="../src/easeljs/utils/UID.js"></script>
+	<script type="text/javascript" src="../src/easeljs/utils/Ticker.js"></script>
+	<script type="text/javascript" src="../src/easeljs/geom/Matrix2D.js"></script>
+	<script type="text/javascript" src="../src/easeljs/geom/Point.js"></script>
+	<script type="text/javascript" src="../src/easeljs/geom/Rectangle.js"></script>
+	<script type="text/javascript" src="../src/easeljs/display/Shadow.js"></script>
+	<script type="text/javascript" src="../src/easeljs/display/SpriteSheet.js"></script>
+	<script type="text/javascript" src="../src/easeljs/display/Graphics.js"></script>
+	<script type="text/javascript" src="../src/easeljs/display/DisplayObject.js"></script>
+	<script type="text/javascript" src="../src/easeljs/display/Container.js"></script>
+	<script type="text/javascript" src="../src/easeljs/display/Stage.js"></script>
+	<script type="text/javascript" src="../src/easeljs/display/Bitmap.js"></script>
+	<script type="text/javascript" src="../src/easeljs/display/Sprite.js"></script>
+	<script type="text/javascript" src="../src/easeljs/display/BitmapAnimation.js"></script>
+	<script type="text/javascript" src="../src/easeljs/display/BitmapText.js"></script>
+	<script type="text/javascript" src="../src/easeljs/display/Shape.js"></script>
+	<script type="text/javascript" src="../src/easeljs/display/Text.js"></script>
+	<script type="text/javascript" src="../src/easeljs/display/DOMElement.js"></script>
+	<script type="text/javascript" src="../src/easeljs/events/MouseEvent.js"></script>
+	<script type="text/javascript" src="../src/easeljs/filters/Filter.js"></script>
+	<script type="text/javascript" src="../src/easeljs/ui/ButtonHelper.js"></script>
+	<script type="text/javascript" src="../src/easeljs/ui/Touch.js"></script>
+	<script type="text/javascript" src="../src/easeljs/utils/SpriteSheetUtils.js"></script>
+	<script type="text/javascript" src="../src/easeljs/utils/SpriteSheetBuilder.js"></script>
+
+	<!-- We also provide hosted minified versions of all CreateJS libraries.
+		http://code.createjs.com -->
+
+	<script type="text/javascript">
+
+	var stage, w, h, loader;
+	var sky, grant, ground, hill, hill2;
+
+	function init() {
+		if (window.top != window) {
+			document.getElementById("header").style.display = "none";
+		}
+
+		stage = new createjs.Stage("testCanvas");
+		
+		// grab canvas width and height for later calculations:
+		w = stage.canvas.width;
+		h = stage.canvas.height;
+
+		manifest = [
+			{src:"assets/runningGrant.png", id:"grant"},
+			{src:"assets/sky.png", id:"sky"},
+			{src:"assets/ground.png", id:"ground"},
+			{src:"assets/parallaxHill1.png", id:"hill"},
+			{src:"assets/parallaxHill2.png", id:"hill2"}
+		];
+
+		loader = new createjs.LoadQueue(false);
+		loader.addEventListener("complete", handleComplete);
+		loader.loadManifest(manifest);
+	}
+
+	function handleComplete() {
+		document.getElementById("loader").className = "";
+		
+		sky = new createjs.Shape();
+		sky.graphics.beginBitmapFill(loader.getResult("sky")).drawRect(0,0,w,h);
+		
+		var groundImg = loader.getResult("ground");
+		ground = new createjs.Shape();
+		ground.graphics.beginBitmapFill(groundImg).drawRect(0, 0, w+groundImg.width, groundImg.height);
+		ground.tileW = groundImg.width;
+		ground.y = h-groundImg.height;
+		
+		hill = new createjs.Bitmap(loader.getResult("hill"));
+		hill.setTransform(Math.random() * w, h-hill.image.height*3-groundImg.height, 3, 3);
+		     
+		hill2 = new createjs.Bitmap(loader.getResult("hill2"));
+		hill2.setTransform(Math.random() * w, h-hill2.image.height*3-groundImg.height, 3, 3);
+	
+		var data = new createjs.SpriteSheet({
+			"images": [loader.getResult("grant")],
+			"frames": {"regX": 0, "height": 292, "count": 64, "regY": 0, "width": 165},
+			// define two animations, run (loops, 1.5x speed) and jump (returns to run):
+			"animations": {"run": [0, 25, "run", 1.5], "jump": [26, 63, "run"]}
+		});
+		grant = new createjs.Sprite(data, "run");
+		grant.setTransform(-200, 90, 0.8, 0.8);
+		grant.framerate = 30;
+
+		stage.addChild(sky, hill, hill2, ground, grant);
+		stage.addEventListener("stagemousedown", handleJumpStart);
+
+		createjs.Ticker.timingMode = createjs.Ticker.RAF;
+		createjs.Ticker.addEventListener("tick", tick);
+	}
+
+	function handleJumpStart() {
+		grant.gotoAndPlay("jump");
+	}
+
+	function tick(event) {
+		var deltaS = event.delta/1000;
+		var position = grant.x+150*deltaS;
+		
+		var grantW = grant.getBounds().width*grant.scaleX;
+		grant.x = (position >= w) ? -grantW : position;
+
+		ground.x = (ground.x-deltaS*200) % ground.tileW;
+		hill.x = (hill.x - deltaS*30);
+		if (hill.x + hill.image.width*hill.scaleX <= 0) { hill.x = w; }
+		hill2.x = (hill2.x - deltaS*45);
+		if (hill2.x + hill2.image.width*hill2.scaleX <= 0) { hill2.x = w; }
+		
+		stage.update(event);
+	}
+	</script>
+</head>
+<body onload="init();">
+
+	<div id="loader" class="loader"></div>
+
+	<header id="header" class="EaselJS">
+		<h1><span class="text-product">Easel<strong>JS</strong></span> Sprite Sheets</h1>
+		<p>
+			An example of displaying a sprite sheet using <strong>Sprite</strong>. This demo also shows playing named
+			animations (jump and run), and animation chaining using <strong>getAnimation("name").next</strong>.
+			Click the stage to initialize a jump, which will continue back into the run when it is complete.
+		</p>
+		<p>
+			Some browsers can not load images or access pixel data when running local files, and may throw a security error or not
+			work unless the content is running on a server.
+		</p>
+	</header>
+
+	<div class="canvasHolder">
+		<canvas id="testCanvas" width="960" height="400"></canvas>
+	</div>
+
+</body>
+</html>
