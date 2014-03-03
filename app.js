@@ -62,6 +62,6 @@ app.listen(app.get('port'), function () {
 
 
 // temporary use
-app.all('/meetup/46/*', express.basicAuth(function(user, password) {
-  return user === 'html5j' && password === 'goemon';
-}));
+// app.all('/meetup/46/*', express.basicAuth(function(user, password) {
+//   return user === 'html5j' && password === 'goemon';
+// }));
