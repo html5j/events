@@ -140,3 +140,15 @@ dt {
 .thumbnail {
 	padding: 16px;
 }
+
+#sponsor h2 {
+	font-size: 1.5em;
+}
+
+.application {
+	font-size: 2em;
+	padding: 0.6em;
+}
+.info {
+	margin: 0.8em;
+}

@@ -15,7 +15,7 @@ var app = express();
 
 
 // all environments
-app.set('port', process.env.PORT || 3000);
+app.set('port', process.env.PORT || 5000);
 app.set('views', __dirname + '/views');
 app.set('view engine', 'ejs');
 app.use(express.favicon(__dirname + '/public/images/favicon2013.ico'));
@@ -59,3 +59,9 @@ app.get('/conference/2013/11/questionnaire', routes2013.questionnaire);
 app.listen(app.get('port'), function () {
     console.log('Express server listening on port ' + app.get('port'));
 });
+
+
+// temporary use
+app.all('/meetup/46/*', express.basicAuth(function(user, password) {
+  return user === 'html5j' && password === 'goemon';
+}));
