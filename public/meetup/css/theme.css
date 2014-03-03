@@ -1,0 +1,113 @@
+body {
+  padding-top: 70px;
+}
+
+.navbar-inverse {
+	background-image: linear-gradient(to bottom,#222 0,#000 100%);
+	background-color:#000;
+	opacity: 0.8;  
+	
+	
+}
+
+.jumbotron {
+	background-color: #fff;
+	text-align:center;
+}
+
+.jumbotron h1 {
+font-size: 42px;
+}
+
+.jumbotron p {
+font-size: 14px;
+}
+
+
+
+.align-center {
+	text-align:center;
+}
+
+dl:after {
+	clear:both;
+}
+
+dt {
+	clear:both;
+	float:left;
+	padding:5px 5px 0px 0;
+	width:25%;
+}
+
+dd {
+	padding:5px 0px 0px 25%;
+}
+
+
+th {
+	background:#ccc;
+	padding:15px;
+	border: 2px solid #fff;
+
+}
+td {
+	padding:15px;
+	border: 2px solid #fff;
+}
+
+
+.btn-warning {
+	margin:20px auto;
+background-image: -webkit-linear-gradient(top,#f0ad4e 0,#eb9316 100%);
+background-image: linear-gradient(to bottom,#f0ad4e 0,#eb9316 100%);
+background-repeat: repeat-x;
+border-color: #e38d13;
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fff0ad4e',endColorstr='#ffeb9316',GradientType=0);
+filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+text-shadow: 0 -1px 0 rgba(0,0,0,0.2);
+-webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,0.15),0 1px 1px rgba(0,0,0,0.075);
+box-shadow: inset 0 1px 0 rgba(255,255,255,0.15),0 1px 1px rgba(0,0,0,0.075);
+color: #ffffff;
+background-color: #f0ad4e;
+border-color: #eea236;
+}
+
+.tac {
+	text-align:center;
+}
+
+footer {
+	background-color: #555;
+	text-align:center;
+	padding:50px 0;
+	margin-top:50px;
+	color:#fff;
+	
+}
+@media screen and (max-width: 768px) {
+	
+.jumbotron h1 {
+font-size: 30px;
+}
+
+
+.jumbotron {
+padding-right:20px;
+padding-left:20px;
+}
+}
+
+
+@media screen and (max-width: 600px) {
+	
+.jumbotron h1 {
+font-size: 30px;
+}
+
+
+.jumbotron img {
+width:100%;
+}
+}
+
