@@ -4,6 +4,7 @@ html, body {
 body {
 	margin: 0;
 	background-color: #f3f5c1;
+	font-family: sans-serif;
 }
 
 .main_visual {
@@ -18,5 +19,5 @@ body {
 	bottom: 1em;
 	right: 1em;
 	font-weight: bold;
-	font-size: 90%;
+	font-size: 70%;
 }
