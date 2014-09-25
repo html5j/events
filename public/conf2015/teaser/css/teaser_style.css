@@ -7,8 +7,16 @@ body {
 	font-family: sans-serif;
 }
 
+h1 {
+	margin: 0;
+	padding: 0;
+}
+h1 img {
+	width: 100%;
+}
+
 .main_visual {
-	background: url(../img/main_visual.jpg) center no-repeat;
+	/*background: url(../img/main_visual.jpg) center no-repeat;*/
 	-webkit-background-size: cover;
 	background-size: cover;
 	width: 100%;
