@@ -14,10 +14,15 @@ body {
 	width: 100%;
 	height: 100%;
 }
-.illustration {
+.illustration, .copyright {
 	position: fixed;
 	bottom: 1em;
 	right: 1em;
 	font-weight: bold;
 	font-size: 70%;
+	font-family: 'Delius', cursive;
+}
+.copyright {
+	left: 1em;
+	right: auto;
 }
