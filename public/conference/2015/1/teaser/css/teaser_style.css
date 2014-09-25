@@ -16,11 +16,11 @@ h1 img {
 }
 
 .main_visual {
-	/*background: url(../img/main_visual.jpg) center no-repeat;*/
+	/*background: url(../img/main_visual.jpg) center no-repeat;
 	-webkit-background-size: cover;
 	background-size: cover;
 	width: 100%;
-	height: 100%;
+	height: 100%;*/
 }
 .illustration, .copyright {
 	position: fixed;
@@ -33,4 +33,58 @@ h1 img {
 .copyright {
 	left: 1em;
 	right: auto;
+}
+.copyright img {
+	height: 2em;
+	vertical-align: middle;
+}
+
+#social ul {
+	margin: 0 0 2em;
+	padding: 0;
+	text-align: center;
+}
+
+#social li {
+	display: inline-block;
+	list-style-type: none;
+	vertical-align: top;
+	width: 90px;
+	margin: 0 1em 0 0;
+	overflow: hidden;
+}
+
+#social .hatena {
+	width: 60px;
+}
+#social .google {
+	width: 90px;
+}
+#social .twitter {
+	width: 100px;
+}
+#social .facebook {
+	position: relative;
+	top: -4px;
+}
+
+@media screen and (max-width: 768px) {
+	h1 {
+		height: 100%;
+		display: -webkit-box;
+		-webkit-box-pack: center;
+		-webkit-box-align: center;
+		display: flex;
+		display: -webkit-flex;
+		align-items: center;
+		justify-content: center;
+		-webkit-align-items: center;
+		-webkit-justify-content: center;
+	}
+	#social ul {
+		margin-top: 1em;
+	}
+	#social li {
+		margin-right: 0;
+	}
 }
