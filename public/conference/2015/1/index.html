@@ -1,67 +1,72 @@
 <!doctype html>
-<html lang="ja-JP">
+<html lang="ja">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="description" content="HTML5 Conference 2015/01/25">
-	<meta property="og:title" content="HTML5 Conference">
-	<meta property="og:type" content="website">
-	<meta property="og:url" content="http://events.html5j.org/conference/2015/1/">
-	<meta property="og:image" content="http://events.html5j.org/conference/2015/1/img/ogp.jpg">
-	<meta property="og:description" content="HTML5 Conference 2015/01/25">
-	<title>HTML5 Conference</title>
-	<link href='http://fonts.googleapis.com/css?family=Delius' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" href="css/teaser_style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="HTML5 Conference 2015/01/25">
+  <meta property="og:title" content="HTML5 Conference">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="http://events.html5j.org/conference/2015/1/">
+  <meta property="og:image" content="http://events.html5j.org/conference/2015/1/img/ogp.jpg">
+  <meta property="og:description" content="HTML5 Conference 2015/01/25">
+  <title>HTML5 Conference</title>
+  <link href='http://fonts.googleapis.com/css?family=Delius' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="css/teaser_style.css">
 </head>
 <body>
-	<div class="main_visual">
-		<h1><img src="img/main_visual_m0.jpg" alt="HTML5 Conference 2015/01/25"></h1>
-		<div class="illustration">Illustration: <a href="http://instagram.com/yukari_sone" target="_blank">Yukari Sone</a></div>
-	</div>
-	<div id="social">
-	  <ul>
-	  	<li class="hatena">
-	      <a href="http://b.hatena.ne.jp/entry/http://events.html5j.org/conference/2015/1/" class="hatena-bookmark-button" data-hatena-bookmark-title="HTML5 Conference" data-hatena-bookmark-layout="standard" title="このエントリーをはてなブックマークに追加"><img src="http://b.st-hatena.com/images/entry-button/button-only.gif" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" /></a>
-	    <li class="facebook">
-	      <div class="fb-like" data-href="http://events.html5j.org/conference/2015/1/" data-send="false" data-layout="button_count" data-width="120" data-show-faces="false"></div>
-	    <li class="twitter">
-	      <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://events.html5j.org/conference/2015/1/" data-text="HTML5 Conference" data-via="html5j" data-lang="ja" data-hashtags="html5j">ツイート</a>
-	    <li class="google">
-	      <div class="g-plusone" data-href="http://events.html5j.org/conference/2015/1/" data-width="120"></div>
-	  </ul>
-	</div>
-	<footer>
-		<small class="copyright">&copy; <a href="http://html5j.org"><img src="img/logo_html5j_black.svg" alt="html5jのロゴマーク画像です"></a></small>
-	</footer>
+  <div class="main_visual">
+    <h1>
+      <picture>
+        <source srcset="img/main_visual_m0.webp" type="image/webp">
+        <img src="img/main_visual_m0.jpg" alt="HTML5 Conference 2015/01/25">
+      </picture>
+    </h1>
+    <div class="illustration">Illustration: <a href="http://instagram.com/yukari_sone" target="_blank">Yukari Sone</a></div>
+  </div>
+  <div id="social">
+    <ul>
+      <li class="hatena">
+        <a href="http://b.hatena.ne.jp/entry/http://events.html5j.org/conference/2015/1/" class="hatena-bookmark-button" data-hatena-bookmark-title="HTML5 Conference" data-hatena-bookmark-layout="standard" title="このエントリーをはてなブックマークに追加"><img src="http://b.st-hatena.com/images/entry-button/button-only.gif" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" /></a>
+      <li class="facebook">
+        <div class="fb-like" data-href="http://events.html5j.org/conference/2015/1/" data-send="false" data-layout="button_count" data-width="120" data-show-faces="false"></div>
+      <li class="twitter">
+        <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://events.html5j.org/conference/2015/1/" data-text="HTML5 Conference" data-via="html5j" data-lang="ja" data-hashtags="html5j">ツイート</a>
+      <li class="google">
+        <div class="g-plusone" data-href="http://events.html5j.org/conference/2015/1/" data-width="120"></div>
+    </ul>
+  </div>
+  <footer>
+    <p class="copyright">&copy; <a href="http://html5j.org"><img src="img/logo_html5j_black.svg" alt="html5j"></a></p>
+  </footer>
 
-	<div id="fb-root"></div>
-	<script>
-	  (function(d, s) {
-	    /*if (/iPhone|iPad|Android/.test(navigator.userAgent)) {
-	      document.body.insertAdjacentHTML('beforeend', '<style>.social { display: none !important }</style>');
-	      return;
-	    }*/
-	    var js, fjs = d.getElementsByTagName(s)[0], load = function(url, id) {
-	      if (d.getElementById(id)) {return;}
-	      js = d.createElement(s); js.src = url; js.id = id;
-	      fjs.parentNode.insertBefore(js, fjs);
-	    };
-	    load('//connect.facebook.net/en_US/all.js#xfbml=1', 'fbjssdk');
-	    load('https://apis.google.com/js/plusone.js', 'gplus1js');
-	    load('//platform.twitter.com/widgets.js', 'tweetjs');
-	    load('//b.st-hatena.com/js/bookmark_button.js', 'hatena');
-	  }(document, 'script'));
-	</script>
-	<script>
-	  var _gaq = _gaq || [];
-	  _gaq.push(['_setAccount', 'UA-4956033-6']);
-	  _gaq.push(['_trackPageview']);
+  <div id="fb-root"></div>
+  <script>
+    (function(d, s) {
+      /*if (/iPhone|iPad|Android/.test(navigator.userAgent)) {
+        document.body.insertAdjacentHTML('beforeend', '<style>.social { display: none !important }</style>');
+        return;
+      }*/
+      var js, fjs = d.getElementsByTagName(s)[0], load = function(url, id) {
+        if (d.getElementById(id)) {return;}
+        js = d.createElement(s); js.src = url; js.id = id;
+        fjs.parentNode.insertBefore(js, fjs);
+      };
+      load('//connect.facebook.net/en_US/all.js#xfbml=1', 'fbjssdk');
+      load('https://apis.google.com/js/plusone.js', 'gplus1js');
+      load('//platform.twitter.com/widgets.js', 'tweetjs');
+      load('//b.st-hatena.com/js/bookmark_button.js', 'hatena');
+    }(document, 'script'));
+  </script>
+  <script>
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-4956033-6']);
+    _gaq.push(['_trackPageview']);
 
-	  (function() {
-	    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-	    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-	  })();
-	</script>
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
 </body>
 </html>
