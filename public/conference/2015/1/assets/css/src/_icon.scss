@@ -1,0 +1,26 @@
+
+/* ==========================================================================
+   icon
+   ========================================================================== */
+@font-face {
+  font-family: 'icon';
+  src:url('../fonts/icon.eot');
+  src:url('../fonts/icon.eot#iefix') format('embedded-opentype'),
+      url('../fonts/icon.woff') format('woff'),
+      url('../fonts/icon.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@each $icon in $icons {
+  $key: nth( $icon, 1 );
+  $value: nth( $icon, 2 );
+
+  .conf2015s-icon-#{$key} {
+    @extend %icon;
+
+    &:before {
+      content: $value;
+    }
+  }
+}

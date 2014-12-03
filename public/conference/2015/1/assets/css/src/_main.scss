@@ -1,0 +1,499 @@
+
+/* ==========================================================================
+   Section comment block
+   ========================================================================== */
+
+/* Sub-section comment block
+   ========================================================================== */
+
+/* Basic comment */
+
+@mixin container () {
+	box-sizing: border-box;
+	max-width: 980px;
+	padding: 0 20px;
+	margin: 0 auto;
+}
+@mixin zero () {
+	font-family: 'zero-width';
+	font-size: 0;
+}
+
+$z-pageNav: 1;
+/* ==========================================================================
+   Section comment block
+   ========================================================================== */
+
+header.conf2015s-pageHeader{}
+	.conf2015s-pageHeader__inner{
+		@include container();
+		display: table;
+	}
+		.conf2015s-pageHeader__logo,
+		.conf2015s-pageHeader__title{
+			vertical-align: middle;
+			display: table-cell;
+			width: 1%;
+			img{
+				display: block;
+			}
+		}
+		.conf2015s-info{
+			font-size: getFs( -1, 'rem' );
+			text-align: right;
+			vertical-align: middle;
+			display: table-cell;
+		}
+
+@include max-screen( $breakpoint-middle ) {
+	.conf2015s-pageHeader__logo{
+		img{
+			width: 100px * .75;
+			height: auto;
+		}
+	}
+	.conf2015s-pageHeader__title{
+		img{
+			width: 282px * .75;
+			height: auto;
+		}
+	}
+}
+
+@include max-screen( $breakpoint-small ) {
+
+	header.conf2015s-pageHeader{}
+		.conf2015s-pageHeader__inner{
+			display: block;
+			text-align: center;
+		}
+			.conf2015s-pageHeader__logo,
+			.conf2015s-pageHeader__title{
+				display: inline-block;
+				vertical-align: middle;
+				width: auto;
+			}
+			.conf2015s-pageHeader__logo{
+				img{
+					width: 100px * .5;
+				}
+			}
+			.conf2015s-pageHeader__title{
+				img{
+					width: 282px * .5;
+				}
+			}
+			.conf2015s-info{
+				font-size: getFs( -1, 'rem' );
+				line-height: 1.4;
+				text-align: center;
+				display: block;
+				margin-top: 10px;
+			}
+}
+
+/* ==========================================================================
+   .conf2015s-pageNav
+   ========================================================================== */
+
+nav.conf2015s-pageNav{
+	border-top: 1px solid #e7e7e7;
+	border-bottom: 3px solid #e7e7e7;
+	background-color: #efeee9;
+}
+	.conf2015s-pageNav__inner{
+		@include container();
+		ul{
+			position: relative;
+			z-index: $z-pageNav;
+			color: #D2CBCB;
+			font-size: getFs( -1, 'rem' );
+			font-weight: bold;
+			list-style: none;
+			display: table;
+			width: 100%;
+			padding: 0;
+			margin: 0;
+		}
+		li{
+			text-align: center;
+			overflow: hidden;
+			display: table-cell;
+			margin: 0;
+			padding: 8px 10px;
+		}
+		a{
+			color: #63442f;
+			text-decoration: none;
+			display: block;
+			padding: 30px 10px;
+			margin: -30px -10px;
+		}
+	}
+	.conf2015s-pageNav__opener{
+		display: none;
+	}
+
+@include max-screen( $breakpoint-middle ) {
+	.conf2015s-pageNav__inner{
+		ul{
+			font-size: getFs( -2, 'rem' );
+		}
+	}
+}
+
+@include max-screen( $breakpoint-small ) {
+nav.conf2015s-pageNav{
+	border-top: none;
+	border-bottom: none;
+	background: none;
+}
+	.conf2015s-pageNav__inner{
+		padding: 0;
+		ul{
+			position: absolute;
+			font-size: getFs( -1, 'rem' );
+			font-weight: bold;
+			display: none;
+			width: 100%;
+			border-top: 1px solid #ccc;
+			background: rgba( 255, 255, 255, .95 );
+			box-shadow: 0 2px 3px rgba( 0, 0, 0, .3);
+			.conf2015s-pageNav--open &{
+				display: block;
+			}
+		}
+		li{
+			display: block;
+			padding: 8px 10px;
+			border-bottom: 1px solid #ccc;
+		}
+		a{
+			color: #63442f;
+			text-decoration: none;
+			padding: 30px 10px;
+			margin: -30px -10px;
+		}
+	}
+	.conf2015s-pageNav__opener{
+		line-height: 1;
+		cursor: pointer;
+		position: absolute;
+		top: 10px;
+		right: 10px;
+		display: block;
+		padding: 5px;
+		background: #fff;
+		&:before{
+			@include icon( bars );
+			font-size: 20px;
+		}
+	}
+}
+
+/* ==========================================================================
+   .conf2015s-hero
+   ========================================================================== */
+.conf2015s-hero{
+	background: #f3f6c1 url( ../img/conf2015s-hero/bg_01.png ) 50% 50%;
+	.conf2015s-hero__inner{
+		@include container();
+		padding: 0;
+		position: relative;
+	}
+	img{
+		display: block;
+		width: 100%;
+		height: auto;
+		margin: 0 auto;
+	}
+	h1{
+		margin: 0;
+		padding: 0;
+	}
+}
+	.conf2015s-hero__info{
+		color: #000;
+		position: absolute;
+		right: 0;
+		bottom: 0;
+		padding: 4px 4px 0;
+		border-radius: 3px 3px 0 0;
+		background: rgba( 243, 246, 193, .8 );
+	}
+
+@include max-screen( $breakpoint-small ) {
+.conf2015s-hero{
+	background: none;
+}
+	.conf2015s-hero__info{
+		color: #000;
+		font-size: getFs( -1, 'rem' );
+		line-height: 1.4;
+		text-align: center;
+		margin-top: 4px;
+		position: static;
+		background: none;
+	}
+}
+
+/* ==========================================================================
+   .conf2015s-container
+   ========================================================================== */
+.conf2015s-container{
+	@include container();
+}
+/* ==========================================================================
+   .conf2015s-header1
+   ========================================================================== */
+.conf2015s-header1{
+	margin: 50px 0 10px;
+	h1{
+		font-size: getFs( +3, 'rem' );
+		font-weight: normal;
+		margin: 0;
+		&:before{
+			@include icon ( clione );
+			color: #b81c24;
+			font-size: getFs( +10, 'rem' );
+			line-height: 1;
+			margin: 0 .2em .1em 0;
+		}
+	}
+}
+
+/* ==========================================================================
+   
+   ========================================================================== */
+.conf2015s-header2{
+	padding-bottom: 3px;
+	border-bottom: 1px solid #B8582E;
+	margin: 30px 0 10px;
+	h2{
+		color: #b8582e;
+		font-size: getFs( +3, 'rem' );
+		font-weight: normal;
+		margin: 0;
+	}
+}
+
+
+/* ==========================================================================
+   .conf2015s-lead
+   ========================================================================== */
+.conf2015s-lead{
+	font-size: getFs( +1, 'rem' );
+	margin: 20px 0;
+}
+
+/* ==========================================================================
+   .conf2015s-button
+   ========================================================================== */
+.conf2015s-button{
+	color: #fff;
+	font-size: getFs( +1, 'rem' );
+	text-shadow: 0 1px 1px #333;
+	text-decoration: none;
+	line-height: 1;
+	cursor: pointer;
+	display: inline-block;
+	padding: 1em 2em;
+	border-bottom: 4px solid #852316;
+	box-shadow: 0 1px 2px #999;
+	background-color: #c43421;
+	transition: .3s;
+	&:hover:not( .conf2015s-button--disabled ){
+		color: #fff;
+		text-decoration: none;
+		box-shadow: 0 0px 10px #333;
+		background-color: #c45640;
+	}
+	&.conf2015s-button--disabled{
+		cursor: auto;
+		border-bottom: none;
+		background-color: #666;
+		opacity: 0.3;
+	}
+}
+
+/* ==========================================================================
+   .conf2015s-buttonContainer
+   ========================================================================== */
+.conf2015s-buttonContainer{
+	margin: 30px 0;
+	ul{
+		list-style: none;
+		padding: 0;
+		margin: 0;
+	}
+	li{
+		display: inline-block;
+		margin: 0 10px 0 0;
+	}
+}
+.conf2015s-buttonContainer__note{
+	font-size: getFs( -1, 'rem' );
+	margin-top: 4px;
+}
+@include max-screen( $breakpoint-small ) {
+.conf2015s-buttonContainer{
+	ul{
+		text-align: center;
+	}
+	li{
+		display: block;
+		margin: 0 0 4px;
+	}
+}
+}
+/* ==========================================================================
+   .conf2015s-table
+   ========================================================================== */
+.conf2015s-table{
+	margin: 40px 0;
+	table{}
+	th, td{
+		padding: .2em 20px .2em 0;
+	}
+	th{
+		text-align: left;
+	}
+	td{}
+}
+
+/* ==========================================================================
+   .conf2015s-imageFull
+   ========================================================================== */
+.conf2015s-imageFull{
+	margin: 30px 0;
+	img{
+		display: block;
+		width: 100%;
+		height: auto;
+	}
+}
+
+
+/* ==========================================================================
+   .conf2015s-itemContainer
+   ========================================================================== */
+.conf2015s-itemContainer{
+	@include zero ();
+	margin: 20px -5px;
+	&:after{
+		content: '';
+		display: block;
+		margin-top: -10px;
+	}
+}
+
+
+/* ==========================================================================
+   .conf2015s-item4
+   ========================================================================== */
+.conf2015s-item4{
+	font-family: $fontSansSerif;
+	font-size: getFs( 0, 'rem' );
+	box-sizing: border-box;
+	display: inline-block;
+	width: 24.999%;
+	padding: 5px;
+	margin: 0 0 10px;
+	a{
+		color: inherit;
+		text-decoration: none;
+		display: block;
+		&:hover{
+			text-decoration: none;
+		}
+	}
+}
+
+	.conf2015s-item4__image{
+		margin-bottom: 5px;
+		img{
+			display: block;
+			width: 100%;
+			height: auto;
+			border: 1px solid #ddd;
+			border-radius: 2px;
+			transition: all .2s;
+			a:hover &{
+				border-color: #428BCB;
+			}
+		}
+	}
+	.conf2015s-item4__label{
+		text-align: center;
+	}
+@include max-screen( $breakpoint-middle ) {
+	.conf2015s-item4{
+		width: 49.999%;
+	}
+}
+@include max-screen( $breakpoint-small ) {
+	.conf2015s-item4{
+		display: block;
+		width: auto;
+	}
+}
+/* ==========================================================================
+   .conf2015s-pageFooter
+   ========================================================================== */
+footer.conf2015s-pageFooter{
+	padding: 10px 0 30px;
+	margin-top: 100px;
+	background-color: #f3895b;
+}
+	.conf2015s-pageFooter__inner{
+		@include container();
+	}
+		.conf2015s-pageFooter__sponsor,
+		.conf2015s-pageFooter__supporter{
+			@include zero ();
+			padding: 20px 0;
+			border-bottom: 1px solid #E07446;
+			ul{
+				list-style: none;
+				padding: 0;
+				margin: 0;
+				// font-family: $fontSansSerif;
+			}
+			li{
+				vertical-align: middle;
+				display: inline-block;
+				margin: 3px;
+			}
+			img{
+				display: block;
+			}
+		}
+		.conf2015s-pageFooter__supporter{
+		}
+		.conf2015s-pageFooter__logo{
+			margin-top: 20px;
+			img{
+				display: block;
+				margin: 0 auto;
+			}
+		}
+
+
+
+
+
+/* ==========================================================================
+   
+   ========================================================================== */
+
+/* ==========================================================================
+   
+   ========================================================================== */
+   
+/* ==========================================================================
+   
+   ========================================================================== */
+   
+/* ==========================================================================
+   
+   ========================================================================== */

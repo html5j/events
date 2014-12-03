@@ -1,0 +1,94 @@
+
+
+/* ==========================================================================
+   Section comment block
+   ========================================================================== */
+
+/* Sub-section comment block
+   ========================================================================== */
+
+/* Basic comment */
+
+@font-face {
+  font-family: 'zero-width';
+  src: url('//:') format("No-IE-404"),
+       url('../fonts/zero-width.woff') format('woff'),
+       url('../fonts/zero-width.svg') format('svg'),
+       url('../fonts/zero-width.otf') format('opentype'),
+       url('../fonts/zero-width.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+/* ==========================================================================
+   for styleguide
+   ========================================================================== */
+.DEBUG{
+  color: #FFF;
+  font-size: 16px;
+  font-family: $fontSansSerif;
+  padding: 5px;
+  margin: 1em 0;
+  background: orange;
+}
+
+
+/* options text
+   ========================================================================== */
+.conf2015s--alignLeft   {text-align:left !important; }
+.conf2015s--alignRight  {text-align:right !important; }
+.conf2015s--alignCenter {text-align:center !important; }
+.conf2015s--alignTop    {vertical-align:top !important; }
+.conf2015s--alignMiddle {vertical-align:middle !important; }
+.conf2015s--alignBottom {vertical-align:bottom !important; }
+
+.conf2015s--fontXSmall { font-size:getFs( -2, 'px' ) !important; font-size:getFs( -2, 'rem' ) !important; }
+.conf2015s--fontSmall  { font-size:getFs( -1, 'px' ) !important; font-size:getFs( -1, 'rem' ) !important; }
+.conf2015s--fontBase   { font-size:getFs(  0, 'px' ) !important; font-size:getFs(  0, 'rem' ) !important; }
+.conf2015s--fontLarge  { font-size:getFs( +1, 'px' ) !important; font-size:getFs( +1, 'rem' ) !important; }
+.conf2015s--fontXLarge { font-size:getFs( +2, 'px' ) !important; font-size:getFs( +2, 'rem' ) !important; }
+// .conf2015s--fontBold   { font-weight:bold !important; }
+
+/* options display
+   ========================================================================== */
+.conf2015s--disableLeargeScreen{display:none;}
+
+@include max-screen( $breakpoint-small ) {
+  .conf2015s--disableLeargeScreen{display:block !important;}
+  .conf2015s--disableSmallScreen {display:none  !important;}
+}
+
+/* ==========================================================================
+   general style
+   ========================================================================== */
+
+html{
+  color: #333;
+  font-family: $fontSansSerif;
+  font-size: parseInt( $font-size-desktop ) / 16 * 100%;
+  line-height: 1.6;
+  @include max-screen( $breakpoint-small ) {
+    font-size: parseInt( $font-size-smallscreen ) / 16 * 100%;
+    line-height:1.8;
+  }
+}
+
+body{
+  position:relative;
+  margin:0;
+  padding:0;
+  min-height:100%;
+}
+
+a{
+  color: inherit;
+  text-decoration:underline;
+  transition: color .3s;
+}
+a:hover,a:active{
+  color: #000;
+  text-decoration:underline;
+  outline:none;
+  transition: color 0s;
+}
