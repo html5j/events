@@ -2,19 +2,16 @@
 <html lang="ja">
 <head>
 <meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="HTML5 Conference ― 1月25日（日）東京電機大学 千住キャンパスにて開催。">
 <meta property="og:title" content="HTML5 Conference">
 <meta property="og:type" content="website">
 <meta property="og:url" content="http://events.html5j.org/conference/2015/1/">
-<meta property="og:image" content="http://events.html5j.org/conference/2015/1/img/ogp.jpg">
+<meta property="og:image" content="http://events.html5j.org/conference/2015/1/assets/img/ogp.jpg">
 <meta property="og:description" content="HTML5 Conference ― 1月25日（日）東京電機大学 千住キャンパスにて開催。">
 <title>HTML5 Conference</title>
 <link rel="stylesheet" href="./assets/css/all.min.css">
-<!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-<![endif]-->
 </head>
 <body>
 
@@ -22,7 +19,7 @@
 <header>
 <div class="conf2015s-hero">
 	<div class="conf2015s-hero__inner">
-		<h1><img src="./assets/img/conf2015s-hero/img_01.jpg" alt="HTML5 Conference" width="960" height="400"></h1>
+		<h1><img src="./assets/img/conf2015s-hero/img_01.png" alt="HTML5 Conference" width="960" height="400"></h1>
 		<div class="conf2015s-hero__info">
 			2015年1月25日（日）AM10:00〜<br>東京電機大学 千住キャンパス
 		</div>
@@ -33,12 +30,12 @@
 <nav class="conf2015s-pageNav">
 	<div class="conf2015s-pageNav__inner">
 		<ul>
-			<li class="conf2015s-pageNav__item--current"><a href="/">ホーム</a></li>
+			<li class="conf2015s-pageNav__item--current"><a href="./">ホーム</a></li>
 			<li><a href="./volunteer/">ボランティア</a></li>
-			<li>セッション</li>
-			<li>スピーカー</li>
+			<li><a href="./session/">セッション</a></li>
+			<li><a href="./speaker/">スピーカー</a></li>
 			<li>展示ブース</li>
-			<li>会場・アクセス</li>
+			<li><a href="./access/">会場・アクセス</a></li>
 			<li>当日の流れ</li>
 			<li>よくある質問</li>
 		</ul>
@@ -49,22 +46,10 @@
 
 
 <div class="conf2015s-container">
-
-	<section>
-		<div class="conf2015s-header2">
-			<h2>ボランティアスタッフ募集中！</h2>
-		<!-- /.conf2015s-header2 --></div>
-
-
-		<p>開催にあたり、カンファレンスをお手伝い頂けるボランティアスタッフを募集しています！詳細については、<a href="./volunteer/">ボランティアスタッフ募集ページ</a>でご確認いただけます。</p>
-
-
-		<div class="conf2015s-buttonContainer">
-			<ul>
-				<li><a class="conf2015s-button" href="https://docs.google.com/forms/d/1Hy8z1qg8VO7XrU7HVtGnl-r5aoJSw1ny4bS5Kx-S7Os/viewform" target="_blank">ボランティアスタッフに応募する</a></li>
-			</ul>
-		<!-- /.conf2015s-buttonContainer --></div>
-	</section>
+		
+	<!-- <div class="conf2015s-buttonContainer">
+		<a class="conf2015s-button conf2015s-button" href="http://html5j.doorkeeper.jp/events/18695" target="_blank">HTML5 Conference に参加する</a>
+	</div> -->
 
 	<section>
 		<div class="conf2015s-header2">
@@ -91,8 +76,12 @@
 					<td itemprop="name">HTML5 Conference</td>
 				</tr>
 				<tr>
-					<th>開催日 時間</th>
-					<td><span itemprop="startDate" content="2015-01-25T10:00">2015年1月25日（日）10:00 ～ 19:30（予定）</span>（受付開始 9:30）</td>
+					<th>主催</th>
+					<td>html5j</td>
+				</tr>
+				<tr>
+					<th>開催日時</th>
+					<td><span itemprop="startDate" content="2015-01-25T10:00">2015年1月25日（日）10:00 ～ 19:00</span>（受付開始 9:30）</td>
 				</tr>
 				<tr>
 					<th>募集人数</th>
@@ -116,11 +105,26 @@
 
 		<div class="conf2015s-buttonContainer">
 			<ul>
-				<li><span class="conf2015s-button conf2015s-button--disabled">HTML5 Conference に参加する</span></li>
+				<li><a class="conf2015s-button conf2015s-button" href="http://html5j.doorkeeper.jp/events/18695" target="_blank">HTML5 Conference に参加する</a></li>
 			</ul>
-			<div class="conf2015s-buttonContainer__note">
-				12月中旬頃より募集を開始します！募集開始までもう少々お待ちください！
-			</div>
+			<!-- <div class="conf2015s-buttonContainer__note">
+			</div> -->
+		<!-- /.conf2015s-buttonContainer --></div>
+	</section>
+
+	<section>
+		<div class="conf2015s-header2">
+			<h2>ボランティアスタッフ募集中！</h2>
+		<!-- /.conf2015s-header2 --></div>
+
+
+		<p>開催にあたり、カンファレンスをお手伝い頂けるボランティアスタッフを募集しています！詳細については、<a href="./volunteer/">ボランティアスタッフ募集ページ</a>でご確認いただけます。</p>
+
+
+		<div class="conf2015s-buttonContainer">
+			<ul>
+				<li><a class="conf2015s-button" href="https://docs.google.com/forms/d/1Hy8z1qg8VO7XrU7HVtGnl-r5aoJSw1ny4bS5Kx-S7Os/viewform" target="_blank">ボランティアスタッフに応募する</a></li>
+			</ul>
 		<!-- /.conf2015s-buttonContainer --></div>
 	</section>
 
@@ -129,22 +133,32 @@
 
 <footer class="conf2015s-pageFooter">
 	<div class="conf2015s-pageFooter__inner">
+		<div class="conf2015s-pageFooter__sponsor">
+			<ul>
+				<li><a href="https://developers.google.com/" target="_blank"><img src="assets/img/sponsers/google_w200.png" alt="Google" width="150" height="150"></a></li>
+				<li><a href="http://msdn.microsoft.com/" target="_blank"><img src="assets/img/sponsers/microsoft_200w.png" alt="Microsoft" width="150" height="150"></a></li>
+				<li><a href="http://www.mozilla.jp/" target="_blank"><img src="assets/img/sponsers/mozilla_w200.png" alt="Mozilla" width="150" height="150"></a></li>
+				<li><a href="http://www.w3.org/" target="_blank"><img src="assets/img/sponsers/w3c_200w.png" alt="W3C" width="150" height="150"></a></li>
+				<li><a href="http://www.ntt.com/" target="_blank"><img src="assets/img/sponsers/ntt-com_250w.png" alt="NTT Communications" width="150" height="150"></a></li>
+				<li><a href="http://www.soumu.go.jp/" target="_blank"><img src="assets/img/sponsers/mic_200w.png" alt="総務省" width="150" height="150"></a></li>
+			</ul>
+		</div>
 		<div class="conf2015s-pageFooter__logo">
-			<img src="./assets/img/conf2015s-pageFooter/html5j.svg" alt="html5j" width="200" height="60">
+			<a href="http://html5j.org" target="_blank"><img src="./assets/img/conf2015s-pageFooter/html5j.svg" alt="html5j" width="200" height="60"></a>
 		</div>
 	</div>
 <!-- /.conf2015s-pageFooter --></footer>
 
 
-<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script> 
 <script src="./assets/js/scripts.min.js"></script>
 <script>
-    (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-    function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-    e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-    e.src='//www.google-analytics.com/analytics.js';
-    r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-    ga('create','UA-4956033-6','auto');ga('send','pageview');
+;(function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+e.src='//www.google-analytics.com/analytics.js';
+r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+ga('create','UA-4956033-6','auto');ga('send','pageview');
 </script>
 </body>
 </html>

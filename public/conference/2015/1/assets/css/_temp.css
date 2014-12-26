@@ -1,0 +1,88 @@
+
+
+/* ==========================================================================
+   u can add some pure css code here
+   ========================================================================== */
+   
+/* ==========================================================================
+   "access"only
+   ========================================================================== */
+
+/* アクセス路線の表示調整  */
+.access_root li{
+  list-style: none;
+  font-size: 0.85em;
+}
+
+/* 画像・地図のスマホ用調整  */
+.google-map{
+	 width: 100%;
+}
+.google-map iframe{
+	 width: 100%;
+}
+@media screen and (max-width: 767px){
+	.google-map{
+	  width: 100%;
+	  height: 300px;
+	}
+	.google-map iframe{
+		max-width: 767px;
+	  	width: 100%;
+	  	height: 80%;
+	}
+	section{
+	  	width: 100%;
+	}
+	.access_photo img{
+	    max-width: 640px;
+	    width: 100%;
+	    height: auto;
+	    text-align: center;
+	}
+}
+@media screen and (max-width: 639px){
+	.google-map{
+	 	width: 100%;
+	 	height: 200px;
+	}
+	.google-map iframe{
+	 	width: 100%;
+	 	height: 100%;
+	 	text-align: center;
+	}
+	.access_photos{
+		width: 100%;
+	}
+	.access_photo img{
+	    width: 100%;
+	    height: auto;
+	    text-align: center;
+	}
+}
+
+/* ==========================================================================
+   "speaker"only
+   ========================================================================== */
+
+/* 画像・地図のスマホ用調整  */
+@media screen and (max-width: 767px){
+    .image{
+      text-align: center;
+    }
+    .image img{
+        max-width: 200px;
+        width: 100%;
+        height: auto;
+    }
+}
+@media screen and (max-width: 639px){
+    .image{
+      text-align: center;
+    }
+    .image img{
+        max-width: 200px;
+        width: 100%;
+        height: auto;
+    }
+}

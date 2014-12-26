@@ -95,7 +95,9 @@ header.conf2015s-pageHeader{}
 /* ==========================================================================
    .conf2015s-pageNav
    ========================================================================== */
-
+li.conf2015s-pageNav__item--current {
+	background-color: #F2DBA6;
+}
 nav.conf2015s-pageNav{
 	border-top: 1px solid #e7e7e7;
 	border-bottom: 3px solid #e7e7e7;
@@ -483,17 +485,275 @@ footer.conf2015s-pageFooter{
 
 
 /* ==========================================================================
-   
+   .conf2015s-session
    ========================================================================== */
+.conf2015s-session{
+	border: 1px solid #ddd;
+	padding: 14px 18px;
+	margin: 40px 0;
+	background-color: #fff;
+	header.conf2015s-sessionGroup__header + &{
+		margin-top: 20px;
+	}
+}
+	.conf2015s-session__time{
+		font-size: 12px;
+		time{}
+	}
+	.conf2015s-session__title{
+		h1{
+			font-size: 16px;
+			font-weight: bold;
+			margin: 0;
+		}
+	}
+	.conf2015s-session__tag{
+		ul{
+			font-size: 0;
+			list-style: none;
+			line-height: normal;
+			display: inline-block;
+			padding: 0;
+			margin: 0;
+			&:before{
+				content: ' ';
+			}
+		}
+		li{
+			color: #999;
+			font-size: 12px;
+			font-weight: bold;
+			display: inline-block;
+			padding: 0;
+			margin: 0;
+			&:before{
+				content: ', ';
+			}
+			&:first-child:before{
+				content: none;
+			}
+		}
+	}
+	.conf2015s-session__tagLabel{
+		color: #ccc;
+		font-size: 10px;
+		font-weight: bold;
+		display: inline-block;
+	}
+	.conf2015s-session__main{
+		font-size: 14px;
+	}
+		.conf2015s-session__notice{
+			font-size: 10px;
+		}
+	.conf2015s-session__speakers{
+		overflow: hidden;
+		ul{
+			font-size: 0;
+			list-style: none;
+			padding: 0;
+			margin: 20px -40px 0 0;
+			&:after{
+				content: '';
+				display: block;
+				margin-top: -40px;
+			}
+		}
+		li{
+			font-size: 1rem;
+			vertical-align: top;
+			display: inline-block;
+			padding: 0;
+			margin: 0 40px 40px 0;
+		}
+		a{
+			text-decoration: none;
+			display: block;
+		}
+	}
+	.conf2015s-session__speakerImage{
+		width: 72px;
+		height: 72px;
+		margin-bottom: 4px;
+		img{
+			width: 60px;
+			height: 60px;
+			border-radius: 50%;
+			padding: 5px;
+			border: 1px solid #ccc;
+			transition: all .2s;
+		}
+		a:hover &{
+			img{
+				border-color:#C30D23;
+			}
+		}
+	}
+	.conf2015s-session__speakerName{
+		font-size: 12px;
+	}
+	.conf2015s-session__speakerAffil{
+		font-size: 10px;
+		font-weight: bold;
+	}
 
 /* ==========================================================================
    
    ========================================================================== */
-   
+.conf2015s-sessionGroup{
+	border: 1px solid #ddd;
+	padding: 20px 20px 20px 40px;
+	margin: 20px 0 60px;
+	background: #ddd;
+	&.conf2015s-sessionGroup--groupA{background-color: hsla(   0, 27%, 78%, 1 );}
+	&.conf2015s-sessionGroup--groupB{background-color: hsla(  60, 27%, 78%, 1 );}
+	&.conf2015s-sessionGroup--groupC{background-color: hsla( 120, 27%, 78%, 1 );}
+	&.conf2015s-sessionGroup--groupD{background-color: hsla( 180, 27%, 78%, 1 );}
+	&.conf2015s-sessionGroup--groupE{background-color: hsla( 240, 27%, 78%, 1 );}
+	&.conf2015s-sessionGroup--groupF{background-color: hsla( 300, 27%, 78%, 1 );}
+}
+header.conf2015s-sessionGroup__header{
+	margin: 0 0 0 -20px;
+	h1{
+		font-size: 28px;
+		margin: 0;
+		.conf2015s-sessionGroup--groupA &{color: hsla(   0, 40%, 20%, 1 );}
+		.conf2015s-sessionGroup--groupB &{color: hsla(  60, 40%, 20%, 1 );}
+		.conf2015s-sessionGroup--groupC &{color: hsla( 120, 40%, 20%, 1 );}
+		.conf2015s-sessionGroup--groupD &{color: hsla( 180, 40%, 20%, 1 );}
+		.conf2015s-sessionGroup--groupE &{color: hsla( 240, 40%, 20%, 1 );}
+		.conf2015s-sessionGroup--groupF &{color: hsla( 300, 40%, 20%, 1 );}
+	}
+}
+
+@include max-screen( $breakpoint-small ) {
+	.conf2015s-sessionGroup{
+		border: 1px solid #ddd;
+		padding: 14px;
+		margin: 20px 0 60px;
+	}
+	header.conf2015s-sessionGroup__header{
+		margin-left: 0;
+	}
+}
+
+
 /* ==========================================================================
-   
+   .conf2015s-speaker
    ========================================================================== */
-   
+
+.conf2015s-speaker{
+	font-size: 14px;
+	display: table;
+	width: 100%;
+	border-top: 1px solid #b8582e;
+	margin: 30px 0 60px;
+}
+	.conf2015s-speaker__image{
+		vertical-align: top;
+		box-sizing: border-box;
+		display: table-cell;
+		width: 220px;
+		padding-top: 10px;
+		padding-right: 20px;
+		img{
+			display: block;
+			width: 100%;
+			height: auto;
+		}
+	}
+	.conf2015s-speaker__text{
+		vertical-align: top;
+		box-sizing: border-box;
+		display: table-cell;
+		padding-top: 10px;
+		&:first-child{
+			padding-left: 220px;
+		}
+	}
+	.conf2015s-speaker__name{
+		color: #b8582e;
+		font-size: 22px;
+	}
+	.conf2015s-speaker__affil{
+		font-size: 12px;
+	}
+	.conf2015s-speaker__bio{
+		margin-top: 16px;
+		p{
+			margin: 8px 0;
+		}
+	}
+	.conf2015s-speaker__h{
+		margin: 10px 0;
+		font-weight: bold;
+	}
+@include max-screen( $breakpoint-middle ) {
+.conf2015s-speaker{
+}
+	.conf2015s-speaker__image{
+		width: 30%;
+		img{
+			min-width: 150px;
+		}
+	}
+	.conf2015s-speaker__text{
+		width: 70%;
+		&:first-child{
+			padding-left: 30%;
+		}
+	}
+	.conf2015s-speaker__name{
+		font-size: 20px;
+	}
+	.conf2015s-speaker__affil{}
+	.conf2015s-speaker__bio{
+		margin-top: 14px;
+		p{}
+	}
+	.conf2015s-speaker__h{}
+}
+@include max-screen( $breakpoint-small ) {
+.conf2015s-speaker{
+	display: block;
+	margin: 30px 0;
+}
+	.conf2015s-speaker__image{
+		text-align: center;
+		display: block;
+		width: auto;
+		padding-right: 0;
+		img{
+			display: inline-block;
+			width: auto;
+		}
+	}
+	.conf2015s-speaker__text{
+		display: block;
+		width: auto;
+		padding-top: 0;
+		&:first-child{
+			padding-left: 0;
+		}
+	}
+	.conf2015s-speaker__name{
+		text-align: center;
+	}
+	.conf2015s-speaker__affil{
+		text-align: center;
+	}
+	.conf2015s-speaker__bio{
+		margin-top: 16px;
+		p{
+			margin: 8px 0;
+		}
+	}
+	.conf2015s-speaker__h{
+		margin: 10px 0;
+		font-weight: bold;
+	}
+}
+
 /* ==========================================================================
    
    ========================================================================== */
