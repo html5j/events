@@ -637,9 +637,9 @@ nav.conf2015s-pageNav {
   .conf2015s-pageNav__inner {
     padding: 0; }
     .conf2015s-pageNav__inner ul {
-      position: absolute;
       font-size: 0.85714rem;
       font-weight: bold;
+      position: absolute;
       display: none;
       width: 100%;
       border-top: 1px solid #ccc;
@@ -662,10 +662,11 @@ nav.conf2015s-pageNav {
     line-height: 1;
     cursor: pointer;
     position: absolute;
-    top: 10px;
-    right: 10px;
+    z-index: 3;
+    top: 8px;
+    right: 8px;
     display: block;
-    padding: 5px;
+    padding: 10px;
     background: #fff; }
     .conf2015s-pageNav__opener:before {
       content: "\f0c9";
@@ -680,7 +681,7 @@ nav.conf2015s-pageNav {
       display: inline-block;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
-      font-size: 20px; } }
+      font-size: 24px; } }
 /* ==========================================================================
    .conf2015s-hero
    ========================================================================== */
@@ -1140,6 +1141,9 @@ header.conf2015s-sessionGroup__header {
   font-weight: bold; }
 
 @media screen and (max-width: 767px) {
+  .conf2015s-speaker {
+    width: auto; }
+
   .conf2015s-speaker__image {
     width: 30%; }
     .conf2015s-speaker__image img {
