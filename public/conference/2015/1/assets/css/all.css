@@ -1,3 +1,4 @@
+@import url(_temp.css);
 /* normalize.css v3.0.1 | MIT License | git.io/normalize */
 /**
  * 1. Set default font family to sans-serif.
@@ -583,6 +584,9 @@ a:hover, a:active {
 /* ==========================================================================
    .conf2015s-pageNav
    ========================================================================== */
+li.conf2015s-pageNav__item--current {
+  background-color: #F2DBA6; }
+
 nav.conf2015s-pageNav {
   border-top: 1px solid #e7e7e7;
   border-bottom: 3px solid #e7e7e7;
@@ -946,14 +950,246 @@ footer.conf2015s-pageFooter {
     margin: 0 auto; }
 
 /* ==========================================================================
-   
+   .conf2015s-session
    ========================================================================== */
+.conf2015s-session {
+  border: 1px solid #ddd;
+  padding: 14px 18px;
+  margin: 40px 0;
+  background-color: #fff; }
+  header.conf2015s-sessionGroup__header + .conf2015s-session {
+    margin-top: 20px; }
+
+.conf2015s-session__time {
+  font-size: 12px; }
+
+.conf2015s-session__title h1 {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0; }
+
+.conf2015s-session__tag ul {
+  font-size: 0;
+  list-style: none;
+  line-height: normal;
+  display: inline-block;
+  padding: 0;
+  margin: 0; }
+  .conf2015s-session__tag ul:before {
+    content: ' '; }
+.conf2015s-session__tag li {
+  color: #999;
+  font-size: 12px;
+  font-weight: bold;
+  display: inline-block;
+  padding: 0;
+  margin: 0; }
+  .conf2015s-session__tag li:before {
+    content: ', '; }
+  .conf2015s-session__tag li:first-child:before {
+    content: none; }
+
+.conf2015s-session__tagLabel {
+  color: #ccc;
+  font-size: 10px;
+  font-weight: bold;
+  display: inline-block; }
+
+.conf2015s-session__main {
+  font-size: 14px; }
+
+.conf2015s-session__notice {
+  font-size: 10px; }
+
+.conf2015s-session__speakers {
+  overflow: hidden; }
+  .conf2015s-session__speakers ul {
+    font-size: 0;
+    list-style: none;
+    padding: 0;
+    margin: 20px -40px 0 0; }
+    .conf2015s-session__speakers ul:after {
+      content: '';
+      display: block;
+      margin-top: -40px; }
+  .conf2015s-session__speakers li {
+    font-size: 1rem;
+    vertical-align: top;
+    display: inline-block;
+    padding: 0;
+    margin: 0 40px 40px 0; }
+  .conf2015s-session__speakers a {
+    text-decoration: none;
+    display: block; }
+
+.conf2015s-session__speakerImage {
+  width: 72px;
+  height: 72px;
+  margin-bottom: 4px; }
+  .conf2015s-session__speakerImage img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    -webkit-transition: all .2s;
+            transition: all .2s; }
+  a:hover .conf2015s-session__speakerImage img {
+    border-color: #C30D23; }
+
+.conf2015s-session__speakerName {
+  font-size: 12px; }
+
+.conf2015s-session__speakerAffil {
+  font-size: 10px;
+  font-weight: bold; }
+
 /* ==========================================================================
    
    ========================================================================== */
+.conf2015s-sessionGroup {
+  border: 1px solid #ddd;
+  padding: 20px 20px 20px 40px;
+  margin: 20px 0 60px;
+  background: #ddd; }
+  .conf2015s-sessionGroup.conf2015s-sessionGroup--groupA {
+    background-color: #d6b8b8; }
+  .conf2015s-sessionGroup.conf2015s-sessionGroup--groupB {
+    background-color: #d6d6b8; }
+  .conf2015s-sessionGroup.conf2015s-sessionGroup--groupC {
+    background-color: #b8d6b8; }
+  .conf2015s-sessionGroup.conf2015s-sessionGroup--groupD {
+    background-color: #b8d6d6; }
+  .conf2015s-sessionGroup.conf2015s-sessionGroup--groupE {
+    background-color: #b8b8d6; }
+  .conf2015s-sessionGroup.conf2015s-sessionGroup--groupF {
+    background-color: #d6b8d6; }
+
+header.conf2015s-sessionGroup__header {
+  margin: 0 0 0 -20px; }
+  header.conf2015s-sessionGroup__header h1 {
+    font-size: 28px;
+    margin: 0; }
+    .conf2015s-sessionGroup--groupA header.conf2015s-sessionGroup__header h1 {
+      color: #471f1f; }
+    .conf2015s-sessionGroup--groupB header.conf2015s-sessionGroup__header h1 {
+      color: #47471f; }
+    .conf2015s-sessionGroup--groupC header.conf2015s-sessionGroup__header h1 {
+      color: #1f471f; }
+    .conf2015s-sessionGroup--groupD header.conf2015s-sessionGroup__header h1 {
+      color: #1f4747; }
+    .conf2015s-sessionGroup--groupE header.conf2015s-sessionGroup__header h1 {
+      color: #1f1f47; }
+    .conf2015s-sessionGroup--groupF header.conf2015s-sessionGroup__header h1 {
+      color: #471f47; }
+
+@media screen and (max-width: 639px) {
+  .conf2015s-sessionGroup {
+    border: 1px solid #ddd;
+    padding: 14px;
+    margin: 20px 0 60px; }
+
+  header.conf2015s-sessionGroup__header {
+    margin-left: 0; } }
 /* ==========================================================================
-   
+   .conf2015s-speaker
    ========================================================================== */
+.conf2015s-speaker {
+  font-size: 14px;
+  display: table;
+  width: 100%;
+  border-top: 1px solid #b8582e;
+  margin: 30px 0 60px; }
+
+.conf2015s-speaker__image {
+  vertical-align: top;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: table-cell;
+  width: 220px;
+  padding-top: 10px;
+  padding-right: 20px; }
+  .conf2015s-speaker__image img {
+    display: block;
+    width: 100%;
+    height: auto; }
+
+.conf2015s-speaker__text {
+  vertical-align: top;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: table-cell;
+  padding-top: 10px; }
+  .conf2015s-speaker__text:first-child {
+    padding-left: 220px; }
+
+.conf2015s-speaker__name {
+  color: #b8582e;
+  font-size: 22px; }
+
+.conf2015s-speaker__affil {
+  font-size: 12px; }
+
+.conf2015s-speaker__bio {
+  margin-top: 16px; }
+  .conf2015s-speaker__bio p {
+    margin: 8px 0; }
+
+.conf2015s-speaker__h {
+  margin: 10px 0;
+  font-weight: bold; }
+
+@media screen and (max-width: 767px) {
+  .conf2015s-speaker__image {
+    width: 30%; }
+    .conf2015s-speaker__image img {
+      min-width: 150px; }
+
+  .conf2015s-speaker__text {
+    width: 70%; }
+    .conf2015s-speaker__text:first-child {
+      padding-left: 30%; }
+
+  .conf2015s-speaker__name {
+    font-size: 20px; }
+
+  .conf2015s-speaker__bio {
+    margin-top: 14px; } }
+@media screen and (max-width: 639px) {
+  .conf2015s-speaker {
+    display: block;
+    margin: 30px 0; }
+
+  .conf2015s-speaker__image {
+    text-align: center;
+    display: block;
+    width: auto;
+    padding-right: 0; }
+    .conf2015s-speaker__image img {
+      display: inline-block;
+      width: auto; }
+
+  .conf2015s-speaker__text {
+    display: block;
+    width: auto;
+    padding-top: 0; }
+    .conf2015s-speaker__text:first-child {
+      padding-left: 0; }
+
+  .conf2015s-speaker__name {
+    text-align: center; }
+
+  .conf2015s-speaker__affil {
+    text-align: center; }
+
+  .conf2015s-speaker__bio {
+    margin-top: 16px; }
+    .conf2015s-speaker__bio p {
+      margin: 8px 0; }
+
+  .conf2015s-speaker__h {
+    margin: 10px 0;
+    font-weight: bold; } }
 /* ==========================================================================
    
    ========================================================================== */
