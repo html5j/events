@@ -3,11 +3,14 @@
   <head>
     <meta charset="utf-8">
     <title><%= page.title %></title>
+    <script src="/_inquiry/jquery-1.11.2.min.js"></script>
   </head>
   <body>
+    <div id="container">
     <h1><%= page.title %></h1>
     <p><%= page.description %></p>
 
+    <div id="profile" class="inquiry-components">
     <h2>プロフィール情報の入力をお願いします</h2>
     <p>※ プロフィール情報の入力は初回のみです</p>
     <form name="profile" action="./" method="post">
@@ -25,7 +28,9 @@
     <% }) %>
       <p><button type="submit">送信</button></p>
     </form>
+    </div><!-- end of profile -->
 
+    <div id="session-selection" class="inquiry-components">
     <h2>セッション選択</h2>
     <form name="session-name">
       <p>
@@ -38,10 +43,12 @@
       </p>
       <p><button type="submit">選択</button></p>
     </form>
+    </div><!-- end of #session-selection -->
 
     <% sessions.forEach(function(session) { %>
+      <div id="<%= session.id %>" class="inquiry-components">
       <h2>[<%= session.id %>] <%= session.name %></h2>
-      <form name="session-<%= session.id %>" action="./" method="post">
+      <form name="session-<%= session.id %>" action="" method="post">
       <% session.items.forEach(function(item) { %>
         <p><%= item.title %><% if(item.required) { %> <span class="required">(*)</span><% } %><br>
         <% if(item.type === "radio") { %>
@@ -57,11 +64,14 @@
         </p>
       <% }) %>
         <p><button type="submit">送信</button></p>
-    </form>
+      </form>
+      </div><!-- end of #session.id -->
     <% }) %>
 
 
 
 
+    </div><!-- end of #container -->
+    <script src="/_inquiry/script.js"></script>
   </body>
 </html>
