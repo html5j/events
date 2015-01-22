@@ -6,7 +6,7 @@
 var fs = require('fs');
 
 var inqObj = {};
-inqObj['20150125'] = JSON.parse(fs.readFileSync("./model/inquiry/20150125.json", "utf8"));
+inqObj['20150125'] = JSON.parse(fs.readFileSync( __dirname + "/../model/inquiry/20150125.json", "utf8"));
 
 
 exports.index_get = function (req, res) {
