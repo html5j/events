@@ -6,6 +6,7 @@
 var express = require('express');
 var routes = require('./routes')
     , routes2013 = require('./routes/conf2013')
+    , inquiry = require('./routes/inquiry')
 var http = require('http');
 var path = require('path');
 var fs = require('fs')
@@ -54,6 +55,10 @@ app.get('/conference/2013/11/guide', routes2013.guide);
 app.get('/conference/2013/11/speaker/:speaker_id', routes2013.speaker);
 app.get('/conference/2013/11/api/:model', routes2013.api);
 app.get('/conference/2013/11/questionnaire', routes2013.questionnaire);
+
+// inquiry
+app.get('/inquiry/:date', inquiry.index_get);
+app.post('/inquiry/:date', inquiry.index_post);
 
 // run server
 app.listen(app.get('port'), function () {

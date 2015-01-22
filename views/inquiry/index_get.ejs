@@ -1,0 +1,77 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title><%= page.title %></title>
+    <script src="/_inquiry/jquery-1.11.2.min.js"></script>
+  </head>
+  <body>
+    <div id="container">
+    <h1><%= page.title %></h1>
+    <p><%= page.description %></p>
+
+    <div id="profile" class="inquiry-components">
+    <h2>プロフィール情報の入力をお願いします</h2>
+    <p>※ プロフィール情報の入力は初回のみです</p>
+    <form name="profile" action="./" method="post">
+    <% profile.forEach(function(obj) { %>
+      <p><%= obj.title %><% if(obj.required) { %> <span class="required">(*)</span><% } %><br>
+      <% if(obj.type === "radio") { %>
+        <% obj.options.forEach(function(option) { %>
+          <label>
+            <input type="radio" name="<%= obj.name %>" value="<%= option %>" <% if(obj.required) { %>required<% } %>>
+            <%= option %><br>
+          </label>
+        <% }) %>
+      <% } %>
+      </p>
+    <% }) %>
+      <p><button type="submit">送信</button></p>
+    </form>
+    </div><!-- end of profile -->
+
+    <div id="session-selection" class="inquiry-components">
+    <h2>セッション選択</h2>
+    <form name="session-name">
+      <p>
+      <label>聴講したセッションをお選びください</label><br>
+      <select id="session-name">
+      <% sessions.forEach(function(session) { %>
+      <option value="<%= session.id %>">[<%= session.id %>] <%= session.name %></option>
+      <% }); %>
+      </select>
+      </p>
+      <p><button type="submit">選択</button></p>
+    </form>
+    </div><!-- end of #session-selection -->
+
+    <% sessions.forEach(function(session) { %>
+      <div id="<%= session.id %>" class="inquiry-components">
+      <h2>[<%= session.id %>] <%= session.name %></h2>
+      <form name="session-<%= session.id %>" action="" method="post">
+      <% session.items.forEach(function(item) { %>
+        <p><%= item.title %><% if(item.required) { %> <span class="required">(*)</span><% } %><br>
+        <% if(item.type === "radio") { %>
+          <% item.options.forEach(function(option) { %>
+            <label>
+              <input type="radio" name="<%= item.name %>" value="<%= option %>" <% if(item.required) { %>required<% } %>>
+              <%= option %><br>
+            </label>
+          <% }) %>
+        <% } else if (item.type === "textarea") {%>
+          <textarea name="<%= item.name %>" cols="40" rows="5" <% if(item.required) { %>required<% } %>></textarea>
+        <% } %>
+        </p>
+      <% }) %>
+        <p><button type="submit">送信</button></p>
+      </form>
+      </div><!-- end of #session.id -->
+    <% }) %>
+
+
+
+
+    </div><!-- end of #container -->
+    <script src="/_inquiry/script.js"></script>
+  </body>
+</html>
