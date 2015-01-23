@@ -46,7 +46,7 @@ inquiryDB.prototype.setProfile = function(obj, cb) {
 }
 
 inquiryDB.prototype.setSession = function(obj, cb) {
-  this.Profile.create({
+  this.Session.create({
     room: obj.room,
     title: obj.title,
     impression: obj.impression,
