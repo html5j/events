@@ -46,9 +46,10 @@
     </div><!-- end of #session-selection -->
 
     <% sessions.forEach(function(session) { %>
+      <% var _session_name = session.name.replace(/\"/g, "-"); %>
       <div id="<%= session.id %>" class="inquiry-components">
       <h2>[<%= session.id %>] <%= session.name %></h2>
-      <form name="session-<%= session.id %>" action="" method="post">
+      <form name="session-<%= session.id %>" class="session-inquiry" data-room="<%= session.id %>" data-sessionname="<%= _session_name %>">
       <% session.items.forEach(function(item) { %>
         <p><%= item.title %><% if(item.required) { %> <span class="required">(*)</span><% } %><br>
         <% if(item.type === "radio") { %>
