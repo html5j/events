@@ -11,6 +11,7 @@ var http = require('http');
 var path = require('path');
 var fs = require('fs')
 
+
 var app = express();
 
 
@@ -59,6 +60,9 @@ app.get('/conference/2013/11/questionnaire', routes2013.questionnaire);
 // inquiry
 app.get('/inquiry/:date', inquiry.index_get);
 app.post('/inquiry/:date', inquiry.index_post);
+
+app.post('/inquiry/:date/profile', inquiry.set_profile);
+app.post('/inquiry/:date/session', inquiry.set_session);
 
 // run server
 app.listen(app.get('port'), function () {

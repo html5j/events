@@ -6,8 +6,10 @@
     "start": "node app.js"
   },
   "dependencies": {
-    "express": "3.x",
     "ejs": "*",
+    "express": "3.x",
+    "sequelize": "^2.0.0-rc8",
+    "sqlite3": "^3.0.4",
     "underscore": "*"
   }
 }
