@@ -15,12 +15,12 @@ $("#profile form").on("submit", function(ev) {
       "type": "POST",
       "data": {
         "uuid": getUUID(),
-        "business": $(this).find("input[name=business_category]").val(),
-        "occupation": $(this).find("input[name=occupation_category]").val(),
-        "how_to_know": $(this).find("input[name=how_to_know]").val(),
-        "how_often": $(this).find("input[name=how_often]").val(),
-        "sex": $(this).find("input[name=sex]").val(),
-        "generation": $(this).find("input[name=generation]").val()
+        "business": $(this).find("input[name=business_category]:checked").val(),
+        "occupation": $(this).find("input[name=occupation_category]:checked").val(),
+        "how_to_know": $(this).find("input[name=how_to_know]:checked").val(),
+        "how_often": $(this).find("input[name=how_often]:checked").val(),
+        "sex": $(this).find("input[name=sex]:checked").val(),
+        "generation": $(this).find("input[name=generation]:checked").val()
       },
       "success": function(res){
         location.hash = "#session-selection";
@@ -47,7 +47,7 @@ $("#session-selection").find("form")
         "uuid": getUUID(),
         "room": $(this).data("room"),
         "title": $(this).data("sessionname"),
-        "impression": $(this).find("input[name=impression]").val(),
+        "impression": $(this).find("input[name=impression]:checked").val(),
         "freetext": $(this).find("textarea[name=impression-text]").val()
       },
       "success": function(res){
