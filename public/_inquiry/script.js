@@ -7,8 +7,7 @@ $(".inquiry-components").hide();
 
 
 // send inquiry result for profile
-$("#profile").show()
-  .find("form").on("submit", function(ev) {
+$("#profile form").on("submit", function(ev) {
     ev.preventDefault();
     $.ajax({
       "url": location.pathname + "profile",
@@ -36,6 +35,7 @@ $("#session-selection").find("form")
     console.log(id);
     $(".inquiry-components").hide();
     $("#"+id).show();
+    location.hash = "#"+id;
   });
 
 // send inquiry result for each session
@@ -73,8 +73,20 @@ var getUUID = function() {
   return localStorage.getItem( key )
 }
 
-var checkUUID = function(){
+var UUID = (function(){
   var key = location.pathname + "/uuid";
   return localStorage.getItem( key );
-}
+}());
 
+
+// localStorageにUUIDが保存されていたら、プロフィール入力はすっ飛ばす
+if(UUID){
+  // UUID 登録済み
+  location.hash = "#selection";
+  $(".inquiry-components").hide();
+  $("#session-selection").show();
+} else {
+  // UUID 無し
+  location.hash = "#profile";
+  $("#profile").show();
+}
