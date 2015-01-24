@@ -23,8 +23,15 @@ exports.index_get = function (req, res) {
   }
 };
 
-exports.index_post = function (req, res) {
-  res.render("inquiry/index_post", {title: "dummy"});
+exports.thx = function (req, res) {
+  var date = req.params.date;
+
+  if(inqObj[date]) {
+    res.render("inquiry/thx", inqObj[date]);
+  } else {
+    res.status(404);
+    res.type('txt').send('Not found');
+  }
 }
 
 exports.set_profile = function(req, res) {

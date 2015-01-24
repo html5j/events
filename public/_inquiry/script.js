@@ -52,7 +52,7 @@ $("#session-selection").find("form")
         "freetext": $(this).find("textarea[name=impression-text]").val()
       },
       "success": function(res){
-        location.href = "./";
+        location.href = "./thx/";
       }
     });
   });
