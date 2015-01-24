@@ -59,7 +59,7 @@ app.get('/conference/2013/11/questionnaire', routes2013.questionnaire);
 
 // inquiry
 app.get('/inquiry/:date', inquiry.index_get);
-app.post('/inquiry/:date', inquiry.index_post);
+app.get('/inquiry/:date/thx', inquiry.thx);
 
 app.post('/inquiry/:date/profile', inquiry.set_profile);
 app.post('/inquiry/:date/session', inquiry.set_session);
