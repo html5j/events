@@ -3,8 +3,9 @@
  *
  */
 
-$(".inquiry-components").hide();
 
+///////////////////////////////////////////////////////
+// event handler for form
 
 // send inquiry result for profile
 $("#profile form").on("submit", function(ev) {
@@ -14,27 +15,25 @@ $("#profile form").on("submit", function(ev) {
       "type": "POST",
       "data": {
         "uuid": getUUID(),
-        "business": $(this).find("input[name=business_category]").val(),
-        "occupation": $(this).find("input[name=occupation_category]").val(),
-        "how_to_know": $(this).find("input[name=how_to_know]").val(),
-        "how_often": $(this).find("input[name=how_often]").val(),
-        "sex": $(this).find("input[name=sex]").val(),
-        "generation": $(this).find("input[name=generation]").val()
+        "business": $(this).find("input[name=business_category]:checked").val(),
+        "occupation": $(this).find("input[name=occupation_category]:checked").val(),
+        "how_to_know": $(this).find("input[name=how_to_know]:checked").val(),
+        "how_often": $(this).find("input[name=how_often]:checked").val(),
+        "sex": $(this).find("input[name=sex]:checked").val(),
+        "generation": $(this).find("input[name=generation]:checked").val()
       },
       "success": function(res){
-        $(".inquiry-components").hide();
-        $("#session-selection").show();
+        location.hash = "#session-selection";
       }
     });
   });
 
+
+// session selection (view change only)
 $("#session-selection").find("form")
   .on("submit", function(ev) {
     ev.preventDefault();
     var id = $(this).find("select option:selected").val();
-    console.log(id);
-    $(".inquiry-components").hide();
-    $("#"+id).show();
     location.hash = "#"+id;
   });
 
@@ -48,7 +47,7 @@ $("#session-selection").find("form")
         "uuid": getUUID(),
         "room": $(this).data("room"),
         "title": $(this).data("sessionname"),
-        "impression": $(this).find("input[name=impression]").val(),
+        "impression": $(this).find("input[name=impression]:checked").val(),
         "freetext": $(this).find("textarea[name=impression-text]").val()
       },
       "success": function(res){
@@ -57,6 +56,9 @@ $("#session-selection").find("form")
     });
   });
 
+
+//////////////////////////////////////////////////
+// utilities
 
 var uuid = (function(){
   var S4 = function() {
@@ -78,15 +80,29 @@ var UUID = (function(){
   return localStorage.getItem( key );
 }());
 
-
-// localStorageにUUIDが保存されていたら、プロフィール入力はすっ飛ばす
-if(UUID){
-  // UUID 登録済み
-  location.hash = "#selection";
+var changeView = function(){
+  // init view
   $(".inquiry-components").hide();
-  $("#session-selection").show();
-} else {
-  // UUID 無し
-  location.hash = "#profile";
-  $("#profile").show();
+
+  var hash = location.hash;
+
+  if(hash === "" || hash === "#") {
+    $("#profile").show();
+  } else {
+    $(hash).show();
+  }
 }
+
+window.onhashchange = changeView;
+
+// init
+(function(){
+  if(UUID){
+    // UUID 登録済み
+    location.hash = "#session-selection";
+  } else {
+    // UUID 無し
+    location.hash = "#";
+  }
+  changeView(location.hash);
+}());
