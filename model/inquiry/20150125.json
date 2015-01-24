@@ -184,7 +184,7 @@
         "required": false
       }
     ]},
-    { "id" : "RoomB-5", "name" : "最新のHTML/CSS設計トレンド（仮）",  "items": [
+    { "id" : "RoomB-5", "name" : "Beyond CSS Architecture",  "items": [
       {
         "title": "聴講したご感想をお選びください", 
         "name": "impression",
@@ -240,7 +240,7 @@
         "required": false
       }
     ]},
-    { "id" : "RoomC-4", "name" : "エキスパートパネル：HTML.next へ html5j はいかに関わっていくべきか",  "items": [
+    { "id" : "RoomC-4", "name" : "Open Web Platform推進に、日本の Web Developerはどう関わっていくか",  "items": [
       {
         "title": "聴講したご感想をお選びください", 
         "name": "impression",
