@@ -2,19 +2,32 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <title><%= page.title %></title>
+    <link rel="stylesheet" href="/_inquiry/bootstrap-3.3.2-dist/css/bootstrap.min.css">
     <script src="/_inquiry/jquery-1.11.2.min.js"></script>
+    <style>
+      .required { color: red; font-weight: bold;}
+    </style>
   </head>
   <body>
-    <div id="container">
-    <h1><%= page.title %></h1>
-    <p><%= page.description %></p>
+    <div class="container">
+      <header class="page-header">
+        <h1><%= page.title %></h1>
+        <p class="lead"><%= page.description %></p>
+      </header>
 
-    <div id="profile" class="inquiry-components">
-    <h2>プロフィール情報の入力をお願いします</h2>
-    <p>※ プロフィール情報の入力は初回のみです</p>
+
+    <div id="profile" class="inquiry-components well">
+      <div>
+        <h2>プロフィール情報</h2>
+        <p>プロフィール情報の入力にご協力下さい。なお、入力は初回のみです。<br>
+        <small>※ <span class="required">(*)</span>は入力必須項目です。</small></p>
+      </div>
+
     <form name="profile" action="./" method="post">
     <% profile.forEach(function(obj) { %>
+      <div class="form-group">
       <p><%= obj.title %><% if(obj.required) { %> <span class="required">(*)</span><% } %><br>
       <% if(obj.type === "radio") { %>
         <% obj.options.forEach(function(option) { %>
@@ -25,32 +38,43 @@
         <% }) %>
       <% } %>
       </p>
+      </div>
     <% }) %>
-      <p><button type="submit">送信</button></p>
+      <p><button class="btn btn-info" type="submit">送信</button></p>
     </form>
     </div><!-- end of profile -->
 
-    <div id="session-selection" class="inquiry-components">
-    <h2>セッション選択</h2>
+    <div id="session-selection" class="inquiry-components well">
+    <div>
+      <h2>セッション選択</h2>
+    </div>
     <form name="session-name">
+      <div class="form-group">
       <p>
       <label>聴講したセッションをお選びください</label><br>
-      <select id="session-name">
+      <select id="session-name" class="form-control">
       <% sessions.forEach(function(session) { %>
       <option value="<%= session.id %>">[<%= session.id %>] <%= session.name %></option>
       <% }); %>
       </select>
       </p>
-      <p><button type="submit">選択</button></p>
+      </div>
+      <p><button class="btn btn-info" type="submit">選択</button></p>
     </form>
     </div><!-- end of #session-selection -->
 
     <% sessions.forEach(function(session) { %>
       <% var _session_name = session.name.replace(/\"/g, "-"); %>
-      <div id="<%= session.id %>" class="inquiry-components">
-      <h2>[<%= session.id %>] <%= session.name %></h2>
+      <div id="<%= session.id %>" class="inquiry-components well">
+      <div>
+        <h2>[<%= session.id %>] <%= session.name %></h2>
+        <p>
+        <small>※ <span class="required">(*)</span>は入力必須項目です。</small>
+        </p>
+      </div>
       <form name="session-<%= session.id %>" class="session-inquiry" data-room="<%= session.id %>" data-sessionname="<%= _session_name %>">
       <% session.items.forEach(function(item) { %>
+        <div class="form-group">
         <p><%= item.title %><% if(item.required) { %> <span class="required">(*)</span><% } %><br>
         <% if(item.type === "radio") { %>
           <% item.options.forEach(function(option) { %>
@@ -60,19 +84,24 @@
             </label>
           <% }) %>
         <% } else if (item.type === "textarea") {%>
-          <textarea name="<%= item.name %>" cols="40" rows="5" <% if(item.required) { %>required<% } %>></textarea>
+          <textarea name="<%= item.name %>" class="form-control" rows="5" <% if(item.required) { %>required<% } %>></textarea>
         <% } %>
         </p>
+        </div>
       <% }) %>
-        <p><button type="submit">送信</button></p>
+        <p><button class="btn btn-info" type="submit">送信</button></p>
       </form>
       </div><!-- end of #session.id -->
     <% }) %>
 
 
 
+    <footer class="page-footer">
+      Copyright &copy; 2015 html5j
+    </footer>
 
-    </div><!-- end of #container -->
+    </div><!-- end of .container -->
+
     <script src="/_inquiry/script.js"></script>
   </body>
 </html>
