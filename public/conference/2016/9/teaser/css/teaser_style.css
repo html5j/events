@@ -1,0 +1,86 @@
+html, body {
+    height: 100%;
+}
+body {
+    margin: 0;
+    background-color: #f3f5c1;
+    font-family: sans-serif;
+}
+
+h1 {
+    margin: 0;
+    padding: 0;
+}
+h1 img {
+    width: 100%;
+}
+
+.illustration, .copyright {
+    position: fixed;
+    bottom: 1em;
+    right: 1em;
+    font-weight: bold;
+    font-size: 70%;
+    font-family: 'Delius', cursive;
+}
+.copyright {
+    left: 1em;
+    right: auto;
+}
+.copyright img {
+    height: 2em;
+    vertical-align: middle;
+}
+
+#social ul {
+    margin: 0 0 2em;
+    padding: 0;
+    text-align: center;
+}
+
+#social li {
+    display: inline-block;
+    list-style-type: none;
+    vertical-align: top;
+    width: 90px;
+    margin: 0 1em 0 0;
+    overflow: hidden;
+}
+
+#social .hatena {
+    width: 60px;
+}
+#social .google {
+    width: 90px;
+}
+#social .twitter {
+    width: 100px;
+}
+#social .facebook {
+    position: relative;
+    top: -4px;
+}
+
+@media screen and (max-width: 768px) {
+    h1 {
+        height: 100%;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+    }
+    #social ul {
+        margin-top: 1em;
+    }
+    #social li {
+        margin-right: 0;
+    }
+}
