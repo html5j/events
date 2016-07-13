@@ -3,7 +3,7 @@ html, body {
 }
 body {
     margin: 0;
-    background-color: #f3f5c1;
+    background-color: #53e1b7;
     font-family: sans-serif;
 }
 
@@ -19,9 +19,9 @@ h1 img {
     position: fixed;
     bottom: 1em;
     right: 1em;
-    font-weight: bold;
+    font-weight: 300;
     font-size: 70%;
-    font-family: 'Delius', cursive;
+    font-family: 'Rubik', sans-serif;
 }
 .copyright {
     left: 1em;
