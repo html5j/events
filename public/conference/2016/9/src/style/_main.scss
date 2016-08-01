@@ -24,26 +24,35 @@ $z-pageNav: 1;
    Section comment block
    ========================================================================== */
 
-header.conf2016s-pageHeader{}
-  .conf2016s-pageHeader__inner{
-    @include container();
-    display: table;
+.conf2016s-pageHeader{
+  padding: 10px 0;
+}
+.conf2016s-pageHeader__inner{
+  @include container();
+  display: table;
+}
+.conf2016s-pageHeader__logo,
+.conf2016s-pageHeader__title{
+  vertical-align: middle;
+  display: table-cell;
+  width: 1%;
+  img{
+    display: block;
   }
-    .conf2016s-pageHeader__logo,
-    .conf2016s-pageHeader__title{
-      vertical-align: middle;
-      display: table-cell;
-      width: 1%;
-      img{
-      	display: block;
-      }
-    }
-    .conf2016s-info{
-      font-size: getFs( -1, 'rem' );
-      text-align: right;
-      vertical-align: middle;
-      display: table-cell;
-    }
+}
+
+.conf2016s-pageHeader__title {
+  position: relative;
+  top: 12px;
+  left: 10px;
+}
+
+.conf2016s-info{
+  font-size: getFs( -1, 'rem' );
+  text-align: right;
+  vertical-align: middle;
+  display: table-cell;
+}
 
 @include max-screen( $breakpoint-middle ) {
   .conf2016s-pageHeader__logo{
@@ -61,54 +70,52 @@ header.conf2016s-pageHeader{}
 }
 
 @include max-screen( $breakpoint-small ) {
-
-  header.conf2016s-pageHeader{}
-    .conf2016s-pageHeader__inner{
-      display: block;
-      text-align: center;
+  .conf2016s-pageHeader__inner{
+    display: block;
+    text-align: center;
+  }
+  .conf2016s-pageHeader__logo,
+  .conf2016s-pageHeader__title{
+    display: inline-block;
+    vertical-align: middle;
+    width: auto;
+  }
+  .conf2016s-pageHeader__logo{
+    img{
+      width: 100px * .5;
     }
-      .conf2016s-pageHeader__logo,
-      .conf2016s-pageHeader__title{
-      	display: inline-block;
-      	vertical-align: middle;
-      	width: auto;
-      }
-      .conf2016s-pageHeader__logo{
-      	img{
-      		width: 100px * .5;
-      	}
-      }
-      .conf2016s-pageHeader__title{
-      	img{
-      		width: 282px * .5;
-      	}
-      }
-      .conf2016s-info{
-      	font-size: getFs( -1, 'rem' );
-      	line-height: 1.4;
-      	text-align: center;
-      	display: block;
-      	margin-top: 10px;
-      }
+  }
+  .conf2016s-pageHeader__title{
+    top: 8px;
+    left: 0px;
+    img{
+      width: 282px * .5;
+    }
+  }
+  .conf2016s-info{
+    font-size: getFs( -1, 'rem' );
+    line-height: 1.4;
+    text-align: center;
+    display: block;
+    margin-top: 10px;
+  }
 }
 
 /* ==========================================================================
    .conf2016s-pageNav
    ========================================================================== */
 li.conf2016s-pageNav__item--current {
-  background-color: #F2DBA6;
+  background-color: #b8eadc;
 }
 nav.conf2016s-pageNav{
-  border-top: 1px solid #e7e7e7;
-  border-bottom: 3px solid #e7e7e7;
-  background-color: #efeee9;
+  background-color: #e8edec;
 }
   .conf2016s-pageNav__inner{
     @include container();
     ul{
       position: relative;
       z-index: $z-pageNav;
-      color: #D2CBCB;
+      color: #1b354c;
       font-size: getFs( -1, 'rem' );
       font-weight: bold;
       list-style: none;
@@ -122,14 +129,12 @@ nav.conf2016s-pageNav{
       overflow: hidden;
       display: table-cell;
       margin: 0;
-      padding: 8px 10px;
     }
     a{
-      color: #63442f;
+      color: #1b354c;
       text-decoration: none;
       display: block;
-      padding: 30px 10px;
-      margin: -30px -10px;
+      padding: 8px 10px;
     }
   }
   .conf2016s-pageNav__opener{
@@ -158,23 +163,21 @@ nav.conf2016s-pageNav{
       position: absolute;
       display: none;
       width: 100%;
-      border-top: 1px solid #ccc;
+      border-top: 1px solid #c7c7c7;
       background: rgba( 255, 255, 255, .95 );
       box-shadow: 0 2px 3px rgba( 0, 0, 0, .3);
       .conf2016s-pageNav--open &{
-      	display: block;
+        display: block;
       }
     }
     li{
       display: block;
-      padding: 8px 10px;
-      border-bottom: 1px solid #ccc;
+      border-bottom: 1px solid #c7c7c7;
     }
     a{
-      color: #63442f;
+      color: #1b354c;
       text-decoration: none;
-      padding: 30px 10px;
-      margin: -30px -10px;
+      padding: 10px;
     }
   }
   .conf2016s-pageNav__opener{
@@ -254,6 +257,7 @@ nav.conf2016s-pageNav{
   h1{
     font-size: getFs( +3, 'rem' );
     font-weight: normal;
+    color: #1b354c;
     margin: 0;
     &:before{
       @include icon ( clione );
@@ -270,10 +274,10 @@ nav.conf2016s-pageNav{
    ========================================================================== */
 .conf2016s-header2{
   padding-bottom: 3px;
-  border-bottom: 1px solid #B8582E;
+  border-bottom: 1px solid #51e0b7;
   margin: 30px 0 10px;
   h2{
-    color: #b8582e;
+    color: #1b354c;
     font-size: getFs( +3, 'rem' );
     font-weight: normal;
     margin: 0;
@@ -295,27 +299,24 @@ nav.conf2016s-pageNav{
 .conf2016s-button{
   color: #fff;
   font-size: getFs( +1, 'rem' );
-  text-shadow: 0 1px 1px #333;
   text-decoration: none;
   line-height: 1;
   cursor: pointer;
   display: inline-block;
-  padding: 1em 2em;
-  border-bottom: 4px solid #852316;
-  box-shadow: 0 1px 2px #999;
-  background-color: #c43421;
+  padding: 1em;
+  background-color: #1b354c;
+  border-radius: 4px;
   transition: .3s;
   &:hover:not( .conf2016s-button--disabled ){
     color: #fff;
     text-decoration: none;
-    box-shadow: 0 0px 10px #333;
-    background-color: #c45640;
+    background-color: #284f71;
   }
   &.conf2016s-button--disabled{
     cursor: auto;
     border-bottom: none;
-    background-color: #666;
-    opacity: 0.3;
+    color: #fff;
+    background-color: #c7c7c7;
   }
 }
 
@@ -489,12 +490,16 @@ footer.conf2016s-pageFooter{
    .conf2016s-session
    ========================================================================== */
 .conf2016s-session{
-  border: 1px solid #ddd;
   padding: 14px 18px;
-  margin: 40px 0;
+  margin: 20px 0;
   background-color: #fff;
-  header.conf2016s-sessionGroup__header + &{
-    margin-top: 20px;
+  border-radius: 3px;
+  &.keynote {
+    border: 1px solid #c7c7c7;
+    border-radius: 4;
+  }
+  &:last-child {
+    margin-bottom: 0;
   }
 }
   .conf2016s-session__time{
@@ -521,9 +526,8 @@ footer.conf2016s-pageFooter{
       }
     }
     li{
-      color: #999;
+      color: #757575;
       font-size: 12px;
-      font-weight: bold;
       display: inline-block;
       padding: 0;
       margin: 0;
@@ -536,9 +540,8 @@ footer.conf2016s-pageFooter{
     }
   }
   .conf2016s-session__tagLabel{
-    color: #ccc;
+    color: #757575;
     font-size: 10px;
-    font-weight: bold;
     display: inline-block;
   }
   .conf2016s-session__main{
@@ -581,7 +584,7 @@ footer.conf2016s-pageFooter{
       height: 60px;
       border-radius: 50%;
       padding: 5px;
-      border: 1px solid #ccc;
+      border: 1px solid #c7c7c7;
       transition: all .2s;
     }
     a:hover &{
@@ -602,28 +605,27 @@ footer.conf2016s-pageFooter{
    
    ========================================================================== */
 .conf2016s-sessionGroup{
-  border: 1px solid #ddd;
-  padding: 20px 20px 20px 40px;
+  padding: 20px;
   margin: 20px 0 60px;
   background: #ddd;
-  &.conf2016s-sessionGroup--groupA{background-color: hsla(   0, 27%, 78%, 1 );}
-  &.conf2016s-sessionGroup--groupB{background-color: hsla(  60, 27%, 78%, 1 );}
-  &.conf2016s-sessionGroup--groupC{background-color: hsla( 120, 27%, 78%, 1 );}
-  &.conf2016s-sessionGroup--groupD{background-color: hsla( 180, 27%, 78%, 1 );}
-  &.conf2016s-sessionGroup--groupE{background-color: hsla( 240, 27%, 78%, 1 );}
-  &.conf2016s-sessionGroup--groupF{background-color: hsla( 300, 27%, 78%, 1 );}
+  border-radius: 4px;
+  &.conf2016s-sessionGroup--groupA{background-color: hsla( 163, 70%, 60%, 1 );}
+  &.conf2016s-sessionGroup--groupB{background-color: hsla( 223, 70%, 60%, 1 );}
+  &.conf2016s-sessionGroup--groupC{background-color: hsla( 283, 70%, 60%, 1 );}
+  &.conf2016s-sessionGroup--groupD{background-color: hsla( 343, 70%, 60%, 1 );}
+  &.conf2016s-sessionGroup--groupE{background-color: hsla(  43, 70%, 60%, 1 );}
+  &.conf2016s-sessionGroup--groupF{background-color: hsla( 103, 70%, 60%, 1 );}
 }
 header.conf2016s-sessionGroup__header{
-  margin: 0 0 0 -20px;
   h1{
     font-size: 28px;
     margin: 0;
-    .conf2016s-sessionGroup--groupA &{color: hsla(   0, 40%, 20%, 1 );}
-    .conf2016s-sessionGroup--groupB &{color: hsla(  60, 40%, 20%, 1 );}
-    .conf2016s-sessionGroup--groupC &{color: hsla( 120, 40%, 20%, 1 );}
-    .conf2016s-sessionGroup--groupD &{color: hsla( 180, 40%, 20%, 1 );}
-    .conf2016s-sessionGroup--groupE &{color: hsla( 240, 40%, 20%, 1 );}
-    .conf2016s-sessionGroup--groupF &{color: hsla( 300, 40%, 20%, 1 );}
+    .conf2016s-sessionGroup--groupA &{color: hsla( 208, 48%, 20%, 1);}
+    .conf2016s-sessionGroup--groupB &{color: hsla( 260, 48%, 20%, 1 );}
+    .conf2016s-sessionGroup--groupC &{color: hsla( 328, 48%, 20%, 1 );}
+    .conf2016s-sessionGroup--groupD &{color: hsla(  28, 48%, 20%, 1 );}
+    .conf2016s-sessionGroup--groupE &{color: hsla(  88, 48%, 20%, 1 );}
+    .conf2016s-sessionGroup--groupF &{color: hsla( 148, 48%, 20%, 1 );}
   }
 }
 
@@ -647,7 +649,6 @@ header.conf2016s-sessionGroup__header{
   font-size: 14px;
   display: table;
   width: 100%;
-  border-top: 1px solid #b8582e;
   margin: 30px 0 60px;
 }
   .conf2016s-speaker__image{
@@ -661,6 +662,7 @@ header.conf2016s-sessionGroup__header{
       display: block;
       width: 100%;
       height: auto;
+      border-radius: 4px;
     }
   }
   .conf2016s-speaker__text{
@@ -673,14 +675,16 @@ header.conf2016s-sessionGroup__header{
     }
   }
   .conf2016s-speaker__name{
-    color: #b8582e;
+    color: #1b354c;
     font-size: 22px;
   }
   .conf2016s-speaker__affil{
+    color: #1b354c;
     font-size: 12px;
   }
   .conf2016s-speaker__bio{
     margin-top: 16px;
+    color: #757575;
     p{
       margin: 8px 0;
     }

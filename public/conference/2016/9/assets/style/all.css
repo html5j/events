@@ -523,6 +523,9 @@ a:hover, a:active {
 /* ==========================================================================
    Section comment block
    ========================================================================== */
+.conf2016s-pageHeader {
+  padding: 10px 0; }
+
 .conf2016s-pageHeader__inner {
   box-sizing: border-box;
   max-width: 980px;
@@ -538,6 +541,11 @@ a:hover, a:active {
   .conf2016s-pageHeader__logo img,
   .conf2016s-pageHeader__title img {
     display: block; }
+
+.conf2016s-pageHeader__title {
+  position: relative;
+  top: 12px;
+  left: 10px; }
 
 .conf2016s-info {
   font-size: 0.875rem;
@@ -567,8 +575,11 @@ a:hover, a:active {
   .conf2016s-pageHeader__logo img {
     width: 50px; }
 
-  .conf2016s-pageHeader__title img {
-    width: 141px; }
+  .conf2016s-pageHeader__title {
+    top: 8px;
+    left: 0px; }
+    .conf2016s-pageHeader__title img {
+      width: 141px; }
 
   .conf2016s-info {
     font-size: 0.875rem;
@@ -580,12 +591,10 @@ a:hover, a:active {
    .conf2016s-pageNav
    ========================================================================== */
 li.conf2016s-pageNav__item--current {
-  background-color: #F2DBA6; }
+  background-color: #b8eadc; }
 
 nav.conf2016s-pageNav {
-  border-top: 1px solid #e7e7e7;
-  border-bottom: 3px solid #e7e7e7;
-  background-color: #efeee9; }
+  background-color: #e8edec; }
 
 .conf2016s-pageNav__inner {
   box-sizing: border-box;
@@ -595,7 +604,7 @@ nav.conf2016s-pageNav {
   .conf2016s-pageNav__inner ul {
     position: relative;
     z-index: 1;
-    color: #D2CBCB;
+    color: #1b354c;
     font-size: 0.875rem;
     font-weight: bold;
     list-style: none;
@@ -607,14 +616,12 @@ nav.conf2016s-pageNav {
     text-align: center;
     overflow: hidden;
     display: table-cell;
-    margin: 0;
-    padding: 8px 10px; }
+    margin: 0; }
   .conf2016s-pageNav__inner a {
-    color: #63442f;
+    color: #1b354c;
     text-decoration: none;
     display: block;
-    padding: 30px 10px;
-    margin: -30px -10px; }
+    padding: 8px 10px; }
 
 .conf2016s-pageNav__opener {
   display: none; }
@@ -636,20 +643,18 @@ nav.conf2016s-pageNav {
       position: absolute;
       display: none;
       width: 100%;
-      border-top: 1px solid #ccc;
+      border-top: 1px solid #c7c7c7;
       background: rgba(255, 255, 255, 0.95);
       box-shadow: 0 2px 3px rgba(0, 0, 0, 0.3); }
       .conf2016s-pageNav--open .conf2016s-pageNav__inner ul {
         display: block; }
     .conf2016s-pageNav__inner li {
       display: block;
-      padding: 8px 10px;
-      border-bottom: 1px solid #ccc; }
+      border-bottom: 1px solid #c7c7c7; }
     .conf2016s-pageNav__inner a {
-      color: #63442f;
+      color: #1b354c;
       text-decoration: none;
-      padding: 30px 10px;
-      margin: -30px -10px; }
+      padding: 10px; }
 
   .conf2016s-pageNav__opener {
     line-height: 1;
@@ -734,6 +739,7 @@ nav.conf2016s-pageNav {
   .conf2016s-header1 h1 {
     font-size: 1.375rem;
     font-weight: normal;
+    color: #1b354c;
     margin: 0; }
     .conf2016s-header1 h1:before {
       content: "";
@@ -758,10 +764,10 @@ nav.conf2016s-pageNav {
    ========================================================================== */
 .conf2016s-header2 {
   padding-bottom: 3px;
-  border-bottom: 1px solid #B8582E;
+  border-bottom: 1px solid #51e0b7;
   margin: 30px 0 10px; }
   .conf2016s-header2 h2 {
-    color: #b8582e;
+    color: #1b354c;
     font-size: 1.375rem;
     font-weight: normal;
     margin: 0; }
@@ -779,26 +785,23 @@ nav.conf2016s-pageNav {
 .conf2016s-button {
   color: #fff;
   font-size: 1.125rem;
-  text-shadow: 0 1px 1px #333;
   text-decoration: none;
   line-height: 1;
   cursor: pointer;
   display: inline-block;
-  padding: 1em 2em;
-  border-bottom: 4px solid #852316;
-  box-shadow: 0 1px 2px #999;
-  background-color: #c43421;
+  padding: 1em;
+  background-color: #1b354c;
+  border-radius: 4px;
   transition: .3s; }
   .conf2016s-button:hover:not(.conf2016s-button--disabled) {
     color: #fff;
     text-decoration: none;
-    box-shadow: 0 0px 10px #333;
-    background-color: #c45640; }
+    background-color: #284f71; }
   .conf2016s-button.conf2016s-button--disabled {
     cursor: auto;
     border-bottom: none;
-    background-color: #666;
-    opacity: 0.3; }
+    color: #fff;
+    background-color: #c7c7c7; }
 
 /* ==========================================================================
    .conf2016s-buttonContainer
@@ -939,12 +942,15 @@ footer.conf2016s-pageFooter {
    .conf2016s-session
    ========================================================================== */
 .conf2016s-session {
-  border: 1px solid #ddd;
   padding: 14px 18px;
-  margin: 40px 0;
-  background-color: #fff; }
-  header.conf2016s-sessionGroup__header + .conf2016s-session {
-    margin-top: 20px; }
+  margin: 20px 0;
+  background-color: #fff;
+  border-radius: 3px; }
+  .conf2016s-session.keynote {
+    border: 1px solid #c7c7c7;
+    border-radius: 4; }
+  .conf2016s-session:last-child {
+    margin-bottom: 0; }
 
 .conf2016s-session__time {
   font-size: 12px; }
@@ -964,9 +970,8 @@ footer.conf2016s-pageFooter {
   .conf2016s-session__tag ul:before {
     content: ' '; }
 .conf2016s-session__tag li {
-  color: #999;
+  color: #757575;
   font-size: 12px;
-  font-weight: bold;
   display: inline-block;
   padding: 0;
   margin: 0; }
@@ -976,9 +981,8 @@ footer.conf2016s-pageFooter {
     content: none; }
 
 .conf2016s-session__tagLabel {
-  color: #ccc;
+  color: #757575;
   font-size: 10px;
-  font-weight: bold;
   display: inline-block; }
 
 .conf2016s-session__main {
@@ -1017,7 +1021,7 @@ footer.conf2016s-pageFooter {
     height: 60px;
     border-radius: 50%;
     padding: 5px;
-    border: 1px solid #ccc;
+    border: 1px solid #c7c7c7;
     transition: all .2s; }
   a:hover .conf2016s-session__speakerImage img {
     border-color: #C30D23; }
@@ -1033,40 +1037,38 @@ footer.conf2016s-pageFooter {
    
    ========================================================================== */
 .conf2016s-sessionGroup {
-  border: 1px solid #ddd;
-  padding: 20px 20px 20px 40px;
+  padding: 20px;
   margin: 20px 0 60px;
-  background: #ddd; }
+  background: #ddd;
+  border-radius: 4px; }
   .conf2016s-sessionGroup.conf2016s-sessionGroup--groupA {
-    background-color: #d6b8b8; }
+    background-color: #52e0b8; }
   .conf2016s-sessionGroup.conf2016s-sessionGroup--groupB {
-    background-color: #d6d6b8; }
+    background-color: #527ae0; }
   .conf2016s-sessionGroup.conf2016s-sessionGroup--groupC {
-    background-color: #b8d6b8; }
+    background-color: #b852e0; }
   .conf2016s-sessionGroup.conf2016s-sessionGroup--groupD {
-    background-color: #b8d6d6; }
+    background-color: #e0527a; }
   .conf2016s-sessionGroup.conf2016s-sessionGroup--groupE {
-    background-color: #b8b8d6; }
+    background-color: #e0b852; }
   .conf2016s-sessionGroup.conf2016s-sessionGroup--groupF {
-    background-color: #d6b8d6; }
+    background-color: #7ae052; }
 
-header.conf2016s-sessionGroup__header {
-  margin: 0 0 0 -20px; }
-  header.conf2016s-sessionGroup__header h1 {
-    font-size: 28px;
-    margin: 0; }
-    .conf2016s-sessionGroup--groupA header.conf2016s-sessionGroup__header h1 {
-      color: #471f1f; }
-    .conf2016s-sessionGroup--groupB header.conf2016s-sessionGroup__header h1 {
-      color: #47471f; }
-    .conf2016s-sessionGroup--groupC header.conf2016s-sessionGroup__header h1 {
-      color: #1f471f; }
-    .conf2016s-sessionGroup--groupD header.conf2016s-sessionGroup__header h1 {
-      color: #1f4747; }
-    .conf2016s-sessionGroup--groupE header.conf2016s-sessionGroup__header h1 {
-      color: #1f1f47; }
-    .conf2016s-sessionGroup--groupF header.conf2016s-sessionGroup__header h1 {
-      color: #471f47; }
+header.conf2016s-sessionGroup__header h1 {
+  font-size: 28px;
+  margin: 0; }
+  .conf2016s-sessionGroup--groupA header.conf2016s-sessionGroup__header h1 {
+    color: #1b354b; }
+  .conf2016s-sessionGroup--groupB header.conf2016s-sessionGroup__header h1 {
+    color: #2b1b4b; }
+  .conf2016s-sessionGroup--groupC header.conf2016s-sessionGroup__header h1 {
+    color: #4b1b35; }
+  .conf2016s-sessionGroup--groupD header.conf2016s-sessionGroup__header h1 {
+    color: #4b311b; }
+  .conf2016s-sessionGroup--groupE header.conf2016s-sessionGroup__header h1 {
+    color: #354b1b; }
+  .conf2016s-sessionGroup--groupF header.conf2016s-sessionGroup__header h1 {
+    color: #1b4b31; }
 
 @media screen and (max-width: 639px) {
   .conf2016s-sessionGroup {
@@ -1083,7 +1085,6 @@ header.conf2016s-sessionGroup__header {
   font-size: 14px;
   display: table;
   width: 100%;
-  border-top: 1px solid #b8582e;
   margin: 30px 0 60px; }
 
 .conf2016s-speaker__image {
@@ -1096,7 +1097,8 @@ header.conf2016s-sessionGroup__header {
   .conf2016s-speaker__image img {
     display: block;
     width: 100%;
-    height: auto; }
+    height: auto;
+    border-radius: 4px; }
 
 .conf2016s-speaker__text {
   vertical-align: top;
@@ -1107,14 +1109,16 @@ header.conf2016s-sessionGroup__header {
     padding-left: 220px; }
 
 .conf2016s-speaker__name {
-  color: #b8582e;
+  color: #1b354c;
   font-size: 22px; }
 
 .conf2016s-speaker__affil {
+  color: #1b354c;
   font-size: 12px; }
 
 .conf2016s-speaker__bio {
-  margin-top: 16px; }
+  margin-top: 16px;
+  color: #757575; }
   .conf2016s-speaker__bio p {
     margin: 8px 0; }
 
