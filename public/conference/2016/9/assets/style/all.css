@@ -975,9 +975,23 @@ footer.conf2016s-pageFooter {
   margin-bottom: 10px;
   border: 1px solid #c7c7c7;
   border-radius: 4px;
-  vertical-align: middle; }
+  vertical-align: middle;
+  box-sizing: border-box; }
   .conf2016s-sponsorThumbnail:hover {
     border: 1px solid #51e0b7; }
+  .conf2016s-sponsorThumbnail.conf2016s-sponsorThumbnail-platinum {
+    width: 200px;
+    height: auto; }
+  .conf2016s-sponsorThumbnail.conf2016s-sponsorThumbnail-gold {
+    width: 150px;
+    height: auto; }
+  .conf2016s-sponsorThumbnail.conf2016s-sponsorThumbnail-silver {
+    width: 120px;
+    height: auto; }
+  .conf2016s-sponsorThumbnail.conf2016s-sponsorThumbnail-mediaSupport {
+    width: 80px;
+    height: auto;
+    padding: 5px; }
 
 /* ==========================================================================
    .conf2016s-session
