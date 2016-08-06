@@ -1260,9 +1260,12 @@ header.conf2016s-sessionGroup__header h1 {
    .conf2016s-access
    ========================================================================== */
 /* アクセス路線の表示調整  */
-.access_root li {
-  list-style: none;
-  font-size: 0.85em; }
+.access_root_list dd {
+  margin-left: 0; }
+.access_root_list ul {
+  padding-left: 1.7em; }
+  .access_root_list ul > li {
+    font-size: 0.85em; }
 
 /* 画像・地図のスマホ用調整  */
 .google-map {
