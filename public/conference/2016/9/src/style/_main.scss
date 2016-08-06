@@ -373,6 +373,15 @@ nav.conf2016s-pageNav{
   }
 }
 
+/* ==========================================================================
+   .conf2016s-timetable
+   ========================================================================== */
+@media screen and (max-width: 767px){
+  .conf2016s-timetable-wrapper {
+    display: none;
+  }
+}
+
 .conf2016s-timetable {
   width: 100%;
   empty-cells: show;
