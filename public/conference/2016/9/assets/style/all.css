@@ -837,6 +837,10 @@ nav.conf2016s-pageNav {
   .conf2016s-table th {
     text-align: left; }
 
+@media screen and (max-width: 767px) {
+  .conf2016s-table th, .conf2016s-table td {
+    display: block;
+    padding: .2em 0; } }
 /* ==========================================================================
    .conf2016s-list
    ========================================================================== */
