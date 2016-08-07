@@ -783,23 +783,23 @@ footer.conf2016s-pageFooter{
   margin: 20px 0 60px;
   background: #ddd;
   border-radius: 4px;
-  &.conf2016s-sessionGroup--groupA{background-color: hsla( 163, 70%, 60%, 1 );}
-  &.conf2016s-sessionGroup--groupB{background-color: hsla( 223, 70%, 60%, 1 );}
-  &.conf2016s-sessionGroup--groupC{background-color: hsla( 283, 70%, 60%, 1 );}
-  &.conf2016s-sessionGroup--groupD{background-color: hsla( 343, 70%, 60%, 1 );}
-  &.conf2016s-sessionGroup--groupE{background-color: hsla(  43, 70%, 60%, 1 );}
-  &.conf2016s-sessionGroup--groupF{background-color: hsla( 103, 70%, 60%, 1 );}
+  &.conf2016s-sessionGroup--groupH{background-color: hsla( 163, 70%, 60%, 1 );}
+  &.conf2016s-sessionGroup--groupA{background-color: hsla( 223, 70%, 60%, 1 );}
+  &.conf2016s-sessionGroup--groupB{background-color: hsla( 283, 70%, 60%, 1 );}
+  &.conf2016s-sessionGroup--groupC{background-color: hsla( 343, 70%, 60%, 1 );}
+  &.conf2016s-sessionGroup--groupD{background-color: hsla(  43, 70%, 60%, 1 );}
+  &.conf2016s-sessionGroup--groupE{background-color: hsla( 103, 70%, 60%, 1 );}
 }
 header.conf2016s-sessionGroup__header{
   h1{
     font-size: 28px;
     margin: 0;
-    .conf2016s-sessionGroup--groupA &{color: hsla( 208, 48%, 20%, 1);}
-    .conf2016s-sessionGroup--groupB &{color: hsla( 260, 48%, 20%, 1 );}
-    .conf2016s-sessionGroup--groupC &{color: hsla( 328, 48%, 20%, 1 );}
-    .conf2016s-sessionGroup--groupD &{color: hsla(  28, 48%, 20%, 1 );}
-    .conf2016s-sessionGroup--groupE &{color: hsla(  88, 48%, 20%, 1 );}
-    .conf2016s-sessionGroup--groupF &{color: hsla( 148, 48%, 20%, 1 );}
+    .conf2016s-sessionGroup--groupH &{color: hsla( 208, 48%, 20%, 1);}
+    .conf2016s-sessionGroup--groupA &{color: hsla( 260, 48%, 20%, 1 );}
+    .conf2016s-sessionGroup--groupB &{color: hsla( 328, 48%, 20%, 1 );}
+    .conf2016s-sessionGroup--groupC &{color: hsla(  28, 48%, 20%, 1 );}
+    .conf2016s-sessionGroup--groupD &{color: hsla(  88, 48%, 20%, 1 );}
+    .conf2016s-sessionGroup--groupE &{color: hsla( 148, 48%, 20%, 1 );}
   }
 }
 
