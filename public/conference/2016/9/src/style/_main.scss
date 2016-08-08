@@ -443,8 +443,9 @@ nav.conf2016s-pageNav{
   list-style: none;
   font-size: smaller;
   li {
+    display: inline-block;
     & + li {
-      margin-top: 2px;
+      margin-left: 0.5em;
     }
   }
 }

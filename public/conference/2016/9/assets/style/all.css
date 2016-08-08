@@ -892,8 +892,10 @@ nav.conf2016s-pageNav {
   padding-left: 0;
   list-style: none;
   font-size: smaller; }
-  .conf2016s-timetable-speaker li + li {
-    margin-top: 2px; }
+  .conf2016s-timetable-speaker li {
+    display: inline-block; }
+    .conf2016s-timetable-speaker li + li {
+      margin-left: 0.5em; }
 
 .conf2016s-timetable-speaker-image {
   margin-right: 5px;
@@ -1181,33 +1183,33 @@ footer.conf2016s-pageFooter {
   margin: 20px 0 60px;
   background: #ddd;
   border-radius: 4px; }
-  .conf2016s-sessionGroup.conf2016s-sessionGroup--groupA {
+  .conf2016s-sessionGroup.conf2016s-sessionGroup--groupH {
     background-color: #52e0b8; }
-  .conf2016s-sessionGroup.conf2016s-sessionGroup--groupB {
+  .conf2016s-sessionGroup.conf2016s-sessionGroup--groupA {
     background-color: #527ae0; }
-  .conf2016s-sessionGroup.conf2016s-sessionGroup--groupC {
+  .conf2016s-sessionGroup.conf2016s-sessionGroup--groupB {
     background-color: #b852e0; }
-  .conf2016s-sessionGroup.conf2016s-sessionGroup--groupD {
+  .conf2016s-sessionGroup.conf2016s-sessionGroup--groupC {
     background-color: #e0527a; }
-  .conf2016s-sessionGroup.conf2016s-sessionGroup--groupE {
+  .conf2016s-sessionGroup.conf2016s-sessionGroup--groupD {
     background-color: #e0b852; }
-  .conf2016s-sessionGroup.conf2016s-sessionGroup--groupF {
+  .conf2016s-sessionGroup.conf2016s-sessionGroup--groupE {
     background-color: #7ae052; }
 
 header.conf2016s-sessionGroup__header h1 {
   font-size: 28px;
   margin: 0; }
-  .conf2016s-sessionGroup--groupA header.conf2016s-sessionGroup__header h1 {
+  .conf2016s-sessionGroup--groupH header.conf2016s-sessionGroup__header h1 {
     color: #1b354b; }
-  .conf2016s-sessionGroup--groupB header.conf2016s-sessionGroup__header h1 {
+  .conf2016s-sessionGroup--groupA header.conf2016s-sessionGroup__header h1 {
     color: #2b1b4b; }
-  .conf2016s-sessionGroup--groupC header.conf2016s-sessionGroup__header h1 {
+  .conf2016s-sessionGroup--groupB header.conf2016s-sessionGroup__header h1 {
     color: #4b1b35; }
-  .conf2016s-sessionGroup--groupD header.conf2016s-sessionGroup__header h1 {
+  .conf2016s-sessionGroup--groupC header.conf2016s-sessionGroup__header h1 {
     color: #4b311b; }
-  .conf2016s-sessionGroup--groupE header.conf2016s-sessionGroup__header h1 {
+  .conf2016s-sessionGroup--groupD header.conf2016s-sessionGroup__header h1 {
     color: #354b1b; }
-  .conf2016s-sessionGroup--groupF header.conf2016s-sessionGroup__header h1 {
+  .conf2016s-sessionGroup--groupE header.conf2016s-sessionGroup__header h1 {
     color: #1b4b31; }
 
 @media screen and (max-width: 639px) {
