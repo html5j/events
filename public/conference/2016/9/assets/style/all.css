@@ -685,7 +685,7 @@ nav.conf2016s-pageNav {
    .conf2016s-hero
    ========================================================================== */
 .conf2016s-hero {
-  background: #f3f6c1 url(../img/page-index/bg.png) 50% 50%; }
+  background: #51e0b7 url(../img/page-index/bg.png) 50% 50%; }
   .conf2016s-hero .conf2016s-hero__inner {
     box-sizing: border-box;
     max-width: 980px;
@@ -705,11 +705,12 @@ nav.conf2016s-pageNav {
 .conf2016s-hero__info {
   color: #000;
   position: absolute;
-  right: 0;
-  bottom: 0;
-  padding: 4px 4px 0;
-  border-radius: 3px 3px 0 0;
-  background: rgba(243, 246, 193, 0.8); }
+  right: 8px;
+  bottom: 8px;
+  padding: 4px 8px 2px;
+  border-radius: 3px;
+  background: rgba(255, 255, 255, 0.6);
+  font-size: 0.85em; }
 
 @media screen and (max-width: 639px) {
   .conf2016s-hero {
