@@ -338,17 +338,32 @@ nav.conf2016s-pageNav{
   }
 }
 .conf2016s-buttonContainer__note{
-  font-size: getFs( -1, 'rem' );
+  display: inline-block;
   margin-top: 4px;
+  padding: 0.3em 1em 0.2em;
+  border-radius: 20px;
+  border: 1px solid #1b354c;
+  font-size: 0.75rem;
+  text-decoration: none;
+  line-height: 1;
+  vertical-align: middle;
+  &:before{
+    @include icon ( right );
+    margin-right: 0.5em;
+  }
+  &:hover {
+    border-color: #284f71;
+    color: #284f71;
+    text-decoration: none;
+  }
 }
+
 @include max-screen( $breakpoint-small ) {
 .conf2016s-buttonContainer{
-  ul{
-    text-align: center;
-  }
+  text-align: center;
   li{
     display: block;
-    margin: 0 0 4px;
+    width: 100%;
   }
 }
 }
