@@ -819,15 +819,40 @@ nav.conf2016s-pageNav {
     margin: 0 10px 0 0; }
 
 .conf2016s-buttonContainer__note {
-  font-size: 0.875rem;
-  margin-top: 4px; }
+  display: inline-block;
+  margin-top: 4px;
+  padding: 0.3em 1em 0.2em;
+  border-radius: 20px;
+  border: 1px solid #1b354c;
+  font-size: 0.75rem;
+  text-decoration: none;
+  line-height: 1;
+  vertical-align: middle; }
+  .conf2016s-buttonContainer__note:before {
+    content: "";
+    font-family: 'icon';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    vertical-align: middle;
+    display: inline-block;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    margin-right: 0.5em; }
+  .conf2016s-buttonContainer__note:hover {
+    border-color: #284f71;
+    color: #284f71;
+    text-decoration: none; }
 
 @media screen and (max-width: 639px) {
-  .conf2016s-buttonContainer ul {
+  .conf2016s-buttonContainer {
     text-align: center; }
-  .conf2016s-buttonContainer li {
-    display: block;
-    margin: 0 0 4px; } }
+    .conf2016s-buttonContainer li {
+      display: block;
+      width: 100%; } }
 /* ==========================================================================
    .conf2016s-table
    ========================================================================== */
