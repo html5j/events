@@ -919,9 +919,8 @@ nav.conf2016s-pageNav {
   list-style: none;
   font-size: smaller; }
   .conf2016s-timetable-speaker li {
-    display: inline-block; }
-    .conf2016s-timetable-speaker li + li {
-      margin-left: 0.5em; }
+    display: inline-block;
+    margin-right:  0.5em; }
 
 .conf2016s-timetable-speaker-image {
   margin-right: 5px;

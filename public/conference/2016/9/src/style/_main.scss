@@ -460,9 +460,7 @@ nav.conf2016s-pageNav{
   font-size: smaller;
   li {
     display: inline-block;
-    & + li {
-      margin-left: 0.5em;
-    }
+    margin-right: 0.5em;
   }
 }
 
