@@ -11,11 +11,7 @@
 
 @font-face {
   font-family: 'zero-width';
-  src: url('//:') format("No-IE-404"),
-       url('../fonts/zero-width.woff') format('woff'),
-       url('../fonts/zero-width.svg') format('svg'),
-       url('../fonts/zero-width.otf') format('opentype'),
-       url('../fonts/zero-width.ttf') format('truetype');
+  src: url('../fonts/zero-width.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
