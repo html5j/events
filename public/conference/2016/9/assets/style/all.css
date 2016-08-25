@@ -391,7 +391,6 @@ textarea {
   src: url("../fonts/icon.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
-
 .conf2016s-icon-bars:before {
   content: ""; }
 
@@ -436,7 +435,6 @@ textarea {
   src: url("../fonts/zero-width.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
-
 /* ==========================================================================
    for styleguide
    ========================================================================== */
@@ -496,9 +494,9 @@ textarea {
 @media screen and (max-width: 639px) {
   .conf2016s--disableLeargeScreen {
     display: block !important; }
+
   .conf2016s--disableSmallScreen {
     display: none  !important; } }
-
 /* ==========================================================================
    general style
    ========================================================================== */
@@ -572,33 +570,36 @@ a:hover, a:active {
   .conf2016s-pageHeader__logo img {
     width: 75px;
     height: auto; }
+
   .conf2016s-pageHeader__title img {
     width: 211.5px;
     height: auto; } }
-
 @media screen and (max-width: 639px) {
   .conf2016s-pageHeader__inner {
     display: block;
     text-align: center; }
+
   .conf2016s-pageHeader__logo,
   .conf2016s-pageHeader__title {
     display: inline-block;
     vertical-align: middle;
     width: auto; }
+
   .conf2016s-pageHeader__logo img {
     width: 50px; }
+
   .conf2016s-pageHeader__title {
     top: 8px;
     left: 0px; }
     .conf2016s-pageHeader__title img {
       width: 141px; }
+
   .conf2016s-info {
     font-size: 0.875rem;
     line-height: 1.4;
     text-align: center;
     display: block;
     margin-top: 10px; } }
-
 /* ==========================================================================
    .conf2016s-pageNav
    ========================================================================== */
@@ -641,12 +642,12 @@ nav.conf2016s-pageNav {
 @media screen and (max-width: 767px) {
   .conf2016s-pageNav__inner ul {
     font-size: 0.75rem; } }
-
 @media screen and (max-width: 639px) {
   nav.conf2016s-pageNav {
     border-top: none;
     border-bottom: none;
     background: none; }
+
   .conf2016s-pageNav__inner {
     padding: 0; }
     .conf2016s-pageNav__inner ul {
@@ -667,6 +668,7 @@ nav.conf2016s-pageNav {
       color: #1b354c;
       text-decoration: none;
       padding: 10px; }
+
   .conf2016s-pageNav__opener {
     line-height: 1;
     cursor: pointer;
@@ -692,7 +694,6 @@ nav.conf2016s-pageNav {
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
       font-size: 24px; } }
-
 /* ==========================================================================
    .conf2016s-hero
    ========================================================================== */
@@ -727,6 +728,7 @@ nav.conf2016s-pageNav {
 @media screen and (max-width: 639px) {
   .conf2016s-hero {
     background: none; }
+
   .conf2016s-hero__info {
     color: #000;
     font-size: 0.875rem;
@@ -735,7 +737,6 @@ nav.conf2016s-pageNav {
     margin-top: 4px;
     position: static;
     background: none; } }
-
 /* ==========================================================================
    .conf2016s-container
    ========================================================================== */
@@ -865,7 +866,6 @@ nav.conf2016s-pageNav {
     .conf2016s-buttonContainer li {
       display: block;
       width: 100%; } }
-
 /* ==========================================================================
    .conf2016s-table
    ========================================================================== */
@@ -880,7 +880,6 @@ nav.conf2016s-pageNav {
   .conf2016s-table th, .conf2016s-table td {
     display: block;
     padding: .2em 0; } }
-
 /* ==========================================================================
    .conf2016s-timetable
    ========================================================================== */
@@ -1034,12 +1033,10 @@ nav.conf2016s-pageNav {
 @media screen and (max-width: 767px) {
   .conf2016s-item4 {
     width: 49.999%; } }
-
 @media screen and (max-width: 639px) {
   .conf2016s-item4 {
     display: block;
     width: auto; } }
-
 /* ==========================================================================
    .conf2016s-pageFooter
    ========================================================================== */
@@ -1090,7 +1087,6 @@ footer.conf2016s-pageFooter {
   margin-top: 16px; }
   .conf2016s-eventSummary dt:first-child {
     margin-top: 0; }
-
 .conf2016s-eventSummary dd {
   margin-left: 0;
   font-size: 0.875rem; }
@@ -1153,7 +1149,6 @@ footer.conf2016s-pageFooter {
   margin: 0; }
   .conf2016s-session__tag ul:before {
     content: ' '; }
-
 .conf2016s-session__tag li {
   color: #757575;
   font-size: 12px;
@@ -1260,9 +1255,9 @@ header.conf2016s-sessionGroup__header h1 {
     border: 1px solid #ddd;
     padding: 14px;
     margin: 20px 0 60px; }
+
   header.conf2016s-sessionGroup__header {
     margin-left: 0; } }
-
 /* ==========================================================================
    .conf2016s-speaker
    ========================================================================== */
@@ -1314,23 +1309,27 @@ header.conf2016s-sessionGroup__header h1 {
 @media screen and (max-width: 767px) {
   .conf2016s-speaker {
     width: auto; }
+
   .conf2016s-speaker__image {
     width: 30%; }
     .conf2016s-speaker__image img {
       min-width: 150px; }
+
   .conf2016s-speaker__text {
     width: 70%; }
     .conf2016s-speaker__text:first-child {
       padding-left: 30%; }
+
   .conf2016s-speaker__name {
     font-size: 20px; }
+
   .conf2016s-speaker__bio {
     margin-top: 14px; } }
-
 @media screen and (max-width: 639px) {
   .conf2016s-speaker {
     display: block;
     margin: 30px 0; }
+
   .conf2016s-speaker__image {
     text-align: center;
     display: block;
@@ -1339,40 +1338,106 @@ header.conf2016s-sessionGroup__header h1 {
     .conf2016s-speaker__image img {
       display: inline-block;
       width: auto; }
+
   .conf2016s-speaker__text {
     display: block;
     width: auto;
     padding-top: 0; }
     .conf2016s-speaker__text:first-child {
       padding-left: 0; }
+
   .conf2016s-speaker__name {
     text-align: center; }
+
   .conf2016s-speaker__affil {
     text-align: center; }
+
   .conf2016s-speaker__bio {
     margin-top: 16px; }
     .conf2016s-speaker__bio p {
       margin: 8px 0; }
+
   .conf2016s-speaker__h {
     margin: 10px 0;
     font-weight: bold; } }
-
 /* 画像・地図のスマホ用調整  */
 @media screen and (max-width: 767px) {
   .image {
     text-align: center; }
+
   .image img {
     max-width: 200px;
     width: 100%;
     height: auto; } }
-
 @media screen and (max-width: 639px) {
   .image {
     text-align: center; }
+
   .image img {
     max-width: 200px;
     width: 100%;
     height: auto; } }
+/* ==========================================================================
+   .conf2016s-booth
+   ========================================================================== */
+.conf2016s-booth-info dt {
+  font-weight: bold; }
+.conf2016s-booth-info dd {
+  margin-left: 0;
+  font-size: 12px; }
+  .conf2016s-booth-info dd + dt {
+    margin-top: 1em; }
+
+.conf2016s-booth-info__list {
+  margin: 0.5em 0; }
+
+.conf2016s-booth-info__map {
+  margin: 0.5em 0;
+  padding: 1em;
+  background-color: #e8edec;
+  text-align: center; }
+  .conf2016s-booth-info__map > img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+    vertical-align: top; }
+
+.conf2016s-booth-item {
+  border: 1px solid #c7c7c7;
+  border-radius: 4px;
+  padding: 0.5em 1em;
+  margin: 0.5em 0; }
+
+.conf2016s-booth-item--special {
+  border: none;
+  background: #b8eadc;
+  color: #1b354c; }
+
+.conf2016s-booth-item__title {
+  margin-top: 0.5em;
+  margin-bottom: 0;
+  font-size: 16px;
+  font-weight: bold; }
+
+.conf2016s-booth-item__subtitle {
+  font-size: inherit;
+  margin-bottom: 0; }
+  .conf2016s-booth-item__subtitle + p {
+    margin-top: 0; }
+
+.conf2016s-booth-item__byname {
+  display: block;
+  font-size: 12px;
+  color: #757575; }
+
+.conf2016s-booth-item__desc {
+  font-size: 12px; }
+
+.conf2016s-booth-info__map__note {
+  display: block;
+  margin-top: 0.5em;
+  font-size: 12px; }
 
 /* ==========================================================================
    .conf2016s-access
@@ -1380,7 +1445,6 @@ header.conf2016s-sessionGroup__header h1 {
 /* アクセス路線の表示調整  */
 .access_root_list dd {
   margin-left: 0; }
-
 .access_root_list ul {
   padding-left: 1.7em; }
   .access_root_list ul > li {
@@ -1397,26 +1461,30 @@ header.conf2016s-sessionGroup__header h1 {
   .google-map {
     width: 100%;
     height: 300px; }
+
   .google-map iframe {
     max-width: 767px;
     width: 100%;
     height: 80%; }
+
   .access_photo img {
     max-width: 640px;
     width: 100%;
     height: auto;
     text-align: center; } }
-
 @media screen and (max-width: 639px) {
   .google-map {
     width: 100%;
     height: 200px; }
+
   .google-map iframe {
     width: 100%;
     height: 100%;
     text-align: center; }
+
   .access_photos {
     width: 100%; }
+
   .access_photo img {
     width: 100%;
     height: auto;
