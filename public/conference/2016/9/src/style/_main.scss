@@ -1014,12 +1014,6 @@ header.conf2016s-sessionGroup__header{
   margin: 0.5em 0;
 }
 
-.conf2016s-booth-item--special {
-  border: none;
-  background: #b8eadc;
-  color: #1b354c;
-}
-
 .conf2016s-booth-item__title {
   margin-top: 0.5em;
   margin-bottom: 0;
@@ -1039,6 +1033,14 @@ header.conf2016s-sessionGroup__header{
   display: block;
   font-size: 12px;
   color: #757575;
+}
+
+.conf2016s-booth-item__image {
+  display: block;
+  margin: 1em 0;
+  width: 150px;
+  height: auto;
+  vertical-align: top;
 }
 
 .conf2016s-booth-item__desc {
