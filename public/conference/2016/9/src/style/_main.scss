@@ -971,6 +971,89 @@ header.conf2016s-sessionGroup__header{
 }
 
 /* ==========================================================================
+   .conf2016s-booth
+   ========================================================================== */
+.conf2016s-booth {
+}
+
+.conf2016s-booth-info {
+  dt {
+    font-weight: bold;
+  }
+  dd {
+    margin-left: 0;
+    font-size: 12px;
+    & + dt {
+      margin-top: 1em;
+    }
+  }
+}
+
+.conf2016s-booth-info__list {
+  margin: 0.5em 0;
+}
+
+.conf2016s-booth-info__map {
+  margin: 0.5em 0;
+  padding: 1em;
+  background-color: #e8edec;
+  text-align: center;
+  & > img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+    vertical-align: top;
+  }
+}
+
+.conf2016s-booth-item {
+  border: 1px solid #c7c7c7;
+  border-radius: 4px;
+  padding: 0.5em 1em;
+  margin: 0.5em 0;
+}
+
+.conf2016s-booth-item__title {
+  margin-top: 0.5em;
+  margin-bottom: 0;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.conf2016s-booth-item__subtitle {
+  font-size: inherit;
+  margin-bottom: 0;
+  & + p {
+    margin-top: 0;
+  }
+}
+
+.conf2016s-booth-item__byname {
+  display: block;
+  font-size: 12px;
+  color: #757575;
+}
+
+.conf2016s-booth-item__image {
+  display: block;
+  margin: 1em 0;
+  width: 150px;
+  height: auto;
+  vertical-align: top;
+}
+
+.conf2016s-booth-item__desc {
+  font-size: 12px;
+}
+
+.conf2016s-booth-info__map__note {
+  display: block;
+  margin-top: 0.5em;
+  font-size: 12px;
+}
+
+/* ==========================================================================
    .conf2016s-access
    ========================================================================== */
 
