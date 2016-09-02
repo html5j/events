@@ -1440,6 +1440,7 @@ header.conf2016s-sessionGroup__header h1 {
   display: inline-block;
   margin: 1em 0;
   width: 150px;
+  max-width: 45%;
   height: auto;
   vertical-align: top; }
   .conf2016s-booth-item__image + .conf2016s-booth-item__image {
