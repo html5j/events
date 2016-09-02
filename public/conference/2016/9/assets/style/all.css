@@ -1437,11 +1437,13 @@ header.conf2016s-sessionGroup__header h1 {
   color: #757575; }
 
 .conf2016s-booth-item__image {
-  display: block;
+  display: inline-block;
   margin: 1em 0;
   width: 150px;
   height: auto;
   vertical-align: top; }
+  .conf2016s-booth-item__image + .conf2016s-booth-item__image {
+    margin-left: 0.5em; }
 
 .conf2016s-booth-item__desc {
   font-size: 12px; }

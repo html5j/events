@@ -1048,11 +1048,14 @@ header.conf2016s-sessionGroup__header{
 }
 
 .conf2016s-booth-item__image {
-  display: block;
+  display: inline-block;
   margin: 1em 0;
   width: 150px;
   height: auto;
   vertical-align: top;
+  & + & {
+    margin-left: 0.5em;
+  }
 }
 
 .conf2016s-booth-item__desc {
