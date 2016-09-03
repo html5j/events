@@ -918,7 +918,8 @@ nav.conf2016s-pageNav {
 .conf2016s-timetable-hashtag {
   display: block;
   margin-top: 5px;
-  font-size: smaller; }
+  font-size: smaller;
+  font-weight: normal; }
 
 .conf2016s-timetable-title {
   margin-top: 0;
