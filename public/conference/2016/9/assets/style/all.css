@@ -971,6 +971,26 @@ nav.conf2016s-pageNav {
 .conf2016s-timetable-banner-label {
   font-weight: bold; }
 
+.conf2016s-timetable-archive {
+  margin-top: 0.5em;
+  padding-top: 0.5em;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  color: #1b354b; }
+
+.conf2016s-timetable-archive-link {
+  display: inline-block;
+  margin-right: 0.5em; }
+  .conf2016s-timetable-archive-link:before {
+    content: "";
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border: 0.4em solid transparent;
+    border-left: 0.4em solid #1b354b; }
+  .conf2016s-timetable-archive-link:hover {
+    opacity: .5;
+    text-decoration: none; }
+
 /* ==========================================================================
    .conf2016s-list
    ========================================================================== */
