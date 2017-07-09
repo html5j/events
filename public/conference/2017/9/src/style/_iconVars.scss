@@ -1,0 +1,54 @@
+
+%icon{
+  font-family: 'icon';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  vertical-align: middle;
+  display: inline-block;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: -2px 3px 0 0;
+}
+
+@function getValue ( $assoc, $key ) {
+  @each $pair in $assoc {
+    @if nth( $pair, 1 ) == $key {
+      @return nth( $pair, 2 );
+    }
+  }
+  @return null;
+}
+
+@mixin icon ( $name ) {
+  content: getValue( $icons, $name );
+  font-family: 'icon';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  vertical-align: middle;
+  display: inline-block;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+$icons: (
+  bars "\f0c9",
+  clione "\e600",
+  webgl "\e601",
+  down "\e800",
+  up "\e801",
+  right "\e802",
+  left "\e803",
+  right2 "\e806",
+  left2 "\e807",
+  down2 "\e804",
+  up2 "\e805"
+);
