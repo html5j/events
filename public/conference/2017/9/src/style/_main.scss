@@ -105,7 +105,7 @@ $z-pageNav: 1;
    .conf2016s-pageNav
    ========================================================================== */
 li.conf2016s-pageNav__item--current {
-  background-color: #b8eadc;
+  background-color: #f7d8f1;
 }
 nav.conf2016s-pageNav{
   background-color: #e8edec;
@@ -202,7 +202,7 @@ nav.conf2016s-pageNav{
    .conf2016s-hero
    ========================================================================== */
 .conf2016s-hero{
-  background: #51e0b7 url( ../img/page-index/bg.png ) 50% 50%;
+  background: #ead3e5 url( ../img/page-index/bg.png ) 50% 50%;
   .conf2016s-hero__inner{
     @include container();
     padding: 0;
@@ -276,7 +276,7 @@ nav.conf2016s-pageNav{
    ========================================================================== */
 .conf2016s-header2{
   padding-bottom: 3px;
-  border-bottom: 1px solid #51e0b7;
+  border-bottom: 1px solid #f7d8f1;
   margin: 30px 0 10px;
   h2{
     color: #1b354c;
@@ -688,7 +688,7 @@ footer.conf2016s-pageFooter{
   vertical-align: middle;
   box-sizing: border-box;
   &:hover {
-    border: 1px solid #51e0b7;
+    border: 1px solid #f7d8f1;
   }
   &.conf2016s-sponsorThumbnail-platinum{
     width: 200px;
