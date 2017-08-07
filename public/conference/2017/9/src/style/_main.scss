@@ -24,15 +24,14 @@ $z-pageNav: 1;
    Section comment block
    ========================================================================== */
 
-.conf2016s-pageHeader{
+.conf2017s-pageHeader{
   padding: 10px 0;
 }
-.conf2016s-pageHeader__inner{
+.conf2017s-pageHeader__inner{
   @include container();
   display: table;
 }
-.conf2016s-pageHeader__logo,
-.conf2016s-pageHeader__title{
+.conf2017s-pageHeader__title{
   vertical-align: middle;
   display: table-cell;
   width: 1%;
@@ -41,13 +40,13 @@ $z-pageNav: 1;
   }
 }
 
-.conf2016s-pageHeader__title {
-  position: relative;
-  top: 12px;
-  left: 10px;
-}
+// .conf2017s-pageHeader__title {
+//   position: relative;
+//   top: 12px;
+//   left: 10px;
+// }
 
-.conf2016s-info{
+.conf2017s-info{
   font-size: getFs( -1, 'rem' );
   text-align: right;
   vertical-align: middle;
@@ -55,13 +54,7 @@ $z-pageNav: 1;
 }
 
 @include max-screen( $breakpoint-middle ) {
-  .conf2016s-pageHeader__logo{
-    img{
-      width: 100px * .75;
-      height: auto;
-    }
-  }
-  .conf2016s-pageHeader__title{
+  .conf2017s-pageHeader__title{
     img{
       width: 282px * .75;
       height: auto;
@@ -70,29 +63,23 @@ $z-pageNav: 1;
 }
 
 @include max-screen( $breakpoint-small ) {
-  .conf2016s-pageHeader__inner{
+  .conf2017s-pageHeader__inner{
     display: block;
     text-align: center;
   }
-  .conf2016s-pageHeader__logo,
-  .conf2016s-pageHeader__title{
+  .conf2017s-pageHeader__title{
     display: inline-block;
     vertical-align: middle;
     width: auto;
   }
-  .conf2016s-pageHeader__logo{
-    img{
-      width: 100px * .5;
-    }
-  }
-  .conf2016s-pageHeader__title{
+  .conf2017s-pageHeader__title{
     top: 8px;
     left: 0px;
     img{
-      width: 282px * .5;
+      width: 300px * .5;
     }
   }
-  .conf2016s-info{
+  .conf2017s-info{
     font-size: getFs( -1, 'rem' );
     line-height: 1.4;
     text-align: center;
@@ -102,15 +89,15 @@ $z-pageNav: 1;
 }
 
 /* ==========================================================================
-   .conf2016s-pageNav
+   .conf2017s-pageNav
    ========================================================================== */
-li.conf2016s-pageNav__item--current {
+li.conf2017s-pageNav__item--current {
   background-color: #f7d8f1;
 }
-nav.conf2016s-pageNav{
+nav.conf2017s-pageNav{
   background-color: #e8edec;
 }
-  .conf2016s-pageNav__inner{
+  .conf2017s-pageNav__inner{
     @include container();
     ul{
       position: relative;
@@ -119,7 +106,7 @@ nav.conf2016s-pageNav{
       font-size: getFs( -1, 'rem' );
       font-weight: bold;
       list-style: none;
-      display: table;
+      display: flex;
       width: 100%;
       padding: 0;
       margin: 0;
@@ -127,8 +114,9 @@ nav.conf2016s-pageNav{
     li{
       text-align: center;
       overflow: hidden;
-      display: table-cell;
       margin: 0;
+      flex: 1 1 auto;
+      max-width: 120px;
     }
     a{
       color: #1b354c;
@@ -137,12 +125,12 @@ nav.conf2016s-pageNav{
       padding: 8px 10px;
     }
   }
-  .conf2016s-pageNav__opener{
+  .conf2017s-pageNav__opener{
     display: none;
   }
 
 @include max-screen( $breakpoint-middle ) {
-  .conf2016s-pageNav__inner{
+  .conf2017s-pageNav__inner{
     ul{
       font-size: getFs( -2, 'rem' );
     }
@@ -150,12 +138,12 @@ nav.conf2016s-pageNav{
 }
 
 @include max-screen( $breakpoint-small ) {
-nav.conf2016s-pageNav{
+nav.conf2017s-pageNav{
   border-top: none;
   border-bottom: none;
   background: none;
 }
-  .conf2016s-pageNav__inner{
+  .conf2017s-pageNav__inner{
     padding: 0;
     ul{
       font-size: getFs( -1, 'rem' );
@@ -166,7 +154,7 @@ nav.conf2016s-pageNav{
       border-top: 1px solid #c7c7c7;
       background: rgba( 255, 255, 255, .95 );
       box-shadow: 0 2px 3px rgba( 0, 0, 0, .3);
-      .conf2016s-pageNav--open &{
+      .conf2017s-pageNav--open &{
         display: block;
       }
     }
@@ -180,7 +168,7 @@ nav.conf2016s-pageNav{
       padding: 10px;
     }
   }
-  .conf2016s-pageNav__opener{
+  .conf2017s-pageNav__opener{
     line-height: 1;
     cursor: pointer;
     position: absolute;
@@ -199,11 +187,11 @@ nav.conf2016s-pageNav{
 }
 
 /* ==========================================================================
-   .conf2016s-hero
+   .conf2017s-hero
    ========================================================================== */
-.conf2016s-hero{
+.conf2017s-hero{
   background: #ead3e5 url( ../img/page-index/bg.png ) 50% 50%;
-  .conf2016s-hero__inner{
+  .conf2017s-hero__inner{
     @include container();
     padding: 0;
     position: relative;
@@ -219,7 +207,7 @@ nav.conf2016s-pageNav{
     padding: 0;
   }
 }
-  .conf2016s-hero__info{
+  .conf2017s-hero__info{
     color: #000;
     position: absolute;
     right: 8px;
@@ -231,10 +219,10 @@ nav.conf2016s-pageNav{
   }
 
 @include max-screen( $breakpoint-small ) {
-.conf2016s-hero{
+.conf2017s-hero{
   background: none;
 }
-  .conf2016s-hero__info{
+  .conf2017s-hero__info{
     color: #000;
     font-size: getFs( -1, 'rem' );
     line-height: 1.4;
@@ -246,15 +234,15 @@ nav.conf2016s-pageNav{
 }
 
 /* ==========================================================================
-   .conf2016s-container
+   .conf2017s-container
    ========================================================================== */
-.conf2016s-container{
+.conf2017s-container{
   @include container();
 }
 /* ==========================================================================
-   .conf2016s-header1
+   .conf2017s-header1
    ========================================================================== */
-.conf2016s-header1{
+.conf2017s-header1{
   margin: 50px 0 10px;
   h1{
     font-size: getFs( +3, 'rem' );
@@ -274,7 +262,7 @@ nav.conf2016s-pageNav{
 /* ==========================================================================
    
    ========================================================================== */
-.conf2016s-header2{
+.conf2017s-header2{
   padding-bottom: 3px;
   border-bottom: 1px solid #f7d8f1;
   margin: 30px 0 10px;
@@ -288,17 +276,17 @@ nav.conf2016s-pageNav{
 
 
 /* ==========================================================================
-   .conf2016s-lead
+   .conf2017s-lead
    ========================================================================== */
-.conf2016s-lead{
+.conf2017s-lead{
   font-size: getFs( +1, 'rem' );
   margin: 20px 0;
 }
 
 /* ==========================================================================
-   .conf2016s-button
+   .conf2017s-button
    ========================================================================== */
-.conf2016s-button{
+.conf2017s-button{
   color: #fff;
   font-size: getFs( +1, 'rem' );
   text-decoration: none;
@@ -309,12 +297,12 @@ nav.conf2016s-pageNav{
   background-color: #1b354c;
   border-radius: 4px;
   transition: .3s;
-  &:hover:not( .conf2016s-button--disabled ){
+  &:hover:not( .conf2017s-button--disabled ){
     color: #fff;
     text-decoration: none;
     background-color: #284f71;
   }
-  &.conf2016s-button--disabled{
+  &.conf2017s-button--disabled{
     cursor: auto;
     border-bottom: none;
     color: #fff;
@@ -323,9 +311,9 @@ nav.conf2016s-pageNav{
 }
 
 /* ==========================================================================
-   .conf2016s-buttonContainer
+   .conf2017s-buttonContainer
    ========================================================================== */
-.conf2016s-buttonContainer{
+.conf2017s-buttonContainer{
   margin: 30px 0;
   ul{
     list-style: none;
@@ -337,7 +325,7 @@ nav.conf2016s-pageNav{
     margin: 0 10px 0 0;
   }
 }
-.conf2016s-buttonContainer__note{
+.conf2017s-buttonContainer__note{
   display: inline-block;
   margin-top: 4px;
   padding: 0.3em 1em 0.2em;
@@ -359,7 +347,7 @@ nav.conf2016s-pageNav{
 }
 
 @include max-screen( $breakpoint-small ) {
-.conf2016s-buttonContainer{
+.conf2017s-buttonContainer{
   text-align: center;
   li{
     display: block;
@@ -368,9 +356,9 @@ nav.conf2016s-pageNav{
 }
 }
 /* ==========================================================================
-   .conf2016s-table
+   .conf2017s-table
    ========================================================================== */
-.conf2016s-table{
+.conf2017s-table{
   margin: 40px 0;
   th, td{
     padding: .2em 20px .2em 0;
@@ -381,7 +369,7 @@ nav.conf2016s-pageNav{
 }
 
 @media screen and (max-width: 767px){
-  .conf2016s-table{
+  .conf2017s-table{
     th, td{
       display: block;
       padding: .2em 0;
@@ -390,13 +378,13 @@ nav.conf2016s-pageNav{
 }
 
 /* ==========================================================================
-   .conf2016s-timetable
+   .conf2017s-timetable
    ========================================================================== */
-.conf2016s-timetable-wrapper {
+.conf2017s-timetable-wrapper {
   overflow-x: auto;
 }
 
-.conf2016s-timetable {
+.conf2017s-timetable {
   width: 100%;
   empty-cells: show;
   border-collapse: separate;
@@ -430,7 +418,7 @@ nav.conf2016s-pageNav{
       min-width: 120px;
       vertical-align: top;
     }
-    .conf2016s-timetable-break {
+    .conf2017s-timetable-break {
       td {
         font-size: smaller;
         text-align: center;
@@ -440,20 +428,20 @@ nav.conf2016s-pageNav{
   }
 }
 
-.conf2016s-timetable-hashtag {
+.conf2017s-timetable-hashtag {
   display: block;
   margin-top: 5px;
   font-size: smaller;
   font-weight: normal;
 }
 
-.conf2016s-timetable-title {
+.conf2017s-timetable-title {
   margin-top: 0;
   margin-bottom: 0;
   font-weight: bold;
 }
 
-.conf2016s-timetable-speaker {
+.conf2017s-timetable-speaker {
   margin-top: 0.25em;
   margin-bottom: 0;
   padding-left: 0;
@@ -465,7 +453,7 @@ nav.conf2016s-pageNav{
   }
 }
 
-.conf2016s-timetable-speaker-image {
+.conf2017s-timetable-speaker-image {
   margin-right: 5px;
   width: 1rem;
   height: 1rem;
@@ -475,11 +463,11 @@ nav.conf2016s-pageNav{
   vertical-align: middle;
 }
 
-.conf2016s-timetable-speaker-name {
+.conf2017s-timetable-speaker-name {
   margin-bottom: 0;
 }
 
-.conf2016s-timetable-button {
+.conf2017s-timetable-button {
   display: inline-block;
   margin-top: 1em;
   margin-bottom: 0.5em;
@@ -494,7 +482,7 @@ nav.conf2016s-pageNav{
   }
 }
 
-.conf2016s-timetable-banner {
+.conf2017s-timetable-banner {
   margin: 8px auto;
   padding: 8px 0;
   width: 320px;
@@ -502,18 +490,18 @@ nav.conf2016s-pageNav{
   border-bottom: 1px dashed #1b354b;
 }
 
-.conf2016s-timetable-banner-label {
+.conf2017s-timetable-banner-label {
   font-weight: bold;
 }
 
-.conf2016s-timetable-archive {
+.conf2017s-timetable-archive {
   margin-top: 0.5em;
   padding-top: 0.5em;
   border-top: 1px solid rgba(0,0,0, 0.1);
   color: #1b354b;
 }
 
-.conf2016s-timetable-archive-link {
+.conf2017s-timetable-archive-link {
   display: inline-block;
   margin-right: 0.5em;
   &:before {
@@ -531,9 +519,9 @@ nav.conf2016s-pageNav{
 }
 
 /* ==========================================================================
-   .conf2016s-list
+   .conf2017s-list
    ========================================================================== */
-.conf2016s-inlineList {
+.conf2017s-inlineList {
   padding-left: 0;
   list-style: none;
   @include clearfix;
@@ -543,9 +531,9 @@ nav.conf2016s-pageNav{
 }
 
 /* ==========================================================================
-   .conf2016s-imageFull
+   .conf2017s-imageFull
    ========================================================================== */
-.conf2016s-imageFull{
+.conf2017s-imageFull{
   margin: 30px 0;
   img{
     display: block;
@@ -556,9 +544,9 @@ nav.conf2016s-pageNav{
 
 
 /* ==========================================================================
-   .conf2016s-itemContainer
+   .conf2017s-itemContainer
    ========================================================================== */
-.conf2016s-itemContainer{
+.conf2017s-itemContainer{
   @include zero ();
   margin: 20px -5px;
   &:after{
@@ -570,9 +558,9 @@ nav.conf2016s-pageNav{
 
 
 /* ==========================================================================
-   .conf2016s-item4
+   .conf2017s-item4
    ========================================================================== */
-.conf2016s-item4{
+.conf2017s-item4{
   font-family: $fontSansSerif;
   font-size: getFs( 0, 'rem' );
   box-sizing: border-box;
@@ -590,7 +578,7 @@ nav.conf2016s-pageNav{
   }
 }
 
-  .conf2016s-item4__image{
+  .conf2017s-item4__image{
     margin-bottom: 5px;
     img{
       display: block;
@@ -604,33 +592,33 @@ nav.conf2016s-pageNav{
       }
     }
   }
-  .conf2016s-item4__label{
+  .conf2017s-item4__label{
     text-align: center;
   }
 @include max-screen( $breakpoint-middle ) {
-  .conf2016s-item4{
+  .conf2017s-item4{
     width: 49.999%;
   }
 }
 @include max-screen( $breakpoint-small ) {
-  .conf2016s-item4{
+  .conf2017s-item4{
     display: block;
     width: auto;
   }
 }
 /* ==========================================================================
-   .conf2016s-pageFooter
+   .conf2017s-pageFooter
    ========================================================================== */
-footer.conf2016s-pageFooter{
+footer.conf2017s-pageFooter{
   padding: 10px 0 30px;
   margin-top: 100px;
   background-color: #f3895b;
 }
-  .conf2016s-pageFooter__inner{
+  .conf2017s-pageFooter__inner{
     @include container();
   }
-    .conf2016s-pageFooter__sponsor,
-    .conf2016s-pageFooter__supporter{
+    .conf2017s-pageFooter__sponsor,
+    .conf2017s-pageFooter__supporter{
       @include zero ();
       padding: 20px 0;
       border-bottom: 1px solid #E07446;
@@ -649,9 +637,9 @@ footer.conf2016s-pageFooter{
       	display: block;
       }
     }
-    .conf2016s-pageFooter__supporter{
+    .conf2017s-pageFooter__supporter{
     }
-    .conf2016s-pageFooter__logo{
+    .conf2017s-pageFooter__logo{
       margin-top: 20px;
       img{
       	display: block;
@@ -660,9 +648,9 @@ footer.conf2016s-pageFooter{
     }
 
 /* ==========================================================================
-   .conf2016s-eventSummary
+   .conf2017s-eventSummary
    ========================================================================== */
-.conf2016s-eventSummary{
+.conf2017s-eventSummary{
   dt {
     font-size: 16px;
     font-weight: bold;
@@ -678,7 +666,7 @@ footer.conf2016s-pageFooter{
   }
 }
 
-.conf2016s-sponsorThumbnail{
+.conf2017s-sponsorThumbnail{
   display: block;
   padding: 10px;
   margin-right: 10px;
@@ -690,19 +678,23 @@ footer.conf2016s-pageFooter{
   &:hover {
     border: 1px solid #f7d8f1;
   }
-  &.conf2016s-sponsorThumbnail-platinum{
+  &.conf2017s-sponsorThumbnail-platinum{
+    width: 300px;
+    height: auto;
+  }
+  &.conf2017s-sponsorThumbnail-gold{
     width: 200px;
     height: auto;
   }
-  &.conf2016s-sponsorThumbnail-gold{
-    width: 150px;
-    height: auto;
-  }
-  &.conf2016s-sponsorThumbnail-silver{
+  &.conf2017s-sponsorThumbnail-silver{
     width: 120px;
     height: auto;
   }
-  &.conf2016s-sponsorThumbnail-mediaSupport{
+  &.conf2017s-sponsorThumbnail-bronze{
+    width: 100px;
+    height: auto;
+  }
+  &.conf2017s-sponsorThumbnail-mediaSupport{
     width: 80px;
     height: auto;
     padding: 5px;
@@ -710,9 +702,9 @@ footer.conf2016s-pageFooter{
 }
 
 /* ==========================================================================
-   .conf2016s-session
+   .conf2017s-session
    ========================================================================== */
-.conf2016s-session{
+.conf2017s-session{
   padding: 14px 18px;
   margin: 20px 0;
   background-color: #fff;
@@ -728,18 +720,18 @@ footer.conf2016s-pageFooter{
     margin-bottom: 0;
   }
 }
-  .conf2016s-session__time{
+  .conf2017s-session__time{
     font-size: 12px;
     time{}
   }
-  .conf2016s-session__title{
+  .conf2017s-session__title{
     h1{
       font-size: 16px;
       font-weight: bold;
       margin: 0;
     }
   }
-  .conf2016s-session__tag{
+  .conf2017s-session__tag{
     ul{
       font-size: 0;
       list-style: none;
@@ -765,18 +757,18 @@ footer.conf2016s-pageFooter{
       }
     }
   }
-  .conf2016s-session__tagLabel{
+  .conf2017s-session__tagLabel{
     color: #757575;
     font-size: 10px;
     display: inline-block;
   }
-  .conf2016s-session__main{
+  .conf2017s-session__main{
     font-size: 14px;
   }
-    .conf2016s-session__notice{
+    .conf2017s-session__notice{
       font-size: 10px;
     }
-  .conf2016s-session__speakers{
+  .conf2017s-session__speakers{
     overflow: hidden;
     ul{
       font-size: 0;
@@ -801,7 +793,7 @@ footer.conf2016s-pageFooter{
       display: block;
     }
   }
-  .conf2016s-session__speakerImage{
+  .conf2017s-session__speakerImage{
     width: 72px;
     height: 72px;
     margin-bottom: 4px;
@@ -819,10 +811,10 @@ footer.conf2016s-pageFooter{
       }
     }
   }
-  .conf2016s-session__speakerName{
+  .conf2017s-session__speakerName{
     font-size: 12px;
   }
-  .conf2016s-session__speakerAffil{
+  .conf2017s-session__speakerAffil{
     font-size: 10px;
     font-weight: bold;
   }
@@ -830,54 +822,54 @@ footer.conf2016s-pageFooter{
 /* ==========================================================================
    
    ========================================================================== */
-.conf2016s-sessionGroup{
+.conf2017s-sessionGroup{
   padding: 20px;
   margin: 20px 0 60px;
   background: #ddd;
   border-radius: 4px;
-  &.conf2016s-sessionGroup--groupH{background-color: hsla( 163, 70%, 60%, 1 );}
-  &.conf2016s-sessionGroup--groupA{background-color: hsla( 223, 70%, 60%, 1 );}
-  &.conf2016s-sessionGroup--groupB{background-color: hsla( 283, 70%, 60%, 1 );}
-  &.conf2016s-sessionGroup--groupC{background-color: hsla( 343, 70%, 60%, 1 );}
-  &.conf2016s-sessionGroup--groupD{background-color: hsla(  43, 70%, 60%, 1 );}
-  &.conf2016s-sessionGroup--groupE{background-color: hsla( 103, 70%, 60%, 1 );}
+  &.conf2017s-sessionGroup--groupH{background-color: hsla( 163, 70%, 60%, 1 );}
+  &.conf2017s-sessionGroup--groupA{background-color: hsla( 223, 70%, 60%, 1 );}
+  &.conf2017s-sessionGroup--groupB{background-color: hsla( 283, 70%, 60%, 1 );}
+  &.conf2017s-sessionGroup--groupC{background-color: hsla( 343, 70%, 60%, 1 );}
+  &.conf2017s-sessionGroup--groupD{background-color: hsla(  43, 70%, 60%, 1 );}
+  &.conf2017s-sessionGroup--groupE{background-color: hsla( 103, 70%, 60%, 1 );}
 }
-header.conf2016s-sessionGroup__header{
+header.conf2017s-sessionGroup__header{
   h1{
     font-size: 28px;
     margin: 0;
-    .conf2016s-sessionGroup--groupH &{color: hsla( 208, 48%, 20%, 1);}
-    .conf2016s-sessionGroup--groupA &{color: hsla( 260, 48%, 20%, 1 );}
-    .conf2016s-sessionGroup--groupB &{color: hsla( 328, 48%, 20%, 1 );}
-    .conf2016s-sessionGroup--groupC &{color: hsla(  28, 48%, 20%, 1 );}
-    .conf2016s-sessionGroup--groupD &{color: hsla(  88, 48%, 20%, 1 );}
-    .conf2016s-sessionGroup--groupE &{color: hsla( 148, 48%, 20%, 1 );}
+    .conf2017s-sessionGroup--groupH &{color: hsla( 208, 48%, 20%, 1);}
+    .conf2017s-sessionGroup--groupA &{color: hsla( 260, 48%, 20%, 1 );}
+    .conf2017s-sessionGroup--groupB &{color: hsla( 328, 48%, 20%, 1 );}
+    .conf2017s-sessionGroup--groupC &{color: hsla(  28, 48%, 20%, 1 );}
+    .conf2017s-sessionGroup--groupD &{color: hsla(  88, 48%, 20%, 1 );}
+    .conf2017s-sessionGroup--groupE &{color: hsla( 148, 48%, 20%, 1 );}
   }
 }
 
 @include max-screen( $breakpoint-small ) {
-  .conf2016s-sessionGroup{
+  .conf2017s-sessionGroup{
     border: 1px solid #ddd;
     padding: 14px;
     margin: 20px 0 60px;
   }
-  header.conf2016s-sessionGroup__header{
+  header.conf2017s-sessionGroup__header{
     margin-left: 0;
   }
 }
 
 
 /* ==========================================================================
-   .conf2016s-speaker
+   .conf2017s-speaker
    ========================================================================== */
 
-.conf2016s-speaker{
+.conf2017s-speaker{
   font-size: 14px;
   display: table;
   width: 100%;
   margin: 30px 0 60px;
 }
-  .conf2016s-speaker__image{
+  .conf2017s-speaker__image{
     vertical-align: top;
     box-sizing: border-box;
     display: table-cell;
@@ -891,7 +883,7 @@ header.conf2016s-sessionGroup__header{
       border-radius: 4px;
     }
   }
-  .conf2016s-speaker__text{
+  .conf2017s-speaker__text{
     vertical-align: top;
     box-sizing: border-box;
     display: table-cell;
@@ -900,57 +892,57 @@ header.conf2016s-sessionGroup__header{
       padding-left: 220px;
     }
   }
-  .conf2016s-speaker__name{
+  .conf2017s-speaker__name{
     color: #1b354c;
     font-size: 22px;
   }
-  .conf2016s-speaker__affil{
+  .conf2017s-speaker__affil{
     color: #1b354c;
     font-size: 12px;
   }
-  .conf2016s-speaker__bio{
+  .conf2017s-speaker__bio{
     margin-top: 16px;
     color: #757575;
     p{
       margin: 8px 0;
     }
   }
-  .conf2016s-speaker__h{
+  .conf2017s-speaker__h{
     margin: 10px 0;
     font-weight: bold;
   }
 @include max-screen( $breakpoint-middle ) {
-.conf2016s-speaker{
+.conf2017s-speaker{
   width: auto;
 }
-  .conf2016s-speaker__image{
+  .conf2017s-speaker__image{
     width: 30%;
     img{
       min-width: 150px;
     }
   }
-  .conf2016s-speaker__text{
+  .conf2017s-speaker__text{
     width: 70%;
     &:first-child{
       padding-left: 30%;
     }
   }
-  .conf2016s-speaker__name{
+  .conf2017s-speaker__name{
     font-size: 20px;
   }
-  .conf2016s-speaker__affil{}
-  .conf2016s-speaker__bio{
+  .conf2017s-speaker__affil{}
+  .conf2017s-speaker__bio{
     margin-top: 14px;
     p{}
   }
-  .conf2016s-speaker__h{}
+  .conf2017s-speaker__h{}
 }
 @include max-screen( $breakpoint-small ) {
-.conf2016s-speaker{
+.conf2017s-speaker{
   display: block;
   margin: 30px 0;
 }
-  .conf2016s-speaker__image{
+  .conf2017s-speaker__image{
     text-align: center;
     display: block;
     width: auto;
@@ -960,7 +952,7 @@ header.conf2016s-sessionGroup__header{
       width: auto;
     }
   }
-  .conf2016s-speaker__text{
+  .conf2017s-speaker__text{
     display: block;
     width: auto;
     padding-top: 0;
@@ -968,19 +960,19 @@ header.conf2016s-sessionGroup__header{
       padding-left: 0;
     }
   }
-  .conf2016s-speaker__name{
+  .conf2017s-speaker__name{
     text-align: center;
   }
-  .conf2016s-speaker__affil{
+  .conf2017s-speaker__affil{
     text-align: center;
   }
-  .conf2016s-speaker__bio{
+  .conf2017s-speaker__bio{
     margin-top: 16px;
     p{
       margin: 8px 0;
     }
   }
-  .conf2016s-speaker__h{
+  .conf2017s-speaker__h{
     margin: 10px 0;
     font-weight: bold;
   }
@@ -1008,12 +1000,12 @@ header.conf2016s-sessionGroup__header{
 }
 
 /* ==========================================================================
-   .conf2016s-booth
+   .conf2017s-booth
    ========================================================================== */
-.conf2016s-booth {
+.conf2017s-booth {
 }
 
-.conf2016s-booth-info {
+.conf2017s-booth-info {
   dt {
     font-weight: bold;
   }
@@ -1026,11 +1018,11 @@ header.conf2016s-sessionGroup__header{
   }
 }
 
-.conf2016s-booth-info__list {
+.conf2017s-booth-info__list {
   margin: 0.5em 0;
 }
 
-.conf2016s-booth-info__map {
+.conf2017s-booth-info__map {
   margin: 0.5em 0;
   padding: 1em;
   background-color: #e8edec;
@@ -1044,21 +1036,21 @@ header.conf2016s-sessionGroup__header{
   }
 }
 
-.conf2016s-booth-item {
+.conf2017s-booth-item {
   border: 1px solid #c7c7c7;
   border-radius: 4px;
   padding: 0.5em 1em;
   margin: 0.5em 0;
 }
 
-.conf2016s-booth-item__title {
+.conf2017s-booth-item__title {
   margin-top: 0.5em;
   margin-bottom: 0;
   font-size: 16px;
   font-weight: bold;
 }
 
-.conf2016s-booth-item__subtitle {
+.conf2017s-booth-item__subtitle {
   font-size: inherit;
   margin-bottom: 0;
   & + p {
@@ -1066,13 +1058,13 @@ header.conf2016s-sessionGroup__header{
   }
 }
 
-.conf2016s-booth-item__byname {
+.conf2017s-booth-item__byname {
   display: block;
   font-size: 12px;
   color: #757575;
 }
 
-.conf2016s-booth-item__image {
+.conf2017s-booth-item__image {
   display: inline-block;
   margin: 1em 0;
   width: 150px;
@@ -1084,18 +1076,18 @@ header.conf2016s-sessionGroup__header{
   }
 }
 
-.conf2016s-booth-item__desc {
+.conf2017s-booth-item__desc {
   font-size: 12px;
 }
 
-.conf2016s-booth-info__map__note {
+.conf2017s-booth-info__map__note {
   display: block;
   margin-top: 0.5em;
   font-size: 12px;
 }
 
 /* ==========================================================================
-   .conf2016s-access
+   .conf2017s-access
    ========================================================================== */
 
 /* アクセス路線の表示調整  */
