@@ -758,6 +758,7 @@ nav.conf2017s-pageNav {
   .conf2017s-pageNav__inner li {
     display: block;
     border-bottom: 1px solid #c7c7c7;
+    max-width: none;
   }
   .conf2017s-pageNav__inner a {
     color: #1b354c;
