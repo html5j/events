@@ -21,4 +21,25 @@
     } );
   } );
 
+  function randomOrder(selector) {
+    var arr = [];
+    $(`${selector} li`).each(function() {
+      arr.push($(this));
+    });
+    arr.sort(function() {
+      return Math.random() - Math.random();
+    });
+    $(selector).empty();
+    arr.forEach(function(item) {
+      $(selector).append(item);
+    });
+  }
+  if ($('.conf2017s-inlineList').length !== 0) {
+    randomOrder('.conf2017s-inlineList.platinum');
+    randomOrder('.conf2017s-inlineList.gold');
+    randomOrder('.conf2017s-inlineList.silver');
+    randomOrder('.conf2017s-inlineList.bronze');
+    randomOrder('.conf2017s-inlineList.support');
+  }
+
 } )( jQuery )
