@@ -40,6 +40,7 @@
     randomOrder('.conf2017s-inlineList.silver');
     randomOrder('.conf2017s-inlineList.bronze');
     randomOrder('.conf2017s-inlineList.support');
+    randomOrder('.conf2017s-inlineList.media');
   }
 
 } )( jQuery )
