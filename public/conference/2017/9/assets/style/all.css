@@ -1460,6 +1460,7 @@ footer.conf2017s-pageFooter {
   color: #757575;
   font-size: 10px;
   display: inline-block;
+  margin-right: 0.5em;
 }
 
 .conf2017s-session__main {
