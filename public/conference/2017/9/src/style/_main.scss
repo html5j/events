@@ -1080,10 +1080,16 @@ header.conf2017s-sessionGroup__header{
   & + & {
     margin-left: 0.5em;
   }
+  &.no-margin {
+    margin: 0;
+  }
 }
 
 .conf2017s-booth-item__desc {
   font-size: 12px;
+  p:first-child {
+    margin-top: 0;
+  }
 }
 
 .conf2017s-booth-info__map__note {

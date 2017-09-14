@@ -1829,8 +1829,16 @@ header.conf2017s-sessionGroup__header h1 {
   margin-left: 0.5em;
 }
 
+.conf2017s-booth-item__image.no-margin {
+  margin: 0;
+}
+
 .conf2017s-booth-item__desc {
   font-size: 12px;
+}
+
+.conf2017s-booth-item__desc p:first-child {
+  margin-top: 0;
 }
 
 .conf2017s-booth-info__map__note {
