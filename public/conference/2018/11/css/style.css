@@ -97,16 +97,6 @@ h1 {
   line-height: 20px;
 }
 
-.social .hatena {
-  width: 60px;
-}
-.social .google {
-  width: 90px;
-}
-.social .twitter {
-  width: 100px;
-}
-
 @media screen and (max-width: 768px) {
   .social ul {
     margin-top: 1em;
