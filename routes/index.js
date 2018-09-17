@@ -4,5 +4,5 @@
  */
 
 exports.index = function (req, res) {
-  res.redirect("/conference/2017/9/");
+  res.redirect("/conference/2018/11/");
 };

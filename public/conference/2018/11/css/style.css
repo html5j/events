@@ -1,0 +1,137 @@
+:root {
+  --darkBlue: #0b1038;
+  --white: #fff;
+  --bold: 600;
+
+  font-family: "Barlow","Noto Sans JP", sans-serif;
+  font-size: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--white);
+  background-image: url(../img/bg-pattern.svg);
+  background-repeat: repeat;
+  background-size: 40px;
+  color: var(--darkBlue);
+  line-height: 1.5;
+}
+
+html,
+body,
+.main,
+.main__inner {
+  height: 100%;
+}
+
+h1 {
+  margin: 0;
+  padding: 0;
+}
+
+.main {
+  background-image: url(../img/shapes.svg);
+  background-repeat: no-repeat;
+  background-size: 102% auto;
+  background-position: center center;
+}
+
+.main__inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(../img/icons.svg);
+  background-repeat: no-repeat;
+  background-size: 102% auto;
+  background-position: center center;
+}
+
+.main__inner__content {
+  text-align: center;
+}
+
+.main__title {
+  font-weight: var(--bold);
+  font-size: 3rem;
+  line-height: 1.25;
+}
+
+.main__date {
+  font-weight: var(--bold);
+  font-size: 1.5rem;
+}
+
+@media screen and (max-width: 768px) {
+  .main {
+    background-size: 150% auto;
+  }
+
+  .main__inner {
+    background-size: 150% auto;
+  }
+
+  .main__title {
+    font-size: 1.5rem;
+  }
+
+  .main__date {
+    font-size: .875rem;
+  }
+}
+
+.social {
+  margin: 1rem 0;
+  padding: 0;
+  text-align: center;
+}
+
+.social li {
+  display: inline-block;
+  list-style-type: none;
+  vertical-align: top;
+  width: 90px;
+  margin: 0 1em 0 0;
+  overflow: hidden;
+  height: 20px;
+  line-height: 20px;
+}
+
+.social .hatena {
+  width: 60px;
+}
+.social .google {
+  width: 90px;
+}
+.social .twitter {
+  width: 100px;
+}
+
+@media screen and (max-width: 768px) {
+  .social ul {
+    margin-top: 1em;
+  }
+  .social li {
+    margin-right: 0;
+  }
+}
+
+.copyright {
+  position: fixed;
+  left: 1rem;
+  bottom: 1rem;
+  margin: 0;
+}
+
+.copyright__symbol {
+  font-size: 1rem;
+  font-weight: var(--bold);
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.copyright__image {
+  height: 1.5rem;
+  vertical-align: middle;
+  fill: red;
+}
