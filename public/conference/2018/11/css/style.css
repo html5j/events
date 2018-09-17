@@ -30,10 +30,14 @@ h1 {
   padding: 0;
 }
 
+main {
+  display: block;
+}
+
 .main {
-  background-image: url(../img/shapes.svg);
+  background-image: url(../img/scene-images.png);
   background-repeat: no-repeat;
-  background-size: 102% auto;
+  background-size: 103% auto;
   background-position: center center;
 }
 
@@ -41,31 +45,46 @@ h1 {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: url(../img/icons.svg);
-  background-repeat: no-repeat;
-  background-size: 102% auto;
+  background-image: url(../img/category-icons.svg);
+  background-repeat: repeat;
+  background-size: 103% auto;
   background-position: center center;
 }
 
 .main__inner__content {
   text-align: center;
-}
-
-.main__title {
-  font-weight: var(--bold);
-  font-size: 3rem;
   line-height: 1.25;
-}
-
-.main__date {
-  display: block;
-  font-weight: var(--bold);
-  font-size: 1.5rem;
 }
 
 .main__image {
   width: auto;
   height: 15rem;
+}
+
+.main__title {
+  font-weight: var(--bold);
+  font-size: 3rem;
+}
+
+.main__date {
+  display: block;
+  margin: .5rem 0;
+  font-weight: var(--bold);
+  font-size: 1.5rem;
+}
+
+.main__social {
+  display: flex;
+  justify-content: center;
+  margin: 1rem 0;
+  padding: 0;
+  list-style: none;
+}
+
+.main__social li {
+  margin: 0 .5rem;
+  height: 20px;
+  line-height: 20px;
 }
 
 @media screen and (max-width: 768px) {
@@ -78,7 +97,7 @@ h1 {
   }
 
   .main__title {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 
   .main__date {
@@ -87,29 +106,6 @@ h1 {
 
   .main__image {
     height: 10rem;
-  }
-}
-
-.social {
-  display: flex;
-  justify-content: center;
-  margin: 1rem 0;
-  padding: 0;
-  list-style: none;
-}
-
-.social li {
-  margin: 0 1rem;
-  height: 20px;
-  line-height: 20px;
-}
-
-@media screen and (max-width: 768px) {
-  .social ul {
-    margin-top: 1em;
-  }
-  .social li {
-    margin-right: 0;
   }
 }
 
