@@ -1,8 +1,4 @@
 :root {
-  --darkBlue: #0b1038;
-  --white: #fff;
-  --bold: 600;
-
   font-family: "Barlow","Noto Sans JP", sans-serif;
   font-size: 100%;
 }
@@ -10,11 +6,11 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: var(--white);
+  background-color: #fff;
   background-image: url(../img/bg-pattern.svg);
   background-repeat: repeat;
   background-size: 3rem;
-  color: var(--darkBlue);
+  color: #0b1038;
   line-height: 1.5;
 }
 
@@ -62,29 +58,49 @@ main {
 }
 
 .main__title {
-  font-weight: var(--bold);
+  font-weight: 600;
   font-size: 3rem;
 }
 
 .main__date {
   display: block;
-  margin: .5rem 0;
-  font-weight: var(--bold);
+  margin: .25rem 0;
+  font-weight: 600;
   font-size: 1.5rem;
 }
 
-.main__social {
+.main__cta {
   display: flex;
   justify-content: center;
   margin: 1rem 0;
-  padding: 0;
-  list-style: none;
 }
 
-.main__social li {
+.main__cta__button {
+  display: inline-block;
+  box-sizing: border-box;
   margin: 0 .5rem;
-  height: 20px;
-  line-height: 20px;
+  padding: .5rem 1rem;
+  border-radius: 10rem;
+  background-color: #0b1038;
+  color: #fff;
+  text-decoration: none;
+}
+
+.main__cta__button--wired {
+  background-color: #fff;
+  color: #0b1038;
+  border: 1px solid #0b1038;
+}
+
+@media screen and (max-width: 768px) {
+  .main__cta {
+    flex-direction: column;
+    margin: .5rem 0;
+  }
+
+  .main__cta__button {
+    margin: .5rem 0;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -114,28 +130,59 @@ main {
   left: 0;
   right: 0;
   bottom: 0;
-}
-
-.copyright {
-  margin: 0;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
   padding: 1rem;
+  background-color: rgba(255,255,255, .7);
 }
 
-.copyright__symbol {
+@media screen and (max-width: 768px) {
+  .footer {
+    flex-direction: column;
+    padding: .5rem 1rem;
+  }
+}
+
+.footer__social {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.footer__social li {
+  margin: 0 .5rem;
+  height: 20px;
+  line-height: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .footer__social {
+    margin-bottom: .5rem;
+  }
+}
+
+.footer__copyright {
+  margin: 0;
+}
+
+.footer__copyright__symbol {
   font-size: 1rem;
-  font-weight: var(--bold);
+  font-weight: 600;
   display: inline-block;
   vertical-align: middle;
 }
 
-.copyright__image {
+.footer__copyright__image {
   height: 1.5rem;
   vertical-align: middle;
-  fill: red;
 }
 
 @media screen and (max-width: 768px) {
-  .copyright {
+  .footer__copyright {
     text-align: center;
   }
 }
