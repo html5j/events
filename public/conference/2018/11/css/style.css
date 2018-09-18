@@ -1,4 +1,16 @@
-:root {
+html,
+body {
+  height: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  html,
+  body {
+    height: auto;
+  }
+}
+
+html {
   font-family: "Barlow","Noto Sans JP", sans-serif;
   font-size: 100%;
 }
@@ -7,18 +19,32 @@ body {
   margin: 0;
   padding: 0;
   background-color: #fff;
-  background-image: url(../img/bg-pattern.svg);
-  background-repeat: repeat;
-  background-size: 3rem;
+  background-image: url(../img/category-icons.svg),
+                    url(../img/scene-images.png),
+                    url(../img/bg-pattern.svg);
+  background-repeat: repeat,
+                     no-repeat,
+                     repeat;
+  background-size: 102% auto,
+                   102% auto,
+                   3rem;
+  background-position: center center,
+                       center center,
+                       left top;
   color: #0b1038;
   line-height: 1.5;
 }
 
-html,
-body,
-.main,
-.main__inner {
-  height: 100%;
+@media screen and (max-width: 768px) {
+  body {
+    background-size: 150% auto,
+                     125% auto,
+                     3rem;
+  }
+}
+
+main {
+  display: block;
 }
 
 h1 {
@@ -26,30 +52,21 @@ h1 {
   padding: 0;
 }
 
-main {
-  display: block;
-}
-
 .main {
-  background-image: url(../img/scene-images.png);
-  background-repeat: no-repeat;
-  background-size: 103% auto;
-  background-position: center center;
-}
-
-.main__inner {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: url(../img/category-icons.svg);
-  background-repeat: repeat;
-  background-size: 103% auto;
-  background-position: center center;
-}
-
-.main__inner__content {
+  flex-direction: column;
+  height: 100%;
   text-align: center;
   line-height: 1.25;
+}
+
+@media screen and (max-width: 768px) {
+  .main {
+    height: auto;
+    padding: 2rem 1rem;
+  }
 }
 
 .main__image {
@@ -84,6 +101,7 @@ main {
   background-color: #0b1038;
   color: #fff;
   text-decoration: none;
+  text-align: center;
 }
 
 .main__cta__button--wired {
@@ -104,14 +122,6 @@ main {
 }
 
 @media screen and (max-width: 768px) {
-  .main {
-    background-size: 150% auto;
-  }
-
-  .main__inner {
-    background-size: 150% auto;
-  }
-
   .main__title {
     font-size: 1.5rem;
   }
@@ -140,6 +150,7 @@ main {
 
 @media screen and (max-width: 768px) {
   .footer {
+    position: static;
     flex-direction: column;
     padding: .5rem 1rem;
   }
