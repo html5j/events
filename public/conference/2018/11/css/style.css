@@ -21,7 +21,7 @@ body {
   background-color: hsl(0, 0%, 100%);
   background-image: url(../img/category-icons.png),
                     url(../img/scene-images.png),
-                    url(../img/bg-pattern.svg);
+                    url(../img/bg-pattern.png);
   background-repeat: repeat,
                      no-repeat,
                      repeat;
