@@ -18,7 +18,7 @@ html {
 body {
   margin: 0;
   padding: 0;
-  background-color: #fff;
+  background-color: hsl(0, 0%, 100%);
   background-image: url(../img/category-icons.png),
                     url(../img/scene-images.png),
                     url(../img/bg-pattern.svg);
@@ -31,7 +31,7 @@ body {
   background-position: center center,
                        center center,
                        left top;
-  color: #0b1038;
+  color: hsl(233, 67%, 13%);
   line-height: 1.5;
 }
 
@@ -75,14 +75,14 @@ h1 {
 }
 
 .main__title {
-  font-weight: 600;
+  font-weight: bold;
   font-size: 3rem;
 }
 
 .main__date {
   display: block;
   margin: .25rem 0;
-  font-weight: 600;
+  font-weight: bold;
   font-size: 1.5rem;
 }
 
@@ -98,16 +98,28 @@ h1 {
   margin: 0 .5rem;
   padding: .5rem 1rem;
   border-radius: 10rem;
-  background-color: #0b1038;
-  color: #fff;
+  background-color: hsl(233, 67%, 13%);
+  color: hsl(0, 0%, 100%);
   text-decoration: none;
   text-align: center;
+  font-weight: bold;
+  transition: all .3s;
+}
+
+.main__cta__button:hover {
+  background-color: hsl(233, 47%, 53%);
 }
 
 .main__cta__button--wired {
-  background-color: #fff;
-  color: #0b1038;
-  border: 1px solid #0b1038;
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(233, 67%, 13%);
+  border: 1px solid hsl(233, 67%, 13%);
+}
+
+.main__cta__button--wired:hover {
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(233, 47%, 53%);
+  border: 1px solid hsl(233, 47%, 53%);
 }
 
 @media screen and (max-width: 768px) {
@@ -182,7 +194,7 @@ h1 {
 
 .footer__copyright__symbol {
   font-size: 1rem;
-  font-weight: 600;
+  font-weight: bold;
   display: inline-block;
   vertical-align: middle;
 }
