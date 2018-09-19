@@ -19,7 +19,7 @@ body {
   margin: 0;
   padding: 0;
   background-color: #fff;
-  background-image: url(../img/category-icons.svg),
+  background-image: url(../img/category-icons.png),
                     url(../img/scene-images.png),
                     url(../img/bg-pattern.svg);
   background-repeat: repeat,
