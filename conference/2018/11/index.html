@@ -2,47 +2,394 @@
 <html lang="ja">
   <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>HTML5 Conference 2018</title>
-    <meta name="description" content="HTML5 Conference、2018年11月25日開催。">
-    <meta property="og:title" content="HTML5 Conference 2018">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5 Conference</title>
+    <meta name="description" content="HTML5 Conference - 2017年9月24日（日）東京電機大学 千住キャンパスにて開催。">
+    <meta property="og:title" content="HTML5 Conference">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="http://events.html5j.org/conference/2018/11/">
-    <meta property="og:image" content="http://events.html5j.org/conference/2018/11/img/ogp.png">
-    <meta property="og:description" content="HTML5 Conference、2018年11月25日開催。">
-    <link href="https://fonts.googleapis.com/css?family=Barlow:400,600|Noto+Sans+JP:400,700" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+    <meta property="og:url" content="http://events.html5j.org/conference/2017/9/">
+    <meta property="og:image" content="http://events.html5j.org/conference/2017/9/assets/img/ogp.png">
+    <meta property="og:description" content="HTML5 Conference - 2017年9月24日（日）東京電機大学 千住キャンパスにて開催。">
+    <link rel="stylesheet" href="assets/style/all.css">
   </head>
   <body>
-    <main class="main">
-      <img src="img/logo.svg" alt="" class="main__image">
-      <h1 class="main__title">HTML5 Conference 2018</h1>
-      <time datetime="2018-11-25" class="main__date">2018.11.25 (Sun) 10:00 ～ 18:30</time>
-      <p class="main__place">東京電機大学 千住キャンパス<small class="main__place__address">〒120-8551 東京都足立区 千住旭町5番</small></p>
-      <div class="main__cta">
-        <a class="main__cta__button" href="https://docs.google.com/forms/d/e/1FAIpQLSejrz_rfG4AhoN6ofZguG7exdKDuOuWTNI0s7UNTC7uEV3s2w/viewform" target="_blank">ボランティアスタッフ募集</a>
-        <a class="main__cta__button main__cta__button--wired" href="https://docs.google.com/forms/d/e/1FAIpQLSdkhZ7lDv-EvNzq0OQkeFaHynK9O0-ep4_vADQfYLgNjf0yKw/viewform" target="_blank">スポンサー募集</a>
-      </div>
-    </main>
-    <footer class="footer">
-      <ul class="footer__social">
-        <li>
-          <a href="http://b.hatena.ne.jp/entry/" class="hatena-bookmark-button" data-hatena-bookmark-layout="basic-label" data-hatena-bookmark-lang="ja" title="このエントリーをはてなブックマークに追加">
-            <img src="https://b.st-hatena.com/images/entry-button/button-only@2x.png" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" />
-          </a>
-        <li>
-          <div class="fb-like" data-href="http://events.html5j.org/conference/2018/11/" data-layout="button" data-action="like" data-size="small" data-show-faces="false" data-share="false"></div>
-        <li>
-          <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-url="http://events.html5j.org/conference/2018/11/" data-text="HTML5 Conference 2018" data-via="html5j" data-lang="ja" data-hashtags="html5j" data-show-count="false">Tweet</a>
-      </ul>
-      <p class="footer__copyright">
-        <span class="footer__copyright__symbol">&copy;</span>
-        <a href="http://html5j.org">
-          <img src="img/logo-html5j.svg" alt="html5j" class="footer__copyright__image">
-        </a>
-      </p>
-    </footer>
+    <header>
+      <div class="conf2017s-hero">
+        <div class="conf2017s-hero__inner">
+          <h1><img src="./assets/img/page-index/main_visual.png" alt="HTML5 Conference" width="960" height="400"></h1>
+          <div class="conf2017s-hero__info">2017年9月24日（日）AM10:00〜<br>東京電機大学 千住キャンパス</div>
+        </div>
+      </div><!-- /.conf2017s-hero -->
 
+      <nav class="conf2017s-pageNav">
+        <div class="conf2017s-pageNav__inner">
+          <ul>
+            <li class="conf2017s-pageNav__item--current"><a href="./">ホーム</a></li>
+            <!-- <li><a href="./volunteer/">ボランティア</a></li> -->
+            <li><a href="./session/">セッション</a></li>
+            <li><a href="./speaker/">スピーカー</a></li>
+            <li><a href="./booth/">展示ブース</a></li>
+            <li><a href="./access/">会場・アクセス</a></li>
+            <li><a href="./guide/">当日の流れ</a></li>
+            <li><a href="./faq/">よくある質問</a></li>
+          </ul>
+          <div class="conf2017s-pageNav__opener"></div>
+        </div>
+      </nav><!-- /.conf2017s-pageNav -->
+    </header>
+
+    <div class="conf2017s-container">
+      <section>
+        <div class="conf2017s-header2">
+          <h2>開催概要</h2>
+        </div>
+        <div class="conf2017s-lead">
+          <p><strong>"We can do anything on the Web"</strong></p>
+        </div>
+        <p>ほんの少し前には、次世代Web標準技術と呼ばれた数多くの仕様は、まだまだ実用に耐えうるには時間が掛かるだろうという意味で、ある意味、夢物語のように語られていました。しかしながら、実装当時は実験的な扱いだった仕様が、この短い期間で進化し、既に多くの製品やサービスの事例で活用されるようになりました。これまで、多くのことがWebでできるようになり、これからも多くのことがWebでできるようになるでしょう。もはや、それらは夢ものがりではなく、実際に私たちの製品、サービスにどう活かしていくのかを考え、実践していく時代です。それらの切っ掛けが、本カンファレンスを通じて得られることを願っております。</p>
+        <p>HTML5 Conferenceは、Web技術に関するノウハウや最新情報の共有、そして交流の場としてありたいという想いがあります。Web技術者同士だけではなく、Webを取り巻く様々な企業や団体と、垣根を超えて気楽に交われる機会を作りたい。そういった「Web技術者の祭典」を目指しています。本カンファレンスを通じて、皆さんの成⻑を促す機会になれば幸いです。</p>
+        <div class="conf2017s-table" itemscope itemtype="http://schema.org/Event">
+          <table>
+            <tr>
+              <th>イベント名称</th>
+              <td itemprop="name">HTML5 Conference</td>
+            </tr>
+            <tr>
+              <th>開催日 時間</th>
+              <td><span itemprop="startDate" content="2017-09-03T10:00">2017年9月24日（日）10:00 ～ 18:30</span>（受付開始 9:30）</td>
+            </tr>
+            <tr>
+              <th>募集人数</th>
+              <td>1,600名</td>
+            </tr>
+            <tr>
+              <th>対象者</th>
+              <td>Web開発者、Webデザイナー</td>
+            </tr>
+            <tr>
+              <th>会場</th>
+               <td itemprop="location" itemscope itemtype="http://schema.org/Place"><span itemprop="name">東京電機大学 千住キャンパス</span>（<span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress"><span itemprop="addressRegion">東京都</span><span itemprop="addressLocality">足立区千住旭町5番</span></span>）</td>
+            </tr>
+            <tr>
+              <th>参加費</th>
+              <td>無料</td>
+            </tr>
+          </table>
+        </div>
+        <div class="conf2017s-buttonContainer">
+          <ul>
+          <li><a class="conf2017s-button" href="http://html5j.connpass.com/event/64992/" target="_blank">HTML5 Conference に参加する</a></li>
+          </ul>
+          <!-- <div class="conf2017s-button conf2017s-button--disabled">HTML5 Conference に参加する</div> -->
+          <!-- <div><small>※募集開始まで今しばらくお待ちください。</small></div> -->
+          <!-- <div><small>※本イベントは終了しました</small></div> -->
+        </div>
+      </section>
+
+      <!-- <section>
+        <div class="conf2017s-header2">
+          <h2>ボランティアスタッフ募集中！</h2>
+        </div>
+        <p>開催にあたり、カンファレンスをお手伝い頂けるボランティアスタッフを募集しています！詳細については、<a href="./volunteer/">ボランティアスタッフ募集ページ</a>でご確認いただけます。</p>
+        <div class="conf2017s-buttonContainer">
+          <ul>
+          <li><a class="conf2017s-button" href="https://docs.google.com/forms/d/e/1FAIpQLSfX3K36WNNLr5EpdOYqJlcGMhQM0A-STiNv2xxGrGhQoEQw1w/viewform" target="_blank">ボランティアスタッフに応募する</a></li>
+          </ul>
+        </div>
+      </section> -->
+
+      <!-- <section>
+        <div class="conf2017s-header2">
+          <h2>ライトニングトーク登壇者募集中！</h2>
+        </div>
+        <p>カンファレンスの最後に行われるスペシャルセッションにて、LTの登壇者を募集します！詳細はフォームをご確認ください。応募締め切りは、9月1日（金）です。</p>
+        <div class="conf2017s-buttonContainer">
+          <ul>
+          <li><a class="conf2017s-button" href="https://docs.google.com/forms/d/e/1FAIpQLSdzPt3qTlnvGMwslh667HwlzJwo0X2XL9ybeu7sBjjeVkCEyA/viewform" target="_blank">ライトニングトークに応募する</a></li>
+          </ul>
+        </div>
+      </section> -->
+
+      <section>
+        <div class="conf2017s-header2">
+          <h2>スポンサー・後援</h2>
+        </div>
+        <h3>プラチナスポンサー</h3>
+        <ul class="conf2017s-inlineList platinum">
+          <li>
+            <a href="https://www.nintendo.co.jp/" target="_blank">
+              <img src="./assets/img/page-index/sponsor/platinum-nintendo.png" alt="任天堂株式会社" title="任天堂株式会社" class="conf2017s-sponsorThumbnail conf2017s-sponsorThumbnail-platinum fit">
+            </a>
+          </li>
+          <li>
+            <a href="https://www.microsoft.com/ja-jp/" target="_blank">
+              <img src="./assets/img/page-index/sponsor/platinum-microsoft.png" alt="日本マイクロソフト株式会社" title="日本マイクロソフト株式会社" class="conf2017s-sponsorThumbnail conf2017s-sponsorThumbnail-platinum">
+            </a>
+          </li>
+          <li>
+            <a href="https://jp.access-company.com/" target="_blank">
+              <img src="./assets/img/page-index/sponsor/platinum-access.png" alt="株式会社ACCESS" title="株式会社ACCESS" class="conf2017s-sponsorThumbnail conf2017s-sponsorThumbnail-platinum">
+            </a>
+          </li>
+          <li>
+            <a href="https://developers.google.com/" target="_blank">
+              <img src="./assets/img/page-index/sponsor/platinum-google.png" alt="Google Developers" title="Google Developers" class="conf2017s-sponsorThumbnail conf2017s-sponsorThumbnail-platinum">
+            </a>
+          </li>
+          <li>
+            <a href="https://www.cyberagent.co.jp/" target="_blank">
+              <img src="./assets/img/page-index/sponsor/platinum-cyberagent.png" alt="株式会社サイバーエージェントコーポレートサイト" title="株式会社サイバーエージェントコーポレートサイト" class="conf2017s-sponsorThumbnail conf2017s-sponsorThumbnail-platinum">
+            </a>
+          </li>
+          <li>
+            <a href="https://www.adobe.com/jp/" target="_blank">
+              <img src="./assets/img/page-index/sponsor/platinum-adobe.png" alt="アドビ システムズ 株式会社" title="アドビ システムズ 株式会社" class="conf2017s-sponsorThumbnail conf2017s-sponsorThumbnail-platinum">
+            </a>
+          </li>
+          <li>
+            <a href="https://techfeed.io" target="_blank">
+              <img src="./assets/img/page-index/sponsor/platinum-techfeed.svg" alt="TechFeed" title="TechFeed" style="height:300px;padding:40px;" class="conf2017s-sponsorThumbnail conf2017s-sponsorThumbnail-platinum">
+            </a>
+          </li>
+        </ul>
+        <h3>ゴールドスポンサー</h3>
+        <ul class="conf2017s-inlineList gold">
+          <li>
+            <a href="http://www.cri.co.jp" target="_blank">
+              <img src="./assets/img/page-index/sponsor/gold-creekandrever.png" alt="株式会社クリーク･アンド･リバー社" title="株式会社クリーク･アンド･リバー社" class="conf2017s-sponsorThumbnail conf2017s-sponsorThumbnail-gold">
+            </a>
+          </li>
+          <li>
+            <a href="http://www.grapecity.com/tools/jp/?html52017/" target="_blank">
+              <img src="./assets/img/page-index/sponsor/gold-grapecity.png" alt="グレープシティのJavaScriptライブラリ" title="グレープシティのJavaScriptライブラリ" class="conf2017s-sponsorThumbnail conf2017s-sponsorThumbnail-gold">
+            </a>
+          </li>
+          <li>
+            <a href="http://www.njc.co.jp" target="_blank">
+              <img src="./assets/img/page-index/sponsor/gold-njc.png" alt="日本事務器株式会社" title="日本事務器株式会社" class="conf2017s-sponsorThumbnail conf2017s-sponsorThumbnail-gold">
+            </a>
+          </li>
+          <li>
+            <a href="http://www.newphoria.co.jp/" target="_blank">
+              <img src="./assets/img/page-index/sponsor/gold-newphoria.png" alt="株式会社ニューフォリア" title="株式会社ニューフォリア" class="conf2017s-sponsorThumbnail conf2017s-sponsorThumbnail-gold">
+            </a>
+          </li>
+          <li>
+            <a href="https://nulab-inc.com/ja/products/#cacoo" target="_blank">
+              <img src="./assets/img/page-index/sponsor/gold-cacoo.png" alt="Cacoo" title="Cacoo" class="conf2017s-sponsorThumbnail conf2017s-sponsorThumbnail-gold">
+            </a>
+          </li>
+          <li>
+            <a href="https://aktsk.jp/" target="_blank">
+              <img src="./assets/img/page-index/sponsor/gold-akatsuki.png" alt="Akatsuki Inc." title="Akatsuki Inc." class="conf2017s-sponsorThumbnail conf2017s-sponsorThumbnail-gold">
+            </a>
+          </li>
+          <li>
+            <a href="https://tuqulore.com/" target="_blank">
+              <img src="./assets/img/page-index/sponsor/gold-tuqulore.png" alt="株式会社 ツクロア" title="株式会社 ツクロア" class="conf2017s-sponsorThumbnail conf2017s-sponsorThumbnail-gold fit">
+            </a>
+          </li>
+          <li>
+            <a href="http://www.drecom.co.jp/?utm_source=Sponsorship&utm_medium=web&utm_campaign=HTML5j17" target="_blank">
+              <img src="./assets/img/page-index/sponsor/gold-drecom.png" alt="株式会社ドリコム" title="株式会社ドリコム" class="conf2017s-sponsorThumbnail conf2017s-sponsorThumbnail-gold">
+            </a>
+          </li>
+        </ul>
+        <h3>シルバースポンサー</h3>
+        <ul class="conf2017s-inlineList silver">
+          <li>
+            <a href="http://levtech.jp/" target="_blank">
+              <img src="./assets/img/page-index/sponsor/silver-levatec.png" alt="レバテック" title="レバテック" class="conf2017s-sponsorThumbnail conf2017s-sponsorThumbnail-silver">
+            </a>
+          </li>
+          <li>
+            <a href="https://www.pxgrid.com/" target="_blank">
+              <img src="./assets/img/page-index/sponsor/silver-pixelgrid.png" alt="株式会社ピクセルグリッド" title="株式会社ピクセルグリッド" class="conf2017s-sponsorThumbnail conf2017s-sponsorThumbnail-silver">
+            </a>
+          </li>
+          <li>
+            <a href="https://www.kayac.com/" target="_blank">
+              <img src="./assets/img/page-index/sponsor/silver-kayc.png" alt="面白法人カヤック" title="面白法人カヤック" class="conf2017s-sponsorThumbnail conf2017s-sponsorThumbnail-silver">
+            </a>
+          </li>
+          <li>
+            <a href="https://ics.media/" target="_blank">
+              <img src="./assets/img/page-index/sponsor/silver-ics.png" alt="株式会社 ICS" title="株式会社 ICS" class="conf2017s-sponsorThumbnail conf2017s-sponsorThumbnail-silver">
+            </a>
+          </li>
+          <li>
+            <a href="https://job-draft.jp/" target="_blank">
+              <img src="./assets/img/page-index/sponsor/silver-libsense.png" alt="転職ドラフト" title="転職ドラフト" class="conf2017s-sponsorThumbnail conf2017s-sponsorThumbnail-silver">
+            </a>
+          </li>
+          <li>
+            <a href="https://codeiq.jp/" target="_blank">
+              <img src="./assets/img/page-index/sponsor/silver-codeiq.png" alt="CodeIQ" title="CodeIQ" class="conf2017s-sponsorThumbnail conf2017s-sponsorThumbnail-silver">
+            </a>
+          </li>
+          <li>
+            <a href="https://www.pixiv.co.jp/" target="_blank">
+              <img src="./assets/img/page-index/sponsor/silver-pixiv.png" alt="ピクシブ株式会社" title="ピクシブ株式会社" class="conf2017s-sponsorThumbnail conf2017s-sponsorThumbnail-silver">
+            </a>
+          </li>
+          <li>
+            <a href="http://fjct.fujitsu.com/" target="_blank">
+              <img src="./assets/img/page-index/sponsor/silver-fjct.png" alt="富士通クラウドテクノロジーズ株式会社" title="富士通クラウドテクノロジーズ株式会社" class="conf2017s-sponsorThumbnail conf2017s-sponsorThumbnail-silver">
+            </a>
+          </li>
+        </ul>
+        <h3>ブロンズスポンサー</h3>
+        <ul class="conf2017s-inlineList bronze">
+          <li>
+            <a href="http://www.asial.co.jp/" target="_blank">
+              <img src="./assets/img/page-index/sponsor/bronze-asial.png" alt="アシアル株式会社" title="アシアル株式会社" class="conf2017s-sponsorThumbnail conf2017s-sponsorThumbnail-bronze">
+            </a>
+          </li>
+          <li>
+            <a href="http://www.fujitv.co.jp/" target="_blank">
+              <img src="./assets/img/page-index/sponsor/bronze-fujitv.png" alt="株式会社フジテレビジョン" title="株式会社フジテレビジョン" class="conf2017s-sponsorThumbnail conf2017s-sponsorThumbnail-bronze">
+            </a>
+          </li>
+          <li>
+            <a href="http://corp.gree.net/jp/ja/" target="_blank">
+              <img src="./assets/img/page-index/sponsor/bronze-gree.png" alt="グリー株式会社" title="グリー株式会社" class="conf2017s-sponsorThumbnail conf2017s-sponsorThumbnail-bronze">
+            </a>
+          </li>
+          <li>
+            <a href="https://www.dsp.co.jp/pr/ad_web.html?utm_source=html5&utm_medium=banner&utm_campaign=ids_web" target="_blank">
+              <img src="./assets/img/page-index/sponsor/bronze-ids.png" alt="Web業界の転職、キャリアアップならイマジカデジタルスケープ" title="Web業界の転職、キャリアアップならイマジカデジタルスケープ" class="conf2017s-sponsorThumbnail conf2017s-sponsorThumbnail-bronze">
+            </a>
+          </li>
+          <li>
+            <a href="http://www.kurihaku.jp/pro/ad/web/ad_web.html?utm_source=html5&utm_medium=banner&utm_campaign=kurihakupro_web" target="_blank">
+              <img src="./assets/img/page-index/sponsor/bronze-kurihaku.png" alt="Web業界の「転職」ならクリ博ナビPRO" title="Web業界の「転職」ならクリ博ナビPRO" class="conf2017s-sponsorThumbnail conf2017s-sponsorThumbnail-bronze">
+            </a>
+          </li>
+          <li>
+            <a href="www.lunascape.jp" target="_blank">
+              <img src="./assets/img/page-index/sponsor/bronze-lunascape.png" alt="Lunascape株式会社" title="Lunascape株式会社" class="conf2017s-sponsorThumbnail conf2017s-sponsorThumbnail-bronze">
+            </a>
+          </li>
+          <li>
+            <a href="http://www.members.co.jp/" target="_blank">
+              <img src="./assets/img/page-index/sponsor/bronze-members.png" alt="株式会社メンバーズ" title="株式会社メンバーズ" class="conf2017s-sponsorThumbnail conf2017s-sponsorThumbnail-bronze">
+            </a>
+          </li>
+          <li>
+            <a href="https://www.ec-cube.net/" target="_blank">
+              <img src="./assets/img/page-index/sponsor/bronze-rockon.png" alt="EC-CUBE" title="EC-CUBE" class="conf2017s-sponsorThumbnail conf2017s-sponsorThumbnail-bronze">
+            </a>
+          </li>
+          <li>
+            <a href="https://webrtc.ecl.ntt.com/" target="_blank">
+              <img src="./assets/img/page-index/sponsor/bronze-skyway-nttcom.png" alt="SkyWay - Enterprise Cloud WebRTC Platform" title="SkyWay - Enterprise Cloud WebRTC Platform" class="conf2017s-sponsorThumbnail conf2017s-sponsorThumbnail-bronze">
+            </a>
+          </li>
+          <li>
+            <a href="https://about.yahoo.co.jp/" target="_blank">
+              <img src="./assets/img/page-index/sponsor/bronze-yahoo-japan.png" alt="Yahoo Japan Corporation" title="Yahoo Japan Corporation" class="conf2017s-sponsorThumbnail conf2017s-sponsorThumbnail-bronze">
+            </a>
+          </li>
+          <li>
+            <a href="http://html5exam.jp/" target="_blank">
+              <img src="./assets/img/page-index/sponsor/bronze-lpi-japan.png" alt="HTML5プロフェッショナル認定試験 | LPI-JAPAN" title="HTML5プロフェッショナル認定試験 | LPI-JAPAN" class="conf2017s-sponsorThumbnail conf2017s-sponsorThumbnail-bronze">
+            </a>
+          </li>
+          <li>
+            <a href="http://www.salesforce.com/" target="_blank">
+              <img src="./assets/img/page-index/sponsor/bronze-salesforce.png" alt="Salesforce - セールスフォース・ドットコム" title="Salesforce - セールスフォース・ドットコム" class="conf2017s-sponsorThumbnail conf2017s-sponsorThumbnail-bronze">
+            </a>
+          </li>
+          <li>
+            <a href="https://geechs-magazine.com/" target="_blank">
+              <img src="./assets/img/page-index/sponsor/bronze-geechs.png" alt="geechs magazine(ギークスマガジン)" title="geechs magazine(ギークスマガジン)" class="conf2017s-sponsorThumbnail conf2017s-sponsorThumbnail-bronze">
+            </a>
+          </li>
+          <li>
+            <a href="https://www.topgate.co.jp/recruit/" target="_blank">
+              <img src="./assets/img/page-index/sponsor/bronze-topgate.svg" style="height:100px" alt="トップゲートでは、エンジニア・デザイナーを積極採用しています。" title="トップゲートでは、エンジニア・デザイナーを積極採用しています。" class="conf2017s-sponsorThumbnail conf2017s-sponsorThumbnail-bronze">
+            </a>
+          </li>
+          <li>
+            <a href="https://webfont.fontplus.jp/" target="_blank">
+              <img src="./assets/img/page-index/sponsor/bronze-fontplus.png" alt="FONTPLUS（フォントプラス）" title="FONTPLUS（フォントプラス）" class="conf2017s-sponsorThumbnail conf2017s-sponsorThumbnail-bronze">
+            </a>
+          </li>
+        </ul>
+        <h3>後援</h3>
+        <ul class="conf2017s-inlineList support">
+          <li>
+            <a href="https://www.webdino.org/" target="_blank">
+              <img src="./assets/img/page-index/sponsor/support-webdino.png" alt="WebDINO Japan" title="WebDINO Japan" class="conf2017s-sponsorThumbnail conf2017s-sponsorThumbnail-mediaSupport">
+            </a>
+          </li>
+          <li>
+            <a href="http://www.w3.org/" target="_blank">
+              <img src="./assets/img/page-index/sponsor/support-w3c.svg" alt="W3C" title="W3C" class="conf2017s-sponsorThumbnail conf2017s-sponsorThumbnail-mediaSupport" style="height: 80px">
+            </a>
+          </li>
+        </ul>
+        <h3>メディアスポンサー</h3>
+        <ul class="conf2017s-inlineList media">
+          <li>
+            <a href="http://www.buildinsider.net/" target="_blank">
+              <img src="./assets/img/page-index/sponsor/media-buildinsider.png" alt="Build Insider" title="Build Insider" class="conf2017s-sponsorThumbnail conf2017s-sponsorThumbnail-mediaSupport">
+            </a>
+          </li>
+          <li>
+            <a href="http://www.atmarkit.co.jp/" target="_blank">
+              <img src="./assets/img/page-index/sponsor/media-atmarkit.png" alt="@IT" title="@IT" class="conf2017s-sponsorThumbnail conf2017s-sponsorThumbnail-mediaSupport">
+            </a>
+          </li>
+          <li>
+            <a href="http://gihyo.jp/" target="_blank">
+              <img src="./assets/img/page-index/sponsor/media-gihyo.png" alt="gihyo.jp" title="gihyo.jp" class="conf2017s-sponsorThumbnail conf2017s-sponsorThumbnail-mediaSupport">
+            </a>
+          </li>
+          <li>
+            <a href="http://techwave.jp/" target="_blank">
+              <img src="./assets/img/page-index/sponsor/media-techwave.png" alt="HTML5の可能性に注目しているメディアです！" title="HTML5の可能性に注目しているメディアです！" class="conf2017s-sponsorThumbnail conf2017s-sponsorThumbnail-mediaSupport">
+            </a>
+          </li>
+          <li>
+            <a href="https://thinkit.co.jp/" target="_blank">
+              <img src="./assets/img/page-index/sponsor/media-thinkit.png" alt="Think IT" title="Think IT" class="conf2017s-sponsorThumbnail conf2017s-sponsorThumbnail-mediaSupport">
+            </a>
+          </li>
+          <li>
+            <a href="http://itpro.nikkeibp.co.jp/" target="_blank">
+              <img src="./assets/img/page-index/sponsor/media-itpro.png" alt="IT（情報技術）にかかわるプロフェッショナルに向けた総合情報サイト" title="IT（情報技術）にかかわるプロフェッショナルに向けた総合情報サイト" class="conf2017s-sponsorThumbnail conf2017s-sponsorThumbnail-mediaSupport">
+            </a>
+          </li>
+          <li>
+            <a href="http://codezine.jp/" target="_blank">
+              <img src="./assets/img/page-index/sponsor/media-codezine.png" alt="プロフェッショナルなソフトウェア開発者向けのメディアです。" title="プロフェッショナルなソフトウェア開発者向けのメディアです。" class="conf2017s-sponsorThumbnail conf2017s-sponsorThumbnail-mediaSupport">
+            </a>
+          </li>
+          <li>
+            <a href="https://japan.zdnet.com/" target="_blank">
+              <img src="./assets/img/page-index/sponsor/media-zdnet.png" alt="CIOとITマネージャーの課題を解決するオンラインメディア" title="CIOとITマネージャーの課題を解決するオンラインメディア" class="conf2017s-sponsorThumbnail conf2017s-sponsorThumbnail-mediaSupport">
+            </a>
+          </li>
+          <li>
+            <a href="https://html5experts.jp" target="_blank">
+              <img src="./assets/img/page-index/sponsor/media-hx.svg" alt="HTML5Experts.jp" title="HTML5Experts.jp" style="height:80px;padding:10px" class="conf2017s-sponsorThumbnail conf2017s-sponsorThumbnail-mediaSupport">
+            </a>
+          </li>
+        </ul>
+      </section>
+    </div><!-- /.conf2017s-container -->
+
+    <footer class="conf2017s-pageFooter">
+      <div class="conf2017s-pageFooter__inner">
+        <div class="conf2017s-pageFooter__logo">
+          <img src="./assets/img/footer/html5j-logo.svg" alt="html5j" width="200" height="60">
+        </div>
+      </div>
+    </footer><!-- /.conf2017s-pageFooter -->
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="./assets/script/page-nav.js"></script>
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
         (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -51,19 +398,5 @@
       ga('create', 'UA-44039742-2', 'auto');
       ga('send', 'pageview');
     </script>
-
-    <!-- はてなブックマーク -->
-    <script type="text/javascript" src="https://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script>
-    <!-- Twitter -->
-    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-    <!-- Facebook -->
-    <div id="fb-root"></div>
-    <script>(function(d, s, id) {
-      var js, fjs = d.getElementsByTagName(s)[0];
-      if (d.getElementById(id)) return;
-      js = d.createElement(s); js.id = id;
-      js.src = 'https://connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v3.1';
-      fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));</script>
   </body>
 </html>
