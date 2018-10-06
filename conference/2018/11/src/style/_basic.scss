@@ -32,27 +32,27 @@
 
 /* options text
    ========================================================================== */
-.conf2017s--alignLeft   {text-align:left !important; }
-.conf2017s--alignRight  {text-align:right !important; }
-.conf2017s--alignCenter {text-align:center !important; }
-.conf2017s--alignTop    {vertical-align:top !important; }
-.conf2017s--alignMiddle {vertical-align:middle !important; }
-.conf2017s--alignBottom {vertical-align:bottom !important; }
+.conf2018s--alignLeft   {text-align:left !important; }
+.conf2018s--alignRight  {text-align:right !important; }
+.conf2018s--alignCenter {text-align:center !important; }
+.conf2018s--alignTop    {vertical-align:top !important; }
+.conf2018s--alignMiddle {vertical-align:middle !important; }
+.conf2018s--alignBottom {vertical-align:bottom !important; }
 
-.conf2017s--fontXSmall { font-size:getFs( -2, 'px' ) !important; font-size:getFs( -2, 'rem' ) !important; }
-.conf2017s--fontSmall  { font-size:getFs( -1, 'px' ) !important; font-size:getFs( -1, 'rem' ) !important; }
-.conf2017s--fontBase   { font-size:getFs(  0, 'px' ) !important; font-size:getFs(  0, 'rem' ) !important; }
-.conf2017s--fontLarge  { font-size:getFs( +1, 'px' ) !important; font-size:getFs( +1, 'rem' ) !important; }
-.conf2017s--fontXLarge { font-size:getFs( +2, 'px' ) !important; font-size:getFs( +2, 'rem' ) !important; }
-// .conf2017s--fontBold   { font-weight:bold !important; }
+.conf2018s--fontXSmall { font-size:getFs( -2, 'px' ) !important; font-size:getFs( -2, 'rem' ) !important; }
+.conf2018s--fontSmall  { font-size:getFs( -1, 'px' ) !important; font-size:getFs( -1, 'rem' ) !important; }
+.conf2018s--fontBase   { font-size:getFs(  0, 'px' ) !important; font-size:getFs(  0, 'rem' ) !important; }
+.conf2018s--fontLarge  { font-size:getFs( +1, 'px' ) !important; font-size:getFs( +1, 'rem' ) !important; }
+.conf2018s--fontXLarge { font-size:getFs( +2, 'px' ) !important; font-size:getFs( +2, 'rem' ) !important; }
+// .conf2018s--fontBold   { font-weight:bold !important; }
 
 /* options display
    ========================================================================== */
-.conf2017s--disableLeargeScreen{display:none;}
+.conf2018s--disableLeargeScreen{display:none;}
 
 @include max-screen( $breakpoint-small ) {
-  .conf2017s--disableLeargeScreen{display:block !important;}
-  .conf2017s--disableSmallScreen {display:none  !important;}
+  .conf2018s--disableLeargeScreen{display:block !important;}
+  .conf2018s--disableSmallScreen {display:none  !important;}
 }
 
 /* ==========================================================================

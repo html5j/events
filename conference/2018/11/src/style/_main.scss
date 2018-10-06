@@ -24,14 +24,14 @@ $z-pageNav: 1;
    Section comment block
    ========================================================================== */
 
-.conf2017s-pageHeader{
+.conf2018s-pageHeader{
   padding: 10px 0;
 }
-.conf2017s-pageHeader__inner{
+.conf2018s-pageHeader__inner{
   @include container();
   display: table;
 }
-.conf2017s-pageHeader__title{
+.conf2018s-pageHeader__title{
   vertical-align: middle;
   display: table-cell;
   width: 1%;
@@ -40,13 +40,13 @@ $z-pageNav: 1;
   }
 }
 
-// .conf2017s-pageHeader__title {
+// .conf2018s-pageHeader__title {
 //   position: relative;
 //   top: 12px;
 //   left: 10px;
 // }
 
-.conf2017s-info{
+.conf2018s-info{
   font-size: getFs( -1, 'rem' );
   text-align: right;
   vertical-align: middle;
@@ -54,7 +54,7 @@ $z-pageNav: 1;
 }
 
 @include max-screen( $breakpoint-middle ) {
-  .conf2017s-pageHeader__title{
+  .conf2018s-pageHeader__title{
     img{
       width: 282px * .75;
       height: auto;
@@ -63,23 +63,23 @@ $z-pageNav: 1;
 }
 
 @include max-screen( $breakpoint-small ) {
-  .conf2017s-pageHeader__inner{
+  .conf2018s-pageHeader__inner{
     display: block;
     text-align: center;
   }
-  .conf2017s-pageHeader__title{
+  .conf2018s-pageHeader__title{
     display: inline-block;
     vertical-align: middle;
     width: auto;
   }
-  .conf2017s-pageHeader__title{
+  .conf2018s-pageHeader__title{
     top: 8px;
     left: 0px;
     img{
       width: 300px * .5;
     }
   }
-  .conf2017s-info{
+  .conf2018s-info{
     font-size: getFs( -1, 'rem' );
     line-height: 1.4;
     text-align: center;
@@ -89,15 +89,15 @@ $z-pageNav: 1;
 }
 
 /* ==========================================================================
-   .conf2017s-pageNav
+   .conf2018s-pageNav
    ========================================================================== */
-li.conf2017s-pageNav__item--current {
+li.conf2018s-pageNav__item--current {
   background-color: #f7d8f1;
 }
-nav.conf2017s-pageNav{
+nav.conf2018s-pageNav{
   background-color: #e8edec;
 }
-  .conf2017s-pageNav__inner{
+  .conf2018s-pageNav__inner{
     @include container();
     ul{
       position: relative;
@@ -125,12 +125,12 @@ nav.conf2017s-pageNav{
       padding: 8px 10px;
     }
   }
-  .conf2017s-pageNav__opener{
+  .conf2018s-pageNav__opener{
     display: none;
   }
 
 @include max-screen( $breakpoint-middle ) {
-  .conf2017s-pageNav__inner{
+  .conf2018s-pageNav__inner{
     ul{
       font-size: getFs( -2, 'rem' );
     }
@@ -138,12 +138,12 @@ nav.conf2017s-pageNav{
 }
 
 @include max-screen( $breakpoint-small ) {
-nav.conf2017s-pageNav{
+nav.conf2018s-pageNav{
   border-top: none;
   border-bottom: none;
   background: none;
 }
-  .conf2017s-pageNav__inner{
+  .conf2018s-pageNav__inner{
     padding: 0;
     ul{
       font-size: getFs( -1, 'rem' );
@@ -154,7 +154,7 @@ nav.conf2017s-pageNav{
       border-top: 1px solid #c7c7c7;
       background: rgba( 255, 255, 255, .95 );
       box-shadow: 0 2px 3px rgba( 0, 0, 0, .3);
-      .conf2017s-pageNav--open &{
+      .conf2018s-pageNav--open &{
         display: block;
       }
     }
@@ -169,7 +169,7 @@ nav.conf2017s-pageNav{
       padding: 10px;
     }
   }
-  .conf2017s-pageNav__opener{
+  .conf2018s-pageNav__opener{
     line-height: 1;
     cursor: pointer;
     position: absolute;
@@ -188,11 +188,11 @@ nav.conf2017s-pageNav{
 }
 
 /* ==========================================================================
-   .conf2017s-hero
+   .conf2018s-hero
    ========================================================================== */
-.conf2017s-hero{
+.conf2018s-hero{
   background: #ead3e5 url( ../img/page-index/bg.png ) 50% 50%;
-  .conf2017s-hero__inner{
+  .conf2018s-hero__inner{
     @include container();
     padding: 0;
     position: relative;
@@ -208,7 +208,7 @@ nav.conf2017s-pageNav{
     padding: 0;
   }
 }
-  .conf2017s-hero__info{
+  .conf2018s-hero__info{
     color: #000;
     position: absolute;
     right: 8px;
@@ -220,10 +220,10 @@ nav.conf2017s-pageNav{
   }
 
 @include max-screen( $breakpoint-small ) {
-.conf2017s-hero{
+.conf2018s-hero{
   background: none;
 }
-  .conf2017s-hero__info{
+  .conf2018s-hero__info{
     color: #000;
     font-size: getFs( -1, 'rem' );
     line-height: 1.4;
@@ -235,15 +235,15 @@ nav.conf2017s-pageNav{
 }
 
 /* ==========================================================================
-   .conf2017s-container
+   .conf2018s-container
    ========================================================================== */
-.conf2017s-container{
+.conf2018s-container{
   @include container();
 }
 /* ==========================================================================
-   .conf2017s-header1
+   .conf2018s-header1
    ========================================================================== */
-.conf2017s-header1{
+.conf2018s-header1{
   margin: 50px 0 10px;
   h1{
     font-size: getFs( +3, 'rem' );
@@ -263,7 +263,7 @@ nav.conf2017s-pageNav{
 /* ==========================================================================
    
    ========================================================================== */
-.conf2017s-header2{
+.conf2018s-header2{
   padding-bottom: 3px;
   border-bottom: 1px solid #f7d8f1;
   margin: 30px 0 10px;
@@ -277,17 +277,17 @@ nav.conf2017s-pageNav{
 
 
 /* ==========================================================================
-   .conf2017s-lead
+   .conf2018s-lead
    ========================================================================== */
-.conf2017s-lead{
+.conf2018s-lead{
   font-size: getFs( +1, 'rem' );
   margin: 20px 0;
 }
 
 /* ==========================================================================
-   .conf2017s-button
+   .conf2018s-button
    ========================================================================== */
-.conf2017s-button{
+.conf2018s-button{
   color: #fff;
   font-size: getFs( +1, 'rem' );
   text-decoration: none;
@@ -298,12 +298,12 @@ nav.conf2017s-pageNav{
   background-color: #1b354c;
   border-radius: 4px;
   transition: .3s;
-  &:hover:not( .conf2017s-button--disabled ){
+  &:hover:not( .conf2018s-button--disabled ){
     color: #fff;
     text-decoration: none;
     background-color: #284f71;
   }
-  &.conf2017s-button--disabled{
+  &.conf2018s-button--disabled{
     cursor: auto;
     border-bottom: none;
     color: #fff;
@@ -312,9 +312,9 @@ nav.conf2017s-pageNav{
 }
 
 /* ==========================================================================
-   .conf2017s-buttonContainer
+   .conf2018s-buttonContainer
    ========================================================================== */
-.conf2017s-buttonContainer{
+.conf2018s-buttonContainer{
   margin: 30px 0;
   ul{
     list-style: none;
@@ -326,7 +326,7 @@ nav.conf2017s-pageNav{
     margin: 0 10px 0 0;
   }
 }
-.conf2017s-buttonContainer__note{
+.conf2018s-buttonContainer__note{
   display: inline-block;
   margin-top: 4px;
   padding: 0.3em 1em 0.2em;
@@ -348,7 +348,7 @@ nav.conf2017s-pageNav{
 }
 
 @include max-screen( $breakpoint-small ) {
-.conf2017s-buttonContainer{
+.conf2018s-buttonContainer{
   text-align: center;
   li{
     display: block;
@@ -357,9 +357,9 @@ nav.conf2017s-pageNav{
 }
 }
 /* ==========================================================================
-   .conf2017s-table
+   .conf2018s-table
    ========================================================================== */
-.conf2017s-table{
+.conf2018s-table{
   margin: 40px 0;
   th, td{
     padding: .2em 20px .2em 0;
@@ -370,7 +370,7 @@ nav.conf2017s-pageNav{
 }
 
 @media screen and (max-width: 767px){
-  .conf2017s-table{
+  .conf2018s-table{
     th, td{
       display: block;
       padding: .2em 0;
@@ -379,13 +379,13 @@ nav.conf2017s-pageNav{
 }
 
 /* ==========================================================================
-   .conf2017s-timetable
+   .conf2018s-timetable
    ========================================================================== */
-.conf2017s-timetable-wrapper {
+.conf2018s-timetable-wrapper {
   overflow-x: auto;
 }
 
-.conf2017s-timetable {
+.conf2018s-timetable {
   width: 100%;
   empty-cells: show;
   border-collapse: separate;
@@ -419,7 +419,7 @@ nav.conf2017s-pageNav{
       min-width: 120px;
       vertical-align: top;
     }
-    .conf2017s-timetable-break {
+    .conf2018s-timetable-break {
       td {
         font-size: smaller;
         text-align: center;
@@ -429,20 +429,20 @@ nav.conf2017s-pageNav{
   }
 }
 
-.conf2017s-timetable-hashtag {
+.conf2018s-timetable-hashtag {
   display: block;
   margin-top: 5px;
   font-size: smaller;
   font-weight: normal;
 }
 
-.conf2017s-timetable-title {
+.conf2018s-timetable-title {
   margin-top: 0;
   margin-bottom: 0;
   font-weight: bold;
 }
 
-.conf2017s-timetable-speaker {
+.conf2018s-timetable-speaker {
   margin-top: 0.25em;
   margin-bottom: 0;
   padding-left: 0;
@@ -454,7 +454,7 @@ nav.conf2017s-pageNav{
   }
 }
 
-.conf2017s-timetable-speaker-image {
+.conf2018s-timetable-speaker-image {
   margin-right: 5px;
   width: 1rem;
   height: 1rem;
@@ -464,11 +464,11 @@ nav.conf2017s-pageNav{
   vertical-align: middle;
 }
 
-.conf2017s-timetable-speaker-name {
+.conf2018s-timetable-speaker-name {
   margin-bottom: 0;
 }
 
-.conf2017s-timetable-button {
+.conf2018s-timetable-button {
   display: inline-block;
   margin-top: 1em;
   margin-bottom: 0.5em;
@@ -483,7 +483,7 @@ nav.conf2017s-pageNav{
   }
 }
 
-.conf2017s-timetable-banner {
+.conf2018s-timetable-banner {
   margin: 8px auto;
   padding: 8px 0;
   width: 320px;
@@ -491,18 +491,18 @@ nav.conf2017s-pageNav{
   border-bottom: 1px dashed #1b354b;
 }
 
-.conf2017s-timetable-banner-label {
+.conf2018s-timetable-banner-label {
   font-weight: bold;
 }
 
-.conf2017s-timetable-archive {
+.conf2018s-timetable-archive {
   margin-top: 0.5em;
   padding-top: 0.5em;
   border-top: 1px solid rgba(0,0,0, 0.1);
   color: #1b354b;
 }
 
-.conf2017s-timetable-archive-link {
+.conf2018s-timetable-archive-link {
   display: inline-block;
   margin-right: 0.5em;
   &:before {
@@ -520,9 +520,9 @@ nav.conf2017s-pageNav{
 }
 
 /* ==========================================================================
-   .conf2017s-list
+   .conf2018s-list
    ========================================================================== */
-.conf2017s-inlineList {
+.conf2018s-inlineList {
   padding-left: 0;
   list-style: none;
   @include clearfix;
@@ -532,9 +532,9 @@ nav.conf2017s-pageNav{
 }
 
 /* ==========================================================================
-   .conf2017s-imageFull
+   .conf2018s-imageFull
    ========================================================================== */
-.conf2017s-imageFull{
+.conf2018s-imageFull{
   margin: 30px 0;
   img{
     display: block;
@@ -545,9 +545,9 @@ nav.conf2017s-pageNav{
 
 
 /* ==========================================================================
-   .conf2017s-itemContainer
+   .conf2018s-itemContainer
    ========================================================================== */
-.conf2017s-itemContainer{
+.conf2018s-itemContainer{
   @include zero ();
   margin: 20px -5px;
   &:after{
@@ -559,9 +559,9 @@ nav.conf2017s-pageNav{
 
 
 /* ==========================================================================
-   .conf2017s-item4
+   .conf2018s-item4
    ========================================================================== */
-.conf2017s-item4{
+.conf2018s-item4{
   font-family: $fontSansSerif;
   font-size: getFs( 0, 'rem' );
   box-sizing: border-box;
@@ -579,7 +579,7 @@ nav.conf2017s-pageNav{
   }
 }
 
-  .conf2017s-item4__image{
+  .conf2018s-item4__image{
     margin-bottom: 5px;
     img{
       display: block;
@@ -593,33 +593,33 @@ nav.conf2017s-pageNav{
       }
     }
   }
-  .conf2017s-item4__label{
+  .conf2018s-item4__label{
     text-align: center;
   }
 @include max-screen( $breakpoint-middle ) {
-  .conf2017s-item4{
+  .conf2018s-item4{
     width: 49.999%;
   }
 }
 @include max-screen( $breakpoint-small ) {
-  .conf2017s-item4{
+  .conf2018s-item4{
     display: block;
     width: auto;
   }
 }
 /* ==========================================================================
-   .conf2017s-pageFooter
+   .conf2018s-pageFooter
    ========================================================================== */
-footer.conf2017s-pageFooter{
+footer.conf2018s-pageFooter{
   padding: 10px 0 30px;
   margin-top: 100px;
   background-color: #f3895b;
 }
-  .conf2017s-pageFooter__inner{
+  .conf2018s-pageFooter__inner{
     @include container();
   }
-    .conf2017s-pageFooter__sponsor,
-    .conf2017s-pageFooter__supporter{
+    .conf2018s-pageFooter__sponsor,
+    .conf2018s-pageFooter__supporter{
       @include zero ();
       padding: 20px 0;
       border-bottom: 1px solid #E07446;
@@ -638,9 +638,9 @@ footer.conf2017s-pageFooter{
       	display: block;
       }
     }
-    .conf2017s-pageFooter__supporter{
+    .conf2018s-pageFooter__supporter{
     }
-    .conf2017s-pageFooter__logo{
+    .conf2018s-pageFooter__logo{
       margin-top: 20px;
       img{
       	display: block;
@@ -649,9 +649,9 @@ footer.conf2017s-pageFooter{
     }
 
 /* ==========================================================================
-   .conf2017s-eventSummary
+   .conf2018s-eventSummary
    ========================================================================== */
-.conf2017s-eventSummary{
+.conf2018s-eventSummary{
   dt {
     font-size: 16px;
     font-weight: bold;
@@ -667,7 +667,7 @@ footer.conf2017s-pageFooter{
   }
 }
 
-.conf2017s-sponsorThumbnail{
+.conf2018s-sponsorThumbnail{
   display: block;
   padding: 10px;
   margin-right: 10px;
@@ -679,23 +679,23 @@ footer.conf2017s-pageFooter{
   &:hover {
     border: 1px solid #f7d8f1;
   }
-  &.conf2017s-sponsorThumbnail-platinum{
+  &.conf2018s-sponsorThumbnail-platinum{
     width: 300px;
     height: auto;
   }
-  &.conf2017s-sponsorThumbnail-gold{
+  &.conf2018s-sponsorThumbnail-gold{
     width: 200px;
     height: auto;
   }
-  &.conf2017s-sponsorThumbnail-silver{
+  &.conf2018s-sponsorThumbnail-silver{
     width: 120px;
     height: auto;
   }
-  &.conf2017s-sponsorThumbnail-bronze{
+  &.conf2018s-sponsorThumbnail-bronze{
     width: 100px;
     height: auto;
   }
-  &.conf2017s-sponsorThumbnail-mediaSupport{
+  &.conf2018s-sponsorThumbnail-mediaSupport{
     width: 80px;
     height: auto;
     padding: 5px;
@@ -707,9 +707,9 @@ footer.conf2017s-pageFooter{
 }
 
 /* ==========================================================================
-   .conf2017s-session
+   .conf2018s-session
    ========================================================================== */
-.conf2017s-session{
+.conf2018s-session{
   padding: 14px 18px;
   margin: 20px 0;
   background-color: #fff;
@@ -725,18 +725,18 @@ footer.conf2017s-pageFooter{
     margin-bottom: 0;
   }
 }
-  .conf2017s-session__time{
+  .conf2018s-session__time{
     font-size: 12px;
     time{}
   }
-  .conf2017s-session__title{
+  .conf2018s-session__title{
     h1{
       font-size: 16px;
       font-weight: bold;
       margin: 0;
     }
   }
-  .conf2017s-session__tag{
+  .conf2018s-session__tag{
     ul{
       font-size: 0;
       list-style: none;
@@ -762,19 +762,19 @@ footer.conf2017s-pageFooter{
       }
     }
   }
-  .conf2017s-session__tagLabel{
+  .conf2018s-session__tagLabel{
     color: #757575;
     font-size: 10px;
     display: inline-block;
     margin-right: 0.5em;
   }
-  .conf2017s-session__main{
+  .conf2018s-session__main{
     font-size: 14px;
   }
-    .conf2017s-session__notice{
+    .conf2018s-session__notice{
       font-size: 10px;
     }
-  .conf2017s-session__speakers{
+  .conf2018s-session__speakers{
     overflow: hidden;
     ul{
       font-size: 0;
@@ -799,7 +799,7 @@ footer.conf2017s-pageFooter{
       display: block;
     }
   }
-  .conf2017s-session__speakerImage{
+  .conf2018s-session__speakerImage{
     width: 72px;
     height: 72px;
     margin-bottom: 4px;
@@ -817,10 +817,10 @@ footer.conf2017s-pageFooter{
       }
     }
   }
-  .conf2017s-session__speakerName{
+  .conf2018s-session__speakerName{
     font-size: 12px;
   }
-  .conf2017s-session__speakerAffil{
+  .conf2018s-session__speakerAffil{
     font-size: 10px;
     font-weight: bold;
   }
@@ -828,54 +828,54 @@ footer.conf2017s-pageFooter{
 /* ==========================================================================
    
    ========================================================================== */
-.conf2017s-sessionGroup{
+.conf2018s-sessionGroup{
   padding: 20px;
   margin: 20px 0 60px;
   background: #ddd;
   border-radius: 4px;
-  &.conf2017s-sessionGroup--groupH{background-color: hsla( 163, 70%, 60%, 1 );}
-  &.conf2017s-sessionGroup--groupA{background-color: hsla( 223, 70%, 60%, 1 );}
-  &.conf2017s-sessionGroup--groupB{background-color: hsla( 283, 70%, 60%, 1 );}
-  &.conf2017s-sessionGroup--groupC{background-color: hsla( 343, 70%, 60%, 1 );}
-  &.conf2017s-sessionGroup--groupD{background-color: hsla(  43, 70%, 60%, 1 );}
-  &.conf2017s-sessionGroup--groupE{background-color: hsla( 103, 70%, 60%, 1 );}
+  &.conf2018s-sessionGroup--groupH{background-color: hsla( 163, 70%, 60%, 1 );}
+  &.conf2018s-sessionGroup--groupA{background-color: hsla( 223, 70%, 60%, 1 );}
+  &.conf2018s-sessionGroup--groupB{background-color: hsla( 283, 70%, 60%, 1 );}
+  &.conf2018s-sessionGroup--groupC{background-color: hsla( 343, 70%, 60%, 1 );}
+  &.conf2018s-sessionGroup--groupD{background-color: hsla(  43, 70%, 60%, 1 );}
+  &.conf2018s-sessionGroup--groupE{background-color: hsla( 103, 70%, 60%, 1 );}
 }
-header.conf2017s-sessionGroup__header{
+header.conf2018s-sessionGroup__header{
   h1{
     font-size: 28px;
     margin: 0;
-    .conf2017s-sessionGroup--groupH &{color: hsla( 208, 48%, 20%, 1);}
-    .conf2017s-sessionGroup--groupA &{color: hsla( 260, 48%, 20%, 1 );}
-    .conf2017s-sessionGroup--groupB &{color: hsla( 328, 48%, 20%, 1 );}
-    .conf2017s-sessionGroup--groupC &{color: hsla(  28, 48%, 20%, 1 );}
-    .conf2017s-sessionGroup--groupD &{color: hsla(  88, 48%, 20%, 1 );}
-    .conf2017s-sessionGroup--groupE &{color: hsla( 148, 48%, 20%, 1 );}
+    .conf2018s-sessionGroup--groupH &{color: hsla( 208, 48%, 20%, 1);}
+    .conf2018s-sessionGroup--groupA &{color: hsla( 260, 48%, 20%, 1 );}
+    .conf2018s-sessionGroup--groupB &{color: hsla( 328, 48%, 20%, 1 );}
+    .conf2018s-sessionGroup--groupC &{color: hsla(  28, 48%, 20%, 1 );}
+    .conf2018s-sessionGroup--groupD &{color: hsla(  88, 48%, 20%, 1 );}
+    .conf2018s-sessionGroup--groupE &{color: hsla( 148, 48%, 20%, 1 );}
   }
 }
 
 @include max-screen( $breakpoint-small ) {
-  .conf2017s-sessionGroup{
+  .conf2018s-sessionGroup{
     border: 1px solid #ddd;
     padding: 14px;
     margin: 20px 0 60px;
   }
-  header.conf2017s-sessionGroup__header{
+  header.conf2018s-sessionGroup__header{
     margin-left: 0;
   }
 }
 
 
 /* ==========================================================================
-   .conf2017s-speaker
+   .conf2018s-speaker
    ========================================================================== */
 
-.conf2017s-speaker{
+.conf2018s-speaker{
   font-size: 14px;
   display: table;
   width: 100%;
   margin: 30px 0 60px;
 }
-  .conf2017s-speaker__image{
+  .conf2018s-speaker__image{
     vertical-align: top;
     box-sizing: border-box;
     display: table-cell;
@@ -889,7 +889,7 @@ header.conf2017s-sessionGroup__header{
       border-radius: 4px;
     }
   }
-  .conf2017s-speaker__text{
+  .conf2018s-speaker__text{
     vertical-align: top;
     box-sizing: border-box;
     display: table-cell;
@@ -898,57 +898,57 @@ header.conf2017s-sessionGroup__header{
       padding-left: 220px;
     }
   }
-  .conf2017s-speaker__name{
+  .conf2018s-speaker__name{
     color: #1b354c;
     font-size: 22px;
   }
-  .conf2017s-speaker__affil{
+  .conf2018s-speaker__affil{
     color: #1b354c;
     font-size: 12px;
   }
-  .conf2017s-speaker__bio{
+  .conf2018s-speaker__bio{
     margin-top: 16px;
     color: #757575;
     p{
       margin: 8px 0;
     }
   }
-  .conf2017s-speaker__h{
+  .conf2018s-speaker__h{
     margin: 10px 0;
     font-weight: bold;
   }
 @include max-screen( $breakpoint-middle ) {
-.conf2017s-speaker{
+.conf2018s-speaker{
   width: auto;
 }
-  .conf2017s-speaker__image{
+  .conf2018s-speaker__image{
     width: 30%;
     img{
       min-width: 150px;
     }
   }
-  .conf2017s-speaker__text{
+  .conf2018s-speaker__text{
     width: 70%;
     &:first-child{
       padding-left: 30%;
     }
   }
-  .conf2017s-speaker__name{
+  .conf2018s-speaker__name{
     font-size: 20px;
   }
-  .conf2017s-speaker__affil{}
-  .conf2017s-speaker__bio{
+  .conf2018s-speaker__affil{}
+  .conf2018s-speaker__bio{
     margin-top: 14px;
     p{}
   }
-  .conf2017s-speaker__h{}
+  .conf2018s-speaker__h{}
 }
 @include max-screen( $breakpoint-small ) {
-.conf2017s-speaker{
+.conf2018s-speaker{
   display: block;
   margin: 30px 0;
 }
-  .conf2017s-speaker__image{
+  .conf2018s-speaker__image{
     text-align: center;
     display: block;
     width: auto;
@@ -958,7 +958,7 @@ header.conf2017s-sessionGroup__header{
       width: auto;
     }
   }
-  .conf2017s-speaker__text{
+  .conf2018s-speaker__text{
     display: block;
     width: auto;
     padding-top: 0;
@@ -966,19 +966,19 @@ header.conf2017s-sessionGroup__header{
       padding-left: 0;
     }
   }
-  .conf2017s-speaker__name{
+  .conf2018s-speaker__name{
     text-align: center;
   }
-  .conf2017s-speaker__affil{
+  .conf2018s-speaker__affil{
     text-align: center;
   }
-  .conf2017s-speaker__bio{
+  .conf2018s-speaker__bio{
     margin-top: 16px;
     p{
       margin: 8px 0;
     }
   }
-  .conf2017s-speaker__h{
+  .conf2018s-speaker__h{
     margin: 10px 0;
     font-weight: bold;
   }
@@ -1006,12 +1006,12 @@ header.conf2017s-sessionGroup__header{
 }
 
 /* ==========================================================================
-   .conf2017s-booth
+   .conf2018s-booth
    ========================================================================== */
-.conf2017s-booth {
+.conf2018s-booth {
 }
 
-.conf2017s-booth-info {
+.conf2018s-booth-info {
   dt {
     font-weight: bold;
   }
@@ -1024,11 +1024,11 @@ header.conf2017s-sessionGroup__header{
   }
 }
 
-.conf2017s-booth-info__list {
+.conf2018s-booth-info__list {
   margin: 0.5em 0;
 }
 
-.conf2017s-booth-info__map {
+.conf2018s-booth-info__map {
   margin: 0.5em 0;
   padding: 1em;
   background-color: #e8edec;
@@ -1042,21 +1042,21 @@ header.conf2017s-sessionGroup__header{
   }
 }
 
-.conf2017s-booth-item {
+.conf2018s-booth-item {
   border: 1px solid #c7c7c7;
   border-radius: 4px;
   padding: 0.5em 1em;
   margin: 0.5em 0;
 }
 
-.conf2017s-booth-item__title {
+.conf2018s-booth-item__title {
   margin-top: 0.5em;
   margin-bottom: 0;
   font-size: 16px;
   font-weight: bold;
 }
 
-.conf2017s-booth-item__subtitle {
+.conf2018s-booth-item__subtitle {
   font-size: inherit;
   margin-bottom: 0;
   & + p {
@@ -1064,13 +1064,13 @@ header.conf2017s-sessionGroup__header{
   }
 }
 
-.conf2017s-booth-item__byname {
+.conf2018s-booth-item__byname {
   display: block;
   font-size: 12px;
   color: #757575;
 }
 
-.conf2017s-booth-item__image {
+.conf2018s-booth-item__image {
   display: inline-block;
   margin: 1em 0;
   width: 150px;
@@ -1085,21 +1085,21 @@ header.conf2017s-sessionGroup__header{
   }
 }
 
-.conf2017s-booth-item__desc {
+.conf2018s-booth-item__desc {
   font-size: 12px;
   p:first-child {
     margin-top: 0;
   }
 }
 
-.conf2017s-booth-info__map__note {
+.conf2018s-booth-info__map__note {
   display: block;
   margin-top: 0.5em;
   font-size: 12px;
 }
 
 /* ==========================================================================
-   .conf2017s-access
+   .conf2018s-access
    ========================================================================== */
 
 /* アクセス路線の表示調整  */

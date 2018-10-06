@@ -2,10 +2,10 @@
   'use strict';
 
   $( function () {
-    var $el = $( '.conf2017s-pageNav' );
+    var $el = $( '.conf2018s-pageNav' );
     var $list   = $el.find( 'ul' );
-    var $opener = $el.find( '.conf2017s-pageNav__opener' );
-    var modifier = 'conf2017s-pageNav--open';
+    var $opener = $el.find( '.conf2018s-pageNav__opener' );
+    var modifier = 'conf2018s-pageNav--open';
 
     $opener.on( 'click', function () {
       $.when(
@@ -34,13 +34,13 @@
       $(selector).append(item);
     });
   }
-  if ($('.conf2017s-inlineList').length !== 0) {
-    randomOrder('.conf2017s-inlineList.platinum');
-    randomOrder('.conf2017s-inlineList.gold');
-    randomOrder('.conf2017s-inlineList.silver');
-    randomOrder('.conf2017s-inlineList.bronze');
-    randomOrder('.conf2017s-inlineList.support');
-    randomOrder('.conf2017s-inlineList.media');
+  if ($('.conf2018s-inlineList').length !== 0) {
+    randomOrder('.conf2018s-inlineList.platinum');
+    randomOrder('.conf2018s-inlineList.gold');
+    randomOrder('.conf2018s-inlineList.silver');
+    randomOrder('.conf2018s-inlineList.bronze');
+    randomOrder('.conf2018s-inlineList.support');
+    randomOrder('.conf2018s-inlineList.media');
   }
 
 } )( jQuery )

@@ -13,7 +13,7 @@
   $key: nth( $icon, 1 );
   $value: nth( $icon, 2 );
 
-  .conf2017s-icon-#{$key} {
+  .conf2018s-icon-#{$key} {
     @extend %icon;
 
     &:before {
