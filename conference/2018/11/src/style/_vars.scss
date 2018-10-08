@@ -12,8 +12,11 @@ $ratioNeg: 1 - $ratio;
 $lineHeight: 1 + $ratio;
 $lineHeightNeg: 1 + $ratioNeg;
 
-$mainColor: #0B1038;
-$subColor: #F0F0F0;
-$accentColor: #CF0000;
-$black: #333333;
-$white: #FFFFFF;
+$mainColor: hsl(233, 67%, 13%);
+$mainColorHover: hsl(233, 67%, 43%);
+$mainColorLight: hsl(233, 24%, 84%);
+$mainColorPale: hsl(233, 18%, 96%);
+$accentColor: hsl(0, 100%, 41%);
+$accentColorHover: hsl(0, 100%, 51%);
+$white: hsl(0, 0%, 100%);
+$white-alpha: hsla(0, 0%, 100%, .9);
