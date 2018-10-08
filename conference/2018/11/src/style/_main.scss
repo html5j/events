@@ -470,7 +470,15 @@ ol {
 }
 
 .button-block {
+  margin: 2rem 0;
   text-align: center;
+}
+
+.figure {
+  & > img {
+    max-width: 100%;
+    height: auto;
+  }
 }
 
 .figcaption {
