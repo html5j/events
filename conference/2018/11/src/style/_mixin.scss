@@ -1,0 +1,38 @@
+// ================
+// mixin
+// ================
+// clearfix
+@mixin clearfix () {
+  *zoom: 1;
+  &:before,
+  &:after {
+    content: "";
+    display: table; }
+  &:after { clear: both; }
+}
+
+/* text-clip */
+@mixin textClip($lineHeight: 1.618, $lineCount: 1, $bgColor: white){
+  overflow: hidden;
+  position: relative;
+  line-height: $lineHeight;
+  max-height: $lineHeight * $lineCount; 
+  text-align: justify;
+  margin-right: -1rem;
+  padding-right: 1rem;
+  &:before {
+    content: '...';
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+  &:after {
+    content: '';
+    position: absolute;
+    right: 0;
+    width: 1rem;
+    height: 1rem;
+    margin-top: 0.2rem;
+    background: $bgColor;
+  }
+}

@@ -3,94 +3,93 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>展示ブース | HTML5 Conference</title>
+    <title>展示 | HTML5 Conference</title>
     <meta name="description" content="HTML5 Conference - 2018年11月25日（日）東京電機大学 千住キャンパスにて開催。">
     <meta property="og:title" content="HTML5 Conference">
     <meta property="og:type" content="website">
     <meta property="og:url" content="http://events.html5j.org/conference/2018/11/">
-    <meta property="og:image" content="http://events.html5j.org/conference/2018/11/assets/img/ogp.jpg">
+    <meta property="og:image" content="http://events.html5j.org/conference/2018/11/assets/img/ogp.png">
     <meta property="og:description" content="HTML5 Conference - 2018年11月25日（日）東京電機大学 千住キャンパスにて開催。">
-    <link rel="stylesheet" href="../assets/style/all.css">
+    <link rel="stylesheet" href="/assets/style/style.css">
   </head>
   <body>
-    <header class="conf2018s-pageHeader">
-      <div class="conf2018s-pageHeader__inner">
-        <div class="conf2018s-pageHeader__title">
-          <a href="../"><img src="../assets/img/header/logo.svg" alt="HTML5 Conference" width="300" height="54"></a>
-        </div>
-        <div class="conf2018s-info">2018年11月25日（日）AM10:00〜<br>東京電機大学 千住キャンパス</div>
-      </div>
-    </header><!-- /.conf2018s-pageHeader -->
-
-    <nav class="conf2018s-pageNav">
-      <div class="conf2018s-pageNav__inner">
-        <ul>
-          <li><a href="../">ホーム</a></li>
-          <!-- <li><a href="../volunteer/">ボランティア</a></li> -->
-          <li><a href="../session/">セッション</a></li>
-          <li><a href="../speaker/">スピーカー</a></li>
-          <li class="conf2018s-pageNav__item--current"><a href="./">展示ブース</a></li>
-          <li><a href="../access/">会場・アクセス</a></li>
-          <li><a href="../guide/">当日の流れ</a></li>
-          <li><a href="../faq/">よくある質問</a></li>
+    <header id="header">
+      <a id="title" href="/">HTML5 Conference 2018</a>
+      <nav>
+        <ul class="menu menu--nav">
+          <li><a href="/" class="menu__link">ホーム</a></li>
+          <!-- <li><a href="/volunteer/" class="menu__link">ボランティア</a></li> -->
+          <li><a href="/session/" class="menu__link">セッション</a></li>
+          <li><a href="/speaker/" class="menu__link">スピーカー</a></li>
+          <li class="is-current"><a href="/booth/" class="menu__link">展示</a></li>
+          <li><a href="/access/" class="menu__link">アクセス</a></li>
+          <li><a href="/guide/" class="menu__link">当日の流れ</a></li>
+          <li><a href="/faq/" class="menu__link">よくある質問</a></li>
         </ul>
-        <div class="conf2018s-pageNav__opener"></div>
-      </div>
-    </nav><!-- /.conf2018s-pageNav -->
+      </nav>
+    </header>
 
-    <div class="conf2018s-container">
-      <div class="conf2018s-header1">
-        <h1>展示ブース</h1>
-      </div>
-      <p>多くの企業・団体がブースを展示しています。また、そのほかにも面白い企画をご用意していますので、ぜひお立ち寄りください！</p>
-      <div class="conf2018s-booth-info">
-        <dl class="conf2018s-booth-info">
-          <dt>開場時間</dt>
-          <dd>10:50～17:40<small>（オープニングセッション終了時刻から、スペシャルセッション開始時刻までを予定）</small></dd>
-          <dt>開場場所</dt>
-          <dd>1号館2Fの受付・ホールからルームA〜Eへ向かう途中に展示会場があります（<a href="../access#access-floor">会場内フロアマップ</a>）。</dd>
-          <dt>展示リスト</dt>
-          <dd>
-            <ul class="conf2018s-booth-info__list">
-              <li><a href="#booth-radio">カンファレンス ラジオ</a></li>
-              <li><a href="#booth-codeiq">【☆先着100人限定☆】 HTML5クイズに答えて、特製カップケーキをGETしよう！ITエンジニアなら簡単に回答できるはず!?</a></li>
-              <li><a href="#booth-techfeed">【限定100個！】真・TechFeedリリース記念おやつプレゼント！</a></li>
-              <li><a href="#booth-tokyo-denki-dai">IoTのためのWEB技術+ASTを用いたリアルタイムコード生成</a></li>
-              <li><a href="#booth-kayac">フロントエンドあるあるカルタ（面白法人カヤック）</a></li>
-              <li><a href="#booth-ca">株式会社サイバーエージェント</a></li>
-              <li><a href="#booth-fjct">スマート会議室（富士通クラウドテクノロジーズ株式会社）</a></li>
-              <li><a href="#booth-applican">スマホ向けアプリ開発プラットフォーム「アプリカン」（株式会社ニューフォリア）</a></li>
-              <li><a href="#booth-pixiv">フロントエンドのライブコーディング（ピクシブ）</a></li>
-              <li><a href="#booth-grapecity">グレープシティのJavaScriptライブラリ（グレープシティ株式会社）</a></li>
-              <li><a href="#booth-draft">転職ドラフト</a></li>
-              <li><a href="#booth-cacoo">Cacoo × HTML5（株式会社ヌーラボ）</a></li>
-              <li><a href="#booth-levtech">フォントクイズ（レバテック株式会社）</a></li>
-              <li><a href="#booth-creekandrever">㈱クリーク・アンド・リバー社　中途採用</a></li>
-              <li><a href="#booth-web-music-jp">ブラウザは楽器に入りますか?</a></li>
-            </ul>
-          </dd>
-        </dl>
+    <main id="main">
+      <div class="headline">
+        <h1 class="h1 headline__title">展示</h1>
+        <p class="headline__lead">多くの企業・団体が展示ブースを出展しています。<br>また、そのほかにも面白い企画をご用意していますので、ぜひお立ち寄りください！</p>
       </div>
 
-      <div class="conf2018s-header2">
-        <h2>特別企画</h2>
-      </div>
-      <section id="booth-radio">
-        <h3>カンファレンス ラジオ（12:00〜14:20）</h3>
-        <p>前回に続き展示ブースにて、DJ KATOによる特別ラジオをON AIR！技術だけじゃない話を聞けるかも！？ 休憩がてらに聴いていきませんか？</p>
-        <ul>
-          <li>調整中</li>
-        </ul>
+      <section class="section container">
+        <h2 class="h2">概要</h2>
+        <table class="table">
+          <tr>
+            <th>開場時間</th>
+            <td>10:50～17:40<small>（オープニングセッション終了時刻から、スペシャルセッション開始時刻までを予定）</small></td>
+          </tr>
+          <tr>
+            <th>開場場所</th>
+            <td>1号館2Fの受付・ホールからルームA〜Eへ向かう途中に展示会場があります（<a href="../access#access-floor">会場内フロアマップ</a>）。</td>
+          </tr>
+          <tr>
+            <th>展示リスト</th>
+            <td>
+              <ul>
+                <li><a href="#booth-radio">カンファレンス ラジオ</a></li>
+                <li><a href="#booth-codeiq">【☆先着100人限定☆】 HTML5クイズに答えて、特製カップケーキをGETしよう！ITエンジニアなら簡単に回答できるはず!?</a></li>
+                <li><a href="#booth-techfeed">【限定100個！】真・TechFeedリリース記念おやつプレゼント！</a></li>
+                <li><a href="#booth-tokyo-denki-dai">IoTのためのWEB技術+ASTを用いたリアルタイムコード生成</a></li>
+                <li><a href="#booth-kayac">フロントエンドあるあるカルタ（面白法人カヤック）</a></li>
+                <li><a href="#booth-ca">株式会社サイバーエージェント</a></li>
+                <li><a href="#booth-fjct">スマート会議室（富士通クラウドテクノロジーズ株式会社）</a></li>
+                <li><a href="#booth-applican">スマホ向けアプリ開発プラットフォーム「アプリカン」（株式会社ニューフォリア）</a></li>
+                <li><a href="#booth-pixiv">フロントエンドのライブコーディング（ピクシブ）</a></li>
+                <li><a href="#booth-grapecity">グレープシティのJavaScriptライブラリ（グレープシティ株式会社）</a></li>
+                <li><a href="#booth-draft">転職ドラフト</a></li>
+                <li><a href="#booth-cacoo">Cacoo × HTML5（株式会社ヌーラボ）</a></li>
+                <li><a href="#booth-levtech">フォントクイズ（レバテック株式会社）</a></li>
+                <li><a href="#booth-creekandrever">㈱クリーク・アンド・リバー社　中途採用</a></li>
+                <li><a href="#booth-web-music-jp">ブラウザは楽器に入りますか?</a></li>
+              </ul>
+            </td>
+          </tr>
+        </table>
       </section>
-      <section id="booth-codeiq">
-        <h3>おやつ配布（11:00～15:20）</h3>
-        <p>今年もおやつスポンサーになっていただいたCodeIQさんからおやつを配布します！展示会場の特設ブースに是非お越しください！</p>
-        <div class="conf2018s-booth-item">
-          <h3 class="conf2018s-booth-item__title">【☆先着100人限定☆】 HTML5クイズに答えて、特製カップケーキをGETしよう！ITエンジニアなら簡単に回答できるはず!?</h3>
-          <div class="conf2018s-booth-item__byname">CodeIQ</div>
-          <img src="../assets/img/page-booth/codeiq.png" alt="" class="conf2018s-booth-item__image">
-          <img src="../assets/img/page-booth/codeiq2.jpg" alt="" class="conf2018s-booth-item__image">
-          <div class="conf2018s-booth-item__desc">
+
+      <section class="section container">
+        <h2 class="h2">展示内容</h2>
+        <div class="card">
+          <div class="card__media"></div>
+          <div class="card__text">
+            <em class="card__badge">特別企画</em>
+            <h3 class="h3 card__title">カンファレンスラジオ</h3>
+            <p class="card__meta"><time class="card__meta__time">12:00〜14:20</time></p>
+            <p>前回に続き展示ブースにて、DJ KATOによる特別ラジオをON AIR！技術だけじゃない話を聞けるかも！？ 休憩がてらに聴いていきませんか？</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card__media">
+            <img src="/assets/img/booth/codeiq.png" alt="" class="image-r">
+          </div>
+          <div class="card__text">
+            <em class="card__badge">特別企画</em>
+            <h3 class="h3 card__title">【☆先着100人限定☆】 HTML5クイズに答えて、特製カップケーキをGETしよう！ITエンジニアなら簡単に回答できるはず!?</h3>
+            <p class="card__meta"><time class="card__meta__time">11:00～15:20</time>CodeIQ</p>
             <p>ブースでCodeIQのHTML5クイズに挑戦した画面を見せてくれたら</p>
             <ul>
               <li>正解したら「CodeIQ×html5カンファレンス特製カップケーキ★」</li>
@@ -101,137 +100,47 @@
             <p>ブース開設時間：11:00～15:20（予定）  ※前後する可能性がございます。</p>
           </div>
         </div>
+        <div class="card">
+          <div class="card__media">
+            <img src="/assets/img/booth/cpslab.png" alt="" class="image-r">
+          </div>
+          <div class="card__text">
+            <h3 class="h3 card__title">IoTのためのWEB技術+ASTを用いたリアルタイムコード生成</h3>
+            <p class="card__meta">東京電機大学岩井研究室＋プランクユニッツ＋@akameco</p>
+            <p>東京電機大学情報メディア学科岩井研究室の学生達の制作物を中心に展示を行います。</p>
+            <p>さらにASTを用いたリアルタイムコード生成（@akemeco）、プランツユニッツのIoTのための各種のWEB技術を紹介します。</p>
+            <ul>
+              <li><a target="_blank" href="https://www.cps.im.dendai.ac.jp/">https://www.cps.im.dendai.ac.jp/</a></li>
+              <li><a target="_blank" href="https://elzup.com/">https://elzup.com/</a></li>
+              <li><a target="_blank" href="https://github.com/elzup">https://github.com/elzup</a></li>
+              <li><a target="_blank" href="https://twitter.com/akameco">https://twitter.com/akameco</a></li>
+            </ul>
+          </div>
+        </div>
       </section>
+    </main>
 
-      <div class="conf2018s-header2">
-        <h2>展示内容</h2>
-      </div>
-      <div id="booth-techfeed" class="conf2018s-booth-item">
-        <h3 class="conf2018s-booth-item__title">【限定100個！】真・TechFeedリリース記念おやつプレゼント！</h3>
-        <div class="conf2018s-booth-item__byname">TechFeed</div>
-        <img src="../assets/img/page-booth/logo_techfeed_green.png" alt="" class="conf2018s-booth-item__image" style="background:#333;padding:10px 20px">
-        <div class="conf2018s-booth-item__desc">
-          <p>エンジニア向けニュースアプリTechFeed、完全リニューアル記念！モバイルアプリをインストールして画面を見せて頂ければ、HTML5 Conference 2018限定おやつをプレゼント！CodeIQブースの隣で便乗していますので、ぜひ合わせて遊びに来てください！</p>
-        </div>
-      </div>
-      <div id="booth-tokyo-denki-dai" class="conf2018s-booth-item">
-        <h3 class="conf2018s-booth-item__title">IoTのためのWEB技術+ASTを用いたリアルタイムコード生成</h3>
-        <div class="conf2018s-booth-item__byname">東京電機大学岩井研究室＋プランクユニッツ＋@akameco</div>
-        <img src="../assets/img/page-booth/cpslab.png" alt="" class="conf2018s-booth-item__image">
-        <div class="conf2018s-booth-item__desc">
-          <p>東京電機大学情報メディア学科岩井研究室の学生達の制作物を中心に展示を行います。</p>
-          <p>さらにASTを用いたリアルタイムコード生成（@akemeco）、プランツユニッツのIoTのための各種のWEB技術を紹介します。</p>
-          <ul>
-            <li><a target="_blank" href="https://www.cps.im.dendai.ac.jp/">https://www.cps.im.dendai.ac.jp/</a></li>
-            <li><a target="_blank" href="https://elzup.com/">https://elzup.com/</a></li>
-            <li><a target="_blank" href="https://github.com/elzup">https://github.com/elzup</a></li>
-            <li><a target="_blank" href="https://twitter.com/akameco">https://twitter.com/akameco</a></li>
-          </ul>
-        </div>
-      </div>
-      <div id="booth-kayac" class="conf2018s-booth-item">
-        <h3 class="conf2018s-booth-item__title">フロントエンドあるあるカルタ</h3>
-        <div class="conf2018s-booth-item__byname">面白法人カヤック</div>
-        <img src="../assets/img/page-index/sponsor/silver-kayc.png" alt="" class="conf2018s-booth-item__image no-margin">
-        <div class="conf2018s-booth-item__desc">
-          <p>フロントエンドエンジニアが常日頃遭遇する『あるある』な出来事をカルタにしました。あのときのあんな出来事やこんな出来事を思い出しながら、ぜひ一緒に楽しみましょう！</p>
-          <p>その他、2020年にサポート終了が発表されたAdobe Flash Playerを偲ぶ『Final Flash 2020』や、弊社過去制作実績を展示します。お気軽にお越しください！</p>
-        </div>
-      </div>
-      <div id="booth-ca" class="conf2018s-booth-item">
-        <h3 class="conf2018s-booth-item__title">株式会社サイバーエージェント</h3>
-        <div class="conf2018s-booth-item__byname"></div>
-        <img src="../assets/img/page-index/sponsor/platinum-cyberagent.png" alt="" class="conf2018s-booth-item__image no-margin">
-        <div class="conf2018s-booth-item__desc">
-          <p>インターネットテレビ局「AbemaTV」や「アメブロ」など、サイバーエージェントで提供している様々なサービスのここでしか見られないフロントエンドの裏側をお見せいたします。当社のエンジニアと参加者の皆様との技術交流の場としてブースを活用できればと思っていますので、ぜひお立ち寄りください！</p>
-        </div>
-      </div>
-      <div id="booth-fjct" class="conf2018s-booth-item">
-        <h3 class="conf2018s-booth-item__title">スマート会議室</h3>
-        <div class="conf2018s-booth-item__byname">富士通クラウドテクノロジーズ株式会社</div>
-        <img src="../assets/img/page-index/sponsor/silver-fjct.png" alt="" class="conf2018s-booth-item__image no-margin">
-        <div class="conf2018s-booth-item__desc">
-          <p>IoTを用いたオフィス会議室活用の最適化を実現するスマート会議室をご紹介します。</p>
-        </div>
-      </div>
-      <div id="booth-applican" class="conf2018s-booth-item">
-        <h3 class="conf2018s-booth-item__title">スマホ向けアプリ開発プラットフォーム「アプリカン」</h3>
-        <div class="conf2018s-booth-item__byname">株式会社ニューフォリア</div>
-        <img src="../assets/img/page-index/sponsor/gold-newphoria.png" alt="" class="conf2018s-booth-item__image no-margin">
-        <div class="conf2018s-booth-item__desc">
-          <p>「アプリカン(R)」はHTML+JavaScript+CSSで構成・開発したウェブアプリを、iOS、Androidのネイティブアプリとしてパッケージする、アプリ開発支援サービスです。通常のウェブだけでは利用できない端末機能にアクセスできるように拡張が施されており、Objective-CやSwift、Javaで開発されたアプリと同等の機能開発を実現できるだけでなく、ひとつのウェブアプリ（ソース）からiOS、Android両プラットフォーム向けのアプリ開発が可能です。</p>
-        </div>
-      </div>
-      <div id="booth-pixiv" class="conf2018s-booth-item">
-        <h3 class="conf2018s-booth-item__title">フロントエンドのライブコーディング</h3>
-        <div class="conf2018s-booth-item__byname">Pixiv</div>
-        <img src="../assets/img/page-index/sponsor/silver-pixiv.png" alt="" class="conf2018s-booth-item__image no-margin">
-        <div class="conf2018s-booth-item__desc">
-          <p>フロントエンドまわりのコードを書いてる様子をみなさんに披露します。</p>
-        </div>
-      </div>
-      <div id="booth-grapecity" class="conf2018s-booth-item">
-        <h3 class="conf2018s-booth-item__title">グレープシティのJavaScriptライブラリ</h3>
-        <div class="conf2018s-booth-item__byname">グレープシティ株式会社</div>
-        <img src="../assets/img/page-index/sponsor/gold-grapecity.png" alt="" class="conf2018s-booth-item__image no-margin">
-        <div class="conf2018s-booth-item__desc">
-          <p>グレープシティは、20年以上にわたり業務アプリ開発者を支援し続けているコンポーネントベンダーです。今回は、Webアプリケーションで高度なUIを実現するJavaScriptライブラリ「Wijmo（ウィジモ：エンタープライズアプリケーション開発用コントロールセット）」と、9/27に新たに登場となる「SpreadJS（スプレッドJS：Excel互換の高機能スプレッドシートや自由なデータ表示が可能なViewsコントロール）」の2製品をご紹介します。</p>
-        </div>
-      </div>
-      <div id="booth-draft" class="conf2018s-booth-item">
-        <h3 class="conf2018s-booth-item__title">転職ドラフト</h3>
-        <div class="conf2018s-booth-item__byname"></div>
-        <img src="../assets/img/page-index/sponsor/silver-libsense.png" alt="" class="conf2018s-booth-item__image no-margin">
-        <div class="conf2018s-booth-item__desc">
-          <p>ノベルティの入ったガチャガチャの設置</p>
-        </div>
-      </div>
-      <div id="booth-cacoo" class="conf2018s-booth-item">
-        <h3 class="conf2018s-booth-item__title">Cacoo × HTML5</h3>
-        <div class="conf2018s-booth-item__byname">株式会社ヌーラボ</div>
-        <img src="../assets/img/page-index/sponsor/gold-cacoo.png" alt="" class="conf2018s-booth-item__image no-margin">
-        <div class="conf2018s-booth-item__desc">
-<p>福岡に本社を置き、東京・京都・ニューヨークで自社サービスの開発を行なっている<a href="https://nulab-inc.com/ja/" target="_blank">株式会社ヌーラボ</a>です。今年8月末に脱Flash・HTML5バージョンをリリースした弊社のサービス、「<a href="https://cacoo.com/ja/features" target="_blank">Cacoo</a>」のご紹介ブースを展示します。新しく、そしてより速くなったCacooを触りにぜひお越しください！ランチタイムのLTに登壇するCacooの開発チームのエンジニアもブースにおりますので、お気軽に話しかけてください。</p>
-<p>また、Cacooではか開発者の募集も行なっておりますので、気になる方はブースでお声がけください。</p>
-
-        </div>
-      </div>
-      <div id="booth-levtech" class="conf2018s-booth-item">
-        <h3 class="conf2018s-booth-item__title">フォントクイズ</h3>
-        <div class="conf2018s-booth-item__byname">レバテック株式会社</div>
-        <a href="http://levtech.jp/" target="_blank"><img src="../assets/img/page-index/sponsor/silver-levatec.png" alt="" class="conf2018s-booth-item__image no-margin"></a>
-        <div class="conf2018s-booth-item__desc">
-          <p>全9問のフォントクイズを出題します。正解にはプレゼントを用意しています</p>
-        </div>
-      </div>
-      <div id="booth-creekandrever" class="conf2018s-booth-item">
-        <h3 class="conf2018s-booth-item__title">㈱クリーク・アンド・リバー社　中途採用</h3>
-        <div class="conf2018s-booth-item__byname">株式会社クリーク・アンド・リバー社</div>
-        <img src="../assets/img/page-index/sponsor/gold-creekandrever.png" alt="" class="conf2018s-booth-item__image no-margin">
-        <div class="conf2018s-booth-item__desc">
-          <p>㈱クリーク・アンド・リバー社では、Web/広告業界で活躍するクリエイターを支援する会社です。今回は、当社の中途採用を募集するとともに、社員やフリーランスでお仕事を探される方のキャリアアドバイスなどを行っています。</p>
-        </div>
-      </div>
-      <div id="booth-web-music-jp" class="conf2018s-booth-item">
-        <h3 class="conf2018s-booth-item__title">ブラウザは楽器に入りますか?</h3>
-        <div class="conf2018s-booth-item__byname">Web Music Developers JP</div>
-        <img src="../assets/img/page-booth/webmusicdevelopersjp.png" alt="" class="conf2018s-booth-item__image">
-        <div class="conf2018s-booth-item__desc">
-          <p>Web Music Developers JP はWebを利用した音楽制作や演奏に関わるアプリを開発する人のコミュニティです。Web Audio API / Web MIDI APIを使ったアプリケーションを展示します。</p>
-        </div>
-      </div>
-    </div><!-- /.conf2018s-container -->
-
-    <footer class="conf2018s-pageFooter">
-      <div class="conf2018s-pageFooter__inner">
-        <div class="conf2018s-pageFooter__logo">
-          <img src="../assets/img/footer/html5j-logo.svg" alt="html5j" width="200" height="60">
-        </div>
-      </div>
-    </footer><!-- /.conf2018s-pageFooter -->
+    <footer id="footer">
+      <ul class="social">
+        <li>
+          <a href="http://b.hatena.ne.jp/entry/" class="hatena-bookmark-button" data-hatena-bookmark-layout="basic-label" data-hatena-bookmark-lang="ja" title="このエントリーをはてなブックマークに追加">
+            <img src="https://b.st-hatena.com/images/entry-button/button-only@2x.png" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" />
+          </a>
+        <li>
+          <div class="fb-like" data-href="http://events.html5j.org/conference/2018/11/" data-layout="button" data-action="like" data-size="small" data-show-faces="false" data-share="false"></div>
+        <li>
+          <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-url="http://events.html5j.org/conference/2018/11/" data-text="HTML5 Conference 2018" data-via="html5j" data-lang="ja" data-hashtags="html5j" data-show-count="false">Tweet</a>
+      </ul>
+      <p class="copyright">
+        <span class="copyright__symbol">&copy;</span>
+        <a href="http://html5j.org">
+          <img src="/assets/img/logo-html5j.svg" alt="html5j" class="copyright__image">
+        </a>
+      </p>
+    </footer>
 
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-    <script src="../assets/script/page-nav.js"></script>
+    <script src="/assets/script/page-nav.js"></script>
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
         (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -240,5 +149,18 @@
       ga('create', 'UA-44039742-2', 'auto');
       ga('send', 'pageview');
     </script>
+    <!-- はてなブックマーク -->
+    <script type="text/javascript" src="https://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script>
+    <!-- Twitter -->
+    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    <!-- Facebook -->
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = 'https://connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v3.1';
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
   </body>
 </html>

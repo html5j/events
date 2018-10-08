@@ -1,14 +1,18 @@
-
-// ==========================================================================
+// ================
 //  vars
-// ==========================================================================
-$fontSansSerif : '\30D2\30E9\30AE\30CE\89D2\30B4\20\50\72\6F\20\57\33', 'Hiragino Kaku Gothic Pro', '\30E1\30A4\30EA\30AA', Meiryo, '\FF2D\FF33\20\FF30\30B4\30B7\30C3\30AF', sans-serif;
+// ================
+$fontSansSerif: "Barlow", "Noto Sans JP", sans-serif;
+$ratio: .618;
+$ratioNeg: 1 - $ratio;
+$lineHeight: 1 + $ratio;
+$lineHeightNeg: 1 + $ratioNeg;
 
-$font-size-desktop: 16px;
-$font-size-middlescreen: 16px;
-$font-size-smallscreen: 14px;
+$size: 1rem;
 
-$pageMaxWidth: 1200px;
-$breakpoint-base   : 980px - 1;
-$breakpoint-middle : 768px - 1;
-$breakpoint-small  : 640px - 1;
+$containerSize: $size * 50;
+
+$mainColor: #0B1038;
+$subColor: #F0F0F0;
+$accentColor: #CF0000;
+$black: #333333;
+$white: #FFFFFF;
