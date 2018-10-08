@@ -2,14 +2,15 @@
 //  vars
 // ================
 $fontSansSerif: "Barlow", "Noto Sans JP", sans-serif;
+
+$size: 1rem;
+$containerSize: $size * 50;
+$breakpoints: $containerSize;
+
 $ratio: .618;
 $ratioNeg: 1 - $ratio;
 $lineHeight: 1 + $ratio;
 $lineHeightNeg: 1 + $ratioNeg;
-
-$size: 1rem;
-
-$containerSize: $size * 50;
 
 $mainColor: #0B1038;
 $subColor: #F0F0F0;

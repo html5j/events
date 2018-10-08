@@ -15,17 +15,20 @@
   <body>
     <header id="header">
       <a id="title" href="/">HTML5 Conference 2018</a>
-      <nav>
-        <ul class="menu menu--nav">
-          <li class="is-current"><a href="./" class="menu__link">ホーム</a></li>
-          <li><a href="/volunteer/" class="menu__link">ボランティア</a></li>
-          <li><a href="./session/" class="menu__link">セッション</a></li>
-          <li><a href="./speaker/" class="menu__link">スピーカー</a></li>
-          <li><a href="./booth/" class="menu__link">展示</a></li>
-          <li><a href="./access/" class="menu__link">アクセス</a></li>
-          <li><a href="./guide/" class="menu__link">当日の流れ</a></li>
-          <li><a href="./faq/" class="menu__link">よくある質問</a></li>
+      <nav id="nav" class="nav">
+        <ul class="nav__menu js-drawer">
+          <li class="is-current"><a href="./">ホーム</a></li>
+          <li><a href="/volunteer/">ボランティア</a></li>
+          <li><a href="/session/">セッション</a></li>
+          <li><a href="/speaker/">スピーカー</a></li>
+          <li><a href="/booth/">展示</a></li>
+          <li><a href="/access/">アクセス</a></li>
+          <li><a href="/guide/">当日の流れ</a></li>
+          <li><a href="/faq/">よくある質問</a></li>
         </ul>
+        <div class="nav__button js-draw-handler">
+          <img src="/assets/img/icon-menu.svg" alt="">
+        </div>
       </nav>
     </header>
 
@@ -42,7 +45,10 @@
         </div>
       </div>
 
-      <strong class="h1">We can do anything on the Web</strong>
+      <div class="container-full">
+        <strong class="h1">We can do anything on the Web</strong>
+      </div>
+
       <section class="section container">
         <p>ほんの少し前には、次世代Web標準技術と呼ばれた数多くの仕様は、まだまだ実用に耐えうるには時間が掛かるだろうという意味で、ある意味、夢物語のように語られていました。しかしながら、実装当時は実験的な扱いだった仕様が、この短い期間で進化し、既に多くの製品やサービスの事例で活用されるようになりました。これまで、多くのことがWebでできるようになり、これからも多くのことがWebでできるようになるでしょう。もはや、それらは夢ものがりではなく、実際に私たちの製品、サービスにどう活かしていくのかを考え、実践していく時代です。それらの切っ掛けが、本カンファレンスを通じて得られることを願っております。</p>
         <p>HTML5 Conferenceは、Web技術に関するノウハウや最新情報の共有、そして交流の場としてありたいという想いがあります。Web技術者同士だけではなく、Webを取り巻く様々な企業や団体と、垣根を超えて気楽に交われる機会を作りたい。そういった「Web技術者の祭典」を目指しています。本カンファレンスを通じて、皆さんの成⻑を促す機会になれば幸いです。</p>
@@ -389,7 +395,7 @@
       </p>
     </footer>
 
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="/assets/script/page-nav.js"></script>
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

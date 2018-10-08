@@ -15,22 +15,25 @@
   <body>
     <header id="header">
       <a id="title" href="/">HTML5 Conference 2018</a>
-      <nav>
-        <ul class="menu menu--nav">
-          <li><a href="/" class="menu__link">ホーム</a></li>
-          <li><a href="/volunteer/" class="menu__link">ボランティア</a></li>
-          <li><a href="/session/" class="menu__link">セッション</a></li>
-          <li><a href="/speaker/" class="menu__link">スピーカー</a></li>
-          <li><a href="/booth/" class="menu__link">展示</a></li>
-          <li class="is-current"><a href="/access/" class="menu__link">アクセス</a></li>
-          <li><a href="/guide/" class="menu__link">当日の流れ</a></li>
-          <li><a href="/faq/" class="menu__link">よくある質問</a></li>
+      <nav id="nav" class="nav">
+        <ul class="nav__menu js-drawer">
+          <li><a href="/">ホーム</a></li>
+          <li><a href="/volunteer/">ボランティア</a></li>
+          <li><a href="/session/">セッション</a></li>
+          <li><a href="/speaker/">スピーカー</a></li>
+          <li><a href="/booth/">展示</a></li>
+          <li class="is-current"><a href="/access/">アクセス</a></li>
+          <li><a href="/guide/">当日の流れ</a></li>
+          <li><a href="/faq/">よくある質問</a></li>
         </ul>
+        <div class="nav__button js-draw-handler">
+          <img src="/assets/img/icon-menu.svg" alt="">
+        </div>
       </nav>
     </header>
 
     <main id="main">
-      <div class="headline">
+      <div class="headline container-full">
         <h1 class="h1 headline__title">アクセス</h1>
         <p class="headline__lead">会場までのアクセスと、会場内のフロアマップです。</p>
       </div>
@@ -39,7 +42,7 @@
         <h2 class="h2">会場までのアクセス</h2>
         <p><a href="http://web.dendai.ac.jp/access/tokyosenju.html" target="_blank">東京電機大学 千住キャンパス 1号館</a></p>
         <figure class="figure">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3238.110162371272!2d139.806122!3d35.748097!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x26a050d2e5ee79fc!2z5p2x5Lqs6Zu75qmf5aSn5a2m!5e0!3m2!1sja!2sjp!4v1419507725500" width="800" height="400" frameborder="0" style="border:0"></iframe>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3238.110162371272!2d139.806122!3d35.748097!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x26a050d2e5ee79fc!2z5p2x5Lqs6Zu75qmf5aSn5a2m!5e0!3m2!1sja!2sjp!4v1419507725500" frameborder="0" class="map"></iframe>
           <figcaption class="figcaption">
             <address>〒120-8551 東京都足立区 千住旭町5</address>
           </figcaption>
@@ -121,7 +124,7 @@
         </section>
 
         <section class="section container">
-          <h2>会場内のフロアマップ</h2>
+          <h2 class="h2">会場内のフロアマップ</h2>
           <img src="/assets/img/access/floor-map.png" alt="" width="600" style="max-width: 100%">
         </section>
     </main>

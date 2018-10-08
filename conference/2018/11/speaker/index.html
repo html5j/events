@@ -15,22 +15,25 @@
   <body>
     <header id="header">
       <a id="title" href="/">HTML5 Conference 2018</a>
-      <nav>
-        <ul class="menu menu--nav">
-          <li><a href="/" class="menu__link">ホーム</a></li>
-          <li><a href="/volunteer/" class="menu__link">ボランティア</a></li>
-          <li><a href="/session/" class="menu__link">セッション</a></li>
-          <li class="is-current"><a href="/speacker/" class="menu__link">スピーカー</a></li>
-          <li><a href="/booth/" class="menu__link">展示</a></li>
-          <li><a href="/access/" class="menu__link">アクセス</a></li>
-          <li><a href="/guide/" class="menu__link">当日の流れ</a></li>
-          <li><a href="/faq/" class="menu__link">よくある質問</a></li>
+      <nav id="nav" class="nav">
+        <ul class="nav__menu js-drawer">
+          <li><a href="/">ホーム</a></li>
+          <li><a href="/volunteer/">ボランティア</a></li>
+          <li><a href="/session/">セッション</a></li>
+          <li class="is-current"><a href="/speaker/">スピーカー</a></li>
+          <li><a href="/booth/">展示</a></li>
+          <li><a href="/access/">アクセス</a></li>
+          <li><a href="/guide/">当日の流れ</a></li>
+          <li><a href="/faq/">よくある質問</a></li>
         </ul>
+        <div class="nav__button js-draw-handler">
+          <img src="/assets/img/icon-menu.svg" alt="">
+        </div>
       </nav>
     </header>
 
     <main id="main">
-      <div class="headline">
+      <div class="headline container-full">
         <h1 class="h1 headline__title">スピーカー</h1>
         <p class="headline__lead">第一線で活躍するすばらしい方々に、スピーカーとしてご登壇いただけることになりました。</p>
       </div>
