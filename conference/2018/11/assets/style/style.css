@@ -451,6 +451,10 @@ ol {
   padding-left: 1.25rem;
 }
 
+address {
+  font-style: normal;
+}
+
 .container {
   max-width: 50rem;
   margin: 0 auto;
@@ -956,6 +960,11 @@ h3,
   padding: 1rem;
   background-color: #f3f3f7;
   border-radius: .25rem;
+}
+
+.note {
+  display: block;
+  font-size: .875rem;
 }
 
 .card {

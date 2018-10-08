@@ -47,6 +47,10 @@ ol {
   padding-left: 1.25rem;
 }
 
+address {
+  font-style: normal;
+}
+
 // ================
 //  Layout
 // ================
@@ -524,6 +528,11 @@ h3,
   padding: 1rem;
   background-color: $mainColorPale;
   border-radius: .25rem;
+}
+
+.note {
+  display: block;
+  font-size: .875rem;
 }
 
 .card {
