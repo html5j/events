@@ -31,3 +31,4 @@ gulp.task('sass-watch', ['sass'], function() {
 
 // タスク"task-watch"がgulpと入力しただけでdefaultで実行されるようになる
 gulp.task('default', ['sass-watch']);
+gulp.task('develop', ['autoprefixer']);
