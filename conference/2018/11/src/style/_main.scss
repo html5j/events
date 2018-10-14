@@ -747,14 +747,22 @@ h3,
   $thumb-xlarge: 300px; // プラチナ
   $thumb-xlarge-gutter: 6rem;
 
-  padding: 0 $thumb-xlarge-gutter;
   grid-template-columns: repeat(auto-fit, #{$thumb-xlarge});
-  grid-column-gap: $thumb-xlarge-gutter;
-  grid-row-gap: $thumb-xlarge-gutter;
+
+  @include break {
+    padding: 0 $thumb-xlarge-gutter;
+    grid-column-gap: $thumb-xlarge-gutter;
+    grid-row-gap: $thumb-xlarge-gutter;
+  }
 
   & > li {
+    padding: ($thumb-xlarge-gutter / 2);
     width: $thumb-xlarge;
-    height: $thumb-xlarge;
+
+    @include break {
+      padding: 0;
+      height: $thumb-xlarge;
+    }
   }
 }
 
@@ -762,14 +770,22 @@ h3,
   $thumb-large: 200px; // ゴールド
   $thumb-large-gutter: 4rem;
 
-  padding: 0 $thumb-large-gutter;
   grid-template-columns: repeat(auto-fit, #{$thumb-large});
-  grid-column-gap: $thumb-large-gutter;
-  grid-row-gap: $thumb-large-gutter;
+
+  @include break {
+    padding: 0 $thumb-large-gutter;
+    grid-column-gap: $thumb-large-gutter;
+    grid-row-gap: $thumb-large-gutter;
+  }
 
   & > li {
+    padding: ($thumb-large-gutter / 2);
     width: $thumb-large;
-    height: $thumb-large;
+
+    @include break {
+      padding: 0;
+      height: $thumb-large;
+    }
   }
 }
 
@@ -777,14 +793,22 @@ h3,
   $thumb-medium: 120px; // シルバー
   $thumb-medium-gutter: 4rem;
 
-  padding: 0 $thumb-medium-gutter;
   grid-template-columns: repeat(auto-fit, #{$thumb-medium});
-  grid-column-gap: $thumb-medium-gutter;
-  grid-row-gap: $thumb-medium-gutter;
+
+  @include break {
+    padding: 0 $thumb-medium-gutter;
+    grid-column-gap: $thumb-medium-gutter;
+    grid-row-gap: $thumb-medium-gutter;
+  }
 
   & > li {
+    padding: ($thumb-medium-gutter / 2);
     width: $thumb-medium;
-    height: $thumb-medium;
+
+    @include break {
+      padding: 0;
+      height: $thumb-medium;
+    }
   }
 }
 
@@ -792,14 +816,22 @@ h3,
   $thumb-small: 100px; // ブロンズ、後援、メディア
   $thumb-small-gutter: 2rem;
 
-  padding: 0 $thumb-small-gutter;
   grid-template-columns: repeat(auto-fit, #{$thumb-small});
-  grid-column-gap: $thumb-small-gutter;
-  grid-row-gap: $thumb-small-gutter;
+
+  @include break {
+    padding: 0 $thumb-small-gutter;
+    grid-column-gap: $thumb-small-gutter;
+    grid-row-gap: $thumb-small-gutter;
+  }
 
   & > li {
+    padding: ($thumb-small-gutter / 2);
     width: $thumb-small;
-    height: $thumb-small;
+
+    @include break {
+      padding: 0;
+      height: $thumb-small;
+    }
   }
 }
 
