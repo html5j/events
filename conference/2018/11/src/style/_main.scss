@@ -745,7 +745,7 @@ h3,
 
 .thumb-list--xlarge {
   $thumb-xlarge: 300px; // プラチナ
-  $thumb-xlarge-gutter: 2rem;
+  $thumb-xlarge-gutter: 6rem;
 
   padding: 0 $thumb-xlarge-gutter;
   grid-template-columns: repeat(auto-fit, #{$thumb-xlarge});
@@ -760,7 +760,7 @@ h3,
 
 .thumb-list--large {
   $thumb-large: 200px; // ゴールド
-  $thumb-large-gutter: 2rem;
+  $thumb-large-gutter: 4rem;
 
   padding: 0 $thumb-large-gutter;
   grid-template-columns: repeat(auto-fit, #{$thumb-large});
@@ -775,7 +775,7 @@ h3,
 
 .thumb-list--medium {
   $thumb-medium: 120px; // シルバー
-  $thumb-medium-gutter: 2rem;
+  $thumb-medium-gutter: 4rem;
 
   padding: 0 $thumb-medium-gutter;
   grid-template-columns: repeat(auto-fit, #{$thumb-medium});
@@ -789,8 +789,8 @@ h3,
 }
 
 .thumb-list--small {
-  $thumb-small: 100px; // ブロンズ
-  $thumb-small-gutter: 1rem;
+  $thumb-small: 100px; // ブロンズ、後援、メディア
+  $thumb-small-gutter: 2rem;
 
   padding: 0 $thumb-small-gutter;
   grid-template-columns: repeat(auto-fit, #{$thumb-small});

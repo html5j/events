@@ -1275,10 +1275,10 @@ h3,
 }
 
 .thumb-list--xlarge {
-  padding: 0 2rem;
+  padding: 0 6rem;
   grid-template-columns: repeat(auto-fit, 300px);
-  grid-column-gap: 2rem;
-  grid-row-gap: 2rem;
+  grid-column-gap: 6rem;
+  grid-row-gap: 6rem;
 }
 
 .thumb-list--xlarge > li {
@@ -1287,10 +1287,10 @@ h3,
 }
 
 .thumb-list--large {
-  padding: 0 2rem;
+  padding: 0 4rem;
   grid-template-columns: repeat(auto-fit, 200px);
-  grid-column-gap: 2rem;
-  grid-row-gap: 2rem;
+  grid-column-gap: 4rem;
+  grid-row-gap: 4rem;
 }
 
 .thumb-list--large > li {
@@ -1299,10 +1299,10 @@ h3,
 }
 
 .thumb-list--medium {
-  padding: 0 2rem;
+  padding: 0 4rem;
   grid-template-columns: repeat(auto-fit, 120px);
-  grid-column-gap: 2rem;
-  grid-row-gap: 2rem;
+  grid-column-gap: 4rem;
+  grid-row-gap: 4rem;
 }
 
 .thumb-list--medium > li {
@@ -1311,10 +1311,10 @@ h3,
 }
 
 .thumb-list--small {
-  padding: 0 1rem;
+  padding: 0 2rem;
   grid-template-columns: repeat(auto-fit, 100px);
-  grid-column-gap: 1rem;
-  grid-row-gap: 1rem;
+  grid-column-gap: 2rem;
+  grid-row-gap: 2rem;
 }
 
 .thumb-list--small > li {
