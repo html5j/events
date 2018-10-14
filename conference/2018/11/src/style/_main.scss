@@ -744,7 +744,7 @@ h3,
 }
 
 .thumb-list--xlarge {
-  $thumb-xlarge: 10rem;
+  $thumb-xlarge: 300px; // プラチナ
   $thumb-xlarge-gutter: 2rem;
 
   padding: 0 $thumb-xlarge-gutter;
@@ -759,7 +759,7 @@ h3,
 }
 
 .thumb-list--large {
-  $thumb-large: 6rem;
+  $thumb-large: 200px; // ゴールド
   $thumb-large-gutter: 2rem;
 
   padding: 0 $thumb-large-gutter;
@@ -774,7 +774,7 @@ h3,
 }
 
 .thumb-list--medium {
-  $thumb-medium: 4rem;
+  $thumb-medium: 120px; // シルバー
   $thumb-medium-gutter: 2rem;
 
   padding: 0 $thumb-medium-gutter;
@@ -789,7 +789,7 @@ h3,
 }
 
 .thumb-list--small {
-  $thumb-small: 4rem;
+  $thumb-small: 100px; // ブロンズ
   $thumb-small-gutter: 1rem;
 
   padding: 0 $thumb-small-gutter;
