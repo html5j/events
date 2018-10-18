@@ -907,3 +907,68 @@ h3,
   height: 1.5rem;
   vertical-align: middle;
 }
+
+.session__speakers {
+  overflow: hidden;
+  ul{
+    font-size: 0;
+    list-style: none;
+    padding: 0;
+    margin: 20px -40px 0 0;
+    &:after{
+      content: '';
+      display: block;
+      margin-top: -40px;
+    }
+  }
+  li{
+    font-size: 1rem;
+    vertical-align: top;
+    display: inline-block;
+    padding: 0;
+    margin: 0 40px 40px 0;
+  }
+  a{
+    text-decoration: none;
+    display: block;
+  }
+}
+.session__speakerImage {
+  width: 72px;
+  height: 72px;
+  margin-bottom: 4px;
+  img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    padding: 5px;
+    border: 1px solid #c7c7c7;
+    transition: all .2s;
+  }
+  a:hover &{
+    img{
+      border-color:#C30D23;
+    }
+  }
+}
+.session__speakerName {
+  font-size: 12px;
+}
+.session__speakerAffil {
+  font-size: 10px;
+  font-weight: bold;
+}
+.timetable-button {
+  display: inline-block;
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+  padding: 0px 4px;
+  border: 1px solid #1b354b;
+  border-radius: 2px;
+  color: #1b354b;
+  text-decoration: none;
+  &:hover {
+    opacity: .5;
+    text-decoration: none;
+  }
+}
