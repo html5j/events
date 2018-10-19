@@ -815,7 +815,7 @@ h3,
 @media screen and (min-width: 50rem) {
   .timetable th,
   .timetable td {
-    width: 18rem;
+    width: 16rem;
   }
 }
 
