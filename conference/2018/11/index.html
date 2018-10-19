@@ -2,30 +2,298 @@
 <html lang="ja">
   <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>HTML5 Conference 2018</title>
-    <meta name="description" content="HTML5 Conference、2018年11月25日開催。">
-    <meta property="og:title" content="HTML5 Conference 2018">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5 Conference</title>
+    <meta name="description" content="HTML5 Conference - 2018年11月25日（日）東京電機大学 千住キャンパスにて開催。">
+    <meta property="og:title" content="HTML5 Conference">
     <meta property="og:type" content="website">
     <meta property="og:url" content="http://events.html5j.org/conference/2018/11/">
-    <meta property="og:image" content="http://events.html5j.org/conference/2018/11/img/ogp.png">
-    <meta property="og:description" content="HTML5 Conference、2018年11月25日開催。">
-    <link href="https://fonts.googleapis.com/css?family=Barlow:400,600|Noto+Sans+JP:400,700" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+    <meta property="og:image" content="http://events.html5j.org/conference/2018/11/assets/img/ogp.png">
+    <meta property="og:description" content="HTML5 Conference - 2018年11月25日（日）東京電機大学 千住キャンパスにて開催。">
+    <link rel="stylesheet" href="../assets/style/style.css">
   </head>
   <body>
-    <main class="main">
-      <img src="img/logo.svg" alt="" class="main__image">
-      <h1 class="main__title">HTML5 Conference 2018</h1>
-      <time datetime="2018-11-25" class="main__date">2018.11.25 (Sun) 10:00 ～ 18:30</time>
-      <p class="main__place">東京電機大学 千住キャンパス<small class="main__place__address">〒120-8551 東京都足立区 千住旭町5番</small></p>
-      <div class="main__cta">
-        <a class="main__cta__button" href="https://docs.google.com/forms/d/e/1FAIpQLSejrz_rfG4AhoN6ofZguG7exdKDuOuWTNI0s7UNTC7uEV3s2w/viewform" target="_blank">ボランティアスタッフ募集</a>
-        <a class="main__cta__button main__cta__button--wired" href="https://docs.google.com/forms/d/e/1FAIpQLSdkhZ7lDv-EvNzq0OQkeFaHynK9O0-ep4_vADQfYLgNjf0yKw/viewform" target="_blank">スポンサー募集</a>
+    <header id="header">
+      <a id="title" href="../">HTML5 Conference 2018</a>
+      <nav id="nav" class="nav">
+        <ul class="nav__menu js-drawer">
+          <li class="is-current"><a href="../">ホーム</a></li>
+          <li><a href="../volunteer/">ボランティア</a></li>
+          <li><a href="../session/">セッション</a></li>
+          <li><a href="../speaker/">スピーカー</a></li>
+          <!-- <li><a href="../booth/">展示</a></li> -->
+          <li><a href="../access/">アクセス</a></li>
+          <li><a href="../guide/">当日の流れ</a></li>
+          <li><a href="../faq/">よくある質問</a></li>
+          <li><a href="../codeofconduct/">行動規範</a></li>
+        </ul>
+        <div class="nav__button js-draw-handler">
+          <img src="../assets/img/icon-menu.svg" alt="">
+        </div>
+      </nav>
+    </header>
+
+    <main id="main">
+      <div class="hero">
+        <img src="../assets/img/logo.svg" alt="" class="hero__image">
+        <h1 class="hero__title">HTML5 Conference 2018</h1>
+        <ul class="hero__info">
+          <li><time datetime="2018-11-25">2018年11月25日（日）</time></li>
+          <li>東京電機大学 千住キャンパス</li>
+        </ul>
+        <div class="hero__cta">
+          <a class="button button--primary" href="https://html5j.connpass.com/event/105561/" target="_blank">HTML5 Conferenceに参加する</a>
+        </div>
       </div>
+
+      <div class="container-full">
+        <strong class="h1">The Web is shifting to the next gear</strong>
+      </div>
+
+      <section class="section container">
+        <p>HTML5を含む次世代Web標準技術と呼ばれた多くの仕様は、着実に実装され、多くのシーンで既に利用されています。今後もさらに多くのことができるようになるでしょう。そのスピードはもはや私たちですら追いかけるのが難しいほどです。それらを知り、私たちの製品やサービスにどう活かしていくのか、本カンファレンスを通じて考えるきっかけになれば幸いです。</p>
+        <p>HTML5 Conferenceは、Web技術に関するノウハウや最新情報の共有、そして交流の場としてありたいという想いがあります。Web技術者同士だけではなく、Webを取り巻く様々な企業や団体と、垣根を超えて気楽に交われる機会を作りたい。Webに関わる皆さんすべてに参加して欲しい。そういった「Web技術者の祭典」を目指しています。是非、ご参加ください。</p>
+      </section>
+      <section class="section container">
+        <h2 class="h2 h2--centered">開催概要</h2>
+        <table class="table" itemscope itemtype="http://schema.org/Event">
+          <tr>
+            <th>イベント名</th>
+            <td itemprop="name">HTML5 Conference</td>
+          </tr>
+          <tr>
+            <th>開催日時</th>
+            <td><span itemprop="startDate" content="2018-09-03T10:00">2018年11月25日（日）10:00 ～ 18:30</span><small class="note">※受付開始 9:30</small></td>
+          </tr>
+          <tr>
+            <th>募集人数</th>
+            <td>1,600名</td>
+          </tr>
+          <tr>
+            <th>対象者</th>
+            <td>Web開発者、Webデザイナー</td>
+          </tr>
+          <tr>
+            <th>会場</th>
+            <td itemprop="location" itemscope itemtype="http://schema.org/Place">
+              <span itemprop="name">東京電機大学 千住キャンパス</span>
+              <small itemprop="address" itemscope itemtype="http://schema.org/PostalAddress" class="note">
+                <span itemprop="addressRegion">東京都</span>
+                <span itemprop="addressLocality">足立区千住旭町5番</span>
+              </small>
+            </td>
+          </tr>
+          <tr>
+            <th>参加費</th>
+            <td>無料</td>
+          </tr>
+        </table>
+        <div class="button-block">
+          <a class="button button--primary" href="https://html5j.connpass.com/event/105561/" target="_blank">HTML5 Conferenceに参加する</a>
+        </div>
+      </section>
+
+      <section class="section container">
+        <h2 class="h2 h2--centered">ボランティアスタッフ募集中！</h2>
+        <p>開催にあたり、カンファレンスをお手伝い頂けるボランティアスタッフを募集しています！詳細については、<a href="./volunteer/">ボランティアスタッフ募集ページ</a>でご確認いただけます。</p>
+        <div class="button-block">
+          <a class="button" href="https://docs.google.com/forms/d/e/1FAIpQLSejrz_rfG4AhoN6ofZguG7exdKDuOuWTNI0s7UNTC7uEV3s2w/viewform" target="_blank">ボランティアスタッフに応募する</a>
+        </div>
+      </section>
+
+      <section class="section container">
+        <h2 class="h2 h2--centered">ライトニングトーク登壇者募集中！</h2>
+        <p>カンファレンスの最後に行われるスペシャルセッションにて、LTの登壇者を募集します！詳細はフォームをご確認ください。応募締め切りは、11月9日（金）です。</p>
+        <div class="button-block">
+          <a class="button" href="https://docs.google.com/forms/d/e/1FAIpQLSdd0FGJ3e2SgUm4TigAWdPyNw2hkQYGMWTVGsz-jssBsW3aJQ/viewform" target="_blank">ライトニングトークに応募する</a>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2 class="h2 h2--centered">スポンサー・後援</h2>
+        <div class="thumb">
+          <h3 class="h3 h3--centered">プラチナスポンサー</h3>
+          <ul class="thumb-list thumb-list--xlarge platinum">
+            <li>
+              <a href="https://developers.google.com/" target="_blank">
+                <img src="../assets/img/sponsor/google.png" alt="Google Developers" title="Google Developers">
+              </a>
+            </li>
+            <li>
+              <a href="https://www.access-company.com/" target="_blank">
+                <img src="../assets/img/sponsor/access.png" alt="株式会社ACCESS" title="株式会社ACCESS">
+              </a>
+            </li>
+            <li>
+              <a href="https://about.yahoo.co.jp/" target="_blank">
+                <img src="../assets/img/sponsor/yahoo.png" alt="Yahoo! JAPAN" title="Yahoo! JAPAN">
+              </a>
+            </li>
+            <li>
+              <a href="https://playcanvas.jp" target="_blank">
+                <img src="../assets/img/sponsor/playcanvas.png" alt="PlayCanvas" title="PlayCanvas">
+              </a>
+            </li>
+            <li>
+              <a href="https://jp.infragistics.com/products/ignite-ui-angular" target="_blank">
+                <img src="../assets/img/sponsor/infragistics.png" alt="Angular対応コンポーネント、Ignite UI for Angular" title="Angular対応コンポーネント、Ignite UI for Angular">
+              </a>
+            </li>
+            <li>
+              <a href="https://techfeed.io" target="_blank">
+                <img src="../assets/img/sponsor/platinum-techfeed.svg" alt="TechFeed" title="TechFeed">
+              </a>
+            </li>
+            <li>
+              <a href="https://engineering.linecorp.com/ja/" target="_blank">
+                <img src="../assets/img/sponsor/platinum-line.png" alt="LINE Engineering" title="LINE Engineering">
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="thumb">
+          <h3 class="h3 h3--centered">ゴールドスポンサー</h3>
+          <ul class="thumb-list thumb-list--large gold">
+            <li>
+              <a href="https://dev.grapecity.co.jp/surl/?html52018" target="_blank">
+                <img src="../assets/img/sponsor/grapecity.png" alt="グレープシティのJavaScriptライブラリ" title="グレープシティのJavaScriptライブラリ">
+              </a>
+            </li>
+            <li>
+              <a href="http://www.njc.co.jp" target="_blank">
+                <img src="../assets/img/sponsor/njc.png" alt="日本事務器株式会社" title="日本事務器株式会社">
+              </a>
+            </li>
+            <li>
+              <a href="https://dena.com" target="_blank">
+                <img src="../assets/img/sponsor/dena.png" alt="株式会社ディー・エヌ・エー" title="株式会社ディー・エヌ・エー">
+              </a>
+            </li>
+            <li>
+              <a href="https://www.cyberagent.co.jp" target="_blank">
+                <img src="../assets/img/sponsor/cyberagent.png" alt="サイバーエージェント" title="サイバーエージェント">
+              </a>
+            </li>
+            <li>
+              <a href="https://www.drecom.co.jp/" target="_blank">
+                <img src="../assets/img/sponsor/drecom.png" alt="株式会社ドリコム" title="株式会社ドリコム">
+              </a>
+            </li>
+            <li>
+              <a href="https://www.livesense.co.jp" target="_blank">
+                <img src="../assets/img/sponsor/gold-livesense.jpg" alt="株式会社リブセンス" title="株式会社リブセンス">
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="thumb">
+          <h3 class="h3 h3--centered">シルバースポンサー</h3>
+          <ul class="thumb-list thumb-list--medium silver">
+            <li>
+              <a href="https://html5exam.jp/" target="_blank">
+                <img src="../assets/img/sponsor/educo.png" alt="HTML5プロフェッショナル認定試験 | LPI-JAPAN" title="HTML5プロフェッショナル認定試験 | LPI-JAPAN">
+              </a>
+            </li>
+            <li>
+              <a href="https://www.kayac.com/" target="_blank">
+                <img src="../assets/img/sponsor/kayac.png" alt="面白法人カヤック" title="面白法人カヤック">
+              </a>
+            </li>
+            <li>
+              <a href="https://corporate.gnavi.co.jp/?sc_cid=corp_h5_20181125_1" target="_blank">
+                <img src="../assets/img/sponsor/gnavi.png" alt="ぐるなび" title="ぐるなび">
+              </a>
+            </li>
+            <li>
+              <a href="https://www.gpol.co.jp/?utm_source=link&utm_medium=web&utm_campaign=html5conference2018" target="_blank">
+                <img src="../assets/img/sponsor/gpol.png" alt="株式会社ジーピーオンライン" title="株式会社ジーピーオンライン">
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="thumb-group">
+          <div class="thumb">
+            <h3 class="h3 h3--centered">ブロンズスポンサー</h3>
+            <ul class="thumb-list thumb-list--small bronze">
+              <li>
+                <a href="https://www.pxgrid.com/" target="_blank">
+                  <img src="../assets/img/sponsor/pxgrid.png" alt="株式会社ピクセルグリッド" title="株式会社ピクセルグリッド">
+                </a>
+              </li>
+              <li>
+                <a href="http://corp.gree.net/jp/ja/" target="_blank">
+                  <img src="../assets/img/sponsor/gree.png" alt="グリー株式会社" title="グリー株式会社">
+                </a>
+              </li>
+              <li>
+                <a href="http://www.fujitv.co.jp/" target="_blank">
+                  <img src="../assets/img/sponsor/fujitv.png" alt="フジテレビ" title="フジテレビ">
+                </a>
+              </li>
+              <li>
+                <a href="https://connehito.com/" target="_blank">
+                  <img src="../assets/img/sponsor/bronze-connehito.png" alt="コネヒト株式会社" title="コネヒト株式会社">
+                </a>
+              </li>
+              <li>
+                <a href="https://www.medley.jp/" target="_blank">
+                  <img src="../assets/img/sponsor/bronze-medley.png" alt="株式会社メドレー" title="株式会社メドレー">
+                </a>
+              </li>
+              <li>
+                <a href="https://webtechpromo.org/" target="_blank">
+                  <img src="../assets/img/sponsor/nakacma.png" alt="【検定科目はHTML5】Web技術振興協会" title="【検定科目はHTML5】Web技術振興協会">
+                </a>
+              </li>
+              <li>
+                <a href="https://classi.jp/" target="_blank">
+                  <img src="../assets/img/sponsor/classi.png" alt="Classi株式会社" title="Classi株式会社">
+                </a>
+              </li>
+              <li>
+                <a href="https://bitcoinbank.co.jp/" target="_blank">
+                  <img src="../assets/img/sponsor/bitcoinbank.png" alt="ビットバンク株式会社" title="ビットバンク株式会社">
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="thumb">
+            <h3 class="h3 h3--centered">後援</h3>
+            <ul class="thumb-list thumb-list--small support">
+              <li>
+                <a href="https://www.webdino.org/" target="_blank">
+                  <img src="../assets/img/sponsor/webdino.png" alt="WebDINO Japan" title="WebDINO Japan">
+                </a>
+              </li>
+              <li>
+                <a href="http://www.w3.org/" target="_blank">
+                  <img src="../assets/img/sponsor/w3c.png" alt="W3C" title="W3C">
+                </a>
+              </li>
+            </ul>
+          </div>
+          <!-- <div class="thumb">
+            <h3 class="h3 h3--centered">メディアスポンサー</h3>
+            <ul class="thumb-list thumb-list--small media">
+              <li>
+                <a href="" target="_blank">
+                  <img src="../assets/img/sponsor/.png" alt="" title="">
+                </a>
+              </li>
+              <li>
+                <a href="" target="_blank">
+                  <img src="../assets/img/sponsor/.png" alt="" title="">
+                </a>
+              </li>
+            </ul>
+          </div> -->
+        </div>
+      </section>
     </main>
-    <footer class="footer">
-      <ul class="footer__social">
+
+    <footer id="footer">
+      <ul class="social">
         <li>
           <a href="http://b.hatena.ne.jp/entry/" class="hatena-bookmark-button" data-hatena-bookmark-layout="basic-label" data-hatena-bookmark-lang="ja" title="このエントリーをはてなブックマークに追加">
             <img src="https://b.st-hatena.com/images/entry-button/button-only@2x.png" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" />
@@ -35,14 +303,16 @@
         <li>
           <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-url="http://events.html5j.org/conference/2018/11/" data-text="HTML5 Conference 2018" data-via="html5j" data-lang="ja" data-hashtags="html5j" data-show-count="false">Tweet</a>
       </ul>
-      <p class="footer__copyright">
-        <span class="footer__copyright__symbol">&copy;</span>
+      <p class="copyright">
+        <span class="copyright__symbol">&copy;</span>
         <a href="http://html5j.org">
-          <img src="img/logo-html5j.svg" alt="html5j" class="footer__copyright__image">
+          <img src="../assets/img/logo-html5j.svg" alt="html5j" class="copyright__image">
         </a>
       </p>
     </footer>
 
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="../assets/script/page-nav.js"></script>
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
         (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -51,7 +321,6 @@
       ga('create', 'UA-44039742-2', 'auto');
       ga('send', 'pageview');
     </script>
-
     <!-- はてなブックマーク -->
     <script type="text/javascript" src="https://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script>
     <!-- Twitter -->
