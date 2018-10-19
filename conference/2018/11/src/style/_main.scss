@@ -125,9 +125,9 @@ address {
   flex-direction: column;
   padding: 2rem 1rem;
   background-color: $white;
-  background-image: url(/assets/img/category-icons.png),
-                    url(/assets/img/scene-images.png),
-                    url(/assets/img/bg-pattern.png);
+  background-image: url(../img/category-icons.png),
+                    url(../img/scene-images.png),
+                    url(../img/bg-pattern.png);
   background-repeat: repeat,
                      no-repeat,
                      repeat;
