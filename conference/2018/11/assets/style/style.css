@@ -1133,6 +1133,10 @@ h3,
   font-size: 87.5%;
 }
 
+.grid-list__tag > li:not(:last-child) {
+  margin: 0 .5rem 0 0;
+}
+
 .thumb + .thumb {
   margin-top: 5rem;
 }
@@ -1421,4 +1425,8 @@ a:hover .session__speakerImage img {
 .timetable-button:hover {
   opacity: .5;
   text-decoration: none;
+}
+
+.focus {
+  background-color: #f3f3f7;
 }

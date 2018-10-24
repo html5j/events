@@ -8,6 +8,26 @@
     $drawer.toggleClass('is-open');
   });
 
+  // ハッシュによるフォーカス
+  var currentFocus;
+  $(window).on('hashchange', function (ev) {
+    focusByHash();
+  });
+  focusByHash();
+
+  function focusByHash() {
+    if (location.hash) {
+      if (currentFocus) {
+        currentFocus.classList.remove('focus');
+      }
+      var focus = $(location.hash);
+      if (focus.length !== 0) {
+        focus[0].classList.add('focus');
+        currentFocus = focus[0];
+      }
+    }
+  }
+
   function randomOrder(selector) {
     if ($(selector).length === 0) {
       return;
