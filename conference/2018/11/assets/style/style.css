@@ -1,10 +1,11 @@
+@charset "UTF-8";
 /*! normalize.css v4.2.0 | MIT License | github.com/necolas/normalize.css */
 /**
  * 1. Change the default font family in all browsers (opinionated).
  * 2. Correct the line height in all browsers.
  * 3. Prevent adjustments of font size after orientation changes in IE and iOS.
  */
-@import url("https://fonts.googleapis.com/css?family=Barlow:300,400,600|Noto+Sans+JP:300,400,700");
+@import url("https://fonts.googleapis.com/css?family=Barlow:300,400,600");
 html {
   font-family: sans-serif;
   /* 1 */
@@ -410,7 +411,7 @@ textarea {
 }
 
 html {
-  font-family: "Barlow", "Noto Sans JP", sans-serif;
+  font-family: Barlow, Arial, Helvetica, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
   font-size: 87.5%;
   color: #0b1037;
   line-height: 1.618;
