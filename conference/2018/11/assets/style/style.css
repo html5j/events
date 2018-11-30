@@ -1431,3 +1431,43 @@ a:hover .session__speakerImage img {
 .focus {
   background-color: #f3f3f7;
 }
+
+.timetable__archive {
+  margin: 0.2rem 0 0 0;
+}
+
+.timetable__archive a {
+  font-size: 1.2rem;
+  text-decoration: none;
+}
+
+.timetable__archive a:not(:last-child) {
+  margin: 0 4px 0 0;
+}
+
+.timetable__archive small {
+  font-size: 1rem;
+  width: 1rem;
+  display: inline-block;
+  text-align: center;
+}
+
+.session__archive {
+  margin: 0.5rem 0 0 0;
+}
+
+.session__archive a {
+  font-size: 1.6rem;
+  text-decoration: none;
+}
+
+.session__archive a:not(:last-child) {
+  margin: 0 6px 0 0;
+}
+
+.session__archive small {
+  font-size: 1rem;
+  width: 1rem;
+  display: inline-block;
+  text-align: center;
+}
