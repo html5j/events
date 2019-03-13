@@ -1,0 +1,22 @@
+// ================
+//  vars
+// ================
+$fontSansSerif: Barlow, Arial, Helvetica, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+
+$size: 1rem;
+$containerSize: $size * 50;
+$breakpoints: $containerSize;
+
+$ratio: .618;
+$ratioNeg: 1 - $ratio;
+$lineHeight: 1 + $ratio;
+$lineHeightNeg: 1 + $ratioNeg;
+
+$mainColor: hsl(233, 67%, 13%);
+$mainColorHover: hsl(233, 67%, 43%);
+$mainColorLight: hsl(233, 24%, 84%);
+$mainColorPale: hsl(233, 18%, 96%);
+$accentColor: hsl(0, 100%, 41%);
+$accentColorHover: hsl(0, 100%, 51%);
+$white: hsl(0, 0%, 100%);
+$white-alpha: hsla(0, 0%, 100%, .9);
